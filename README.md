@@ -1,4 +1,5 @@
-###These are the new + improved HY Bootcamp notes!
+These are the new + improved HY Bootcamp notes!
+======
 
 The naming convention is number-name. 
 
