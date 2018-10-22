@@ -11,7 +11,6 @@ If the file gets combined with another one or the order changes, preface the fil
 
 Files prefaced with NB- might not live in the current Bootcamp template but _will_ have a corresponding slot in the new Bootcamp template.
 
-###
 
-####Resources
+### Resources
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
