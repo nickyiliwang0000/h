@@ -1,13 +1,16 @@
-#These are the new + improved HY Bootcamp notes!
+These are the new + improved HY Bootcamp notes!
+======
 
 The naming convention is number-name. 
 
-1.3-meet-your-text-editor
+  **1.3-meet-your-text-editor**
 
-If the file gets combined with another one or the order changes, preface the file with NEW-
+If the file gets combined with another one or the order changes, preface the file with NB-
 
-NEW-1.3-meet-your-text-editor
+  **NB-1.3-meet-your-text-editor**
 
-Files prefaced with NEW- might not live in the current Bootcamp template but _will_ have a corresponding slot in the new Bootcamp template.
+Files prefaced with NB- might not live in the current Bootcamp template but _will_ have a corresponding slot in the new Bootcamp template.
 
-Naming convention to follow.
+
+### Resources
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
