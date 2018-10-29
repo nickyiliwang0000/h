@@ -1,5 +1,4 @@
 # Intro to the internet
-===
 
 ## What is the internet?
 
