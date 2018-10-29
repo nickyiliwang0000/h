@@ -1,5 +1,5 @@
 # HTML elements
-
+===========
 ## HTML: The makeup of markup
 
 Hyper Text Markup Language (HTML) is the standard language that we use to create web pages. When we open an HTML file within a browser, the code is interpreted as a visual (or audible) web page.
@@ -577,7 +577,7 @@ Before HTML5, a group of HTML elements could be wrapped in div with an id or a c
 
 ```html
 <main class="content">
-  <p>Content Goes Here</p>
+  <p>Here's some content</p>
 </main>
 ```
 
@@ -597,8 +597,8 @@ Before HTML5, a group of HTML elements could be wrapped in div with an id or a c
 ```html
 <section class="about">
   <h2>About our class</h2>
-  <p>Related information goes here</p>
-  <p>We're cool humans learning to code.</p>
+  <p>Our class is composed of many different people.</p>
+  <p>We're humans learning to code.</p>
 </section>
 <section class="skills">
   <h2>Skills</2>
@@ -626,7 +626,7 @@ Before HTML5, a group of HTML elements could be wrapped in div with an id or a c
 
 ```html
 <figure>
-  <img src="mysweetpicture.jpg">
+  <img src="images/mysweetpicture.jpg">
 </figure>
 ```
 
@@ -634,7 +634,7 @@ Before HTML5, a group of HTML elements could be wrapped in div with an id or a c
 ```html
 <figure>
   <figcaption>Donald Duck as Tony Hawk</figcaption>
-  <img src="mysweetpicture.jpg" alt="A cartoon duck on a skateboard ollie-ing over a canyon." >
+  <img src="images/mysweetpicture.jpg" alt="A cartoon duck on a skateboard ollie-ing over a canyon." >
 </figure>
 ```
 
