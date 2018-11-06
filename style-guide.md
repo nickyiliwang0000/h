@@ -31,15 +31,14 @@
 * code-along NOT codealong or code along (like sing-along)
 
 #### Markdown-specific conventions
-```markdown
-new words like _this_
-important phrases/words like **this**
-```
+* new words like _this_
+* important phrases/words like **this**
+
 ##### Example:
-
-**This is the most important thing to remember**
+```markdown
 The word _enchiridion_ means "handbook".
-
+**This is the most important thing to remember**
+```
 
 # Things to decide
 * What do we do for little notes or asides?
