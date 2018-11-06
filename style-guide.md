@@ -31,14 +31,15 @@
 * code-along NOT codealong or code along (like sing-along)
 
 #### Markdown-specific conventions
-* new words like _this_
-* important phrases/words like **this**
-
-##### Example:
 ```markdown
+new words like _this_
+important phrases/words like **this**
+```
+##### Example:
+
 **This is the most important thing to remember**
 The word _enchiridion_ means "handbook".
-```
+
 
 # Things to decide
 * What do we do for little notes or asides?
@@ -46,7 +47,6 @@ The word _enchiridion_ means "handbook".
 
 ## Example lesson layout
 ```markdown
-example lesson layout
 # Lesson title in sentence case - mostly lowercase unless you're using a name like HTML or React Router
 ## Large lesson section  (e.g. HTML elements)
 ### Lesson subheading (e.g. The span tag)
