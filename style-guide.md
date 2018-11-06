@@ -40,10 +40,6 @@ The word _enchiridion_ means "handbook".
 **This is the most important thing to remember**
 ```
 
-# Things to decide
-* What do we do for little notes or asides?
-* Internet or internet ?
-
 ## Example lesson layout
 ```markdown
 # Lesson title in sentence case - mostly lowercase unless you're using a name like HTML or React Router
@@ -52,3 +48,7 @@ The word _enchiridion_ means "handbook".
 #### Section subheading (e.g. When to use a span tag)
 
 ```
+
+# Things to decide
+* What do we do for little notes or asides?
+* Internet or internet ?
