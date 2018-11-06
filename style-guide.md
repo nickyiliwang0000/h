@@ -16,9 +16,9 @@ The word _enchiridion_ means "handbook".
 * Capped Titles For Sections or sentence case ones?
 
 
-# Lesson title
+# Lesson title (sentence case)
 =======
 
 ## Heading one (e.g. HTML elements)
-### Subheading (e.g. the span tag)
+### Subheading (e.g. The span tag)
 #### Section subheading (e.g. When to use a span tag)
