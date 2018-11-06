@@ -35,8 +35,10 @@
 * important phrases/words like **this**
 
 example:
-* **This is the most important thing to remember**
-* The word _enchiridion_ means "handbook".
+```markdown
+**This is the most important thing to remember**
+The word _enchiridion_ means "handbook".
+```
 
 # Things to decide
 * What do we do for little notes or asides?
