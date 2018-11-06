@@ -31,18 +31,18 @@
 * code-along NOT codealong or code along (like sing-along)
 
 #### Markdown-specific conventions
-new words like _this_
-important phrases/words like **this**
+* new words like _this_
+* important phrases/words like **this**
 
-##### example:
-**This is the most important thing to remember**
-The word _enchiridion_ means "handbook".
+example:
+* **This is the most important thing to remember**
+* The word _enchiridion_ means "handbook".
 
 # Things to decide
 * What do we do for little notes or asides?
 * Internet or internet ?
 
-<!-- Example lesson layout -->
+example lesson layout
 # Lesson title (sentence case)
 ## Heading one (e.g. HTML elements)
 ### Subheading (e.g. The span tag)
