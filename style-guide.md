@@ -12,7 +12,7 @@
       <p>some text</p>
     </section>
   ```
-  * unless the example is wholly self-contained:
+  unless the example is wholly self-contained:
 
   ```javascript
   class Button extends Component {
@@ -24,7 +24,6 @@
   }
   ```
 
-### 
 ### Words and phrases
 * web page NOT webpage
 * website NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\_(ツ)_/¯)
