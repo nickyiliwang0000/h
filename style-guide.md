@@ -23,7 +23,7 @@
     }
   }
   ```
-* include student takeaway at the beginning of every lesson
+* Include student takeaway at the beginning of every lesson
   ```markdown
   <!-- Student takeaway -->
   <!-- By the end of this lesson, the student should know:
