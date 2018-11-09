@@ -2,7 +2,7 @@
 
 ## Conventions
 
-* Include the filename in the code snippet for code alongs
+* Include the filename in the code snippet for code-alongs
  ```html
   <!-- index.html -->
     <section>
@@ -23,7 +23,16 @@
     }
   }
   ```
-
+* include student takeaway at the beginning of every lesson
+  ```markdown
+  <!-- Student takeaway -->
+  <!-- By the end of this lesson, the student should know:
+  - What `controls` & `autoplay` do to the video element 
+  - How to provide different sources to a `video` or `audio` element
+  - Where to find information about playing video on mobile
+  - Where to find information about `video` and `audio`accessibility
+  -->
+  ```
 ### Words and phrases
 * web page NOT webpage
 * website NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\_(ツ)_/¯)
