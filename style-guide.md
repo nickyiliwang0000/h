@@ -38,6 +38,9 @@
 * website NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\_(ツ)_/¯)
 * JavaScript NOT Java Script
 * code-along NOT codealong or code along (like sing-along)
+* pseudo-element NOT pseudoelement or pseudo element
+* pseudo-class NOT pseudo selector or pseudo-selector
+* internet NOT Internet
 
 #### Markdown-specific conventions
 * new words like _this_
@@ -55,9 +58,8 @@ The word _enchiridion_ means "handbook".
 ## Large lesson section  (e.g. HTML elements)
 ### Lesson subheading (e.g. The span tag)
 #### Section subheading (e.g. When to use a span tag)
-
 ```
 
 # Things to decide
 * What do we do for little notes or asides?
-* Internet or internet ?
+
