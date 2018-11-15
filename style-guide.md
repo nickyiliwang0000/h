@@ -33,6 +33,8 @@
   - Where to find information about `video` and `audio`accessibility
   -->
   ```
+* use e.g. for examples, use i.e. for a different explanation of the same thing
+
 ### Words and phrases
 * web page NOT webpage
 * website NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\_(ツ)_/¯)
