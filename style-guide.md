@@ -53,6 +53,21 @@
 The word _enchiridion_ means "handbook".
 **This is the most important thing to remember**
 ```
+##### Example file structure layout
+```bash
+- projectOne
+  index.html
+  - styles 
+    - partials
+      style.scss
+      style.css
+  - images
+      logo.png
+      background-image.jpg
+```
+Folders have - in front of them
+contents of a folder are indented
+files and folders on the same level 
 
 ## Example lesson layout
 ```markdown
@@ -61,6 +76,8 @@ The word _enchiridion_ means "handbook".
 ### Lesson subheading (e.g. The span tag)
 #### Section subheading (e.g. When to use a span tag)
 ```
+
+
 
 # Things to decide
 * What do we do for little notes or asides?
