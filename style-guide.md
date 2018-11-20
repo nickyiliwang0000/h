@@ -38,7 +38,7 @@
 ### Words and phrases
 * web page NOT webpage
 * website NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\_(ツ)_/¯)
-* JavaScript NOT Java Script
+* JavaScript NOT Java Script or Javascript
 * code-along NOT codealong or code along (like sing-along)
 * pseudo-element NOT pseudoelement or pseudo element
 * pseudo-class NOT pseudo selector or pseudo-selector
@@ -47,11 +47,15 @@
 #### Markdown-specific conventions
 * new words like _this_
 * important phrases/words like **this**
+* backticks to denote code or typing instructions `div`, `cmd + V`
+* single quotes to denote menu options or through a program directions
 
-##### Example:
+##### Examples:
 ```markdown
 The word _enchiridion_ means "handbook".
 **This is the most important thing to remember**
+ `div` or `cmd + V`
+ Go to 'File' > 'Open Recent' 
 ```
 ##### Example file structure layout
 ```bash
