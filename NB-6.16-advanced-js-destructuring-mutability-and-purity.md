@@ -1,3 +1,11 @@
+<!-- Student takeaway: -->
+<!-- At the end of this lesson, the student will be able to:
+- Identify a pure function
+- Identify an impure function
+- Explain what mutability is
+- Pluck a value from an object with destructuring
+- Pluck a value from an array with destructuring
+ -->
 # Advanced JavaScript: Destructuring, mutability, and purity
 As we move forward in JavaScript, we're going to need some new tools and concepts. 
 
