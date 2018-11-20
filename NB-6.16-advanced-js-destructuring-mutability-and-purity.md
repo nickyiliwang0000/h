@@ -15,29 +15,31 @@ There's a new (in ES6), quick way to grab properties from objects or arrays call
 Say we have an object that looks like this:
 
 ```javascript
-  const pizza = {
-    size: 'xl',
-    slices: 8,
-    type: 'vegetarian'
-  }
+const pizza = {
+  size: 'xl',
+  slices: 8,
+  type: 'vegetarian'
+}
 ```
 
 Now imagine we want to grab all the properties inside that object and store them in variables. In the past, we would have done this:
 
 ```javascript
-  const size = pizza.size;
-  const slices = pizza.slices;
-  const type = pizza.type;
-  console.log(`One ${size} ${type} pizza with ${slices} slices coming up!`);
-  // One xl vegetarian pizza with 8 slices coming up!
+const size = pizza.size;
+const slices = pizza.slices;
+const type = pizza.type;
+console.log(`One ${size} ${type} pizza with ${slices} slices coming up!`);
+// One xl vegetarian pizza with 8 slices coming up!
 ```
 
 With ES6, we can destructure our pizza object like this:
 
 ```javascript
-  const { size, slices, type } = pizza;
+const { size, slices, type } = pizza;
 
-  console.log(`One ${size} ${type} pizza with ${slices} slices coming up!`);
+console.log(`One ${size} ${type} pizza with ${slices} slices coming up!`);
+// One xl vegetarian pizza with 8 slices coming up!
+
 ```
 
 The curly brackets on the left might make you think that this is some kind of object, but don't be fooled! It's just our way of telling JavaScript to pluck the `size`, `slices`, and `type` variable out of the `pizza` object and store them locally.
@@ -76,10 +78,10 @@ Writing fewer lines of code is nice, but when might you use this yourself? Well,
 // And we pass that object to our displayResults function
 
 const displayResults = function(response) {
-    const country = response.cities.berlin.country;
-    const population = response.cities.berlin.population;
-    const weather = response.cities.berlin.weather;
-    const food = response.cities.berlin.food;
+  const country = response.cities.berlin.country;
+  const population = response.cities.berlin.population;
+  const weather = response.cities.berlin.weather;
+  const food = response.cities.berlin.food;
 
   console.log(`Berlin is a city of ${population} people in ${country}, where they like to eat ${food} in a ${weather} climate.`);  
 }
@@ -204,7 +206,7 @@ You may have noticed that whether the data is mutable or immutable depends on th
 **Pure function:**
 ```javascript
 function add(a,b) {
-	return a + b;
+  return a + b;
 }
 const total = add(2,3);
 ```
@@ -216,7 +218,7 @@ Here, `add(2,3)` will always return `5`.
 let total = 0;
 
 function add(a,b) {
-	total = a + b;
+  total = a + b;
 }
 add(2,3);
 console.log(total);
