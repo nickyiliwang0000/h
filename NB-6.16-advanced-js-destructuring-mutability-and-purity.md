@@ -1,7 +1,8 @@
+# Advanced JavaScript: Destructuring, mutability, and purity
 As we move forward in JavaScript, we're going to need some new tools and concepts. 
 
 ## Destructuring objects
-There's a new (in ES6), quick way to grab properties out of an object or an array called _destructuring_.
+There's a new (in ES6), quick way to grab properties from objects or arrays called _destructuring_.
 
 Say we have an object that looks like this:
 
@@ -19,11 +20,12 @@ Now imagine we want to grab all the properties inside that object and store them
   const size = pizza.size;
   const slices = pizza.slices;
   const type = pizza.type;
-<!-- switch template strings -->
-  console.log('One ' + size + ' ' + type + ' pizza with ' + slices + ' slices coming up!'); // One xl vegetarian pizza with 8 slices coming up!
+  console.log(`One ${size} ${type} pizza with ${slices} slices coming up!`);
+  // One xl vegetarian pizza with 8 slices coming up!
 ```
 
-With ES6, we can *destructure* our pizza object like this:
+With ES6, we can destructure our pizza object like this:
+
 ```javascript
   const { size, slices, type } = pizza;
 
@@ -65,7 +67,7 @@ Writing fewer lines of code is nice, but when might you use this yourself? Well,
 
 // And we pass that object to our displayResults function
 
-  const displayResults = function(response) {
+const displayResults = function(response) {
     const country = response.cities.berlin.country;
     const population = response.cities.berlin.population;
     const weather = response.cities.berlin.weather;
@@ -103,7 +105,7 @@ Kind of long and annoying. Instead, with destructuring, we can do this!
 
 // And our new displayResults function using destructuring
 const displayResults = function(response) {
-  response = response.berlin
+  response = response.cities.berlin
   const { food, country, weather, population } = response;
   console.log(`Berlin is a city of ${population} people in ${country}, where they like to eat ${food} in a ${weather} climate.`); 
 }
@@ -113,13 +115,11 @@ Pretty cool, right? If we refactored our API call to **only** return the informa
 
 ```javascript
 // Here we made a **brand new** API call that gives us back only the entry for 'berlin'
-{   
-  'berlin':{
-    country:'germany',
-    population:1900,
-    weather:'temperate',
-    food:'donair'
-  }
+{
+  country:'germany',
+  population:1900,
+  weather:'temperate',
+  food:'donair'
 }
 
 const displayResults = function({ food, population, weather, country }) {
@@ -148,7 +148,7 @@ console.log(toppingOne, toppingTwo); // pepperoni, green pepper
 
 You don't have to grab every item out of the array this one, only as many as you want to use.
 
-If you want to only grab say the third item in the array, you can add commas in to 'skip' items in the array, like so:
+If you want to only grab say the third item in the array, you can add commas in to skip items in the array, like so:
 
 ```javascript
 const toppings = ["pepperoni", "green pepper", "mushroom"];
@@ -159,7 +159,7 @@ console.log(toppingThree); // mushroom
 ```
 
 ## Immutability and purity
-Before we get into the cool new methods, we need to take a quick sidetrack and talk about immutability and purity.
+These are two programming concepts we've been working with without knowing it! They'll become even more important in React. 
 
 ### Immutability
 
@@ -167,7 +167,7 @@ An _immutable_ data structure doesn't change: you get the data once and that's w
 
 A _mutable_ data structure can be changed: you can add to it, remove from it, or change the values in it.
 
-Data and variables are inherently mutable. Mutating data can be dangerous because we can lose track of what the original data set looked like. 
+Data and variables are inherently mutable. Mutating data directly can be dangerous because we can lose track of what the original data set looked like. 
 
 Here are examples using `.splice()` and `.slice()` to illustrate the mutability of data:
 
@@ -178,7 +178,7 @@ zoo.splice(2, 1)  // remove 1 item at 2-index position (that is 'lion')
 
 //zoo contains ['giraffe', 'monkey', 'panda', 'hippo']
 ```
-In the above example, we no longer have access to our original zoo array, only to the modified version. We would say that the zoo array is mutable.
+In the above example, we no longer have access to our original `zoo` array, only to the modified version. We would say that the `zoo` array is mutable.
 
 **Immutable:**
 ```javascript
@@ -188,10 +188,10 @@ const newZoo = zoo.slice(1, 3)
 //zoo contains ['giraffe', 'monkey', 'lion', 'panda', 'hippo']
 //newZoo contains ['monkey', 'lion']
 ```
-Here, we have access to both the original zoo array AND our new version. The original zoo array is mutable (i.e. can be changed), but the method `.slice()` has not changed it. The `.slice()` method returns a copy of the original array that has been changed in some way. So, we say that we have kept the zoo array immutable (i.e. it has not/will not be changed).
+Here, we have access to both the original `zoo` array AND our new version. The original `zoo` array is mutable (i.e. can be changed), but the method `.slice()` has not changed it. The `.slice()` method returns a copy of the original array that has been changed in some way. So, we say that we have kept the `zoo` array immutable (i.e. it has not/will not be changed).
 
 ### Purity
-You may have noticed that whether the data is mutable or immutable depends on the method applied to it. Yep! Functions that change the data outside their lexical scope (i.e. functions that **mutate** data) are known as _impure_ functions. 6.15 Lexical scope and execution context will go into scope this more, but for now, notice where the variables are defined and where they are changed. A _pure_ function will always return the same value if provided with the same input value(s). Pure functions don't have any unwanted side effects, such as changing anything in the global scope (outside of the function). 
+You may have noticed that whether the data is mutable or immutable depends on the method applied to it. Functions that change data outside their lexical scope (i.e. functions that **mutate** data) are known as _impure_ functions. Reread 6.15 Lexical scope and execution context for more on scope. Notice where the variables are defined and where they are changed. A _pure_ function will always return the same value if provided with the same input value(s). Pure functions don't have any unwanted side effects, such as changing anything in the global scope (outside of the function). 
 
 **Pure function:**
 ```javascript
@@ -214,3 +214,5 @@ add(2,3);
 console.log(total);
 ```
 Here, `add(2,3)` could return any number, because `total` can be reset outside the `add()` function.
+
+You already know some pure functions! `.map()`, `.filter()` and `.reduce()`!
