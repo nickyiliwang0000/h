@@ -167,6 +167,7 @@ const [,,toppingThree] = toppings;
 
 console.log(toppingThree); // mushroom
 ```
+Check out [this article](https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f) for more info on destructuring!
 
 ## Immutability and purity
 These are two programming concepts we've been working with without knowing it! They'll become even more important in React. 
