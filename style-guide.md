@@ -40,7 +40,7 @@
 * **website** NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\'_(ツ)_/¯)
 * **JavaScript** NOT Java Script or Javascript
 * **code-along** NOT codealong or code along (like sing-along)
-* **pseudo-element NOT pseudoelement or pseudo element
+* **pseudo-element** NOT pseudoelement or pseudo element
 * **pseudo-class** NOT pseudo selector or pseudo-selector
 * **internet** NOT Internet
 
