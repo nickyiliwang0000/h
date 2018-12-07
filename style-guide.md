@@ -81,12 +81,6 @@ files and folders on the same level
 #### Section subheading (e.g. When to use a span tag)
 ```
 
-
-<<<<<<< HEAD
-## Heading one (e.g. HTML elements)
-### Subheading (e.g. the span tag)
-#### Section subheading (e.g. When to use a span tag)
-
 **Incorrect 👎**
 ```html
 <!-- Code example -->
@@ -96,5 +90,3 @@ files and folders on the same level
 ```html
 <!-- Code example -->
 ```
-=======
->>>>>>> 6657bdda1618cdba4646c0658fcffb449b35603e
