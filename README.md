@@ -4,11 +4,17 @@ These are the new + improved HY Bootcamp notes!
 Welcome!
 
 [HTML]()
+
 [CSS]()
+
 [GitHub and Command Line]()
+
 [jQuery]()
+
 [Programming Fundamentals]()
+
 [React]()
+
 [Firebase]()
 
 <!-- ## How to submit a pull request
