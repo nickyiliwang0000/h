@@ -1,17 +1,17 @@
 # Style guide
 
 ## Conventions
-
+* Each tab is 2 spaces and tabs are converted to spaces before uploading files.
 * Include the filename in the code snippet for code-alongs
- ```html
+```html
   <!-- index.html -->
-    <section>
-      <p>some text</p>
-      <p>some text</p>
-      <p>some text</p>
-      <p>some text</p>
-    </section>
-  ```
+<section>
+  <p>some text</p>
+  <p>some text</p>
+  <p>some text</p>
+  <p>some text</p>
+</section>
+```
   unless the example is wholly self-contained:
 
   ```javascript
@@ -36,23 +36,42 @@
 * use e.g. for examples, use i.e. for a different explanation of the same thing
 
 ### Words and phrases
-* web page NOT webpage
-* website NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\_(ツ)_/¯)
-* JavaScript NOT Java Script
-* code-along NOT codealong or code along (like sing-along)
-* pseudo-element NOT pseudoelement or pseudo element
-* pseudo-class NOT pseudo selector or pseudo-selector
-* internet NOT Internet
+* **web page** NOT webpage
+* **website** NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\'_(ツ)_/¯)
+* **JavaScript** NOT Java Script or Javascript
+* **code-along** NOT codealong or code along (like sing-along)
+* **pseudo-element** NOT pseudoelement or pseudo element
+* **pseudo-class** NOT pseudo selector or pseudo-selector
+* **internet** NOT Internet
 
 #### Markdown-specific conventions
 * new words like _this_
 * important phrases/words like **this**
+* backticks to denote code or typing instructions `div`, `cmd + V`
+* single quotes to denote menu options or through a program directions
 
-##### Example:
+##### Examples:
 ```markdown
 The word _enchiridion_ means "handbook".
 **This is the most important thing to remember**
+ `div` or `cmd + V`
+ Go to 'File' > 'Open Recent' 
 ```
+##### Example file structure layout
+```bash
+- projectOne
+  index.html
+  - styles 
+    - partials
+      style.scss
+      style.css
+  - images
+      logo.png
+      background-image.jpg
+```
+Folders have - in front of them
+contents of a folder are indented
+files and folders on the same level 
 
 ## Example lesson layout
 ```markdown
@@ -62,6 +81,4 @@ The word _enchiridion_ means "handbook".
 #### Section subheading (e.g. When to use a span tag)
 ```
 
-# Things to decide
-* What do we do for little notes or asides?
 
