@@ -81,4 +81,12 @@ files and folders on the same level
 #### Section subheading (e.g. When to use a span tag)
 ```
 
+**Incorrect 👎**
+```html
+<!-- Code example -->
+```
 
+**Correct 👍**
+```html
+<!-- Code example -->
+```
