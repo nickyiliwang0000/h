@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Functional programming
+=======
+ # Advanced array methods
+>>>>>>> bd6d347391b1144ee75e655cc8fe008b9f8b0d60
 
 The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. Although it sounds fancy and maybe a little scary, think of functional programming as a way to use functions to transform data.
 
@@ -6,6 +10,7 @@ The methods and libraries we will be looking at in this section are part of a pr
 
 When working with data, we often need to tweak, bend, and reorganize it to suit our needs. Not every array is exactly what we need for every purpose. Sometimes we don't control the organization of the data, as in the case of returned data from external APIs. We need to be able to adapt and manipulate data into the structures that our project requires.
 
+<<<<<<< HEAD
 There are useful native JavaScript methods and powerful external libraries that exist to help us accomplish these tasks. Some of the methods we're going to learn today could be replaced by some creative iteration and reworking of arrays using methods - remember that there are always many ways to do something in JavaScript!
 
 We'll be going over a few super useful methods and you can [follow along using this file](https://hychalknotes.s3.amazonaws.com/functionalProgramming.html).
@@ -15,11 +20,23 @@ We'll be going over a few super useful methods and you can [follow along using t
 The `.forEach()` method iterates over an array and performs a provided task (i.e. a callback function). Within the callback, we can define two arguments that represent the iterated item: the _value_ and the _index_. `.forEach()` does not return a new array
 
 It is much like the `.each()` method in jQuery: it performs the requested task, but **does not** return a new array.
+=======
+There are useful native JavaScript methods and powerful external libraries that exist to help us accomplish these tasks. Some of these methods could be replaced by some creative iteration and reworking of arrays using methods - remember that there are always many ways to do something in JavaScript!
+
+We'll be going over a few super useful methods and you can [follow along using this file](https://hychalknotes.s3.amazonaws.com/functionalProgramming.html).
+
+### `.forEach()`
+The `.forEach()` method iterates over an array and performs a provided task (i.e. a callback function). Within the callback, we can define two arguments that represent the iterated item: the _value_ and the _index_. `.forEach()` does not return a new array.
+>>>>>>> bd6d347391b1144ee75e655cc8fe008b9f8b0d60
 
 Let's say we wanted to display a list of movie genres to our movie catalogue website. We have a `div` that looks like this:
 
 ```html
+<<<<<<< HEAD
 <div class='movieGenres'>
+=======
+<div class="movieGenres">
+>>>>>>> bd6d347391b1144ee75e655cc8fe008b9f8b0d60
 </div>
 ```
 
@@ -59,7 +76,11 @@ console.log(halfNumbers);
 //[5, 50, 12.5, 10];
 ```
 
+<<<<<<< HEAD
 The `.map()` method will run a function for every element in the array, and it will allow you to mutate the new data however you like. Notice that `numbers`, the original array is not changed. It remains immutable because `.map()` is a pure function.
+=======
+The `.map()` method will run a function for every element in the array, and it will allow you to mutate the new data however you like. Notice that `numbers`, the original array, is not changed. It remains immutable because `.map()` is a pure function.
+>>>>>>> bd6d347391b1144ee75e655cc8fe008b9f8b0d60
 
 **Creating an array of items from objects:**
 ```js
