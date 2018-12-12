@@ -1,17 +1,17 @@
 # Style guide
 
 ## Conventions
-
+* Each tab is 2 spaces and tabs are converted to spaces before uploading files.
 * Include the filename in the code snippet for code-alongs
- ```html
+```html
   <!-- index.html -->
-    <section>
-      <p>some text</p>
-      <p>some text</p>
-      <p>some text</p>
-      <p>some text</p>
-    </section>
-  ```
+<section>
+  <p>some text</p>
+  <p>some text</p>
+  <p>some text</p>
+  <p>some text</p>
+</section>
+```
   unless the example is wholly self-contained:
 
   ```javascript
@@ -36,13 +36,13 @@
 * use e.g. for examples, use i.e. for a different explanation of the same thing
 
 ### Words and phrases
-* web page NOT webpage
-* website NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\_(ツ)_/¯)
-* JavaScript NOT Java Script or Javascript
-* code-along NOT codealong or code along (like sing-along)
-* pseudo-element NOT pseudoelement or pseudo element
-* pseudo-class NOT pseudo selector or pseudo-selector
-* internet NOT Internet
+* **web page** NOT webpage
+* **website** NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\'_(ツ)_/¯)
+* **JavaScript** NOT Java Script or Javascript
+* **code-along** NOT codealong or code along (like sing-along)
+* **pseudo-element** NOT pseudoelement or pseudo element
+* **pseudo-class** NOT pseudo selector or pseudo-selector
+* **internet** NOT Internet
 
 #### Markdown-specific conventions
 * new words like _this_
@@ -81,8 +81,12 @@ files and folders on the same level
 #### Section subheading (e.g. When to use a span tag)
 ```
 
+**Incorrect 👎**
+```html
+<!-- Code example -->
+```
 
-
-# Things to decide
-* What do we do for little notes or asides?
-
+**Correct 👍**
+```html
+<!-- Code example -->
+```
