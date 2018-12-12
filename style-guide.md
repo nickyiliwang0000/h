@@ -49,6 +49,7 @@
 * important phrases/words like **this**
 * backticks to denote code or typing instructions `div`, `cmd + V`
 * single quotes to denote menu options or through a program directions
+* Unordered lists with `*`, not `-`
 
 ##### Examples:
 ```markdown
