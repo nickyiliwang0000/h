@@ -1,31 +1,27 @@
-PROJECT 1
-  requirements
-  - Site is responsive and uses media queries
-  - Semantic HTML elements are used properly
-  - All images considered content have descriptive alt text
-  - Mobile view provides good user experience
-  - Wrapper used to constrain content on large displays effectively
-  - Files & folders are named properly
+# Best practices
 
-best practices
+## General
+* Remove extraneous code (e.g. commented-out CSS rules you're not using, any console.log, commented-out JS that didn't work)
+* Units of the project (e.g. files, folders, components, partials, class names, variables), follow a consistent naming convention
+* The purpose of the website / application should be clear to the user 
 
-PROJECT 2
-  requirements
+## CSS
+* Use your set up snippet (e.g. reset browser default styling, box-sizing: border-box, clearfix, visibilityhidden)
+* Wrapper used to constrain content on large displays
+* One external .css stylesheet is used for whole project 
 
-  best practices
-PROJECT 3
-  requirements
+## HTML
+* Semantic HTML elements are used properly
+* Meta viewport tag in the head
 
-  best practices
+## JavaScript
+* Use let for variables that will change, const for ones that won't
+* Handle your errors (i.e. give the user some feedback if their inputs are incorrect, if they're missing something, or if their search doesn't return anything from the API, etc.)
 
-It is clear to the user what the app does
-Interacts with the DOM (HTML) using events or taking input from the user
-Adds to the DOM dynamically using JavaScript
-Modern ES6 variable declarations used (let, const)
-Github repo has more than one significant commit
-Site is live on GH Pages or student’s own URL
-App and interactions are accessible
-Errors are handled effectively
-Sass is used
-Files, folders & naming conventions followed (Kebab Case)
-
+## React
+* Consistent CSS styling pattern is used for whole project
+* this.state is never directly changed / .setState() is always used to alter state
+* React 'knows' about all DOM changes (e.g. don't use document.getElementById, bind your inputs.)
+* No useless constructors
+* Unique key value for each child of a .map
+* Only import what you use in each file

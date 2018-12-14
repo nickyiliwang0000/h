@@ -9,17 +9,23 @@ Welcome!
   * [Meet your text editor](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.3-meet-your-text-editor.md)
   * [Marking up content with HTML elements](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.4-marking-up-content-with-html-elements.md)
   * [Video and audio](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.5-video-and-audio.md)
+
 [CSS]()
 
-[GitHub and Command Line]()
+[GitHub and command line]()
 
 [jQuery]()
 
-[Programming Fundamentals]()
+[Programming fundamentals]()
 
 [React]()
 
 [Firebase]()
+
+[Best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/best-practices.md)
+
+[How fix something in the notes]()
+
 
 <!-- ## How to submit a pull request
 
