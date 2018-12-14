@@ -1,6 +1,9 @@
 # Best practices
+
+## General
 * Remove extraneous code (e.g. commented-out CSS rules you're not using, any console.log, commented-out JS that didn't work)
 * Units of the project (e.g. files, folders, components, partials, class names, variables), follow a consistent naming convention
+* The purpose of the website / application should be clear to the user 
 
 ## CSS
 * Use your set up snippet (e.g. reset browser default styling, box-sizing: border-box, clearfix, visibilityhidden)
@@ -9,11 +12,11 @@
 
 ## HTML
 * Semantic HTML elements are used properly
-* It is clear to the user what the app does
+* Meta viewport tag in the head
 
 ## JavaScript
 * Use let for variables that will change, const for ones that won't
-
+* Handle your errors (i.e. give the user some feedback if their inputs are incorrect, if they're missing something, or if their search doesn't return anything from the API, etc.)
 
 ## React
 * Consistent CSS styling pattern is used for whole project
