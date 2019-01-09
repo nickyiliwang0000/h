@@ -35,6 +35,10 @@
   ```
 * use e.g. for examples, use i.e. for a different explanation of the same thing
 
+* Prefer Markdown syntax to HTML 
+  * e.g. `[alt text for the image](https://www.linktotheimage.com)` NOT `<img src="https://www.linktotheimage.com"/>`
+  * also for tables!
+  
 ### Words and phrases
 * **web page** NOT webpage
 * **website** NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\'_(ツ)_/¯)
