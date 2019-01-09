@@ -51,7 +51,8 @@
 * Use e.g. for examples, use i.e. for a different explanation of the same thing
 
 * Prefer Markdown syntax to HTML 
-  * for tables, images, and links! e.g. `[alt text for the image](https://www.linktotheimage.com)` NOT `<img src="https://www.linktotheimage.com"/>`
+  * for single-line cell tables, images, and links! e.g. `[alt text for the image](https://www.linktotheimage.com)` NOT `<img src="https://www.linktotheimage.com"/>`
+  * tables with multiline cells will have to be be in regular HTML
   * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
   * [Markdown tester](https://markdown-here.com/livedemo.html)
 
