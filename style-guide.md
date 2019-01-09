@@ -2,6 +2,20 @@
 
 ## Conventions
 * Each tab is 2 spaces and tabs are converted to spaces before uploading files.
+
+
+```html
+<body>
+    <h1>Not like this</h1>
+</body>
+```
+
+```html
+<body>
+  <h1>Like this!</h1>
+</body>
+```
+
 * Include the filename in the code snippet for code-alongs
 ```html
   <!-- index.html -->
@@ -36,9 +50,10 @@
 * use e.g. for examples, use i.e. for a different explanation of the same thing
 
 * Prefer Markdown syntax to HTML 
-  * e.g. `[alt text for the image](https://www.linktotheimage.com)` NOT `<img src="https://www.linktotheimage.com"/>`
-  * also for tables!
-  
+  * for tables, images, and links! e.g. `[alt text for the image](https://www.linktotheimage.com)` NOT `<img src="https://www.linktotheimage.com"/>`
+  * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  * [Markdown tester](https://markdown-here.com/livedemo.html)
+
 ### Words and phrases
 * **web page** NOT webpage
 * **website** NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\'_(ツ)_/¯)
