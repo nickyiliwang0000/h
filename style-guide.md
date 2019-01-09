@@ -64,11 +64,12 @@
 * **internet** NOT Internet
 
 #### Markdown-specific conventions
-* new words like _this_
-* important phrases/words like **this**
-* backticks to denote code or typing instructions `div`, `cmd + V`
-* single quotes to denote menu options or through a program directions
+* New words like _this_
+* Important phrases/words like **this**
+* Backticks to denote code or typing instructions, e.g. `div`, `cmd + V`
+* Single quotes to denote menu options or through a program directions, e.g. 'User > Preferences > Colors'
 * Unordered lists with `*`, not `-`
+
 
 ##### Examples:
 ```markdown
