@@ -17,15 +17,15 @@
 ```
 
 * Include the filename in the code snippet for code-alongs
-```html
-  <!-- index.html -->
-<section>
-  <p>some text</p>
-  <p>some text</p>
-  <p>some text</p>
-  <p>some text</p>
-</section>
-```
+  ```html
+    <!-- index.html -->
+  <section>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+  </section>
+  ```
   unless the example is wholly self-contained:
 
   ```javascript
