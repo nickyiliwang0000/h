@@ -66,6 +66,7 @@
 * **pseudo selector** NOT pseudo-selector or pseudo-class (even though pseudo-class is [more technically correct](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes))
 <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes -->
 * **internet** NOT Internet
+* precede a pseudo-class with a colon (e.g. :hover :nth-child NOT hover nth-child)
 
 #### Markdown-specific conventions
 * New words like _this_
@@ -79,8 +80,8 @@
 ```markdown
 The word _enchiridion_ means "handbook".
 **This is the most important thing to remember**
- Grab your `div` element and hit `cmd + C` to copy it.
- Go to 'File > Open Recent' 
+Grab your `div` element and hit `cmd + C` to copy it.
+Go to 'File > Open Recent' 
 ```
 ##### Example file structure layout
 ```bash
