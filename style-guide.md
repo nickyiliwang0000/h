@@ -2,16 +2,30 @@
 
 ## Conventions
 * Each tab is 2 spaces and tabs are converted to spaces before uploading files.
-* Include the filename in the code snippet for code-alongs
+
+
 ```html
-  <!-- index.html -->
-<section>
-  <p>some text</p>
-  <p>some text</p>
-  <p>some text</p>
-  <p>some text</p>
-</section>
+<body>
+    <h1>Not like this</h1>
+</body>
 ```
+
+```html
+<body>
+  <h1>Like this!</h1>
+</body>
+```
+
+* Include the filename in the code snippet for code-alongs
+  ```html
+    <!-- index.html -->
+  <section>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+  </section>
+  ```
   unless the example is wholly self-contained:
 
   ```javascript
@@ -33,52 +47,72 @@
   - Where to find information about `video` and `audio`accessibility
   -->
   ```
-* use e.g. for examples, use i.e. for a different explanation of the same thing
+  * The takeaway does *not* have to contain everything from the lesson. Some things are extra and some examples are illustrative; their actual content doesn't need to be remembered.
+* Use e.g. for examples, use i.e. for a different explanation of the same thing
+
+* Prefer Markdown syntax to HTML 
+  * for single-line cell tables, images, and links! e.g. `[alt text for the image](https://www.linktotheimage.com)` NOT `<img src="https://www.linktotheimage.com"/>`
+  * tables with multiline cells will have to be be in regular HTML
+  * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  * [Markdown tester](https://markdown-here.com/livedemo.html)
 
 ### Words and phrases
 * **web page** NOT webpage
-* **website** NOT web site (weird to have these be opposite but these are the most common spellings for each ¯\'_(ツ)_/¯)
+* **website** NOT web site (weird to have these be opposite but these are the most common spellings for each `¯\_(ツ)_/¯`)
 * **JavaScript** NOT Java Script or Javascript
 * **code-along** NOT codealong or code along (like sing-along)
 * **pseudo-element** NOT pseudoelement or pseudo element
-* **pseudo-class** NOT pseudo selector or pseudo-selector
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements -->
+* **pseudo selector** NOT pseudo-selector or pseudo-class (even though pseudo-class is [more technically correct](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes))
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes -->
 * **internet** NOT Internet
+* precede a pseudo-class with a colon (e.g. :hover :nth-child NOT hover nth-child)
 
 #### Markdown-specific conventions
-* new words like _this_
-* important phrases/words like **this**
-* backticks to denote code or typing instructions `div`, `cmd + V`
-* single quotes to denote menu options or through a program directions
+* New words like _this_
+* Important phrases/words like **this**
+* Backticks to denote code or typing instructions, e.g. `div`, `cmd + V`
+* Single quotes to denote menu options or through a program directions, e.g. 'User > Preferences > Colors'
+* Unordered lists with `*`, not `-`
+
 
 ##### Examples:
 ```markdown
 The word _enchiridion_ means "handbook".
 **This is the most important thing to remember**
- `div` or `cmd + V`
- Go to 'File' > 'Open Recent' 
+Grab your `div` element and hit `cmd + C` to copy it.
+Go to 'File > Open Recent' 
 ```
 ##### Example file structure layout
 ```bash
 - projectOne
-  index.html
-  - styles 
-    - partials
-      style.scss
-      style.css
-  - images
-      logo.png
-      background-image.jpg
+    index.html
+    - styles 
+        - partials
+        style.scss
+        style.css
+    - images
+        logo.png
+        background-image.jpg
 ```
-Folders have - in front of them
-contents of a folder are indented
-files and folders on the same level 
+* Folders have `-` in front of them
+* Contents of a folder are indented
+* Files and folders within the same folder are on the same level 
 
 ## Example lesson layout
 ```markdown
-# Lesson title in sentence case - mostly lowercase unless you're using a name like HTML or React Router
+# Lesson title in sentence case - mostly lowercase unless you're using an acronym or a name (e.g. HTML or React Router)
 ## Large lesson section  (e.g. HTML elements)
-### Lesson subheading (e.g. The span tag)
-#### Section subheading (e.g. When to use a span tag)
+### Lesson subheading (e.g. The `span` tag)
+#### Section subheading (e.g. When to use a `span` tag)
 ```
 
+**Incorrect 👎**
+```html
+<!-- Code example -->
+```
 
+**Correct 👍**
+```html
+<!-- Code example -->
+```
