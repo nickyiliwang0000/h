@@ -36,15 +36,15 @@ Welcome!
     * [Snippets]()
     * [Preprocessors and SCSS]()
     * [Browser dev tools]()
-    
+
   <!-- FTP should be elsewhere, so should these other lessons -->
 * [FTP and domains]()
 * [Navigations]()
 * [Forms]()
 
-*  Practices
-  * [Responsive design]()
-  * [Cross-browser testing]()
+  *  Practices
+    * [Responsive design]()
+    * [Cross-browser testing]()
 
 [GitHub and command line]()
 
