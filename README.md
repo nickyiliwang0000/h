@@ -42,7 +42,7 @@ Welcome!
 * [Navigations]()
 * [Forms]()
 
-  *  Practices
+  * Practices
     * [Responsive design]()
     * [Cross-browser testing]()
 
