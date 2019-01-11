@@ -1,6 +1,6 @@
 # Project 4 (paired API-powered application with jQuery)
 ## Due date
-Monday, February 25th, 10 a.m.
+Monday, February 25th, 10:00 a.m.
 
 ## Project description
 
