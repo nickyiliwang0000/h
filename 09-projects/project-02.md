@@ -1,5 +1,5 @@
 # Project 2 (multi-page PSD conversion)
-## Due Date
+## Due date
 Wednesday, February 6th, 1:00 p.m.
 
 ## Project description

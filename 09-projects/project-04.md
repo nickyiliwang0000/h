@@ -1,4 +1,7 @@
 # Project 4 (paired API-powered application with jQuery)
+## Due date
+Monday, February 25th, 10 a.m.
+
 ## Project description
 
 Your task for this week is to create your very own web application using JavaScript and an API. 
@@ -66,14 +69,14 @@ In order to secure your site, it's best to see if your host offers SSL certifica
 If you have an API that does not support CORS you might have to use what's called a proxy server, we have setup one up at <https://proxy.hackeryou.com/> , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.22-fetching-data-with-something-other-than%24.ajax.md#axios-with-a-proxy-server).
 
 ## Scope document
-In order to keep you on track this week we want you to fill out a Scope Outline document and get it signed by an instructor. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea as a functional project). You can have as many stretch goals as you want, but only commit to what you are **dead certain** you can produce by the deadline.
+In order to keep you on track this week we want you to fill out a scope outline document and get it signed by an instructor. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea as a functional project). You can have as many stretch goals as you want, but only commit to what you are **dead certain** you can produce by the deadline.
 
 The scope document can be found [here](https://docs.google.com/document/d/1Xz9-80T2bHxZpqXOD_CfAHSlmesN_6_V0QAZwCbsMhI/edit?usp=sharing) There will also be print outs provided for you.
 
 Again, you have to get this signed off on before you start any significant work. An instructor will take your copy when they sign off on it, so please take a picture for yourself.
 
 ## How will this project be graded?
-You will be given an opportunity to provide feedback about the experience of working with your partner. **It is just as important to make a functional product as it is to work well with your partner.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. Both memebers of the team should have a complete understanding of the technical aspects of the project. It is **not acceptable** for one person to do the HTML and CSS and one person to do the JS.
+You will be given an opportunity to provide feedback about the experience of working with your partner. **It is just as important to make a functional product as it is to work well with your partner.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. Both members of the team should have a complete understanding of the technical aspects of the project. It is **not acceptable** for one person to do the HTML and CSS and one person to do the JS.
 
 **Requirements:**
 * It is clear to the user what the app does and results are displayed legibly
@@ -86,6 +89,15 @@ You will be given an opportunity to provide feedback about the experience of wor
 * Site is live on GH Pages or student's own URL
 * Errors are handled effectively
 * Consistent class naming convention is used throughout
+
+You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
+* Extraneous code is removed (including console.log)
+* Semantic HTML elements are used properly
+* Setup snippet is used    
+* Wrapper used to constrain content on large displays
+* One external `.css` stylesheet is used for whole project
+* It is clear to the user what the app does
+* Site is responsive and uses media queries
 
 You will also be given marks for your project presentation:
 * Student was loud enough for everyone to hear
