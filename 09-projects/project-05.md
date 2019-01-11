@@ -23,8 +23,9 @@ This application could be a:
 Your data should come from an API or be stored in Firebase.
 
 ### Some previous examples
-[Catbot](https://catbot-29276.firebaseapp.com/)[Filtergram](https://filtergram-62c8d.firebaseapp.com/)
-[Online Dating](http://onlinedating.esmecodes.com/story)
+* [Catbot](https://catbot-29276.firebaseapp.com/)
+* [Filtergram](https://filtergram-62c8d.firebaseapp.com/)
+* [Online Dating](http://onlinedating.esmecodes.com/story)
 
 
 ## Project proposals

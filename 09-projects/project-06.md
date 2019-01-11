@@ -8,7 +8,9 @@ For this project, we will be mimicking the agency environment. You will be worki
 You'll be expected to create an organization on GitHub, create feature branches, and contribute via the pull request process. 
 
 ## How will this project be graded?
-You will be given an opportunity to provide feedback about the experience of working with your group members. **It is just as important to make a functional product as it is to work well with your partners.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. All members of the team should have a complete understanding of the technical aspects of the project.
+You will be given an opportunity to provide feedback about the experience of working with your group members.
+
+>  **It is just as important to make a functional product as it is to work well with your partners.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. All members of the team should have a complete understanding of the technical aspects of the project.
 
 Since we are also nearing the end of Helpcue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue. Use your peers, your bootcamp buddies, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life. 
 

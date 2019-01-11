@@ -8,26 +8,25 @@ Your task for this week is to create your very own web application using JavaScr
 
 We've provided a list of RESTful APIs that can be accessed publicly and have decent documentation. Try to work with an API that has data you find interesting - it'll be more fun that way! If you're not sure that an API meets requirements, talk to an instructor. 
 
-**Public APIs**
-[Zomato](https://developers.zomato.com/api)(restaurants)
-[Petfinder](https://www.petfinder.com/developers/api-docs)(animals)
-[Yummly](href="https://developer.yummly.com/) (recipes)
-[Open Brewery DB](https://www.openbrewerydb.org/) (breweries)
-[Pokemon API](https://pokeapi.co/) (Pokemon)
+### Public APIs
+* [Zomato](https://developers.zomato.com/api)(restaurants)
+* [Petfinder](https://www.petfinder.com/developers/api-docs)(animals)
+* [Yummly](href="https://developer.yummly.com/) (recipes)
+* [Open Brewery DB](https://www.openbrewerydb.org/) (breweries)
+* [Pokemon API](https://pokeapi.co/) (Pokemon)
 
-**HackerYou Community-Built APIs**
-
-[Makeup API](https://makeup-api.herokuapp.com/)
-[Drag Race API](https://drag-race-api.readme.io/docs)
-[Harry Potter API](https://potterapi.com/)
+### APIs built by people in the HackerYou community
+* [Makeup API](https://makeup-api.herokuapp.com/)
+* [Drag Race API](https://drag-race-api.readme.io/docs)
+* [Harry Potter API](https://potterapi.com/)
 
 ### Other APIs
-If you want to use another API, start here: [https://github.com/toddmotto/public-apis](https://github.com/toddmotto/public-apis) But be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
+If you want to use another API, start [here](https://github.com/toddmotto/public-apis), but be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
 
 ### Tips for getting started
 * Track down an API that is of interest of you and work through the documentation to see if the information you want is available
 * Be sure that the API **DOES NOT** require **oAuth** authentication. Requiring oAuth doesn't preclude you from using the API but it adds another layer of complexity to the project
-* Use a tool like <https://www.getpostman.com/> to help access your data.
+* Use a tool like [Postman](https://www.getpostman.com/) to help access your data.
 * Be aware that APIs often lack documentation and the creators have no obligation to make accessing the data an easy task for all. If you get stuck due to information being missing, or complexity, pivot your approach.
 * In pseudo code, write out what you want to accomplish and what steps you'll take to get there. When ready, identify which steps would best be served as methods.
 
@@ -76,7 +75,9 @@ The scope document can be found [here](https://docs.google.com/document/d/1Xz9-8
 Again, you have to get this signed off on before you start any significant work. An instructor will take your copy when they sign off on it, so please take a picture for yourself.
 
 ## How will this project be graded?
-You will be given an opportunity to provide feedback about the experience of working with your partner. **It is just as important to make a functional product as it is to work well with your partner.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. Both members of the team should have a complete understanding of the technical aspects of the project. It is **not acceptable** for one person to do the HTML and CSS and one person to do the JS.
+You will be given an opportunity to provide feedback about the experience of working with your partner. 
+
+> **It is just as important to make a functional product as it is to work well with your partner.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. Both members of the team should have a complete understanding of the technical aspects of the project. It is **not acceptable** for one person to do the HTML and CSS and one person to do the JS.
 
 **Requirements:**
 * It is clear to the user what the app does and results are displayed legibly
