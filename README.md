@@ -46,7 +46,7 @@ Welcome!
     * [Responsive design]()
     * [Cross-browser testing]()
 
-[GitHub and command line]()
+[Git and command line](https://github.com/HackerYou/bootcamp-notes/tree/master/02-git-and-command-line)
 
 [jQuery]()
 
