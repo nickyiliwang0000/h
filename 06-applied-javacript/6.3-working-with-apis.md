@@ -29,7 +29,7 @@ If you're curious, you can read up on [Wikipedia](https://en.wikipedia.org/wiki/
 When we work with APIs, we use _hypertext transfer protocol_ (HTTP) methods to tell the API what we want to do. HTTP is the predominant protocol of the internet, which means that when browsers and servers communicate, they use HTTP to do so. HTTP has a few standard methods built into it: `GET`, `POST`, `PUT`, and `DELETE`.
 
  HTTP method | what it does 
- --|--|--
+ --|--
 `GET` | requests data  
 `POST` | adds new data
 `PUT` | updates data 
