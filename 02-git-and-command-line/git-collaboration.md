@@ -7,8 +7,11 @@
   -->
 
 
-# Git collaboration: branching
+# Git collaboration 
 
+There are two main ways to collaborate on GitHub: forking and branching. We'll be branching in this course.
+
+## Branching
 When you're working with files on GitHub, you may want to keep a clean copy locally and tinker with some new feature or wild idea. Great! You're ready to make a _branch_!
 
 ## Branch workflow setup
