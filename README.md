@@ -2,14 +2,21 @@
 
 ## Topics:
 [HTML](https://github.com/HackerYou/bootcamp-notes/tree/master/01-html)
+
 [CSS](https://github.com/HackerYou/bootcamp-notes/tree/master/03-css)
+
 [JavaScript programming fundamentals]()
+
 [jQuery]()
+
 [React]()
+
 [Firebase]()
 
 [Tools]()
+
 [Projects]()
+
 [Best practices]()
 
 [How fix something in the notes]()
