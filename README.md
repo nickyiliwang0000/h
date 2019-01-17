@@ -12,15 +12,11 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 [jQuery](https://github.com/HackerYou/bootcamp-notes/#jquery)
 
-[Advanced JavaScript](https://github.com/HackerYou/bootcamp-notes/#advanced-javascript)
+[Applied JavaScript](https://github.com/HackerYou/bootcamp-notes/#applied-javascript)
 
-[React](https://github.com/HackerYou/bootcamp-notes/#react)
-
-[Firebase](https://github.com/HackerYou/bootcamp-notes/#firebase)
+[React and firebase](https://github.com/HackerYou/bootcamp-notes/#react-and-firebase)
 
 [Projects](https://github.com/HackerYou/bootcamp-notes/#projects)
-
-[Best practices](https://github.com/HackerYou/bootcamp-notes/#best-practices)
 
 ## Lesson index:
 
@@ -105,19 +101,34 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [jQuery best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/jquery/jquery-best-practices.md)
 * [To-do app code-along](https://github.com/HackerYou/bootcamp-notes/blob/master/jquery/to-do-app.md)
 
-### Advanced JavaScript
+### Applied JavaScript
 * [How to organize your JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/how-to-organize-your-javascript.md)
 * [Advanced array methods](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-array-methods.md)
 * [Regular expressions](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/regular-expressions.md)
 * [Working with APIs](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/working-with-apis.md)
 * [Accessing API data with AJAX](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/accessing-api-data-with-ajax.md)
 * [When AJAX goes wrong](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/when-ajax-goes-wrong.md)
-* []
+* [Understanding API documentation](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/understanding-api-documentation.md)
+* [Working with asynchronous events](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/working-with-asynchronous-events.md)
+* [Intro to Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/intro-to-firebase.md)
+* [Class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md)
+* [Advanced JS: lexical scope and execution context](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md)
+* [Fetching data with something other than $.ajax](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md)
+* [Advanced JS: destructuring, mutability and purity](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-destructuring-mutability-and-purity.md)
+* [Making our code more modular](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/making-our-code-more-modular.md)
 
-### React
-### Firebase
-
-### Best practices
+### React and firebase
+* [Intro to React](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/intro-to-react.md)
+* [Breaking our app into components](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/breaking-our-app-into-components.md)
+* [Events](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/events.md)
+* [Lifecycles](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/lifecycles.md)
+* [State vs. props](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/state-vs.-props.md)
+* [Reusable components](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/reusable-components.md)
+* [Using Firebase in React](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/using-firebase-in-react.md)
+* [Structuring data in Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/structuring-data-in-firebase.md)
+* [Deploying with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/deploying-with-firebase.md)
+* [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
+* [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
 
 ## Projects:
 [Project 1]()
