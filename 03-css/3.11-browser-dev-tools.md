@@ -24,7 +24,7 @@ Remember we wrote the selector to make all h1 tags red? Click the **cursor withi
 ### Playing with dev tools
 Here are a bunch of tasks to get comfortable with dev tools. When you're done, we'll go through some of the ones you had trouble with.
 
-1. Decrease the padding on the `<div class="titleText">` and add a black border
+1. Decrease the padding on the `<div class="titleText">` and add a black border.
 2. Change the `<body>` background colour to something you like better.  
   * Hint: You can click the white square to reveal the colour picker.
 3. Increase the padding of the `<div class="description">` and add 20px of margin to the top of it.
@@ -33,4 +33,26 @@ Here are a bunch of tasks to get comfortable with dev tools. When you're done, w
 5. Go to google.com and change the colour of three things.
 
 As you can see, dev tools are very helpful for figuring out which styles are being applied to which elements as well as quickly testing new styles on existing elements. We will be using dev tools throughout the entire course to please **don't hesitate to ask questions about it**!
+
+### Dev tools exercise
+This exercise will encourage you to explore the dev tools in your own way and have a bit of fun doing it!
+
+1. Go to a website of your choice. 
+2. Using the dev tools, alter some of the content, images, or styles - be creative!
+3. Take a screenshot.
+4. Post the screenshot to our Slack channel.
+5. Everybody laughs.
+
+Here is an example:
+
+![A screen shot of a news sites headline altered using the dev tools. The headline reads "Researchers discover first case of Emo dating back to 1985" and the tagline reads "World renowned know-it-all Bill Nye unearths new evidence corroborating the widely speculated theory that Will Smith is Emo."](https://hychalknotes.s3.amazonaws.com/screenShotExample.png)
+
+If you need a point in the right direction, here's a short list of websites with plenty of content to change:
+
+[New York Times](https://www.nytimes.com/)
+[Nature](https://www.nature.com/news)
+[NPR](https://www.npr.org/)
+[The White House](https://www.whitehouse.gov/)
+[NASA](https://www.nasa.gov/)
+[Reddit](https://www.reddit.com/)
 
