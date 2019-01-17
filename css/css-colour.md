@@ -121,23 +121,23 @@ Printed or dyed color is different from digital color. We perceive printed or dy
 
 ![additive color model diagram](http://www.mobiliodevelopment.com/wp-content/uploads/2012/04/RGB-colors.gif)
 * RBG color model
-	* Screens (historically computer screens) use the red-blue-green color model. 
-	* RBG is additive, which means that the starting point is black (the absence of light) and the opposite end of the spectrum is white light (i.e. the combination of red, green, and blue lights)
+  * Screens (historically computer screens) use the red-blue-green color model. 
+  * RBG is additive, which means that the starting point is black (the absence of light) and the opposite end of the spectrum is white light (i.e. the combination of red, green, and blue lights)
 
 ![HSL colour wheel](https://uwdigipub.files.wordpress.com/2014/11/hsl-color-wheel-pagespeed-ce-if6-exzipy.png)
 
 * HSL color model
-	* Screens (historically TV screens) use the hue-saturation-light model.
-	* HSL is additive, like RBG. The `hue` value is a representation of the location around the color wheel. The `saturation` value is how much color is applied (0% = grayscale). The `lightness` value is how illuminated the color is where 0 is black, 100% is white, and the average lightness value is 50%.
-	* The [appeal of HSL is](https://www.w3.org/wiki/CSS3/Color/HSL) that changing the numbers changes the color [in a way you would expect](https://css-tricks.com/examples/HSLaExplorer/). 
+  * Screens (historically TV screens) use the hue-saturation-light model.
+  * HSL is additive, like RBG. The `hue` value is a representation of the location around the color wheel. The `saturation` value is how much color is applied (0% = grayscale). The `lightness` value is how illuminated the color is where 0 is black, 100% is white, and the average lightness value is 50%.
+  * The [appeal of HSL is](https://www.w3.org/wiki/CSS3/Color/HSL) that changing the numbers changes the color [in a way you would expect](https://css-tricks.com/examples/HSLaExplorer/). 
 
 HSL was created in part as a color model that explicitly takes into account the way colors are organized and conceptualized in human vision. 
 
 ![subtractive color model diagram](http://archive.xaraxone.com/webxealot/workbook40/color_01.gif)
 
 * CMYK color model
-	* Print uses the cyan-magenta-yellow-black model (the K is for blac**k**).
-	* CMYK is subtractive, which means that the starting point is black (all the colors together) and the opposite end of the spectrum is white (i.e. color of the paper).
+  * Print uses the cyan-magenta-yellow-black model (the K is for blac**k**).
+  * CMYK is subtractive, which means that the starting point is black (all the colors together) and the opposite end of the spectrum is white (i.e. color of the paper).
 
 Most (but not all) colors from RGB can be represented using CMYK. This makes sense; you can make more and finer-grained distinctions with light than with ink.
 

@@ -10,19 +10,19 @@ To provide a background color, use the `background-color` property and pass a co
 
 ```css
 header {
-	background-color: black;
+  background-color: black;
 }
 
 section {
-	background-color: rgba(0, 255, 0, 0.7);
+  background-color: rgba(0, 255, 0, 0.7);
 }
 
 p {
-	background-color: #008B8B;
+  background-color: #008B8B;
 }
 
 h3 {
-	background-color: hsla(90, 30%, 94%, 1);
+  background-color: hsla(90, 30%, 94%, 1);
 }
 ```
 
@@ -38,13 +38,13 @@ Just like the `<img>` tag, we can use absolute or relative tags.
 
 ```css
 body {
-	background-image:url(images/dog2.jpg);
+  background-image:url(images/dog2.jpg);
 }
 ```
 
 ```css
 body {
-	background-image:url(https://www.google.com/images/srpr/logo3w.png);
+  background-image:url(https://www.google.com/images/srpr/logo3w.png);
 }
 ```
 
@@ -71,19 +71,19 @@ When repeating a background image we need to specify where it repeats from. For 
 
 ```css
 section {
-	background-position: left bottom;
+  background-position: left bottom;
 }
 ```
 
 ```css
 section {
-	background-position: center;
+  background-position: center;
 }
 ```
 
 ```css
 section {
-	background-position: 50% 10px;
+  background-position: 50% 10px;
 }
 ```
 Here is [a little demo](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-position&preval=10px%20200px) where you can play around with background position.
@@ -94,7 +94,7 @@ The `background-size` property specifies the size of the background image. It al
 
 ```css
 header {
-	background-size: 100px;
+  background-size: 100px;
 }
 ```
 You may be explicit in your sizing if you want the image to repeat but most often you'll be using one of two keywords:
@@ -105,7 +105,7 @@ To have the background image take up the entire width of the element use the pro
 
 ```css
 header {
-	background-size: cover;
+  background-size: cover;
 }
 ```
 
@@ -115,7 +115,7 @@ This keyword scales the image as large as possible while maintaining its aspect 
 
 ```css
 header {
-	background-size: contain;
+  background-size: contain;
 }
 ```
 ## Background shorthand
@@ -124,13 +124,13 @@ Writing background properties can take up a lot of space. To save a few lines of
 
 ```css
 body {
-	background: [background-color] [background-image] [background-position] [background-repeat] [background-attachment];
+  background: [background-color] [background-image] [background-position] [background-repeat] [background-attachment];
 }
 ```
 
 ```css
 body {
-	background: red url(images/dog2.jpg) top right repeat-y fixed;
+  background: red url(images/dog2.jpg) top right repeat-y fixed;
 }
 ```
 ## Background gradients
@@ -143,7 +143,7 @@ To create a linear gradient, we use the `linear-gradient()` property and pass a 
 
 ```css
 div {
-	background: linear-gradient( 45deg, blue, red );
+  background: linear-gradient( 45deg, blue, red );
 }
 ```
 
@@ -151,7 +151,7 @@ The values provided are the angle along which the gradient will progress and the
 
 ```css
 div {
-	background: linear-gradient( [angle], [colour], [colour] );
+  background: linear-gradient( [angle], [colour], [colour] );
 }
 ```
 
@@ -159,11 +159,11 @@ The angle can be provided as a keyword or a value in degrees. By default, gradie
 
 ```css
 ul {
-	background: linear-gradient( to bottom, blue, #ffffff );
+  background: linear-gradient( to bottom, blue, #ffffff );
 }
 
 h1 {
-	background: linear-gradient( to top right, blue, red );
+  background: linear-gradient( to top right, blue, red );
 }
 ```
 
@@ -171,14 +171,14 @@ The gradient can take as many colours as you'd like. These colours will be sprea
 
 ```css
 div {
-	background: linear-gradient( to right, 
-	blue, 
-	green,
-	hsla(123,23%,15%,0.5), 
-	rgb(122,22,55), 
-	rgba(12,44,156,0.6), 
-	hsl(300,12%, 88%), 
-	#bada55)
+  background: linear-gradient( to right, 
+  blue, 
+  green,
+  hsla(123,23%,15%,0.5), 
+  rgb(122,22,55), 
+  rgba(12,44,156,0.6), 
+  hsl(300,12%, 88%), 
+  #bada55)
 }
 ```
 
@@ -186,7 +186,7 @@ To control the position of each colour stop, provide a percentage value next to 
 
 ```css
 div {
-	background: linear-gradient( to right, blue 40%, red 20%, green, yellow, pink, lime 70%);
+  background: linear-gradient( to right, blue 40%, red 20%, green, yellow, pink, lime 70%);
 }
 ```
 
@@ -196,11 +196,11 @@ A radial gradient allows you to create a circular gradient as a background. Its 
 
 ```css
 aside {
-	background: radial-gradient(red, #ffaa88);
+  background: radial-gradient(red, #ffaa88);
 }
 
 header {
-	background: radial-gradient(red 10%, yellow 25%, lime 75%);
+  background: radial-gradient(red 10%, yellow 25%, lime 75%);
 }
 ```
 
@@ -210,9 +210,9 @@ To layer backgrounds on top of one another, comma separate the background values
 
 ```css
 div{
-	background: url(http://www.placekitten.com/200/200), 
-	linear-gradient(yellow 20%, red , blue);
-	background-repeat: space;
+  background: url(http://www.placekitten.com/200/200), 
+  linear-gradient(yellow 20%, red , blue);
+  background-repeat: space;
 }
 ```
 
