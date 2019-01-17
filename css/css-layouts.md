@@ -101,11 +101,10 @@ Check out [this CodePen](https://codepen.io/hackeryou/pen/qQbXez) to see the par
 
 Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
 
-### Exercise: Floating images
-Open up <a href="https://hychalknotes.s3.amazonaws.com/floating-image.html" class="exercise" download>image-float.html</a> in your text editor and the browser. If you get stuck, <a href="https://hychalknotes.s3.amazonaws.com/floating-imageANSWER.html" class="exercise" download>check out the answer here</a>.
+## Exercise: Floating images
+Open up [image-float.html](https://hychalknotes.s3.amazonaws.com/floating-image.html) in your text editor and the browser. If you get stuck, check out the answer [here](https://hychalknotes.s3.amazonaws.com/floating-imageANSWER.html).
 
 ## Using floats for layout
-
 We can use floats to help lay out our structural elements, not just our images. If we think of each row/line as 100%, we need to ensure that the sum of all the elements' dimensions in any given row are equal to or less than 100%. Anything that doesn't fit into that space gets moved to the next line.
 
 All structural elements are block elements, which means they're how wide by default?
@@ -145,7 +144,7 @@ You'll see that when you apply a `float` to an element, that element's width bec
 
 ## Floated elements' stacking order
 
-When elements are floated, their _stacking order_ will also change. Stacking order is the way elements appear on the page. When you float an element, you're essentially lifting it out of the flow of the page and letting it float above its surrounding element. The floated element will also lose its imprint and and its space won't be saved. Often, you will find the surrounding elements shuffling into the space that the floated element used to take up. <a href="https://www.youtube.com/watch?v=xara4Z1b18I" target="_blank">Here is a great video that explains how floating elements affect their stacking order</a>.
+When elements are floated, their _stacking order_ will also change. Stacking order is the way elements appear on the page. When you float an element, you're essentially lifting it out of the flow of the page and letting it float above its surrounding element. The floated element will also lose its imprint and and its space won't be saved. Often, you will find the surrounding elements shuffling into the space that the floated element used to take up. [Here is a great video](https://www.youtube.com/watch?v=xara4Z1b18I) that explains how floating elements affect their stacking order.
 
 You can kind of think of it like people in line at the cash at the grocery store: you get into line in the order you finish shopping (natural stacking order). If you leave the line to go to the self-checkout, the people who were behind you will fill your spot (float). If the self-checkout is broken, hopefully people will let you back in line in your original spot. (A floated element always takes its original position back when the float is removed. A web page is like like a very polite community of shoppers.)
 
@@ -176,7 +175,7 @@ The 25px of margin that we added affects the element's footprint, not its actual
 
 This is what is known as the _box model_. A developer (or the content) defines an element's size and the padding and border are **added** to that size. This can be confusing, especially when we're using floats with these widths.
 
-Download and open up <a href="https://hychalknotes.s3.amazonaws.com/box-model-playground.html" download>box-model-playground.html</a> in your text editor and browser. Play around with the padding, border and margin of each box and see how it can affect their total dimensions.
+Download and open up [box-model-playground.html](https://hychalknotes.s3.amazonaws.com/box-model-playground.html) in your text editor and browser. Play around with the padding, border and margin of each box and see how it can affect their total dimensions.
 
 ## Border-box
 
@@ -184,12 +183,12 @@ The box model can be navigated around quite easily. By adding the following code
 
 ```css
 html { 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
 } 
 *, *:before, *:after { 
-	box-sizing: inherit; 
+  box-sizing: inherit; 
 }
 ```
 
@@ -246,10 +245,11 @@ Great, the `section` and `aside` are next to each other, but our footer has jump
 
 Weird! How do we fix these unexpected bugs?
 
-### Float problem 1: Collapse of surrounding element
+## Float problems
+### Collapse of surrounding element
 Floats were created to allow text to wrap around an image and continue down the page. In the layout we're working with, we don't have enough content in the `aside` to continue down the page, so the wrapper sizes to the next element that isn't floated. In this case, the `footer` element.
 
-#### Solution 1: `overflow:hidden`
+#### Solution: `overflow:hidden`
 
 We don't recommend `overflow:hidden` but you may see it - it's a hack to fix the element collapse. It can be effective but it can also lead to other problems.
 
@@ -263,7 +263,7 @@ By adding the rule `overflow:hidden;` to the wrapper, we force the wrapper to co
 
 This property will cut off any text that is too large to fit in the container, which is not usually what you want.
 
-#### Solution 2: `.clearfix`
+#### Solution: `.clearfix`
 
 The industry standard method of solving this problem is mostly referred to as `clearfix`. (The class name of `clearfix` is an industry standard, but it can be named whatever you'd like.) Along with the `border-box` fix, we recommend that you include the following code at the **top** of all our `styles.css` files moving forward.
 
@@ -281,19 +281,19 @@ The industry standard method of solving this problem is mostly referred to as `c
 
 ```html
 <section>
-	<div class="wrapper clearfix">
-		<div class="half">
-			<p>The div that contains this paragraph is floated left</p>
-		</div>
-		<div class="half">
-			<p>The div that contains this paragraph is also floated left</p>
-		</div>
-	</div>
+  <div class="wrapper clearfix">
+    <div class="half">
+      <p>The div that contains this paragraph is floated left</p>
+    </div>
+    <div class="half">
+      <p>The div that contains this paragraph is also floated left</p>
+    </div>
+  </div>
 </section>
 ```
 
 
-### Float problem 2: Following elements are broken
+### Following elements are broken
 
 When using floats, we can fix the elements that pop up after our floated elements by adding the rule `clear:both;` to their styles. Using `clear:both;` on the following, sibling element will stop the floating layout and return the element you target **and** all following elements to their original layout state.
 
@@ -309,18 +309,17 @@ All browsers come with style defaults, such as making all `h1`-`h6` elements esc
 
 If you add it as a separate stylesheet, **it should be included before your custom stylesheet**.
 
+If you don't already have it as a snippet, you can download normalize.css at <http://necolas.github.com/normalize.css/>, or " [find it here](https://hychalknotes.s3.amazonaws.com/normalize-v700.css). We won't be using it in our examples, but all of your projects should include it.
 
-You can download normalize.css at <a href="http://necolas.github.com/normalize.css/" target="_blank">http://necolas.github.com/normalize.css/</a>, or <a href="https://hychalknotes.s3.amazonaws.com/normalize-v700.css" download>find it here</a>. We won't be using it in our examples, but all of your projects should include it.
+## Gallery layout exercises
+Let's create a floated layout together together to start. Open up [gridLayout.html](https://hychalknotes.s3.amazonaws.com/gridLayout.html) in your text editor and in the browser. If you get stuck, check out [gridLayoutANSWER.html](https://hychalknotes.s3.amazonaws.com/gridLayoutANSWER.html).
 
-## Gallery layouts & extra practice
+Next, let's create a more complex layout in [clearBothExercise.zip](https://hychalknotes.s3.amazonaws.com/clearBothExercise.zip).
 
-Let's create a floated layout together together to start. Open up <a href="https://hychalknotes.s3.amazonaws.com/gridLayout.html" class="exercise" download>**gridLayout.html**</a> in your text editor and in the browser. If you get stuck, check out <a href="https://hychalknotes.s3.amazonaws.com/gridLayoutANSWER.html" class="exercise" download>gridLayoutANSWER.html</a>.
-Next, let's create a more complex layout in <a href="https://hychalknotes.s3.amazonaws.com/clearBothExercise.zip" class="exercise" download>**clearBothExercise.zip**</a>.
+Open up [galleryLayoutExercise.zip](https://hychalknotes.s3.amazonaws.com/galleryLayoutExercise.zip) and let's work through an example of how to create a gallery style layout using floats. 
+> Note that this exercise contains a gotcha! (Hint: the image sizes are different!) 
 
+Try revisiting the two column layout: can you create it on your own? Download [advancedTwoColumn.zip](https://hychalknotes.s3.amazonaws.com/advancedTwoColumn.zip) and follow the instructions in the comments.
 
-### Now, You Try!
-Open up **<a href="https://hychalknotes.s3.amazonaws.com/galleryLayoutExercise.zip" download>galleryLayoutExercise.zip</a>** and let's work through an example of how to create a gallery style layout using floats. **Note** this exercise contains a gotcha! (Hint: the image sizes are different!). 
-
-If you finish the gallery exercise early, let's try revisiting the two column layout! Can you create it on your own? Download **<a href="https://hychalknotes.s3.amazonaws.com/advancedTwoColumn.zip" download>advancedTwoColumn.zip</a>** and follow the instructions in the comments.
-
-For extra practice, work on <a href="https://hychalknotes.s3.amazonaws.com/structuralElements.html" class="exercise" download>**structuralElements.html**</a> and follow the instructions in the comments! If you get stuck <a href="https://hychalknotes.s3.amazonaws.com/structuralElementsAnswer.html" class="exercise" download>check out the answer here</a>.
+## More exercises
+For extra practice, work on [structuralElements.html](https://hychalknotes.s3.amazonaws.com/structuralElements.html) and follow the instructions in the comments! If you get stuck [check out the answer here](https://hychalknotes.s3.amazonaws.com/structuralElementsAnswer.html).
