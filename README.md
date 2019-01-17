@@ -39,9 +39,6 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Marking up content with HTML elements](https://github.com/HackerYou/bootcamp-notes/blob/master/html/marking-up-content-with-html-elements.md)
 * [Video and audio](https://github.com/HackerYou/bootcamp-notes/blob/master/html/video-and-audio.md)
 * [Snippets](https://github.com/HackerYou/bootcamp-notes/blob/master/html/meet-your-text-editor.md#snippets)
-<!--  -->
-<!-- HERE HERE HERE HERE -->
-<!--  -->
 
 ### CSS
 * [Intro to CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/css/intro-to-css.md)
@@ -52,6 +49,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Background color and images](https://github.com/HackerYou/bootcamp-notes/blob/master/css/background-color-and-images.md)
 * [Web typography](https://github.com/HackerYou/bootcamp-notes/blob/master/css/web-typography.md)
 * [Using webfonts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/using-webfonts.md)
+* [CSS pseudosselectors](hhttps://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
 * [CSS dimensions](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-dimensions.md)
 * [CSS layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-layouts.md)
 * [Display and positioning](https://github.com/HackerYou/bootcamp-notes/blob/master/css/display-and-positioning.md)
@@ -72,10 +70,6 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Grid systems](https://github.com/HackerYou/bootcamp-notes/blob/master/css/grid-systems.md)
 * [CSS grids](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-grids.md)
 * [FTP and domains](https://github.com/HackerYou/bootcamp-notes/blob/master/css/ftp-and-domains.md)
-<!--  -->
-<!-- HERE HERE HERE HERE -->
-<!--  -->
-* [Pseudo selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
 
 ### Git and command line
 * [Intro to command line](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/intro-to-command-line.md)
@@ -131,16 +125,16 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
 
 ## Projects:
-[Project 1]()
+[Project 1](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
 
-[Project 2]()
+[Project 2](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-02.md)
 
-[Project 3]()
+[Project 3](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-03.md)
 
-[Project 4]()
+[Project 4](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-04.md)
 
-[Project 5]()
+[Project 5](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-05.md)
 
-[Project 6]()
+[Project 6](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-06.md)
 
-[Project 7]()
+[Project 7](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-07.md)
