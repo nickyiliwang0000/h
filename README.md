@@ -1,25 +1,24 @@
 # Welcome to the new and improved Bootcamp notes!
+Here are your notes, bootcamp studes! We're so glad you're here! If you notice a typo or have an issue with anything in the text, please [create a pull request](https://github.com/HackerYou/bootcamp-notes/blob/master/how-to-edit-bootcamp-notes.md)!
 
 ## Topics:
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 
 [CSS](https://github.com/HackerYou/bootcamp-notes/#css)
 
-[JavaScript programming fundamentals]()
+[JavaScript programming fundamentals](https://github.com/HackerYou/bootcamp-notes/#javascript)
 
-[jQuery]()
+[jQuery](https://github.com/HackerYou/bootcamp-notes/#jquery)
 
-[React]()
+[React](https://github.com/HackerYou/bootcamp-notes/#react)
 
-[Firebase]()
+[Firebase](https://github.com/HackerYou/bootcamp-notes/#firebase)
 
-[Tools]()
+[Tools](https://github.com/HackerYou/bootcamp-notes/#tools)
 
-[Projects]()
+[Projects](https://github.com/HackerYou/bootcamp-notes/#projects)
 
-[Best practices]()
-
-[How fix something in the notes]()
+[Best practices](https://github.com/HackerYou/bootcamp-notes/#best-practices)
 
 ## Lesson index:
 
@@ -36,18 +35,18 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 
 
 ### HTML
-* [Intro to the internet](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.1-intro-to-the-internet.md)
-* [Keeping organized as a developer](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.2-keeping-organized-as-a-developer.md)  
-* [Meet your text editor](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.3-meet-your-text-editor.md)
-* [Marking up content with HTML elements](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.4-marking-up-content-with-html-elements.md)
-* [Video and audio](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.5-video-and-audio.md)
-* [Navigations]()
-* [Forms]()
+* [Intro to the internet](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/intro-to-the-internet.md)
+* [Keeping organized as a developer](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/keeping-organized-as-a-developer.md)  
+* [Meet your text editor](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/meet-your-text-editor.md)
+* [Marking up content with HTML elements](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/marking-up-content-with-html-elements.md)
+* [Video and audio](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/video-and-audio.md)
+* [Navigations](https://github.com/HackerYou/bootcamp-notes/blob/master/css/navigations.md)
+* [Forms](https://github.com/HackerYou/bootcamp-notes/blob/master/css/forms.md)
 
 ### CSS
-* [Intro to CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/03-css/3.1-intro-to-css.md)
-* [Selectors]()
-* [Pseudo selectors]()
+* [Intro to CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/03-css/intro-to-css.md)
+* [Selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-css-selectors.md)
+* [Pseudo selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
 * [Advanced selectors]()
 * [Pseudo-elements]()
 * [Color]()
@@ -66,6 +65,9 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Grids]()
 * [Flexbox]()
 
+###JavaScript
+### React
+### Firebase
 ### Tools
   * [Emmet]()
   * [Snippets]()
