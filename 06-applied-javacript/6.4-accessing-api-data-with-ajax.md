@@ -24,14 +24,32 @@ AJAX is used all over the web to help provide continuous user experiences. Twitt
 ## `$.ajax` with jQuery
 There are many ways to perform AJAX requests but they do have some cross-browser quirks, so we'll work with jQuery's `$.ajax()` method to handle our requests. 
 
-[Looking at the documentation](https://api.jquery.com/jQuery.ajax/), the `$.ajax()` method requires us to specify the URL we're requesting from and to provide an optional settings object. The documentation also states that you can pass the URL as **part of** the settings object, but we'll do them separately for clarity.
+[Looking at the documentation](https://api.jquery.com/jQuery.ajax/), the `$.ajax()` method lets us specify the URL we're requesting from and a settings object in two different ways:
+```js
+$.ajax('https://www.urlWeAreRequestingFrom.com', {
+    this:'is',
+    the:'settings',
+    object:'🎉'
+})
+// is the same as
+$.ajax({
+    urlWeAreRequestingFrom:'https://www.urlWeAreRequestingFrom.com', 
+    more:'settings',
+    other:'settings',
+    someOther:'settings 🎉'
+})
+```
+We're going to do it the second way so that all the information is in one place, but you'll see both in the wild.
 
-The `$.ajax` gets the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/10ee6cbd78aaad16a0b1718eda9fa27ad6dd90cb/06-applied-javacript/6.4-accessing-api-data-with-ajax.md#debugging-other-ajax-request-errors)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()` : this tells the browser what to do with the information from the AJAX request when it is returned. 
+If the `$.ajax()` method is successful, it returns the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/10ee6cbd78aaad16a0b1718eda9fa27ad6dd90cb/06-applied-javacript/6.4-accessing-api-data-with-ajax.md#debugging-other-ajax-request-errors)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()`. 
+
+> `.then()` is a special JavaScript method; we'll learn more about it the deeper we get into AJAXland.
 
 Let's try this with the TTC API:
 
 ```js
-$.ajax('https://myttc.ca/finch_station.json',{
+$.ajax({
+  url:'https://myttc.ca/finch_station.json',
   method: 'GET',
   dataType: 'json'
 }).then(function() {
@@ -61,6 +79,7 @@ One way of getting around the same-origin policy without messing directly with t
 When we request JSONP in our `$.ajax()` method, jQuery injects a script tag into our website temporarily. The script's `src` attribute points to a bit of JavaScript on the server from which we requested data. The server then wraps the JSON data in a JavaScript function (the aforementioned padding). This function becomes available to us, gets executed, and we get our data. Then, the script tag is removed from our website.
 
 This technique doesn't break the same-origin policy because you are requesting **JavaScript** from another server, not JSON data. Requesting JavaScript from another domain is an integral part of the modern web and we do it all the time (e.g. loading jQuery from Google's CDN). In the extended anthrax metaphor from above, think of requesting JavaScript as a government official ordering a coffee - it **could** have anthrax in it, but it's so much less likely than a letter mailed to them with covered in creepy handwriting.
+
 #### If you API doesn't have a JSONP wrapper set up
 
 You can try one of the follow techniques: 
@@ -74,7 +93,7 @@ Sometimes you can't get data from an API even when you request JSONP:
 browser
 {\__/}
 ( • . •)
-/ > ✉️  can i have the data?
+/ > ✉️  server, can i have the data?
 
 server
 {\__/}
@@ -88,7 +107,7 @@ In that case, you can try using a _proxy server_:
 browser
 {\__/}
 ( • . •)
-/ > ✉️ can i have the data?
+/ > ✉️  proxy server, can i have the data?
 
 proxy
 {\__/}
@@ -97,8 +116,13 @@ proxy
 
 proxy
 {\__/}
+( • . •)
+/> 💾️ <\ thank u, browser. brb
+
+proxy
+{\__/}
 ( 0 - 0)
-/ >  ✉️ can i have the data?
+/ >  ✉️  hey server, can i have the data?
 
 server
 {\__/}
@@ -112,12 +136,12 @@ A proxy server is a go-between that can speak both to the browser that's request
 proxy
 {\__/}
 ( • - •)
-/ > 💾 here u go pal
+/ > 💾 here u go browser pal
 
 browser
 {\__/}
 ( u . u)
-/> 💾 <\ thank u
+/> 💾 <\ thank u, proxy
 ```
 
 Browser-to-server communication is sometimes blocked via CORS but server-to-server communication is more open. We have a proxy server with great documentation right [here](https://github.com/hackeryou/json-proxy) for situations like that!
@@ -126,7 +150,8 @@ Browser-to-server communication is sometimes blocked via CORS but server-to-serv
 Let's change the `dataType` in the AJAX request in `my-first-ajax-request.html` from `json` to `jsonp`.
 
 ```js
-$.ajax('http://myttc.ca/finch_station.json',{
+$.ajax({
+  url:'http://myttc.ca/finch_station.json',
   method: 'GET',
   dataType: 'jsonp'
 }).then(function() {
@@ -150,13 +175,15 @@ We will only be using the required parameter right now.
 
 [The docs](https://api.jquery.com/deferred.then/) say that this first parameter is expected to be a function, so let's add one:
 ```js
-$.ajax('http://myttc.ca/finch_station.json', {
+$.ajax({
+  url:'http://myttc.ca/finch_station.json',
   method: 'GET',
   dataType: 'jsonp'
 }).then(function() { });
 
 // this is the same as:
-// $.ajax('http://myttc.ca/finch_station.json', {
+// $.ajax({
+//   url:'http://myttc.ca/finch_station.json', 
 //   method: 'GET',
 //   dataType: 'jsonp'
 // }).then(resultsFunction());
@@ -169,7 +196,8 @@ $.ajax('http://myttc.ca/finch_station.json', {
 This is the function that will run when the request is successful. We can expect to have some JSON data from the API if the request is successful, so we'll pass that data as an argument called `result`:
 
 ```js
-$.ajax('http://myttc.ca/finch_station.json', {
+$.ajax({
+  url:'http://myttc.ca/finch_station.json',
   method: 'GET',
   dataType: 'jsonp'
 }).then(function(result) { });
@@ -185,7 +213,8 @@ $('h1').on('click', function(){
 
 Let's make our callback function do something! Let's log the data we got back from the API:
 ```js
-$.ajax('http://myttc.ca/finch_station.json', {
+$.ajax({
+  url:'http://myttc.ca/finch_station.json',
   method: 'GET',
   dataType: 'jsonp'
 }).then(function(result) {
