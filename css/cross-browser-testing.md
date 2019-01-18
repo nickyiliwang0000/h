@@ -1,5 +1,4 @@
-## Cross Browser Testing
-
+# Cross-browser testing
 Testing your code across multiple browsers can be a pain, but it's crucial to do if you want to maintain a good experience for all users.
 
 There are five main browsers:
@@ -9,7 +8,6 @@ There are five main browsers:
 1. Safari
 1. Internet Explorer/Edge
 1. Opera
-
 
 Chrome has a rapid release schedule and it automatically updates, so you usually only have to support the latest version.
 

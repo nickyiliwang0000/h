@@ -1,3 +1,11 @@
+<!-- Student takeaway -->
+<!-- By the end of this lesson, the student should know:
+- What syntax highlighting is
+- That there are many code editors
+- How to edit the user settings in VSCode
+- How to add a snippet to VSCode
+-->
+
 # Text editors
 One of a developer's most important tools is a text editor. The text editor is where a developer does the vast majority of their problem-solving and coding. Using the right text editor with a great setup can make your productivity skyrocket.
 
@@ -27,29 +35,29 @@ For this bootcamp, we are going to be using [Visual Studio Code](https://code.vi
 Some other popular text editors currently available are:
 
 * Sublime Text 
-	* [http://www.sublimetext.com/3](http://www.sublimetext.com/3)
-	* Paid (with unlimited free trial) with extensive customization options. 
-	* Widely used (you might be using Sublime if you are coming to us from part time!)
+  * [http://www.sublimetext.com/3](http://www.sublimetext.com/3)
+  * Paid (with unlimited free trial) with extensive customization options. 
+  * Widely used (you might be using Sublime if you are coming to us from part time!)
 
 * Atom
-	* [https://atom.io/](https://atom.io/)
-	* A free, open source text editor from GitHub. 
-	* Easily customizable and shares many of the same plugins, features and themes as Sublime.
+  * [https://atom.io/](https://atom.io/)
+  * A free, open source text editor from GitHub. 
+  * Easily customizable and shares many of the same plugins, features and themes as Sublime.
 
 * Brackets
-	* [http://brackets.io/](http://brackets.io/)
-	* A free, open source text editor from Adobe. 
-	* Easily integrated with other Adobe products (e.g. Photoshop).
+  * [http://brackets.io/](http://brackets.io/)
+  * A free, open source text editor from Adobe. 
+  * Easily integrated with other Adobe products (e.g. Photoshop).
 
 * WebStorm 
-	* [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)  
-	* Paid, with free trial
-	* Integrated Development Environment (IDE) specifically for JavaScript 
+  * [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)  
+  * Paid, with free trial
+  * Integrated Development Environment (IDE) specifically for JavaScript 
 
 * PhpStorm 
-	* [https://www.jetbrains.com/phpstorm/](https://www.jetbrains.com/phpstorm/)
-	* Paid, with free trial
-	* Integrated Development Environment (IDE) specifically for PHP 
+  * [https://www.jetbrains.com/phpstorm/](https://www.jetbrains.com/phpstorm/)
+  * Paid, with free trial
+  * Integrated Development Environment (IDE) specifically for PHP 
 
 ## Working with Visual Studio Code 
 If you haven't already, head on over to [VSCode's website](https://code.visualstudio.com) to download and install the latest stable build of VSCode.
@@ -96,7 +104,7 @@ Some staff favourites are `Oceanic Next`, `Material Theme`, `Material Dark`, and
 
 It's worthwhile to spend a bit of time customizing your text editor since you will be spending so much time with it. You can override defaults in your user settings file which can be found at 'Code' > 'Preferences' > 'Settings' or via the shortcut `cmd + ,` (Mac) or `ctrl + ,` (Windows). You can play around with the visual interface provided or, if you click on the three dots in the corner and go to `Open in settings.json`, you can customize the settings in JSON.
 
-The _JavaScript Object Notation_ (JSON) format is a data format that, despite its name, is language-independent. (Though we will be seeing it again when we get into JavaScript.) JSON's syntax uses key-value pairs that are separated by commas, with a colon between they key (name) and the value, like this: 
+The _JavaScript Object Notation_ (JSON) format is a data format that, despite its name, is language-independent. (Though we will be seeing it again when we get into JavaScript.) JSON's syntax uses key-value pairs that are separated by commas, with a colon between they key and the value, like this: 
 
 ```json
 {
@@ -109,12 +117,12 @@ Right now, your settings file might be empty or only contain the rules that defi
 
 ```json
 {
-    "editor.minimap.enabled": false,
-    "editor.wordWrap": "on",
-    "editor.formatOnPaste": true,
-    "emmet.includeLanguages": {
-        "javascript" : "javascriptreact"
-    }
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "emmet.includeLanguages": {
+      "javascript" : "javascriptreact"
+  }
 }
 ```
 
@@ -149,9 +157,9 @@ Let's start by adding a snippet to our `html.json` file. Inside the parent curly
 ```json
 //html.json
 "jQuery CDN": {
-	"prefix": "jquery",
-	"body": "<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>",
-	"description": "jquery 3.x"
+  "prefix": "jquery",
+  "body": "<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>",
+  "description": "jquery 3.x"
 }
 ```
 If you get an error check the bottom left of the editor window: there are icons for errors and alerts that will help you figure out what went wrong. (Probably an errant curly brace!)
@@ -163,9 +171,9 @@ To add another snippet, add another object below the `jQuery CDN` one. After the
 ```json
 //html.json
 "Viewport": {
-	"prefix": "responsive",
-	"body": "<meta name='viewport' content='width=device-width, initial-scale=1'>",
-	"description": "viewport meta tag"
+  "prefix": "responsive",
+  "body": "<meta name='viewport' content='width=device-width, initial-scale=1'>",
+  "description": "viewport meta tag"
 }
 ```
 Now create a new HTML document, type `jquery` + `tab`, and see that you get the **whole** jQuery snippet!
@@ -175,14 +183,14 @@ Notice how each of the above snippets is wrapped in double quotes? This is perfe
 
 ```json
 "Multi-line Snippet" : {
-	"prefix": "hi",
-	"body" : [
-		"<div>",
-		"\t<h2>$1</h2>",
-		"\t<p>$2</p>",
-		"</div>"
-	],
-	"description": "Div with an h2 inside of it"
+  "prefix": "hi",
+  "body" : [
+    "<div>",
+    "\t<h2>$1</h2>",
+    "\t<p>$2</p>",
+    "</div>"
+  ],
+  "description": "Div with an h2 inside of it"
 }
 ```
 Each line in a multi-line snippet is wrapped in quotes and comma separated. If you want to include tabs, you can do so by inserting `\t`. Notice the `$1` & `$2`?  You can insert placeholders into your snippets by using this syntax which will move your cursor to a specific area where you might want to input some text.  Once you press tab, it will jump to the next one!
@@ -202,43 +210,43 @@ Inside of this `css.json` file, paste the following code:
 
 ```json
 {
-	"Border-box": {
-		"prefix": "bor-box",
-		"body": "* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }",
-		"description": "Box Sizing Snippet"
-	},
+  "Border-box": {
+    "prefix": "bor-box",
+    "body": "* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }",
+    "description": "Box Sizing Snippet"
+  },
 
-	"Normalize": {
-		"prefix": "normalize", 
-		"body": [
-			"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\\201C \\201D \\2018 \\2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}"
-		],
-		"description": "CSS Reset Snippet"
-	},
+  "Normalize": {
+    "prefix": "normalize", 
+    "body": [
+      "article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\\201C \\201D \\2018 \\2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}"
+    ],
+    "description": "CSS Reset Snippet"
+  },
 
-	"Clearfix": {
-		"prefix": "clearfix",
-		"body": " .clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; } ",
-		"description":"Clearfix Snippet" 
-	},
-	
-	"Setup": {
-	"prefix": "setup",
-	"body": [
-		"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\\201C \\201D \\2018 \\2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}",
-		"",
-		".clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }",
-		"",
-		"* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }"
-	],
-	"description": "Normalize, Border-Box, Clearfix"
-	},
+  "Clearfix": {
+    "prefix": "clearfix",
+    "body": " .clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; } ",
+    "description":"Clearfix Snippet" 
+  },
+  
+  "Setup": {
+  "prefix": "setup",
+  "body": [
+    "article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\\201C \\201D \\2018 \\2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}",
+    "",
+    ".clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }",
+    "",
+    "* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }"
+  ],
+  "description": "Normalize, Border-Box, Clearfix"
+  },
 
-	"VisuallyHidden": {
-		"prefix": "vhidden",
-		"body": ".visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}",
-		"description": "Visually Hidden Snippet"
-	}
+  "VisuallyHidden": {
+    "prefix": "vhidden",
+    "body": ".visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}",
+    "description": "Visually Hidden Snippet"
+  }
 }
 ```
 Repeat the above steps for `scss.json`.
@@ -263,7 +271,7 @@ Some instructor favorite setups include:
 * 'View' > 'Editor Layout' > 'Two Columns' will give you to panes in which to open files - perhaps the HTML and CSS for the same project, instead of putting them in tabs?
 * Open the command palette (`cmd + shift + p` on Mac or `ctrl + shift + p` on PC), type `shell command` and select 'Install code command in PATH' ![shell command screenshot](https://code.visualstudio.com/assets/docs/setup/mac/shell-command.png)
 
-	Now you'll be able to type `code .` in a file in the command line and have it open in VSCode!
+  Now you'll be able to type `code .` in a file in the command line and have it open in VSCode!
 
 We'll be learning more about this text editor as the course goes on and features become useful to us. If you're keen to take an even deeper dive, you can check out these [intro videos](https://code.visualstudio.com/docs/getstarted/introvideos)! 
 

@@ -8,7 +8,7 @@ Developers can control the style of HTML elements using _rules_. Here is a rule 
 
 ```css
  h3 {
-	 color: red;
+   color: red;
  }
  ```
 The _selector_ chooses the elements to which the styles will apply. In the example above, `h3` is the selector. There are lots of ways to make selectors more complex, and we'll explore those later. For now, just know that a selector targets the element to which the styles will apply.
@@ -21,27 +21,27 @@ We can include as many properties and values as we want for any selector, just r
 
 ```css
 h3 {
-	font-size: 16px;
-	background-color: yellow;
-	color: red;
-	/*etc...*/
+  font-size: 16px;
+  background-color: yellow;
+  color: red;
+  /*etc...*/
 }
 ```
 
 ### Colors in CSS
 In the coming classes, we take a look at all the different ways to choose a color as a value, but we'll look at two right away:
 
-* **color keyword**: You can use the name of the colour - for most basic colours (red, green, blue, pink...) as well as a few exotic ones like `papayawhip` and `palegoldenrod`. To see other available colour names, visit <a href="http://colours.neilorangepeel.com/" target="_blank">http://colours.neilorangepeel.com/</a>.
+* **color keyword**: You can use the name of the colour - for most basic colours (red, green, blue, pink...) as well as a few exotic ones like `papayawhip` and `palegoldenrod`.
 ```css
 h3 { 
-	color: palegoldenrod;
+  color: palegoldenrod;
 }
 ```
 * **hex value**: You can use a hexadecimal code, which is written with a number sign `#` and a 6-digit alphanumeric code. 
 
 ```css
 h3 { 
-	color: #992283;
+  color: #992283;
 }
 ```
 
@@ -50,52 +50,52 @@ There are three ways to include CSS in your HTML document.
 
 * **External stylesheet** : This is by far the most common method of including CSS. You create a new file in your project folder and name it whatever you want followed with a file extension of `.css`. It's common for this document to be named `style.css`, `global.css`, or `main.css`. We then write all of our CSS inside of this file and use a `<link rel="stylesheet" href="">` tag in our HTML page's `<head>`.
 
-	```html
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-		<link rel="stylesheet" href="styles/main.css">
-	</head>
-	<body>
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
 
-	</body>
-	</html>
-	```
+  </body>
+  </html>
+  ```
 
 This linking method is most common because most sites have multiple pages that need the same styles. Linking a single stylesheet means that style changes made in a single file will be reflected on the entire site.
 
 * **Internal stylesheet**: Inside your HTML file, you can create a `<style></style>` tag and write your CSS inside.
 
-	```html
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-		<link rel="stylesheet" href="styles/main.css">
-		<style type="text/css">
-			h2 {
-				color:red;
-				font-size:50px;
-			}
-		</style>
-	</head>
-	<body>
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style type="text/css">
+      h2 {
+        color:red;
+        font-size:50px;
+      }
+    </style>
+  </head>
+  <body>
 
-	</body>
-	</html>
-	```
+  </body>
+  </html>
+  ```
 The `<style>` tag tells the browser that you are no longer writing HTML and everything inside of the tags is CSS. Though it will work when placed anywhere on the page, it's convention to include it in the `<head>` element of your document.
 
 This is the method we have been using so far because it allows us to write our CSS and HTML in the same file. 
 
 * **Inline styles**: You can style elements directly in the HTML using the `style` attribute. 
 
-	```html
-	<h2 style="color:red; font-size:50px;">Hello, I'm a header with inline styles</h2>
-	```
+  ```html
+  <h2 style="color:red; font-size:50px;">Hello, I'm a header with inline styles</h2>
+  ```
 
 The downside to this is that those styles only apply to that specific instance of that element. Not very efficient! Also, these styles supersede the styles from your CSS file, which can cause conflic and confusion.
 

@@ -56,7 +56,7 @@ When you are nesting tags within each other, you must **always** close them in t
   </div>
 </strong>
 ```
-In this example, the `</div>` and `</strong>` tags are closed in the wrong order. Because the `<div>` was the **first** element to be opened, it needs to be the **last** element closed.
+In this example, the `</p>`, `</div>` and `</strong>` tags are closed in the wrong order. Because the `<div>` was the **first** element to be opened, it needs to be the **last** element closed.
 
 **👍 Correct:**
 ```html
@@ -145,7 +145,7 @@ The paragraph tag is one of the most frequently used tags on the internet becaus
 I'm interested in design, development, and business. I've been very fortunate to be able to do all three as a career.
 
 From a technical standpoint, I spend most of my time working with JavaScript, CSS3, HTML5, and React.js. For over 5 years, my title has been (junior, intermediate, and now senior) front-end developer. During the past year I have been working with NodeJS and SVG animations. New and open source web technologies make me super excited and I can't wait to see what's new for the web in the next few years.
-w
+
 I learn from the community and love to share what I have learned.
 ```
 
@@ -401,7 +401,7 @@ Table tags used to be how everyone laid out their web pages.
     <td>Demo Night!</td>
     <td>HackerYou Main Classroom</td>
   </tr>
-    <tr>
+  <tr>
     <td>19 March</td>
     <td>Industry Day</td>
     <td>HackerYou Main Space</td>
@@ -409,7 +409,6 @@ Table tags used to be how everyone laid out their web pages.
 </table>
 ```
 
-`figure`: Specifies an image, code chunk, illustration, or a diagram. Sometimes it may have `img`, `code` or `video` and `figcaption` elements nested inside of it. Figures are also self containing. Ideally, figures can be moved to a different part of the page without affecting the flow of content.
 
 ### Attributes
 So far we've explored how we use elements to define our content and structure. Before we move into understanding how to add more content and action to our websites, we need to talk about using attributes to provide information about our elements to the browser.
@@ -648,7 +647,6 @@ That's a lot of semantic elements to remember! 😳
 It's okay, we don't expect anyone to memorize all of it by the end of this lesson. You can always refer back here. These resources may be handy as well:  
 * <a href="https://www.w3.org/TR/html52/" target="_blank">World Wide Web Consortium</a>
 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla Developer Network</a>
-
 
 ### Exercise
 Let's	download and open up [fixThisMarkup.zip](https://hychalknotes.s3.amazonaws.com/fix-this-markup-bootcamp.zip) to practice semantic HTML markup and best practices for HTML.
