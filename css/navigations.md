@@ -21,9 +21,9 @@ ul li {
 }
 ```
 
-Note how the bullets disappear by default. We have a problem though because `inline` elements (including `inline-block`) is whitespace dependent, we now have some extra layout issues to deal with.
+Note how the bullets disappear by default. We have a problem though - because `inline` elements (including `inline-block`) are whitespace-dependent, we now have some extra layout issues to deal with.
 
-However, we don't want our markup to affect our styles though, so instead of `display: inline-block;` we can float the list items left and set the list-style-type to none to remove the bullets.
+However, we don't want our markup to affect our styles, so instead of `display: inline-block;` we can float the list items left and set the list-style-type to none to remove the bullets.
 
 ```css
 ul li {
