@@ -84,7 +84,7 @@ Download and open this file [this file](https://hychalknotes.s3.amazonaws.com/fo
 
 Note that you'll be putting the Font Awesome script in the **head** of your document.
 
-### Accessibility and icons
+## Accessibility and icons
 Screen readers and other assistive technologies are able to read icons. Using the `aria-hidden` attribute we can define which icons should be read out and which ones should be ignored. If `aria-hidden` is set to true, screen readers will know to skip the element. If an icon is used for decorative purposes, we most likely do not want it to be read out by screen readers, so we will want to add `aria-hidden="true"` to our `i` element.
 
 ```html
@@ -103,7 +103,8 @@ Sometimes we want our icons to be read out by screen readers. If your icons have
 <span class="sr-only">Time by bike:</span>
 <p>1 minute</p>
 ```
-Which will render out:
+Which will render out:  
+
 <img src="https://hychalknotes.s3.amazonaws.com/example-font-awesome.png" alt="Example of semantic icons" width="400px">  
 
 The walking icon and bike icon have semantic meaning. By creating the `span`, we can ensure that the icons are still accessible to users who do not benefit from the icons visually.  
