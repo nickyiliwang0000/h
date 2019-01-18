@@ -178,6 +178,6 @@ It can also take multiple comma-separated values so you can add as many shadows 
 
 ### `letter-spacing`
 
-`letter-spacing` (this is gonna blow your mind) allows you to control the amount of space in between letters.
+`letter-spacing` (this is gonna blow your mind) allows you to control the amount of space between letters.
 
 Headers look great with a bit less spacing. Uppercase words look great with a little **extra** letter spacing. Mess around with [this CodePen](https://codepen.io/zkdan/pen/WYOwVq)!
