@@ -8,7 +8,7 @@
 
 # Advanced array methods
 
-The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. Although it sounds fancy and maybe a little scary, think of functional programming as a way to use functions to transform data.
+The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. Think of functional programming as a way to use functions to transform data.
 
 ## Working with data
 
