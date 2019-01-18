@@ -19,7 +19,7 @@ body {
 }
 ```
 
-Or, a font family:
+Or, a font-family:
 
 ```css
 body {
@@ -35,7 +35,7 @@ The standard font families are:
 * fantasy (e.g. Western)
 * monospace (e.g. Courier)
 
-If you specify the name of the font (and the user's browser/computer has that font installed), your element will be rendered in the named font. If you specify a font family, the browser/computer will choose the best match from the installed fonts (e.g. `sans-serif` renders Arial on a Windows computer and Helvetica on a Mac).
+If you specify the name of the font (and the user's browser/computer has that font installed), your element will be rendered in the named font. If you specify a `font-family`, the browser/computer will choose the best match from the installed fonts (e.g. `sans-serif` renders Arial on a Windows computer and Helvetica on a Mac).
 
 ### Font stacks
 
@@ -65,7 +65,7 @@ An excellent resource for building fail-proof font stacks is [http://cssfontstac
 
 The `font-size` property is pretty self-explanatory. It takes pixels, percentages, `em`, and `rem` values.
 
-Check out `3.5 CSS measurement units` for info on how to size fonts with `em`, `rem` and percentages.
+Check out `CSS measurement units` for info on how to size fonts with `em`, `rem` and percentages.
 
 The font size you set on the `body` is inherited by all the `<p>` tags on the page. The default font size on most browsers is 16px. Some websites, like the micro-blogging platform [Medium](https://medium.com/@martin.breuss/finding-a-useful-dictionary-api-52084a01503d), have a default font size of 21px. Digital magazine [The Outline](https://theoutline.com/post/6447/ethics-in-news-consumption?zd=1&zi=6alzzi65) defaults to 18px.
 
