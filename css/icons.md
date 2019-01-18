@@ -92,7 +92,7 @@ Screen readers and other assistive technologies are able to read icons. Using th
 <i class="fas fa-star" aria-hidden=“true”></i>
 ```
 
-Sometimes we want our icons to be read out by screen readers. If your icons have semantic meaning, Font Awesome recommends that we add a few more things to make things more accessible. We need to add `aria-hidden="true"` to the icon to hide it from screen readers, and supplement it with a `span`.  What you put between the span tags will get read out by screen readers. Then we add a class of `sr-only` to the span. Font Awesome deals the with the styling for `sr-only` and will *visually* hide the span from users. Still with us? No? Let's check out an example:
+Sometimes we want our icons to be read out by screen readers. If your icons have semantic meaning, Font Awesome recommends that we add a few more things to make things more accessible. We need to add `aria-hidden="true"` to the icon to hide it from screen readers, and supplement it with a `span`.  What you put between the span tags will get read out by screen readers. Then we add a class of `sr-only` to the `span`. Font Awesome deals the with the styling for `sr-only` and will *visually* hide the span from users. Still with us? No? Let's check out an example:
 
 ```html
 <h2>From HackerYou to Loblaws:</h2>
@@ -104,10 +104,9 @@ Sometimes we want our icons to be read out by screen readers. If your icons have
 <p>1 minute</p>
 ```
 Which will render out:
-<div>
 <img src="https://hychalknotes.s3.amazonaws.com/example-font-awesome.png" alt="Example of semantic icons" width="400px">  
-</div>
-The walking icon and bike icon have semantic meaning. By creating the `span`, we can ensure that the icons are still accessible to users who do not benefit from the icons visually .  
+
+The walking icon and bike icon have semantic meaning. By creating the `span`, we can ensure that the icons are still accessible to users who do not benefit from the icons visually.  
 
 Another way to make your icons accessible is using the `aria-label` attribute. This is great for interactive elements. For example, lots of sites use icons to link users to their social media. Be sure to make these icons accessible, as you want people to know they serve a purpose and are clickable:
 
