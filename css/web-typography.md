@@ -164,9 +164,9 @@ a {
 
 ### `text-shadow`
 
-This property allows us to apply shadows to our text. With the right colours and techniques, it can [look](https://codepen.io/juanbrujo/pen/yGpAK) [really great](https://codepen.io/hugo/pen/nwivF)! A little text shadow can also [make your text more legible](https://twitter.com/steveschoger/status/880449411150753792).
+This property allows us to apply shadows to our text. With the right colours and techniques, it can [look](https://codepen.io/juanbrujo/pen/yGpAK) [really great](https://codepen.io/hugo/pen/nwivF)! A little text-shadow can also [make your text more legible](https://twitter.com/steveschoger/status/880449411150753792).
 
-Text shadow takes four values: horizontal offset, vertical offset, blur, and colour.
+`text-shadow` takes four values: horizontal offset, vertical offset, blur, and colour.
 
 ```css
 h4 {
