@@ -395,6 +395,8 @@ We just want that `DataObject`, so let's make one last change to the code above 
 
 Now we just have an array of the data we want! 😚👌 
 
+> `$.when()` and `.then()` are great tools, but make sure you're using them correctly! Don't use them in place of a regular callback function.
+
 ## Syntactic sugar: `async` and `await`
 
 New to ES2017 are the keywords `async` and `await`. These keywords allow us to work with any promise synchronously.
