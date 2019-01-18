@@ -11,7 +11,7 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 ### Public APIs
 * [Zomato](https://developers.zomato.com/api)(restaurants)
 * [Petfinder](https://www.petfinder.com/developers/api-docs)(animals)
-* [Yummly](href="https://developer.yummly.com/) (recipes)
+* [Yummly](https://developer.yummly.com/)(recipes)
 * [Open Brewery DB](https://www.openbrewerydb.org/) (breweries)
 * [Pokemon API](https://pokeapi.co/) (Pokemon)
 
