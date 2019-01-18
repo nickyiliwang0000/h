@@ -13,7 +13,7 @@ ul {
 
 Now we need them to be displayed beside each other, instead of breaking onto the next line. How would we do that?
 
-Remember `display:inline-block;` ? By using this on the list items, they will jump up beside each other.
+Remember `display: inline-block;` ? By using this on the list items, they will jump up beside each other.
 
 ```css
 ul li {
@@ -67,7 +67,7 @@ Allowing users the ability to get to the main content for your site is important
 
 You also want to use CSS to hide the anchor until the user uses they keys to focus on the anchor. For more information checkout this <a href="http://webaim.org/techniques/skipnav/" target="_blank">link</a> for more information
 
-## Dropdown Navigations
+## Dropdown navigations
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
 
@@ -79,9 +79,11 @@ Let's style the list and nested list different colours so we know what's going o
 .main-menu {
   background: yellow;
 }
+
 ul.sub-menu {
   background: #ececa9;
 }
+
 .main-menu li a {
   color: black;
 }
@@ -117,7 +119,7 @@ ul.sub-menu {
 
 Then, how do we show them only when we hover? What should we trigger the hover on?
 
-Since the sub nav is nested inside of the parents `<li>`, we want to trigger it on there. We use `display:block;` to switch it back from `display:none;`
+Since the sub nav is nested inside of the parents `<li>`, we want to trigger it on there. We use `display: block;` to switch it back from `display: none;`
 
 ```css
 .main-menu li:hover ul {
@@ -127,9 +129,9 @@ Since the sub nav is nested inside of the parents `<li>`, we want to trigger it 
 
 Now you should see the sub nav when you hover over its parent:
 
-Problem now is that it pushes everything after the sub navigation down? Why? Because we are using `display:block;` !
+Problem now is that it pushes everything after the sub navigation down? Why? Because we are using `display: block;` !
 
-If only we could position it that it did not take up any extra space. It should "give up its seat". This is where we start to use `position:relative` and `position:absolute;`
+If only we could position it that it did not take up any extra space. It should "give up its seat". This is where we start to use `position: relative` and `position: absolute;`
 
 We want the sub menu to be absolute so it doesn't take up any room within its parent and the parent `<li>` to be relative so we can base out positioning off of that.
 
@@ -151,9 +153,9 @@ Bam! with just that, we now have a very simple dropdown menu. It works! We can u
 
 Did this on your own? <a href="https://hychalknotes.s3.amazonaws.com/dropdown-navANSWER.html" download>Check your answer here!</a>
 
-## Using Lists and Positioning together
+## Using lists and positioning together
 
-Another great use of Lists and Positioning are to make galleries with text that appears on hover.
+Another great use of lists and positioning are to make galleries with text that appears on hover.
 
 Open up <a href="https://hychalknotes.s3.amazonaws.com/gallery-grid.html" download>gallery-grid.html</a> and use your creativity to code a gallery. You can tackle this in partners if you wish.
 
