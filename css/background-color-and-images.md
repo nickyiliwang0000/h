@@ -210,7 +210,7 @@ header {
 To layer backgrounds on top of one another, comma separate the background values you want:
 
 ```css
-div{
+div {
   background: url(http://www.placekitten.com/200/200), 
   linear-gradient(yellow 20%, red , blue);
   background-repeat: space;
