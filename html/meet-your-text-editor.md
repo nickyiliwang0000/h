@@ -149,8 +149,9 @@ _Snippets_ make your workflow much faster. A snippet is a chunk of code that you
 To create a new snippet in Visual Studio Code:
 * Mac: go to 'Code' > 'Preferences' > 'User Snippets'
 * Windows: go to 'File' > 'Preferences' >'User Snippets'
+You can do this through the command pallet by typing `cmd + shift + p` (Mac) or `ctrl + shift + p` (Windows) and type `snippets`. Pick `Preferences: Configure User Snippets`.
 
-Snippets are scoped to specific languages, so you will need to select the language in which you'd like the snippet to be available to you. 
+Snippets are scoped to specific languages, so you will need to select the language in which you'd like the snippet to be available to you.
 
 Let's choose HTML and write our first snippet! 
 
