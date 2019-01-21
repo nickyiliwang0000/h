@@ -89,10 +89,10 @@ Over the course of the bootcamp, we keep track of the hours you spend coding - t
 #### Open-in-browser
 This extension will allow you to use a shortcut to preview your HTML files in your default browser.
   
-  1. Type in `cmd + shift + p` or `ctrl + shift + p` and type `install`. Pick `Extensions: Install Extension`
-  2. Type `open in browser` and hit `enter`.
-  3. Install & restart Visual Studio Code 
-  4. Open HTML files in default browser by pressing `alt + b` or right clicking and selecting `open in browser`.
+  1. Type in `cmd + shift + p` or `ctrl + shift + p` and type `install`. Pick 'Extensions: Install Extension'.
+  2. Type `open in browser`. Most of the available packages are very similar. The one by `coderfee` has been popular with HY students. Install whichever one you want by hitting 'Enter'.
+  3. Restart Visual Studio Code 
+  4. Open HTML files in default browser by pressing `alt + b` or right clicking and selecting 'Open in Default Browser'.
 
 ### Make it look good
 
