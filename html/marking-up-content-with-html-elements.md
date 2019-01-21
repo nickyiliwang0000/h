@@ -496,7 +496,7 @@ The link below will bring you to the section of the page with an `id` attribute 
 <a href="http://en.wikipedia.org/wiki/HTML#Markup" target="_blank">http://en.wikipedia.org/wiki/HTML#Markup</a>
 
 #### All the rest
-We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`*, `checked=" "`, `for=" "`, `name=" "`, to name a few.
+We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`, `checked=" "`, `for=" "`, `name=" "`, to name a few.
 
 In your travels around the Internet, you may see some attributes from older versions of HTML that you should **never** use.  They are presented here as apocryphal reference:
 
