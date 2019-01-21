@@ -1,12 +1,25 @@
-## Control Flow
+<!-- Student takeaway: -->
+<!--Student will be able to:
+- 
+-->
 
-Normally, instructions or **statements** in a JavaScript are executed one after the other, in the order in which they are written. 
+# Programming control flow
 
-**Control flow** is referring to the order of instructions that are executed based on a decision and is used to change the flow of statements. 
+Normally, instructions (i.e. **statements**) in a JavaScript are executed one after the other in the order in which they are written. 
 
-An example of a control flow statement is an if/else statement.
+The term _control flow_ describes how a developer might choose to order the statements, regardless of the order in which they appear in the JavaScript file.
 
-"If this condition is true, do this. Else, do this."
+An example of a control flow statement is an `if` statement:
+```js
+if (youAreTired) {
+   goToSleep();
+} else {
+	learnMoreCode();
+}
+```
+In this statment block, the `goToSleep()` function is only executed if the variable `youAreTired` is truthy. 
+
+Let's dive into that logic!
 
 #### Booleans
 
