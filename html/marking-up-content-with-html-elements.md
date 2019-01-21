@@ -1,4 +1,5 @@
-# HTML elements
+# Marking up content with HTML elements
+
 ## HTML: The makeup of markup
 
 _Hyper Text Markup Language_ (HTML) is the standard language that we use to create web pages. When we open an HTML file within a browser, the code is interpreted as a visual (or audible) web page.
