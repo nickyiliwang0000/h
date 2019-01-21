@@ -146,7 +146,11 @@ Or when the value some key is set to `true` or `false` (we call these values _bo
 
 _Snippets_ make your workflow much faster. A snippet is a chunk of code that you can insert into your file using a shortcut and the `tab` key. Lots of people use snippets for boilerplate code.
 
-To create a new snippet in Visual Studio Code, go to 'Code' > 'Preferences' > 'User Snippets'. Snippets are scoped to specific languages, so you will need to select the language in which you'd like the snippet to be available to you. 
+To create a new snippet in Visual Studio Code:
+* Mac: go to 'Code' > 'Preferences' > 'User Snippets'
+* Windows: go to 'File' > 'Preferences' >'User Snippets'
+
+Snippets are scoped to specific languages, so you will need to select the language in which you'd like the snippet to be available to you. 
 
 Let's choose HTML and write our first snippet! 
 
