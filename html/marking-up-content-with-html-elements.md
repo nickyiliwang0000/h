@@ -560,7 +560,7 @@ Bam! You've built a multi-page navigation!
 
 
 ### Semantic elements
-Before HTML5, a group of HTML elements could be wrapped in div with an id or a class which was targeted to style that content. This can lead to confusion on a page because it can be difficult to tell which element does what. **Semantics elements**, introduced in HTML5, are used to define the role some content plays on a website. They don't have default styling and exist to help developers (and browsers) understand their code better.
+Before HTML5, a group of HTML elements could be wrapped in `<div>` with an `id` or a `class` which was targeted to style that content. This can lead to confusion on a page because it can be difficult to tell which element does what. **Semantic elements**, introduced in HTML5, are used to define the role some content plays on a website. They don't have default styling and exist to help developers (and browsers) understand the code better.
 
 `header` : Defines the header of a page or a section. It often contains the title of a page, and a tagline/subtitle.
 
