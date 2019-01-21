@@ -157,7 +157,7 @@ Snippets are scoped to specific languages, so you will need to select the langua
 Let's choose HTML and write our first snippet! 
 
 ### Writing snippets 
-Just like the user settings file, snippets are written in JSON. All snippets live inside of one large object denoted by curly braces`{}`. Each snippet is defined by a name and has a prefix, body, and description. 
+Just like the user settings file, snippets are written in JSON. All snippets live inside of one large object denoted by curly braces `{}`. Each snippet is defined by a name and has a prefix, body, and description. 
 
 Let's start by adding a snippet to our `html.json` file. Inside the parent curly braces, enter the following: 
 ```json
