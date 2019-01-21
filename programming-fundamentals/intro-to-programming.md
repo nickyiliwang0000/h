@@ -19,7 +19,7 @@
 
 ## A quick primer on programming languages
 
-So far, we've created our projects using HTML (a markup languag) and CSS, (a style sheet language) that have allowed us to add content to and style our web pages. If we want our web pages to do other things, things like responding to events, communicating with services, or modifying styles on the fly, we need to have a deeper conversation with the computer. 
+So far, we've created our projects using HTML (a markup language) and CSS, (a style sheet language) that have allowed us to add content to and style our web pages. If we want our web pages to do other things, things like responding to events, communicating with services, or modifying styles on the fly, we need to have a deeper conversation with the computer. 
 
 We need a _programming language_. 
 
