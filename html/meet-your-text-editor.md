@@ -6,7 +6,7 @@
 - How to add a snippet to VSCode
 -->
 
-# Text editors
+# Meet your text editor
 One of a developer's most important tools is a text editor. The text editor is where a developer does the vast majority of their problem-solving and coding. Using the right text editor with a great setup can make your productivity skyrocket.
 
 HTML is written is plain text, so we could technically use Notepad (Windows) or TextEdit (Mac) to view and edit our HTML files. However, since both programs show nothing but black text on a white background, it's very easy to make a mistake!
