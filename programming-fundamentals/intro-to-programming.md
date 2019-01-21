@@ -6,7 +6,6 @@
 - What pseudocode is and to write it in the comments
 - The data types we will be working with (SNUBON(S))
 - The difference between an expression and a value
-- 
 -->
 
 # Intro to programming
