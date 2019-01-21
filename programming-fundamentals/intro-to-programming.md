@@ -39,7 +39,7 @@ Let's look at a classic programming example in a few different languages: printi
 ### C 
 ```c
 main() {
-	printf("hello, world");
+    printf("hello, world");
 }
 ```
 
@@ -188,9 +188,9 @@ When you're writing JavaScript (or other code) it can be helpful to map the deta
 when the user scrolls down the page:
 * measure how far they've scrolled
 * if they've scrolled more than 400px
-	- show a tooltip
+  - show a tooltip
 * otherwise
-	- hide the tooltip
+  - hide the tooltip
 ```
 
 Every project you write should have pseudocode. We will often require it, so get into the habit of writing it now!
