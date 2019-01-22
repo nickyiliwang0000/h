@@ -15,16 +15,16 @@ And then add a little CSS to style each container:
 
 ```css
 .container1 {
-	background:#791313;
+    background:#791313;
 }
 .container2 {
-	background:#23395B;
+    background:#23395B;
 }
 .container3 {
-	background:#3E5641;
+    background:#3E5641;
 }
 .container4 {
-	background:#FFBA08;
+    background:#FFBA08;
 }
 ```
 
@@ -49,24 +49,24 @@ Lets try a few different ways of specifying width and height:
 
 ```css
 .container1 {
-	background:#791313;
-	width: 200px;
-	height:200px;
+    background:#791313;
+    width: 200px;
+    height:200px;
 }
 .container2 {
-	background:#23395B;
-	width:100%;
-	height:90px;
+    background:#23395B;
+    width:100%;
+    height:90px;
 }
 .container3 {
-	background:#3E5641;
-	width:2000px;
-	height:150px;
+    background:#3E5641;
+    width:2000px;
+    height:150px;
 }
 .container4 {
-	background:#FFBA08;
-	width:500px;
-	height:100%;
+    background:#FFBA08;
+    width:500px;
+    height:100%;
 }
 ```
 
@@ -97,9 +97,9 @@ The only difference between the two is that margin adds space on the **outside**
 #### Giving it a shot
 Let's give it a shot with some real markup. Start off with three basic divs:
 ```html
-    <div class="container1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
-    <div class="container2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
-    <div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+<div class="container1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+<div class="container2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+<div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
 ```
 
 And some styling:
