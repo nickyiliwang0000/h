@@ -295,7 +295,7 @@ All browsers come with style defaults, such as making all `h1`-`h6` elements esc
 
 If you add it as a separate stylesheet, **it should be included before your custom stylesheet**.
 
-If you don't already have it as a snippet, you can download normalize.css at <http://necolas.github.com/normalize.css/>, or " [find it here](https://hychalknotes.s3.amazonaws.com/normalize-v700.css). We won't be using it in our examples, but all of your projects should include it.
+If you don't already have it as a snippet, you can download normalize.css at <http://necolas.github.com/normalize.css/>, or [find it here](https://hychalknotes.s3.amazonaws.com/normalize-v700.css). We won't be using it in our examples, but all of your projects should include it.
 
 ## Gallery layout exercises
 Let's create a floated layout together together to start. Open up [gridLayout.html](https://hychalknotes.s3.amazonaws.com/gridLayout.html) in your text editor and in the browser. If you get stuck, check out [gridLayoutANSWER.html](https://hychalknotes.s3.amazonaws.com/gridLayoutANSWER.html).
