@@ -1,6 +1,7 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
-- 
+- What control flow means
+-
 -->
 
 # Programming control flow
@@ -11,23 +12,25 @@ The term _control flow_ describes how a developer might choose to order the stat
 
 An example of a control flow statement is an `if` statement:
 ```js
-if (youAreTired) {
+if (youAreTired === true) {
    goToSleep();
 } else {
 	learnMoreCode();
 }
 ```
-In this statment block, the `goToSleep()` function is only executed if the variable `youAreTired` is truthy. 
+In this statment block, the `goToSleep()` function is only executed if the variable `youAreTired` is truthy, even though it appears in the script before `learnMoreCode`.
 
 Let's dive into that logic!
 
-#### Booleans
+## Conditional statements
 
-Our code so far is executed top to bottom. If that's all we could do then our programs would be limited. This is where **control flow** comes in. We can write code so that a statement or group of statements is only executed if a logical condition is true or false.
+The statement block above is a _conditional statement_, meaning that there are conditions that need to be satisfied before each of the functions runs.
 
-A type of value that we need for conditionals is the **boolean** type. This type has two possible values: `true` or `false`. For example, when checking if two numbers are equal the value returned should be either true or false. How to we check it two numbers are equal? We use comparison operators.
+In that example, the data type of the variable (`youAreTired`) that we are evaluatiing for first condition is a **boolean**. [Remember](https://github.com/HackerYou/bootcamp-notes/blob/12908c9c925797a7d9d8606df00155a1211ca82b/programming-fundamentals/intro-to-programming.md) that boolean values are either `true` or `false`. 
 
-#### Comparison operators
+When checking if two numbers are equal the value returned should be either true or false. How to we check it two numbers are equal? We use comparison operators.
+
+## Comparison operators
 
 Operator     |  Description  
 ------------ | -------------
