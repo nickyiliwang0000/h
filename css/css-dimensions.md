@@ -15,16 +15,16 @@ And then add a little CSS to style each container:
 
 ```css
 .container1 {
-	background:#791313;
+  background:#791313;
 }
 .container2 {
-	background:#23395B;
+  background:#23395B;
 }
 .container3 {
-	background:#3E5641;
+  background:#3E5641;
 }
 .container4 {
-	background:#FFBA08;
+  background:#FFBA08;
 }
 ```
 
@@ -49,24 +49,24 @@ Lets try a few different ways of specifying width and height:
 
 ```css
 .container1 {
-	background:#791313;
-	width: 200px;
-	height:200px;
+  background:#791313;
+  width: 200px;
+  height:200px;
 }
 .container2 {
-	background:#23395B;
-	width:100%;
-	height:90px;
+  background:#23395B;
+  width:100%;
+  height:90px;
 }
 .container3 {
-	background:#3E5641;
-	width:2000px;
-	height:150px;
+  background:#3E5641;
+  width:2000px;
+  height:150px;
 }
 .container4 {
-	background:#FFBA08;
-	width:500px;
-	height:100%;
+  background:#FFBA08;
+  width:500px;
+  height:100%;
 }
 ```
 
@@ -97,22 +97,22 @@ The only difference between the two is that margin adds space on the **outside**
 #### Giving it a shot
 Let's give it a shot with some real markup. Start off with three basic divs:
 ```html
-	<div class="container1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
-	<div class="container2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
-	<div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+<div class="container1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+<div class="container2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+<div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
 ```
 
 And some styling:
 
 ```css
 .container1 {
-	background:#3E5641; /* Green */
+  background:#3E5641; /* Green */
 }
 .container2 {
-	background:#FFBA08; /* Yellow */
+  background:#FFBA08; /* Yellow */
 }
 .container3 {
-	background:#791313; /* Red */
+  background:#791313; /* Red */
 }
 ```
 
@@ -124,17 +124,17 @@ Go ahead and add some margin to container1, padding to container2 and both to co
 
 ```css
 .container1 {
-	background:#3E5641; /* Green */
-	margin:20px;
+  background:#3E5641; /* Green */
+  margin:20px;
 }
 .container2 {
-	background:#FFBA08; /* Yellow */
-	padding:20px;
+  background:#FFBA08; /* Yellow */
+  padding:20px;
 }
 .container3 {
-	background:#791313; /* Red */
-	padding:20px;
-	margin:20px;
+  background:#791313; /* Red */
+  padding:20px;
+  margin:20px;
 }
 ```
 
@@ -142,7 +142,7 @@ Go ahead and add some margin to container1, padding to container2 and both to co
 
 1. Container 1 has 20px of margin outside the red, but the text is still squished inside.
 2. Container 2 has 20px of padding inside the blue, but it's right up against the side of the browser.
-3. cContainer 3 has both, allowing for enough space between both the text and the blue element above it.
+3. Container 3 has both, allowing for enough space between both the text and the blue element above it.
 
 #### One step further
 
@@ -151,16 +151,16 @@ In the last examples, we supplied a single value of 20px. What if we want to add
 ```css
 .container1 {
 	/* Specific margin values */
-	margin-top: 10px;
-	margin-right: 5%;
-	margin-bottom:10px;
-	margin-left: 25px;
+  margin-top: 10px;
+  margin-right: 5%;
+  margin-bottom:10px;
+  margin-left: 25px;
 	
 	/* Same goes for padding */
-	padding-top:10px;
-	padding-right:20px;
-	padding-bottom:25px;
-	padding-left:5%;
+  padding-top:10px;
+  padding-right:20px;
+  padding-bottom:25px;
+  padding-left:5%;
 }
 ```
 
@@ -169,8 +169,8 @@ In the last examples, we supplied a single value of 20px. What if we want to add
 8 lines just for padding and margin? Seems like a lot of typing! Luckily we have a CSS shorthand for specifying padding and margin values (among other properties which we will learn about later). We can just supply the four values with spaces in between:
 ```css
 .container1 {
-    margin: 10px 5% 10px 25px;
-    padding: 10px 20px 25px 5%;
+  margin: 10px 5% 10px 25px;
+  padding: 10px 20px 25px 5%;
 }
 ```
 
@@ -180,14 +180,14 @@ You may also set the top and bottom and right and left at the same time with the
 
 ```css
 .container1 {
-    margin:10px 20px; /* renders the same as 10px 20px 10px 20px */
+  margin:10px 20px; /* renders the same as 10px 20px 10px 20px */
 }
 ```
 Occasionally you will see three numbers which sets left and right with a single value. This is confusing and doesn't save much typing.
 
 ```css
 .container1 {
-    margin:10px 20px 50px; /* renders the same as 10px 20px 50px 20px */
+  margin:10px 20px 50px; /* renders the same as 10px 20px 50px 20px */
 }
 ```
 
@@ -197,7 +197,7 @@ Often we will want to center our website on a page. Since CSS doesn't have a cen
 
 ```css
 .wrapper {
-    margin:0 auto;
+  margin:0 auto;
 }
 ```
 
@@ -210,32 +210,25 @@ Borders work similarly to padding and margin, but we use three properties instea
 
 ```css
 .container1 {
-    border-width:10px;
-    border-color:lightcoral;
-    border-style:solid;
+  border-width:10px;
+  border-color:lightcoral;
+  border-style:solid;
 }
 ```
 
 If we don't specify a color, what happens? The color is inherited.
 
-Width and color are pretty self explanatory. The **border style** allows you to set various styles of borders:
+Width and color are pretty self explanatory. The **border style** allows you to set various styles of borders. Let's open <a href="https://hychalknotes.s3.amazonaws.com/css-borders.html" class="exercise" download>css-borders.html</a> to take a look at some border styles.
 
-<div style="border:10px solid lightcoral; margin:5px;">solid</div>
-<div style="border:10px dotted lightcoral; margin:5px;">dotted</div>
-<div style="border:10px dashed lightcoral; margin:5px;">dashed</div>
-<div style="border:10px groove lightcoral; margin:5px;">groove</div>
-<div style="border:10px ridge lightcoral; margin:5px;">ridge</div>
-<div style="border:10px inset lightcoral; margin:5px;">inset</div>
-<div style="border:10px outset lightcoral; margin:5px;">outset</div>
 
 #### Targeting Single Sides
 Just like padding and margin, we can target a single side to add a border. Just add the side like so:
 
 ```css
 .container1 {
-    border-[side]-width: 10px;
-    border-[side]-color: lightcoral;
-    border-[side]-style: solid;
+  border-[side]-width: 10px;
+  border-[side]-color: lightcoral;
+  border-[side]-style: solid;
 }
 ```
 
@@ -244,7 +237,7 @@ You will frequently want to create a border that is the same `width`, `style` an
 
 ```css
 .container1 {
-    border:3px dotted lightcoral; /* [width] [style] [color] Much more sane */
+  border:3px dotted lightcoral; /* [width] [style] [color] Much more sane */
 }
 ```
 
@@ -266,8 +259,8 @@ Basic usage is to supply one value for all corners:
 
 ```css
 .container1 {
-    background: #F08080;/* lightcoral */
-    border-radius: 5px;
+  background: #F08080;/* lightcoral */
+  border-radius: 5px;
 }
 ```
 
@@ -275,8 +268,8 @@ But we can also use short hand to specify TRBL (top, right, bottom, left):
 
 ```css
 .container3 {
-    background: #FFBA08; /* yellow */
-    border-radius:5px 10px 100px 1px;
+  background: #FFBA08; /* yellow */
+  border-radius:5px 10px 100px 1px;
 }
 ```
 A 50% border radius makes a perfect circle. Go ahead and try some out.
@@ -285,7 +278,7 @@ You can even do it on an image:
 
 ```css
 img.cat {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 ```
 
@@ -294,17 +287,50 @@ img.cat {
 
 Now that we are equipped with width, height, padding, margin and borders, it's important to learn about the **box model**.
 
-Create a new HTML file, and let's start off with a simple 150px by 150px container (set with `width` and `height`):
+Create a new HTML file, and let's start off with a simple 150px by 150px container (set with `width` and `height`). Feel free to copy this element:
 
-<div style="width:150px;height:150px;margin-bottom:30px;background:#23395B;letter-spacing:0.3px;box-sizing:content-box; color: white;">I'm a 150px by 150px container!</div>
+```html
+<div>I'm a 150px by 150px container!</div>
+```
+
+Let's also open an internal stylesheet, and paste the following css:
+
+```css 
+div {
+  width: 150px;
+  height: 150px;
+  background: #23395B;
+  box-sizing: content-box;
+  color: white;
+}
+```
 
 Now let's add some padding so the text isn't all squished to the edge of the box.
 
-<div style="width:150px;height:150px;margin-bottom:30px; background:#23395B;padding:20px;letter-spacing:0.3px;box-sizing:content-box; color: white;">I'm a 150px by 150px container with 20px of padding!</div>
+```css 
+div {
+  width: 150px;
+  height: 150px;
+  background: #23395B;
+  box-sizing: content-box;
+  color: white;
+  padding: 20px;
+}
+```
 
 Finally, add a border:
 
-<div style="width:150px;height:150px;margin-bottom:30px; background:#23395B;padding:20px;letter-spacing:0.3px; border:10px solid #791313;box-sizing:content-box; color: white;">I'm a 150px by 150px container with 20px of padding and a 10px black border!</div>
+```css 
+div {
+  width: 150px;
+  height: 150px;
+  background: #23395B;
+  box-sizing: content-box;
+  color: white;
+  padding: 20px;
+  border: 10px solid black;
+}
+```
 
 Notice anything weird? The elements grow as we add **padding** and **border**. Suddenly our 150px container isn't 150px anymore!
 
@@ -314,9 +340,9 @@ If your project is only going to support Internet Explorer 8 and up, then we can
 
 ```css
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 ```
 
