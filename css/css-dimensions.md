@@ -151,16 +151,16 @@ In the last examples, we supplied a single value of 20px. What if we want to add
 ```css
 .container1 {
 	/* Specific margin values */
-	margin-top: 10px;
-	margin-right: 5%;
-	margin-bottom:10px;
-	margin-left: 25px;
+    margin-top: 10px;
+    margin-right: 5%;
+    margin-bottom:10px;
+    margin-left: 25px;
 	
 	/* Same goes for padding */
-	padding-top:10px;
-	padding-right:20px;
-	padding-bottom:25px;
-	padding-left:5%;
+    padding-top:10px;
+    padding-right:20px;
+    padding-bottom:25px;
+    padding-left:5%;
 }
 ```
 
@@ -297,11 +297,11 @@ Let's also open an internal stylesheet, and paste the following css:
 
 ```css 
 div {
-	width: 150px;
-	height: 150px;
-	background: #23395B;
-	box-sizing: content-box;
-	color: white;
+    width: 150px;
+    height: 150px;
+    background: #23395B;
+    box-sizing: content-box;
+    color: white;
 }
 ```
 
@@ -309,12 +309,12 @@ Now let's add some padding so the text isn't all squished to the edge of the box
 
 ```css 
 div {
-	width: 150px;
-	height: 150px;
-	background: #23395B;
-	box-sizing: content-box;
-	color: white;
-	padding: 20px;
+    width: 150px;
+    height: 150px;
+    background: #23395B;
+    box-sizing: content-box;
+    color: white;
+    padding: 20px;
 }
 ```
 
@@ -322,13 +322,13 @@ Finally, add a border:
 
 ```css 
 div {
-	width: 150px;
-	height: 150px;
-	background: #23395B;
-	box-sizing: content-box;
-	color: white;
-	padding: 20px;
-	border: 10px solid black;
+    width: 150px;
+    height: 150px;
+    background: #23395B;
+    box-sizing: content-box;
+    color: white;
+    padding: 20px;
+    border: 10px solid black;
 }
 ```
 
