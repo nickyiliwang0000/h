@@ -299,8 +299,8 @@ Let's also open an internal stylesheet, and paste the following css:
 div {
 	width: 150px;
 	height: 150px;
-	background:#23395B;
-	box-sizing:content-box;
+	background: #23395B;
+	box-sizing: content-box;
 	color: white;
 }
 ```
@@ -311,8 +311,8 @@ Now let's add some padding so the text isn't all squished to the edge of the box
 div {
 	width: 150px;
 	height: 150px;
-	background:#23395B;
-	box-sizing:content-box;
+	background: #23395B;
+	box-sizing: content-box;
 	color: white;
 	padding: 20px;
 }
@@ -324,8 +324,8 @@ Finally, add a border:
 div {
 	width: 150px;
 	height: 150px;
-	background:#23395B;
-	box-sizing:content-box;
+	background: #23395B;
+	box-sizing: content-box;
 	color: white;
 	padding: 20px;
 	border: 10px solid black;
