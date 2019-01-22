@@ -142,7 +142,7 @@ Go ahead and add some margin to container1, padding to container2 and both to co
 
 1. Container 1 has 20px of margin outside the red, but the text is still squished inside.
 2. Container 2 has 20px of padding inside the blue, but it's right up against the side of the browser.
-3. cContainer 3 has both, allowing for enough space between both the text and the blue element above it.
+3. Container 3 has both, allowing for enough space between both the text and the blue element above it.
 
 #### One step further
 
