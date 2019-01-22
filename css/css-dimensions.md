@@ -296,40 +296,40 @@ Create a new HTML file, and let's start off with a simple 150px by 150px contain
 Let's also open an internal stylesheet, and paste the following css:
 
 ```css 
-	div {
-		width: 150px;
-		height: 150px;
-		background:#23395B;
-		box-sizing:content-box;
-		color: white;
-	}
+div {
+	width: 150px;
+	height: 150px;
+	background:#23395B;
+	box-sizing:content-box;
+	color: white;
+}
 ```
 
 Now let's add some padding so the text isn't all squished to the edge of the box.
 
 ```css 
-	div {
-		width: 150px;
-		height: 150px;
-		background:#23395B;
-		box-sizing:content-box;
-		color: white;
-		padding: 20px;
-	}
+div {
+	width: 150px;
+	height: 150px;
+	background:#23395B;
+	box-sizing:content-box;
+	color: white;
+	padding: 20px;
+}
 ```
 
 Finally, add a border:
 
 ```css 
-	div {
-		width: 150px;
-		height: 150px;
-		background:#23395B;
-		box-sizing:content-box;
-		color: white;
-		padding: 20px;
-		border: 10px solid black;
-	}
+div {
+	width: 150px;
+	height: 150px;
+	background:#23395B;
+	box-sizing:content-box;
+	color: white;
+	padding: 20px;
+	border: 10px solid black;
+}
 ```
 
 Notice anything weird? The elements grow as we add **padding** and **border**. Suddenly our 150px container isn't 150px anymore!
