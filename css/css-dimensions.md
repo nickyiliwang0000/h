@@ -218,15 +218,8 @@ Borders work similarly to padding and margin, but we use three properties instea
 
 If we don't specify a color, what happens? The color is inherited.
 
-Width and color are pretty self explanatory. The **border style** allows you to set various styles of borders:
+Width and color are pretty self explanatory. The **border style** allows you to set various styles of borders. Let's open <a href="https://hychalknotes.s3.amazonaws.com/css-borders.html" class="exercise" download>css-borders.html</a> to take a look at some border styles.
 
-<div style="border:10px solid lightcoral; margin:5px;">solid</div>
-<div style="border:10px dotted lightcoral; margin:5px;">dotted</div>
-<div style="border:10px dashed lightcoral; margin:5px;">dashed</div>
-<div style="border:10px groove lightcoral; margin:5px;">groove</div>
-<div style="border:10px ridge lightcoral; margin:5px;">ridge</div>
-<div style="border:10px inset lightcoral; margin:5px;">inset</div>
-<div style="border:10px outset lightcoral; margin:5px;">outset</div>
 
 #### Targeting Single Sides
 Just like padding and margin, we can target a single side to add a border. Just add the side like so:
@@ -294,17 +287,50 @@ img.cat {
 
 Now that we are equipped with width, height, padding, margin and borders, it's important to learn about the **box model**.
 
-Create a new HTML file, and let's start off with a simple 150px by 150px container (set with `width` and `height`):
+Create a new HTML file, and let's start off with a simple 150px by 150px container (set with `width` and `height`). Feel free to copy this element:
 
-<div style="width:150px;height:150px;margin-bottom:30px;background:#23395B;letter-spacing:0.3px;box-sizing:content-box; color: white;">I'm a 150px by 150px container!</div>
+```html
+<div>I'm a 150px by 150px container!</div>
+```
+
+Let's also open an internal stylesheet, and paste the following css:
+
+```css 
+	div {
+		width: 150px;
+		height: 150px;
+		background:#23395B;
+		box-sizing:content-box;
+		color: white;
+	}
+```
 
 Now let's add some padding so the text isn't all squished to the edge of the box.
 
-<div style="width:150px;height:150px;margin-bottom:30px; background:#23395B;padding:20px;letter-spacing:0.3px;box-sizing:content-box; color: white;">I'm a 150px by 150px container with 20px of padding!</div>
+```css 
+	div {
+		width: 150px;
+		height: 150px;
+		background:#23395B;
+		box-sizing:content-box;
+		color: white;
+		padding: 20px;
+	}
+```
 
 Finally, add a border:
 
-<div style="width:150px;height:150px;margin-bottom:30px; background:#23395B;padding:20px;letter-spacing:0.3px; border:10px solid #791313;box-sizing:content-box; color: white;">I'm a 150px by 150px container with 20px of padding and a 10px black border!</div>
+```css 
+	div {
+		width: 150px;
+		height: 150px;
+		background:#23395B;
+		box-sizing:content-box;
+		color: white;
+		padding: 20px;
+		border: 10px solid black;
+	}
+```
 
 Notice anything weird? The elements grow as we add **padding** and **border**. Suddenly our 150px container isn't 150px anymore!
 
