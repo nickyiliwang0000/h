@@ -15,16 +15,16 @@ And then add a little CSS to style each container:
 
 ```css
 .container1 {
-    background:#791313;
+  background:#791313;
 }
 .container2 {
-    background:#23395B;
+  background:#23395B;
 }
 .container3 {
-    background:#3E5641;
+  background:#3E5641;
 }
 .container4 {
-    background:#FFBA08;
+  background:#FFBA08;
 }
 ```
 
@@ -49,24 +49,24 @@ Lets try a few different ways of specifying width and height:
 
 ```css
 .container1 {
-    background:#791313;
-    width: 200px;
-    height:200px;
+  background:#791313;
+  width: 200px;
+  height:200px;
 }
 .container2 {
-    background:#23395B;
-    width:100%;
-    height:90px;
+  background:#23395B;
+  width:100%;
+  height:90px;
 }
 .container3 {
-    background:#3E5641;
-    width:2000px;
-    height:150px;
+  background:#3E5641;
+  width:2000px;
+  height:150px;
 }
 .container4 {
-    background:#FFBA08;
-    width:500px;
-    height:100%;
+  background:#FFBA08;
+  width:500px;
+  height:100%;
 }
 ```
 
@@ -106,13 +106,13 @@ And some styling:
 
 ```css
 .container1 {
-    background:#3E5641; /* Green */
+  background:#3E5641; /* Green */
 }
 .container2 {
-    background:#FFBA08; /* Yellow */
+  background:#FFBA08; /* Yellow */
 }
 .container3 {
-    background:#791313; /* Red */
+  background:#791313; /* Red */
 }
 ```
 
@@ -124,17 +124,17 @@ Go ahead and add some margin to container1, padding to container2 and both to co
 
 ```css
 .container1 {
-    background:#3E5641; /* Green */
-    margin:20px;
+  background:#3E5641; /* Green */
+  margin:20px;
 }
 .container2 {
-    background:#FFBA08; /* Yellow */
-    padding:20px;
+  background:#FFBA08; /* Yellow */
+  padding:20px;
 }
 .container3 {
-    background:#791313; /* Red */
-    padding:20px;
-    margin:20px;
+  background:#791313; /* Red */
+  padding:20px;
+  margin:20px;
 }
 ```
 
@@ -151,16 +151,16 @@ In the last examples, we supplied a single value of 20px. What if we want to add
 ```css
 .container1 {
 	/* Specific margin values */
-    margin-top: 10px;
-    margin-right: 5%;
-    margin-bottom:10px;
-    margin-left: 25px;
+  margin-top: 10px;
+  margin-right: 5%;
+  margin-bottom:10px;
+  margin-left: 25px;
 	
 	/* Same goes for padding */
-    padding-top:10px;
-    padding-right:20px;
-    padding-bottom:25px;
-    padding-left:5%;
+  padding-top:10px;
+  padding-right:20px;
+  padding-bottom:25px;
+  padding-left:5%;
 }
 ```
 
@@ -169,8 +169,8 @@ In the last examples, we supplied a single value of 20px. What if we want to add
 8 lines just for padding and margin? Seems like a lot of typing! Luckily we have a CSS shorthand for specifying padding and margin values (among other properties which we will learn about later). We can just supply the four values with spaces in between:
 ```css
 .container1 {
-    margin: 10px 5% 10px 25px;
-    padding: 10px 20px 25px 5%;
+  margin: 10px 5% 10px 25px;
+  padding: 10px 20px 25px 5%;
 }
 ```
 
@@ -180,14 +180,14 @@ You may also set the top and bottom and right and left at the same time with the
 
 ```css
 .container1 {
-    margin:10px 20px; /* renders the same as 10px 20px 10px 20px */
+  margin:10px 20px; /* renders the same as 10px 20px 10px 20px */
 }
 ```
 Occasionally you will see three numbers which sets left and right with a single value. This is confusing and doesn't save much typing.
 
 ```css
 .container1 {
-    margin:10px 20px 50px; /* renders the same as 10px 20px 50px 20px */
+  margin:10px 20px 50px; /* renders the same as 10px 20px 50px 20px */
 }
 ```
 
@@ -197,7 +197,7 @@ Often we will want to center our website on a page. Since CSS doesn't have a cen
 
 ```css
 .wrapper {
-    margin:0 auto;
+  margin:0 auto;
 }
 ```
 
@@ -210,9 +210,9 @@ Borders work similarly to padding and margin, but we use three properties instea
 
 ```css
 .container1 {
-    border-width:10px;
-    border-color:lightcoral;
-    border-style:solid;
+  border-width:10px;
+  border-color:lightcoral;
+  border-style:solid;
 }
 ```
 
@@ -226,9 +226,9 @@ Just like padding and margin, we can target a single side to add a border. Just 
 
 ```css
 .container1 {
-    border-[side]-width: 10px;
-    border-[side]-color: lightcoral;
-    border-[side]-style: solid;
+  border-[side]-width: 10px;
+  border-[side]-color: lightcoral;
+  border-[side]-style: solid;
 }
 ```
 
@@ -237,7 +237,7 @@ You will frequently want to create a border that is the same `width`, `style` an
 
 ```css
 .container1 {
-    border:3px dotted lightcoral; /* [width] [style] [color] Much more sane */
+  border:3px dotted lightcoral; /* [width] [style] [color] Much more sane */
 }
 ```
 
@@ -259,8 +259,8 @@ Basic usage is to supply one value for all corners:
 
 ```css
 .container1 {
-    background: #F08080;/* lightcoral */
-    border-radius: 5px;
+  background: #F08080;/* lightcoral */
+  border-radius: 5px;
 }
 ```
 
@@ -268,8 +268,8 @@ But we can also use short hand to specify TRBL (top, right, bottom, left):
 
 ```css
 .container3 {
-    background: #FFBA08; /* yellow */
-    border-radius:5px 10px 100px 1px;
+  background: #FFBA08; /* yellow */
+  border-radius:5px 10px 100px 1px;
 }
 ```
 A 50% border radius makes a perfect circle. Go ahead and try some out.
@@ -278,7 +278,7 @@ You can even do it on an image:
 
 ```css
 img.cat {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 ```
 
@@ -297,11 +297,11 @@ Let's also open an internal stylesheet, and paste the following css:
 
 ```css 
 div {
-    width: 150px;
-    height: 150px;
-    background: #23395B;
-    box-sizing: content-box;
-    color: white;
+  width: 150px;
+  height: 150px;
+  background: #23395B;
+  box-sizing: content-box;
+  color: white;
 }
 ```
 
@@ -309,12 +309,12 @@ Now let's add some padding so the text isn't all squished to the edge of the box
 
 ```css 
 div {
-    width: 150px;
-    height: 150px;
-    background: #23395B;
-    box-sizing: content-box;
-    color: white;
-    padding: 20px;
+  width: 150px;
+  height: 150px;
+  background: #23395B;
+  box-sizing: content-box;
+  color: white;
+  padding: 20px;
 }
 ```
 
@@ -322,13 +322,13 @@ Finally, add a border:
 
 ```css 
 div {
-    width: 150px;
-    height: 150px;
-    background: #23395B;
-    box-sizing: content-box;
-    color: white;
-    padding: 20px;
-    border: 10px solid black;
+  width: 150px;
+  height: 150px;
+  background: #23395B;
+  box-sizing: content-box;
+  color: white;
+  padding: 20px;
+  border: 10px solid black;
 }
 ```
 
@@ -340,9 +340,9 @@ If your project is only going to support Internet Explorer 8 and up, then we can
 
 ```css
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 ```
 
@@ -357,9 +357,9 @@ Take a look at <a href="https://hychalknotes.s3.amazonaws.com/css-box-shadow.htm
 
 ```css
 .shadow {
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
 ```
 
