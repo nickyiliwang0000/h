@@ -18,6 +18,8 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 [Projects](https://github.com/HackerYou/bootcamp-notes/#projects)
 
+[Fishbowl exercises](https://github.com/HackerYou/bootcamp-notes/#fishbowl-exercises)
+
 ## Lesson index:
 
 
@@ -123,6 +125,11 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Deploying with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/deploying-with-firebase.md)
 * [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
 * [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
+
+## Fishbowl exercises:
+[HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/css/html-and-css-fishbowl-exercises.md)
+[jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
+[JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
 
 ## Projects:
 [Project 1](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
