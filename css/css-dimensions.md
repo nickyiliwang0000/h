@@ -97,22 +97,22 @@ The only difference between the two is that margin adds space on the **outside**
 #### Giving it a shot
 Let's give it a shot with some real markup. Start off with three basic divs:
 ```html
-	<div class="container1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
-	<div class="container2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
-	<div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+    <div class="container1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+    <div class="container2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
+    <div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
 ```
 
 And some styling:
 
 ```css
 .container1 {
-	background:#3E5641; /* Green */
+    background:#3E5641; /* Green */
 }
 .container2 {
-	background:#FFBA08; /* Yellow */
+    background:#FFBA08; /* Yellow */
 }
 .container3 {
-	background:#791313; /* Red */
+    background:#791313; /* Red */
 }
 ```
 
@@ -124,17 +124,17 @@ Go ahead and add some margin to container1, padding to container2 and both to co
 
 ```css
 .container1 {
-	background:#3E5641; /* Green */
-	margin:20px;
+    background:#3E5641; /* Green */
+    margin:20px;
 }
 .container2 {
-	background:#FFBA08; /* Yellow */
-	padding:20px;
+    background:#FFBA08; /* Yellow */
+    padding:20px;
 }
 .container3 {
-	background:#791313; /* Red */
-	padding:20px;
-	margin:20px;
+    background:#791313; /* Red */
+    padding:20px;
+    margin:20px;
 }
 ```
 
