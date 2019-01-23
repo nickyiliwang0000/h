@@ -21,7 +21,7 @@ You'll notice that in all of our layout examples, we have a surrounding element 
 
 We've usually given this element a class of `.wrapper` (this is an arbitrary name). The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window.
 
-If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different sized devices available. 50% of a 14" Acer Swift is different than 50% of a 27" iMac Pro. And what happens when a user scales their browser? When working with percetages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
+If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a 14" Acer Swift is different than 50% of a 27" iMac Pro. And what happens when a user scales their browser? When working with percetages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
 
 ```html
 <div class="wrapper">
@@ -74,7 +74,7 @@ Moving forward, it's best practice to include a `max-width` property with a pixe
 
 ### Mixing pixels with percentages
 
-Now that we understand how to limit the sizing and see the benefits of using percentages with our elements, what if we want to put some space between our elements.
+Now that we understand how to limit the sizing and see the benefits of using percentages with our elements, what if we want to put some space between our elements?
 
 Open up <a href="https://hychalknotes.s3.amazonaws.com/calcLayout.html" class="exercise" download>calcLayout.html</a> to follow along.
 
@@ -103,7 +103,7 @@ In previous examples, we had to ensure that the widths of child elements added u
 </style>
 ```
 
-However if we used margin to provide spacing between our elements, we would have to account for that amount of margin as well within our elements.
+However, if we used margin to provide spacing between our elements, we would have to account for it when setting the widths of our elements.
 
 ```html
 <div class="wrapper">
@@ -130,7 +130,7 @@ However if we used margin to provide spacing between our elements, we would have
 </style>
 ```
 
-Now if we were using percentages, we could easily account change the units, but 10% of a container is quite a big size for a margin.
+If we were using percentages, we could easily change the units of the margin to match, but 10% of a container is quite a big size for a margin.
 
 ```html
 <div class="wrapper">
@@ -157,7 +157,7 @@ Now if we were using percentages, we could easily account change the units, but 
 </style>
 ```
 
-So instead of working with unknown percentages, why don't we work with percentages for widths and pixels for margins, something more tangible.
+So instead of working with unclear percentage margins, why don't we work with percentages for widths, and something more tangible for margins - pixels.
 
 ```html
 <div class="wrapper">
@@ -186,11 +186,11 @@ So instead of working with unknown percentages, why don't we work with percentag
 
 So 10px +10px = 20px. 65% - 20px = ?
 
-This is where it gets tricky, Percentages are relative values and because we're using a fluid layout, we would have to do the math every time we wanted to size the screen.
+This is where it gets tricky - percentages are relative values. Because we're using a fluid layout, we would have to do the math every time we wanted to resize the screen.
 
 ### CSS Calculations
 
-Luckily there is a CSS tool that allows us to resize things accordingly. We can utilize a tool called `calc()` that will do the math for us. We provide `calc()` as a value for a property and pass in the equation we want to be evaluated between the parentheses.
+Luckily there is a CSS tool that allows us to resize things accordingly. We can use `calc()`, which does the math for us. We provide `calc()` as a value for a property and pass in the equation we want to be evaluated between the parentheses.
 
 ```css
 section {
@@ -198,11 +198,11 @@ section {
 }
 ```
 
-<em>Note that calc() is whitespace sensitive, `calc(65%-20px)` will not work. Make sure to add spaces `calc(65% - 20px)`.</em>
+<em>Note that calc() is whitespace sensitive, so `calc(65%-20px)` will not work. Make sure to add spaces `calc(65% - 20px)`.</em>
 
 Currently, `calc()` is pretty well supported across different browsers and will become part of our CSS toolkit moving forward. [To see the current support of calc() click here](<https://caniuse.com/#search=calc()>).
 
-So using `calc()`, we can now mix percentages and pixels to create a layout that is fluid and looks great.
+Using `calc()`, we can now mix percentages and pixels to create a layout that is fluid and looks great.
 
 ```html
 <div class="wrapper">
@@ -255,7 +255,7 @@ We discussed other standard units found on the web in the CSS measurement units 
 This one measures viewport height. Think of it as a percentage - the full height of the viewport is 100%. This gets used mainly for large header images or initial load pages.
 Remember, vh **does not** include the URL bar on mobile devices.
 
-> **100% = 100vh**
+> **100% of the height of the viewport = 100vh**
 
 ![viewport height](https://hychalknotes.s3.amazonaws.com/viewportVH.png)
 
