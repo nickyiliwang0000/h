@@ -451,4 +451,5 @@ This is another way to structure your code when you need to get one bit of infor
 * If you are working with an unknown number of promises, this pattern still works but we need to change it slightly. Check out this [video](https://www.youtube.com/watch?v=Y2a0Xv3giho) for a full code-along doing just that! 
 * Here's a [video](https://youtu.be/j2DMwUYEC88?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX) on the spread operator and rest parameters. 
 * Here's a [video](https://youtu.be/j2DMwUYEC88?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX) about a bunch of things you can do with the spread operator.
-* ![Diagram of the life of a JavaScript promise](https://user-images.githubusercontent.com/8013918/51422191-6bcaf780-1b78-11e9-8dd0-bd8d7b19fae9.png)
+* Here's a nice flowchart from MDN showing life of a promise.
+  ![Diagram of the life of a JavaScript promise](https://user-images.githubusercontent.com/8013918/51422191-6bcaf780-1b78-11e9-8dd0-bd8d7b19fae9.png)
