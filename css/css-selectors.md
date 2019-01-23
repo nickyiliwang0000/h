@@ -8,7 +8,7 @@
 -->
 
 # CSS selectors and the cascade
-Learning how to change properties and values on existing pages is important but in your career as a develioper, you'll often be styling from scratch.
+Learning how to change properties and values on existing pages is important but in your career as a developer, you'll often be styling from scratch.
 
 It's important to understand each of the ways you can select elements. Remember that **selectors** are used to specify the elements on the page to which the styles will be applied. Writing powerful CSS requires understanding inheritance and keeping your work organized. It's good practice to identify common styles in your site and write selectors and declarations once rather than repeating the same rule for multiple selectors.
 
