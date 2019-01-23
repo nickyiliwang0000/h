@@ -4,10 +4,12 @@
 We're not perfect! We want your help!
 
 1. Go to the 'Issues' tab at the top of the GitHub notes repo.
-2. Click the green 'New issue' button on the right side of the page.
-3. Write a descriptive title for the issue you noticed.
-4. Make sure you note which lesson the issue is in. (Add a link to that lesson!)
-5. Label the issue. (If there is not appropriate label, choose 'bug')
+1. Click the green 'New issue' button on the right side of the page.
+1. This will give you an option to open a 'Bootcamp Notes Issue'. Click the 'Get started' button!
+1. Write a descriptive title for the issue you noticed.
+1. Follow the template.
+1. Label the issue. (If there is not appropriate label, choose 'bug')
+
 ### Please make ONE issue for ONE type of issue in ONE file. 
 > If there are multiple typos in one file, that's **one** issue. 
 
