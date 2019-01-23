@@ -8,6 +8,8 @@ We're not perfect! We want your help!
 3. Write a descriptive title for the issue you noticed.
 4. Make sure you note which lesson the issue is in. (Add a link to that lesson!)
 5. Label the issue. (If there is not appropriate label, choose 'bug')
+### Please make ONE issue for ONE type of issue in ONE file. If there are multiple typos in one file, that's **one** issue. If the same typo appears in two files, that's **two** issues. If two different issues appear in one file, that's **two** issues.
+
 <!-- 1. Clone the notes to your local.
 2. Create a branch and name it the lesson you're editing:
   `git checkout -b 6.19-intro-to-firebase`
