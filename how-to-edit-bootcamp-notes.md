@@ -10,7 +10,9 @@ We're not perfect! We want your help!
 5. Label the issue. (If there is not appropriate label, choose 'bug')
 ### Please make ONE issue for ONE type of issue in ONE file. 
 > If there are multiple typos in one file, that's **one** issue. 
+
 > If the same typo appears in two files, that's **two** issues. 
+
 > If two different issues appear in one file, that's **two** issues.
 
 <!-- 1. Clone the notes to your local.
