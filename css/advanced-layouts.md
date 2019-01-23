@@ -70,7 +70,9 @@ The corresponding `max-height` and `min-height` properties are less used but can
 
 Moving forward, it's best practice to include a `max-width` property with a pixel value on your containing element (i.e. wrapper) when you use percentages for floated child elements.
 
-### Mixing pixels with Percentages
+## `calc()`
+
+### Mixing pixels with percentages
 
 Now that we understand how to limit the sizing and see the benefits of using percentages with our elements, what if we want to put some space between our elements.
 
@@ -186,7 +188,7 @@ So 10px +10px = 20px. 65% - 20px = ?
 
 This is where it gets tricky, Percentages are relative values and because we're using a fluid layout, we would have to do the math every time we wanted to size the screen.
 
-#### CSS Calculations
+### CSS Calculations
 
 Luckily there is a CSS tool that allows us to resize things accordingly. We can utilize a tool called `calc()` that will do the math for us. We provide `calc()` as a value for a property and pass in the equation we want to be evaluated between the parentheses.
 
@@ -236,7 +238,7 @@ So using `calc()`, we can now mix percentages and pixels to create a layout that
 
 ## Using the viewport to size content
 
-The viewport is the current size of the viewable content area of your browser. The viewport does not include the address or bookmarks bar; it is the entire area within which HTML is rendered.
+The _viewport_ is the current size of the viewable content area of your browser. The viewport does not include the address or bookmarks bar. It is the entire area within which HTML is rendered.
 
 ![browser viewport](https://hychalknotes.s3.amazonaws.com/viewport.png)
 
@@ -246,11 +248,11 @@ Web experiences often feature full browser header images or content that is rela
 
 <!-- Add link to other lesson -->
 
-We discussed standard CSS measurement units in 3.5 CSS measurement units, but there are a couple more recent additions to the dimension discussion: we can use the viewport to size our elements. `vw` and `vh` units allow us to measure the user's viewport in CSS without the need for JavaScript. These units measure the width of the viewport and return a relative value. These units are [not fully supported in legacy browsers](http://caniuse.com/#search=view) but can be very handy.
+We discussed other standard units found on the web in the CSS measurement units lesson, but there are a couple more recent additions to the dimension discussion. We can use the viewport to size our elements. `vw` and `vh` units allow us to measure the user's viewport in CSS without the need for JavaScript. These units measure the width of the viewport and return a relative value. These units are [not fully supported in legacy browsers](http://caniuse.com/#search=view) but can be very handy.
 
 ### `vh`
 
-This one measures viewport height. Think of it as a percentage: the full height of the viewport is 100%. This gets used mainly for large header images or initial load pages.
+This one measures viewport height. Think of it as a percentage - the full height of the viewport is 100%. This gets used mainly for large header images or initial load pages.
 Remember, vh **does not** include the URL bar on mobile devices.
 
 > **100% = 100vh**
