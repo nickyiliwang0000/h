@@ -8,7 +8,7 @@
 
 # Advanced array methods
 
-The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. Although it sounds fancy and maybe a little scary, think of functional programming as a way to use functions to transform data.
+The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. Think of functional programming as a way to use functions to transform data.
 
 ## Working with data
 
@@ -44,7 +44,9 @@ genres.forEach((genre) =>  {
 The following methods are included in JavaScript (among others) to help sort data: `.filter()` `.map()` and `.reduce()`.
 
 <!-- `.map()`, `.filter()` and `.reduce()` are considered pure functions.  -->
-Each of these methods iterates over an array or object in a slightly different way. But two things all these methods have in common is that each one uses a callback function to define the task to be performed on the data and each method returns a new array instead of changing the array provided to it.
+Each of these methods iterates over an array or object in a slightly different way. But two things all these methods have in common are:
+1. each one uses a callback function to define the task to be performed on the data 
+1. each one returns a new array instead of changing the array provided to it
 
 #### `.map()`
 We give the `.map()` method an array and a set of directions (i.e. a **callback function**) about what to do with each item in that array. The `.map()` method then gives us back (i.e. **returns**) an array of each item with the thing done to it. Because it returns an array, it's smart to store the return in a variable.

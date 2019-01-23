@@ -35,7 +35,8 @@ You will also be given marks for your project presentation:
 
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
-You can find your assignment [here]().
+
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1_Al24ZkClAPSVk_SmDTy4N3q4QX3F1Tf7ukJ2ig13Kk/edit?usp=sharing).
 
 ### Design checklist
 [Here](https://docs.google.com/document/u/1/d/17GYf0CfvD8Mdt4fXXH_03Hc-L-y9V3xLSbO5AIfdK54/edit?usp=sharing) is a checklist that will help perfect your conversion!

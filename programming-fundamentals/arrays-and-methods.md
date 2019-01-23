@@ -248,7 +248,7 @@ Bookmark the cheatsheet below:
 
 #### Array Exercise
 
-Open [salad-arrays.html](https://hychalknotes.s3.amazonaws.com/salad-club-arrays.zip). Manipulate the array using the above methods. There are comments in the source for each item you should do.
+Open [tv-show-arrays.html](https://hychalknotes.s3.amazonaws.com/tv-show-arrays-exercise.zip). Have fun manipulating the array using the above methods. The instructions are commented within the source code.
 
 You will need to use `console.log()` to log it to the console as well as create your own variables when required. 
 

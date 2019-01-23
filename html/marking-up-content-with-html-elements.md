@@ -1,4 +1,5 @@
-# HTML elements
+# Marking up content with HTML elements
+
 ## HTML: The makeup of markup
 
 _Hyper Text Markup Language_ (HTML) is the standard language that we use to create web pages. When we open an HTML file within a browser, the code is interpreted as a visual (or audible) web page.
@@ -495,7 +496,7 @@ The link below will bring you to the section of the page with an `id` attribute 
 <a href="http://en.wikipedia.org/wiki/HTML#Markup" target="_blank">http://en.wikipedia.org/wiki/HTML#Markup</a>
 
 #### All the rest
-We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`*, `checked=" "`, `for=" "`, `name=" "`, to name a few.
+We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`, `checked=" "`, `for=" "`, `name=" "`, to name a few.
 
 In your travels around the Internet, you may see some attributes from older versions of HTML that you should **never** use.  They are presented here as apocryphal reference:
 
@@ -559,7 +560,7 @@ Bam! You've built a multi-page navigation!
 
 
 ### Semantic elements
-Before HTML5, a group of HTML elements could be wrapped in div with an id or a class which was targeted to style that content. This can lead to confusion on a page because it can be difficult to tell which element does what. **Semantics elements**, introduced in HTML5, are used to define the role some content plays on a website. They don't have default styling and exist to help developers (and browsers) understand their code better.
+Before HTML5, a group of HTML elements could be wrapped in `<div>` with an `id` or a `class` which was targeted to style that content. This can lead to confusion on a page because it can be difficult to tell which element does what. **Semantic elements**, introduced in HTML5, are used to define the role some content plays on a website. They don't have default styling and exist to help developers (and browsers) understand the code better.
 
 `header` : Defines the header of a page or a section. It often contains the title of a page, and a tagline/subtitle.
 

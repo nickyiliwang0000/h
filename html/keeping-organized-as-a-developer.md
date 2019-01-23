@@ -107,7 +107,7 @@ Often, developers create a `sites` or `websites` folder at root of their compute
 
 Organize in a way that **makes sense to you** and **can scale** when you start having lots of folders and files.
 
-Putting the folder at the root of your computer will allow for easy access of projects when you use tools like [the command line](https://github.com/HackerYou/no-repeat-bootcamp-notes-2018/blob/master/8.1-command-line.md).
+Putting the folder at the root of your computer will allow for easy access of projects when you use tools like [the command line](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/intro-to-command-line.md).
 
 On a Mac, you can access your root directory by opening a new Finder window and clicking your username in the sidebar. You may have a `sites` folder already present, but if not, right-click and create a new folder called `sites` or `websites`.
 
