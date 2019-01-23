@@ -64,7 +64,7 @@ We're not perfect! We want your help!
 4. (Optional) Change the file name on your local and push to GitHub with the old title in the branch name (e.g. `6.1-functional-programming`).
 5. (Optional) Talk to the bootcamp operations manager about what they need to do to make the update with the PCC. -->
 
-This should be a relatively rare occurrence.
+<!-- This should be a relatively rare occurrence. -->
 <!-- 
 ## So you want to remove a lesson
 1. Identify the lesson we no longer teach (e.g. `6.1-functional-programming`)
