@@ -245,7 +245,7 @@ You will frequently want to create a border that is the same `width`, `style` an
 
 It's time to get comfortable with margin, padding, widths and borders, as well as to brush up on selectors.
 
-Download [css-dimensions-exercise.zip](https://hychalknotes.s3.amazonaws.com/css-dimensions-exercise.zip) and open css-dimensions-exercise.html in your editor and browser. You will find a set of instructions in the document.
+Download <a href="https://hychalknotes.s3.amazonaws.com/css-dimensions-exercise.zip" class="exercise" download>css-dimensions-exercise.zip</a> and open css-dimensions-exercise.html in your editor and browser. You will find a set of instructions in the document.
 Open css-dimensions-exercise-ANSWER.html in your browser to see what you are working towards.
 
 
