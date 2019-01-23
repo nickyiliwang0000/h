@@ -44,7 +44,7 @@ When you have more than one file of any given type, group them into a folder. A 
       header-image.jpeg
       logo.png
 ```
-Check out [`keeping organized as a developer`](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/keeping-organized-as-a-developer.md) for more about at organization.
+Check out the [keeping organized as a developer](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/keeping-organized-as-a-developer.md) lesson for more about at organization.
 
 ## We keep our HTML files readable
 ### HTML indentation
