@@ -32,19 +32,19 @@ When you have more than one file of any given type, group them into a folder. A 
 
 ```bash
 - 2018-coca-cola-microsite
-  index.html
+    index.html
   - styles
-    style.css
-    normalize.css
+      style.css
+      normalize.css
   - js
-    script.js
-    jquery.js
-    plugin.js
+      script.js
+      jquery.js
+      plugin.js
   - images
-    header-image.jpeg
-    logo.png
+      header-image.jpeg
+      logo.png
 ```
-Check out [`1.2 Keeping organized as a developer`](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/1.2-keeping-organized-as-a-developer.md) for more about at organization.
+Check out [`keeping organized as a developer`](https://github.com/HackerYou/bootcamp-notes/blob/master/01-html/keeping-organized-as-a-developer.md) for more about at organization.
 
 ## We keep our HTML files readable
 ### HTML indentation
