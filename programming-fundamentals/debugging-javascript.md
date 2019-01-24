@@ -1,4 +1,10 @@
-# Debugging JavaScript
+<!-- Student takeaway: -->
+<!--Student will be able to:
+- Use prompt(), alert(), and confirm()
+- Know what each of them returns
+ -->
+
+# Debugging JavaScript using built in functions
 
 ## Comments
 Sometimes you want to write notes to yourself (or others) to organize blocks of code or leave explanations. Just like HTML & CSS, JavaScript will ignore comments and not execute them.
@@ -21,14 +27,15 @@ Just like in CSS, `/*  */` are used for multiline comments.
 
 Multi-line comments are also great for "hiding" large blocks of code so you can try something new without erasing your old code.
 
-**Get used to commenting your code.** Comments help you (or other developer)understand your code in the future.
+**Get used to commenting your code.** Comments help you (or other developer) understand your code in the future.
 
 ## Debugging tools
 
-_Functions_ are chunks of code that do something. Functions can be repeated as many times as you want. We can create our own functions (to be discussed later) but there are many handy ones already built into JavaScript for debugging purposes. 
+_Functions_ are chunks of code that do something. Functions can be repeated as many times as you want. We can create our own functions but there are many handy ones already built into JavaScript that we can use for debugging. 
 
 ### Function basics
-To get the function to execute, you have to **call the function** using the function name followed by parentheses:
+To get the function to execute, you have to **call** it using the function name followed by parentheses:
+
 ```js
 functionName();
 ```
@@ -91,7 +98,7 @@ In the example above, the **values** "What's your name?", "hello" and "yay or na
 * returns `true` if 'OK' was selected
 * `false` if "cancel" was selected
 
-Note that the arguments being passed and some of the values being returned were contained within quotes. This is because their data type is `string`. [Here's a refresher on that](https://github.com/HackerYou/bootcamp-notes/blob/917b7a927d55c11314045c6c5a625b3c31ba1a53/programming-fundamentals/intro-to-programming.md).
+Note that the arguments being passed and some of the values being returned were contained within quotes. This is because their data type is `string`. [Here's a refresher on data types](https://github.com/HackerYou/bootcamp-notes/blob/917b7a927d55c11314045c6c5a625b3c31ba1a53/programming-fundamentals/intro-to-programming.md#data-types).
 
 ### console.log()
 
@@ -113,5 +120,5 @@ console.log(total*tax);
 
 Whenever you want to check the status of something in your code, use `console.log`! Use them liberally in development and **remove console logs from your projects when they are ready for deployment**.
 
-There should be nothing in the console on a production website.
+## There should be nothing in the console on a production website.
 
