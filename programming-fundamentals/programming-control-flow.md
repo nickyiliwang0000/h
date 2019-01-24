@@ -41,7 +41,6 @@ if (condition) {
   // block statement (do something)
 }
 ```
-
 ![A diagram that describes the flow of an if/else statement](https://hychalknotes.s3.amazonaws.com/control-flow.png)
 
 Some vocabulary:
@@ -76,7 +75,7 @@ In fact, a block statement could be just the `{}`.
 ```
 
 ### Comparison operators
-The first step in using an `if`/`else` statement is defining up the condition. A condition is a JavaScript expression that evaluates to a boolean (e.g. `true` or `false`). How do we evaluate the pieces of an expression? Using _comparison operators_.
+The first step in using an `if`/`else` statement is defining up the condition. A condition is usually a JavaScript expression that evaluates to a boolean (e.g. `true` or `false`). How do we evaluate the pieces of an expression? Using _comparison operators_.
 
 Operator     |  Description  
 ------------ | -------------
@@ -103,8 +102,8 @@ In the console, write two expressions that return the boolean value `false` and 
 We use logical operators to make more complex conditions for our statements.
 
 <!-- Used bolding here and not `` because you have to escape the pipe character to be able to see it in the table. -->
-Operators | Description
----|---
+Operator | Description
+:---:|:---:
 **&&** | and
 **&#x7c; &#x7c;** | or
 **!**  | not
@@ -173,7 +172,7 @@ if ('string' && num === 0){
 ### Exercises
 Complete [these](https://hychalknotes.s3.amazonaws.com/control-flow-exercises.zip) exercises in **pairs**. Practice pair programming! 
 
-> Try having the person who feels **less confident** with JavaScript do the typing. It's the job of the person who feels more confident to explain and gently guide the typer. 
+> Try having the person who feels **less confident** with JavaScript do the typing. It's the job of the person who feels more confident to gently guide the typer. 
 
 ## Loops
 Another powerful concept in programming is _looping_. A loop runs a block of statements are repeatedly while a condition is true.
@@ -234,7 +233,9 @@ The block executes repeatedly as long as the condition is true.
 #### 🚨🚨🚨🚨  D A N G E R 🚨🚨🚨🚨
 
 If the condition is never false, a `while` loop will run forever and your browser will crash. This is called an _infinite loop_. If you do get an infinite loop, quit your browser with `ctrl + Q` or `cmd + Q`. Sometimes Firefox will give you a little yellow tooltip that asks if you want to quit the process. You do!
+
 ![Screenshot of a tooltip in Firefox asking if you want to quit the browser](https://hychalknotes.s3.amazonaws.com/firefox-browser-crash-tooltip.png)
+
 * If you can't quit from the browser on a Mac, go to 'Activity Monitor', select the browser in question, and force it to quit.
 * On PC, `ctrl + shift + esc` will bring up the Task Manager. Choose your browser and click 'End Task'.
 
