@@ -249,20 +249,6 @@ Weird! How do we fix these unexpected bugs?
 ### Collapse of surrounding element
 Floats were created to allow text to wrap around an image and continue down the page. In the layout we're working with, we don't have enough content in the `aside` to continue down the page, so the wrapper sizes to the next element that isn't floated. In this case, the `footer` element.
 
-#### Solution: `overflow:hidden`
-
-We don't recommend `overflow:hidden` but you may see it - it's a hack to fix the element collapse. It can be effective but it can also lead to other problems.
-
-By adding the rule `overflow:hidden;` to the wrapper, we force the wrapper to contain its children.
-
-```css
-.wrapper {
-    overflow:hidden;
-}
-```
-
-This property will cut off any text that is too large to fit in the container, which is not usually what you want.
-
 #### Solution: `.clearfix`
 
 The industry standard method of solving this problem is mostly referred to as `clearfix`. (The class name of `clearfix` is an industry standard, but it can be named whatever you'd like.) Along with the `border-box` fix, we recommend that you include the following code at the **top** of all our `styles.css` files moving forward.
@@ -309,7 +295,7 @@ All browsers come with style defaults, such as making all `h1`-`h6` elements esc
 
 If you add it as a separate stylesheet, **it should be included before your custom stylesheet**.
 
-If you don't already have it as a snippet, you can download normalize.css at <http://necolas.github.com/normalize.css/>, or " [find it here](https://hychalknotes.s3.amazonaws.com/normalize-v700.css). We won't be using it in our examples, but all of your projects should include it.
+If you don't already have it as a snippet, you can download normalize.css at <http://necolas.github.com/normalize.css/>, or [find it here](https://hychalknotes.s3.amazonaws.com/normalize-v700.css). We won't be using it in our examples, but all of your projects should include it.
 
 ## Gallery layout exercises
 Let's create a floated layout together together to start. Open up [gridLayout.html](https://hychalknotes.s3.amazonaws.com/gridLayout.html) in your text editor and in the browser. If you get stuck, check out [gridLayoutANSWER.html](https://hychalknotes.s3.amazonaws.com/gridLayoutANSWER.html).
@@ -323,3 +309,5 @@ Try revisiting the two column layout: can you create it on your own? Download [a
 
 ## More exercises
 For extra practice, work on [structuralElements.html](https://hychalknotes.s3.amazonaws.com/structuralElements.html) and follow the instructions in the comments! If you get stuck [check out the answer here](https://hychalknotes.s3.amazonaws.com/structuralElementsAnswer.html).
+
+For a pretty tough CHALLENGE, download this [pool party exercise](https://hychalknotes.s3.amazonaws.com/poolPartyFloatsExercise.zip)!

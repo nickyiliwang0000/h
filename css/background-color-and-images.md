@@ -1,4 +1,4 @@
-## Intro to CSS backgrounds
+# Intro to CSS backgrounds
 
 All HTML elements can have backgrounds. The background will appear within the dimensions of the element and behind any content or other elements that are nested within.
 
@@ -38,13 +38,13 @@ Just like the `<img>` tag, we can use absolute or relative tags.
 
 ```css
 body {
-  background-image:url(images/dog2.jpg);
+  background-image: url(images/dog2.jpg);
 }
 ```
 
 ```css
 body {
-  background-image:url(https://www.google.com/images/srpr/logo3w.png);
+  background-image: url(https://www.google.com/images/srpr/logo3w.png);
 }
 ```
 
@@ -53,6 +53,7 @@ By default, the background image will repeat and appear with its native dimensio
 
 ### When should I use a background image vs. an HTML img element?
 When the image matters to the content of your page, use an `img` tag. If the image is purely aesthetic, use a background image. Basically, think about whether you would want a screen reader to describe your content or ignore it. (Background images don't have alt text.)
+
 ## Background image properties
 
 When using the background image property, the image will repeat by default from the left to the right, and the top to the bottom. Using the `background-repeat` property, we can specify how the background repeats:
@@ -209,7 +210,7 @@ header {
 To layer backgrounds on top of one another, comma separate the background values you want:
 
 ```css
-div{
+div {
   background: url(http://www.placekitten.com/200/200), 
   linear-gradient(yellow 20%, red , blue);
   background-repeat: space;

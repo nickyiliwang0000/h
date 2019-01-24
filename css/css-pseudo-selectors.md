@@ -26,7 +26,7 @@ Pseudo-classes are appended right after the main selector with a colon, `:`. The
 
 * `:active`: used to style an element when the user clicks the element.
   ```css
-  inut.email:active {
+  input.email:active {
       background-color: pink;
   } /* turn pink when the user is actively engaged with the input (a.k.a. clicking on it) */
   ```
