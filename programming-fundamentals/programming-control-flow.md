@@ -1,9 +1,9 @@
 <!-- Student takeaway: -->
-<!--Student will be able to:
+<!--Student will know:
 - What control flow means
-- What the comparison operators are 
+- What the comparison operators are (< > , =< =>)
 - How == is different from ===
-- What the logical operators are
+- What the logical operators are (&& || !)
 - Syntax of a for loop
 - Syntax of a while loop
 - Who to quit a browser that's got an infinite loop going on
