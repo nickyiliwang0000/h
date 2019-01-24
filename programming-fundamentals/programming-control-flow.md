@@ -232,11 +232,13 @@ The block executes repeatedly as long as the condition is true.
 
 
 <h3 align="center"> 
-🚨🚨🚨🚨  DANGER 🚨🚨🚨🚨
+🚨🚨🚨🚨🚨🚨🚨🚨  DANGER 🚨🚨🚨🚨🚨🚨🚨🚨
 </h3>
 If the condition is never false, a `while` loop will run forever and your browser will crash. This is called an _infinite loop_. If you do get an infinite loop, quit your browser with `ctrl + Q` or `cmd + Q`. Sometimes Firefox will give you a little yellow tooltip that asks if you want to quit the process. You do!
 
+
 ![Screenshot of a tooltip in Firefox asking if you want to quit the browser](https://hychalknotes.s3.amazonaws.com/firefox-browser-crash-tooltip.png)
+
 
 * If you can't quit from the browser on a Mac, go to 'Activity Monitor', select the browser in question, and force it to quit.
 * On PC, `ctrl + shift + esc` will bring up the Task Manager. Choose your browser and click 'End Task'.
