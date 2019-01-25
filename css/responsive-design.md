@@ -308,7 +308,7 @@ There are a lot of common patterns and problems that you will find when it comes
 ## Exercises
 
 ### Responsive navigation with float
-Let's try making a navigation responsive. Download the [navigation-float](https://hychalknotes.s3.amazonaws.com/navigation-float.zip)and make it responsive! Check out the answer key in your browser to see what it's supposed to look like.
+Let's try making a navigation responsive. Download the [navigation-float](https://hychalknotes.s3.amazonaws.com/navigation-float.zip) and make it responsive! Check out the answer key in your browser to see what it's supposed to look like.
 
 ### More exercises
 Check out [responsive-exercises-roundup.zip](https://hychalknotes.s3.amazonaws.com/responsive-exercises-roundup.zip) for the exercises and answers.
