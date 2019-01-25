@@ -3,7 +3,21 @@
 
 We're not perfect! We want your help!
 
-1. Clone the notes to your local.
+1. Go to the 'Issues' tab at the top of the GitHub notes repo.
+1. Click the green 'New issue' button on the right side of the page.
+1. This will give you an option to open a 'Bootcamp Notes Issue'. Click the 'Get started' button!
+1. Write a descriptive title for the issue you noticed.
+1. Follow the template.
+1. Label the issue. (If there is not appropriate label, choose 'bug')
+
+### Please make ONE issue for ONE type of issue in ONE file. 
+> If there are multiple typos in one file, that's **one** issue. 
+
+> If the same typo appears in two files, that's **two** issues. 
+
+> If two different issues appear in one file, that's **two** issues.
+
+<!-- 1. Clone the notes to your local.
 2. Create a branch and name it the lesson you're editing:
   `git checkout -b 6.19-intro-to-firebase`
   `git checkout -b 3.13-emmet`
@@ -50,9 +64,9 @@ We're not perfect! We want your help!
 2. (Optional) Bring up that you think a lesson should be renamed in the L10.
 3. (Optional) Get approval from bootcamp leads to change the name.
 4. (Optional) Change the file name on your local and push to GitHub with the old title in the branch name (e.g. `6.1-functional-programming`).
-5. (Optional) Talk to the bootcamp operations manager about what they need to do to make the update with the PCC.
+5. (Optional) Talk to the bootcamp operations manager about what they need to do to make the update with the PCC. -->
 
-This should be a relatively rare occurrence.
+<!-- This should be a relatively rare occurrence. -->
 <!-- 
 ## So you want to remove a lesson
 1. Identify the lesson we no longer teach (e.g. `6.1-functional-programming`)

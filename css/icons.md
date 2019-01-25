@@ -33,11 +33,11 @@ Apple recommends that you upload an image of at least 144x144 and let the device
 
 ```html
 <!-- Standard iPhone -->
-<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone-114.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone-57.png" />
 <!-- Retina iPhone -->
 <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone-114.png" />
 <!-- Standard iPad -->
-<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad-144.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad-72.png" />
 <!-- Retina iPad -->
 <link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad-144.png" />
 ```

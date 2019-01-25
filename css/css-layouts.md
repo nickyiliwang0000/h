@@ -310,3 +310,5 @@ Try revisiting the two column layout: can you create it on your own? Download [a
 
 ## More exercises
 For extra practice, work on [structuralElements.html](https://hychalknotes.s3.amazonaws.com/structuralElements.html) and follow the instructions in the comments! If you get stuck [check out the answer here](https://hychalknotes.s3.amazonaws.com/structuralElementsAnswer.html).
+
+For a pretty tough CHALLENGE, download this [pool party exercise](https://hychalknotes.s3.amazonaws.com/poolPartyFloatsExercise.zip)!
