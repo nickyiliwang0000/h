@@ -56,7 +56,7 @@ The important thing to note here is that we use a **form** to send information f
 
 Without a connection to a server, forms don't **do** anything. When we work with forms, we are dealing with what are called _server-side technologies_. Our tools (HTML and CSS) are the opposite of this and are termed _client-side technologies_.
 
-Client-size technologies can:
+Client-side technologies can:
 * choose the look and feel of a web app
 * display hard-coded information 
 * change a button's style when it's focused
