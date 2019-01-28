@@ -1,31 +1,45 @@
-Advanced JS: Lexical Scope & Execution Context
+<!-- Student takeaway: -->
+<!-- At the end of this lesson, the student will be able to:
 
-### How JavaScript is compiled
+-->
+# Lexical scope and execution context
+<!-- ## How JavaScript is compiled
 
-Our JavaScript files are not directly read by the browser. There's a step in between our writing and the browser's interpretation where the JS code is compiled (i.e. translated from something that is human readable to something that the computer can understand).
+Our JavaScript files are not directly read by the browser. There's a step in between our writing and the browser's interpretation where the JS code is compiled (i.e. translated from something that is human readable to something that the computer can understand). -->
 
-### The Global Object
+## The global object
 
-When the browser first loads a script, that script is run inside of a `global execution context`. (Execution context: the environment that a function executes in.) Initially, this gives you access to two things: 
+When the browser first loads a script, that script is run inside of the _global execution context_. An _execution context_ is the environment in which a function is run. _Global_ here means the browser (i.e. code that is **not confined to a function block**). When the browser loads any script (even an empty one), you get access to two things: 
 
-    1. The Global Object
-    2. The keyword (variable) `this`
+1. The global object
+2. The keyword `this`
 
-Create an empty JavaScript file and run it in the browser. Open the console and type in `this`. What is `this` equal to? 
-The `window` object !
-This `window` object is the global object when running code in the browser. (It'll be something else if you are running the Javascript on a server). 
+Create an HTML file and link it to an empty JavaScript file. Open the HTML file in the browser. Open the console and type `this`. What is `this` equal to? 
 
-When you think of the term `global` in JavaScript, think *code that is not inside a function*. 
+> The `Window` object !
 
-### Function Context
+The `Window` object is the execution context for code in the browser unless otherwise specified.
+<!-- (it'll be something else if you are running the JavaScript on a server.) -->
+## Specifying execution context
 
-Whenever a function is called, a new context is created. Inside the function, there is a private scope where anything declared inside of the function cannot be accessed from the outside. This new execution context also *has reference to it's outer environment.* (This can also be referred to as the *lexical environment*.) 
+Whenever a function is called, a new context is created. Inside the function, there is a private scope where anything declared inside of the function cannot be accessed from the outside (e.g. variables, functions, etc.). The newly created execution context has can access both to the private scope **and** its outer environment.( This can also be referred to as the **lexical environment.**) 
 
-### Revisiting `this`
 
-The `this` keyword can be one of the most confusing to grasp. Now we know that every time an execution context is created / a function is run, it gives us access to a variable called `this` which can be very useful for writing dynamic code. 
+Lexical scope is another word for static scoping (in other languages)
+ -  the opposite of dynamic scope.
+Dyna: scope of a variable can change depending on the order of functions called (Lisp -  less common)
+Lex: the scope of a variable can be determined from reading the source code.
 
-`this` will be pointing at a different object depending on how the function is invoked. Let's look at a few scenarios that change the value of this depending on how the function is called. 
+What is lexical scope?
+    Refers to the strategy a programming languages uses to determine where and how veraibles are accessible
+What is execution context?
+    It's the set of variables that are available to be accessed at any given point as a program is being run.
+
+## Revisiting `this`
+
+The `this` keyword can be challenging to grasp. We know that every time an execution context is created (i.e. a function is run), we have access to a variable called `this` which can be very useful for writing dynamic code. 
+
+`this` will be pointing to a different object depending on how the function is invoked. Let's look at a few scenarios that change the value of `this` depending on how the function is called. 
 
 ```js
 // global scope, we already have access to this
@@ -44,6 +58,13 @@ let functionExpression = function(){
 }
 
 functionExpression(); // >> Window
+
+//arrow function in the global scope
+let arrowFunction =()=>{
+    console.log(this)
+}
+arrowFunction(); // >> Window
+
 ``` 
 
 Whenever a function is declared or a function expression is written in the global scope, `this` will point to the global object even though the execution context has changed. 
@@ -93,9 +114,9 @@ That's confusing! Inside of our `print` method, `this` is a reference to the obj
 
 How can this be solved? One way is with ES6 arrow functions! 
 
-### Arrow Functions Revisited
+### Arrow functions revisited
 
-Arrow functions handle the `this` keyword a little differently. They are *lexically scoped*, meaning that they create a *lexical this*, which is a fancy way of saying `this` will always refer to the parent scope. Unlike other types of functions, arrow functions do not have their _own_ `this`. 
+Arrow functions handle the `this` keyword a little differently. They are )_lexically scoped_, meaning that they create a _lexical `this`_, which is a fancy way of saying `this` will always refer to the parent scope. Unlike other types of functions, **arrow functions do not have their own** `this`. 
 
 Let's rewrite our `instructor` method using an arrow function.
 
