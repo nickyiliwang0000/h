@@ -468,7 +468,8 @@ Styling the options when they come up isn't easy - lots of places use workaround
 ### Spotify sign-up form code-along
 
 
-Let's all try and replicate the Spotify sign-up form! Together we will create the markup and then you will be given time to work on the CSS. Most inputs and forms are just like any other element, so we can use whatever CSS we want on them.
+Let's all try and replicate the Spotify sign-up form! Together we will create the markup and then you will be given time to work on the CSS. Most inputs and forms are just like any other element, so we can use whatever CSS we want on them.  
+
 ![spotify sign-up form](https://hychalknotes.s3.amazonaws.com/spotify-sign-up.png)
 
 You can find the starter files [here](https://hychalknotes.s3.amazonaws.com/spotify-form-code-along-STARTER-FILES.zip) and an answer [here](https://hychalknotes.s3.amazonaws.com/spotify-form-code-along-ANSWER.zip).
