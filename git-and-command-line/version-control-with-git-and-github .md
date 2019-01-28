@@ -1,4 +1,4 @@
-#Version control with Git and Github
+#Version control with Git and GitHub
 
 Version control allows us to keep a record of any changes in our directories and files (e.g. updates to the contents of the files as well as adding, removing and renaming files). Version control keeps track of changes without overwriting any part of the project.
 
