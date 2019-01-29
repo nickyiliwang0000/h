@@ -46,7 +46,7 @@ You'll be submitting your project via GitHub and posting the link to the reposit
 
 1. Remove any unneeded files from the project.
 1. Create a repository called `firstName_lastName_project#`
-1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
+1. Push your files to GitHub.
 1. Post the link to the repository on Basecamp.
 
 ## Lateness
