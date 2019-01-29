@@ -45,7 +45,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1_Al2
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
-1. Create a repository called `firstName_lastName_project#`
+1. Create a repository called `firstNameLastNameProject#`
 1. Push your files to GitHub.
 1. Post the link to the repository on Basecamp.
 
