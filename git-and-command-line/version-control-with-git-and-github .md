@@ -1,4 +1,4 @@
-#Version control with Git and GitHub
+# Version control with Git and GitHub
 
 Version control allows us to keep a record of any changes in our directories and files (e.g. updates to the contents of the files as well as adding, removing and renaming files). Version control keeps track of changes without overwriting any part of the project.
 
@@ -13,12 +13,12 @@ With Git we can:
 * have different people edit the same file at the same time
 * easily share and collaborate on code with others by using services like [GitHub.com](http://github.com)
 
-### Getting Started
+## Getting Started
 To get started, we'll be using [GitHub.com](http://github.com) to host our version controlled projects. This will save our project files on the web and allow us to easily share our code and collaborate with others. Go ahead and sign up for an account if you don't already have one. Your github profile will be linked on your portfolio, resume, and the HackerYou website, so make sure your username is something that you're comfortable being associated with your professional life. 
 
 There are two ways to access Git: using a *GUI* (graphical user interface) or via the command line. We'll be using git with the command line for this course, because it's important to be comfortable working with the terminal, but many people enjoy using a GUI. (A popular one is https://www.sourcetreeapp.com/). Feel free to explore these after the bootcamp.
 
-#### What is a repository?
+### What is a repository?
 
 The purpose of Git is to manage and store information about the changes in a set of files. Git stores this information in a *repository*, which is often shortened to *repo*. 
 
