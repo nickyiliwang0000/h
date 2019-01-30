@@ -45,19 +45,22 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1_Al2
 
 ### Design files
 
-**Beachstay**
+**BEACHSTAY**
+
 [design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
 
 [assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
 
 
-**Planted**
+**PLANTED**
+
 [design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
 
 [assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
 
 
-**Bar-One** 
+**BAR-ONE** 
+
 [design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
 
 [assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
