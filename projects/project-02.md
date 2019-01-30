@@ -45,14 +45,22 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1_Al2
 
 ### Design files
 
-[Beachstay design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
-[Beachstay assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
+**Beachstay**
+[design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
 
-[Planted design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
-[Planted assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
 
-[Bar-One design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
-[Bar-One assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
+
+**Planted**
+[design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
+
+[assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
+
+
+**Bar-One** 
+[design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
+
+[assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
 ## Submitting your project
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
