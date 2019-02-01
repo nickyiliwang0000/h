@@ -158,7 +158,7 @@ To learn more about the inspector grid tools, [check out this link](https://proj
 
 ![A screenshot of the grid tools in Firefox, showing the grid-gap, explicit columns, explicit and implicit rows.](https://hychalknotes.s3.amazonaws.com/gridTools.png)
 
-Notice those numbers? Those are grid line numbers. For every column and row we create, we also create grid lines. They start on the top left outside edge of our grid and go to the bottom right outer edge. Explicit and implicit rows and columns get numbered. 
+Notice those numbers? Those are grid line numbers. For every column and row we create, we also create grid lines. They start on the top left outside edge of our grid and go to the bottom right outer edge. Explicit and implicit rows and columns get numbered. The 
 
 
 ## Grid item placement
@@ -218,7 +218,7 @@ You can also use the `span` keyword in the shorthand:
 
 ```css
 .gridItem1 {
-grid-column: 1 / span 3;
+  grid-column: 1 / span 3;
 }
 ```
 
@@ -271,7 +271,7 @@ grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 
 ### `auto-fit` and `auto-fill`
 
-Repeat is super powerful when used with auto-fit and auto-fill. The difference between the two keywords is very subtle, but has to do with extra whitespace. Both fit as many rows/columns at a certain size as possible, while respecting grid-gaps and at smaller breakpoints, the two act the same. It is only when we have extra whitespace available, that we can notice the difference.
+Repeat is super powerful when used with `auto-fit` and `auto-fill`. The difference between the two keywords is very subtle, but has to do with extra whitespace. Both fit as many rows/columns at a certain size as possible, while respecting grid-gaps and at smaller breakpoints, the two act the same. It is only when we have extra whitespace available, that we can notice the difference.
 
 **auto-fill** - Fills the row with as many columns as it can fit at the specified size. New tracks can be empty, they will still take up the space allotted. 
 
@@ -353,7 +353,7 @@ Magic! The grid automatically finds an element that will fit in this space, and 
 
 
 ### Content sizing keywords: 
-Instead of using a measurement unit or fr in our grid-template-columns or grid-template-rows we can also use content sizing keywords. Let's look at an example of these three keywords outside of grid before diving into a grid example. 
+Instead of using a measurement unit or `fr` in our `grid-template-columns` or `grid-template-rows` we can also use content sizing keywords. Let's look at an example of these three keywords outside of grid before diving into a grid example. 
 
 #### min-content
 min-content will make an element be the smallest width possible. This is usually dictated by the longest word.
