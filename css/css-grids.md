@@ -349,33 +349,33 @@ Notice the empty spot in the right hand corner? Let's add `grid-auto-flow: dense
 ```
 Magic! The grid automatically finds an element that will fit in this space, and places it there! This is not so great for items where order matters, but for an image gallery or maybe even independent articles, this could be perfect!  -->
 
-## Additional learning topics
+# Additional learning topics
 
 
-## Content Sizing Keywords: 
+### Content sizing keywords: 
 Instead of using a measurement unit or fr in our grid-template-columns or grid-template-rows we can also use content sizing keywords. Let's look at an example of these three keywords outside of grid before diving into a grid example. 
 
-### min-content
+#### min-content
 min-content will make an element be the smallest width possible. This is usually dictated by the longest word.
 
 <!-- <iframe height='265' scrolling='no' title='Content Sizing Keywords : min-content' src='//codepen.io/suzettemccanny/embed/jpwjoP/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/suzettemccanny/pen/jpwjoP/'>Content Sizing Keywords : min-content</a> by Suzette McCanny (<a href='https://codepen.io/suzettemccanny'>@suzettemccanny</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-### max-content
+#### max-content
 max-content will let an element be as wide as necessary to fit all of the content. In the case an element can be larger than it's parent, max-content will cause an overflow.
 
 <!-- <iframe height='265' scrolling='no' title='Content Sizing Keywords : max-content' src='//codepen.io/suzettemccanny/embed/JBJgdL/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/suzettemccanny/pen/JBJgdL/'>Content Sizing Keywords : max-content</a> by Suzette McCanny (<a href='https://codepen.io/suzettemccanny'>@suzettemccanny</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-### fit-content
+#### fit-content
 fit-content takes a value that will become the size of the element. Example: `grid-template-columns: fit-content(200px) 1fr 1fr;`
 
-What's great about these keywords, is they are supported in all broswers that also support grids! Let's look at how we can use these in grids:
+<!-- What's great about these keywords, is they are supported in all broswers that also support grids! Let's look at how we can use these in grids:
 
 <iframe height='265' scrolling='no' title='Content Sizing Keywords - fit-content' src='//codepen.io/suzettemccanny/embed/GBMKvZ/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/suzettemccanny/pen/GBMKvZ/'>Content Sizing Keywords - fit-content</a> by Suzette McCanny (<a href='https://codepen.io/suzettemccanny'>@suzettemccanny</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+</iframe> -->
 
-## Grid Alignment Keywords
+### Grid Alignment Keywords
 Unlike flexbox, the keywords to organize space on a grid do not change. Justify will always refer to the row axis, and align will always refer to the column axis.
 
 **justify** refers to space on the **row axis**
@@ -390,8 +390,6 @@ Unlike flexbox, the keywords to organize space on a grid do not change. Justify 
 ![](https://hychalknotes.s3.amazonaws.com/align-column-axis.png)
 
  
-## Controlling space in a grid
-
 ### Organizing space _within_ the grid 
 
 #### justify-items and align-items
@@ -529,5 +527,5 @@ Another great resource for combining those properties is [this article by Rachel
 * Pseudo elements in grid areas? Not yet! 
 * can't add borders and backgrounds to grid-areas, just grid elements
 * Nested grids have no way of communicating with parent grids. Ideally, you would be able to line internal grid elements to the parent grid, or other nested grids but not yet!
-* -1 is the end of the explicit grid, not the whole grid!
+* grid-line number -1 is the end of the explicit grid, not the whole grid!
 * Can I make a masonry layout? Not without Javascript or positioning
