@@ -11,7 +11,7 @@ To begin, we'll need to set the display property of our parent element. There ar
 
 * `display: inline-grid;` will give us a grid that is an inline-block grid
 
-Setting our display property alone won't create a grid for us. Next, we need to tell our grid how to lay out our columns(vertical) and rows(horizontal). To do this, we need to set up our `grid-template-columns` and `grid-template-rows` properties.
+Setting our display property alone won't create a grid for us. We need to tell our grid how to lay out our columns (vertical) and rows (horizontal). To do this, we need to set up our `grid-template-columns` and `grid-template-rows` properties.
 
 
 ### `grid-template-columns` & `grid-template-rows`
@@ -33,7 +33,7 @@ Not only can use both pixel values and percentages, but we also have another uni
 
 ### Introducing the `fr` unit
 
-CSS Grid introduces a new unit of measurement called the `fr` unit, meaning **fraction of the free space in the grid container**. The `fr` value is determined after any non-flexible columns or rows are declared. Meaning if you have a five column layout and two columns are already set with `100px` each, and the remaining columns are `1fr` each, the free space will be split up into three fractions and distributed evenly. This is very similar to how the flex grow and flex shrink properties work.
+CSS Grid introduces a new unit of measurement called the `fr` unit, meaning **fraction of the free space in the grid container**. The `fr` value is determined after any non-flexible columns or rows are declared. Meaning if you have a five-column layout where two columns are set to `100px` each and the remaining columns are `1fr` each, the free space will be split up into three fractions and distributed evenly between the remaining columns. This is very similar to how the `flex-grow` and `flex-shrink` properties work.
 
 Let's change our CSS to match the following:
 
@@ -45,11 +45,11 @@ Let's change our CSS to match the following:
 } 
 ```
 
-What happens if we change the second column value to be `300px`? The fr units scale according to the free space available once the rest of the columns have been defined.
+What happens if we change the second column value to be `300px`? The `fr` units scale according to the free space available once the rest of the columns have been defined.
 
 ## Creating space between grid items
 
-In order to create gaps(sometimes referred to as gutters) between columns and rows, there are two properties available: `grid-row-gap` and `grid-column-gap` which can be condensed into the shorthand `grid-gap`. When using the shorthand, the first value indicates grid-row-gap and the second value indicates grid-column-gap. If you provide one value only, it will apply to both. This property is set on the grid container, and will only give you extra space between grid areas, not on the outter edges.
+In order to create gaps (sometimes referred to as _gutters_) between columns and rows, there are two properties available: `grid-row-gap` and `grid-column-gap` which can be condensed into the shorthand `grid-gap`. When using the shorthand, the first value indicates `grid-row-gap` and the second value indicates `grid-column-gap`. If you provide one value only, it will apply to both. This property is set on the grid container, and will only give you extra space between grid areas, not on the outer edges.
 
 ```css
 .container {
@@ -57,9 +57,9 @@ In order to create gaps(sometimes referred to as gutters) between columns and ro
 }
 ```
 
-These properties will accept fixed or flexible units which will accomodate whatever dimensions you set your columns and rows to, **unless they are set using percentages**. When we use percentages, those units cannot be overwritten and can result in horizontal overflow. This is why the `fr` unit is so powerful in CSS Grid. 
+These properties will accept fixed or flexible units which will accomodate whatever dimensions you set your columns and rows to **unless they are set using percentages**. When we use percentages, those units cannot be overwritten and can result in horizontal overflow. This is why the `fr` unit is so powerful in CSS Grid. 
 
-Let's look at what happens when we add `grid-gap: 40px;` to our grid, and toggling `grid-template-columns` to percentages to see the effect.
+Let's look at what happens when we add `grid-gap: 40px;` to our grid and switch the values for `grid-template-columns` to percentages:
 
 ```css
 .container {
@@ -70,10 +70,9 @@ Let's look at what happens when we add `grid-gap: 40px;` to our grid, and toggli
 } 
 ```
 
-
 ### Explicit and implicit rows and columns
 
-What happens if we have more items in our grid than we've told our grid about? Let's change our CSS to match:
+What happens if we have more items in our grid than we expected? Let's change our CSS to match:
 
 ```css
 .container {
@@ -84,28 +83,26 @@ What happens if we have more items in our grid than we've told our grid about? L
 }
 ```
 
-Next, copy this Emmet snippet to add more markup, and see how our current grid setup handles the addition content: `.gridItem.gridItem$@7*6>p{Grid Item $@7}`.
+Copy this Emmet snippet to add more markup, and see how our current grid setup handles the additional content: `.gridItem.gridItem$@7*6>p{Grid Item $@7}`.
 
-Here we have 12 grid items, with three items per column, and only 2 rows. What will happen to the three extra elements?
+Here we have 12 grid items, and a grid set up to accomodate two rows of three items per column (i.e. a 2x3 grid). What will happen to the three extra elements?
 
-CSS Grids will automatically fit your new content in a new row. The size of the row will be determined by the content that falls to that new row. These new rows are called _implicit rows_. The rows we do create, are called _explicit rows_.
+CSS Grids will automatically fit your new content in a new row. The size of the row will be determined by the content that falls to that new row. These new rows are called _implicit rows_. The rows we created initially are called _explicit rows_.
 
 ### `grid-auto-flow`
 
-Notice how the extra grid items get put in a new *row*, not a new *column*? This is because the default value for the `grid-auto-flow` is row. We can adjust this by changing this property to column. We will look at another value dense, a little later, but it will fit items in whereever they can fit!
+Notice how the extra grid items get put in a new **row**, not a new **column**? This is because the default value for the `grid-auto-flow` is `row`. We can adjust this by changing this property's value to `column`. 
 
 * **row**: default value
 * **column**: any implicit items will create new columns
-* **dense**: attempts to fill in holes earlier in the grid
 
+Another value, `dense` attempts to fill in holes earlier in the grid.
 
-For accessibility, using `grid-auto-flow: dense;` will change the order of your grid items. If the order of your content matters to the users understanding then don't this value.
-
+> Using `grid-auto-flow: dense;` will change the order of your grid items, which may create accessibility challenges. If the order of your content matters to the user's understanding, don't this value.
 
 ### `grid-auto-rows`
 
-If you do not explicitly create a column or row, the browser will fit the rest of our elements onto a new line (by default), called an implicit row. To control your implicit rows, you can use the `grid-auto-rows` property. It is possible to provide multiple values for multiple implicit rows. However, Firefox does not currently support multiple values, so it is not recommended.
-
+To control your implicit rows, you can use the `grid-auto-rows` property. It is possible to provide multiple values for multiple implicit rows. However, [Firefox does not currently support multiple values](https://caniuse.com/#search=grid), so wait until the support is more robust to use it in production.
 
 ```css
 .container {
@@ -121,9 +118,9 @@ With the above code, any implicit rows will be 100px tall.
 
 ### `grid-auto-columns`
 
-This property controls the size of implicit columns when `grid-auto-flow` is set to `column`. It can be used the same way as grid-auto-rows property. Firefox also does not support multiple values for this property as well, however other browsers do.
+This property controls the size of implicit columns when `grid-auto-flow` is set to `column`. It can be used the same way as `grid-auto-rows` property. [Firefox does not support multiple values for this property](https://caniuse.com/#search=grid), however other browsers do.
 
-## Dev Tools
+## Dev tools
 
 Firefox has fantastic CSS Grid inspector tools! Let's dive into them.
 
@@ -131,8 +128,7 @@ When you inspect element on a grid container, you should be able to see a small 
 
 ![Inspector tools showing a grid icon next to the css rule display:grid](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-01-13%20at%204.19.56%20PM.png)
 
-
-Click on the layout tab in your inspector tools, and you will see Grid Display Settings and a small map of your grid. You can hover over the map and see more information about the specific grid area you're hovering.
+Click on the layout tab in your dev tools, and you will see 'Grid Display Settings' and a small map of your grid. You can hover over the map and see more information about the specific grid area you're hovering.
 
 Here are some tips to help you read the grid tools:
 
@@ -158,16 +154,15 @@ To learn more about the inspector grid tools, [check out this link](https://proj
 
 ![A screenshot of the grid tools in Firefox, showing the grid-gap, explicit columns, explicit and implicit rows.](https://hychalknotes.s3.amazonaws.com/gridTools.png)
 
-Notice those numbers? Those are grid line numbers. For every column and row we create, we also create grid lines. They start on the top left outside edge of our grid and go to the bottom right outer edge. Explicit and implicit rows and columns get numbered. The 
-
+Notice those numbers? Those are _grid line numbers_. For every column and row we create, we also create grid lines. They start on the top left outside edge of our grid and go to the bottom right outer edge. Explicit and implicit rows and columns get numbered.
 
 ## Grid item placement
 
 ### `grid-column-start` and `grid-column-end` / `grid-row-start` and `grid-row-end`
 
-To place our child elements in specific grid locations, we can take advantage of grid line numbers and use the properties `grid-column-start`, `grid-column-end`, `grid-row-start`, and `grid-row-end`. We apply these properties to the grid item, or child to the grid container. The start properties refer to the grid line where you want your grid child's location to start, and the end properties refer to the grid line where you want the grid child to end. These grid placement properties can take a number of different values.
+To place our child elements in specific grid locations, we can take advantage of grid line numbers and use the properties `grid-column-start`, `grid-column-end`, `grid-row-start`, and `grid-row-end`. We can apply these properties to any child of the grid container. The `-start` properties refer to the grid line where you want your element to start in the grid, and the `-end` properties refer to the grid line where you want element to end.
 
-Values these properties can take:
+These grid placement properties can take a number of different values:
 
 * **number** you can use grid line numbers (remember the outside edges are counted). If you use a negative number, you will count from the end of the _explicit_ grid.
 
@@ -197,16 +192,15 @@ Values these properties can take:
 * **custom grid line name** if you've named your grid lines in `grid-template-columns` and `grid-template-rows` then you can use the names here
 * **span < grid line name >** if you want your grid child to span until it hits the included named grid line(see "Additional learning topics" below).
 
-
 **Important to note:** 
 By default grid will shift content to avoid items overlapping. If an overlapping grid item is in your design, then every item in the grid will need to have an explicit `grid-column-start` and `grid-row-start` value.
 
-### Shorthand Placement
+### Shorthand placement
 
-* **grid-column** is the shorthand property for grid-column-start and grid-column-end
-* **grid-row** is the shorthand property for grid-row-start and grid-row-end
+* **grid-column** is the shorthand property for `grid-column-start` and `grid-column-end`
+* **grid-row** is the shorthand property for `grid-row-start` and `grid-row-end`
 
-For both properties above, the first value will specify the starting placement, which can be any of the values types listed above. Then, separate the first and second values with a `/`. The second value will specify the end value.
+For both properties above, the first value will specify the starting placement, which can be any of the value types listed above. The second value will specify the end value. The first and second values are separated with a `/`. 
 
 ```css
 .gridItem1 {
@@ -230,56 +224,53 @@ A **third** shorthand property is also available to use, and that is the `grid-a
 }
 ```
 
-
-## Repeat keyword
+## The `repeat` keyword
 
 The `repeat` keyword is used inside of the value for `grid-template-columns` and `grid-template-rows` when we want to repeat the value for a number of rows or columns. The `repeat` keyword requires at least 2 values. It looks like this: 
 
-The **first value** that repeat takes is either:
-- a positive number, representing the number of columns or rows to create
+The **first value** that `repeat` takes is either:
+* a positive number, representing the number of columns or rows to create
 
 OR
 
-- a keyword 
-	- **`auto-fill`** 
-	- **`auto-fit`** 
+* a keyword 
+  * **`auto-fill`** 
+  * **`auto-fit`** 
 (detailed explanation of both keywords coming up below)
 
-The **second value** that repeat takes is the size of the columns or rows to be created. Most often you will see this size represented in pixels (eg 200px) or fr units (1fr).
+The **second value** that `repeat` takes is the size of the columns or rows to be created. Most often you will see this size represented in pixels (e.g. `200px`) or `fr` units (e.g. `1fr`).
 
-Here are some examples of repeat and what the long hand version of writing this out would look like!
+Here are some examples of `repeat` and what the long hand version of it would look like:
 
 ```css
-<!-- Three columns of 50px each -->
+/*  Three columns of 50px each */
 grid-template-columns: repeat(3, 50px); 
-<!-- same as saying: -->
+/*  same as saying: */
 grid-template-columns: 50px 50px 50px;
 
-<!-- Two rows of 1fr each -->
+/*  Two rows of 1fr each */
 grid-template-rows: repeat(2, 1fr);
-<!-- same as saying: -->
+/*  same as saying: */
 grid-template-rows: 1fr 1fr;
 ```
 
-We can also give repeat more than one value to repeat. Note that the values are only separated by a space. Let's look at an example:
+We can also give `repeat` more than one value to repeat. Note that the values are only separated by a space. Let's look at an example:
 
 ```css
 grid-template-columns: repeat(4, 1fr 2fr);
-<!-- same as saying: -->
+/* same as saying: */
 grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 ```
 
 ### `auto-fit` and `auto-fill`
 
-Repeat is super powerful when used with `auto-fit` and `auto-fill`. The difference between the two keywords is very subtle, but has to do with extra whitespace. Both fit as many rows/columns at a certain size as possible, while respecting grid-gaps and at smaller breakpoints, the two act the same. It is only when we have extra whitespace available, that we can notice the difference.
+Repeat is super powerful when used with `auto-fit` and `auto-fill`. The difference between the two keywords is very subtle, but has to do with extra white space. Both fit as many rows/columns at a certain size as possible, while respecting grid gaps. At smaller breakpoints, the two act the same; it is only when we have extra whitespace available that we can see the difference.
 
-**auto-fill** - Fills the row with as many columns as it can fit at the specified size. New tracks can be empty, they will still take up the space allotted. 
+* `auto-fill`: Fills the row with as many columns as it can fit at the specified size. New tracks can be empty, they will still take up the space allotted. 
 
-**auto-fit** - The browser will create as many tracks as it can at the specified size, but will collapse them if there are no extra elements to place.
-
+* `auto-fit`: The browser will create as many tracks as it can at the specified size, but will collapse them if there are no extra elements to place.
 
 Let's look at an example:
-
 
 #### `auto-fill`
 ```css
@@ -290,7 +281,7 @@ Let's look at an example:
 ```
 ![A screenshot illustrating the auto-fill keyword and how it maintains empty extra columns](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-05-27%20at%202.28.52%20PM.png)
 
-Here, auto-fill is creating 11 tracks at the 100px size. Even though there is no content to fit inside the last three tracks. This can be handy when you need an element to be positioned in the last grid area in the explicit grid. If we were to add `grid-column-end: -1;` to the 7th item, it would live at the end of the row! 
+Here, `auto-fill` is creating 11 tracks at the 100px size even though there is no content to fit inside the last three tracks. This can be handy when you need an element to be positioned in the last grid area in the explicit grid. If we were to add `grid-column-end: -1;` to the 7th item, it would live at the end of the row! 
 
 #### `auto-fit`
 
@@ -302,7 +293,7 @@ Here, auto-fill is creating 11 tracks at the 100px size. Even though there is no
 
 ![A screenshot illustrating the auto-fit keyword and how it does not create extra columns](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-05-27%20at%202.29.04%20PM.png)
 
-In the auto-fit example, our explicit grid ends after the 7th spot. We do see that the grid is creating 11 columns, but the 8th - 11th spots are collapsed. If we told our 7th item to end at -1 row, it would be in the exact same spot it is in now! 
+In the `auto-fit` example, our explicit grid ends after the 7th spot. We do see that the grid is creating 11 columns, but the 8th - 11th spots are collapsed. If we told our 7th item to end at -1 row, it would be in the exact same spot it is in now! 
 
 ### `minmax`
 
@@ -317,10 +308,9 @@ Let's adjust our CSS to the following:
 ```
 
 ## `order`
-Order in grid is the same as order in flexbox. All grid items have a default of 0, negative order values will make the grid item appear before the rest, a positive number will make the item appear after the rest. 
+`order` in grid is the same as `order` in flexbox. All grid items have a default of 0. Negative `order` values will make the grid item appear before the rest, a positive number will make the item appear after the rest. 
 
-Using order on grid items will change the order of your grid items. If the order of your content matters to the users understanding then DO NOT USE this. This property, in general, would be fine for an image gallery but bad for blocks of text.
-
+Using `order` on grid items will change the order of your grid items. If the order of your content matters to the users understanding then **do not use** this property. In general, would be fine for something like an image gallery but bad for blocks of text.
 
 <!-- Once we're finished, let's revisit `grid-auto-flow: dense;` for a minute! 
 
@@ -349,34 +339,33 @@ Notice the empty spot in the right hand corner? Let's add `grid-auto-flow: dense
 ```
 Magic! The grid automatically finds an element that will fit in this space, and places it there! This is not so great for items where order matters, but for an image gallery or maybe even independent articles, this could be perfect!  -->
 
-# Additional learning topics
+## Additional learning topics
 
+### Content sizing keywords
+Instead of using a measurement unit or `fr` in our `grid-template-columns` or `grid-template-rows` we can also use content sizing keywords. Let's look at an example of these three keywords outside of grid before we see them in an example. 
 
-### Content sizing keywords: 
-Instead of using a measurement unit or `fr` in our `grid-template-columns` or `grid-template-rows` we can also use content sizing keywords. Let's look at an example of these three keywords outside of grid before diving into a grid example. 
-
-#### min-content
-min-content will make an element be the smallest width possible. This is usually dictated by the longest word.
+#### `min-content`
+`min-content` will make an element be the smallest width possible. This is usually dictated by the longest word.
 
 <!-- <iframe height='265' scrolling='no' title='Content Sizing Keywords : min-content' src='//codepen.io/suzettemccanny/embed/jpwjoP/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/suzettemccanny/pen/jpwjoP/'>Content Sizing Keywords : min-content</a> by Suzette McCanny (<a href='https://codepen.io/suzettemccanny'>@suzettemccanny</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-#### max-content
-max-content will let an element be as wide as necessary to fit all of the content. In the case an element can be larger than it's parent, max-content will cause an overflow.
+#### `max-content`
+`max-content` will let an element be as wide as necessary to fit all of the content. In the case an element can be larger than it's parent, `max-content` will cause an overflow.
 
 <!-- <iframe height='265' scrolling='no' title='Content Sizing Keywords : max-content' src='//codepen.io/suzettemccanny/embed/JBJgdL/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/suzettemccanny/pen/JBJgdL/'>Content Sizing Keywords : max-content</a> by Suzette McCanny (<a href='https://codepen.io/suzettemccanny'>@suzettemccanny</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-#### fit-content
-fit-content takes a value that will become the size of the element. Example: `grid-template-columns: fit-content(200px) 1fr 1fr;`
+#### `fit-content`
+`fit-content` takes a value that will become the size of the element. Example: `grid-template-columns: fit-content(200px) 1fr 1fr;`
 
 <!-- What's great about these keywords, is they are supported in all broswers that also support grids! Let's look at how we can use these in grids:
 
 <iframe height='265' scrolling='no' title='Content Sizing Keywords - fit-content' src='//codepen.io/suzettemccanny/embed/GBMKvZ/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/suzettemccanny/pen/GBMKvZ/'>Content Sizing Keywords - fit-content</a> by Suzette McCanny (<a href='https://codepen.io/suzettemccanny'>@suzettemccanny</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe> -->
 
-### Grid Alignment Keywords
-Unlike flexbox, the keywords to organize space on a grid do not change. Justify will always refer to the row axis, and align will always refer to the column axis.
+### Grid alignment keywords
+Unlike flexbox, the keywords to organize space on a grid do not change. `justify` will always refer to the row axis, and `align` will always refer to the column axis.
 
 **justify** refers to space on the **row axis**
 
@@ -390,10 +379,10 @@ Unlike flexbox, the keywords to organize space on a grid do not change. Justify 
 ![A grid layout where the word column is aligned to the bottom of each row](https://hychalknotes.s3.amazonaws.com/align-column-axis.png)
 
  
-### Organizing space _within_ the grid 
+### Organizing space **within** the grid 
 
-#### justify-items and align-items
-The `justify-items` and `align-items` properties are set on the grid parent and apply the values to all grid items (cells).
+#### `justify-items` and `align-items`
+The `justify-items` and `align-items` properties are set on the grid parent and apply the values to all grid items.
 
 * The `justify-items` property aligns content along the row axis. 
 * The `align-items` property aligns content along the column axis. 
@@ -425,13 +414,13 @@ In this case, you can use the `justify-content` and `align-content` properties t
 * `align-content` refers to space on the **column** axis
 
 Here are the values `justify-content`and `align-content` can take:
-* **start** aligns the grid to the beginning (left or top). This is the **default** value.
-* **end**  aligns the grid to the end (right or bottom)
-* **center** aligns the grid in the center of the parent
-* **stretch** stretches the grid items to fill the parent grid width
-* **space-around** places an even amount of space between the grid items, with half spaces around the outside edges
-* **space-between** places an even amount of space between the grid items, with no space around the outside edges
-* **space-evenly** places an even amount of space between the grid items, with equal space around the outside edges
+* `start` aligns the grid to the beginning (left or top). This is the **default** value.
+* `end` aligns the grid to the end (right or bottom)
+* `center` aligns the grid in the center of the parent
+* `stretch` stretches the grid items to fill the parent grid width
+* `space-around` places an even amount of space between the grid items, with half spaces around the outside edges
+* `space-between` places an even amount of space between the grid items, with no space around the outside edges
+* `space-evenly` places an even amount of space between the grid items, with equal space around the outside edges
 
 <!-- <img src="https://hychalknotes.s3.amazonaws.com/justify-content.png" width="">
 <img src="https://hychalknotes.s3.amazonaws.com/align-content.png" width=""> -->
@@ -460,9 +449,9 @@ If you can take your layout or component and draw a grid over it, with rows and 
 <img src="https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-01-14%20at%208.24.42%20PM.png" width="500px">
 -->
 
-### Custom Grid Line Names
+### Custom grid line names
 
-If we want to, we can also name these lines. We can do this inside of our grid-template-columns and grid-template-rows properties. The syntax for this is square brackets and our custom name. Names follow class naming conventions, so they can't start with a number and are case sensitive. If we leave out any line names, css will name them for us, like we've seen above. Remember we will have an more lines than we do grid areas. We can also give one line two names, just seperate them with a space like classes! 
+If we want to, we can also name these lines. We can do this inside of our `grid-template-columns` and `grid-template-rows` properties. The syntax for this is square brackets and our custom name. Names follow class naming conventions, so they can't start with a number and are case sensitive. If we leave out any line names, CSS will name them for us, like we've seen above. Remember we will have an more lines than we do grid areas. We can also give one line two names, just seperate them with a space like classes! 
 
 ```css
 grid-template-columns: [start] 1fr [gutter-end wrapper-start] 800px [wrapper-end] 1fr [end];
@@ -474,7 +463,7 @@ grid-template-rows: [top] 100px [middle] 100px [end];
 As if all this wasn't enough, there is another way to create a grid in CSS!
 
 #### `grid-template-areas` and `grid-area`
-The `grid-template-areas` property gets set on the parent container of the grid. It specifies the areas of the grid by naming them. Repeating the name of the grid twice, will create an area that spans two columns. We can use a period `.` to create an empty grid area. When defining the grid-template area, each row is separated with quotes. If we use a little whitespace, the syntax itself looks like the grid we want to create. Take the following example: 
+The `grid-template-areas` property gets set on the parent container of the grid. It specifies the areas of the grid by naming them. Repeating the name of the grid twice, will create an area that spans two columns. We can use a period `.` to create an empty grid area. When defining the grid template area, each row is separated with quotes. If we use a little whitespace, the syntax itself looks like the grid we want to create. Take the following example: 
 
 ```css
 grid-template-areas: 
@@ -482,10 +471,9 @@ grid-template-areas:
   "main main aside" 
   "footer footer footer";
 ```
-Note: there are no commas to separate the rows or areas, just spaces.
+> There are no commas to separate the rows or areas, just spaces.
 
-In order for this to work, we need to tell the children elements which grid areas to span. We can use the `grid-area` property on the children with the names we gave our areas in the grid-template-areas property. 
-
+In order for this to work, we need to tell the child elements which grid areas to span. We can use the `grid-area` property on the children with the names we gave our areas in the `grid-template-areas` property. 
 
 ```css 
 .container {
@@ -522,10 +510,11 @@ Combining the `minmax` function with `auto-fit` and `auto-fill` can help create 
 
 Another great resource for combining those properties is [this article by Rachel Andrew](https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/), who is a member of the CSS Working Group.
 
-## Quirks and Gotchas
+## Quirks and gotchas
 
 * Pseudo elements in grid areas? Not yet! 
-* can't add borders and backgrounds to grid-areas, just grid elements
+* You can't add borders or backgrounds to grid areas, just grid elements.
 * Nested grids have no way of communicating with parent grids. Ideally, you would be able to line internal grid elements to the parent grid, or other nested grids but not yet!
-* grid-line number -1 is the end of the explicit grid, not the whole grid!
-* Can I make a masonry layout? Not without Javascript or positioning
+* `grid-line` number -1 is the end of the explicit grid, not the whole grid!
+* Q: Can I make a masonry layout using grid? 
+  * A: Not without JavaScript or positioning.
