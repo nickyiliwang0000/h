@@ -234,6 +234,7 @@ The block executes repeatedly as long as the condition is true.
 <h3 align="center"> 
 🚨🚨🚨🚨🚨🚨🚨🚨  DANGER 🚨🚨🚨🚨🚨🚨🚨🚨
 </h3>
+
 If the condition is never false, a `while` loop will run forever and your browser will crash. This is called an _infinite loop_. If you do get an infinite loop, quit your browser with `ctrl + Q` or `cmd + Q`. Sometimes Firefox will give you a little yellow tooltip that asks if you want to quit the process. You do!
 
 
