@@ -381,13 +381,13 @@ Unlike flexbox, the keywords to organize space on a grid do not change. Justify 
 **justify** refers to space on the **row axis**
 
 
-![](https://hychalknotes.s3.amazonaws.com/justify-row-axis.png)
+![A grid layout where the word 'row' is centered in the column](https://hychalknotes.s3.amazonaws.com/justify-row-axis.png)
 
 
 **align** refers to space on the **column axis.**
 
 
-![](https://hychalknotes.s3.amazonaws.com/align-column-axis.png)
+![A grid layout where the word column is aligned to the bottom of each row](https://hychalknotes.s3.amazonaws.com/align-column-axis.png)
 
  
 ### Organizing space _within_ the grid 
@@ -403,7 +403,7 @@ The values that the `align-items` and `justify-items` properties take are as fol
 * **stretch**  fills the whole grid area, this is the **default** value, unless item has intrinsic aspect ratio
 * **start** aligns the content to the left end or top of the grid area,  this is the **default** value for elements that have an intrinsic aspect ratio
 * **end** aligns the content to the right end or bottom of the grid area
-* **baseline/first baseline/last baseline** All items are aligned/justified such that their baselines align. (<a href="https://drafts.csswg.org/css-align/#baseline-values" target="_blank">more on this here</a>)
+* **baseline/first baseline/last baseline** All items are aligned/justified such that their baselines align.([more on this here](https://drafts.csswg.org/css-align/#baseline-values))
 * **safe center** if the size of the item overflows the alignment container, the item is instead aligned as if the alignment mode were start
 * **unsafe center** regardless of the relative sizes of the item and alignment container, the given alignment value is honoured
 
@@ -478,9 +478,9 @@ The `grid-template-areas` property gets set on the parent container of the grid.
 
 ```css
 grid-template-areas: 
-	"header header header" 
-	"main main aside" 
-	"footer footer footer";
+  "header header header" 
+  "main main aside" 
+  "footer footer footer";
 ```
 Note: there are no commas to separate the rows or areas, just spaces.
 
@@ -493,9 +493,9 @@ In order for this to work, we need to tell the children elements which grid area
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px;
   grid-template-areas: 
-      "header header aside" 
-      "main main aside" 
-      "footer footer footer";
+    "header header aside" 
+    "main main aside" 
+    "footer footer footer";
   grid-gap: 15px;
 }
 .gridItem1 {
