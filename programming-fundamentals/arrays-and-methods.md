@@ -4,7 +4,7 @@
 - Identify which of the three standard color formats accept alpha values
 - Use a alpha channel color to make a heading's background partially see-through
  -->
-# Javascript arrays
+# Arrays and methods
 
 ## Arrays
 
@@ -23,7 +23,7 @@ const musicObject = {
 }
 ```
 
-Using an object we could set the keys of the properties to be numbers, this way we enforce some order. If you remember, there is no guarantee that an object will return the same order when iterated over. Thankfully JavaScript has a built-in object called `Array` that does what we want. An array looks like this:
+Using an object we could enforce some order by setting the keys of the properties to be numbers. BUT, you may remember that there is **no guarantee** that an object will return properties the same order they were written when iterated over. Thankfully JavaScript has a built-in data type called an _array_ that maintains its order:
 
 ```js
 const musicObject = [
@@ -38,40 +38,30 @@ const musicObject = [
 ]
 ```
 
-or to save space:
+Or, to save space:
 
 ```js
 const musicObject = [ "do", "re", "mi", "fa", "sol", "la", "ti", "do" ]
 ```
 
-An important thing to note is that an array is a type of object in JavaScript, but it has some extra features for us to use. 
+> **An array is a kind of object** in JavaScript. Remember when we said objects are a big deal? They are! Everything in JavaScript is an object! Even arrays! Which are, like, the opposite of objects! 😱😱😱 Sorry!
 
-What are the differences between a regular object and an array object in terms of syntax?
+As with regular objects, any kind of value (e.g. objects, numbers, string, other arrays...) can be stored inside of an array.
 
-**Note**: 
+So what are the differences between a regular object and an array object?
 
-* The first number in a sequence is usually 1 but not in programming. Javascript (and many other programming languages) are zero-based meaning the first property of the array has an **index** (property name) of 0. Meaning `musicObject.0` will not work, `musicObject[0]` however will work. 
-* We can't use dot-notation to get at the values so we use bracket-notation to get the values. 
-* Any values (objects, numbers, string, other arrays..) can be inside of arrays.
+1. There are no property names (i.e. keys), so each spot in the array has a unique _index_ number that identifies it. JavaScript (and many other programming languages) are zero-based, which means that the first items in the array has an index of 0, not 1. 
+1. Because variable names can't have numbers in them, dot notation doesn't work with arrays. `musicObject[0]` will get us the first item in the array. `musicObject.0` will not.
 
-**Exercises**:
+### Exercise
 
-The following exercises use this array object:
+Download and complete the exercises [here](https://hychalknotes.s3.amazonaws.com/beginner-array-exercises.zip).
 
-`const theArray = ["Homer likes pie", 34, { name: "First", age: 66 } ]`
+## Methods
 
-1. Retrieve the 2nd value in the array.
-2. Update the first value to `"Homer likes beer"`
-3. Retrieve the age property of the object in the array.
-4. Update the name property of the object in the array to `"Jack"`.
+### Functions review
 
-Note the chaining of expressions. `theArray[2]` returns us an object which we can immediately work with. Since the value is an object literal, we can use dot-notation `theArray[2].age`. We don't need to store the value in a variable and then get its properties. Can you think of how you could use bracket notation to retrieve the age?
-
-## Arrays and methods
-
-### Functions
-
-Let's take a small detour and talk about functions. Functions in JavaScript are objects. This means that like a number, string or array, they can be stored in variables.
+Let's take a small detour and talk about functions. Functions in JavaScript are objects. This means that like a number, string, or array, they can be stored in variables.
 
 `function myFunction(){}` creates a function and makes it available anywhere in our code. This way of defining a function is called a function declaration.  We can also use function expressions to define functions. 
 
@@ -113,7 +103,7 @@ const raggedyAnn = {
   age : 8,
   height : 24,
   getHeightInInches : function() {
-    return ryan.height * 0.393701; // converts CM to Inches
+    return raggedyAnn.height * 0.393701; // converts CM to Inches
   }
 }
 ```
@@ -135,7 +125,7 @@ With reference to the above ryan object:
 ```js
 ryan.getHeightInInches();
 ```
-### Built-in Array Methods
+### Built-in array methods
 Most objects have built-in methods that do interesting work. We said earlier that an Array is an object. Arrays have some special built in methods.
 
 #### Adding items to array with the `.push()` method.
