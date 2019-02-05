@@ -12,12 +12,12 @@
 
 # JavaScript variables
 
-_Variables_ are like containers used to name and store data. The data can be accessed by referring to the name of the variable.
+_Variables_ are like containers used to name and store data. The data can be accessed by referring to the name of the variable. 
 
 If you write the words `myLunch` on your lunchbag, anything that goes in there is your lunch. The value of the variable `myLunch` will be different on any given day (i.e. it varies). You can be asked the exact same question every day (e.g. "What's in the bag labelled `myLunch`?") and your answer will change: `a ham sandwich`, or `leftover roti`, or `sushi, baby! `.
 
 ## Creating a variable
-Before you're able to use a variable, you must be _declare_ it, then _assign_ it a value. 
+Before you're able to use a variable, you must be _declare_ it, then _assign_ it a value. Usually, you'll declare all your variables before you use them at the top of your JavaScript file.
 
 ### Declaring a variable
 There are three [_keywords_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) special words that are reserved by JavaScript to denote specific behaviours) we can use to declare a variable: `let`, `const`, and `var`. 
