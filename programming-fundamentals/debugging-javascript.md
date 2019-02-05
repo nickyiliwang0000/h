@@ -122,4 +122,3 @@ console.log(total*tax);
 Whenever you want to check the status of something in your code, use `console.log`! Use them liberally in development and **remove console logs from your projects when they are ready for deployment**.
 
 ## There should be nothing in the console on a production website.
-
