@@ -1,6 +1,9 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
-- 
+- Know that there are 3 ways to define a function (declaration, expression, arrow)
+- Know the difference between an argument and a parameter
+- Know the difference between return and console.log()
+- Write a function of their own with parameters using each syntax
 -->
 # Functions
 
