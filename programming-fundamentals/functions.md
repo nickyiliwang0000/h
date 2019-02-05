@@ -89,7 +89,7 @@ console.log(result) // 6
 
 **Exercise:** Edit your `sayMyName` function to accept one parameter called `name`, then call it. It should alert the name that was passed in as an argument. 
 
-## `return` vs. print
+## `return` vs. `console.log()`
 
 Our functions will generally do one of two things: 
 1. return a value
@@ -235,8 +235,9 @@ const add = function(a,b) {
   return a+b;
 }
 ```
-> Remember that this function returns a value of the number data type.
-<!-- 
+> Remember that this function returns a value whose data type is number.
+
+<!-- Expected answer:
 Pass the function as an argument:  add(add(1,2), 3).
 -->
 
