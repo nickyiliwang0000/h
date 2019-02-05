@@ -3,13 +3,26 @@
 
 -->
 # Lexical scope and execution context
-<!-- ## How JavaScript is compiled
 
-Our JavaScript files are not directly read by the browser. There's a step in between our writing and the browser's interpretation where the JS code is compiled (i.e. translated from something that is human readable to something that the computer can understand). -->
+<!-- ## The JavaScript engine
+Our JavaScript files are not directly read by the browser. There's a step in between our writing and the browser's interpretation where the JS code is compiled (i.e. translated from something that is human readable to something that the computer can understand). During this process, the JavaScript engine lexes 
+
+But,  -->
+
+These concepts are foundational to a deeper understanding of JavaScript. They're the "why", rather than the "how".
 
 ## The global object
 
-When the browser first loads a script, that script is run inside of the _global execution context_. An _execution context_ is the environment in which a function is run. _Global_ here means the browser (i.e. code that is **not confined to a function block**). When the browser loads any script (even an empty one), you get access to two things: 
+An _execution context_ is an abstract idea that refers to the environment in which a function is run. There are three types of execution contexts in JavaScript but we'll only be talking about two: _global_ and _functional_.
+
+_Functional execution context_ is created when a function is called. 
+
+_Global execution context_ is the basic context. It exists even when no functions are called.
+
+<!-- The third type is eval. -->
+When the browser loads an empty script, that script is run inside of the _global execution context_. 
+
+_Global_ here means that because there **not confined to a function block**). When the browser loads any script (even an empty one), you get access to two things: 
 
 1. The global object
 2. The keyword `this`
@@ -20,11 +33,13 @@ Create an HTML file and link it to an empty JavaScript file. Open the HTML file 
 
 The `Window` object is the execution context for code in the browser unless otherwise specified.
 <!-- (it'll be something else if you are running the JavaScript on a server.) -->
+<!-- ## Function context -->
 ## Specifying execution context
+Whenever a function is called, a new context is created. Inside the function, there is a private scope where anything declared inside of the function cannot be accessed from the outside (e.g. variables, other functions, etc.). The newly created execution context describes what is true about both to function's private scope **and** its outer environment. 
 
-Whenever a function is called, a new context is created. Inside the function, there is a private scope where anything declared inside of the function cannot be accessed from the outside (e.g. variables, functions, etc.). The newly created execution context has can access both to the private scope **and** its outer environment.( This can also be referred to as the **lexical environment.**) 
+<!-- (This can also be referred to as the **lexical environment.**)  -->
 
-
+<!-- 
 Lexical scope is another word for static scoping (in other languages)
  -  the opposite of dynamic scope.
 Dyna: scope of a variable can change depending on the order of functions called (Lisp -  less common)
@@ -33,7 +48,7 @@ Lex: the scope of a variable can be determined from reading the source code.
 What is lexical scope?
     Refers to the strategy a programming languages uses to determine where and how veraibles are accessible
 What is execution context?
-    It's the set of variables that are available to be accessed at any given point as a program is being run.
+    It's the set of variables that are available to be accessed at any given point as a program is being run. -->
 
 ## Revisiting `this`
 
