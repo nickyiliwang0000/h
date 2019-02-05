@@ -17,7 +17,7 @@ First, a quick look at two types of compression:
 
 ## GIF
 
-The _Graphics Interchange Format_ (GIF) uses **lossy** compression and usually has the smallest file size of all the different formats.  However, it can only take a maximum of 256 different colours so it is best used for images with minimal colour variation. Introduced in 1987, it is one of the oldest image file types.
+The _Graphics Interchange Format_ (GIF) uses **lossless** compression, however because images saved as GIFs can only use a maximum of 256 different colours, it is best used for images with minimal colour variation to limit loss of detail. Introduced in 1987, it is one of the oldest image file types.
 
 GIF images can also have transparency (though transparency is better handled with PNGs). And of course, they can also be animated!
 

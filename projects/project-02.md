@@ -38,24 +38,37 @@ You will also be given marks for your project presentation:
 
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
-You can find your assignment [here]().
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1_Al24ZkClAPSVk_SmDTy4N3q4QX3F1Tf7ukJ2ig13Kk/edit#gid=1618587171).
 
 ### Design checklist
 [Here](https://docs.google.com/document/u/1/d/17GYf0CfvD8Mdt4fXXH_03Hc-L-y9V3xLSbO5AIfdK54/edit?usp=sharing) is a checklist that will help perfect your conversion!
 
 ### Design files
 
-**Willow**<br> [Designs](https://scene.zeplin.io/project/5bd868de140d6a09aca0af25) <br> [Assets](https://www.dropbox.com/sh/q5ke3xhqqg2djyd/AAD6qXuWIi2JNgTJFl7ULpK7a?dl=0)
+**BEACHSTAY**
 
-**Harper** <br>[Designs](https://scene.zeplin.io/project/5bd8719461e1ec76382d36d0) <br> [Assets](https://www.dropbox.com/sh/uss6ws7kv6gwjh2/AADvVILyKjSvzc0uJrz9e42xa?dl=0)
+[design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
 
-**Sophie**<br> [Designs](https://scene.zeplin.io/project/5bd871ba7119da0abc145c86)<br>[Assets](https://www.dropbox.com/sh/c7bl9kraouaru3a/AAAe4_gqBtY8mbvwzdDzqEgUa?dl=0)
+[assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
 
+
+**PLANTED**
+
+[design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
+
+[assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
+
+
+**BAR-ONE** 
+
+[design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
+
+[assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
 ## Submitting your project
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
-1. Create a repository called `first-name-last-name-project#`
+1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Post the link to the repository on Basecamp.
 
