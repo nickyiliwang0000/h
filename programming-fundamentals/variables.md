@@ -20,7 +20,7 @@ If you write the words `myLunch` on your lunchbag, anything that goes in there i
 Before you're able to use a variable, you must be _declare_ it, then _assign_ it a value. Usually, you'll declare all your variables before you use them at the top of your JavaScript file.
 
 ### Declaring a variable
-There are three [_keywords_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) special words that are reserved by JavaScript to denote specific behaviours) we can use to declare a variable: `let`, `const`, and `var`. 
+There are three [_keywords_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) (special words that are reserved by JavaScript to denote specific behaviours) we can use to declare a variable: `let`, `const`, and `var`. 
 
 You choose the name of the variable. It should be something descriptive based on what kind of value it will hold:
 
