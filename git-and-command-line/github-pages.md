@@ -9,9 +9,7 @@
 
 GitHub Pages is a tool you can use to create live sites hosted by GitHub directly from your GitHub repos!
 
-You can make a website for your user account, an organization you belong to, or for an individual project. You get **one** top-level site per GitHub account (or organization) and unlimited project sites.
-
-This means that you can have `studentname.github.io` and `studentname.github.io/coolproject` at the same time, but you can't have `studentname.github.io` and `coolproject.github.io`.
+You can make a website for your user account, an organization you belong to, or for an individual project. You get **one** top-level site per GitHub account (or organization) and unlimited project sites. This means that you can have `studentname.github.io` and `studentname.github.io/coolproject` at the same time, but you can't have `studentname.github.io` and `coolproject.github.io`.
 
 ## How to create a site from a repo
 Let's start with a new site for an individual project. There are two options:
