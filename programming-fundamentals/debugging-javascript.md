@@ -25,22 +25,22 @@ Just like in CSS, `/*  */` are used for multiline comments.
 */
 ```
 
-Multi-line comments are also great for "hiding" large blocks of code so you can try something new without erasing your old code.
+Multiline comments are also great for hiding large blocks of code so you can try something new without erasing your old code. Remember to remove them at production, though!
 
-**Get used to commenting your code.** Comments help you (or other developer) understand your code in the future.
+**Get used to commenting your code.** Comments help you (or other developers) understand your code in the future.
 
 ## Debugging tools
 
 _Functions_ are chunks of code that do something. Functions can be repeated as many times as you want. We can create our own functions but there are many handy ones already built into JavaScript that we can use for debugging. 
 
 ### Function basics
-To get the function to execute, you have to **call** it using the function name followed by parentheses:
+To get the function to execute, you have to _call_ it using the function name followed by parentheses:
 
 ```js
 functionName();
 ```
 
-Some times this is also referred to as **running** or **executing** a function.
+Some times this is also referred to as _running_ or _executing_ a function.
 
 Sometimes you will need to _pass_ some data into the function. This data is called an _argument_.
 
@@ -52,12 +52,13 @@ You can pass more than one piece of data to a function by using a comma:
 ```js
 functionName(firstArgument, secondArgument);
 ```
+When you call a function, it does something, and very often it will _return_ a value to you. 
 
-Terminology reminder:
-* **Argument:** a value provided to a function
-* **Pass:** to provide arguments to a function
-* **Call:** ask JavaScript to evaluate/execute a function
-* **Return:** pass back the value from the function
+Terminology recap:
+* An **argument** is a value provided to a function.
+* To **pass** is to provide arguments to a function.
+* To **call** a function is to ask JavaScript to evaluate/execute a function.
+* To **return** is to pass back the value from the function. Often, this value is called "the return".
 
 ### Debugging functions
 A few built-in JavaScript functions that we will use are `prompt()`, `alert()` and `confirm()`. All three display a dialog box containing a message. `prompt()` also allows the user to input some text. `confirm()` also includes 'Cancel' and 'OK' buttons.
@@ -102,7 +103,7 @@ Note that the arguments being passed and some of the values being returned were 
 
 ### console.log()
 
-Likely the debugging tool that you'll be using the most is `console.log()` which is a function you can use any time you want to print (display) something in the console. You can use this any time you are unsure of what the value of a variable is, or when you want to check that one of your functions is working properly! 
+Likely the debugging tool that you'll be using the most is `console.log()` which is a function you can use any time you want to print (i.e. display) something in the console. You can use this any time you are unsure of what the value of a variable is, or when you want to check that one of your functions is working properly! 
 
 ```js
 // log out a string
