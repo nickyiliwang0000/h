@@ -1,6 +1,10 @@
+<!-- Student takeaway: -->
+<!--Student will be able to:
+- 
+-->
 # Functions
 
-Just to recap, we said that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language but this is especially true for JavaScript, where, as we'll see, functions can be passed around like any other value.
+[We said before](https://github.com/HackerYou/bootcamp-notes/blob/791520b13524bf56d557c1e8806ae5f369571b78/programming-fundamentals/debugging-javascript.md) that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language but this is especially true for JavaScript, where, as we'll see, functions can be passed around like any other value.
 
 So far we have looked at built-in functions but now it's time to learn how to create your own. 
 
