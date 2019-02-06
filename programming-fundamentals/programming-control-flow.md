@@ -22,9 +22,9 @@ Operator     |  Description
 ===	 | is exactly equal to (value and type)
 !=	| is not equal to
 !==	| is strictly not equal to
->	| greater than 
+\>	| greater than 
 <	| less than
->=	| greater than or equal to	
+\>=	| greater than or equal to	
 <=	| less than or equal to
 
 
