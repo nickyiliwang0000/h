@@ -48,7 +48,7 @@ const musicObject = [ "do", "re", "mi", "fa", "sol", "la", "ti", "do" ]
 
 As with regular objects, any kind of value (e.g. objects, numbers, string, other arrays...) can be stored inside of an array.
 
-So what are the differences between a regular object and an array object?
+So, what are the differences between a regular object and an array object?
 
 1. There are no property names (i.e. keys), so each spot in the array has a unique _index_ number that identifies it. JavaScript (and many other programming languages) are zero-based, which means that the first items in the array has an index of 0, not 1. 
 1. Because variable names can't have numbers in them, dot notation doesn't work with arrays. `musicObject[0]` will get us the first item in the array. `musicObject.0` will not.
