@@ -30,9 +30,9 @@ The syntax for creating an object looks like this:
 
 ```js
 const myObject = {
-	propertyOneName: propertyOneValue,
-	propertyTwoName: propertyOneValue,
-	propertyThreeName: propertyOneValue,
+  propertyOneName: propertyOneValue,
+  propertyTwoName: propertyOneValue,
+  propertyThreeName: propertyOneValue,
 };
 ```
 
@@ -40,9 +40,9 @@ In JavaScript, we might represent information about an apple in an object, like 
 
 ```js
 const apple = {
-	colour: 'red',
-	size: 'small',
-	sugarContent: 200
+  colour: 'red',
+  size: 'small',
+  sugarContent: 200
 };
 ```
 
@@ -76,16 +76,16 @@ Here is another example object:
 
 ```js
 const clothing = {
-	belt: "can't remember",
-	socks: 34,
-	shoes: 2,
-	pants: 3,
-	hat: true,
-	tShirts: {
-		smallSize: 3,
-		mediumSize: 4,
-		largeSize: 2
-	}
+  belt: "can't remember",
+  socks: 34,
+  shoes: 2,
+  pants: 3,
+  hat: true,
+  tShirts: {
+    smallSize: 3,
+    mediumSize: 4,
+    largeSize: 2
+  }
 }
 ```
 
@@ -135,13 +135,13 @@ Here's an example:
 
 ```js
 const clothing = {
-	socks: 34,
-	shoes: 2,
-	pants: 3
+  socks: 34,
+  shoes: 2,
+  pants: 3
 }
 
 for (let item in clothing) {
-	console.log("I have " + clothing[item] + " " + item);
+  console.log("I have " + clothing[item] + " " + item);
 }
 ```
 
