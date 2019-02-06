@@ -158,7 +158,7 @@ string | Characters including spaces | `'internetUser993'` `"123 Main St."`
 boolean | A reserved keyword that looks like an English word| `true`, `false`
 undefined | Does not have a value | `undefined`
 null | Has a value of nothing | `null`
-object | A set of organized data | `{}`
+object | A set of organized data | `{studentNumber:231, instructor:"Hyram Outke"}`
 
 > There's also a (new in ES6) data type called Symbol but it's used mostly in library creation and you won't see it much.
 
