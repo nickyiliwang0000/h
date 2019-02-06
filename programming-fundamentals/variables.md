@@ -165,7 +165,7 @@ This is how you use exponents in Javascript:
 2 ** 5
 ```
 
-> A fun gotcha! When numbers are contained within quotes, they are considered **strings** they can't be use to perform arithmetic operations.
+> A fun gotcha! When numbers are contained within quotes, they are considered **strings** they can't be used to perform arithmetic operations.
 
 ```js
 '2' + 2
