@@ -6,7 +6,7 @@
 - What the logical operators are (&& || !)
 - Syntax of a for loop
 - Syntax of a while loop
-- Who to quit a browser that's got an infinite loop going on
+- How to quit a browser that's got an infinite loop going on
 - That a break statement exits a loop
 -->
 
@@ -75,7 +75,7 @@ In fact, a block statement could be just the `{}`.
 ```
 
 ### Comparison operators
-The first step in using an `if`/`else` statement is defining up the condition. A condition is usually a JavaScript expression that evaluates to a boolean (e.g. `true` or `false`). How do we evaluate the pieces of an expression? Using _comparison operators_.
+The first step in using an `if`/`else` statement is defining the condition. A condition is usually a JavaScript expression that evaluates to a boolean (e.g. `true` or `false`). How do we evaluate the pieces of an expression? Using _comparison operators_.
 
 Operator     |  Description  
 ------------ | -------------
@@ -175,7 +175,7 @@ Complete [these](https://hychalknotes.s3.amazonaws.com/control-flow-exercises.zi
 > Try having the person who feels **less confident** with JavaScript do the typing. It's the job of the person who feels more confident to gently guide the typer. 
 
 ## Loops
-Another powerful concept in programming is _looping_. A loop runs a block of statements are repeatedly while a condition is true.
+Another powerful concept in programming is _looping_. A loop runs a block of statements repeatedly while a condition is true.
 
 ![A diagram that describes the flow of a loop](https://hychalknotes.s3.amazonaws.com/loops.png)
 
