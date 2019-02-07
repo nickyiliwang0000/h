@@ -1,4 +1,4 @@
-## Control Flow
+# Programming Control Flow
 
 Normally, instructions or **statements** in a JavaScript are executed one after the other, in the order in which they are written. 
 
