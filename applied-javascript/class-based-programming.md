@@ -84,7 +84,7 @@ Note that there are no commas in between methods within the constructor - if you
 
 Think of classes like the blueprint or mould or boilerplate for building out your various objects. In our example, the `Character` class is a blueprint for building players, enemies, basically anything in the game that has health, a location, can attack, walk, etc. You might have an `vehicle` prototype if you wanted to build out garbage trucks and bicycles.
 
-Once we have created our classe, we create objects that inherit from that class using the `new` keyword, like this:
+Once we have created our classes, we create objects that inherit from that class using the `new` keyword, like this:
 
 ```javascript
 const raccoon = new Character();
