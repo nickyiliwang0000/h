@@ -198,7 +198,7 @@ for (let i = 0; i < 10; i = i + 1) {
 }
 ```
 
-`var i = 0;` Start at the first song.   
+`let i = 0;` Start at the first song.   
 `i < 10` If the song that is queued is less than 10, you are not at the end of the list yet, so queue up the next song.    
 `i = i + 1` To move to the next song on the list, add 1 to the current index number to move onto the next song.
 
