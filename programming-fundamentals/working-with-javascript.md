@@ -1,48 +1,60 @@
-## JavaScript Variables and Functions
+<!-- Student takeaway: -->
+<!--Student will be able to:
+- Store a function in a variable
+- Know that Math. and console.log exist
+- Where to insert senicolons (at the end of an instruction but not after a statement block)
+- How to link a script file
+- How to write script in an HTML file
+ -->
 
-### Variables and Functions
+# Working with JavaScript
 
-Let's look at an example using variables and functions.  We know that the `prompt()` function allows the user to input text. What if we wanted to hold onto that text to use for later?
+## Combining variables and functions
 
-Functions in JavaScript can be assigned as a value to a variable.
+The variable's value can be a function in JavaScript.
+
+```js
+let someVariable = function(){
+	//run some code
+}
+```
+The browser will run the function and store any return from it as the value of the variable.
+
+We know that the `prompt()` function is native JavaScript and allows the user to input text. What if we wanted to hold onto that text to use later?
 
 Using `prompt("What is your name?")`, let's create a variable to hold the value and `alert()` a message with that value.
 
 ```js
 const name = prompt("What is your name?");
-alert("Hello " + name + ".");
+alert("Hello " + name + "!");
+// or alert(`Hello ${name}!`)
 ```
 
-When the browser runs this code, it stops at the `prompt()` function call and waits for the user to input their answer. That *value* is then stored into the `name` variable which we then pass and as an argument to the `alert()` function.
+When the browser runs this code, it stops at the `prompt()` function call and waits for the user to input their answer. That returned *value* is then stored into the `name` variable, which we then pass and as an argument to the `alert()` function.
 
-#### More built-in functions
-We've already looked `prompt()`, `alert()` and `confirm()` but there are many more built-in functions. Many of these also return *values* that we can store in variables. For example:
+## More built-in functions
+We've already looked `prompt()`, `alert()` and `confirm()` but there are many more functions built into JavaScript functions. Many of these built-in functions return values that we can store in variables. For example:
 
-* console.log() //No return value
-* `Math.` //Return value
-Type `Math.` (without hitting enter) and you'll see a list pop up of available math related functions. E.g., `Math.cos()`, `Math.max()`, `Math.min()` and many more.
+* console.log() (doesn't necessarily have a return value)
+* `Math.` (always has a return value)
+Type `Math.` in the console (without hitting enter) and you'll see a list pop up of available math related functions. E.g., `Math.cos()`, `Math.max()`, `Math.min()` and many more.
 
-Note that these functions look a little different from the previously discussed since they have a `prefix. functionname()` syntax. We will be discussing **objects** in another lesson and will expand on this.
+Note that these functions look a little different from the previously discussed since they have a `prefix.functionname()` syntax. We will expand on this in [another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/objects.md).
 
-Just like CSS properties, there are too many different functions to memorize them all so it's a good idea to have some handy resources nearby. Go to the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) and use the search box at the top of the page to learn more about these functions. 
+As with CSS properties, there are too many built-in functions to memorize them all so it's a good idea to have some handy resources nearby. Go to the [MDN](https://developer.mozilla.org/en-US/) and use the search box at the top of the page to learn more about these functions. 
 
-**HINT:** You will need to use these functions for the following exercises.
+You will need to use these functions for the following exercises:
 
-##### Exercises
-
-Practice using variables and operators in <a href="https://hychalknotes.s3.amazonaws.com/variables-operators.html" class="exercise" download>**variables-operators.html**</a>
-
-After that, give some built in functions a try with <a href="https://hychalknotes.s3.amazonaws.com/variables-operators-functions.html" class="exercise" download>**variables-operators-functions.html**</a>
+1. Practice using variables and operators in <a href="https://hychalknotes.s3.amazonaws.com/variables-operators.html" class="exercise" download>variables-operators.html</a>
+2. After that, give some built in functions a try with <a href="https://hychalknotes.s3.amazonaws.com/variables-operators-functions.html" class="exercise" download>variables-operators-functions.html</a>
 
 Answers to both exercises are <a href="https://hychalknotes.s3.amazonaws.com/variables-operators-ANSWER.html" class="exercise" download>here</a> and <a href="https://hychalknotes.s3.amazonaws.com/variables-operators-functions-ANSWER.html" class="exercise" download>here</a>
 
-## JavaScript Syntax
+## JavaScript syntax
+Just like any other language, JavaScript has rules that need to be followed in order for you to be understood.
 
-### Syntax & Code Conventions
-When do we use semi-colons? Why did the computer complain when we typed `'She's a HackerYou student'`? Just like any other language, there are rules (or grammar) to be followed. Computers need code written in a very specific way or they will not understand it. 
-
-#### Semi-colons
-Code is composed of **statements** (instructions) that are usually executed one at a time from top to bottom. Statements end with a semi-colon to indicate the end of the instruction.
+### Semicolons
+JavaScript code is composed of statements and expressions that are usually executed one at a time from top to bottom. A semicolon indicates the end of the instruction:
 
 ```js
 const name = "Your Name";
@@ -53,7 +65,7 @@ name;
 const name = "Your Name"; name;
 ```
 
-**Note:** Because of a technique called **automatic semicolon insertion** (ASI), some statements that are "well formed" on a new line will be executed as if a semicolon had been added. 
+> Because of a technique called **automatic semicolon insertion** (ASI), some statements on a new line that are well-formed will be executed as if a semicolon had been added. We encourage you to explicitly add semicolons everywhere they are needed.
 
 ```js
 // will execute both statements
@@ -64,42 +76,41 @@ name;
 const name = "Your Name" name;
 ```
 
-In the example above, when the statement is on a new line, the instruction will run as if there was a semicolon there thanks to ASI.
+In the example above, `name` the instruction will run as if there was a semicolon after `const name = "Your Name"` thanks to ASI because it is on a new line.
 
-**However some will argue that you do not need semi-colons. To avoid errors, it's best practice to put each new statement on it's own line and end it with a semicolon.**
+#### Block statements
+Single line statements should end in a semicolon but _block statements_ do not. 
 
-**Block Statements:** Used to group zero or more statements enclosed by a pair of curly brackets `{ }`. Single line statements should end in a semi-colon but the block itself does not. Generally used with **control flow statements** (to be discussed later).
+Curly brackets, `{ }`, are used to group zero or more statements into what's called a _function block_. 
 
 ```js
-let singleLineStatement = "hello"; //needs semi-colon
+let singleLineStatement = "one line here"; //needs semicolon
 	
 if (condition === "something"){
-	let singleLineStatement = "hello"; //needs semi-colon
-	let anotherStatement = "hi"; //needs semi-colon
-} //does not need semi-colon
+	let singleLineStatement = "one line, that's it!"; //needs semicolon
+	let anotherStatement = "one line, a second time!"; //needs semicolon
+} //does not need semicolon
 ```
 
-Here's a handy [Stack Overflow discussion](http://stackoverflow.com/questions/1834642/best-practice-for-semicolon-after-every-function-in-javascript) about when semi-colons are needed. And here is a great video  [HERE](https://www.youtube.com/watch?v=Qlr-FGbhKaI) on the subject.
+Here's a handy [Stack Overflow discussion](http://stackoverflow.com/questions/1834642/best-practice-for-semicolon-after-every-function-in-javascript) about when semicolons are needed. And here is a great video  [here](https://www.youtube.com/watch?v=Qlr-FGbhKaI) on the subject.
 
-   
 **Exercise**: In the example below, add the semicolons and line breaks that allow the code to run without errors.
 
 ```js
 "I'm just a value!" let schoolName = "HackerYou" let numOfStudents = 25 schoolName + " has " + numOfStudents + " students." 
 ```
 
+## JavaScript + HTML = ❤️
 
-## JavaScript and HTML Best Practices
-
-### Adding Javascript to HTML Pages
-Like CSS, JavaScript can be added to your HTML pages inline or as an external file.
+JavaScript can be added to your HTML pages inline or as an external file, just like CSS.
 
 To include it internally, write all of your JavaScript within a `<script></script>` tag. Though the tags can be added in the `<head>` or anywhere in the `<body>`, it is usually added at the bottom of the page, just before the closing `</body>` tag.
 
 ```html
-<script>
-	// js code here
-</script> 
+<body>
+	<script>
+		// js code here
+	</script> 
 </body>
 ```
 

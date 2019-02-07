@@ -95,8 +95,8 @@ Compare two values using the `>=` and `<=` operators and then the `>` and `<` op
 
 In the console, write two expressions that return the boolean value `false` and two that return `true`.
 
-**Why don't we use `=` to compare values?**
-> Because `=` is what we use to reassign variables.
+**Why can't we use `=` to compare values?**
+> Because `=` is what we use to assign and reassign variables.
 
 ### Logical operators
 We use logical operators to make more complex conditions for our statements.

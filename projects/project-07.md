@@ -1,6 +1,6 @@
 # Project 7 (personal portfolio)
 ## Due date
-Tuesday, March 19th, 2:00 p.m.
+Tuesday, March 19th, 1:00 p.m.
 
 ## Project description
 Your goal for this week is to build yourself a beautiful portfolio of all your ✨amazing✨ work!
