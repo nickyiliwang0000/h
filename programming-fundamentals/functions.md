@@ -86,9 +86,9 @@ console.log(result) // 6
 ```
 
 1. Here we **define** a function called `add` that takes the parameters `a` and `b` and returns their sum. 
-1. Then we declare a variable in which we **call** the function and **pass** it the **values** `2` and `4` as **arguments**. 
+2. Then we declare a variable in which we **call** the function and **pass** it the **values** `2` and `4` as **arguments**. 
   * Inside the function, `a` refers to the value `2` and `b` refers to the value `4`. 
-1. The variable `result` stores the **return** of the function - the value `6` - which we then console log.
+3. The variable `result` stores the **return** of the function - the value `6` - which we then console log.
 
 **Exercise:** Edit your `sayMyName` function to accept one parameter called `name`, then call it. It should alert the name that was passed in as an argument. 
 
