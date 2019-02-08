@@ -2,4 +2,5 @@ tally.md
 .DS_Store
 how-to-edit-bootcamp-notes.md
 project-best-practices.md
-.wakatime-project.*
+.wakatime.cfg
+.wakatime-project

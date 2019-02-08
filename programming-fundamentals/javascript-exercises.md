@@ -1,31 +1,49 @@
-## JavaScript Fundamentals Exercise
+## JavaScript fundamentals exercises
 
 Time to combine all the fundamentals we've used so far and used them together to built a small JavaScript program.
 
-Remember to break down your program into small steps that a computer can understand. Write out some pseudocode first and refer to the <a href="https://notes.hackeryou.com/lesson/569964386fcff4ed4fd521b1/56981343fd2768a62f6e3df4">JavaScript Cheat Sheet</a> to help you with the syntax as you translate pseudocode into JavaScript.
+Remember to break down your program into small steps that a computer can understand. Write out some pseudocode first and refer to this [JavaScript Cheat Sheet](https://notes.hackeryou.com/lesson/569964386fcff4ed4fd521b1/56981343fd2768a62f6e3df4to) help you with the syntax as you translate pseudocode into JavaScript.
 
-## Coin Flip and More
-We'll build a JavaScript coin flipping machine! Open up  <a href="https://hychalknotes.s3.amazonaws.com/js-fundamentals-exercise.html" download>js-fundamentals-exercise</a> to get started. Download <a href="https://hychalknotes.s3.amazonaws.com/js-fundamentals-exercise-ANSWER.html" download>js-fundamentals-exercise-ANSWER</a> if you get stuck.
+## Coin flip
+We'll build a JavaScript coin flipping machine! Open up [js-fundamentals-exercise](https://hychalknotes.s3.amazonaws.com/js-fundamentals-exercise.html) to get started. Download [js-fundamentals-exercise-ANSWER](https://hychalknotes.s3.amazonaws.com/js-fundamentals-exercise-ANSWER.html) if you get stuck.
 
-## Create a 'mad libs' game.
-#### Exercise created by bootcamp grad Garret Levine
-#### Step 1
-prompt the user for 3 seperate words.
-- A noun.
-- An adjective.
-- An adverb.
-using these choices, `console.log` a mad lib where the prompts replace the blanks...
+## Create a Mad Libs game
+This exercise was created by bootcamp grad Garret Levine!
+1. Prompt the user for 3 seperate words:
+  * A noun
+  * An adjective
+  * An adverb
+2. Using these choices, `console.log` a Mad Lib where the prompts replace the blanks...
+``` bash
 "After they did that, the king played chess on his brother's
 __________(noun) and then combed his __________ (adjective)
 hair with a comb made out of old fish bones.
 Later, that same day, I saw the Monkey King dance __________
 (adverb) in front of an audience of kangaroos and wombats."
-#### Step 2
-instead of generating a set mad lib, pick a random one between two options and console log the result.
-you'll need to...
--get a random number between 1 and 2 (look back at using `Math` in javascript)
--`console.log` a different madlib if that number is 1, or if that number is 2
+```
+3. Instead of always printing that Mad Lib, have your program randombly choose that one or this one:
+
+```bash
 "The day I saw the Monkey King
 __________(adverb) sing. It was one of the most
 __________(adjective) days of the year.
 Everyone brought their _________(noun) and was havin a great time!"
+```
+
+You will need to:
+  * store each Mad Lib template in a variable 
+  * get a random number between 1 and 2 (look at using `Math` in JavaScript)
+  * `console.log` a different Mad Lib depending on the number returned from the `Math` method you choose.
+
+
+
+
+
+## Calculator
+
+1. Create a program that acts as a calculator. Have functions `add` `subtract` `multiply`, etc. Functions should take in 2 or more values and return the result of that operation. 
+
+2. Create functions for more complex functions: calculating circumference given radius, using the quadratic formula, calculating cosine, sine, and tangent (without the `Math.` methods!)
+
+
+
