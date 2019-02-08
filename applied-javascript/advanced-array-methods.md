@@ -32,7 +32,7 @@ Let's say we wanted to display a list of movie genres to our movie catalogue web
 
 We can use `.forEach()` to append each movie genre to the `movieGenres` container one at a time:
 
-```javascript
+```js
 const genres = ["Horror", "Comedy", "Drama", "Action", "Suspense", "Documentary"];
 
 genres.forEach((genre) =>  {
