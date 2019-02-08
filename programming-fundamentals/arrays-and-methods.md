@@ -1,14 +1,13 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
-- Name the three standard color formats
-- Identify which of the three standard color formats accept alpha values
-- Use a alpha channel color to make a heading's background partially see-through
+-
+- 
  -->
 # Arrays and methods
 
 ## Arrays
 
-Imagine that you wanted to make a list of values where the **order mattered**. You could use and object and do this:
+Imagine that you wanted to make a list of values where the **order mattered**. You could use and object an do this:
 
 ```js
 const musicObject = {
@@ -156,9 +155,7 @@ myArray; //[1, 3, 4, 5];
 myArray.unshift(0) //add value to the beginning;
 myArray; //[0, 1, 3, 4, 5]
 ```
-
-### Exercise
-
+**Exercise:**
 1. First, create an empty array:
 
 ```js
@@ -189,7 +186,7 @@ egyptianGods.unshift("Taweret");
 egyptianGods[2] //Why 2 now? And not 1 like before?
 ```
 
-#### Removing items from array with `.pop()` and `.shift()`
+### Removing items: `.pop()` and `.shift()`
 
 We can push items on to the end of the array with `.push()`, and we can pop items off the end of the array with `.pop()`. If we want to get an item off the front of the array we need to use `.shift()`.
 
@@ -201,12 +198,12 @@ myArray.shift(); //remove first value & return it;
 myArray; //["hi", 4]
 ```
 
-##### Do it again!
+**Exercise:**
 
 1. Let's start with	a base array of names:
 
 ```js
-const names = ["Zoe","Ryan","Kristen","Adam","Tiff", "Danny", "Brandon"];
+const names = ["Zoe","Jenny","Brent","Adam","Asaf", "Fatima", "Charlotte"];
 ```
 
 2. Let's get rid of "Zoe". Since she is the first item in the array:
@@ -217,45 +214,43 @@ names.shift();
 
 3. Is it gone? Type `names` into console again. See that "Zoe" is no longer there
 
-4. What about getting rid of the last item in the array? Get rid of "Brandon". 
+4. What about getting rid of the last item in the array? Get rid of "Charlotte". 
 
 ```js
 names.pop();
 ```
 
-#### More Array Methods
+### More array methods
 
-Arrays have a few more of methods to help you with managing your data, there are even more that we will discuss later.
+Arrays have lots more methods to help you with managing your data! Here are a handful:
 
 
 | Method | Description |
 |:-----------|:------------|
-|concat() | 	Joins two or more arrays, and returns a copy of the joined arrays |
-|indexOf() | 	Search the array for an element and returns its position |
-|join() | 	Joins all elements of an array into a string |
-|lastIndexOf() | 	Search the array for an element, starting at the end, and returns its position |
-|pop() | 	Removes the last element of an array, and returns that element |
-|push() | 	Adds new elements to the end of an array, and returns the new length |
-|reverse() | 	Reverses the order of the elements in an array |
-|shift() | 	Removes the first element of an array, and returns that element |
-|slice() | 	Selects a part of an array, and returns the new array |
-|sort() | 	Sorts the elements of an array |
-|splice() | 	Adds/Removes elements from an array |
-|toString() | 	Converts an array to a string, and returns the result |
-|unshift() | 	Adds new elements to the beginning of an array, and returns the new length |
-|valueOf() | 	Returns the primitive value of an array |
+|`concat()` | 	Joins two or more arrays, and returns a copy of the joined arrays |
+|`indexOf()` | 	Search the array for an element and returns its position |
+|`join()` | 	Joins all elements of an array into a string |
+|`lastIndexOf()` | 	Search the array for an element, starting at the end, and returns its position |
+|`pop()` | 	Removes the last element of an array, and returns that element |
+|`push()` | 	Adds new elements to the end of an array, and returns the new length |
+|`reverse()` | 	Reverses the order of the elements in an array |
+|`shift()` | 	Removes the first element of an array, and returns that element |
+|`slice()` | 	Selects a part of an array, and returns the new array |
+|`sort()` | 	Sorts the elements of an array |
+|`splice()` | 	Adds/Removes elements from an array |
+|`toString()` | 	Converts an array to a string, and returns the result |
+|`unshift()` | 	Adds new elements to the beginning of an array, and returns the new length |
+|`valueOf()` | 	Returns the primitive value of an array |
 
-Bookmark the cheatsheet below: 
+Bookmark this array methods cheatsheet either one of these array methods cheat sheets.
+* <https://devhints.io/js-array>
+* <https://gist.github.com/ourmaninamsterdam/1be9a5590c9cf4a0ab42#file-arrayzing-md>
 
-<a href="https://gist.github.com/ourmaninamsterdam/1be9a5590c9cf4a0ab42#file-arrayzing-md" target="_blank">https://gist.github.com/ourmaninamsterdam/1be9a5590c9cf4a0ab42#file-arrayzing-md</a>
+### Array methods exercise
 
-<a href="https://devhints.io/js-array" target="_blank">https://devhints.io/js-array</a>
+Open [tv-show-arrays.html](https://hychalknotes.s3.amazonaws.com/tv-show-arrays-exercise.zip). Have fun manipulating the array using the above methods. The instructions are commented within the source code. (You may need to do a bit of Googling.)
 
-#### Array Exercise
-
-Open [tv-show-arrays.html](https://hychalknotes.s3.amazonaws.com/tv-show-arrays-exercise.zip). Have fun manipulating the array using the above methods. The instructions are commented within the source code.
-
-You will need to use `console.log()` to log it to the console as well as create your own variables when required. 
+You will need to use `console.log()` to log values to the console as well as create your own variables when required. 
 
 <!-- Your final output should look like this: -->
 
@@ -285,7 +280,7 @@ Instead, we can use a `for` loop to iterate through the array items and extract 
 Remember that the syntax for a `for` loop is this:
 ```js
 for(initialExpression; condition; incrementExpression){
-
+// some code
 }
 ```
 
@@ -307,7 +302,7 @@ for (let i = 0; i < myArray.length; i++) {
 }
 ```
 
-## The 'this' keyword
+## The `this` keyword
 
 Inside of an object there is a special way to reference itself, the keyword `this` refers to that object. This can be used to update an object's properties. For example:
 
@@ -329,9 +324,9 @@ The `this` keyword is a **variable**, so it can change in different contexts.
 
 When used inside of a method on an object, the `this` keyword will refer to the object. However, when used inside of a function not on an object, `this` refers to something different. Try it and see what happens.
 
-We will discuss `this` in our [scope and execution context lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md).
+We will discuss `this` in more depth in our [scope and execution context lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md).
 
-## Exercise
+### Exercise
 Create an object that represents a "warrior". This warrior has the following properties:
 
 - equipment, an array containing the values "sword" and "shield".
@@ -342,7 +337,7 @@ Create an object that represents a "warrior". This warrior has the following pro
 - a method `pickUpEquipment()` which adds the argument (a string) to the equipment array.
 
 
-## Want more practice? 
+### Want more practice? 
 [Download and complete this exercise](https://hychalknotes.s3.amazonaws.com/method-practice-exercise-bootcamp.zip) to practice creating an object with methods on it.
 
-What happens if you use the update uniform method to change something that doesn't exist in the uniform object?
+<!-- What happens if you use the update uniform method to change something that doesn't exist in the uniform object? -->
