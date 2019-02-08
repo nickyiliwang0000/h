@@ -1,14 +1,13 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
 - Name the three standard color formats
-- Identify which of the three standard color formats accept alpha values
-- Use a alpha channel color to make a heading's background partially see-through
+- 
  -->
 # Arrays and methods
 
 ## Arrays
 
-Imagine that you wanted to make a list of values where the **order mattered**. You could use and object and do this:
+Imagine that you wanted to make a list of values where the **order mattered**. You could use and object an do this:
 
 ```js
 const musicObject = {
@@ -204,7 +203,7 @@ myArray; //["hi", 4]
 1. Let's start with	a base array of names:
 
 ```js
-const names = ["Zoe","Ryan","Kristen","Adam","Tiff", "Danny", "Brandon"];
+const names = ["Zoe","Jenny","Brent","Adam","Asaf", "Fatima", "Charlotte"];
 ```
 
 2. Let's get rid of "Zoe". Since she is the first item in the array:
@@ -215,7 +214,7 @@ names.shift();
 
 3. Is it gone? Type `names` into console again. See that "Zoe" is no longer there
 
-4. What about getting rid of the last item in the array? Get rid of "Brandon". 
+4. What about getting rid of the last item in the array? Get rid of "Charlotte". 
 
 ```js
 names.pop();
