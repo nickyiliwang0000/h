@@ -1,7 +1,13 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
--
-- 
+- Create an array
+- Explain that a method is a function on an object
+- Write a method
+- Correctly use push pop shift and unshift
+- Correctly write a for loop 
+- Identify that .length is a property not a method
+- Use .length correctly
+- Use the keyword `this` with a method they wrote
  -->
 # Arrays and methods
 
@@ -123,7 +129,7 @@ const raggedyAnn = {
 
 ### Familiar methods
 
-Calling a method is the same as calling a function that is not stored in an obejct: add `()`.
+Calling a method is the same as calling a function that is not stored in an object: add `()`.
 
 We have already seen a few methods:
 
