@@ -1,6 +1,6 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
-- Name the three standard color formats
+-
 - 
  -->
 # Arrays and methods
