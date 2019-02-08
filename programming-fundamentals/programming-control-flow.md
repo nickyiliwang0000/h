@@ -1,4 +1,4 @@
-## Control Flow
+# Programming control flow
 
 Normally, instructions or **statements** in a JavaScript are executed one after the other, in the order in which they are written. 
 
@@ -22,9 +22,9 @@ Operator     |  Description
 ===	 | is exactly equal to (value and type)
 !=	| is not equal to
 !==	| is strictly not equal to
->	| greater than 
+\>	| greater than 
 <	| less than
->=	| greater than or equal to	
+\>=	| greater than or equal to	
 <=	| less than or equal to
 
 
@@ -84,9 +84,9 @@ Here is the syntax for an if/else statement:
 
 ```js
 if (condition) {
-	// block statement (do something)
+  // block statement (do something)
 } else {
-	// block statement (do something)
+  // block statement (do something)
 }
 ```
 
@@ -107,11 +107,11 @@ A block statement is used to group statements (instructions). The block is delim
 
 ```js
 if ( time === 'morning') {
-   // do all of the following things
-   console.log("Good morning!");
+  // do all of the following things
+  console.log("Good morning!");
 } else {
-	// do all the following things if the first condition is false
-	console.log("Good evening!");
+  // do all the following things if the first condition is false
+  console.log("Good evening!");
 }
 ```
 
@@ -119,7 +119,7 @@ In fact a block statement could be just the `{}`.
 
 ```js
 {
-	console.log('Hi!');
+  console.log('Hi!');
 }
 ```
 
@@ -132,9 +132,9 @@ In fact a block statement could be just the `{}`.
 const n = 4;
 
 if (n > 10) {
-	console.log("That's a big number");
+  console.log("That's a big number");
 } else {
-	console.log("It's a small number");
+  console.log("It's a small number");
 }
 ```
 
@@ -147,11 +147,11 @@ if (n > 10) {
 const n = 55;
 
 if (n > 100) {
-	console.log("That's a big number");
+  console.log("That's a big number");
 } else if (n > 10 ) {
-	console.log("It's kinda big");
+  console.log("It's kinda big");
 } else {
-	console.log("It's a small number");
+  console.log("It's a small number");
 }
 ```
 
@@ -168,7 +168,7 @@ Another powerful concept in programming is **loops**. With loops, a block of sta
 
 ```js
 for (initialExpression; condition; incrementExpression) {
-	// loop statements
+  // loop statements
 }
 ```
 
@@ -186,7 +186,7 @@ Before running the code below predict what would happen.
 
 ```js
 for (let i = 0; i < 10; i = i + 1) {
-	console.log(i);
+  console.log(i);
 }
 ```
 
@@ -194,11 +194,11 @@ When would you want to use this? Let's say you have a music playlist containing 
 
 ```js
 for (let i = 0; i < 10; i = i + 1) {
-   queueNextSong(i);
+  queueNextSong(i);
 }
 ```
 
-`var i = 0;` Start at the first song.   
+`let i = 0;` Start at the first song.   
 `i < 10` If the song that is queued is less than 10, you are not at the end of the list yet, so queue up the next song.    
 `i = i + 1` To move to the next song on the list, add 1 to the current index number to move onto the next song.
 
@@ -267,7 +267,7 @@ _Hints: Look up combining boolean expressions with &&. Also look up modulo._
 
 ```js
 while (condition) {
-   // loop statements
+  // loop statements
 }
 ```
 
@@ -280,8 +280,8 @@ Let's look at an example:
 ```js
 let i = 0;
 while (i < 10) {
-	console.log(i);
-	i = i + 1;
+  console.log(i);
+  i = i + 1;
 }
 ```
 
@@ -294,7 +294,7 @@ We can terminate a loop at any time by using the break statement. For example:
 ```js
 let number = 23;
 while (true) {
-	number = number + 1
+  number = number + 1
   if (number % 9 === 0) {
     break;
   }

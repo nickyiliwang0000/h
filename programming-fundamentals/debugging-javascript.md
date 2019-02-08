@@ -1,6 +1,12 @@
-## Javascript Comments
+<!-- Student takeaway: -->
+<!--Student will be able to:
+- Use prompt(), alert(), and confirm()
+- Know what each of them returns
+ -->
 
-### Comments
+# Debugging JavaScript using built in functions
+
+## Comments
 Sometimes you want to write notes to yourself (or others) to organize blocks of code or leave explanations. Just like HTML & CSS, JavaScript will ignore comments and not execute them.
 
 Single line comments can be added with `//`.
@@ -9,56 +15,58 @@ Single line comments can be added with `//`.
 // There are 365 days in a year.
 ```
 
-Just like in CSS,  `/*  */` are used for multiline comments.
+Just like in CSS, `/*  */` are used for multiline comments.
 
 ```js
 /* 
-	Many 
-	Lines
-	wow
+  Many 
+  Lines!
+  ....Wow
 */
 ```
 
-Multi-line comments are also great for "hiding" large blocks of code so you can try something new without erasing your old code.
+Multiline comments are also great for hiding large blocks of code so you can try something new without erasing your old code. Remember to remove them at production, though!
 
-Comments are a good thing to get used to using. Comments help you understand your code weeks or months down the road. They also allow you to make your code readable and easy to understand for other developers. 
+**Get used to commenting your code.** Comments help you (or other developers) understand your code in the future.
 
+## Debugging tools
 
-## Debugging Javascript
+_Functions_ are chunks of code that do something. Functions can be repeated as many times as you want. We can create our own functions but there are many handy ones already built into JavaScript that we can use for debugging. 
 
-### Debugging Tools In JavaScript
-
-**Functions** are used to make the code do things. They're basically chunks of code/instructions that can be repeated and run any time. We can create our own functions (to be discussed later) but there are many handy ones already built into JavaScript for debugging purposes. 
-
-To get the function to execute, you have to *call the function* using the function name followed by parentheses. Some times this is also referred to as running or executing a function. 
-
-**Calling a function:** 
+### Function basics
+To get the function to execute, you have to _call_ it using the function name followed by parentheses:
 
 ```js
 functionName();
 ```
 
-When calling a function, often (but not always), you need to *pass* some data into the function. This data is called an **argument**. You can pass more than one piece of data at a time! 
+Some times this is also referred to as _running_ or _executing_ a function.
 
-**Calling a function with an argument:** 
+Sometimes you will need to _pass_ some data into the function. This data is called an _argument_.
 
 ```js
 functionName(argument);
 ```
 
-Let's take a closer look at some terminology:  
+You can pass more than one piece of data to a function by using a comma:
+```js
+functionName(firstArgument, secondArgument);
+```
+When you call a function, it does something, and very often it will _return_ a value to you. 
 
-- **Argument:** a value provided to a function
-- **Pass:** to provide arguments to a function
-- **Call:** ask JavaScript to evaluate/execute a function
-- **Return:** pass back the value from the function
+Terminology recap:
+* An **argument** is a value provided to a function.
+* To **pass** is to provide arguments to a function.
+* To **call** a function is to ask JavaScript to evaluate/execute a function.
+* To **return** is to pass back the value from the function. Often, this value is called "the return".
 
-A few built-in JavaScript functions that we will use are `prompt()`, `alert()` and `confirm()`. All three display a dialog box containing a message but `prompt()` also allows the user to input some text and `confirm()` also includes "cancel" and "ok" buttons.
+### Debugging functions
+A few built-in JavaScript functions that we will use are `prompt()`, `alert()` and `confirm()`. All three display a dialog box containing a message. `prompt()` also allows the user to input some text. `confirm()` also includes 'Cancel' and 'OK' buttons.
 
-These built-in functions aren't always pretty but they can be really useful tools to help debug our code as we learn JavaScript. 
+These dialogs are built into the browser and not generally able to be restyled for use in production code but they are useful debugging tools.
 
 Let's try calling these functions in the browser console with and without arguments and see what happens, one function at a time.
-	
+
 **Without arguments**
 ```js
 prompt();
@@ -67,37 +75,35 @@ confirm();
 ```
 
 **With arguments**  
-Note that the arguments are contained in quotes.
+> Note that the arguments are contained in quotes. Which data type is that?
 ```js
 prompt("What is your name?");
 alert("hello");
 confirm("yay or nay?");
 ```
 
-In the example above, the *values* "What's your name?", "hello" and "yay or nay" are *passed* as *arguments* to the functions named `prompt` and `alert`. We *called* the function and it *returned* different values for each function.
+In the example above, the **values** "What's your name?", "hello" and "yay or nay" are **passed** as **arguments** to the functions named `prompt` and `alert`. We **called** the function and it **returned** different values for each function.
 
-`prompt()`:
+#### `prompt()`
+* when the user clicks 'OK', the text entered in the input field is returned
+* if the user clicks 'OK' without entering any text, an empty string is returned
+* if the user clicks the 'Cancel' button, the function returns `null` (i.e. "value of nothing")
 
-* when the user clicks OK, the text entered in the input field is returned
-* if the user clicks OK without entering any text, an empty string is returned
-* if the user clicks the Cancel button, the function returns `null` (means "value of nothing")
+#### `alert()`:
 
-`alert()`:
+* the **argument** shows in the dialog
+* returns `undefined` (i.e. "does not have a value")
 
-* the *argument* shows in the dialog (The text written in the parenthesis)
-* returns an `undefined` value (means "does not have a value"")
+#### `confirm()`:
 
-`confirm()`:
-
-* returns `true` if "ok" was selected
+* returns `true` if 'OK' was selected
 * `false` if "cancel" was selected
 
-Note that the arguments being passed and some of the values being returned were contained within quotes. That's because different values have different **types**. Let's go over the different types of values that were returned.
+Note that the arguments being passed and some of the values being returned were contained within quotes. This is because their data type is `string`. [Here's a refresher on data types](https://github.com/HackerYou/bootcamp-notes/blob/917b7a927d55c11314045c6c5a625b3c31ba1a53/programming-fundamentals/intro-to-programming.md#data-types).
 
+### console.log()
 
-#### console.log()
-
-Likely the debugging tool that you'll be using the most is `console.log()` which is a function you can use any time you want to print (display) something in the console. You can use this any time you are unsure of what the value of a variable is, or when you want to check that one of your functions is working properly! 
+Likely the debugging tool that you'll be using the most is `console.log()` which is a function you can use any time you want to print (i.e. display) something in the console. You can use this any time you are unsure of what the value of a variable is, or when you want to check that one of your functions is working properly! 
 
 ```js
 // log out a string
@@ -111,8 +117,8 @@ console.log(raphael, donatello, michelangelo, leonardo);
 
 // evaluate expressions
 console.log(total*tax);
-
 ```
 
-Whenever you want to check the status of something in your code, use `console.log`! It's best practice to use them in development and remove console logs from your projects when they are ready for deployment. 
+Whenever you want to check the status of something in your code, use `console.log`! Use them liberally in development and **remove console logs from your projects when they are ready for deployment**.
 
+## There should be nothing in the console on a production website.
