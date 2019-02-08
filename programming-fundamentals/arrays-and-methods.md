@@ -228,8 +228,9 @@ names.pop();
 
 ### More array methods
 
-Arrays have lots more methods to help you with managing your data! Here are a handful:
+Arrays have lots more methods to help you with managing your data! Look up what kind of arguments each one can take [at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop). The sidebar titled 'Methods' will have each one.
 
+Here are a handful of common ones:
 
 | Method | Description |
 |:-----------|:------------|
