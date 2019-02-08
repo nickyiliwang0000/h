@@ -3,7 +3,7 @@
 - 
  -->
 # Objects
-We learned [in a previous lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-programming.md#data-types) that the data (i.e. primitive) types of JavaScript values are: 
+We learned [in a previous lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-programming.md#data-types) that the data types of JavaScript values are: 
 
 Data type | Description | Example
 ---|---|---
