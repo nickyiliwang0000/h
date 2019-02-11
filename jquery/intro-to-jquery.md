@@ -31,7 +31,7 @@ jQuery is really one big object with a lot of helpful methods that you get to us
 In JavaScript, an object is a collection of various properties - each property defined by a key value pair.
 
 ```js
-let pet = {
+const pet = {
   species: "cat",
   color: "black",
   name: "Mittens"
@@ -55,7 +55,7 @@ console.log(pet.name); //logs "Spot";
 Functions in JavaScript can be stored inside properties, when a function lives in side an object, it's called a method.
 
 ```js
-let pet = {
+const pet = {
 	species: "cat",
 	color: "black",
 	name: "Mittens",
@@ -95,7 +95,7 @@ JavaScript can find and modify any DOM node. Some things you might change with J
 - Hide or show elements
 - Add dynamic HTML to the page
 
-#### Exploring the DOM
+### Exploring the DOM
 
 We can access the DOM in _vanilla_ JavaScript with the word `document`. The term vanilla means writing JavaScript without any libraries.  
 
@@ -129,9 +129,9 @@ The methods above return a DOM object representing the element. If more than one
 
 Working with the DOM is pretty cool. But we can make it even better with jQuery. The syntax for interacting with the DOM is abstracted away so it is cleaner and we don't have to worry about cross-browser bugs. Let's give it a try.
 
-#### Manipulating the DOM with jQuery
+### Manipulating the DOM with jQuery
 
-##### Loading jQuery
+#### Loading jQuery
 
 * We need to load the jQuery library before we can work with it. A quick way to do this is to use a remote copy via a CDN. Go to jQuery.com and click the download button near the top. If you scroll down you will find a 'Using jQuery with a CDN' header. In that section you will find links for various CDN's, pick one and copy it.
 
@@ -141,7 +141,7 @@ Working with the DOM is pretty cool. But we can make it even better with jQuery.
 
 ##### Test that jQuery is loaded
 
-* Let's open [try-jquery.html]https://hychalknotes.s3.amazonaws.com/try-jquery.html) and check if jQuery has been successfully loaded. We can test that by going to the console. The console should show no errors. Type `jQuery` into the console and press enter. The return value should be `function x()`. This is telling you that **jQuery is a function**. Type `$` and press enter, you should get the same return value. `$` **is an alias for jQuery**, meaning both will do the same thing.
+* Let's open [try-jquery.html](https://hychalknotes.s3.amazonaws.com/try-jquery.html) and check if jQuery has been successfully loaded. We can test that by going to the console. The console should show no errors. Type `jQuery` into the console and press enter. The return value should be `function x()`. This is telling you that **jQuery is a function**. Type `$` and press enter, you should get the same return value. `$` **is an alias for jQuery**, meaning both will do the same thing.
 
 ##### Selecting elements
 
@@ -154,7 +154,7 @@ jQuery is a function that is defined with multiple parameters, but they are opti
 
 jQuery selectors are exactly the same as CSS selectors! So just like CSS we select elements by using classes, IDs, and tag names. All of the existing 20+ types of CSS selectors will totally work in jQuery.
 
-With [try-jquery.html]https://hychalknotes.s3.amazonaws.com/try-jquery.html) in your browser, open your console and use the jQuery selector to grab all of the `img` elements on the page:
+With [try-jquery.html](https://hychalknotes.s3.amazonaws.com/try-jquery.html) in your browser, open your console and use the jQuery selector to grab all of the `img` elements on the page:
 
 ```js
   $('img')
@@ -240,9 +240,9 @@ The event we're looking for is a `click`:
 
 ```js
 $(document).ready(function(){
-	$(".box").on("click", function(){
-		// run this code when event happens
-	});
+  $(".box").on("click", function(){
+    // run this code when event happens
+  });
 });
 ```
 
@@ -250,10 +250,10 @@ jQuery has the method `hide()` that will come in handy. Let's select the box aga
 
 ```js
 $(document).ready(function(){
-	$(".box").on("click", function(){
-		$(".box").hide();
-	});
-});
+  $(".box").on("click", function(){
+    $(".box").hide();
+  });
+  });
 ```
 
 All of the boxes disappeared! This is because `$(".box")` selects all of the boxes. Ok, how do we select on the box that was clicked? Remember the `this` keyword? jQuery provides `this` inside of the anonymous function as the element we clicked on. How convenient!
