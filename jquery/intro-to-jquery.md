@@ -16,7 +16,7 @@ There are some things you want to do all the time in your front-end JavaScript c
 
 ### 2. jQuery irons out a lot of cross browser inconsistencies.
 
-As you've seen with HTML & CSS, each browser interprets your code a little differently.  This can also a problem with JavaScript, so jQuery does a lot of work behind the scenes to make sure the code you write is cross-browser compliant.
+As you've seen with HTML & CSS, each browser interprets your code a little differently.  This can also be a problem with JavaScript, so jQuery does a lot of work behind the scenes to make sure the code you write is cross-browser compliant.
 
 ### 3. jQuery has plenty of  plugins you can use.
 
