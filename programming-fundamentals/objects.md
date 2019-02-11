@@ -129,7 +129,7 @@ for (let variable in object) {
 **Note**: 
 
 * The property name is assigned to the `variable` on each iteration. This `variable` can be called anything you want, a common name might be something like `key`, since the value it gets is the name of the key from the property.
-* There is no guarantee that the properties are retrieved in the same order they were inserted -- don't count on the order to stay the same. Browsers will *usually* keep the order the same… *it's just not guaranteed*.
+* There is **no guarantee that the properties are retrieved in the same order they were inserted**. Browsers will often keep the order the same but it's just not guaranteed.
 
 Here's an example:
 
