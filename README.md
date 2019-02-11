@@ -95,6 +95,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Intro to jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/jquery/intro-to-jquery.md)
 * [jQuery API documentation](https://github.com/HackerYou/bootcamp-notes/blob/master/jquery/jquery-api-documentation.md)
 * [jQuery best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/jquery/jquery-best-practices.md)
+* [Queen Street hot treat code-along](https://github.com/HackerYou/bootcamp-notes/blob/master/jquery/queen-street-hot-treat-code-along.md)
 * [To-do app code-along](https://github.com/HackerYou/bootcamp-notes/blob/master/jquery/to-do-app.md)
 
 ### Applied JavaScript
