@@ -1,20 +1,20 @@
 # How to organize your JavaScript
 
-## Javascript Organization
+## Javascript organization
 
 As you add more lines and functionality to your JS code, it can start to get a little unruly. 
 
-#### Terminology Reminder
+#### Terminology reminder
 
 Variables are referred to as **properties** when stored inside an object.
 
 Functions are referred to as **methods** when stored inside an object.
 
-### Problem 1: 'Spaghetti Code'
+### Problem 1: 'Spaghetti code'
 
 You might have trouble tracking down which lines do what, or end up having a hard time changing or adding new features. If you ever find yourself in an unorganized tangle, you've probably stumbled upon (or written!) what we call spaghetti code. Don't panic! A little code organization can help you steer clear of these issues.
 
-### Problem 2: Conflicting Code
+### Problem 2: Conflicting code
 
 Another reason to organize your code is to avoid conflicts with other plugins or libraries that you're running on your website. Say you create a variable to hold your twitter handle for your contact page, but you're also embedding a twitter widget on your website. You might end up with something like this:
 
@@ -24,13 +24,14 @@ let twitter = 'http://twitter.com'; //created by the widget
 let twitter = '@thisishackeryou'; //created by you
 ```
 
-Since variables can be re-assigned in JavaScript, we've gone ahead and over-written the widget's variable and most likely broken it!  Again, we can fix this through better organization.
+Since variables can be reassigned in JavaScript, we've gone ahead and reassigned the widget's variable and most likely broken it!  Again, we can fix this through better organization.
 
 
 ### Scope
+
 In our sample conflict above, we're running into what's called a scope issue. 
 
-Variables declared outside of a function are part of the **global** scope. This means they can be accessed (and over-written!) from *anywhere* in your code.
+Variables declared outside of a function are part of the **global** scope. This means they can be accessed (and reassigned) from *anywhere* in your code.
 
 On the other hand, variables declared inside a function have **local** scope. This means they're only available to other code *inside the function*
 
@@ -76,7 +77,7 @@ chooseDestination();
 launchRocket(); // gives us an error
 ```
 
-### Organizing Your Code With an Object
+### Organizing your code with an object
 
 To avoid scope issues and help break your code down into more modular components, we can organize our code using an object. 
 
@@ -129,9 +130,9 @@ console.log(myApp);
 ```
 
 
-### The Init Function
+### The `init` method
 
-Most apps will have a special method called `init` that kicks things off. Anything that needs to happen on page load, and most event handlers go in here. It's also a good place to cache jQuery selectors.
+Most apps will have a special `init` method. This will initialize anything that needs to happen on page load, and hold most event handlers. This helps ensure that your handlers are called properly, without interference or reliance of other methods. It's also a good place to cache jQuery selectors.
 
 **The name `init` is just a name. You can name the method whatever you'd like,`init` is simply used as a short form for initialize as what we are doing is initializing our application.**
 
