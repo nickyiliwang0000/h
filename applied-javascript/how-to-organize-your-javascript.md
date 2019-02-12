@@ -31,9 +31,9 @@ Since variables can be reassigned in JavaScript, we've gone ahead and reassigned
 
 In our sample conflict above, we're running into what's called a scope issue. 
 
-Variables declared outside of a function are part of the **global** scope. This means they can be accessed (and reassigned) from *anywhere* in your code.
+Variables declared outside of a function are part of the **global** scope. Meaning they can be accessed (and reassigned) from *anywhere* in your code.
 
-On the other hand, variables declared inside a function have **local** scope. This means they're only available to other code *inside the function*
+On the other hand, variables declared inside a function have **local** scope. Meaning they are only accessible to that functions code block:
 
 #### Examples
 
@@ -132,7 +132,7 @@ console.log(myApp);
 
 ### The `init` method
 
-Most apps will have a special `init` method. This will initialize anything that needs to happen on page load, and hold most event handlers. This helps ensure that your handlers are called properly, without interference or reliance of other methods. It's also a good place to cache jQuery selectors.
+Most apps will have a special `init` method. This will initialize anything that needs to happen on page load, and hold most of our event handlers. This helps ensure that your handlers are called properly, without interference or reliance of other methods. It's also a good place to cache jQuery selectors.
 
 **The name `init` is just a name. You can name the method whatever you'd like,`init` is simply used as a short form for initialize as what we are doing is initializing our application.**
 
