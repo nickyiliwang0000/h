@@ -9,7 +9,7 @@
 ## Avoid spaghetti code
 Without any guidelines, it can be difficult to read and trace control flow through long JavaScript files. Many lines of code that are all snarled up and hard to handle are affectionately referred to as "spaghetti code".
 
-If you ever find yourself stuck in a tangle, don't panic. A little _code refactor_ can smooth these issues out. Think of it like ~copyediting~ ~copy-editing~ copy editing your code.
+If you ever find yourself stuck in a tangle, don't panic. A little _code refactor_ can smooth these issues out. Think of it like ~~copyediting~~ ~~copy-editing~~ copy editing your code.
 
 ## Avoid conflicting code
 
