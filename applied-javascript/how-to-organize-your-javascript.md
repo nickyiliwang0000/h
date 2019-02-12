@@ -1,10 +1,20 @@
+# How to organize your JavaScript
+
 ## Javascript Organization
 
-#### Problem 1: 'Spaghetti Code'
+As you add more lines and functionality to your JS code, it can start to get a little unruly. 
 
-As you add more lines and functionality to your JS code, it can start to get a little unruly. You might have trouble tracking down which lines do what, or end up having a hard time changing or adding new features. If you ever find yourself in an unorganized tangle, you've probably stumbled upon (or written!) what we call spaghetti code. Don't panic! A little code organization can help you steer clear of these issues.
+#### Terminology Reminder
 
-#### Problem 2: Conflicting Code
+Variables are referred to as **properties** when stored inside an object.
+
+Functions are referred to as **methods** when stored inside an object.
+
+### Problem 1: 'Spaghetti Code'
+
+You might have trouble tracking down which lines do what, or end up having a hard time changing or adding new features. If you ever find yourself in an unorganized tangle, you've probably stumbled upon (or written!) what we call spaghetti code. Don't panic! A little code organization can help you steer clear of these issues.
+
+### Problem 2: Conflicting Code
 
 Another reason to organize your code is to avoid conflicts with other plugins or libraries that you're running on your website. Say you create a variable to hold your twitter handle for your contact page, but you're also embedding a twitter widget on your website. You might end up with something like this:
 
@@ -38,7 +48,7 @@ function whereAmI(){
 whereAmI(); //logs "Earth"
 ```
 
-The locally scoped `planet` variable overrides the global one.
+The `planet` variable that is printed is the value that is scoped to the function it was called from.
 
 ```js
 let planet = "Earth";
@@ -55,7 +65,7 @@ The `destination` variable is locally scoped to the `chooseDestination` function
 
 ```js
 function chooseDestination(){
-  let destination = "The Moon"
+  let destination = "The Moon";
 }
 
 function launchRocket(){
@@ -76,9 +86,9 @@ We start with an empty object that will hold all our our application code.
 const myApp = {};
 ```
 
-This creates what's called a **namespace** for our code. All your variables and functions will start with the `myApp` namespace, protecting them from conflicts with other code. 
+This creates what's called a **namespace** for our code. All your variables and functions will start with a namespace of your choosing, protecting them from conflicts with other code. 
 
-We can now add our twitter variable as a property on the myApp object.
+We can now add our twitter variable as a property on the `myApp` object.
 
 ```js
 myApp.twitter = 'thisishackeryou';
@@ -114,12 +124,9 @@ myApp.getTweets = function(){
 myApp.displayTweets = function(){
   //prints tweets onto the page
 }
+
+console.log(myApp);
 ```
-
-#### Terminology Reminder
-Variables are often referred to as **properties** when stored inside an object.
-
-Functions are often referred to as **methods** when stored inside an object.
 
 
 ### The Init Function
