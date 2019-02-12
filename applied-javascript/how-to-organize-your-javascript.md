@@ -173,4 +173,4 @@ Exposing it before the document ready allows us to play around with the object i
 
 ### Practice
 
-To get some experience into how an application could be organized into an object, download <a href="https://hychalknotes.s3.amazonaws.com/foodAhoy.html" download>foodAhoy.html</a> Together we'll refactor this code to show how the namespacing pattern can be applied to an app that already exists.
+To get some experience into how an application could be organized into an object, download [foodAhoy.html](https://hychalknotes.s3.amazonaws.com/foodAhoy.html).Together we'll refactor this code to show how the namespacing pattern can be applied to an app that already exists.
