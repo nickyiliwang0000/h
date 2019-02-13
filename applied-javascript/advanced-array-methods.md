@@ -18,7 +18,7 @@ There are useful native JavaScript methods and powerful external libraries that 
 
 <!-- We'll be going over a few super useful methods and you can [follow along using this file](https://hychalknotes.s3.amazonaws.com/advanced-array-methods-exercises.html). -->
 
-We'll be going over a few super useful methods, so open up a new HTML focument and follow along. 
+We'll be going over a few super useful methods, so open up a new HTML document and follow along. 
 <!-- and you can [follow along using this file](https://hychalknotes.s3.amazonaws.com/advanced-array-methods-exercises.html). -->
 
 ### Our friend `.forEach()`
