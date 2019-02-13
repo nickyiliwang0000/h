@@ -140,7 +140,7 @@ const sum = nums.reduce((total, integer) => {
 console.log(sum)
 // 20
 ```
-Similar to `.map()`, `.filter()`, and `.forEach()`, `.reduce()` contains a callback function: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used insinde of the function - kind of like `i` in a `for` loop.
+Similar to `.map()`, `.filter()`, and `.forEach()`, the `.reduce()` function expects a callback function as an argument: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used insinde of the function - kind of like `i` in a `for` loop.
 
 You can also use `.reduce()` on non-numbers:
 
