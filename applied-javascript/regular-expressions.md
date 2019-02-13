@@ -90,7 +90,7 @@ symbol | meaning in a regex
 
 ## Regex patterns
 
-If you want to do something commong using regex, chances are someone's already written that regex.
+If you want to do something common using regex, chances are someone's already written that regex.
 
 ### Matching a username that has a length between 3 and 16 characters
 ```js
@@ -114,7 +114,7 @@ Let's break down what's happening here:
 2. `([a-z0-9_\.-]+)`: ...that is followed by one or more (`+`) lowercase letters (`a-z`), numbers (`0-9`), underscores (`_`), dots (`\.`), or hyphens (`-`).
 	* Notice that `.` is escaped using the `\` character.
 3. Then, find exactly this character `@` followed by a string...
-4. `([\da-z\.-]+)` ... that **must** be `\d` followed by one or more (`+`) lowercase letters (`a-z`), dots (`\.`), or hyphens (`-`).
+4. `([\da-z\.-]+)` ... that is followed by one or more (`+`) digits (`\d`), lowercase letters (`a-z`), dots (`\.`), or hyphens (`-`).
 	* Email providers are usually one word.
 5. Then, find a string`([a-z\.]{2,6})` between 2 to 6 letters (`{2,6}`) or dots (`\.`).
 	* Consider TLDs like `co.uk`, `gc.ca`, `.ca`, and `.pizza`.
