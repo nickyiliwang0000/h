@@ -2,13 +2,13 @@
 <!-- By the end of this lesson, the student should know:
 - That data is inherently mutable
 - What 3 things .map(), .filter(), and .reduce() have in common? (return a new array, don't mutate data, take a callback function)
-- That Underscore, and other JS libraries exist
+- That Underscore and other JS libraries exist
 - 
 -->
 
 # Advanced array methods
 
-The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. Think of functional programming as a way to use functions to transform data.
+The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. It's the idea that a developer should have the proper tools (functions) on hand to accomplish a task.
 
 ## Working with data
 
@@ -16,7 +16,10 @@ When working with data, we often need to tweak, bend, and reorganize it to suit 
 
 There are useful native JavaScript methods and powerful external libraries that exist to help us accomplish these tasks. Some of these methods could be replaced by some creative iteration and reworking of arrays using methods - remember that there are always many ways to do something in JavaScript!
 
-We'll be going over a few super useful methods and you can [follow along using this file](https://hychalknotes.s3.amazonaws.com/advanced-array-methods-exercises.html).
+<!-- We'll be going over a few super useful methods and you can [follow along using this file](https://hychalknotes.s3.amazonaws.com/advanced-array-methods-exercises.html). -->
+
+We'll be going over a few super useful methods, so open up a new HTML document and follow along. 
+<!-- and you can [follow along using this file](https://hychalknotes.s3.amazonaws.com/advanced-array-methods-exercises.html). -->
 
 ### Our friend `.forEach()`
 The `.forEach()` method iterates over an array and performs a provided task (i.e. a callback function). Within the callback, we can define two arguments that represent the iterated item's _value_ and _index_.
@@ -70,7 +73,7 @@ The `.map()` method will run a function for every element in the array, and it w
 **Creating an array of items from objects:**
 ```js
 const persons = [
-  {first: 'Taylor', last: 'Swift'},
+  {first: 'Sanjay', last: 'Patel'},
   {first: 'Ash', last: 'Ketchum'},
   {first: 'Hermione', last: 'Granger'}
 ];
@@ -80,7 +83,7 @@ const people = persons.map((value) =>  {
 });
 
 console.log(people);
-//["Taylor Swift", "Ash Ketchum", "Hermione Granger"]
+//["Sanjay Patel", "Ash Ketchum", "Hermione Granger"]
 
 ```
 
@@ -129,17 +132,29 @@ The `.reduce()` method then gives us back (i.e. **returns**) a single value.
 
 Here is an example of an array of numbers that need to be added up:
 
-```javascript
+```js
 const nums = [2, 4, 6, 8]
 const sum = nums.reduce((total, integer) => {
   return total + integer
 });
-```
-```js
 console.log(sum)
 // 20
 ```
-Similar to a `.map()`, `.filter()`, and `.forEach()`, this method contains a callback function: as the `.reduce()` method cycles through the array (like a `for` loop),  the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value.
+Similar to `.map()`, `.filter()`, and `.forEach()`, the `.reduce()` function expects a callback function as an argument: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used insinde of the function - kind of like `i` in a `for` loop.
+
+You can also use `.reduce()` on non-numbers:
+
+```js
+let words = ['Dear', 'Sir','or','Madam']
+
+let phrase = words.reduce( (phraseSoFar, currentWord) =>{
+    return `${phraseSoFar} ${currentWord}`;
+  }
+)
+
+console.log(phrase);
+// "Dear Sir or Madam"
+```
 
 Here's another useful example of when we can use `.reduce()` to _flatten_ multiple arrays into one single array.
 
@@ -153,175 +168,27 @@ const flatArray = nums.reduce((total, amount) => {
 // [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
 ```
 
-You can use `.reduce()` with non-numbers: to count [the number of times a string occurs in an array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Counting_instances_of_values_in_an_object); `.reduce()` is often used in combination with other functions to solve complex problems, so we've just done the simpler number examples here.
+`.reduce()` is often used in combination with other functions to solve complex problems, (e.g. to count [the number of times a string occurs in an array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Counting_instances_of_values_in_an_object)).
 
-## Underscore.js
+## TL;DR
+Here's a cute little emoji summary of what each of these methods do.
 
-Sometimes, your native methods aren't enough. In those times, you might turn to a library like [Underscore.js](http://underscorejs.org). Much like jQuery, Underscore provides helpful shortcuts and tools, specifically for working with data.
+```bash
+map([🌽, 🐮, 🐔], cook)
+=> [🍿, 🍔, 🍳]
 
-Underscore is organized into methods for working with [collections of data](http://underscorejs.org/#collections), [arrays](http://underscorejs.org/#arrays), [objects](http://underscorejs.org/#objects) and [functions](http://underscorejs.org/#functions). To use the library, include a link to the library in your HTML, ideally from a [CDN](http://cdnjs.com/libraries/underscore.js/) and before your scripts.
+filter([🍿, 🍔, 🍳], isVegetarian)
+=>  [🍿, 🍳]
 
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+reduce([🍿, 🍳], eat)
+=> 💩
 ```
-
-All the methods are part of an object named `_`. Similar to how everything from jQuery is on the `$` object. Whenever we call an Underscore method, we start with the `_` and pass in arguments. With all methods, it's possible to pass in a callback function that handles the resulting task.
-
-### _.find()
-
-The `_.find()` method iterates over a list and returns the first value that passes a test. If no result is found, it returns `undefined`, otherwise it continues until the first result is found.
-
-**Find the first value that starts with "A":**
-
-```js
-const users = ["Shanley", "Aladdin", "Carrie", "Jian", "Zelalem", "Adonai", "Kimmy"];
-
-const firstName = _.find(users, function(value) {
-  return value.charAt(0) === "A"
-});
-
-console.log(firstName)
-//"Aladdin"
-
-```
-
-### _.where()
-
-The `_.where()` method iterates over each value in a list, and returns an array of all the values that match the provided argument to search for. The argument provided is an object that will be used according to the search guidelines.
-
-**Sort data by year:**
-
-```js
-const data = [ 
-    { firstName: 'Oldest Kid', year: 1984 },
-    { firstName: 'Middle Kid (Twin 1)', year: 1985 },
-    { firstName: 'Middle Kid (Twin 2)', year: 1985 },
-    { firstName: 'Baby', year: 1987}
-];
-
-const eightyFour = _.where(data, {year: 1984});
-const eightyFive = _.where(data, {year: 1985});
-```
-
-### _.pluck()
-
-Much like the native `.map()` method, `_.pluck()` allows the creation of a new array by searching for a single property name and returning a new array. This is useful when you want to have an array with only specific information while retaining the original collection.
-
-Although, if you need to provide multiple properties, **the map method is your best bet.**
-
-**Creating a new array with only the names of from each object:**
-```js
-
-const data = [ 
-    { firstName: 'Oldest Kid', year: 1984 },
-    { firstName: 'Baby', year: 1987},
-    { firstName: 'Middle Kid (Twin 1)', year: 1985 },
-    { firstName: 'Middle Kid (Twin 1)', year: 1985 },
-    { firstName: 'Baby', year: 1987}
-];
-
-const names = _.pluck(data, 'firstName');
-console.log(names)
-// ['Oldest Kid', 'Middle Kid (Twin 1)', 'Middle Kid (Twin 1)', 'Baby']
-```
-
-### _.uniq()
-
-The `_.uniq()` method is useful in that it helps to remove duplicates within an array. By simply passing an array, it will sort and remove all duplicates, or a function can be passed that defines what duplicates to search for.
-
-### Examples
-
-**Removing duplicate names:**
-
-```js
-const users = ["Delaney", "Xiao", "Anais", "Delaney", "Parvati", "Jo", "Anais"];
-
-const clean = _.uniq(users);
-
-console.log(clean);
-//["Delaney", "Xiao", "Anais", "Parvati", "Jo"]
-```
-
-**Removing objects that appear twice:**
-
-```js
-const data = [ 
-    { firstName: 'Jowoo', year: 1984 },
-    { firstName: 'Shawn', year: 1985 },
-    { firstName: 'Heloise', year: 1985 },
-    { firstName: 'Jowoo', year: 1984 },
-    { firstName: 'Heloise', year: 1985 },
-    { firstName: 'KP', year: 1987}
-];
-
-const cleaned = _.uniq(data, function(value) {
-    return value.firstName;
-});
-// 'Jowoo', 'Shawn', 'Heloise', 'KP'
-```
-
-### _.first(), _.last(), _.initial() and _.rest()
-
-These four methods return either the first or last values in an array, or a number of items from the beginning or the end.
-
-For the next few examples, the following example array will be used.
-
-```js
-const data = [100, "Dog", true, 14, undefined];
-```
-
-#### _.first()
-Returns the first element of an array, or passing an argument will return the first X number of items from the array.
-
-```js
-const firstTwo = _.first(data, 2);
-
-// firstTwo = [100, "Dog"]
-```
-
-#### _.last()
-Returns the last element of an array, or passing an argument will return the last X number of items from the end of the array
-
-```js
-const lastThree = _.last(data, 3);
-
-// lastThree = [true, 14, undefined];
-```
-
-
-#### _.initial()
-Returns everything but the last entry of the array.  Passing an argument will exclude the last X elements from the result.
-
-```js
-const firstNums = _.initial(data);
-// firstNums = [100, "Dog", true, 14]
-
-let allButTheLastTwo = _.initial(data, 2);
-// allButTheLastTwo = [100, "Dog", true]
-```
-
-#### _.rest()
-Returns everything but the first entry of an array. Passing an argument will return items from that index number forward
-
-```js
-const allButFirst = _.rest(data);
-// allButFirst = ["Dog", true, 14, undefined]
-
-const fourthOnward = _.rest(data, 3);
-// fourthOnward = [14, undefined]
-```
-
-## Moving forward 
-
-All of the above tools fall under the umbrella of functional programming: the idea that a developer should have the proper tools (functions) on hand to accomplish a task.
+<!-- From https://twitter.com/steveluscher/status/741089564329054208 -->
 
 ## Resources and concepts: 
-* Video: [Functional Programming in Javascript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+<!-- * Video: [Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) -->
 * Article: [Functions as first class citizens](http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/)
-* Article: [Call and Apply for beginners](http://ryanchristiani.com/call-and-apply-for-beginners/)
-
 * Check out these [great videos](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) on YouTube for more information about functional programming!
-
 * For more information on the iteration methods available within native JavaScript, read [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods) on MDN. 
   * Be aware that all methods below don't work in all browsers. The ones we used today won't work in IE9+ and some newer methods may not work in anything bleeding edge versions of modern browsers.
 
@@ -335,4 +202,4 @@ To get more familiar with the functional methods try [these exercises](https://g
 
 ## Filtering exercise
 
-To further practice, let's use jQuery and some functional methods to populate this app. [Download the exercise here](https://hychalknotes.s3.amazonaws.com/functional-methods-codealong.zip).
+To further practice, let's use jQuery and these new methods to populate this app. [Download the exercise here](https://hychalknotes.s3.amazonaws.com/functional-methods-codealong.zip).
