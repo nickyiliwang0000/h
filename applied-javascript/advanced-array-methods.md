@@ -191,6 +191,7 @@ reduce([🍿, 🍳], eat)
 * Check out these [great videos](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) on YouTube for more information about functional programming!
 * For more information on the iteration methods available within native JavaScript, read [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods) on MDN. 
   * Be aware that all methods below don't work in all browsers. The ones we used today won't work in IE9+ and some newer methods may not work in anything bleeding edge versions of modern browsers.
+* To get more familiar with the functional methods try [these exercises](https://github.com/Rchristiani/functional-exercises).
 
 ### Beyond native methods and Underscore.js, some other libraries include the following:
 
@@ -198,7 +199,6 @@ reduce([🍿, 🍳], eat)
 * [Ramda](http://ramdajs.com/0.18.0/index.html) - A library of functional programming methods
 * [LoDash](https://lodash.com/) - Similar data transformation library to Underscore.js
 
-To get more familiar with the functional methods try [these exercises](https://github.com/Rchristiani/functional-exercises).
 
 ## Filtering exercise
 
