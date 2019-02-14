@@ -1,9 +1,8 @@
 <!-- Student takeaway -->
 <!-- By the end of this lesson, the student should know:
 - That data is inherently mutable
-- What 3 things .map(), .filter(), and .reduce() have in common? (return a new array, don't mutate data, take a callback function)
+- What 3 things .map(), .filter(), and .reduce() have in common? (return something, don't mutate data, take a callback function)
 - That Underscore and other JS libraries exist
-- 
 -->
 
 # Advanced array methods
@@ -171,7 +170,7 @@ const flatArray = nums.reduce((total, amount) => {
 `.reduce()` is often used in combination with other functions to solve complex problems, (e.g. to count [the number of times a string occurs in an array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Counting_instances_of_values_in_an_object)).
 
 ## TL;DR
-Here's a cute little emoji summary of what each of these methods do.
+Here's a cute little emoji summary [from a developer on Twitter](https://twitter.com/steveluscher/status/741089564329054208) of what each of these methods do.
 
 ```bash
 map([🌽, 🐮, 🐔], cook)
@@ -198,7 +197,6 @@ reduce([🍿, 🍳], eat)
 * [is.js](https://arasatasaygin.github.io/is.js/) - a microcheck library for checking values
 * [Ramda](http://ramdajs.com/0.18.0/index.html) - A library of functional programming methods
 * [LoDash](https://lodash.com/) - Similar data transformation library to Underscore.js
-
 
 ## Filtering exercise
 
