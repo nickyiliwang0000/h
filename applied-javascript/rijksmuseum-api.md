@@ -73,8 +73,8 @@ artApp.getPieces = function(){
       key: artApp.apikey,
       format: 'json'
     }
-  }).then(function(res) {
-    console.log(res);
+  }).then(function(result) {
+    console.log(result);
   });
 };
 ```
