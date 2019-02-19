@@ -4,9 +4,11 @@ Monday, February 25th, 10:00 a.m.
 
 ## Project description
 
-Your task for this week is to create your very own web application using JavaScript and an API. 
+Your task for this week is to collaboratively create a web application using JavaScript and an API. 
 
 We've provided a list of RESTful APIs that can be accessed publicly and have decent documentation. Try to work with an API that has data you find interesting - it'll be more fun that way! If you're not sure that an API meets requirements, talk to an instructor. 
+
+Your partners are listed [here](https://docs.google.com/spreadsheets/d/1_Al24ZkClAPSVk_SmDTy4N3q4QX3F1Tf7ukJ2ig13Kk/edit#gid=1482031509).
 
 ### Public APIs
 * [Zomato](https://developers.zomato.com/api)(restaurants)
@@ -24,8 +26,8 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 If you want to use another API, start [here](https://github.com/toddmotto/public-apis), but be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
 
 ### Tips for getting started
-* Track down an API that is of interest of you and work through the documentation to see if the information you want is available
-* Be sure that the API **DOES NOT** require **oAuth** authentication. Requiring oAuth doesn't preclude you from using the API but it adds another layer of complexity to the project
+* Track down an API that is of interest of you and work through the documentation to see if the information you want is available.
+* Be sure that the API **DOES NOT** require **oAuth** authentication. Requiring oAuth doesn't preclude you from using the API but it adds another layer of complexity to the project.
 * Use a tool like [Postman](https://www.getpostman.com/) to help access your data.
 * Be aware that APIs often lack documentation and the creators have no obligation to make accessing the data an easy task for all. If you get stuck due to information being missing, or complexity, pivot your approach.
 * In pseudo code, write out what you want to accomplish and what steps you'll take to get there. When ready, identify which steps would best be served as methods.
@@ -75,7 +77,7 @@ The scope document can be found [here](https://docs.google.com/document/d/1Xz9-8
 Again, you have to get this signed off on before you start any significant work. An instructor will take your copy when they sign off on it, so please take a picture for yourself.
 
 ## How will this project be graded?
-You will be given an opportunity to provide feedback about the experience of working with your partner. 
+You will be given an opportunity to provide feedback about the experience of working with your partner at the end of the project. 
 
 > **It is just as important to make a functional product as it is to work well with your partner.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. Both members of the team should have a complete understanding of the technical aspects of the project. It is **not acceptable** for one person to do the HTML and CSS and one person to do the JS.
 
@@ -84,7 +86,7 @@ You will be given an opportunity to provide feedback about the experience of wor
 * Adds to the DOM dynamically using JavaScript
 * App is dynamic based on user interaction (e.g. drop down menu, search field)
 * App interacts with at least one API
-* Code is organized using an object called "app"
+* Code is organized using an object called "app" (i.e. it is namespaced)
 * GitHub repo has more than one significant commit from each student
 * App and interactions are accessible
 * Site is live on GH Pages or student's own URL
@@ -100,7 +102,7 @@ You will also be given a general mark on how well you adhere to best practices m
 * It is clear to the user what the app does
 * Site is responsive and uses media queries
 
-You will also be given marks for your project presentation:
+You will also be given individual marks for your project presentation:
 * Student was loud enough for everyone to hear
 * Student was able to identify a technical win
 * Student was able to effectively identify a technical challenge
@@ -110,9 +112,9 @@ You will also be given marks for your project presentation:
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
-1. Create a repository called `firstName_lastName_project#`
+1. Create a repository containing both peoples' full names and the project name that matches your naming convention.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Deploy your website to GitHub Pages or on your own domain/subdomain
+1. Deploy your website to GitHub Pages or on your own domain/subdomain.
 1. Post the link to the repository AND the link to the live site on Basecamp.
 
 ## Lateness
