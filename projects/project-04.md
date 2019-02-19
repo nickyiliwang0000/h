@@ -113,8 +113,8 @@ You will also be given individual marks for your project presentation:
 ## Submitting your project
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
+1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project. (You don't have to rename your org if its naming convention doesn't match)
 1. Remove any unneeded files from the project.
-1. Create a repository containing both peoples' full names and the project name that matches your naming convention.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain.
 1. Post the link to the repository AND the link to the live site on Basecamp.
