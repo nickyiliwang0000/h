@@ -5,24 +5,20 @@
 # Lexical scope and execution context
 
 <!-- ## The JavaScript engine
-Our JavaScript files are not directly read by the browser. There's a step in between our writing and the browser's interpretation where the JS code is compiled (i.e. translated from something that is human readable to something that the computer can understand). During this process, the JavaScript engine lexes 
+The path between the JavaScript code we write and what we see in our browser is not an unbroken line. There's a step in between our writing and the browser's interpretation where the code is compiled by the JavaScript engine in the browser (i.e. translated from something that is human-readable to something that the computer can understand). The way your functions and variables are interpreted depends on how the engine reads your file. It's not necessary to completely understand this lesson to be able to use JavaScript effectively, but learning these concepts is a pathway to a deeper understanding of JavaScript. They're the "why", rather than the "how". -->
 
-But,  -->
+## Execution context
 
-These concepts are foundational to a deeper understanding of JavaScript. They're the "why", rather than the "how".
-
-## The global object
-
-An _execution context_ is an abstract idea that refers to the environment in which a function is run. There are three types of execution contexts in JavaScript but we'll only be talking about two: _global_ and _functional_.
-
-_Functional execution context_ is created when a function is called. 
-
-_Global execution context_ is the basic context. It exists even when no functions are called.
-
+_Execution context_ refers to the environment in which a function is run. The browser's JavaScript engine creates execution contexts while your code is running. There are three types of execution contexts in JavaScript but we'll only be talking about two: _global_ and _functional_.
 <!-- The third type is eval. -->
-When the browser loads an empty script, that script is run inside of the _global execution context_. 
 
-_Global_ here means that because there **not confined to a function block**). When the browser loads any script (even an empty one), you get access to two things: 
+> An excellent description of context comes from [this blog post](http://ryanmorr.com/understanding-scope-and-context-in-javascript/): JavaScript is a single threaded language, meaning only one task can be executed at a time. When the JavaScript interpreter initially executes code, it first enters into a global execution context by default. Each invocation of a function from this point on will result in the creation of a new execution context.
+
+So, _functional execution context_ is created every time a function is called. _Global execution context_ is the default context for the whole page.
+
+> You can think of functional execution context as a snapshot of the program when a function is called and global execution context as a series of continuously updating snapshots.
+
+When the browser loads any script (even an empty one), a global execution context is created, which means you get access to two things: 
 
 1. The global object
 2. The keyword `this`
@@ -31,11 +27,51 @@ Create an HTML file and link it to an empty JavaScript file. Open the HTML file 
 
 > The `Window` object !
 
-The `Window` object is the execution context for code in the browser unless otherwise specified.
+Right now, the global object and `this` are the same thing. That's because a global execution context has been created inside the window. 
 <!-- (it'll be something else if you are running the JavaScript on a server.) -->
-<!-- ## Function context -->
-## Specifying execution context
-Whenever a function is called, a new context is created. Inside the function, there is a private scope where anything declared inside of the function cannot be accessed from the outside (e.g. variables, other functions, etc.). The newly created execution context describes what is true about both to function's private scope **and** its outer environment. 
+
+## Specifying `this`
+Whenever a function is called, a new functional context is created. That functional context assigns a value to `this`.
+
+> In other literature you might see `this` referred to as "context" - a bit of a linguistic challenge. Think of `this` as part of an execution context in the same way the word "context" is part of the phrase "execution context".
+
+The value of `this` changes depending on **how** the function is called.
+If it's called as method on an object, `this` will refer to the parent object:
+
+```js
+const myObject = {
+    myMethod: function() {
+        console.log(this);   
+    }
+};
+// logs the object called myObject
+```
+What if a method is nested inside the object?
+```js
+const myObject = {
+    myMethod: function() {
+        console.log(this); 
+        let myNestedFunction = function(){
+            console.log(this)
+        }
+    }
+};
+// logs the object called myObject 
+// logs
+```
+
+If a function is called just plain in a JavaScript file, `this` is the window object:
+```js
+const myFunction = function(){
+    console.log(this)
+}
+myFunction();
+```
+> Remember? The global execution context!
+
+<!-- If a function is created using a `new` constructor, `this` depends on where the new instance of the function was created; it will usually be the parent. -->
+
+Inside the function, there is a private scope where anything declared inside of the function cannot be accessed from the outside (e.g. variables, other functions, etc.). The newly created execution context is the lexical scope of a function, because it contains both the information      (which is lexical in scope) describes what is true about both to function's private scope **and** its outer environment. 
 
 <!-- (This can also be referred to as the **lexical environment.**)  -->
 
@@ -50,11 +86,17 @@ What is lexical scope?
 What is execution context?
     It's the set of variables that are available to be accessed at any given point as a program is being run. -->
 
+
+## Scope
+So, we already know that when a variable is declared inside of a function, it's inaccessible outside of that function.
+
 ## Revisiting `this`
 
-The `this` keyword can be challenging to grasp. We know that every time an execution context is created (i.e. a function is run), we have access to a variable called `this` which can be very useful for writing dynamic code. 
+We mentioned that the `this` keyword will refer to an object when used in a method. And now we know that every time an execution context is created (i.e. a function is run), we have access to a `this`. 
 
-`this` will be pointing to a different object depending on how the function is invoked. Let's look at a few scenarios that change the value of `this` depending on how the function is called. 
+The value of the `this` variable is assigned when the function is created and can be reassigned depending on how the function is called.
+
+Let's look at a few scenarios that change the value of `this`:
 
 ```js
 // global scope, we already have access to this
