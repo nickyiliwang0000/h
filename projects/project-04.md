@@ -8,6 +8,8 @@ Your task for this week is to collaboratively create a web application using Jav
 
 We've provided a list of RESTful APIs that can be accessed publicly and have decent documentation. Try to work with an API that has data you find interesting - it'll be more fun that way! If you're not sure that an API meets requirements, talk to an instructor. 
 
+You may want to use the pair-programming method:  both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
+
 Your partners are listed [here](https://docs.google.com/spreadsheets/d/1_Al24ZkClAPSVk_SmDTy4N3q4QX3F1Tf7ukJ2ig13Kk/edit#gid=1482031509).
 
 ### Public APIs
