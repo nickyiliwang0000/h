@@ -40,8 +40,8 @@ The first section of the documentation and the sample request,
 
 provides us with clues as to how to use this API.
 
-`https://www.rijksmuseum.nl/api/` is the **base uri** All requests will start with this.<br>
-`/nl/collections/` is the **endpoint** As noted, we'll want to use `/en/` in our requests to ensure we get results in English. <br>
+`https://www.rijksmuseum.nl/api/` is the **base uri**. All requests will start with this.<br>
+`/nl/collections/` is the **endpoint**. As noted, we'll want to use `/en/` in our requests to ensure we get results in English. <br>
 `/sk-c-5` is the **ID of a single item** in the collection<br>
 `?key=fakekey&format=json` are **query string parameters** that get passed along with our request to specify additional information. The docs here state that every API request should specify a key and a format.
 
