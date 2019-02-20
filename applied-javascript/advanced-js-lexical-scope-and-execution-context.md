@@ -4,19 +4,19 @@
 - How the `this` keyword works
 -->
 
-# Advanced JS: Lexical Scope & Execution Context
+# Advanced JavaScript: lexical scope & execution context
 
-## Load, Compile, & Execute
+## Load, compile, & execute
 
 Our JavaScript files are not directly read & run by the browser. The browser's JavaScript engine (the part of the browser dedicated to reading and running JavaScript code) has a step in between loading a script and running it (or executing) called compilation. In the compilation step the human-readable script is translated to something that the computer can understand. A few different things happen during the compilation stage that can affect how your code is run. In particular, this is where _execution contexts_ and _scopes_ are determined.
 
-## Execution Contexts & Scope
+## Execution contexts & scope
 During the compilation step, the JavaScript engine scans the code it's been asked to execute to create an inventory of all the available variables and functions each line of code will have access to when they're being run. This inventory is called the _execution context_.
 
-The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a "lexical scope" strategy because what variable or function can where a variable or function is declared explicitly determines it's availability to the program.
+The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a "lexical scope" strategy because where a variable or function is declared explicitly determines it's availability to the rest of the program.
 
-### The Global Execution Context
-When a JavaScript engine first starts with a new script it creates a default execution context called the "Global Execution Context," which will be available to every level the script. By default the global execution context gives you access to two things: 
+### The global execution context
+When a JavaScript engine first starts with a new script it creates a default execution context called the _Global Execution Context_, which will be available to every level of the script. By default the global execution context gives you access to two things: 
 
 1. The Global Object
 2. The `this` keyword
@@ -26,7 +26,7 @@ The `window` object! The `window` object is the global object for any scripts ex
 
 When you think of the term `global` in JavaScript, think *code that is not inside a function*. 
 
-### Global Execution Context Example
+### Global execution context example
 <table><tr><th>
 good-grandchild.js
 </th><th>
@@ -50,11 +50,11 @@ callGrandma();
 
 </td></tr></table>
 
-### Function Context
+### Function context
 
 Whenever a function is called, a new execution context is created. All of the variables and functions declared _inside_ this function are protected from being access or modified by the rest of the script. This is referred to as the "private scope" of the function. This function's execution context also *has a reference to it's outer environment.* 
 
-### Function Execution Context Example
+### Function execution context example
 <table><tr><th>
 good-grandchild.js
 </th><th>
@@ -86,7 +86,7 @@ The `this` keyword complex topic that can take some time to master. Every time a
 
 Let's look at a few scenarios...
 
-### `this` in the Global Execution Context
+### `this` in the global execution context
 ```javascript
 console.log(this); 
 // >> Window
@@ -115,7 +115,7 @@ someFunctionExpression();
 
 Whenever a function is declared or a function expression is written in the global scope, `this` will point to the global object even though the execution context has changed. 
 
-### Object Methods
+### Object methods
 Let's take a look at `this` inside object methods. 
 
 ```javascript
@@ -159,7 +159,7 @@ Why didn't the name change? Inside of our `print` method, `this` references the 
 
 How can this be solved? One way is with ES6 arrow functions! 
 
-## Arrow Functions Revisited
+## Arrow functions revisited
 
 Arrow functions handle the `this` keyword a little differently. Unlike the above examples where the means in which a function is called determines one of many different possible values for `this`, arrow functions never have their own `this` value. They always inherit the `this` value from the scope in which the function was defined.  
 
@@ -206,7 +206,7 @@ To learn more about arrow function check out this <a href="https://youtu.be/oTRu
 
 Understanding what `this` is going to be at any given moment is tricky and comes with a combination of practice and experience. Remember that the easiest way to determine what `this` is set to, is to pop in a `console.log(this)`!
 
-### Syntax Review 
+### Syntax review 
 
 As we start digging in to React, we're going to see a lot more of ES6 arrow functions. 
 
@@ -232,7 +232,7 @@ const add = (a, b) => {
 }
 </pre></td></tr></table>
 
-#### Arrow Function Shorthand Syntax
+#### Arrow function shorthand syntax
 In addition to the _block body_ style above, arrow functions can also be defined in _consise body_ style. The following is, again, exactly the same as the above:
 
 ```javascript
