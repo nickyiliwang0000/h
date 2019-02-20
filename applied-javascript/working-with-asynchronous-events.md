@@ -101,7 +101,7 @@ myPromise.then( (goodResult) =>{
     })
 ```
 
-Promises are supported in all modern but some older ones may require you to use a promise library; jQuery has one built into it. We're already very familiar with one function that returns a promise: the `$.ajax()` method!
+Promises are supported in all modern browsers, but some older ones may require you to use a promise library; jQuery has one built into it. We're already very familiar with one function that returns a promise: the `$.ajax()` method!
 
 Download [pokemon-promise-example.html](https://hychalknotes.s3.amazonaws.com/pokemon-promise-example.html).
 
