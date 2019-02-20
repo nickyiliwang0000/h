@@ -8,23 +8,24 @@
 
 ## Load, compile, & execute
 
-Our JavaScript files are not directly read & run by the browser. The browser's JavaScript engine (the part of the browser dedicated to reading and running JavaScript code) has a step in between loading a script and running it (or executing) called compilation. In the compilation step the human-readable script is translated to something that the computer can understand. A few different things happen during the compilation stage that can affect how your code is run. In particular, this is where _execution contexts_ and _scopes_ are determined.
+Our JavaScript files are not directly read & run by the browser. The browser's JavaScript engine (the part of the browser dedicated to reading and running JavaScript code) has a step in between loading a script and running it (or executing) called _compilation_. In the compilation step the human-readable script is translated to something that the computer can understand. A few different things happen during the compilation stage that can affect how your code is run. In particular, this is where _execution contexts_ and _scopes_ are determined.
 
 ## Execution contexts & scope
-During the compilation step, the JavaScript engine scans the code it's been asked to execute to create an inventory of all the available variables and functions each line of code will have access to when they're being run. This inventory is called the _execution context_.
+During the compilation step, the JavaScript engine scans the code it's been asked to execute and creates an inventory of all the variables and functions each line of code will have access to when it's being run. This inventory is called the _execution context_.
 
-The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a "lexical scope" strategy because where a variable or function is declared explicitly determines it's availability to the rest of the program.
+The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a _lexical_ scope strategy because where a variable or function is declared explicitly determines it's availability to the rest of the program.
 
 ### The global execution context
 When a JavaScript engine first starts with a new script it creates a default execution context called the _Global Execution Context_, which will be available to every level of the script. By default the global execution context gives you access to two things: 
 
-1. The Global Object
+1. The _global object_
 2. The `this` keyword
 
-Create an empty JavaScript file and run it in the browser. Open the console and type in `this`. What is `this` equal to? 
-The `window` object! The `window` object is the global object for any scripts executed in a browser (it'll be something else if you are running the JavaScript on a server). 
+Let's explore what these things are. Create an HTML file and link it to an empty JavaScript file. Open the HTML file in the browser. Open the console and type `this`. What is `this` equal to?
 
-When you think of the term `global` in JavaScript, think *code that is not inside a function*. 
+The `Window` object! This object is the global object for any scripts executed in a browser. 
+
+When you think of the term _global_ in JavaScript, think **code that is not inside a function**. 
 
 ### Global execution context example
 <table><tr><th>
@@ -52,7 +53,7 @@ callGrandma();
 
 ### Function context
 
-Whenever a function is called, a new execution context is created. All of the variables and functions declared _inside_ this function are protected from being access or modified by the rest of the script. This is referred to as the "private scope" of the function. This function's execution context also *has a reference to it's outer environment.* 
+Whenever a function is called, a new execution context is created. All of the variables and functions declared **inside** this function are protected from being accessed or modified by the rest of the script. This is referred to as the "private scope" of the function. This function's execution context also **has a reference to it's outer execution context**. 
 
 ### Function execution context example
 <table><tr><th>
@@ -80,11 +81,11 @@ callGrandma();
 
 ## Revisiting `this`
 
-The `this` keyword complex topic that can take some time to master. Every time an execution context is created it gives us access to a variable called `this` which can be very useful for writing dynamic code. 
+The `this` keyword is a complex topic that can take some time to master. Every time an execution context is created it gives us access to a variable called `this` which can be very useful for writing dynamic code. 
 
 `this` will be pointing at (or referencing) a different object depending on how the function is defined and called in the script. 
 
-Let's look at a few scenarios...
+In the following examples, `this` always references the `Window` object:
 
 ### `this` in the global execution context
 ```javascript
