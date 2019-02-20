@@ -158,7 +158,7 @@ class SandwichArtist extends Character {
 
 By using `extends`, we can grab all of the properties and methods from our `Character` class, and layer new methods on top of it like a delicious sandwich. We can also modify existing properties (here we've given our `SandwichArtist` a health property of `1000`, since eating all those sandwiches makes them extra healthy).
 
-Now if we want to create a new sandwich artist for our game (we shall call him `archibald`), we use our `new` keyword:
+Now if we want to create a new sandwich artist for our game (we shall call them `archibald`), we use our `new` keyword:
 
 ```javascript
   const archibald = new sandwichArtist();
