@@ -8,7 +8,7 @@
 - Understand how to nest a component
 - Understand that components are self-closing
 - Know a few common JSX gotchas
- -->
+-->
 
 # Intro to React
 
@@ -59,9 +59,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 ```
 
-Notice that we import `React` and `ReactDom` in this file. `react-dom` [is a module](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.17-making-our-code-more-modular.md#what-are-modules) needed to render our application to the DOM. (There is a version of React that can be used server-side as well.)
+Notice that we import `React` and `ReactDom` in this file. `react-dom` [is a module](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.17-making-our-code-more-modular.md#what-are-modules) needed to render our application to the DOM. (There is a version of React that can be used server-side that doesn't need this file.)
 
-After that, we import `index.css`. With the Create React App system, we import our CSS straight into the JavaScript. This allows the underlying system that runs Create React App to bundle up the JavaScript and CSS in the most effective way.
+After that, we import `index.css`. With the Create React App system, we import our CSS straight into the JavaScript. This allows the underlying system that runs Create React App to bundle up the JavaScript and CSS in the most efficient way.
 
 The `App` component is also imported and rendered to the page using `ReactDOM.render()`. This `App` component is the place where we will be writing most of our code.
 
@@ -158,7 +158,7 @@ Try making a new component called `Footer` and add it to the bottom of the `div`
 
 ### JSX 
 
-JavaScript XML (JSX) is a syntax extension for JavaScript that can be passed into React's `render` method and compiled into HTML elements. It looks a lot like HTML, but it has a few gotchas.
+JavaScript XML is a syntax extension for JavaScript that can be passed into React's `render` method and compiled into HTML elements. It looks a lot like HTML, but it has a few gotchas.
 
 #### JSX gotchas
 
@@ -173,7 +173,7 @@ JavaScript XML (JSX) is a syntax extension for JavaScript that can be passed int
   * Remember that an **expression** is anything that produces a value. For example, `2 + 2` is an expression because it returns `4`.
 
 
-* Each JSX element must return **only one** HTML element (we'll be using `<div>` for most of the class)
+* Each JSX element must return **only one** HTML element (we'll be using `<div>` for most of the class, but you may see `<Fragment>` in the wild).
 
 * In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, it's `render` method).
 
@@ -265,25 +265,21 @@ Your `SearchBar` component should now appear inside your `App` component in the 
 
 What's really great about mixing and matching components this way is that it allows for a ton of code re-use. If we want the same `SearchBar` to appear in ten different places on the website, we don't have to rewrite the code for it ten times - we just have to insert the `<SearchBar />` component anywhere we need it!
 
-Also - you'll notice that when we write out the `<SearchBar />` component that we include a `/` at the end. This is because our React elements are always **self-closing elements**. Just like in HTML and JSX, any time we create a component that doesn't have any children, we let React know by adding a `/`.
+Also - you'll notice that when we write out the `<SearchBar />` component that we include a `/` at the end. This is because our React elements are always **self-closing**. Just like in HTML and JSX, any time we create a component that doesn't have any children, we let React know by adding a `/`.
 
 #### Component kitchen - cook 'em up!
 Practice making a few new components of your own choosing and nesting them inside your `<App>` component. They can do whatever you want - this is just to practice and get used to the class component syntax.
 
-### Sass and Create React App
+### Styling in React 
+React is fairly new and there are lots of opinions on the best way to style components. Inline styling, one big CSS file, a CSS file for each component, a library like [CSS Modules](https://github.com/css-modules/css-modules) or [any of these other ones](https://github.com/MicheleBertoli/css-in-js#features).
+
+CSS-preprocessors further complicate that discussion.
+**We are only going to require CSS files in the bootcamp.**
+
+#### Sass and Create React App
 In order to use Sass when working with Create React App, we need to add a few things.  You can find a write up of this in [the documentation for Create React App](https://facebook.github.io/create-react-app/docs/adding-a-sass-stylesheet#docsNav). 
 
-The React docs don't recommend it:
-
-``` bash
-Generally, we recommend that you don’t reuse 
-the same CSS classes across different components. 
-For example, instead of using a .Button CSS class 
-in <AcceptButton> and <RejectButton> components, 
-we recommend creating a <Button> component with 
-its own .Button styles, that both <AcceptButton> 
-and <RejectButton> can render (but not inherit).
-```
+<!-- 
 First, install `node-sass`:
 
 ```bash
@@ -298,7 +294,7 @@ Then you should be able to import `.scss` files:
 @import '~nprogress/nprogress'; // importing a css file from the nprogress node module
 ```
 
-But you can do whatever you want!
+But you can do whatever you want! -->
 <!-- 
 
 To use Sass, we'll need to install two packages:
@@ -325,6 +321,8 @@ Now that both of those are installed, we need to change the `package.json` file 
   }
 ```
 Now, when we use the `npm start` command, the `npm-run-all` package will set up our local server and watch our JS and our chokidar will watch our Sass files. -->
+#### Animations and transitions
+To animate components, the React documentation suggests [React Motion](https://github.com/chenglou/react-motion) and [React Transition Group](https://reactcommunity.org/react-transition-group/).
 
 ### Additional Resources
 * [React for Beginners](https://reactforbeginners.com/) (taught by HackerYou instructor Wes Bos!)
