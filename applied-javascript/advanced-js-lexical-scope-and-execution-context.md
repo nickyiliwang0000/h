@@ -1,7 +1,8 @@
 <!-- Student takeaway -->
-<!-- By the end of this lesson, the student should know:
-- What execution context & scope means
-- How the `this` keyword works
+<!-- By the end of this lesson, the student should:
+- Know what execution context & scope means
+- Know how the `this` keyword works
+- Have more experience with arrow functions
 -->
 
 # Advanced JavaScript: lexical scope & execution context
@@ -83,7 +84,7 @@ callGrandma();
 
 The `this` keyword is a complex topic that can take some time to master. Every time an execution context is created it gives us access to a variable called `this` which can be very useful for writing dynamic code. 
 
-`this` will be pointing at (or referencing) a different object depending on how the function is defined and called in the script. 
+Depending on how a function is defined or called, its `this` keyword will point at (or reference) a different object.
 
 In the following examples, `this` always references the `Window` object:
 
@@ -132,7 +133,7 @@ character.print();
 // >> {name: 'Kermit', print: f(){}}
 ```
 
-In this case, since the function is a method (i.e. it is attached to an object), the `this` keyword references the object that contains the method.
+In this case, since the function is a method (i.e. it is attached to an object), and the method is called as a property of the object, the `this` keyword references **the object that contains the method**.
 
 Now, let's create a function inside of a method. 
 
@@ -176,7 +177,6 @@ let character = {
     }
     
     changeName('Miss Piggy');
-    
     console.log(this);
   }
 }
@@ -209,9 +209,9 @@ Understanding what `this` is going to be at any given moment is tricky and comes
 
 ### Syntax review 
 
-As we start digging in to React, we're going to see a lot more of ES6 arrow functions. 
+As we start digging in to React, we're going to see a lot more arrow functions. 
 
-These examples all do _the same thing_.
+Reminder, these examples all do *the same thing*.
 
 <table><tr><th>
 Declarative
@@ -240,7 +240,7 @@ In addition to the _block body_ style above, arrow functions can also be defined
 const add = (a,b) => a + b;
 ``` 
 
-When only an expression is provided to the right of the arrow, the function's `return` value is implied to be that expression. Try to become familiar with this shorthand syntax, because it's going to come up a lot in React!
+When only an expression is provided to the right-side of the arrow, the function's `return` value is implied to be that expression. Try to become familiar with this shorthand syntax, because it's going to come up a lot in React!
 
 ## Exercise
 [Arrow Functions Exercises](https://hychalknotes.s3.amazonaws.com/arrow_functions_exercises.zip)
