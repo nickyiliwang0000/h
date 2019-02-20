@@ -1,140 +1,206 @@
-Advanced JS: Lexical Scope & Execution Context
+<!-- Student takeaway -->
+<!-- By the end of this lesson, the student should know:
+- What execution context & scope means
+- How the `this` keyword works
+-->
 
-### How JavaScript is compiled
+# Advanced JS: Lexical Scope & Execution Context
 
-Our JavaScript files are not directly read by the browser. There's a step in between our writing and the browser's interpretation where the JS code is compiled (i.e. translated from something that is human readable to something that the computer can understand).
+## Load, Compile, & Execute
 
-### The Global Object
+Our JavaScript files are not directly read & run by the browser. The browser's JavaScript engine (the part of the browser dedicated to reading and running JavaScript code) has a step in between loading a script and running it (or executing) called compilation. In the compilation step the human-readable script is translated to something that the computer can understand. A few different things happen during the compilation stage that can affect how your code is run. In particular, this is where _execution contexts_ and _scopes_ are determined.
 
-When the browser first loads a script, that script is run inside of a `global execution context`. (Execution context: the environment that a function executes in.) Initially, this gives you access to two things: 
+## Execution Contexts & Scope
+During the compilation step, the JavaScript engine scans the code it's been asked to execute to create an inventory of all the available variables and functions each line of code will have access to when they're being run. This inventory is called the _execution context_.
 
-    1. The Global Object
-    2. The keyword (variable) `this`
+The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a "lexical scope" strategy because what variable or function can where a variable or function is declared explicitly determines it's availability to the program.
+
+### The Global Execution Context
+When a JavaScript engine first starts with a new script it creates a default execution context called the "Global Execution Context," which will be available to every level the script. By default the global execution context gives you access to two things: 
+
+1. The Global Object
+2. The `this` keyword
 
 Create an empty JavaScript file and run it in the browser. Open the console and type in `this`. What is `this` equal to? 
-The `window` object !
-This `window` object is the global object when running code in the browser. (It'll be something else if you are running the Javascript on a server). 
+The `window` object! The `window` object is the global object for any scripts executed in a browser (it'll be something else if you are running the JavaScript on a server). 
 
 When you think of the term `global` in JavaScript, think *code that is not inside a function*. 
 
+### Global Execution Context Example
+<table><tr><th>
+good-grandchild.js
+</th><th>
+Global Execution Context
+</th></tr><tr><td><pre lang="js">
+let name = 'Verna';
+let age = '72';
+function callGrandma() {
+  let phoneNumber = '416-555-4321'; 
+  phoneCall(phoneNumber, name);
+}
+callGrandma();
+</pre></td><td>
+
+| Item | Inventory |
+| ---- | --------- |
+| Variables | `name`, `age` |
+| Functions | `callGrandma` |
+| Other Scopes | _none_ |
+| `this` | Reference to `window` |
+
+</td></tr></table>
+
 ### Function Context
 
-Whenever a function is called, a new context is created. Inside the function, there is a private scope where anything declared inside of the function cannot be accessed from the outside. This new execution context also *has reference to it's outer environment.* (This can also be referred to as the *lexical environment*.) 
+Whenever a function is called, a new execution context is created. All of the variables and functions declared _inside_ this function are protected from being access or modified by the rest of the script. This is referred to as the "private scope" of the function. This function's execution context also *has a reference to it's outer environment.* 
 
-### Revisiting `this`
+### Function Execution Context Example
+<table><tr><th>
+good-grandchild.js
+</th><th>
+`callGrandma`'s Execution Context
+</th></tr><tr><td><pre lang="js">
+let name = 'Verna';
+let age = '72';
+function callGrandma() {
+  let phoneNumber = '416-555-4321'; 
+  phoneCall(phoneNumber, name);
+}
+callGrandma();
+</pre></td><td>
 
-The `this` keyword can be one of the most confusing to grasp. Now we know that every time an execution context is created / a function is run, it gives us access to a variable called `this` which can be very useful for writing dynamic code. 
+| Item | Inventory |
+| ---- | --------- |
+| Variables | `phoneNumber` |
+| Functions | _none_ |
+| Other Scopes | `Global Execution Context` |
+| `this` | Reference to `window` |
 
-`this` will be pointing at a different object depending on how the function is invoked. Let's look at a few scenarios that change the value of this depending on how the function is called. 
+</td></tr></table>
 
-```js
-// global scope, we already have access to this
-console.log(this); // >> Window
+## Revisiting `this`
 
-// function declaration in the global scope
-function functionDeclaration(){
+The `this` keyword complex topic that can take some time to master. Every time an execution context is created it gives us access to a variable called `this` which can be very useful for writing dynamic code. 
+
+`this` will be pointing at (or referencing) a different object depending on how the function is defined and called in the script. 
+
+Let's look at a few scenarios...
+
+### `this` in the Global Execution Context
+```javascript
+console.log(this); 
+// >> Window
+```
+
+### ...in a declared function's private scope
+```javascript
+// a function declared in the global scope
+function someDeclaredFunction(){
     console.log(this);
 }
-//function invocation, execution context is created
-functionDeclaration(); // >> Window 
 
-// function expression in the global scope 
-let functionExpression = function(){
+someDeclaredFunction(); 
+// >> Window 
+```
+
+### ...in a function expression's private scope
+```javascript
+let someFunctionExpression = function(){
     console.log(this);
 }
 
-functionExpression(); // >> Window
+someFunctionExpression(); 
+// >> Window
 ``` 
 
 Whenever a function is declared or a function expression is written in the global scope, `this` will point to the global object even though the execution context has changed. 
 
-Let's take a look at methods inside of objects. 
+### Object Methods
+Let's take a look at `this` inside object methods. 
 
-```js
-
-//object literal is created 
-let instructor = {
-    name: 'Tiff',
-    print: function(){
-        console.log(this);
-    }
+```javascript
+// object literal is created 
+let character = {
+  name: 'Kermit',
+  print: function(){
+    console.log(this);
+  }
 }
 
-// print method is called
-instructor.print(); // >> {name: "Tiff", print: f(){}}
-
+character.print(); 
+// >> {name: 'Kermit', print: f(){}}
 ```
 
-In this case, since the function is a method (i.e. it is attached to an object), the `this` keyword has the value of the object that contains the method.
+In this case, since the function is a method (i.e. it is attached to an object), the `this` keyword references the object that contains the method.
 
 Now, let's create a function inside of a method. 
 
-```js
- let instructor = {
-      name: 'Tiff',
-      print: function(){
-          console.log(this);
+```javascript
+let character = {
+  name: 'Kermit',
+  print: function(){
+    console.log(this);
+    let changeName = function(newName){
+      this.name = newName;
+    }
 
-          let changeName = function(newname){
-              this.name = newname;
-          }
-
-          changeName('Sylvia');
-
-          console.log(this);
-      }
+    changeName('Miss Piggy');
+    console.log(this);
   }
-
-  instructor.print(); // >> {name:'Tiff'} >> {name: 'Tiff'}
+}
+  
+character.print(); 
+// >> {name: 'Kermit', ...} 
+// >> {name: 'Kermit', ...}
 
 ``` 
 
-That's confusing! Inside of our `print` method, `this` is a reference to the object it's defined inside of, so it might make sense that our `changeName` function inside that method would also make reference to the same object. This is not the case! Even though it's nested inside your object, it is not *called* on the object, so it's execution context is the global scope. `this` is once again referencing the window object, so this code is actually creating a new global `name` variable and setting it to `Sylvia` (check it out in the console!)
+Why didn't the name change? Inside of our `print` method, `this` references the object in which the print method is defined, so it might seem to make sense that our `changeName` function inside that method would also make reference to the same object. This is not the case! Even though it's nested inside your object, it is not *called* as a property of an object, so the `this` keyword defaults back to the global object, `window`.  This function is actually creating a new global `name` variable and setting it to `"Miss Piggy"` (check it out in the console!)
 
 How can this be solved? One way is with ES6 arrow functions! 
 
-### Arrow Functions Revisited
+## Arrow Functions Revisited
 
-Arrow functions handle the `this` keyword a little differently. They are *lexically scoped*, meaning that they create a *lexical this*, which is a fancy way of saying `this` will always refer to the parent scope. Unlike other types of functions, arrow functions do not have their _own_ `this`. 
+Arrow functions handle the `this` keyword a little differently. Unlike the above examples where the means in which a function is called determines one of many different possible values for `this`, arrow functions never have their own `this` value. They always inherit the `this` value from the scope in which the function was defined.  
 
-Let's rewrite our `instructor` method using an arrow function.
+Let's rewrite our `character` method using an arrow function.
 
-```js
-  let instructor = {
-      name: 'Tiff',
-      print: function(){
-          console.log(this);
-
-          let changeName = (newname) => {
-              this.name = newname;
-          }
-
-          changeName('Sylvia');
-
-          console.log(this);
-      }
+```javascript
+let character = {
+  name: 'Kermit',
+  print: function(){
+    console.log(this);
+    let changeName = (newName) => {
+      this.name = newName;
+    }
+    
+    changeName('Miss Piggy');
+    
+    console.log(this);
   }
+}
 
-  instructor.print(); // >> {name:'Tiff'} >> {name: 'Sylvia'}
-
+character.print(); 
+// >> {name: 'Kermit', ...} 
+// >> {name: 'Miss Piggy', ...}
 ```
 
 It now works like we want it to! How is that the case? Now that we are using an arrow function for our `changeName` method, it does not have it's own `this` — it uses the `this` from it's enclosing execution context, which is the `print` method. 
 
-Take note that this is a great solution to our nested function problem but could yield some more unexpected results if used in other contexts. 
-
+Take note that this is a great solution to our nested function problem but can yield some unexpected results when used in other contexts:
 
 ```js
-let cto = {
-	name: "Ryan",
-	sayName: () => {
-		return this.name;
-	}
+let singer = {
+  name: "Beyoncé",
+  sayMyName: () => {
+    return this.name;
+  }
 }
-console.log( cto.sayName() );
+console.log(singer.sayMyName());
+// >> 
 ```
 
-In this example, if we changed the function on the `sayName` property from an anonymous function to an arrow function it will not work properly! The `this` will be bound lexically, and in this case it will be the `window` object. 
+In this example, the arrow function assigned to the `sayMyName` property get's it's `this` value from the scope in which the function is defined. The arrow function is defined as part of creating the object in the global execution context, so `this` will reference the global execution context's `this` value, the `window` object.  
 
 To learn more about arrow function check out this <a href="https://youtu.be/oTRujqZYhrU?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX" target="_blank">video</a>!
 
@@ -144,30 +210,36 @@ Understanding what `this` is going to be at any given moment is tricky and comes
 
 As we start digging in to React, we're going to see a lot more of ES6 arrow functions. 
 
-Remember that this:
-```javascript
-// standard JavaScript function
-let add = function(a,b) {
+These examples all do _the same thing_.
+
+<table><tr><th>
+Declarative
+</th><th>
+Expression
+</th><th>
+Arrow
+</th></tr><tr><td><pre lang="js">
+function add(a, b) {
   return a + b;
 }
-```
-
-does the exact same thing as this:
-
-```javascript
-const add = (a,b) => {
+</pre></td><td><pre lang="js">
+const add = function(a,b) {
   return a + b;
 }
-```
+</pre></td><td><pre lang="js">
+const add = (a, b) => {
+  return a + b;
+}
+</pre></td></tr></table>
 
-which does the exact same thing as this:
+#### Arrow Function Shorthand Syntax
+In addition to the _block body_ style above, arrow functions can also be defined in _consise body_ style. The following is, again, exactly the same as the above:
 
 ```javascript
 const add = (a,b) => a + b;
-```
+``` 
 
-Even though the word `return` isn't written in the last example, it is implied. Try to become familiar with this last syntax, because it's going to come up a lot in React!
+When only an expression is provided to the right of the arrow, the function's `return` value is implied to be that expression. Try to become familiar with this shorthand syntax, because it's going to come up a lot in React!
 
-**Exercise:**
-
+## Exercise
 [Arrow Functions Exercises](https://hychalknotes.s3.amazonaws.com/arrow_functions_exercises.zip)
