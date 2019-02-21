@@ -11,7 +11,7 @@ That's okay, because `$.ajax()` is not the only way to make an AJAX request! The
 Don't remember what a promise is? Review lesson on promises [here](https://github.com/HackerYou/no-repeat-bootcamp-notes-2018/blob/master/6.9-working-with-asynchronous-events.md#promises).
 
 ## `fetch()` 
-Modern browsers' Fetch API allows us to make AJAX requests using `fetch()`. This API works in all modern browsers except for IE 11 and Opera Mini. If you need to support older browsers, a polyfill is available. To read more about [what fetch is](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and `fetch` syntax, [check out this article](https://developers.google.com/web/updates/2015/03/introduction-to-fetch).
+The Fetch API allows us to make AJAX requests using `fetch()`. This API works in all modern browsers except for IE 11 and Opera Mini. If you need to support older browsers, a polyfill is available. To read more about [what fetch is](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and `fetch` syntax, [check out this article](https://developers.google.com/web/updates/2015/03/introduction-to-fetch).
 
 ## Axios
 Axios is a library that does a really great job of simplifying AJAX requests for us. The syntax of Axios is very similar to `$.ajax()`'s. We'll look at the `get` method; the result from the `get` method is a promise.
