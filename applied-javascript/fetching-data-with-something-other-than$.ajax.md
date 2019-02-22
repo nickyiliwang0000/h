@@ -104,7 +104,6 @@ axios({
 #### Specifying query parameters with a proxy server
 If you are using a proxy server and want to include query parameters as part of our request (e.g. if you're using the API to search - the word you're searching will be the query parameter), we will have to include a `paramsSerializer` method as a parameter inside of the request object.
 
-
 ```javascript
 paramsSerializer: function(params) {
   return Qs.stringify(params, {arrayFormat: 'brackets'})
@@ -118,6 +117,7 @@ In order for us to use this method properly, we will need to install the queryst
 ```bash
 npm install qs --save-dev
 ```
+Or by cloning the repo from <https://github.com/ljharb/qs>.
 
 Next, we will need to import the module inside of our file like this:
 
@@ -126,7 +126,7 @@ Next, we will need to import the module inside of our file like this:
 import Qs from 'qs';
 
 //if for some reason you're not using React, use the filepath to import the `qs.js` file
-  <script src="node_modules/qs/dist/qs.js"></script>
+  <script src="<whatever your file name is>/qs/dist/qs.js"></script>
 ```
 
 Now we should be to use the `paramsSerializer` method inside of our AJAX request like so:
