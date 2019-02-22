@@ -1,10 +1,10 @@
 <!-- Student takeaway: -->
 <!-- At the end of this lesson, the student will be able to:
-- Identify a pure function
-- Identify an impure function
-- Explain what mutability is
 - Pluck a value from an object with destructuring
 - Pluck a value from an array with destructuring
+- Explain what mutability is
+- Identify a pure function
+- Identify an impure function
  -->
 # Advanced JavaScript: destructuring, mutability, and purity
 As we move forward in JavaScript, we're going to need some new tools and concepts. 
@@ -145,7 +145,6 @@ Destructuring can also be used on an array. Let's say we have an array of pizza 
 ```javascript
 const toppings = ["pepperoni", "green pepper", "mushroom"];
 ```
-
 We can destructure this array in the same way we destructured the previous object:
 
 ```javascript
@@ -201,8 +200,13 @@ const newZoo = zoo.slice(1, 3)
 ```
 Here, we have access to both the original `zoo` array AND our new version. The original `zoo` array is mutable (i.e. can be changed), but the method `.slice()` has not changed it. The `.slice()` method returns a copy of the original array that has been changed in some way. So, we say that we have kept the `zoo` array immutable (i.e. it has not/will not be changed).
 
+The idea of immutability is part of the functional programming paradigm.
+
 ### Purity
-You may have noticed that whether the data is mutable or immutable depends on the method applied to it. Functions that change data outside their lexical scope (i.e. functions that **mutate** data) are known as _impure_ functions. Reread 6.15 Lexical scope and execution context for more on scope. Notice where the variables are defined and where they are changed. A _pure_ function will always return the same value if provided with the same input value(s). Pure functions don't have any unwanted side effects, such as changing anything in the global scope (outside of the function). 
+You may have noticed that whether the data is mutable or immutable depends on the method applied to it. Functions that change data outside their lexical scope (i.e. functions that **mutate** external data) are known as _impure_ functions. 
+> Reread the [scope and execution context lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md) for more on scope. 
+
+A _pure_ function will always return the same value if provided with the same input value(s). Pure functions don't have any unwanted side effects, such as changing anything in the global scope (outside of the function). 
 
 **Pure function:**
 ```javascript
@@ -224,6 +228,9 @@ function add(a,b) {
 add(2,3);
 console.log(total);
 ```
+
 Here, `add(2,3)` could return any number, because `total` can be reset outside the `add()` function.
 
-You already know some pure functions! `.map()`, `.filter()` and `.reduce()`!
+> You already know some pure functions! `.map()`, `.filter()` and `.reduce()`!
+
+These concepts are provided as the building blocks to more understanding in the future, so definitely do research (write a blog post!), talk to instructors, and talk to each other about them.
