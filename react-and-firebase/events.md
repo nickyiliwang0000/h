@@ -1,10 +1,10 @@
 # React Events
 
-An _event_ is something that the browser does or something that the user does. We should be somewhat familiar with events from our time with jQuery. 
+An _event_ is an interaction with the DOM by the user. We should be somewhat familiar with events from our time with jQuery. 
 
-Events are typically made up of two parts:
-1. the event (user clicks the button)
-2. the event handler (some code that runs when the user clicks the button).
+In JavaScript, when you're thinking about an event, you're usually thinking about two things:
+1. the event itself (e.g. a user clicks a button).
+2. the event handler (i.e. the code that runs when the user clicks the button).
 
 In jQuery, we handled events like this:
 ```javascript
@@ -45,7 +45,7 @@ _State_ describes the part of an application that changes over time.
 
 Think about your Facebook account. At any given point, you're either logged in or you're not logged in. Facebook needs to know which one is true so that you can either be shown the login screen or your personal profile.
 
-Information about your login status is stored inside of the state of the Facebook application.
+Information about your login status is stored inside of the **state** of the Facebook application.
 
 So somewhere, deep within the bowels of the code for Facebook, there's probably an object that looks like this:
 
@@ -55,7 +55,7 @@ user = {
 }
 ```
 
-When you log in, `user.loggedIn` is set to true. Your action of logging in changed the state of the application.
+When you log in, `user.loggedIn` is set to `true`. Your action of logging in changed the state of the application.
 
 In React, each one of your components can have it's own state, where it can store information that is relevant to that particular component.
 
@@ -97,9 +97,10 @@ There's a few new pieces of code here, so let's break down we've added
 
 * `constructor()` - by inserting the constructor method into our `Counter` component, we are able to set default properties, such as the state, of our new component.
 * `super()` - when using the `extends` keyword, the super method is required to gain access the special stuff that comes with being a React component (more on this next lesson) and the `this` keyword.
-* `{this.state.visitors}` - Remember that anything inside curly brackets is vanilla JavaScript - here we are literally just accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. Since `this.state.visitors` is set to 0 by default, our counter will print out `0` until we find a way to increment the counter.
+* `{this.state.visitors}` - Remember that anything inside curly brackets is vanilla JavaScript - here we are literally accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. Since `this.state.visitors` is set to 0 by default, our counter will print out `0` until we find a way to increment the counter.
 
-Try modifying the value of `this.state.visitors` inside the constructor - you'll notice that the change is reflected when we refresh the page!
+> Try modifying the value of `this.state.visitors` inside the constructor - you'll notice that the change is reflected when we refresh the page!
+
 Now that we have an understanding how state and events work, let's combine them to build a simple counter mechanism that can count up from 0.
 
 We'll start by creating our `Counter` class:
@@ -116,7 +117,7 @@ class Counter extends Component {
 }
 ```
 
-Cool! We know that the number 0 is going to need to change over time (as the counter increments it), so let's move it over into the state:
+Cool! We know that the number `0` is going to need to change over time (as the counter increments it), so let's move it over into the state:
 
 ```javascript
 class Counter extends Component {
@@ -137,7 +138,7 @@ class Counter extends Component {
 }
 ```
 
-Here we've created a `count` property in our `state` object, which we set inside our constructor. Then instead of just printing out the number 0, we use `this.state.count` to print out whatever the current value of the count is.
+Here we've created a `count` property in our `state` object, which we set inside our constructor. Then instead of just printing out the number `0`, we use `this.state.count` to print out whatever the current value of the count is.
 
 ## Using events to change state
 Now let's make it so that we can increment the counter when the button gets clicked.
@@ -215,7 +216,7 @@ class Counter extends Component {
 }
 ```
 
-It works! You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component **rerenders**, which basically means it "refreshes" itself and grabs the most up to date state information.
+It works! You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
 
 Let's break down what we did here step by step:
 
