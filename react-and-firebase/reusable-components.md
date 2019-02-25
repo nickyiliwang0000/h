@@ -80,5 +80,5 @@ class App extends Component {
 ```
 Here, the `name` prop is being passed to the `FeaturedDonut` component and should render in our browser wherever the code has `{props.name}`.
 
-## Codealong
-Let's build an app using both smart and simple components!
+## Code-along
+We're going to refactor our art app to include simple component(s).
