@@ -216,7 +216,7 @@ class Counter extends Component {
 }
 ```
 
-It works! You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component **rerenders**, which basically means it "refreshes" itself and grabs the most up to date state information.
+It works! You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
 
 Let's break down what we did here step by step:
 
