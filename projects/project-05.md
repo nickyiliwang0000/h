@@ -47,7 +47,7 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 * It is clear to the user what the app does
 * App and interactions are accessible
 * Errors are handled effectively
-* Site is live on Firebase Hosting or student's own URL
+* Site is live on Firebase Hosting, student's own URL or GitHub Pages
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed (including console.log)
