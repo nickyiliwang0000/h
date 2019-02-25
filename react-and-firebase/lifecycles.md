@@ -1,7 +1,7 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
 - Know the difference between mounting and unmounting to the DOM
-- Name four useful lifecycle methods (constructor, render, componentDidMount, componentWillUnmount)
+- Name four useful lifecycle methods (constructor, render, componentDidMount)
 - Know which lifecycle methods are called when a component is mounted to the DOM (constructor, render, componentDidMount)
  -->
 
@@ -31,10 +31,9 @@ There are many React lifecycle methods (see [The Component Lifecycle](https://fa
 
 You don't need to know all of these methods, especially when first starting out. We're going to focus on some of the most important ones. 
 
-When a component is mounted to the DOM, four lifecycle methods are called:
+When a component is mounted to the DOM, three lifecycle methods are called:
 
 * **constructor()** - This is where you do things like set initial state and bind any functions to your component.
-* ~~**componentWillMount()**~~ - This method is currently being deprecated and isn't recommend for use.
 * **render()** - This is where you determine what gets displayed to the page.
 * **componentDidMount()** - This is where you do things like make AJAX requests for data you'd like to use in your component. 
 
@@ -48,21 +47,21 @@ In order to access the lifecycle methods, simply reference them inside of your c
 
 ```javascript
 class App extends Component {
-    constructor() {
-        // here is our constructor lifecycle method
-    }
+  constructor() {
+    // here is our constructor lifecycle method
+  }
 
-    componentWillMount() {
-        // currently being deprecated, please don't use unless you're 100% sure you need to!
-    }
+  componentWillMount() {
+    // currently being deprecated, please don't use unless you're 100% sure you need to!
+  }
 
-    render() {
-        // here is any DOM elements we want to display on the page
-    }
+  render() {
+    // here is any DOM elements we want to display on the page
+  }
 
-    componentDidMount() {
-        // here is anything we want to happen after the component renders - like grab our AJAX data
-    }
+  componentDidMount() {
+    // here is anything we want to happen after the component renders - like grab our AJAX data
+  }
 }
 ```
 
