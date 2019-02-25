@@ -67,7 +67,7 @@ You will also be given marks for your project presentation:
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
-1. Create a repository called `firstName_lastName_project#`
+1. Create a repository with a descriptive name that matches your naming convention.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages, Firebase Hosting, or on your own domain/subdomain
 1. Post the link to the repository AND the link to the live site on Basecamp.
