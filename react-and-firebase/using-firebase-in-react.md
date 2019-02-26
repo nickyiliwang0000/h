@@ -16,14 +16,14 @@ Having a database for our application opens up a ton of possibilities for the ki
 As always, the first thing that we'll need to do is create a new project inside our Firebase dashboard.
 
 1. Head over to <https://firebase.google.com> and click 'Go to console' in the top right corner.
-  ![Firebase console](https://hychalknotes.s3.amazonaws.com/01-create-project-firebase-console.png)
+  ![Firebase console](https:/hychalknotes.s3.amazonaws.com/01-create-project-firebase-console.png)
 2. Click 'Add Project'.
 
 3. Give your new project a name and click 'Create Project'.
-  ![Firebase console](https://hychalknotes.s3.amazonaws.com/02-name-project-firebase.png)
+  ![Firebase console](https:/hychalknotes.s3.amazonaws.com/02-name-project-firebase.png)
 
 4. Click 'Add Firebase to your web app' or the `</>` icon. This will give you the embed code to add Firebase to your project.
-  ![Firebase config image](https://hychalknotes.s3.amazonaws.com/06-firebase-config.png)
+  ![Firebase config image](https:/hychalknotes.s3.amazonaws.com/06-firebase-config.png)
 
 5. You're now ready to hook your React project up to Firebase. Create a new app by running  `create-react-app bookshelf`.
 
@@ -53,10 +53,13 @@ export default firebase;
 ### Getting data from Firebase
 Let's imagine that we were building a digital bookshelf that kept track of all of our favourite books. To start, let's add some data to our Firebase database.
 
-In your Firebase console, click the 'Database' tab. We're giong to create a realtime database in text mode. When you get through, you should see a screen that looks something like this:
-![Firebase database tab](https://hychalknotes.s3.amazonaws.com/firebase-database-screenshot.png)
+1. In your Firebase console, click the 'Database' tab. We're going to create a **realtime database** in. Firebase REALLY wants you to make a Cloudstore one right now. Do not do that. Scroll past it until you see something like this:
+![Firebase database tab](https://hychalknotes.s3.amazonaws.com/07-firebase-database-screenshot.png)
 
-Let's add some books to our bookshelf. Click the plus next to the name of our database and let's add some lines with your favourite books:
+1. Hit 'Create database'.
+1. Start in test mode.
+
+Let's add some books to our bookshelf. Click the plus next to the name of your database and add some lines with your favourite books:
 
 ```
 book1: "Beloved"
