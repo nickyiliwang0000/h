@@ -16,14 +16,14 @@ Having a database for our application opens up a ton of possibilities for the ki
 As always, the first thing that we'll need to do is create a new project inside our Firebase dashboard.
 
 1. Head over to <https://firebase.google.com> and click 'Go to console' in the top right corner.
-  ![Firebase console](https:/hychalknotes.s3.amazonaws.com/01-create-project-firebase-console.png)
+  ![Firebase console](https://hychalknotes.s3.amazonaws.com/01-create-project-firebase-console.png)
 2. Click 'Add Project'.
 
 3. Give your new project a name and click 'Create Project'.
-  ![Firebase console](https:/hychalknotes.s3.amazonaws.com/02-name-project-firebase.png)
+  ![Firebase console](https://hychalknotes.s3.amazonaws.com/02-name-project-firebase.png)
 
 4. Click 'Add Firebase to your web app' or the `</>` icon. This will give you the embed code to add Firebase to your project.
-  ![Firebase config image](https:/hychalknotes.s3.amazonaws.com/06-firebase-config.png)
+  ![Firebase config image](https://hychalknotes.s3.amazonaws.com/06-firebase-config.png)
 
 5. You're now ready to hook your React project up to Firebase. Create a new app by running  `create-react-app bookshelf`.
 
