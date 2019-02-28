@@ -25,7 +25,7 @@ Firebase provides us with a _command line interface_ (CLI) that will take care o
 
 3. Login using `firebase login` - this should open your browser. Follow the web prompts to continue to log in. You should see something in your command prompt that looks like this:
 
-`✔ Success! Logged in as youremail@hackeryou.com`
+  `✔ Success! Logged in as youremail@hackeryou.com`
 
 4. In your project folder, type `firebase init`. This will begin the setup to deploy your Firebase project.
 
