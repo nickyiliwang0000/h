@@ -35,7 +35,7 @@ Firebase provides us with a _command line interface_ (CLI) that will take care o
 
 8. For `configure as a single page app`, select 'yes'.
 
-9. It will say that `index.html` already exists, and asks you if you want to overwrite. 🚨Select **no**! 🚨
+9. It will say that `index.html` already exists, and asks you if you want to overwrite. 🚨Select **no**!🚨
 
 10. We're almost done - select `firebase deploy` to launch your app!
 
