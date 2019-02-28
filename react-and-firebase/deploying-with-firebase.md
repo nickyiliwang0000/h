@@ -23,9 +23,7 @@ Firebase provides us with a _command line interface_ (CLI) that will take care o
 
 2. Install the Firebase Tools: `npm install -g firebase-tools` (If you get an error try running `sudo npm install -g firebase-tools`)
 
-3. Login using `firebase login` - this should open your browser. Follow the web prompts to continue to log in. You should see something in your command prompt that looks like this:
-
-  `✔ Success! Logged in as youremail@hackeryou.com`
+3. Login using `firebase login` - this should open your browser. Follow the web prompts to continue to log in. You should see something in your command prompt that looks like this: `✔ Success! Logged in as youremail@hackeryou.com`
 
 4. In your project folder, type `firebase init`. This will begin the setup to deploy your Firebase project.
 
