@@ -31,7 +31,7 @@ We're going to create a simple application that allows us to create a user and a
 1. Start by creating a new React project: `create-react-app authentication-example`. NPM install `firebase` as well by running `npm install firebase`
 2. In the Firebase dashboard, create a new project. Call it `firebase-react-authentication`. Click on the 'Authentication' tab, and then click 'Set Sign-Up Method'. Toggle 'enable Google authentication' and click save.
 
-3. Grab the initialization code and add it to your `app.js`. It should look something like this:
+3. Grab the initialization code and add it to your `firebase.js`. It should look something like this:
 
 
 ```javascript
@@ -54,17 +54,17 @@ firebase.initializeApp(config);
 //App.js
 import React from 'react';
 import ReactDOM from 'react-dom';
+import firebase from './firebase.js';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
+        <h1> Authy App </h1>
       </div>
     )
   }
 }
-
-ReactDOM.render(<App />, document.getElementById('app'))
 ```
 
 We're going to use Google as our authentication provider for this project, primarily because it will make handling our authentication flow very simple: we won't have to worry about things like error handling and password validation since Google will take care of all of that for us. We also won't have to build any UI components (other than a login and log out button) to handle authentication. Everything will be managed through a pop-up.
@@ -108,7 +108,8 @@ Let's set up some buttons to render conditionally whether or not a user is logge
       <div className="App">
         <header>
           <h1>Authy App</h1>
-          {this.state.user ? <button onClick={this.logout}>Log Out</button> : <button onClick={this.login}>Login</button>}</header>     
+          {this.state.user ? <button onClick={this.logout}>Log Out</button> : <button onClick={this.login}>Login</button>}
+          </header>     
       </div>
     );
   }
@@ -162,6 +163,7 @@ componentDidMount() {
       this.setState({ user });
     } 
   });
+}
 ```
 When the user signs in, the `onAuthStateChanged` method checks the Firebase database to see if the user was already previously authenticated. If they were, we set the state with the user's details.
 
