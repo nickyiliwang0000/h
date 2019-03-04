@@ -31,7 +31,9 @@ We're going to create a simple application that allows us to create a user and a
 1. Start by creating a new React project: `create-react-app authentication-example`. NPM install `firebase` as well by running `npm install firebase`
 2. In the Firebase dashboard, create a new project. Call it `firebase-react-authentication`. Click on the 'Authentication' tab, and then click 'Set Sign-Up Method'. Toggle 'enable Google authentication' and click save.
 
-3. Grab the initialization code and add it to your `firebase.js`. It should look something like this:
+3. Grab the initialization code and add it to your `firebase.js`. 
+4. Import that file into your `App.js`. 
+  * Your `App.js` should look something like this:
 
 
 ```javascript
