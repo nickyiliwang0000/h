@@ -145,6 +145,41 @@ const Michelle = () =>{
 
 Now when we go to the contact page and click the `Michelle` link, we will see her info appear below her name!
 
+#### Conditionally rendering components
+Sometimes, you want a route to render a component with information from a parent state passed as props. `component` is not the only method that a route has. It also has `render`:
+
+```js
+import React, { Component } from 'react'
+import { 
+  BrowserRouter as Router, 
+  Route } from 'react-router-dom';
+
+class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      userId:1986093012098,
+      selectedColor:'#fff'
+    }
+  }
+  render() {
+    return (
+      <Router>
+        <Route path='/dashboard' render={ () => { return (<Dashboard userId={this.state.userId} colour={this.state.selectedColor}/>)}} />
+      </Router>
+    )
+  }
+}
+const Dashboard = (props) =>{
+  return(
+    <p>Your user id is  {props.userId} and your color is {props.colour}.</p>
+  )
+}
+export default App;
+```
+
+We use an anonymous function to say "Hey, wait a second, I have some information for you!" and return a `Dashboard` component with information from `App`'s state. The difference between this and using specific routing paths is that the component **is not rendered** in the React DOM at routes other than `/dashboard`. In other cases we've seen, the components **are** rendered but not shown. Check in the React dev tools!
+
 #### Bonus: styling active links with React Router
 By adding the `activeStyle` attribute to your `NavLink` component (which you've gotta import up at the top with `Link`) you can highlight whichever link is pointing to the current active route. Try adding the `activeStyle` attribute to your links like this:
 
@@ -210,7 +245,7 @@ const About = (props) =>{
 ```
 When you go to `localhost:3000/about/javascript`, you should see that you are an expert at JavaScript!
 
-#### Bonus: another example
+#### Bonus: apology generator 
 Let's say, for fun, we were building an apology generator that would generate a custom apology for a user based on their name:
 
 ```javascript
@@ -245,41 +280,6 @@ Now try navigating to `localhost:3000/apology/anyname` and see that the content 
 
 ## Code-along: Movie catalogue
 Now that we have a rough understanding of how params work, let's build an app that can catalogue and display movies so that we better understand when and how to use params.
-
-## Bonus: conditionally rendering a component
-Sometimes, you want a route to render a component with information from a parent state passed as props. `component` is not the only method that a route has. It also has `render`:
-
-```js
-import React, { Component } from 'react'
-import { 
-  BrowserRouter as Router, 
-  Route } from 'react-router-dom';
-
-class App extends Component {
-  constructor(){
-    super();
-    this.state={
-      topping:'mushrooms',
-      sauce:'bianco'
-    }
-  }
-  render() {
-    return (
-      <Router>
-        <Route path='/pizza' render={ () => { return (<Pizza topping={this.state.topping} sauce={this.state.sauce}/>)}} />
-      </Router>
-    )
-  }
-}
-const Pizza = (props) =>{
-  return(
-    <p>I love pizza with {props.topping} and {props.sauce} sauce.</p>
-  )
-}
-export default App;
-```
-
-We use an anonymous function to say "Hey, wait a second, I have some information for you!" and return a `Pizza` component with information from `App`'s state. The difference between this and using specific routing paths is that the component **is not rendered** in the React DOM at routes other than `/pizza`. In other cases we've seen, the components **are** rendered but not shown.
 
 ### Additional resources
 * [React Router GitHub Repo](https://github.com/ReactTraining/react-router)
