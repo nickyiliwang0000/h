@@ -41,9 +41,9 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<FeaturedDonut flavour={"PB&J"} />
-				<FeaturedDonut flavour={"Chocolate Glaze"} />
-				<FeaturedDonut flavour={"Smore"} />
+				<FeaturedDonut name={"PB&J"} />
+				<FeaturedDonut name={"Chocolate Glaze"} />
+				<FeaturedDonut name={"Smore"} />
 			</div>
 		)
 	}
