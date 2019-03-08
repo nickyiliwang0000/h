@@ -58,7 +58,7 @@ This means that we can change our `FeaturedDonut` component to look like this:
 class FeaturedDonut extends Component {
 	render() {
 		return (
-			<h1>Today's featured Donut is: {this.props.flavour}</h1>
+			<h1>Today's featured Donut is: {this.props.name}</h1>
 		)
 	}
 }
@@ -70,7 +70,7 @@ Now let's imagine that our awesome donut shop had some kind of database they wer
 class FeaturedDonut extends Component {
 	render() {
 		return (
-			<h1>Today's featured Donut is: {this.props.flavour}</h1>
+			<h1>Today's featured Donut is: {this.props.name}</h1>
 		)
 	}
 }
