@@ -1,7 +1,9 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
 - Explain what React Router is
-- 
+- How to make a Link
+- How to make a NavLink
+- How to render a Route
 -->
 
 # Routing
