@@ -110,6 +110,64 @@ This way, in the future, if more featured donuts get added to the state (i.e. th
 
 **PRO TIP:** If you're ever unsure what's going to be in `this.props`, just `console.log` it out in your render function! (You can also find it in your React dev tools!)
 
+## Props and destructuring
+
+So far our components have been fairly lightweight with only a small amount of props. This won't always be the case and we should take advantage of destructuring to help improve our component readability. Let's imagine that our props object looks like the following:
+
+```javascript
+props = {
+  author: {
+    name: "Margaret Atwood",
+    location: {
+      city: "Toronto",
+      province: "Ontario"
+    }
+  },
+  review: "",
+  date: ""
+};
+```
+
+```jsx
+const authorDetails = props => {
+  return (
+    <div>
+      <h1>{props.author.name}</h1>
+      <h2>{props.author.location.city}</h2>
+    </div>
+  );
+};
+```
+
+With destructuring, we can remove the need to specify the props keyword:
+
+```jsx
+const AuthorDetails = ({ author }) => {
+  return (
+    <div>
+      <h1>{author.name}</h1>
+      <h2>{author.location.city}</h2>
+    </div>
+  );
+};
+```
+
+Destructuring also works similarily within Class components, the main difference being we will destructure our props within the `render()` method:
+
+```jsx
+class AuthorDetails extends Component {
+  render() {
+    const { author } = this.props;
+    return (
+      <div>
+        <h1>{author.name}</h1>
+        <h2>{author.location.city}</h2>
+      </div>
+    );
+  }
+}
+```
+
 ## Proptypes
 
 As apps grow in scale, it is valuable to start thinking about how we can better improve the quality of our code to help prevent the potential for bugs. One way we can achieve this is to validate the types of data (strings, numbers, etc) that we pass to our components through props. If the data-type that is passed through props is not what the component expects, a warning will be thrown to the console.
@@ -146,7 +204,7 @@ We are declaring that the name prop is expecting only a value with a typeof stri
 
 `Warning: Failed prop type: Invalid prop 'name' of type 'number' supplied to 'Greeting', expected 'string'.`
 
-You can find a thorough list of the provided proptypes in the [react documentation](https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes), plus some additional features like setting default prop values.
+For performance reasons, this validation only takes place in development mode and will not take place in a production environment. You can find a thorough list of the provided proptypes in the [react documentation](https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes), plus some additional features like setting default prop values.
 
 ## So what's the difference between state and props?
 
