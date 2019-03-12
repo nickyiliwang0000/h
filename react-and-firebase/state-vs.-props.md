@@ -146,9 +146,9 @@ class FeaturedDonut extends Component {
 }
 ```
 
-### Passing functions with paramaters
+### Passing functions with paramters
 
-Our `<FeaturedDonut />` component is succesfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want the specific donut in which we click to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a paramter to our remove function. This will force us to change how we pass `removeDonut` as a prop:
+Our `<FeaturedDonut />` component is successfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want the specific donut in which we click to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a parameter to our remove function. This will force us to change how we pass `removeDonut` as a prop:
 
 ```jsx
 class App extends Component {
@@ -184,12 +184,12 @@ class App extends Component {
 }
 ```
 
-A few significant changes took place here so lets break them down:
+A few significant changes took place here so let's break them down:
 
-- We pass an arrow function inline with our custom function `removeDonut` as the return value. This way, we can include index as an argument.
+- We pass an arrow function inline with our custom function `removeDonut` as the return value. This way, we can include the index as an argument.
 - In `removeDonut` we are copying our state array through the spread operator and storing it in a new variable.
-- We filter through the copied array and return only the array item that match our condition.
-- Since `filter()` returns a new array, we can then update our state with with it.
+- We filter through the copied array and return only the array item that matches our condition.
+- Since `filter()` returns a new array, we can then update our state with it.
 
 ## Props and destructuring
 
