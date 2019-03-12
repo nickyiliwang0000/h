@@ -21,36 +21,52 @@ It does this by providing us with a web API to interact with much in the same wa
 Firebase also comes with loads of other amazing features, like helping us set up user authentication for our websites using E-mail or Twitter.
 
 ## Setting Up Firebase
-Getting started with Firebase is very easy. Simply navigate to [https://firebase.google.com/](https://firebase.google.com/) and click 'Get started for free'.
+Getting started with Firebase is very easy. Simply navigate to [https://firebase.google.com/](https://firebase.google.com/) and sign in.
 Firebase was acquired by Google in 2004, so you'll need to pick one of your Google accounts to log in.
 
-Once you've logged in, you should see a screen that looks like this:
-![Step 1](https://hychalknotes.s3.amazonaws.com/1.png)
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step1-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step2-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step3-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step4-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step5-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step6-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step7-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step8-2019.png -->
+<!-- https://hychalknotes.s3.amazonaws.com/firebase-step9-2019.png -->
 
-1. Click 'Create New Project'
-![Step 2](https://hychalknotes.s3.amazonaws.com/2.png)
+1. Once you've logged in, you should see a screen that looks like the screenshot below. Click on the 'Get Started' button:
+![Step 1](https://hychalknotes.s3.amazonaws.com/firebase-step1-2019.png)  
 
-2. Give your project a name. Let's call ours 'first-firebase-app'. Press Ok. You'll now be at the Firebase dashboard. This is where you can manage all of your different database applications, set up new databases, and see what information is inside of them. We only have one right now (the one we just created), so we don't have to worry to much about this dashboard just yet.
-![Step 3](https://hychalknotes.s3.amazonaws.com/3.png)
-3. Click on the </> logo which leads to the firebase configuration for web. This will cause a screen to pop up with an embed code. It should look something like this:
-![Step 4](https://hychalknotes.s3.amazonaws.com/4.png)
+2. Click 'Add Project'
+![Step 2](https://hychalknotes.s3.amazonaws.com/firebase-step2-2019.png)  
 
-If you make an `html` file, you can paste this code right into it before the closing `</body>` tags.
+3. Give your project a name. Let's call ours 'first-firebase-app'. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You make be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'
+![Step 3](https://hychalknotes.s3.amazonaws.com/firebase-step3-2019.png)  
 
+4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need do a bit of configuration. On the 'Project Overview tab', click on the '</>' icon: 
+![Step 4](https://hychalknotes.s3.amazonaws.com/firebase-step4-2019.png)  
+
+5. Firebase will provide some code that will link our application with the firebase project we have just created. If you make an `html` file, you can paste this code right into it before the closing `</body>` tags.
+
+![Step 5](https://hychalknotes.s3.amazonaws.com/firebase-step5-2019.png)  
 
 ```javascript
-<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
 <script>
-var config = {
-  apiKey: "AIzaSyAmSlZ6sNfNpj2QvvE_-fGWAFP9uQcRyGI",
-  authDomain: "first-firebase-project-febc3.firebaseapp.com",
-  databaseURL: "https://first-firebase-project-febc3.firebaseio.com",
-  storageBucket: "first-firebase-project-febc3.appspot.com",
-  messagingSenderId: "47212023087"
-};
-firebase.initializeApp(config);
+  // Initialize Firebase
+  const config = {
+    apiKey: "AIzaSyCIA9bxxwIgMijlvzKRcNkVVfYOIEWGoD0",
+    authDomain: "first-firebase-app-bbf53.firebaseapp.com",
+    databaseURL: "https://first-firebase-app-bbf53.firebaseio.com",
+    projectId: "first-firebase-app-bbf53",
+    storageBucket: "first-firebase-app-bbf53.appspot.com",
+    messagingSenderId: "266243704518"
+  };
+  firebase.initializeApp(config);
 </script>
 ```
+
+Be sure to change `var` to `const` to keep things consistent with the rest of your application.
 
 Open up your console and type `firebase`. You should see something like this:
 `Object {__esModule: true, SDK_VERSION: "3.6.5", INTERNAL: Object, default: Object}`
@@ -59,20 +75,17 @@ If you see that, then Firebase is set up!
 
 ## Setting up the Database
 
-For now, we'll just be working with the database itself. Click on **database** in the sidbar. 
+1. Now that we have configured our application to use Firebase, we can take advantage of all the cool tools Firebase have created. For this lesson we will just focus on utilizing their _Realtime Database_. Click on 'Database' on the sidebar, be sure to scroll down past Cloud Firestore. You will find the option to create a Realtime Database below.
+![Step 6](https://hychalknotes.s3.amazonaws.com/firebase-step6-2019.png)
 
-![create a database](https://hychalknotes.s3.amazonaws.com/firebase-create-database.png)
+2. Click 'Create Database'.  
+![Step 7](https://hychalknotes.s3.amazonaws.com/firebase-step7-2019.png)
 
-We're just in development, so we want to choose "test mode" in order to allow anyone to read and write from the database. Later on, you might want to lock down the database so that only specific users or sites can access our database. 
+3. We're just in development, so we want to choose **test mode** in order to allow anyone to read and write from the database. Later on, you might want to lock down the database so that only specific users or sites can access our database. For now, select 'Start in test mode'. Click 'Enable'.
+![Step 8](https://hychalknotes.s3.amazonaws.com/firebase-step8-2019.png)
 
-Select `start in test mode` and press `enable`.
-
-We'll also want to select  `realtime database` from the drop down menu next to the `Database` heading. 
-
-![select realtime database](https://hychalknotes.s3.amazonaws.com/realtime-db.png)
-
-
-The last step is navigating to the `Rules` tab. Ensure that `.read` and `.write` are set to `true`.
+4. If you were successful at creating a database, you would be redirected to this page:
+![Step 9](https://hychalknotes.s3.amazonaws.com/firebase-step9-2019.png)
 
 ## Understanding Data Structure in Firebase
 
@@ -163,7 +176,7 @@ Now `userCollection` refers to our `users` collection, and calling `.push` on it
 Now that we have some data stored in our database, let's retrieve it:
 
 ```javascript
-var dbRef = firebase.database().ref();
+const dbRef = firebase.database().ref();
 
 dbRef.on('value', (data) => {
   console.log(data.val());
@@ -176,7 +189,7 @@ You will get back something that looks like this:
 
 Let's break down what's happening here line by line:
 
-* **var dbRef = firebase.database().ref();** - Once again, we grab a reference to our firebase database.
+* **const dbRef = firebase.database().ref();** - Once again, we grab a reference to our firebase database.
 * **dbRef.on('value', (data) => {** - We call the `on` method here to grab the value of our Firebase database. When it comes back, we store access it in our callback function via the parameter `data`.
 
 * **console.log(data.val());** we call `.val()` on our data to get the contents of our data to print out in the form of an object
@@ -187,7 +200,7 @@ Remember onClick and onChange from jQuery? Firebase has its own built in events 
 Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 
 ```javascript
-var dbRef = firebase.database().ref();
+const dbRef = firebase.database().ref();
 
 dbRef.on('value', (data) => {
   console.log('New info coming in: ');
