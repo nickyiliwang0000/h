@@ -112,7 +112,7 @@ This way, in the future, if more featured donuts get added to the state (i.e. th
 
 ## Passing functions as props
 
-Let's create a new function within our `<App /> that will clear our featuredDonuts state. We will attach this function to a new button element within the`<FeaturedDonut />` component that we will pass to it through props:
+Let's create a new function within our `<App />` that will clear our featuredDonuts state. We will attach this function to a new button element within the`<FeaturedDonut />` component that we will pass to it through props:
 
 ```jsx
   removeDonut = () => {
@@ -148,7 +148,7 @@ class FeaturedDonut extends Component {
 
 ### Passing functions with paramaters
 
-Our `<FeaturedDonut />` component is succesfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want to the specific donut in which we click to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a paramter to our remove function. This will force us to change how we pass `removeClick` as a prop:
+Our `<FeaturedDonut />` component is succesfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want the specific donut in which we click to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a paramter to our remove function. This will force us to change how we pass `removeDonut` as a prop:
 
 ```jsx
 class App extends Component {
