@@ -37,7 +37,9 @@ When a component is mounted to the DOM, three lifecycle methods are called:
 * **render()** - This is where you determine what gets displayed to the page.
 * **componentDidMount()** - This is where you do things like make AJAX requests for data you'd like to use in your component.
 
-* **componentDidUpdate()** - This method will only be called after a component's initial render and when props or state have updated. 
+When a component updates because its state or prop values were changed, this lifecycle method is called:
+
+* **componentDidUpdate()** - This is where you can operate on the DOM and make network requests. **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
 
 When a component is unmounted from the DOM, the only one lifecycle method is called:
 * **componentWillUnmount()** This is where you stop any recurrent logic associated with that component (like a timer or a recurring API call).
