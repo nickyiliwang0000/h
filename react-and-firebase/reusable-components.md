@@ -22,7 +22,7 @@ class App extends Component {
 
 This is what's known as a _complex_ or _stateful_ component. In our applications, we'll often have most of the information about our program in the App's state.
 
-Higher order components are usually complex, but what about smaller, lower ones? What if we need to render a bunch of components that only show the title of every movie we have in state? Those components don't need state, they don't need lifecycle methods - they just need to render the component and return some JSX. 
+The applications that we will make will usually have one or two complex components that hold all the state, and a bunch of components that do presentational tasks like render the title and image of every movie we have in state. These presentational components don't need state, they don't need lifecycle methods - they only need to render the component and return some JSX. 
 
 The opposite of a complex component is a _simple component_. Simple components **do not** have state or access to the React lifecycle methods. (You may also see them called _stateless components_ or _presentational components_.) 
 
@@ -60,9 +60,9 @@ class App extends Component {
 }
 ```
 
-**Simple components cannot hold any state**. If you need to provide information to your simple components, you can do that using **props**. 
+Because simple components cannot hold any state, you can provide information to your simple components using **props**. 
 
-As we learned in a previous lesson, props are a way to pass data from one component to another. Props are information that gets passed from parent to child component which will affect the way the child component is rendered.
+As we learned in a previous lesson, props are a way to pass data from one component to another. Props are references to information that get passed between components and that affect the way components are rendered.
 
 If we wanted to build a simple component that displayed a featured donut, it might look like this:
 
