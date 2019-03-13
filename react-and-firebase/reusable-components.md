@@ -2,7 +2,7 @@
 <!--Student will be able to:
 - Differentiate between simple and complex components (e.g state + lifecycle methods)
 - Understand that props help change how a simple component looks
- -->
+-->
 
 # Reusable components
 
@@ -20,12 +20,13 @@ class App extends Component {
 }
 ```
 
-But did you know that there's another way to create components? 
+This is what's known as a _complex_ or _stateful_ component. In our applications, we'll often have most of the information about our program in the App's state.
+
+Higher order components are usually complex, but what about smaller, lower ones? What if we need to render a bunch of components that only show the title of every movie we have in state? Those components don't need state, they don't need lifecycle methods - they just need to render the component and return some JSX. 
+
+The opposite of a complex component is a _simple component_. Simple components **do not** have state or access to the React lifecycle methods. (You may also see them called _stateless components_ or _presentational components_.) 
 
 ## Simple components
-When you create a new React component using `class ____ extends _____`, you gain access to a lot of goodies: the ability to add state, lifecycle methods, etc. We will now refer to these components as _complex_ or _stateful_ components.
-
-A lot of the time you'll be building a component that only needs to display a little bit of the user interface: it doesn't **need** to have state or lifecycle methods because all it's doing is rendering some information. We will call components like this _simple components_. (You may also see them called _stateless components_ or _presentational components_.) 
 
 A simple component looks like this:
 
