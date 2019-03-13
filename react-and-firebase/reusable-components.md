@@ -87,7 +87,7 @@ class App extends Component {
 ```
 Here, the `name` prop is being passed to the `FeaturedDonut` component and should render in our browser wherever the code has `{props.name}`.
 
-> You can destructure your props: check out [this article](https://medium.freecodecamp.org/the-basics-of-destructuring-props-in-react-a196696f5477) or search around for some blog posts on how to do that.
+> You can destructure your props: check out the [state v. props lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/state-vs.-props.md) or [this article](https://medium.freecodecamp.org/the-basics-of-destructuring-props-in-react-a196696f5477) or search around for some blog posts on how to do that.
 
 ## Code-along
 We're going to refactor our art app to include simple component(s).
