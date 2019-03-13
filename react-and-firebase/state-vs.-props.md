@@ -112,7 +112,7 @@ This way, in the future, if more featured donuts get added to the state (i.e. th
 
 ## Passing functions as props
 
-Let's create a new function within our `<App />` that will clear our featuredDonuts state. We will attach this function to a new button element within the`<FeaturedDonut />` component that we will pass to it through props:
+Let's create a new function within our `<App />` and name it `removeDonut`. We will use it to clear our featuredDonuts state. We will attach this function to a new button element within the`<FeaturedDonut />` component that we will pass to it through props:
 
 ```jsx
   removeDonut = () => {
@@ -146,7 +146,7 @@ class FeaturedDonut extends Component {
 }
 ```
 
-### Passing functions with paramters
+### Passing functions with parameters
 
 Our `<FeaturedDonut />` component is successfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want the specific donut in which we click to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a parameter to our remove function. This will force us to change how we pass `removeDonut` as a prop:
 
@@ -161,9 +161,9 @@ class App extends Component {
 
   removeDonut = index => {
     const oldDonuts = [...this.state.featuredDonuts];
-    const featuredDonuts = oldDonuts.filter((item, i) => i !== index);
+    const updatedFeaturedDonuts = oldDonuts.filter((item, i) => i !== index);
     this.setState({
-      featuredDonuts
+      featuredDonuts: updatedFeaturedDonuts
     });
   };
 
@@ -187,13 +187,13 @@ class App extends Component {
 A few significant changes took place here so let's break them down:
 
 - We pass an arrow function inline with our custom function `removeDonut` as the return value. This way, we can include the index as an argument.
-- In `removeDonut` we are copying our state array through the spread operator and storing it in a new variable.
+- In `removeDonut` we are making a copy of our state array through the spread operator and storing it in a new variable because we need to treat react state as immutable. 
 - We filter through the copied array and return only the array item that matches our condition.
 - Since `filter()` returns a new array, we can then update our state with it.
 
 ## Props and destructuring
 
-So far our components have been fairly lightweight with only a small amount of props. This won't always be the case and we should take advantage of destructuring to help improve our component readability. Let's imagine that our props object looks like the following:
+So far our components have been fairly lightweight with only a small amount of props. This won't always be the case and we should take advantage of object destructuring to help improve our component readability. Let's imagine that our props object looks like the following:
 
 ```javascript
 props = {
@@ -215,6 +215,7 @@ const authorDetails = props => {
     <div>
       <h1>{props.author.name}</h1>
       <h2>{props.author.location.city}</h2>
+      <p>{props.review}</p>
     </div>
   );
 };
@@ -239,11 +240,12 @@ Destructuring also works similarily within Class components, the main difference
 ```jsx
 class AuthorDetails extends Component {
   render() {
-    const { author } = this.props;
+    const { author, review } = this.props;
     return (
       <div>
         <h1>{author.name}</h1>
         <h2>{author.location.city}</h2>
+        <p>{review}</p>
       </div>
     );
   }
