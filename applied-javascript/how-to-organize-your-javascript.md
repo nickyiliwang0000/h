@@ -1,6 +1,13 @@
+<!-- Student takeaway -->
+<!-- By the end of this lesson, the student should know:
+- To avoid spaghetti code
+- To avoid conflicting code with external libraries
+- How to namespace an app
+-->
+
 # How to organize your JavaScript
 
-## Javascript organization
+## JavaScript organization
 
 As you add more lines and functionality to your JS code, it can start to get a little unruly. 
 
@@ -19,9 +26,9 @@ You might have trouble tracking down which lines do what, or end up having a har
 Another reason to organize your code is to avoid conflicts with other plugins or libraries that you're running on your website. Say you create a variable to hold your twitter handle for your contact page, but you're also embedding a twitter widget on your website. You might end up with something like this:
 
 ```js
-let twitter = 'http://twitter.com'; //created by the widget
+const twitter = 'http://twitter.com'; //created by the widget
 /* ... lots of other code ... */
-let twitter = '@thisishackeryou'; //created by you
+const twitter = '@thisishackeryou'; //created by you
 ```
 
 Since variables can be reassigned in JavaScript, we've gone ahead and reassigned the widget's variable and most likely broken it!  Again, we can fix this through better organization.
@@ -40,7 +47,7 @@ On the other hand, variables declared inside a function have **local** scope. Me
 The global variable `planet` is accessible within the function.
 
 ```js
-let planet = "Earth";
+const planet = "Earth";
 
 function whereAmI(){
   console.log(planet);
@@ -52,10 +59,10 @@ whereAmI(); //logs "Earth"
 The `planet` variable that is printed is the value that is scoped to the function it was called from.
 
 ```js
-let planet = "Earth";
+const planet = "Earth";
 
 function whereAmI(){
-  let planet = "Mars";
+  const planet = "Mars";
   console.log(planet);
 }
 
@@ -66,7 +73,7 @@ The `destination` variable is locally scoped to the `chooseDestination` function
 
 ```js
 function chooseDestination(){
-  let destination = "The Moon";
+  const destination = "The Moon";
 }
 
 function launchRocket(){
@@ -161,9 +168,9 @@ Why only put the `widgetApp.init()` method in the document ready? Well if we put
 
 ```js
 $(function() {
-	const widgetApp = {};
-	...
-	widgetApp.init();
+  const widgetApp = {};
+  ...
+  widgetApp.init();
 });
 ```
 
