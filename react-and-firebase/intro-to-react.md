@@ -70,10 +70,16 @@ Don't worry about `registerServiceWorker` - just know that you need it for now. 
 
 This file is the main component of our application and the file you'll be spending most of your time in.
 
-```javascript
+```jsx
 //App.js
+
+// a couple of functions from the React library
 import React, { Component } from 'react';
+
+// an image from `./logo.svg` 
 import logo from './logo.svg';
+
+// CSS for the `App` component
 import './App.css';
 
 class App extends Component {
@@ -94,11 +100,6 @@ class App extends Component {
 
 export default App;
 ```
-
-This file has three lines of imports: 
- * a couple of functions from `react` (don't worry too much about this right now)
- * an image from `./logo.svg` 
- * CSS for the `App` component
 
 The `App` component is a `class` that extends the `Component` class from React. This class has a `render` method, and inside the render method we define the HTML we want to show on the page. But what looks like HTML there... is actually not HTML! Weird, right? It's something called _JSX_ (JavaScript XML) and we'll talk about it more at the end of this lesson.
 
