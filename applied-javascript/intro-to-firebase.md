@@ -296,7 +296,7 @@ You will get back something that looks like this:
 
 
 ## Listening for changes to data in Firebase
-Remember `.on()` from jQuery? Firebase has its own built in `.on()`, that we can use to listen for events, like when any changes have been made to the database.
+Remember `.on()` from jQuery? Firebase has its own built in `.on()` method, that we can use to listen for events. For example we can listen for when any changes have been made to the database.
 
 Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 
@@ -314,3 +314,36 @@ We can confirm that this is working by manually pushing a new entry into our dat
 
 ## Upgrading our jQuery app using Firebase!
 Now that we've learned some of the fundamental principles of how data gets created and managed between our code and Firebase, let's power up our todo app by adding in Firebase!
+
+Download [to-do-app-firebase-start.html](https://hychalknotes.s3.amazonaws.com/to-do-app-firebase-start.html) and follow along.
+
+### Create a Firebase project
+Let's create a new Firebase project! Steps can be found above under 'Setting up Firebase'. Add the Firebase CDN to your `html` file and past your config code above your document ready. 
+
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+
+<script>
+const config = {
+    apiKey: "AIzaSyAFUEcWuGkredZ5AdxtSpcMWS1nvdXDCAc",
+    authDomain: "to-do-app-example-ca27f.firebaseapp.com",
+    databaseURL: "https://to-do-app-example-ca27f.firebaseio.com",
+    projectId: "to-do-app-example-ca27f",
+    storageBucket: "to-do-app-example-ca27f.appspot.com",
+    messagingSenderId: "403656512635"
+  };
+firebase.initializeApp(config);
+
+$(document).ready(function(){
+  ...
+});
+</script>
+```
+
+Our database needs to know about any new to-do items. When a user submits a to-do, instead of just appending it on the page, we will want to push it to Firebase.
+
+
+
+
+
