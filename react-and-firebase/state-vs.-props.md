@@ -16,7 +16,7 @@ We might make a component that looks like this:
 class FeaturedDonut extends Component {
   render() {
     return (
-      <h1>Today's featured Donut is: PB & J</h1>
+      <h1>Today's featured donut is: PB & J</h1>
     ) 
   }
 }
@@ -278,7 +278,7 @@ Some of you may find this rudimentary flowchart helpful:
 
 ### Proptypes
 
-As apps grow in scale, it is valuable to start thinking about how we can better improve the quality of our code to help prevent bugs. One way we can achieve this is to validate the types of data (e.g. strings, numbers, etc) that we pass to our components through props. If the datatype that is passed through props is not what the component expects, a warning will be thrown to the console.
+As apps grow in scale, it is valuable to start thinking about how we can better improve the quality of our code to help prevent bugs. One way we can achieve this is to validate the types of data (e.g. strings, numbers, etc) that we pass to our components through props. If the data type that is passed through props is not what the component expects, a warning will be thrown to the console.
 
 We can use the Proptypes library to do this kind of typechecking in React. To use it, we need to install it as a dependency in our app:
 
@@ -286,7 +286,7 @@ We can use the Proptypes library to do this kind of typechecking in React. To us
 npm install --save prop-types
 ```
 
-After importing the Proptypes library, we can declare the expected datatypes for all the props in our component. Conventionally, this is written at the bottom of the component file, outside of its declaration:
+After importing the Proptypes library, we can declare the expected data types for all the props in our component. Conventionally, this is written at the bottom of the component file, outside of its declaration:
 
 ```jsx
 import React, { Component } from "react";
