@@ -32,7 +32,7 @@ Firebase was acquired by Google in 2004, so you'll need to pick one of your Goog
 2. Click 'Add Project'
 ![Step 2](https://hychalknotes.s3.amazonaws.com/firebase-step2-2019.png)  
 
-3. Give your project a name. Let's call ours 'first-firebase-app'. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You make be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'
+3. Give your project a name. Let's call ours `first-firebase-app`. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You make be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'
 ![Step 3](https://hychalknotes.s3.amazonaws.com/firebase-step3-2019.png)  
 
 4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need do a bit of configuration. On the 'Project Overview' tab, click on the '</>' icon: 
@@ -79,11 +79,11 @@ If you see this, you have successfully configured your project to use Firebase.
 4. If you were successful at creating a database, you would be redirected to this page:
 ![Step 9](https://hychalknotes.s3.amazonaws.com/firebase-step9-2019.png)
 
-## Understanding Data Structure in Firebase
+## Understanding data structure in Firebase
 
 Data is structured a little bit differently in Firebase when compared to more traditional, relational databases like `SQL`. There are no tables or records, everything is stored in a large `JSON` object with an associated key. 
 
-## Best Practices for structuring data
+## Best practices for structuring data
 
 You can nest data 32 levels deep, but just like Sass - avoid unneeded nesting whenever possible. When you fetch data from a location in the database, all of the child nodes come along with it. It's best practice to keep your data structure as flat as possible. 
 
@@ -100,8 +100,6 @@ myProject = {
 ```
 
 Every value in Firebase has a key that is attached to it. We can use this key in order to grab any value we desire. You can assign your own keys, or have firebase generate these keys for you depending on what methods you choose. 
-
-Data is organized a little bit differently in Firebase than in traditional relational databases written in _structured query language_ (SQL). There are no tables or records; everything is stored in a large JSON object with an associated key. 
 
 ## Adding data to our Firebase database
 Right now, our database is empty. Let's put some stuff in it. 
@@ -124,18 +122,28 @@ const users = firebase.database().ref('users');
 A nested location reference would look like this:
 
 ```javascript
-const singleUser = firebase.database().ref(`users/DoriArjan`);
+const singleUser = firebase.database().ref(`users/${userId}`);
 ```
 > Try not to nest your data more than 3 layers deep. 
 
+## Frequently used write methods in Firebase
+
+`push()` - this creates a new node that is stored at a firebase generated key. It returns an object with a `key` property that's value is the key that was just created. 
+
+`set()` - this can be used to write data to a specific reference that you decide. This method returns a promise and also takes a callback that will be called when the database has been updated. 
+
+`update()` - this method can be used when writing to specific nodes without overwriting their child nodes. 
+
+Let's try a few of these out! 
+
 ### Write methods in Firebase
 
-The Firebase method `push()` creates a **new node** that is stored as the value for a Firebase-generated key. It returns an object with that key. 
+The Firebase method `push()` creates a **new node** that is stored as the value for a Firebase-generated key.
 
 ```js
-  dbRef.push('first push to Firebase');
-// this is returned:
-// e {repo: t, path: t, queryParams_: t, orderByCalled_: false, then: ƒ, …}
+  const firebaseObj = dbRef.push('first push to Firebase');
+
+  console.log(firebaseObj);
 ```
 
 ```bash
@@ -145,6 +153,13 @@ The Firebase method `push()` creates a **new node** that is stored as the value 
 }
 ```
 
+In your console you should see the object that `push()` returns. Under prototype, you will see the Firebase key stored under the property name `key`. To store and access the Firebase key that was created along with the push, you can type the following:
+
+```js
+  const firebaseKey = firebaseObj.key;
+  console.log(firebaseKey);
+```
+
 > You'll most often use `.push()` when you are creating an instance of something that needs to be unique (e.g. a user ID, a session, an ordered list of tasks to complete).
 
 The Firebase method `set()` is used to overwrite the data at a specific reference that you decide **and** for all its children.
@@ -152,11 +167,19 @@ The Firebase method `set()` is used to overwrite the data at a specific referenc
 This method returns a promise and takes a callback that will be called when the database has been updated. 
 
 ```js
-const editorTheme = {editorTheme: 'Monokai Bright'};
-let userId = `-LYYnjbTOR0Qq03ehjb1`;
-const addToProfile = (profileData) => firebase.database().ref(`/${userId}`).set(profileData);
+const editorTheme = {
+  editorTheme: 'Monokai Bright'
+};
+
+const userId = `-LYYnjbTOR0Qq03ehjb1`;
+
+const addToProfile = (profileData) => {
+  return firebase.database().ref(`/${userId}`).set(profileData);
+}
+
 addToProfile(editorTheme);
 ```
+
 ```bash
 // The database is updated like this:
 {
@@ -165,27 +188,37 @@ addToProfile(editorTheme);
   }
 }
 ```
-Let's create an object with lots of information in it and push it to Firebase.
+Let's create an object with lots of information in it and replace the node we previously created with this new object:
 ```js
 const userSettings = {
   editorTheme: 'Monokai Bright',
-  tabs:4,
-  fontSize:20,
-  paid:false
+  tabs: 4,
+  fontSize: 20,
+  paid: false
 }
+
 addToProfile(userSettings);
 ```
 
-Change the tabs property and push again.
+Change the tabs property and call `addToProfile` again. Be sure to pass the updated userSettings object.
 
 ```js
 userSettings.tabs = 2;
+
 addToProfile(userSettings);
 ```
 No problem! We're pushing a complete copy of the `userSettings` object with all properties intact. What happens if we don't want to write all the properties out, just add a couple?
 
 ```js
-const moreUserSettings = {company:'HackerYou', coursesTaught:{fall:'bootcamp', winter:'bootcamp', spring:'bootcamp', summer:'partying'}};
+const moreUserSettings = {
+  company:'HackerYou',
+  coursesTaught: {
+    fall:'bootcamp',
+    winter:'bootcamp',
+    spring:'bootcamp',
+    summer:'partying'}
+  };
+}
 addToProfile(moreUserSettings);
 ```
 Oh no! We overwrite the child nodes if we don't include them in the object we're pushing to Firebase.
@@ -193,7 +226,8 @@ Oh no! We overwrite the child nodes if we don't include them in the object we're
 The Firebase method `update()` is used to write to specific nodes **without overwriting their what's already there**. 
 
 ```js
-let newUserSettings = {company:'U of T'};
+const newUserSettings = {company:'U of T'};
+
 const changeSetting =(settingToChange) =>{
   firebase.database().ref('/-LYYnjbTOR0Qq03ehjb1').update(settingToChange);
 };
@@ -209,148 +243,73 @@ const changeSetting =(settingToChange) =>{
 ```
 > If a node doesn't exist when you try to update it, Firebase will create it.
 
+### Data structure in Firebase
+As your data gets more complex, you may want to start nesting your data in collections in order to help express relationships more clearly:
+
+```javascript
+{
+  users: {
+    userOne: {
+      name: 'Rick Sanchez'
+    },
+    userTwo: {
+      name: 'Morty Smith'
+    },
+    userThree: {
+      name: 'Snowflake'
+    }
+  }
+}
+```
+
+Firebase lets us express this relationship by passing in a path such as `/users` to our `ref` method. So if we want to start adding some user properties inside of a `user` collection, we can do that like this:
+
+```javascript
+const userCollection = firebase.database().ref('/users');
+
+userCollection.push({name: 'Rick Sanchez'});
+```
+
+Now `userCollection` refers to our `users` collection, and calling `.push` on it will allow us to add new users to that specific collection!
+
 ## Grabbing data from Firebase
-Now that we have some data stored in our database, let's retrieve it using the `.once()` method:
+Now that we have some data stored in our database, let's retrieve it:
 
 ```javascript
 const dbRef = firebase.database().ref();
 
-dbRef.once('value', (data) => {
+dbRef.on('value', (data) => {
   console.log(data.val());
 });
 
 ```
 You will get back something that looks like this:
 
-```js
-{-LYYnjbTOR0Qq03ehjb1:{
-  company:'U of T',
-  coursesTaught:{
-    fall:'bootcamp', 
-    winter:'bootcamp', 
-    spring:'bootcamp', 
-    summer:'partying'}
-  }
-}
-````
+`Object {-KaeZ7AVTJqwqItpFzLz: "hello!"}` - this is your database object!
 
 Let's break down what's happening here line by line:
 
 * **const dbRef = firebase.database().ref();** - Once again, we grab a reference to our firebase database.
 * **dbRef.on('value', (data) => {** - We call the `on` method here to grab the value of our Firebase database. When it comes back, we store access it in our callback function via the parameter `data`.
 
-// We call the `.once()` method here with the `value` argument 
-// to ask for our Firebase database.
-// We pass the return into our callback function using the `data` parameter.
-dbRef.once('value', (data) => {
-  //Using Firebase's .val() method, we get the content of our data
-  // and log it to the console
-  console.log(data.val());
-});
-```
+* **console.log(data.val());** we call `.val()` on our data to get the contents of our data to print out in the form of an object
 
 ## Listening for changes to data in Firebase
-Usually you'll want to get data more than once -  especially if it's being updated elsewhere in the code or by multiple users. Remember `onClick` and `onChange` from jQuery? Firebase has its own built-in events we can use to update our app when new data has entered the database.
+Remember onClick and onChange from jQuery? Firebase has its own built in events we can use to update our app when new data has entered the database.
 
-Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our Hall of Fame.
+Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 
 ```javascript
 const dbRef = firebase.database().ref();
 
 dbRef.on('value', (data) => {
-  console.log(`New info coming in: ${data.val()}`);
-  // code to update the Hall of Fame would go here
+  console.log('New info coming in: ');
+  console.log(data.val());
+  // code to update the high score table here
 });
 ```
 
-We can confirm that this is working by manually pushing a new entry into our database from the console: `dbRef.push('a new high score')`
-
-## Data structure in Firebase
-As your data gets more complex, you may want to start nesting your data in collections in order to help express relationships more clearly:
-
-```javascript
-{
-  users:{
-    0:{
-      name:'Blair',
-      hobbies: {
-        0: 'skiing',
-        1: 'rowing',
-        2: 'running'
-      }
-    },
-    1: {
-      name:'Goresh',
-      hobbies: {
-        0: 'biking',
-        1: 'guitar',
-        2: 'running'
-      }
-    },
-    2: {
-      name:'Jean-Yves',
-      hobbies: {
-      0: 'collage',
-      1: 'guitar',
-      2: 'skiing'
-      }
-    }
-  },
-  peopleWhoLikeSkiing:{
-    0: 'Blair',
-    1: 'Jean-Yves'
-  }
-}
-```
-
-You **can** nest data real deep but **avoid more than three levels of nesting** whenever possible. When you fetch data from a location in the database, all of the child nodes come along with it. It's best practice to keep your data structure as flat as possible.
-
-If this means your data is somewhat repetitive:
-```javascript
-{
-  users:{
-    0:{
-      name:'Blair',
-      hobbies: {
-        0: 'skiing',
-        1: 'rowing',
-        2: 'running'
-      }
-    },
-    1: {
-      name:'Goresh',
-      hobbies: {
-        0: 'biking',
-        1: 'guitar',
-        2: 'running'
-      }
-    },
-    2: {
-      name:'Jean-Yves',
-      hobbies: {
-      0: 'collage',
-      1: 'guitar',
-      2: 'skiing'
-      }
-    }
-  },
-  peopleWhoLikeSkiing:{
-    0: 'Blair',
-    1: 'Jean-Yves'
-  }
-}
-```
-
-Here, we could get all the `users` and then map through each of their hobbies to figure out who likes skiing. A more efficient way to do this in Firebase is to have a node that contains the information you're going to want. 
-
-```js
-const skiPeople = firebase.database().ref('peopleWhoLikeSkiing');
-```
-
-Every single value in Firebase has a key because Firebase is JSON notation, which is like an object. You can assign your own keys or have Firebase generate keys for you depending on the write method (i.e. `push` creates a new Firebase key, `set` and `update` do not). We can use this key to retreive any value. 
-
-> Note that we **should not store arrays in Firebase** because [the index number is not permanent](https://firebase.googleblog.com/2014/04/best-practices-arrays-in-firebase.html).
-
+We can confirm that this is working by manually pushing a new entry into our database from the console: `dbRef.push('pizza')`
 
 ## Upgrading our jQuery app using Firebase!
-Now that we've learned some of the fundamental principles of how data gets created and managed between our code and Firebase, let's make our to do app even more useful by adding Firebase!
+Now that we've learned some of the fundamental principles of how data gets created and managed between our code and Firebase, let's power up our todo app by adding in Firebase!
