@@ -160,22 +160,22 @@ So what can we do? Let's create a `PetList` component to hold the JSX informatio
 ```javascript
 //PetList.js
 class PetList extends Component {
-    render() {
+  render() {
+    return (
+      <div>
+      {animals.map((animal) => {
         return (
-            <div>
-            {animals.map((animal) => {
-                return (
-                    <div>
-                        <h2>{animal.name}</h2>
-                        <p>Type: {animal.type}</p>
-                        <p>Size: {animal.size}</p>
-                        <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
-                    </div>
-                )
-            })}
-            </div>
+          <div>
+            <h2>{animal.name}</h2>
+            <p>Type: {animal.type}</p>
+            <p>Size: {animal.size}</p>
+            <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
+          </div>
         )
-    }
+      })}
+      </div>
+    )
+  }
 }
 ```
 
