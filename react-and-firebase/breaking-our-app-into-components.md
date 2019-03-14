@@ -5,12 +5,13 @@
 - Refactor a section of code into a new component
 -->
 
-# Componentizing our React apps
+# Breaking out app into components
 
 One of the tenets of efficient, modern programming is to avoid repeating yourself. This improves code maintainability, readability, and reusability, and decreases complexity. The less complex our code is, the easier bugs will be to track down and squash!
 
 Code reusability is one of the huge benefits we gain from building our app using the React library. Our components can be reused across our project, which means less work for us (and fewer files to go through when bug hunting).
 
+## How to break an app into components 
 What does code reusability look like? Well, let's imagine that we're building an app for an animal shelter and we want to have a page that displays all of the pets that are available for adoption:
 
 ```javascript
@@ -56,7 +57,7 @@ class App extends Component {
 
 ```
 
-Here we have created an `App` component and rendered it on to the page. We have also imported information about all our animals from a file called `animals.js`. In the real world this information might come from our back-end API, but for now we're just storing it in a JS file.
+Here we have created an `App` component and rendered it on to the page. We have also imported information about all our animals from a file called `animals.js`. In the real world this information might come from an API, but for now we're just storing it in a JS file.
 
 So, how do we get this information on the page? Well, we could write something like this:
 
@@ -88,9 +89,9 @@ class App extends Component {
 As you can see, we have to repeat the `div.pet` element for every animal inside of our `animals` array. This totally works, but requires writing a ton of repetitive code!
 
 ## Your new best friend in React: `.map()`
-JavaScript to the rescue! In the past, when we have wanted to iterate over a bunch of items inside of an array and do something to them, what did we use? `.map()` (Okay, we used a `for` loop sometimes, but in React we're going to stick with `map()`.)
+JavaScript to the rescue! In the past, when we have wanted to iterate over a bunch of items inside of an array and do something to them, what did we use? `.map()`! (Okay, we used a `for` loop sometimes, but in React we're going to stick with `map()`.)
 
-Looping over items to do stuff to them works just as well for React as it did for jQuery. Remember that inside of JSX we can write any vanilla JS we want by escaping it with curly brackets `{}`. So we can add a `.map` in there and have it print out all of our animals!
+Looping over items to do stuff to them works just as well in React as it did in jQuery. Remember that inside of JSX we can write any vanilla JS we want by escaping it with curly brackets `{}`. We can add a `.map` right inside the `render` method and have it print out all of our animals!
 
 Let's refactor our JSX to incorporate a `.map` instead of manually typing out JSX for each animal:
 
@@ -136,14 +137,15 @@ class App extends Component {
         <h3>Animals Featured for Adoption</h3>
         <div>
           {animals.map((animal) => {
-            return (<div>
-              <h2>{animal.name}</h2>
-              <p>Type: {animal.type}</p>
-              <p>Size: {animal.size}</p>
-              <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
-            </div>)
-            })
-          }
+              return (
+                <div>
+                  <h2>{animal.name}</h2>
+                  <p>Type: {animal.type}</p>
+                  <p>Size: {animal.size}</p>
+                  <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
+                </div>
+              )
+            })}
         </div>
       </div>
     )
@@ -151,33 +153,34 @@ class App extends Component {
 }
 ```
 
-When we want to work on the Animals Featured for Adoption section, we have to dig a bit through our `App` component in order to find that section. Not only that, but what happens if we want to feature our pets in different parts of our app? We'd have to copy this code and paste it somewhere else. This isn't good because then if we need to change it, we have to change it in **_both_** places!
+When we want to work on the `Animals Featured for Adoption` section, we have to dig a bit through our `App` component in order to find that section. Not only that, but what happens if we want to feature our pets in different parts of our app? We'd have to copy this code and paste it somewhere else. This isn't good because then if we need to change it, we have to change it in **_both_** places!
 
-So what can we do? Let's create a `PetList` component to hold the JSX information about all of our pets. That way, anywhere we need to print this information to the page, we'll be able to reference it by just typing `<PetList />`.
+## Importing a component 
+So what can we do? Let's create a `PetList` component to hold the JSX information about all of our pets. That way, anywhere we need to print this information to the page, we'll be able to reference it by typing `<PetList />`.
 
 ```javascript
 //PetList.js
 class PetList extends Component {
-    render() {
-        return (
+  render() {
+    return (
+      <div>
+        {animals.map((animal) => {
+          return (
             <div>
-            {animals.map((animal) => {
-                return (
-                    <div>
-                        <h2>{animal.name}</h2>
-                        <p>Type: {animal.type}</p>
-                        <p>Size: {animal.size}</p>
-                        <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
-                    </div>
-                )
-            })}
+              <h2>{animal.name}</h2>
+              <p>Type: {animal.type}</p>
+              <p>Size: {animal.size}</p>
+              <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
             </div>
-        )
-    }
+          )
+        })}
+      </div>
+    )
+  }
 }
 ```
 
-Now we have a `PetList` component that we can use anywhere we like to print out our list of pets! Let's refactor our `App` component to bring in our `PetList` component:
+Now we have a `PetList` component that we can use anywhere to print out our list of pets! Let's refactor our `App` component to bring in our `PetList` component:
 
 ```javascript
 //App.js
@@ -200,6 +203,7 @@ class App extends React.Component {
   }
 }
 ```
+> Don't forget to import it at the top!
 
 By breaking `PetList` into its own component, we have made our code more modular, more readable, and more maintainable!
 
