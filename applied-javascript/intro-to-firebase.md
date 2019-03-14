@@ -141,15 +141,15 @@ Let's try a few of these out!
 The Firebase method `push()` creates a **new node** that is stored as the value for a Firebase-generated key.
 
 ```js
-  const firebaseObj = dbRef.push('first push to Firebase');
+const firebaseObj = dbRef.push('first push to Firebase');
 
-  console.log(firebaseObj);
+console.log(firebaseObj);
 ```
 
 ```bash
 // The database is updated like this:
 {
-    -LYYnjbTOR0Qq03ehjb1: 'first push to Firebase'
+  -LYYnjbTOR0Qq03ehjb1: 'first push to Firebase'
 }
 ```
 
@@ -276,9 +276,12 @@ Now `userCollection` refers to our `users` collection, and calling `.push` on it
 Now that we have some data stored in our database, let's retrieve it:
 
 ```javascript
+// Once again, we grab a reference to our firebase database.
 const dbRef = firebase.database().ref();
 
+// We call the `on` method here to grab the value of our Firebase database. When it comes back, we store access it in our callback function via the parameter `data`.
 dbRef.on('value', (data) => {
+  // We call `.val()` on our data to get the contents of our data to print out in the form of an object
   console.log(data.val());
 });
 
@@ -287,15 +290,9 @@ You will get back something that looks like this:
 
 `Object {-KaeZ7AVTJqwqItpFzLz: "hello!"}` - this is your database object!
 
-Let's break down what's happening here line by line:
-
-* **const dbRef = firebase.database().ref();** - Once again, we grab a reference to our firebase database.
-* **dbRef.on('value', (data) => {** - We call the `on` method here to grab the value of our Firebase database. When it comes back, we store access it in our callback function via the parameter `data`.
-
-* **console.log(data.val());** we call `.val()` on our data to get the contents of our data to print out in the form of an object
 
 ## Listening for changes to data in Firebase
-Remember onClick and onChange from jQuery? Firebase has its own built in events we can use to update our app when new data has entered the database.
+Remember `.on()` from jQuery? Firebase has its own built in `.on()`, that we can use to listen for events, like when any changes have been made to the database.
 
 Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 
