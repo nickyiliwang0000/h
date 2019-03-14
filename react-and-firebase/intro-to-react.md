@@ -176,7 +176,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
 * In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, it's `render` method).
 
-* One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI )_sometimes_. 
+* One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI ) _sometimes_. 
 
   * You will be tempted to put an `if` statement in your JSX like this: 
     ```jsx
