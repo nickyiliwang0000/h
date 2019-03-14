@@ -40,19 +40,19 @@ const animals = [
 export default animals;
 ```
 
-```javascript
+```jsx
 // App.js
 import React, { Component } from 'react';
 import animals from './animals.js';
 
 class App extends Component {
   render() {
-		return (
-			<div>
-				<h1>Adopt Us!</h1>
-			</div>
-		)
-	}
+    return (
+      <div>
+        <h1>Adopt Us!</h1>
+      </div>
+    )
+  }
 }
 
 ```
@@ -61,28 +61,30 @@ Here we have created an `App` component and rendered it on to the page. We have 
 
 So, how do we get this information on the page? Well, we could write something like this:
 
-```javascript
+```jsx
 // App.js
+import React, { Component } from 'react';
+
 class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Adopt Us!</h1>
-                <div className="pet">
-                    <p>Type: {animals[0].type}</p>
-                    <p>Size: {animals[0].type}</p>
-                    <img src={animals[0].picture} alt={`An adorable ${animals[0].type}`} />
-                </div>
-                <div className="pet">
-                    <h2>{animals[1].name}</h2>
-                    <p>Type: {animals[1].type}</p>
-                    <p>Size: {animals[1].size}</p>
-                    <img src={animals[1].picture} alt={`An adorable ${animals[1].type}`}/>
-                </div>
-                // another .pet div for every pet ...
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <h1>Adopt Us!</h1>
+        <div className="pet">
+          <p>Type: {animals[0].type}</p>
+          <p>Size: {animals[0].type}</p>
+          <img src={animals[0].picture} alt={`An adorable ${animals[0].type}`} />
+        </div>
+        <div className="pet">
+          <h2>{animals[1].name}</h2>
+          <p>Type: {animals[1].type}</p>
+          <p>Size: {animals[1].size}</p>
+          <img src={animals[1].picture} alt={`An adorable ${animals[1].type}`}/>
+        </div>
+        // another .pet div for every pet ...
+      </div>
+    )
+  }
 }
 ```
 
@@ -95,31 +97,33 @@ Looping over items to do stuff to them works just as well in React as it did in 
 
 Let's refactor our JSX to incorporate a `.map` instead of manually typing out JSX for each animal:
 
-```javascript
+```jsx
 // App.js
+import React, { Component } from 'react';
+
 class App extends Component {
-    render() {
-        return (
+  render() {
+    return (
+      <div>
+        {animals.map((animal) => {
+          return (
             <div>
-            {animals.map((animal) => {
-                return (
-                    <div>
-                        <h2>{animal.name}</h2>
-                        <p>Type: {animal.type}</p>
-                        <p>Size: {animal.size}</p>
-                        <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
-                    </div>
-                )
-            })}
+              <h2>{animal.name}</h2>
+              <p>Type: {animal.type}</p>
+              <p>Size: {animal.size}</p>
+              <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
             </div>
-        )
-    }
+          )
+        })}
+      </div>
+    )
+  }
 }
 ```
 
 Now let's imagine for a minute that our app is starting to get a lot bigger, and the section that features our list of animals for adoption is only one part of a larger page:
 
-```javascript
+```jsx
 //App.js
 import React, { Component } from 'react';
 import animals from './animals.js';
@@ -158,8 +162,10 @@ When we want to work on the `Animals Featured for Adoption` section, we have to 
 ## Importing a component 
 So what can we do? Let's create a `PetList` component to hold the JSX information about all of our pets. That way, anywhere we need to print this information to the page, we'll be able to reference it by typing `<PetList />`.
 
-```javascript
+```jsx
 //PetList.js
+import React, { Component } from 'react';
+
 class PetList extends Component {
   render() {
     return (
@@ -178,12 +184,17 @@ class PetList extends Component {
     )
   }
 }
+
+export default PetList;
 ```
 
 Now we have a `PetList` component that we can use anywhere to print out our list of pets! Let's refactor our `App` component to bring in our `PetList` component:
 
-```javascript
+```jsx
 //App.js
+import React, { Component } from 'react;
+import PetList from './PetList.js';
+
 class App extends React.Component {
   render() {
     return (
@@ -207,5 +218,5 @@ class App extends React.Component {
 
 By breaking `PetList` into its own component, we have made our code more modular, more readable, and more maintainable!
 
-## Conclusion
+## Wrapping Up
 As you start building your own apps, notice when you're re-writing a lot of the same code over and over again. If you are, ask yourself: could this be refactored into a separate component? Sometimes it's only a line or two and the tradeoff isn't worth it, but very often breaking your app into smaller components will make it easier for you (and other developers) to keep track of what's going on!
