@@ -197,7 +197,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
     render() {
       return (
         <div>
-        {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
+          {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
         </div>
       )
     }
