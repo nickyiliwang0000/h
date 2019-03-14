@@ -137,14 +137,15 @@ class App extends Component {
         <h3>Animals Featured for Adoption</h3>
         <div>
           {animals.map((animal) => {
-            return (<div>
-              <h2>{animal.name}</h2>
-              <p>Type: {animal.type}</p>
-              <p>Size: {animal.size}</p>
-              <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
-            </div>)
-            })
-          }
+              return (
+                <div>
+                  <h2>{animal.name}</h2>
+                  <p>Type: {animal.type}</p>
+                  <p>Size: {animal.size}</p>
+                  <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
+                </div>
+              )
+            })}
         </div>
       </div>
     )
@@ -163,16 +164,16 @@ class PetList extends Component {
   render() {
     return (
       <div>
-      {animals.map((animal) => {
-        return (
-          <div>
-            <h2>{animal.name}</h2>
-            <p>Type: {animal.type}</p>
-            <p>Size: {animal.size}</p>
-            <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
-          </div>
-        )
-      })}
+        {animals.map((animal) => {
+          return (
+            <div>
+              <h2>{animal.name}</h2>
+              <p>Type: {animal.type}</p>
+              <p>Size: {animal.size}</p>
+              <img src={animal.picture} alt={`An adorable ${animal.type}`}/>
+            </div>
+          )
+        })}
       </div>
     )
   }
