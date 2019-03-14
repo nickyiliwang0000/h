@@ -70,7 +70,7 @@ If we wanted to build a simple component that displayed a featured donut, it mig
 const FeaturedDonut = (props) => {
   return (
     <div>
-    <p>Our featured donut is {props.name}.</p>
+      <p>Our featured donut is {props.name}.</p>
     </div>
   )
 }
