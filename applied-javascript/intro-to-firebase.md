@@ -69,7 +69,7 @@ Open up your console and type `firebase`. You should see something like this:
 
 If you see this, you have successfully configured your project to use Firebase.
 
-#### Setting up _Realtime Database_
+#### Setting up a _Realtime Database_
 
 1. Now that we have configured our application to use Firebase, we can take advantage of all the cool tools Firebase have created. For this lesson we will just focus on utilizing their Realtime Databas. Click on 'Database' on the sidebar, be sure to scroll down past Cloud Firestore. You will find the option to create a Realtime Database below.
 ![Step 6](https://hychalknotes.s3.amazonaws.com/firebase-step6-2019.png)
@@ -341,7 +341,45 @@ $(document).ready(function(){
 </script>
 ```
 
-Our database needs to know about any new to-do items. When a user submits a to-do, instead of just appending it on the page, we will want to push it to Firebase.
+### Create a database
+In order for us to store our to-do information, we will need to create a Realtime Database for this project. Steps can be found above under 'Setting up a _Realtime Database_'.
+
+Once we've created a database, we will need to create a reference to our database in our application. Let's store our database reference in a variable at the top of our document ready.
+
+```js
+$(document).ready(function(){
+  const dbRef = firebase.database().ref();
+  ...
+});
+```
+
+Our database needs to know about any new to-do items. When a user submits a to-do, instead of just appending it on the page, we will want to push it to Firebase. 
+
+```js
+$('form').on('submit', function(e) {
+  e.preventDefault();
+
+  if ($('input').val() !== '') {
+    // store what the user typed in a variable
+    const toDoItem = $('input').val();
+    
+    //create todo object, set complete to false by default
+    const toDoObj = {
+      description: toDoItem,
+      complete: false
+    }
+    
+    //push to firebase our new toDoObj.
+    dbRef.push(toDoObj);
+    
+    // clear input
+    $('input').val(''); 
+  };
+});
+
+```
+
+
 
 
 
