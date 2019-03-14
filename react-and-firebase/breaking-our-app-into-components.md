@@ -218,5 +218,5 @@ class App extends React.Component {
 
 By breaking `PetList` into its own component, we have made our code more modular, more readable, and more maintainable!
 
-## Wrapping Up
+## Wrapping up
 As you start building your own apps, notice when you're re-writing a lot of the same code over and over again. If you are, ask yourself: could this be refactored into a separate component? Sometimes it's only a line or two and the tradeoff isn't worth it, but very often breaking your app into smaller components will make it easier for you (and other developers) to keep track of what's going on!
