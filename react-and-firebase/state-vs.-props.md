@@ -15,20 +15,24 @@ We might make a component that looks like this:
 ```jsx
 class FeaturedDonut extends Component {
   render() {
-    return <h1>Today's featured Donut is: PB & J</h1>;
+    return (
+      <h1>Today's featured Donut is: PB & J</h1>
+    ) 
   }
 }
 
 class App extends Component {
   render() {
-    return <FeaturedDonut />;
+    return (
+      <FeaturedDonut />
+    ) 
   }
 }
 ```
 
 ## Customizing our component with props
 
-People LOVE this bakery's featured donuts. The bakery does a brisk trade in featured donuts. Featured donuts are their bread and butter, you could say. As such, they want the front page to show **three different** featured donuts.
+People LOVE this bakery's featured donuts. The bakery does a brisk trade in featured donuts. Featured donuts are their bread and butter, you could say. As such, they want the landing page of their website to show **three different** featured donuts.
 
 We could modify the JSX inside our `FeaturedDonut` component to include the other two featured donuts, but what happens if elsewhere on the site they only want to feature one donut, not three, or a completely different set of donuts?
 
@@ -55,7 +59,9 @@ This means that we can change our `FeaturedDonut` component to look like this:
 ```jsx
 class FeaturedDonut extends Component {
   render() {
-    return <h1>Today's featured Donut is: {this.props.name}</h1>;
+    return (
+      <h1>Today's featured donut is: {this.props.name}</h1>
+    )
   }
 }
 ```
@@ -65,7 +71,9 @@ Now let's imagine that our awesome donut shop had some kind of database they wer
 ```jsx
 class FeaturedDonut extends Component {
   render() {
-    return <h1>Today's featured Donut is: {this.props.name}</h1>;
+    return (
+      <h1>Today's featured donut is: {this.props.name}</h1>;
+    ) 
   }
 }
 
@@ -78,7 +86,9 @@ class App extends Component {
   }
 
   render() {
-    return <FeaturedDonut name="PB & J" />;
+    return (
+      <FeaturedDonut name="PB & J" />
+    ) 
   }
 }
 ```
@@ -112,7 +122,7 @@ This way, in the future, if more featured donuts get added to the state (i.e. th
 
 ## Passing functions as props
 
-Let's create a new function within our `<App />` and name it `removeDonut`. We will use it to clear our featuredDonuts state. We will attach this function to a new button element within the`<FeaturedDonut />` component that we will pass to it through props:
+Let's create a new function within our `<App />` and name it `removeDonut`. We will use it to clear our featuredDonuts state. We will attach this function to a button element inside the`<FeaturedDonut />` component. To gain access to the function inside `<FeaturedDonut /> component, we need to pass a reference to it as a prop:
 
 ```jsx
   removeDonut = () => {
@@ -138,7 +148,7 @@ class FeaturedDonut extends Component {
   render() {
     return (
       <div>
-        <h1>Today's featured Donut is: {this.props.name}</h1>
+        <h1>Today's featured donut is: {this.props.name}</h1>
         <button onClick={this.props.removeDonut}>Remove Donut</button>
       </div>
     );
@@ -148,7 +158,7 @@ class FeaturedDonut extends Component {
 
 ### Passing functions with parameters
 
-Our `<FeaturedDonut />` component is successfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want the specific donut in which we click to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a parameter to our remove function. This will force us to change how we pass `removeDonut` as a prop:
+Our `<FeaturedDonut />` component is successfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want the donut we click on to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a parameter to our `removeDonut` function. This will force us to change how we pass `removeDonut` as a prop:
 
 ```jsx
 class App extends Component {
@@ -187,13 +197,12 @@ class App extends Component {
 A few significant changes took place here so let's break them down:
 
 - We pass an arrow function inline with our custom function `removeDonut` as the return value. This way, we can include the index as an argument.
-- In `removeDonut` we are making a copy of our state array through the spread operator and storing it in a new variable because we need to treat react state as immutable. 
+- In `removeDonut` we are making a copy of our state array using the spread operator and storing it in a new variable because we need to treat React state as immutable. 
 - We filter through the copied array and return only the array item that matches our condition.
-- Since `filter()` returns a new array, we can then update our state with it.
-
+- `filter()` returns a new array and we can update our state with that new array from our `filter` function.
 ## Props and destructuring
 
-So far our components have been fairly lightweight with only a small amount of props. This won't always be the case and we should take advantage of object destructuring to help improve our component readability. Let's imagine that our props object looks like the following:
+So far our components have been fairly lightweight with only a few props. This won't always be the case and when it's not, we can take advantage of object destructuring to help improve our component readability. Let's imagine that our props object looks like the following:
 
 ```javascript
 props = {
@@ -235,7 +244,7 @@ const AuthorDetails = ({ author, review }) => {
 };
 ```
 
-Destructuring also works similarily within Class components, the main difference being we will destructure our props within the `render()` method:
+Destructuring works similarly in complex components, the main difference is that we will destructure our props within the `render()` method:
 
 ```jsx
 class AuthorDetails extends Component {
@@ -269,15 +278,15 @@ Some of you may find this rudimentary flowchart helpful:
 
 ### Proptypes
 
-As apps grow in scale, it is valuable to start thinking about how we can better improve the quality of our code to help prevent the potential for bugs. One way we can achieve this is to validate the types of data (strings, numbers, etc) that we pass to our components through props. If the data-type that is passed through props is not what the component expects, a warning will be thrown to the console.
+As apps grow in scale, it is valuable to start thinking about how we can better improve the quality of our code to help prevent bugs. One way we can achieve this is to validate the types of data (e.g. strings, numbers, etc) that we pass to our components through props. If the datatype that is passed through props is not what the component expects, a warning will be thrown to the console.
 
-React provides this typechecking process with _Proptypes_ and we can install it as a dependency to our app:
+We can use the Proptypes library to do this kind of typechecking in React. To use it, we need to install it as a dependency in our app:
 
 ```javascript
 npm install --save prop-types
 ```
 
-After importing the Proptypes library, we can declare the expected data-types for all the props in our component. Conventionally, this is written at the bottom of the component file, outside of its declaration:
+After importing the Proptypes library, we can declare the expected datatypes for all the props in our component. Conventionally, this is written at the bottom of the component file, outside of its declaration:
 
 ```jsx
 import React, { Component } from "react";
@@ -299,11 +308,11 @@ Greeting.propTypes = {
 };
 ```
 
-We are declaring that the name prop is expecting only a value with a typeof string and the visitorCount a value with a typeof number. Therefore, if we tried to pass a number to our name prop, we would get the following error:
+We are declaring that the `name` prop is expecting only a value with a typeof string and the `visitorCount` a value with a typeof number. Therefore, if we tried to pass a number to our `name` prop, we would get the following error:
 
 `Warning: Failed prop type: Invalid prop 'name' of type 'number' supplied to 'Greeting', expected 'string'.`
 
-For performance reasons, this validation only takes place in development mode and will not take place in a production environment. You can find a thorough list of the provided proptypes in the [react documentation](https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes), plus some additional features like setting default prop values.
+For performance reasons, this validation only takes place in development mode and will not take place in a production environment. You can find a thorough list of the provided proptypes in the official React documentation, plus some additional features like setting default prop values.
 
 ## Additional Resources
 
