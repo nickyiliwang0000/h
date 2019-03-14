@@ -1,8 +1,12 @@
-
 <!-- Student takeaway -->
 <!-- By the end of this lesson, the student should know:
-- 
+  - How to configure their projects to use Firebase
+  - Set up Firebase's Realtime Database
+  - How to create a reference to their database
+  - What the .push(), .set() and .update() method do, and the differences between them
+  - How to listen for changes made to their database and get information from their database
 -->
+
 # Intro to Firebase
 ## A bit of web app history
 One hundred million years ago, web development was divided into two camps: front-end and back-end.
