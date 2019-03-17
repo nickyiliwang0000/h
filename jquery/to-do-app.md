@@ -286,7 +286,7 @@ And it works!
 
 ### Lots more
 
-Bootstrap has a class named `text-muted` which will help convey meaning to the user through color. Our completed tasks should be "muted" when compared to uncompleted tasks.
+We can apply a class named `text-muted` which will help convey meaning to the user through color. Our completed tasks should be "muted" when compared to uncompleted tasks.
 
 ```js
 $('ul').on('click', 'li', function(){
@@ -303,9 +303,9 @@ Have a look at <a download href="https://hychalknotes.s3.amazonaws.com/to-do-app
 There is so much more that you can do to enhance the app! Here are some suggestions:
 
 - allow the removal of items completely from the list
-- drag/drop items to sort (have a look at [jQuery UI](https://jqueryui.com/))
-- when the page loads focus on the input field (i.e. cursor should load inside the input, ready to type)
 - validate the input field with an error message if the input is empty upon submit
 - automatically move completed items to the bottom
+- when the page loads, focus on the input field (i.e. cursor should load inside the input)
+- drag/drop items to sort (have a look at [jQuery UI](https://jqueryui.com/))
 
 Have a look at <a href="https://hychalknotes.s3.amazonaws.com/to-do-app-extras.html" class="exercise">**to-do-app-extras.html**</a> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.
