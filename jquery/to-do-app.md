@@ -109,7 +109,7 @@ $(function(){
 });
 ```
 
-`.val()` is what we call a _getter_ and a _setter_. These methods that can either assign or read a value. When the method is called with a value as an argument, it's referred to as a setter since it sets (or assigns) that value. When the method is called with no argument, it gets (or reads) the value.
+`.val()` is what we call a _getter_ and a _setter_. These are methods that can either assign or read a value. When the method is called with a value as an argument, it's referred to as a setter since it sets (or assigns) that value. When the method is called with no argument, it gets (or reads) the value.
 
 We should only do something if the input value is not empty, otherwise we would be adding empty items to our list.
 
@@ -219,7 +219,7 @@ Remember, events in JavaScript are actions or occurences that can take place in 
 
 When a click event is triggered on the `img`, the browser is going to communicate to every parent element (`a`, `li`, `ul`) that this event took place. As a result, the click on the image does not only generate a `click` event for the `img` element but it also generates a `click` event for every parent element. The event is bubbling up through the DOM tree.
 
-We can use this bubbling behaviour to address our issue of not being able to add an event listener to our dynaic `li` elements. We can delegate our click event to a ancestor element that gets loaded with the DOM. `ul` is a good candidate because it is the parent of the `li` elements and it is rendered when the DOM is ready. When someone clicks an `li` element, that click event will `bubble` up to the `ul` and notify it of what happened.
+We can use this bubbling behaviour to address our issue of not being able to add an event listener to our dynamic `li` elements. We can delegate our click event to a ancestor element that gets loaded with the DOM. `ul` is a good candidate because it is the parent of the `li` elements and it is rendered when the DOM is ready. When someone clicks an `li` element, that click event will `bubble` up to the `ul` and notify it of what happened.
 
 We can delegate an event by using the following syntax:
 
