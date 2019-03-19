@@ -109,7 +109,7 @@ $(function(){
 });
 ```
 
-`.val()` is what we call a _getter_ and a _setter_. These are methods that can either assign or read a value. When the method is called with a value as an argument, it's referred to as a setter since it sets (or assigns) that value. When the method is called with no argument, it gets (or reads) the value.
+`.val()` is what we call a _getter_ and a _setter_. A getter method can read a value. A setter method can assign a value. So, when the method is called with a value as an argument, it's referred to as a setter since it sets (or assigns) that value. When the method is called with no argument, it gets (or reads) the value.
 
 We should only do something if the input value is not empty, otherwise we would be adding empty items to our list.
 
@@ -205,7 +205,7 @@ Nothing is happening. We're clicking on `li` items so why isn't the callback fun
 
 ### Event delegation
 
-Remember, events in JavaScript are actions or occurences that can take place in our app. We can capture when those occurences take place and trigger some code to run. The default behaviour of our browser is to communicate this event occurence to every ancestor of the element where the event took place. This event flow is often referred to as either event _bubbling_ or _propagation_. Let's use the below code to exemplify this:
+Remember, [events in JavaScript](https://developer.mozilla.org/en-US/docs/Web/Events#Keyboard_events) are designated (e.g. `click`, `mouseover`, `touchstart`, `keypress`, etc). When an action takes place, we usually want to run some code. By default, the browser lets every ancestor of an event's target know that an action took place. This event flow is often referred to as either _event bubbling_ or _event propagation_. Here's an example: 
 
 ```html
 <ul>
@@ -217,10 +217,9 @@ Remember, events in JavaScript are actions or occurences that can take place in 
 </ul>
 ```
 
-When a click event is triggered on the `img`, the browser is going to communicate to every parent element (`a`, `li`, `ul`) that this event took place. As a result, the click on the image does not only generate a `click` event for the `img` element but it also generates a `click` event for every parent element. The event is bubbling up through the DOM tree.
+When a click event is triggered on the `img`, the browser is going to communicate to every parent element (`a`, `li`, `ul`) that this event took place. As a result, the click on the image not only generates a `click` event for the `img` element, but it also generates a `click` event for every parent element. The event is _bubbling_ up through the DOM tree.
 
-We can use this bubbling behaviour to address our issue of not being able to add an event listener to our dynamic `li` elements. We can delegate our click event to a ancestor element that gets loaded with the DOM. `ul` is a good candidate because it is the parent of the `li` elements and it is rendered when the DOM is ready. When someone clicks an `li` element, that click event will `bubble` up to the `ul` and notify it of what happened.
-
+We can use this bubbling behaviour to address our issue of not being able to add an event listener to our dynamic `li` elements. We can delegate our click event to a ancestor element that gets loaded with the DOM. `ul` is a good candidate because it is the parent of the `li` elements and it is rendered when the DOM is ready. When someone clicks an `li` element, that click event will bubble up to the `ul`.
 We can delegate an event by using the following syntax:
 
 ```js
@@ -286,7 +285,7 @@ And it works!
 
 ### Lots more
 
-We can apply a class named `text-muted` which will help convey meaning to the user through color. Our completed tasks should be "muted" when compared to uncompleted tasks.
+We can apply a class named `text-muted` which will help convey meaning to the user through color. Our completed tasks should look inactive when compared to uncompleted tasks.
 
 ```js
 $('ul').on('click', 'li', function(){
