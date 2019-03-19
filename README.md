@@ -51,7 +51,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Background color and images](https://github.com/HackerYou/bootcamp-notes/blob/master/css/background-color-and-images.md)
 * [Web typography](https://github.com/HackerYou/bootcamp-notes/blob/master/css/web-typography.md)
 * [Using webfonts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/using-webfonts.md)
-* [CSS pseudos-selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
+* [CSS pseudo-selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
 * [CSS dimensions](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-dimensions.md)
 * [CSS layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-layouts.md)
 * [Display and positioning](https://github.com/HackerYou/bootcamp-notes/blob/master/css/display-and-positioning.md)
