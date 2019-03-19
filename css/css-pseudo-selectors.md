@@ -5,7 +5,7 @@
   - Know four advanced pseudo-classes (:first-child, :last-child, :nth-child, :nth-of-type)
   -->
 
-## Pseudo-class
+# CSS pseudo-selectors
 
 Each element present on a page has several states that can be associated with it. These states are often when an interaction like a hover or selection has taken place. To target these states with CSS, we need to write selectors.  These state-specific selectors are called _pseudo-classes_.
 Pseudo-classes are appended right after the main selector with a colon, `:`. The four most common ones are:
@@ -148,9 +148,9 @@ In order to get amazing with CSS, you need selector chops! The only way to get g
 
 Since we aren't familiar with all of the available styles, they've been included for you, you just need to write the selectors.
 
-Open up [css-selector-exercises.html](https://hychalknotes.s3.amazonaws.com/css-selector-exercises.html) in both your browser and editor and replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask an instructor, ask a friend, or reference sites you find on Google.
+Download the [css-selector-exercises.zip](https://hychalknotes.s3.amazonaws.com/css-selector-exercises.html) and open the starter file in your browser. Replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask an instructor, or one of your fellow students.
 
-There is also an [answer key](https://hychalknotes.s3.amazonaws.com/css-selector-exercises-ANSWER.html) provided, open it in your browser to view what the final product should look like.
+There is also a `css-selector-exercise-ANSWER.html` provided, open it in your browser to view what the final product should look like.
 
 ![Final product](https://hychalknotes.s3.amazonaws.com/CSS-exercise.png)
 
