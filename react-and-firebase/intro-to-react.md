@@ -58,7 +58,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 ```
 
-Notice that we import `React` and `ReactDom` in this file. `react-dom` [is a module](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.17-making-our-code-more-modular.md#what-are-modules) needed to render our application to the DOM. (There is a version of React that can be used server-side that doesn't need this file named _Next.js_)
+Notice that we import `React` and `ReactDOM` in this file. `react-dom` [is a module](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.17-making-our-code-more-modular.md#what-are-modules) needed to render our application to the DOM. (There is a version of React that can be used server-side, called _Next.js_, which doesn't need this file.)
 
 After that, we import `index.css`. With the Create React App system, we import our CSS straight into the JavaScript. This allows the underlying system that runs Create React App to bundle up the JavaScript and CSS in the most efficient way.
 
