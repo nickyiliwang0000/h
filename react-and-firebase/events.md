@@ -197,7 +197,20 @@ Error! `app.js:20521 Uncaught TypeError: Cannot read property 'setState' of null
 
 It looks like the value of `this` is `null` inside of our `handleClick` method when we try to set our state!
 
-This is a particular quirk of ES6 where the `this` value isn't bound when `handleClick` is called. Not to worry, this can be fixed very easily by changing how we define the method
+This is a particular quirk of JavaScript where the `this` value isn't bound when `handleClick` is called. Before, we could solve this issue by binding `this` to the function within our `constructor` method:
+
+```jsx
+class Counter extends Component {
+  constructor() {
+    super();
+		this.state = {
+		  count: 0
+    }
+		this.handleClick = this.handleClick.bind(this);
+  }
+```
+
+While you still may see this approach done in the wild or in legacy code, we will instead change how we define our method:
 
 ```jsx
 // We start by declaring our new `Counter` component.
@@ -210,10 +223,11 @@ class Counter extends Component {
     }
   }
 
-	// this.handleClick calls this.setState, which allows us to update the count property inside of our component's state by adding one to its current value.
+
+	// setState is a React method which forces the component to re-render. In React, this is how we always want to update our state as opposed to directly altering state. We will explore this in a further lesson.
   handleClick = () => {
-		// this.setState is a React method which causes the component to re-render. This updates the number that appears on the page.
     this.setState({
+			// retrieve our current state value and incease it by one value
 		  count: this.state.count + 1
 		})
   }
@@ -223,7 +237,7 @@ class Counter extends Component {
       <div>
         {this.state.count}
 
-				{/* added a click event listener to button by adding an `onClick` attribute and passing in the `handleClick` method as its value
+				{/* added a event listener by adding an `onClick` attribute and passing in the `handleClick` method as its value
 				    When the increment counter button is clicked, `this.handleClick` is called */}
         <button onClick={ this.handleClick }>Increment counter!</button>
       </div>
