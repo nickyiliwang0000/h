@@ -152,7 +152,7 @@ Download the [css-selector-exercises.zip](https://hychalknotes.s3.amazonaws.com/
 
 There is also a `css-selector-exercise-ANSWER.html` provided, open it in your browser to view what the final product should look like.
 
-![Final product](https://hychalknotes.s3.amazonaws.com/CSS-exercise.png)
+![Final product](https://hychalknotes.s3.amazonaws.com/CSS-selector-exercise.png)
 
 Once you've got a good handle on CSS selectors, open up [css-challenge-selectors.html](https://hychalknotes.s3.amazonaws.com/css-challenge-selectors.html) and see if you can write some complete CSS rules of your own. 
 
