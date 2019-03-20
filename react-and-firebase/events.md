@@ -82,12 +82,12 @@ Here's how we would move the information about our visitors into our state:
 
 ```jsx
 class Counter extends Component {
-	// the constructor allows us to set default properties, such as the state, of our new component.
+  // the constructor allows us to set default properties, such as the state, of our new component.
   constructor() {
-		// when using the extends keyword, the super method is required to gain access the special stuff that comes with being a React component
+    // when using the extends keyword, the super method is required to gain access the special stuff that comes with being a React component
     super();
 
-		// anything inside curly brackets is vanilla JavaScript - here we are accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. 
+    // anything inside curly brackets is vanilla JavaScript - here we are accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. 
     this.state = {
       visitors: 0
     }
@@ -204,12 +204,12 @@ This is a particular quirk of JavaScript where the `this` value isn't bound when
 ```jsx
 class Counter extends Component {
   constructor() {
-    super();
-		this.state = {
-		  count: 0
-    }
-		this.handleClick = this.handleClick.bind(this);
+  super();
+  this.state = {
+    count: 0
   }
+  this.handleClick = this.handleClick.bind(this);
+}
 ```
 
 While you still may see this approach done in the wild or in legacy code, we will instead change how we define our method entirely:
@@ -227,9 +227,9 @@ class Counter extends Component {
 
   handleClick = () => {
     this.setState({
-			// retrieve our current state value and increase it by one value
-		  count: this.state.count + 1
-		})
+      // retrieve our current state value and increase it by one value
+      count: this.state.count + 1
+    })
   }
 
   render() {
@@ -237,8 +237,7 @@ class Counter extends Component {
       <div>
         {this.state.count}
 
-				{/* added a event listener by adding an `onClick` attribute and passing in the `handleClick` method as its value
-				    When the increment counter button is clicked, `this.handleClick` is called */}
+        {/* added a event listener by adding an `onClick` attribute and passing in the `handleClick` method as its value. When the increment counter button is clicked, `this.handleClick` is called */}
         <button onClick={ this.handleClick }>Increment counter!</button>
       </div>
     )
