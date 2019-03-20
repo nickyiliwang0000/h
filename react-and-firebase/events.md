@@ -13,6 +13,7 @@ $('button').on('click', function(){
   // some event handler code we would like to run when the button is clicked
 });
 ```
+
 In React, things work a little bit differently. First we begin by attaching our event handler to the DOM element of choice like this:
 
 ```jsx
@@ -24,8 +25,7 @@ class Button extends Component {
   }
 }
 ```
-
-Then we write an event handler method inside of our component that describes what we want to happen when the button is clicked.
+The `this` keyword reprensts our `Button` component so we can think of our `handleClick` method as a property attached to the `Button` class. Then we write an event handler method inside of our component that describes what we want to happen when the button is clicked.
 
 ```jsx
 class Button extends Component {
@@ -197,7 +197,7 @@ Error! `app.js:20521 Uncaught TypeError: Cannot read property 'setState' of null
 
 It looks like the value of `this` is `null` inside of our `handleClick` method when we try to set our state!
 
-This is a particular quirk of JavaScript where the `this` value isn't bound when `handleClick` is called. Before, we could solve this issue by binding `this` to the function within our `constructor` method:
+This is a particular quirk of JavaScript where the `this` value isn't bound when `handleClick` is called. Before, we could solve this issue by binding our methods to the component instance within our `constructor`:
 
 ```jsx
 class Counter extends Component {
@@ -210,7 +210,7 @@ class Counter extends Component {
   }
 ```
 
-While you still may see this approach done in the wild or in legacy code, we will instead change how we define our method:
+While you still may see this approach done in the wild or in legacy code, we will instead change how we define our method entirely:
 
 ```jsx
 // We start by declaring our new `Counter` component.
@@ -245,7 +245,6 @@ class Counter extends Component {
   }
 }
 ```
-
-It works! You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
+Since we are using arrow functions our event handler is automatically bound to the component instance so we do not need to worry about binding it in the constructor. You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
 
 And that's all there is to it! `onClick` is one of many different events that React can handle - there's also `onMouseOver`, `onMouseDown` etc. - [check out the React docs for the full list](https://facebook.github.io/react/docs/events.html).
