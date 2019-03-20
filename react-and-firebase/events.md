@@ -171,7 +171,9 @@ class Counter extends Component {
   }
 
   handleClick() {
-    this.setState({count: this.state.count + 1})
+    this.setState({
+      count: this.state.count + 1
+    })
   }
 
   render() {
@@ -185,7 +187,7 @@ class Counter extends Component {
 }
 ```
 
-Inside of `handleClick`, you'll notice we're calling a method you haven't seen before: the `setState` method. `setState` allows us to update the current state of our application by passing in an object containing the piece of state we want to update.
+Inside of `handleClick`, you'll notice we're calling a method you haven't seen before: the `setState` method. `setState` is a React method which allows us to update the current state of our application by passing in an object container the piece of state we want to update. In React, this is how we always want to update our state as opposed to directly altering state. We will explore this more in a later lesson.
 
 In this case, since we want to update `this.state.count`, we pass in an object with a key of `count` and a value of what we want to update `count` to, in this case, we want to set it to what it was before plus one.
 
@@ -215,7 +217,7 @@ While you still may see this approach done in the wild or in legacy code, we wil
 ```jsx
 // We start by declaring our new `Counter` component.
 class Counter extends Component {
-// In its constructor, we set the state of the component to include a `count` property with a initial value of 0.
+// In its constructor, we set the initial state of the component to include a `count` property with a value of 0.
   constructor() {
     super();
     this.state = {
@@ -223,11 +225,9 @@ class Counter extends Component {
     }
   }
 
-
-	// setState is a React method which forces the component to re-render. In React, this is how we always want to update our state as opposed to directly altering state. We will explore this in a further lesson.
   handleClick = () => {
     this.setState({
-			// retrieve our current state value and incease it by one value
+			// retrieve our current state value and increase it by one value
 		  count: this.state.count + 1
 		})
   }
@@ -245,6 +245,6 @@ class Counter extends Component {
   }
 }
 ```
-Since we are using arrow functions our event handler is automatically bound to the component instance so we do not need to worry about binding it in the constructor. You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
+Since we are using arrow functions our event handler is automatically bound to the component instance so we do not need to worry about binding it in the constructor. Now you'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
 
 And that's all there is to it! `onClick` is one of many different events that React can handle - there's also `onMouseOver`, `onMouseDown` etc. - [check out the React docs for the full list](https://facebook.github.io/react/docs/events.html).
