@@ -20,7 +20,7 @@ Next, we need to know how the responses of this API are delivered to us. Common 
 ## CORS or JSONP?
 Remember the "same origin policy" that prevents one domain from requesting data from another?  We need to find out if the API uses JSONP or CORS to get around that restriction. Since JSONP is a valid response format, we can use that.
 
-## Limitations & Authentication
+## Limitations & authentication
 To prevent spammy requests, most APIs have restrictions on who can make requests and how many requests can be made in a given time frame. You'll often need to sign up for an API key that authorizes you to make requests.  
 
 How do we get an API key? Under **Access to the API** it says:
@@ -51,7 +51,7 @@ provides us with clues as to how to use this API.
 
 The Rijksmusuem offers four different endpoints for us to work with. Endpoints determine which data set we are accessing. Here, we see we can access public data on the collection, web page content, user-created sets of art and an events calendar.
 
-## Exploring an Endpoint
+## Exploring an endpoint
 Let's take a look at the **Collections** endpoints.  Scrolling through, there are three different resources we can access.  
 
 `/api/[culture]/collection` for accessing the full collection<br>
@@ -66,7 +66,7 @@ Let's try making a request using the [Postman](https://www.getpostman.com/) app.
 
 Let's look at this together.
 
-### Getting Collection info
+### Getting collection info
 
 Add the /collection/ endpoint as the destination for our request and then click "Launch Request". hurl.it will format the response nicely.
 
@@ -81,7 +81,7 @@ The "collection" resource (JSON object) is composed of four properties.
 3. artObjects => array of objects
 
 
-### Refining results with Parameters
+### Refining results with parameters
 
 The count tells us there are thousands of results, but we're only getting back a few detailed listings. If we want to get more, we can add another parameter to our request (eg. `&p=2` after your API key and format parameters). Try adding that to postman and notice how the results change. 
 
