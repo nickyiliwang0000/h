@@ -137,32 +137,32 @@ console.log(myApp);
 <tr>
 <td>
 <pre lang="js">
-  const budgetApp = {};
+const budgetApp = {};
 
-  budgetApp.user = null;
-  budgetApp.budget = 3000;
+budgetApp.user = null;
+budgetApp.budget = 3000;
 
-  budgetApp.logIn = function() {
-    // sets user to something other than null
-  }
+budgetApp.logIn = function() {
+  // sets user to something other than null
+}
 
-  budgetApp.addExpense = function() {
-    // subtract from budget, base on expense input
-  }
+budgetApp.addExpense = function() {
+  // subtract from budget, base on expense input
+}
 </pre>
 </td>
 <td>
 <pre lang="js">
-  const budgetApp = {
-    user: null,
-    budget: 3000,
-    logIn: function () {
-      // sets user to something other than null
-    },
-    addExpense: function() {
-      // subtract from budget, base on expense input
-    }
-  };
+const budgetApp = {
+  user: null,
+  budget: 3000,
+  logIn: function () {
+    // sets user to something other than null
+  },
+  addExpense: function() {
+    // subtract from budget, base on expense input
+  }
+};
 </pre>
 </td>
 </tr>
