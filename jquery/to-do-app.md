@@ -4,7 +4,7 @@
 
 Let's create a to-do app using JavaScript and jQuery, following the steps below.
 
-Open up <a href="https://hychalknotes.s3.amazonaws.com/to-do-app.html" class="exercise" download>**to-do-app.html**</a> in your text editor and a browser. We've loaded in jQuery and gone ahead and added the skeleton markup required for the app.
+Open up [to-do-app.html](https://hychalknotes.s3.amazonaws.com/to-do-app.html) in your text editor and a browser. We've loaded in jQuery and gone ahead and added the skeleton markup required for the app.
 
 Here is what we want our app to do:
 
