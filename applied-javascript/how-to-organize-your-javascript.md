@@ -146,7 +146,7 @@ budgetApp.logIn = function() {
   // sets user to something other than null
 }
 budgetApp.addExpense = function() {
-  // subtract from budget, base on expense input
+  // subtract from budget based on user input
 }
 </pre>
 </td>
@@ -159,7 +159,7 @@ const budgetApp = {
     // sets user to something other than null
   },
   addExpense: function() {
-    // subtract from budget, base on expense input
+    // subtract from budget based on user input
   }
 };
 </pre>
