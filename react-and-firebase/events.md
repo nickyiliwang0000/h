@@ -25,7 +25,7 @@ class Button extends Component {
   }
 }
 ```
-The `this` keyword reprensts our `Button` component so we can think of our `handleClick` method as a property attached to the `Button` class. Then we write an event handler method inside of our component that describes what we want to happen when the button is clicked.
+The `this` keyword represents our `Button` component so we can think of our `handleClick` method as a property attached to the `Button` class. Then we write an event handler method inside of our component that describes what we want to happen when the button is clicked.
 
 ```jsx
 class Button extends Component {
@@ -46,11 +46,11 @@ class Button extends Component {
 
 _State_ describes the part of an application that changes over time.
 
-Think about your Facebook account. At any given point, you're either logged in or you're not logged in. Facebook needs to know which one is true so that you can either be shown the login screen or your personal profile.
+Think about your Netflix account. At any given point, you're either logged in or you're not logged in. Netflix needs to know which one is true so that you can either be shown the login screen or your personal profile.
 
-Information about your login status is stored inside of the **state** of the Facebook application.
+Information about your login status is stored inside of the **state** of the Netflix application.
 
-So somewhere, deep within the bowels of the code for Facebook, there's probably an object that looks like this:
+So somewhere, deep within the bowels of the code for Netflix, there's probably an object that looks like this:
 
 ```javascript
   user = {
@@ -187,7 +187,7 @@ class Counter extends Component {
 }
 ```
 
-Inside of `handleClick`, you'll notice we're calling a method you haven't seen before: the `setState` method. `setState` is a React method which allows us to update the current state of our application by passing in an object container the piece of state we want to update. In React, this is how we always want to update our state as opposed to directly altering state. We will explore this more in a later lesson.
+Inside of `handleClick`, you'll notice we're calling a method you haven't seen before: the `setState` method. `setState` is a React method which allows us to update the current state of our application by passing in an object containing the piece of state we want to update. In React, this is how we always want to update our state as opposed to directly altering state. We will explore this more in a later lesson.
 
 In this case, since we want to update `this.state.count`, we pass in an object with a key of `count` and a value of what we want to update `count` to, in this case, we want to set it to what it was before plus one.
 
