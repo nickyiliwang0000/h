@@ -1,4 +1,4 @@
-## Reading API Documentation
+# Reading API documentation
 
 Learning how an API works will take some time. Well documented APIs have enough information and examples to get you started. The examples should show how to make the request and what the response data looks like. Reading this stuff helps a lot. So it can't be stressed enough, **read the documentation carefully**.
 
@@ -8,19 +8,19 @@ Tips for reading API documentation:
 2. Look for information that you really need (covered below).
 3. Explore and play around (nothing beats hands-on experience).
 
-#### Find the API documentation
+## Find the API documentation
 To locate API docs, check to see if they're linked off the service's main page or try searching for the name of the service + "API".
 
 Let's try this with the Rijksmuseum API. You should be able to find 
 <http://rijksmuseum.github.io/>
 
-#### Response format
+## Response format
 Next we need to know how the responses of this API are delivered to us. Common formats you'll come across are XML and JSON. If we check the **Parameters** section of the docs, we see we can get a response in the following formats: *xml, json, jsonp* Try to stick to APIs that return JSON. It's the easiest to work with in JavaScript.
 
-#### CORS or JSONP?
+## CORS or JSONP?
 Remember the "same origin policy" that prevents one domain from requesting data from another?  We need to find out if the API uses JSONP or CORS to get around that restriction. Since JSONP is a valid response format, we can use that.
 
-#### Limitations & Authentication
+## Limitations & Authentication
 To prevent spammy requests, most APIs have restrictions on who can make requests and how many requests can be made in a given time frame. You'll often need to sign up for an API key that authorizes you to make requests.  
 
 How do we get an API key? Under **Access to the API** it says:
@@ -29,7 +29,7 @@ How do we get an API key? Under **Access to the API** it says:
 
 Head over to <https://www.rijksmuseum.nl/en/mijn/gegevens> and create an account. Change the language to English, then create a new account. Once logged in, visit your account settings and scroll down to the Advanced section. Fill out the required information. The request for an API key should be granted immediately. Save the API key somewhere safe.
 
-#### Base URI
+## Base URI
 This is a RESTful API so all requests should be structured something like this:
 
 `<base_url>/<endpoint>?params=value`
@@ -45,7 +45,7 @@ provides us with clues as to how to use this API.
 `/sk-c-5` is the **ID of a single item** in the collection<br>
 `?key=fakekey&format=json` are **query string parameters** that get passed along with our request to specify additional information. The docs here state that every API request should specify a key and a format.
 
-#### Endpoints
+## Endpoints
 
 The Rijksmusuem offers four different endpoint for us to work with. Endpoints determine which data set we are accessing. Here, we see we can access public data on the collection, web page content, user created sets of art, and an events calendar.
 
@@ -56,13 +56,15 @@ Let's take a look at the **Collections** endpoints.  Scrolling though, there are
 `/api/[culture]/collection/[object-number]` for accessing a particular item<br>
 `/api/[culture]/collection/[object-number]/tiles` for accessing image data as a set of tiles of a particular item<br>
 
-#### Playing around with an API
+## Playing around with an API
 
-Let's try making a request using [Postman](https://www.getpostman.com/), an app for testing out HTTP requests. 
+Lets try making a request using the [Postman](https://www.getpostman.com/) app. Postman will provide us with a friendly GUI (graphical user interface) where we can build HTTP requests and get back detailed responses.
+
+![](https://hychalknotes.s3.amazonaws.com/postman-min.png)
 
 Let's look at this together.
 
-#### Getting Collection info
+### Getting Collection info
 
 Add the /collection/ endpoint as the destination for our request and then click "Launch Request". hurl.it will format the response nicely.
 
@@ -77,7 +79,7 @@ The "collection" resource (JSON object) is composed of four properties.
 3. artObjects => array of objects
 
 
-#### Refining results with Parameters
+### Refining results with Parameters
 
 The count tells us there are thousands of results, but we're only getting back a few detailed listings. If we want to get the more, we can add another parameter to our request (eg. `&p=2` after your API key and format parameters). Try adding that to postman and notice how the results change. 
 
@@ -104,18 +106,18 @@ The artObjects now shows the 3 pieces we asked for and some brief info on each o
     }
 ```
 
-
 If we wanted to get more information about this particular art item then the `objectNumber` from the original results will be handy. We can make another request, this time to `/collection/[objectNumber]`, to get more detailed info.
 
 Similarly, we can retrieve the tiled image data by making a new request to 
 `collection/[objectNumber]/tiles`
 
-##### More parameters
+#### More parameters
+
 Note that there are lots more options for refining results. You can search by artist, media, colours etc. Be sure to explore all the API docs to find out what it's capable of!
 
 ![](https://i.cloudup.com/NQP7-dZyf7.png)
 
-#### Wrap up
+## Wrap up
 
 - We know how to make requests to the Rijksmuseum API
 - We know how the response data is structured
