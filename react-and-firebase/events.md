@@ -69,14 +69,14 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        You are visitor number 57.
+        <p>You are visitor number 57.</p>
       </div>
     )
   }
 }
 ```
 
-Let's imagine that we have some mechanism that can keep track of how many people have visited my page. As people visit my site, the number 57 is going to need to be updated (i.e. it is the part of our application that changes over time). This is a sign that it's a good candidate to be stored in state.
+Let's imagine that we have some mechanism that can keep track of how many people have visited our page. As people visit the site, the number 57 is going to need to be updated (i.e. it is the part of our application that changes over time). This is a sign that it's a good candidate to be stored in state.
 
 Here's how we would move the information about our visitors into our state:
 
@@ -87,7 +87,6 @@ class Counter extends Component {
     // when using the extends keyword, the super method is required to gain access the special stuff that comes with being a React component
     super();
 
-    // anything inside curly brackets is vanilla JavaScript - here we are accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. 
     this.state = {
       visitors: 0
     }
@@ -95,7 +94,8 @@ class Counter extends Component {
 
   render() {
     <div>
-      You are visitor number {this.state.visitors}.
+      {/* anything inside curly brackets is vanilla JavaScript - here we are accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. */}
+      <p>You are visitor number {this.state.visitors}.</p>
     </div>
   }
 }
