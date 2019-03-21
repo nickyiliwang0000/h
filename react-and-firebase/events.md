@@ -50,7 +50,7 @@ Think about your Netflix account. At any given point, you're either logged in or
 
 Information about your login status is stored inside of the **state** of the Netflix application.
 
-So somewhere, deep within the bowels of the code for Netflix, there's probably an object that looks like this:
+So somewhere, nestled in the codebase of Netflix, there's probably an object that looks like this:
 
 ```javascript
   user = {
