@@ -130,42 +130,42 @@ console.log(myApp);
 ```
 
 <table>
-  <tr>
-    <th>Creating properties outside the object</th>
-    <th>Creating properties inside the object</th>
-  </tr>
-  <tr>
-    <td>
-      <pre lang="js">
-        const budgetApp = {};
+<tr>
+<th>Creating properties outside the object</th>
+<th>Creating properties inside the object</th>
+</tr>
+<tr>
+<td>
+<pre lang="js">
+  const budgetApp = {};
 
-        budgetApp.user = null;
-        budgetApp.budget = 3000;
+  budgetApp.user = null;
+  budgetApp.budget = 3000;
 
-        budgetApp.logIn = function() {
-          // sets user to something other than null
-        }
+  budgetApp.logIn = function() {
+    // sets user to something other than null
+  }
 
-        budgetApp.addExpense = function() {
-          // subtract from budget, base on expense input
-        }
-      </pre>
-    </td>
-    <td>
-      <pre lang="js">
-        const budgetApp = {
-          user: null,
-          budget: 3000,
-          logIn: function () {
-            // sets user to something other than null
-          },
-          addExpense: function() {
-            // subtract from budget, base on expense input
-          }
-        };
-      </pre>
-    </td>
-  </tr>
+  budgetApp.addExpense = function() {
+    // subtract from budget, base on expense input
+  }
+</pre>
+</td>
+<td>
+<pre lang="js">
+  const budgetApp = {
+    user: null,
+    budget: 3000,
+    logIn: function () {
+      // sets user to something other than null
+    },
+    addExpense: function() {
+      // subtract from budget, base on expense input
+    }
+  };
+</pre>
+</td>
+</tr>
 </table>
 
 ### The `init` method
