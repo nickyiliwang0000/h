@@ -1,6 +1,6 @@
 # How to organize your JavaScript
 
-## Javascript organization
+## JavaScript organization
 
 As you add more lines and functionality to your JS code, it can start to get a little unruly. 
 
@@ -40,7 +40,7 @@ On the other hand, variables declared inside a function have **local** scope. Me
 The global variable `planet` is accessible within the function.
 
 ```js
-let planet = "Earth";
+const planet = "Earth";
 
 function whereAmI(){
   console.log(planet);
@@ -52,10 +52,10 @@ whereAmI(); //logs "Earth"
 The `planet` variable that is printed is the value that is scoped to the function it was called from.
 
 ```js
-let planet = "Earth";
+const planet = "Earth";
 
 function whereAmI(){
-  let planet = "Mars";
+  const planet = "Mars";
   console.log(planet);
 }
 
@@ -66,7 +66,7 @@ The `destination` variable is locally scoped to the `chooseDestination` function
 
 ```js
 function chooseDestination(){
-  let destination = "The Moon";
+  const destination = "The Moon";
 }
 
 function launchRocket(){
@@ -129,6 +129,44 @@ myApp.displayTweets = function(){
 console.log(myApp);
 ```
 
+<table>
+  <tr>
+    <th>Creating properties outside the object</th>
+    <th>Creating properties inside the object</th>
+  </tr>
+  <tr>
+    <td>
+      <pre lang="js">
+        const budgetApp = {};
+
+        budgetApp.user = null;
+        budgetApp.budget = 3000;
+
+        budgetApp.logIn = function() {
+          // sets user to something other than null
+        }
+
+        budgetApp.addExpense = function() {
+          // subtract from budget, base on expense input
+        }
+      </pre>
+    </td>
+    <td>
+      <pre lang="js">
+        const budgetApp = {
+          user: null,
+          budget: 3000,
+          logIn: function () {
+            // sets user to something other than null
+          },
+          addExpense: function() {
+            // subtract from budget, base on expense input
+          }
+        };
+      </pre>
+    </td>
+  </tr>
+</table>
 
 ### The `init` method
 
