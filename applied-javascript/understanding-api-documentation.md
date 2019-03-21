@@ -15,7 +15,7 @@ Let's try this with the Rijksmuseum API. You should be able to find
 <http://rijksmuseum.github.io/>
 
 ## Response format
-Next we need to know how the responses of this API are delivered to us. Common formats you'll come across are XML and JSON. If we check the **Parameters** section of the docs, we see we can get a response in the following formats: *xml, json, jsonp* Try to stick to APIs that return JSON. It's the easiest to work with in JavaScript.
+Next, we need to know how the responses of this API are delivered to us. Common formats you'll come across are XML and JSON. If we check the **Parameters** section of the docs, we see we can get a response in the following formats: *xml, json, jsonp* Try to stick to APIs that return JSON. It's the easiest to work within JavaScript.
 
 ## CORS or JSONP?
 Remember the "same origin policy" that prevents one domain from requesting data from another?  We need to find out if the API uses JSONP or CORS to get around that restriction. Since JSONP is a valid response format, we can use that.
@@ -49,10 +49,10 @@ provides us with clues as to how to use this API.
 
 ## Endpoints
 
-The Rijksmusuem offers four different endpoint for us to work with. Endpoints determine which data set we are accessing. Here, we see we can access public data on the collection, web page content, user created sets of art, and an events calendar.
+The Rijksmusuem offers four different endpoints for us to work with. Endpoints determine which data set we are accessing. Here, we see we can access public data on the collection, web page content, user-created sets of art and an events calendar.
 
 ## Exploring an Endpoint
-Let's take a look at the **Collections** endpoints.  Scrolling though, there are three different resources we can access.  
+Let's take a look at the **Collections** endpoints.  Scrolling through, there are three different resources we can access.  
 
 `/api/[culture]/collection` for accessing the full collection<br>
 `/api/[culture]/collection/[object-number]` for accessing a particular item<br>
@@ -60,7 +60,7 @@ Let's take a look at the **Collections** endpoints.  Scrolling though, there are
 
 ## Playing around with an API
 
-Lets try making a request using the [Postman](https://www.getpostman.com/) app. Postman will provide us with a friendly GUI (graphical user interface) where we can build HTTP requests and get back detailed responses.
+Let's try making a request using the [Postman](https://www.getpostman.com/) app. Postman will provide us with a friendly GUI (graphical user interface) where we can build HTTP requests and get back detailed responses.
 
 ![](https://hychalknotes.s3.amazonaws.com/postman-min.png)
 
@@ -72,7 +72,7 @@ Add the /collection/ endpoint as the destination for our request and then click 
 
 Destination: https://www.rijksmuseum.nl/api/en/collection/
 
-In postman make sure you click params beside the URL and add `key` as a URL param with your API key, then it send.
+In postman make sure you click params beside the URL and add `key` as a URL param with your API key, then hit send.
 
 The "collection" resource (JSON object) is composed of four properties.
 
@@ -83,9 +83,9 @@ The "collection" resource (JSON object) is composed of four properties.
 
 ### Refining results with Parameters
 
-The count tells us there are thousands of results, but we're only getting back a few detailed listings. If we want to get the more, we can add another parameter to our request (eg. `&p=2` after your API key and format parameters). Try adding that to postman and notice how the results change. 
+The count tells us there are thousands of results, but we're only getting back a few detailed listings. If we want to get more, we can add another parameter to our request (eg. `&p=2` after your API key and format parameters). Try adding that to postman and notice how the results change. 
 
-This API also allows us to specify how many posts per page we want to retrieve. Try adding a the post per page parameter `ps` with a small value like `3` and see how what you get back. Limiting the amount of data we initially retrieve is often referred to as pagination. This practice improves response times and helps make the response data easier to handle.
+This API also allows us to specify how many posts per page we want to retrieve. Try adding the post per page parameter `ps` with a small value like `3` and see how what you get back. Limiting the amount of data we initially retrieve is often referred to as pagination. This practice improves response times and helps make the response data easier to handle.
 
 The artObjects now shows the 3 pieces we asked for and some brief info on each of them. Here's some of the data for a single one:
 
