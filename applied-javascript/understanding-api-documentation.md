@@ -29,6 +29,8 @@ How do we get an API key? Under **Access to the API** it says:
 
 Head over to <https://www.rijksmuseum.nl/en/mijn/gegevens> and create an account. Change the language to English, then create a new account. Once logged in, visit your account settings and scroll down to the Advanced section. Fill out the required information. The request for an API key should be granted immediately. Save the API key somewhere safe.
 
+![](https://hychalknotes.s3.amazonaws.com/Rijksmuseum-api-profile.png)
+
 ## Base URI
 This is a RESTful API so all requests should be structured something like this:
 
