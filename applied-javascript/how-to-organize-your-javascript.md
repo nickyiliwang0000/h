@@ -140,14 +140,11 @@ We can define properties outside or directly inside the global object. Both will
 <td>
 <pre lang="js">
 const budgetApp = {};
-
 budgetApp.user = null;
 budgetApp.budget = 3000;
-
 budgetApp.logIn = function() {
   // sets user to something other than null
 }
-
 budgetApp.addExpense = function() {
   // subtract from budget, base on expense input
 }
