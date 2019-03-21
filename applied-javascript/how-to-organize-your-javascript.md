@@ -129,6 +129,8 @@ myApp.displayTweets = function(){
 console.log(myApp);
 ```
 
+We can define properties outside or directly inside the global object. Both will achieve the same results, however it is more common to see these properties defined outside of our global object. As your app gets more complicated, you may find defining the properties outside of the object, easier to read.
+
 <table>
 <tr>
 <th>Creating properties outside the object</th>
