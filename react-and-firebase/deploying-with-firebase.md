@@ -13,11 +13,13 @@ In the past, when we've wanted to launch our sites on the web, we have needed to
 
 When we are using `create-react-app`, we will want to run the `build` script before deploying in order to generate a version of our project that is optimized for performance.
 
-To do this, go into the root folder of your React application in the terminal, run `npm run build`. When this is complete, there will be a new `/build` folder in your project's root directory.
+To do this, go into the root folder of your React application in the terminal, run `npm run build`. When this is complete, there will be a new `/build` folder in your project's root directory. Always ensure there are no fatal errors that exist in your codebase or elese the `build` process will not finish successfully. 
 
-Firebase provides us with a _command line interface_ (CLI) that will take care of deploying our app for us. The process is simple:
+Firebase has its own _command line interface_ (CLI) that will take care of deploying our app for us. The process is simple:
 
 ## Firebase deployment steps
+
+### New Project
 
 1. Open the terminal, and navigate to your project folder.
 
@@ -56,5 +58,7 @@ Hosting URL: https://movie-catalogue-6f972.firebaseapp.com
 ```
 
 And that's all there is to it! 🔥Firebase app deployed🔥
+
+### Updating an existing project
 
 For create-react-app: If you want to make updates to your project, do so. Then, when you're ready to re-deploy , run `npm run build` again, and then run `firebase deploy`.
