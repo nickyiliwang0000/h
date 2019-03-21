@@ -198,9 +198,9 @@ Why only put the `widgetApp.init()` method in the document ready? Well if we put
 
 ```js
 $(function() {
-	const widgetApp = {};
-	...
-	widgetApp.init();
+  const widgetApp = {};
+  ...
+  widgetApp.init();
 });
 ```
 
