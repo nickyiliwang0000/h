@@ -1,6 +1,6 @@
 # Reading API documentation
 
-Learning how an API works will take some time. Well documented APIs have enough information and examples to get you started. The examples should show how to make the request and what the response data looks like. Reading this stuff helps a lot. So it can't be stressed enough, **read the documentation carefully**.
+Learning how an API works will take some time. Well documented APIs have enough information and examples to get you started. The examples should show how to make the request and what the response data looks like. Spending time reading this information helps a lot. So it can't be stressed enough, **read the documentation carefully**.
 
 Tips for reading API documentation: 
 
@@ -25,7 +25,7 @@ To prevent spammy requests, most APIs have restrictions on who can make requests
 
 How do we get an API key? Under **Access to the API** it says:
 
-> You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your Rijksstudio account. You will then immediately be given a code. You will need this code to use the APIs.
+> To access the data and images, you will first need to obtain an API key. You can do this via the advanced settings of your Rijksstudio account. You will be given a key instantly upon request. Every request to the API must be accompanied by this key.
 
 Head over to <https://www.rijksmuseum.nl/en/mijn/gegevens> and create an account. Change the language to English, then create a new account. Once logged in, visit your account settings and scroll down to the Advanced section. Fill out the required information. The request for an API key should be granted immediately. Save the API key somewhere safe.
 
@@ -108,8 +108,7 @@ The artObjects now shows the 3 pieces we asked for and some brief info on each o
 
 If we wanted to get more information about this particular art item then the `objectNumber` from the original results will be handy. We can make another request, this time to `/collection/[objectNumber]`, to get more detailed info.
 
-Similarly, we can retrieve the tiled image data by making a new request to 
-`collection/[objectNumber]/tiles`
+Similarly, we can retrieve the tiled image data by making a new request to `collection/[objectNumber]/tiles`.
 
 #### More parameters
 
