@@ -83,7 +83,7 @@ The "collection" resource (JSON object) is composed of four properties.
 
 The count tells us there are thousands of results, but we're only getting back a few detailed listings. If we want to get the more, we can add another parameter to our request (eg. `&p=2` after your API key and format parameters). Try adding that to postman and notice how the results change. 
 
-This API also allows us to specify how many posts per page we want to retrieve. Try adding a the post per page parameter `ps` with a small value like `3` and see how what you get back.
+This API also allows us to specify how many posts per page we want to retrieve. Try adding a the post per page parameter `ps` with a small value like `3` and see how what you get back. Limiting the amount of data we initially retrieve is often referred to as pagination. This practice improves response times and helps make the response data easier to handle.
 
 The artObjects now shows the 3 pieces we asked for and some brief info on each of them. Here's some of the data for a single one:
 
