@@ -238,7 +238,7 @@ class Counter extends Component {
         {this.state.count}
 
         {/* added a event listener by adding an `onClick` attribute and passing in the `handleClick` method as its value. When the increment counter button is clicked, `this.handleClick` is called */}
-        <button onClick={ this.handleClick }>Increment counter!</button>
+        <button onClick={this.handleClick}>Increment counter!</button>
       </div>
     )
   }
