@@ -15,11 +15,11 @@ When we are using `create-react-app`, we will want to run the `build` script bef
 
 To do this, go into the root folder of your React application in the terminal, run `npm run build`. When this is complete, there will be a new `/build` folder in your project's root directory. Always ensure there are no fatal errors that exist in your codebase or else the `build` process will not finish successfully. 
 
-Firebase has its own _command line interface_ (CLI) that will take care of deploying our app for us. The process is simple:
+Firebase has its own _command line interface_ (CLI) that will take care of deploying our app for us.
 
 ## Firebase deployment steps
 
-### New Project
+### New project
 
 1. Open the terminal, and navigate to your project folder.
 
