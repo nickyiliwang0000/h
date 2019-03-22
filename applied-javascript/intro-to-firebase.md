@@ -353,7 +353,7 @@ $(document).ready(function(){
 });
 ```
 
-Our database needs to know about any new to-do items. When a user submits a to-do, instead of just appending it on the page, we will want to push it to Firebase. 
+Our database needs to know about any new to-do items. When a user submits a new to-do, instead of just appending it on the page, we will want to push it to Firebase. In addition to knowing the description of the to-do, we also need to keep track the completion status of each to-do. Let's organize the data for each to-dp in an object before pushing it to Firebase. 
 
 ```js
 $('form').on('submit', function(e) {
@@ -378,6 +378,38 @@ $('form').on('submit', function(e) {
 });
 
 ```
+
+Next, we will want to display all the to-dos on our page. All of our to-dos will live in Firebase, so we will have to listen for whenever a new todo is added and put it on the page. We're going to use Firebase's `.on()` method to listen for any changes made to our database. `.on()` takes 
+
+```js
+dbRef.on('value', (data) => {
+  // creating a variable, inside of this variable we're going to take the argument that was passed in by on(), and call the .val() method on it, to get a snapshot of our database - which is a big object!
+  const toDoData = data.val();
+
+  console.log(toDoData)
+})
+
+```
+
+We eventually want to map over our data and render a `li` element on the page for each to-do. Unfortunately the `map()` method could only be called on arrays. Let's convert our data object into an array. We're going to use a `for` in loop to `push()` each to-dos into an empty array.
+
+```js
+dbRef.on('value', (data) => {
+  // creating a variable, inside of this variable we're going to take the argument that was passed in by on(), and call the .val() method on it, to get a snapshot of our database - which is a big object!
+  const toDoData = data.val();
+
+  const arrayOfToDos = [];
+
+  for(prop in toDoData) {
+    arrayOfToDos.push(`<li><span class="fa fa-square-o"></span>${toDoData[prop].description}</li>`)
+  }
+
+})
+
+```
+
+Now that we have this array of li
+
 
 
 
