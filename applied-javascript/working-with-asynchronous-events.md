@@ -21,11 +21,11 @@ $.ajax({
   dataType: 'jsonp'
 }).then((weatherConditions) => {
   $.ajax({
-      url: 'https://api.recipes.com/'+ weatherConditions,
-      type: 'GET',
-      dataType: 'jsonp'
+    url: 'https://api.recipes.com/'+ weatherConditions,
+    type: 'GET',
+    dataType: 'jsonp'
   }).then((data)  => {
-      // do something
+    // do something
   });
 });
 ```
@@ -44,17 +44,17 @@ $.ajax({
     dataType: 'jsonp'
   }).then((data) => {
     $.ajax({
-        url: 'api.github.com/user/hackeryou',
+      url: 'api.github.com/user/hackeryou',
+      type: 'GET',
+      dataType: 'jsonp'
+    }).then((data) => {
+      $.ajax({
+        url: 'developers.facebook.com/api/',
         type: 'GET',
         dataType: 'jsonp'
-    }).then((data) => {
-        $.ajax({
-            url: 'developers.facebook.com/api/',
-            type: 'GET',
-            dataType: 'jsonp'
-        }).then((data) => {
-            // more AJAX calls
-        });
+      }).then((data) => {
+        // more AJAX calls
+      });
     });
   });
 });
@@ -90,15 +90,15 @@ const myPromise = new Promise( (fulfill, reject) => {
 To invoke a promise, you need to let the browser know what happens when the data comes back using the `.then()` method:
 
 ```js
-myPromise.then( (goodResult) =>{
-    // goodResult is a variable whose value is 
-    // whatever we defined in the fulfill function when we created the promise
-      console.log(goodResult);
-    }).catch(error =>{
-       // error is a variable whose value is 
-       // whatever we defined in the reject function when we created the promise
-      console.log(error)
-    })
+myPromise.then( (goodResult) => {
+  // goodResult is a variable whose value is 
+  // whatever we defined in the fulfill function when we created the promise
+    console.log(goodResult);
+  }).catch(error =>{
+      // error is a variable whose value is 
+      // whatever we defined in the reject function when we created the promise
+    console.log(error)
+  })
 ```
 
 Promises are supported in all modern browsers, but some older ones may require you to use a promise library; jQuery has one built into it. We're already very familiar with one function that returns a promise: the `$.ajax()` method!
@@ -108,11 +108,11 @@ Download [pokemon-promise-example.html](https://hychalknotes.s3.amazonaws.com/po
 You'll see that instead of using a success callback like this:
 ```js
 $.ajax({
-    url: 'https://www.weather.com/toronto',
-    type: 'GET',
-    dataType: 'jsonp'
+  url: 'https://www.weather.com/toronto',
+  type: 'GET',
+  dataType: 'jsonp'
 }).then((data) => {
-  console.log(data)
+    console.log(data)
 });
 ```
 ...we're **storing the AJAX request in a variable**. Doing so tells our code that we **promise** we won't try to  run the `.then()` function without knowing what the AJAX call returned. It's important to note that the variable **does not yet** contain the returned data.
@@ -130,7 +130,7 @@ pokemonApp.getPokemon = $.ajax({
 jQuery's `$.when()` method _listens_ for when a promise is either fulfilled or rejected. The JavaScript method `.then()` tells the browser what to do with the data returned from the promise.
 
 ```js
-$.when(pokemonApp.getPokemon).then((caughtPokemon)  => {
+$.when(pokemonApp.getPokemon).then((caughtPokemon) => {
   console.log(caughtPokemon);
 });
 ```
@@ -155,11 +155,12 @@ Sometimes, APIs don't return the information we want. Right now we have no way t
 
 Here's an example of a `.then()` function with two callbacks: the first one (the fulfill callback) has a parameter called `caughtPokemon`, and the second one (the reject callback) takes the argument that's passed as the `err` parameter and logs it:
 ```js
-$.when(pokemonApp.getPokemon).then((caughtPokemon) => {
-  console.log(caughtPokemon);
-}, function(err) {
-  console.log(err);
-});
+$.when(pokemonApp.getPokemon)
+  .then((caughtPokemon) => {
+    console.log(caughtPokemon);
+  }, function(err) {
+    console.log(err);
+  });
 ```
 This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`:
 ```js
@@ -198,9 +199,9 @@ $.when(pokemonApp.pokemonOne, pokemonApp.pokemonTwo)
   // use the results of those promises
   .then((caughtPokemonOne, caughtPokemonTwo) => {
     // and show them to us
-   console.log(caughtPokemonOne, caughtPokemonTwo);
+    console.log(caughtPokemonOne, caughtPokemonTwo);
   })
- // if we don't catch 'em all, show us an error
+  // if we don't catch 'em all, show us an error
   .fail((err1, err2) => {
     console.log(err1, err2);
   });
@@ -453,6 +454,7 @@ This is another way to structure your code when you need to get one bit of infor
 * Here's a [video](https://youtu.be/j2DMwUYEC88?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX) about a bunch of things you can do with the spread operator.
 * Here's a nice flowchart from MDN showing life of a promise.
   ![Diagram of the life of a JavaScript promise](https://user-images.githubusercontent.com/8013918/51422191-6bcaf780-1b78-11e9-8dd0-bd8d7b19fae9.png)
+* Here's a [talk](https://www.youtube.com/watch?v=9YkUCxvaLEk) on async and await by instructor Wes Bos. 
 
 ## Spread and rest exercises
 Looking for more practice with spread and rest? Download [spread-rest-exercises.zip](https://hychalknotes.s3.amazonaws.com/spread-rest-exercises.zip) to get started. Feel free to tackle these on your own time. There's an answer key included in case you get stuck! 
