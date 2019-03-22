@@ -16,17 +16,17 @@ We **could** run the first AJAX request and put the second AJAX request in its c
 
 ```js
 $.ajax({
-    url: 'https://www.weather.com/toronto',
-    type: 'GET',
-    dataType: 'jsonp'
+  url: 'https://www.weather.com/toronto',
+  type: 'GET',
+  dataType: 'jsonp'
 }).then((weatherConditions) => {
-    $.ajax({
-        url: 'https://api.recipes.com/'+ weatherConditions,
-        type: 'GET',
-        dataType: 'jsonp'
-    }).then((data)  => {
-        // do something
-    });
+  $.ajax({
+      url: 'https://api.recipes.com/'+ weatherConditions,
+      type: 'GET',
+      dataType: 'jsonp'
+  }).then((data)  => {
+      // do something
+  });
 });
 ```
 This isn't ideal because we need to wait for the response from `https://www.weather.com/toronto` to come back before we can make a call to `https://api.recipes.com/`, which could be a long time. Also, what if we had to complete 10 API calls in sequence?  
@@ -34,29 +34,29 @@ This isn't ideal because we need to wait for the response from `https://www.weat
 Something like this:
 ```js
 $.ajax({
-    url: 'https://www.weather.com/toronto',
+  url: 'https://www.weather.com/toronto',
+  type: 'GET',
+  dataType: 'jsonp'
+}).then((weatherConditions) => {
+  $.ajax({
+    url: 'https://api.recipes.com/'+ weatherConditions,
     type: 'GET',
     dataType: 'jsonp'
-}).then((weatherConditions) => {
+  }).then((data) => {
     $.ajax({
-        url: 'https://api.recipes.com/'+ weatherConditions,
+        url: 'api.github.com/user/hackeryou',
         type: 'GET',
         dataType: 'jsonp'
     }).then((data) => {
         $.ajax({
-            url: 'api.github.com/user/hackeryou',
+            url: 'developers.facebook.com/api/',
             type: 'GET',
             dataType: 'jsonp'
         }).then((data) => {
-            $.ajax({
-                url: 'developers.facebook.com/api/',
-                type: 'GET',
-                dataType: 'jsonp'
-            }).then((data) => {
-                // more AJAX calls
-            });
+            // more AJAX calls
         });
     });
+  });
 });
 ```
 Chaining functions like this (i.e. so that they are executed from top to bottom in a file), is lovingly referred to as [callback hell](http://callbackhell.com).
@@ -77,7 +77,7 @@ To write a promise from scratch, you need three things:
 
 ```js
 // here we create the promise and name the functions we will run when the promise is filfulled or rejected
-let myPromise = new Promise( (fulfill, reject) => {
+const myPromise = new Promise( (fulfill, reject) => {
   // here we say what will be returned from the promise if it is fulfilled
   fulfill('successful!')
   // here we say what will be returned from the promise if it is rejected
@@ -118,7 +118,7 @@ $.ajax({
 ...we're **storing the AJAX request in a variable**. Doing so tells our code that we **promise** we won't try to  run the `.then()` function without knowing what the AJAX call returned. It's important to note that the variable **does not yet** contain the returned data.
 
 ```js
-let pokemonApp = {};
+const pokemonApp = {};
 pokemonApp.url = 'http://pokeapi.co/api/v2/pokemon/1/';
 
 pokemonApp.getPokemon = $.ajax({
@@ -136,7 +136,7 @@ $.when(pokemonApp.getPokemon).then((caughtPokemon)  => {
 ```
 Because we only have one promise, can omit `$.when()` and write:
 ```js
-let pokemonApp = {};
+const pokemonApp = {};
 pokemonApp.url = 'http://pokeapi.co/api/v2/pokemon/1/';
 
 pokemonApp.getPokemon = $.ajax({
@@ -287,8 +287,8 @@ add(2,3,4,5,6,7)
 ```
 You'd probably end up writing a function that looks like this:
 ```js
-let add = function() {
-  let numbers = Array.prototype.slice.call(arguments);
+const add = function() {
+  const numbers = Array.prototype.slice.call(arguments);
   return numbers.reduce( (a,b) => a + b );
 };
 ```
@@ -297,7 +297,7 @@ Whattttttt in the world does `Array.prototype.slice.call(arguments)` mean?! `arg
 
 Check this out in the console:
 ```js
-let add = function() {
+const add = function() {
   console.log(arguments)
 };
 // add(1,2,3)
@@ -314,7 +314,7 @@ The `arguments` object, like all objects in JavaScript (and everything in JavaSc
 Rest parameters make that whole thing much faster! Using the syntax `...` before the name of the variable that is an array-like object of values, you can turn whatever the `arguments` of the function are into an actual array!
 
 ```js
-let add = function(...numbers) {
+const add = function(...numbers) {
   return numbers.reduce( (a,b) => a + b );
 };
 add(2,3,4,5,6,7);
@@ -340,23 +340,23 @@ The _spread operator_ allows us to pass an array of arguments into a function as
 
 Imagine you wanted to find the highest of the numbers in an array using `Math.max`:
 ```js
-let numbers = [39,25,90,123];
-let max = Math.max(numbers);
+const numbers = [39,25,90,123];
+const max = Math.max(numbers);
 console.log(max); // NaN
 ```
 
 You can't! `Math.max` is a method that accepts a comma separated list of values returns the max. It doesn't know what to do when we pass it an array. In the old days, the way get around this was a method called `.apply` that takes an array and calls a function on each item in the array.
 
 ```js
-let numbers = [39,25,90,123];
-let max = Math.max.apply(null,numbers);
+const numbers = [39,25,90,123];
+const max = Math.max.apply(null,numbers);
 console.log(max); // 123
 ```
 Like rest parameters, the spread operator is also denoted by `...`.
 
 ```js
-let numbers = [39,25,90,123];
-let max = Math.max(...numbers);
+const numbers = [39,25,90,123];
+const max = Math.max(...numbers);
 console.log(max); // 123
 ```
 
@@ -385,12 +385,12 @@ This will allow us to take all the data and do something with it! One thing to t
 We just want that `DataObject`, so let's make one last change to the code above so it only gives us the thing we want:
 
 ```javascript
-  $.when(...pokeBag)
-    .then((...args) => {
-      args = args.map(pokemon => 
-        console.log(pokemon[0])
-      );
-    });
+$.when(...pokeBag)
+  .then((...args) => {
+    args = args.map(pokemon => 
+      console.log(pokemon[0])
+    );
+  });
 ```
 
 Now we just have an array of the data we want! 😚👌 
@@ -406,25 +406,25 @@ Let's look at an example:
 ```js
 const getPokemon = (id) => {
   return $.ajax({
-        url: `https://pokeapi.co/api/v2/pokemon/${id}`,
-        method: 'GET',
-        dataType: 'json'
-    });
+    url: `https://pokeapi.co/api/v2/pokemon/${id}`,
+    method: 'GET',
+    dataType: 'json'
+  });
 };
 
 const getType = (name) => {
-    return $.ajax({
-        url: `https://pokeapi.co/api/v2/type/${name}`,
-        method: 'GET',
-        dataType: 'json'
-    });
+  return $.ajax({
+    url: `https://pokeapi.co/api/v2/type/${name}`,
+    method: 'GET',
+    dataType: 'json'
+  });
 };
 
 async function getData() {
-    const firstPokemon = await getPokemon(1);
-    const type = await getType(firstPokemon.types[0].type.name);
+  const firstPokemon = await getPokemon(1);
+  const type = await getType(firstPokemon.types[0].type.name);
 
-    console.log(type);
+  console.log(type);
 };
 
 getData();
@@ -453,3 +453,6 @@ This is another way to structure your code when you need to get one bit of infor
 * Here's a [video](https://youtu.be/j2DMwUYEC88?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX) about a bunch of things you can do with the spread operator.
 * Here's a nice flowchart from MDN showing life of a promise.
   ![Diagram of the life of a JavaScript promise](https://user-images.githubusercontent.com/8013918/51422191-6bcaf780-1b78-11e9-8dd0-bd8d7b19fae9.png)
+
+## Spread and rest exercises
+Looking for more practice with spread and rest? Download [spread-rest-exercises.zip](https://hychalknotes.s3.amazonaws.com/spread-rest-exercises.zip) to get started. Feel free to tackle these on your own time. There's an answer key included in case you get stuck! 
