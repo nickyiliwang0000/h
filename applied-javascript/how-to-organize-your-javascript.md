@@ -136,6 +136,43 @@ myApp.displayTweets = function(){
 console.log(myApp);
 ```
 
+We can define properties outside or directly inside the global object. Both will achieve the same results, however it is more common to see these properties defined outside of our global object. As your app gets more complicated, you may find defining the properties outside of the object easier to read.
+
+<table>
+<tr>
+<th>Creating properties outside the object</th>
+<th>Creating properties inside the object</th>
+</tr>
+<tr>
+<td>
+<pre lang="js">
+const budgetApp = {};
+budgetApp.user = null;
+budgetApp.budget = 3000;
+budgetApp.logIn = function() {
+  // sets user to something other than null
+}
+budgetApp.addExpense = function() {
+  // subtract from budget based on user input
+}
+</pre>
+</td>
+<td>
+<pre lang="js">
+const budgetApp = {
+  user: null,
+  budget: 3000,
+  logIn: function () {
+    // sets user to something other than null
+  },
+  addExpense: function() {
+    // subtract from budget based on user input
+  }
+};
+</pre>
+</td>
+</tr>
+</table>
 
 ### The `init` method
 

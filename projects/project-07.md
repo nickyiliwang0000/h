@@ -6,9 +6,9 @@ Tuesday, March 19th, 1:00 p.m.
 Your goal for this week is to build yourself a beautiful portfolio of all your ✨amazing✨ work!
 
 ## Design
-The point of your portfolio is to showcase your development skills. As such, we encourage you to code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](https://themeforest.net/?ref=HackerYou) (don't bother with WordPress themes - we want to write our own CSS). You will choose a PSD of a portfolio site design that you like and check with Melissa to make sure a recent grad hasn't used the same one. Once Melissa has approved your design, post the link in Basecamp so no one else can use that design. 
+The point of your portfolio is to showcase your development skills. As such, we encourage you to code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](https://themeforest.net/?ref=HackerYou) (don't bother with WordPress themes - we want to write our own CSS). You will choose a PSD of a portfolio site design that you like and check with Fatima to make sure a recent grad hasn't used the same one. Once Fatima has approved your design, post the link in Basecamp so no one else can use that design. 
 
-If you are a designer/want to design your own portfolio, you MUST get approval from Melissa. 
+If you are a designer/want to design your own portfolio, you MUST get approval from Fatima. 
 
 ### Some previous examples
 * [http://angelalagao.com/](http://angelalagao.com/)

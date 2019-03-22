@@ -1,4 +1,4 @@
-# React Events
+# React events
 
 An _event_ is an interaction with the DOM by the user. We should be somewhat familiar with events from our time with jQuery. 
 
@@ -7,35 +7,38 @@ In JavaScript, when you're thinking about an event, you're usually thinking abou
 2. the event handler (i.e. the code that runs when the user clicks the button).
 
 In jQuery, we handled events like this:
+
 ```javascript
 $('button').on('click', function(){
-	// some event handler code we would like to run when the button is clicked
+  // some event handler code we would like to run when the button is clicked
 });
 ```
+
 In React, things work a little bit differently. First we begin by attaching our event handler to the DOM element of choice like this:
 
-```javascript
+```jsx
 class Button extends Component {
-	render() {
-		return (
-			<button onClick={this.handleClick}>Add to cart</button>
- 		)
-	}
+  render() {
+    return (
+      <button onClick={this.handleClick}>Add to cart</button>
+    )
+  }
 }
 ```
+The `this` keyword represents our `Button` component so we can think of our `handleClick` method as a property attached to the `Button` class. Then we write an event handler method inside of our component that describes what we want to happen when the button is clicked.
 
-Then we write an event handler method inside of our component that describes what we want to happen when the button is clicked.
-
-```javascript
+```jsx
 class Button extends Component {
-	handleClick() {
-		alert("Item added to the shopping cart!");
-	}
-	render() {
-		return (
-			<button onClick={this.handleClick}>Add to cart</button>
- 		)
-	}
+
+  handleClick() {
+    alert("Item added to the shopping cart!");
+  }
+
+  render() {
+    return (
+      <button onClick={this.handleClick}>Add to cart</button>
+    )
+  }
 }
 ```
 
@@ -43,16 +46,16 @@ class Button extends Component {
 
 _State_ describes the part of an application that changes over time.
 
-Think about your Facebook account. At any given point, you're either logged in or you're not logged in. Facebook needs to know which one is true so that you can either be shown the login screen or your personal profile.
+Think about your Netflix account. At any given point, you're either logged in or you're not logged in. Netflix needs to know which one is true so that you can either be shown the login screen or your personal profile.
 
-Information about your login status is stored inside of the **state** of the Facebook application.
+Information about your login status is stored inside of the **state** of the Netflix application.
 
-So somewhere, deep within the bowels of the code for Facebook, there's probably an object that looks like this:
+So somewhere, nestled in the codebase of Netflix, there's probably an object that looks like this:
 
 ```javascript
-user = {
-	loggedIn: false
-}
+  user = {
+    loggedIn: false
+  }
 ```
 
 When you log in, `user.loggedIn` is set to `true`. Your action of logging in changed the state of the application.
@@ -61,126 +64,130 @@ In React, each one of your components can have it's own state, where it can stor
 
 For example, let's imagine it's 1995 and we want to have a sweet visitor counter to keep track of how many people have been to our page.
 
-```javascript
+```jsx
 class Counter extends Component {
-	render() {
-		return (
-			<div>
-				You are visitor number 57.
-			</div>
-		)
-	}
+  render() {
+    return (
+      <div>
+        <p>You are visitor number 57.</p>
+      </div>
+    )
+  }
 }
 ```
 
-Let's imagine that I have some mechanism that can keep track of how many people have visited my page. As people visit my site, the number 57 is going to need to be updated (i.e. it is the part of our application that changes over time). This is a sign that it's a good candidate to be stored in state.
+Let's imagine that we have some mechanism that can keep track of how many people have visited our page. As people visit the site, the number 57 is going to need to be updated (i.e. it is the part of our application that changes over time). This is a sign that it's a good candidate to be stored in state.
 
 Here's how we would move the information about our visitors into our state:
 
-```javascript
+```jsx
 class Counter extends Component {
-	constructor() {
-		super();
-		this.state = {
-			visitors: 0
-		}
-	}
-	render() {
-		<div>
-			You are visitor number {this.state.visitors}.
-		</div>
-	}
+  // the constructor allows us to set default properties, such as the state, of our new component.
+  constructor() {
+    // when using the extends keyword, the super method is required to gain access the special stuff that comes with being a React component
+    super();
+
+    this.state = {
+      visitors: 0
+    }
+  }
+
+  render() {
+    <div>
+      {/* anything inside curly brackets is vanilla JavaScript - here we are accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. */}
+      <p>You are visitor number {this.state.visitors}.</p>
+    </div>
+  }
 }
 ```
-
-There's a few new pieces of code here, so let's break down we've added
-
-* `constructor()` - by inserting the constructor method into our `Counter` component, we are able to set default properties, such as the state, of our new component.
-* `super()` - when using the `extends` keyword, the super method is required to gain access the special stuff that comes with being a React component (more on this next lesson) and the `this` keyword.
-* `{this.state.visitors}` - Remember that anything inside curly brackets is vanilla JavaScript - here we are literally accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. Since `this.state.visitors` is set to 0 by default, our counter will print out `0` until we find a way to increment the counter.
 
 > Try modifying the value of `this.state.visitors` inside the constructor - you'll notice that the change is reflected when we refresh the page!
 
 Now that we have an understanding how state and events work, let's combine them to build a simple counter mechanism that can count up from 0.
 
 We'll start by creating our `Counter` class:
-```javascript
+```jsx
 class Counter extends Component {
-	render() {
-		return (
-			<div>
-			 <p>I am currently on number: 0</p>
-			 <button>Increment</button>
-			</div>
-		)
-	}
+  render() {
+    return (
+      <div>
+        <p>I am currently on number: 0</p>
+        <button>Increment</button>
+      </div>
+    )
+  }
 }
 ```
 
 Cool! We know that the number `0` is going to need to change over time (as the counter increments it), so let's move it over into the state:
 
-```javascript
+```jsx
 class Counter extends Component {
-	constructor() {
-		super();
-		this.state = {
-			count: 0
-		}
-	}
-	render() {
-		return (
-			<div>
-			 <p>I am currently on number: {this.state.count}</p>
-			 <button>Increment</button>
-			</div>
-		)
-	}
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <p>I am currently on number: {this.state.count}</p>
+        <button>Increment</button>
+      </div>
+    )
+  }
 }
 ```
 
-Here we've created a `count` property in our `state` object, which we set inside our constructor. Then instead of just printing out the number `0`, we use `this.state.count` to print out whatever the current value of the count is.
+Here we've created a `count` property in our `state` object, which we set inside our constructor. Then instead of printing out the number `0`, we use `this.state.count` to print out whatever the current value of the count is.
 
 ## Using events to change state
 Now let's make it so that we can increment the counter when the button gets clicked.
 
 Let's start by attaching an event listener to the button:
 
-```javascript
-	render() {
-		return (
-			<div>
-			 <p>I am currently on number: {this.state.count}</p>
-			 <button onClick={this.handleClick}>Increment</button>
-			</div>
-		)
-	}
+```jsx
+render() {
+  return (
+    <div>
+      <p>I am currently on number: {this.state.count}</p>
+      <button onClick={this.handleClick}>Increment</button>
+    </div>
+  )
+}
 ```
 
 We add the `onClick` attribute to the button and set it to be equal to a function called `this.handleClick`, which we'll create now:
 
-```javascript
+```jsx
 class Counter extends Component {
-	constructor() {
-		super();
-		this.state = {
-			count: 0
-		}
-	}
-	handleClick() {
-		this.setState({count: this.state.count + 1})
-	}
-	render() {
-		return (
-			<div>
-			 <p>I am currently on number: {this.state.count}</p>
-			 <button onClick={this.handleClick}>Increment</button>
-			</div>
-		)
-	}
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    }
+  }
+
+  handleClick() {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <p>I am currently on number: {this.state.count}</p>
+        <button onClick={this.handleClick}>Increment</button>
+      </div>
+    )
+  }
 }
 ```
 
-Inside of `handleClick`, you'll notice we're calling a method you haven't seen before: the `setState` method. `setState` allows us to update the current state of our application by passing in an object containing the piece of state we want to update.
+Inside of `handleClick`, you'll notice we're calling a method you haven't seen before: the `setState` method. `setState` is a React method which allows us to update the current state of our application by passing in an object containing the piece of state we want to update. In React, this is how we always want to update our state as opposed to directly altering state. We will explore this more in a later lesson.
 
 In this case, since we want to update `this.state.count`, we pass in an object with a key of `count` and a value of what we want to update `count` to, in this case, we want to set it to what it was before plus one.
 
@@ -192,38 +199,51 @@ Error! `app.js:20521 Uncaught TypeError: Cannot read property 'setState' of null
 
 It looks like the value of `this` is `null` inside of our `handleClick` method when we try to set our state!
 
-This is a particular quirk of ES6 where the `this` value isn't bound when `handleClick` is called. Not to worry, this can be fixed very easily by changing how we define the method
+This is a particular quirk of JavaScript where the `this` value isn't bound when `handleClick` is called. Before, we could solve this issue by binding our methods to the component instance within our `constructor`:
 
-```javascript
+```jsx
 class Counter extends Component {
-	constructor() {
-		super();
-		this.state = {
-			count: 0
-		}
-	}
-	handleClick = () => {
-		this.setState({count: this.state.count + 1})
-	}
-	render() {
-		return (
-			<div>
-				{this.state.count}
-				<button onClick={ this.handleClick }>Increment counter!</button>
-			</div>
-		)
-	}
+  constructor() {
+  super();
+  this.state = {
+    count: 0
+  }
+  this.handleClick = this.handleClick.bind(this);
 }
 ```
 
-It works! You'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
+While you still may see this approach done in the wild or in legacy code, we will instead change how we define our method entirely:
 
-Let's break down what we did here step by step:
+```jsx
+// We start by declaring our new `Counter` component.
+class Counter extends Component {
+// In its constructor, we set the initial state of the component to include a `count` property with a value of 0.
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    }
+  }
 
-* We start by declaring our new `Counter` component. In its constructor, we set the state of the component to include a `count` property with a value of 0.
-* We then added a click event listener to our button by adding an `onClick` attribute and passing in the `handleClick` method as its value
-* When the increment counter button is clicked, `this.handleClick` is called
-* `this.handleClick` calls `this.setState`, which allows us to update the `count` property inside of our component's state by adding one to its current value.
-* `this.setState` causes the component to re-render, which updates the number that appears on the page.
+  handleClick = () => {
+    this.setState({
+      // retrieve our current state value and increase it by one value
+      count: this.state.count + 1
+    })
+  }
 
-And that's all there is to it! `onClick` is just one of many different events that React can handle - there's also `onMouseOver`, `onMouseDown` etc. - [check out the React docs for the full list](https://facebook.github.io/react/docs/events.html).
+  render() {
+    return (
+      <div>
+        {this.state.count}
+
+        {/* added a event listener by adding an `onClick` attribute and passing in the `handleClick` method as its value. When the increment counter button is clicked, `this.handleClick` is called */}
+        <button onClick={this.handleClick}>Increment counter!</button>
+      </div>
+    )
+  }
+}
+```
+Since we are using arrow functions our event handler is automatically bound to the component instance so we do not need to worry about binding it in the constructor. Now you'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
+
+And that's all there is to it! `onClick` is one of many different events that React can handle - there's also `onMouseOver`, `onMouseDown` etc. - [check out the React docs for the full list](https://facebook.github.io/react/docs/events.html).
