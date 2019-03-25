@@ -408,7 +408,22 @@ dbRef.on('value', (data) => {
 
 ```
 
-Now that we have this array of li
+Now that we have this array of `li` elements, we can replace the html contents of the `ul` element with this array.
+
+```js
+dbRef.on('value', (data) => {
+  // creating a variable, inside of this variable we're going to take the argument that was passed in by on(), and call the .val() method on it, to get a snapshot of our database - which is a big object!
+  const toDoData = data.val();
+
+  const arrayOfToDos = [];
+
+  for(prop in toDoData) {
+    arrayOfToDos.push(`<li><span class="fa fa-square-o"></span>${toDoData[prop].description}</li>`)
+  }
+
+  $('ul').html(allToDos);
+})
+```
 
 
 
