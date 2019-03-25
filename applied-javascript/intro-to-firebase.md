@@ -22,7 +22,7 @@ Until now!
 ## Firebase
 Firebase is a web application maintained by Google that allows us to use client-side JavaScript to create and store information inside a database.
 
-It does this by providing us with a web API with which to interact in much the same way that we have been interacting with APIs. Firebase also makes other traditionally challenging back-end tasks, like setting up user authentication for our websites using a third party, accessible to JavaScript developers. 
+It does this by providing us with a web API, which we can interact with, in the same way that we have been interacting with other APIs. Firebase also makes other traditionally challenging back-end tasks, like setting up user authentication for our websites using a third party, accessible to JavaScript developers. 
 
 Firebase also comes with loads of other amazing features, like helping us set up user authentication for our websites using E-mail or Twitter.
 
@@ -30,20 +30,19 @@ Firebase also comes with loads of other amazing features, like helping us set up
 To set up Firebase, navigate to [https://firebase.google.com/](https://firebase.google.com/) and sign in.
 Firebase was acquired by Google in 2004, so you'll need to pick one of your Google accounts to log in.
 
-1. Once you've logged in, you should see a screen that looks like the photo below. Click on the 'Get Started' button:
+1. Once you've logged in, you should see a screen that looks like the photo below. Click on the 'Get Started' button.
 ![Step 1](https://hychalknotes.s3.amazonaws.com/firebase-step1-2019.png)  
 
-2. Click 'Add Project'
+2. Click 'Add Project'.
 ![Step 2](https://hychalknotes.s3.amazonaws.com/firebase-step2-2019.png)  
 
-3. Give your project a name. Let's call ours `first-firebase-app`. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You make be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'
+3. Give your project a name. Let's call ours `first-firebase-app`. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You make be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'.
 ![Step 3](https://hychalknotes.s3.amazonaws.com/firebase-step3-2019.png)  
 
-4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need do a bit of configuration. On the 'Project Overview' tab, click on the '</>' icon: 
+4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need do a bit of configuration. On the 'Project Overview' tab, click on the '</>' icon. 
 ![Step 4](https://hychalknotes.s3.amazonaws.com/firebase-step4-2019.png)  
 
-5. Firebase will provide some code that will link our application with the firebase project we have just created. If you make an `html` file, you can paste this code right into it before the closing `</body>` tags.
-
+5. Firebase will provide some code that will link our application with the Firebase project we have just created. If you make an `html` file, you can paste this code right into it before the closing `</body>` tags.
 ![Step 5](https://hychalknotes.s3.amazonaws.com/firebase-step5-2019.png)  
 
 ```javascript
@@ -71,7 +70,7 @@ If you see this, you have successfully configured your project to use Firebase.
 
 #### Setting up a _Realtime Database_
 
-1. Now that we have configured our application to use Firebase, we can take advantage of all the cool tools Firebase have created. For this lesson we will just focus on utilizing their Realtime Databas. Click on 'Database' on the sidebar, be sure to scroll down past Cloud Firestore. You will find the option to create a Realtime Database below.
+1. Now that we have configured our application to use Firebase, we can take advantage of all the cool tools Firebase have created. For this lesson we will just focus on utilizing their Realtime Database. Click on 'Database' on the sidebar, be sure to scroll down past Cloud Firestore. You will find the option to create a Realtime Database below.
 ![Step 6](https://hychalknotes.s3.amazonaws.com/firebase-step6-2019.png)
 
 2. Click 'Create Database'.  
@@ -80,7 +79,7 @@ If you see this, you have successfully configured your project to use Firebase.
 3. We're just in development, so we want to choose **test mode** in order to allow anyone to read and write from the database. Later on, you might want to lock down the database so that only specific users or sites can access our database. For now, select 'Start in test mode'. Click 'Enable'.
 ![Step 8](https://hychalknotes.s3.amazonaws.com/firebase-step8-2019.png)
 
-4. If you were successful at creating a database, you would be redirected to this page:
+4. If you were successful at creating a database, you would be redirected to a page that looks like the one below.
 ![Step 9](https://hychalknotes.s3.amazonaws.com/firebase-step9-2019.png)
 
 ## Understanding data structure in Firebase
@@ -103,7 +102,7 @@ myProject = {
 }
 ```
 
-Every value in Firebase has a key that is attached to it. We can use this key in order to grab any value we desire. You can assign your own keys, or have firebase generate these keys for you depending on what methods you choose. 
+Every value in Firebase has a key that is attached to it. We can use this key in order to grab any value we desire. You can assign your own keys, or have Firebase generate these keys for you depending on what methods you choose. 
 
 ## Adding data to our Firebase database
 Right now, our database is empty. Let's put some stuff in it. 
@@ -142,6 +141,7 @@ Let's try a few of these out!
 
 ### Write methods in Firebase
 
+#### `push()`
 The Firebase method `push()` creates a **new node** that is stored as the value for a Firebase-generated key.
 
 ```js
@@ -160,12 +160,13 @@ console.log(firebaseObj);
 In your console you should see the object that `push()` returns. Under prototype, you will see the Firebase key stored under the property name `key`. To store and access the Firebase key that was created along with the push, you can type the following:
 
 ```js
-  const firebaseKey = firebaseObj.key;
-  console.log(firebaseKey);
+const firebaseKey = firebaseObj.key;
+console.log(firebaseKey);
 ```
 
 > You'll most often use `.push()` when you are creating an instance of something that needs to be unique (e.g. a user ID, a session, an ordered list of tasks to complete).
 
+#### `set()`
 The Firebase method `set()` is used to overwrite the data at a specific reference that you decide **and** for all its children.
 
 This method returns a promise and takes a callback that will be called when the database has been updated. 
@@ -227,12 +228,13 @@ addToProfile(moreUserSettings);
 ```
 Oh no! We overwrite the child nodes if we don't include them in the object we're pushing to Firebase.
 
+#### `update()`
 The Firebase method `update()` is used to write to specific nodes **without overwriting their what's already there**. 
 
 ```js
 const newUserSettings = {company:'U of T'};
 
-const changeSetting =(settingToChange) =>{
+const changeSetting =(settingToChange) => {
   firebase.database().ref('/-LYYnjbTOR0Qq03ehjb1').update(settingToChange);
 };
 ```
@@ -326,13 +328,13 @@ Let's create a new Firebase project! Steps can be found above under 'Setting up 
 
 <script>
 const config = {
-    apiKey: "AIzaSyAFUEcWuGkredZ5AdxtSpcMWS1nvdXDCAc",
-    authDomain: "to-do-app-example-ca27f.firebaseapp.com",
-    databaseURL: "https://to-do-app-example-ca27f.firebaseio.com",
-    projectId: "to-do-app-example-ca27f",
-    storageBucket: "to-do-app-example-ca27f.appspot.com",
-    messagingSenderId: "403656512635"
-  };
+  apiKey: "AIzaSyAFUEcWuGkredZ5AdxtSpcMWS1nvdXDCAc",
+  authDomain: "to-do-app-example-ca27f.firebaseapp.com",
+  databaseURL: "https://to-do-app-example-ca27f.firebaseio.com",
+  projectId: "to-do-app-example-ca27f",
+  storageBucket: "to-do-app-example-ca27f.appspot.com",
+  messagingSenderId: "403656512635"
+};
 firebase.initializeApp(config);
 
 $(document).ready(function(){
@@ -495,22 +497,21 @@ $('ul').on('click', 'li', function() {
 ```js
 
 $('ul').on('click', 'li', function() {
-      const selectedKey = $(this).data('key');
-      
-      const toDoItemRef = firebase.database().ref(`/${selectedKey}`)
+  const selectedKey = $(this).data('key');
+  
+  const toDoItemRef = firebase.database().ref(`/${selectedKey}`)
 
-      toDoItemRef.once('value', (data) => {
-        const targeted = data.val();
+  toDoItemRef.once('value', (data) => {
+    const targeted = data.val();
 
-        toDoItemRef.update({
-          complete: !targeted.complete
-        })
+    toDoItemRef.update({
+      complete: !targeted.complete
+    })
 
-      });
   });
+});
 
 ```
-
 
 We're almost there! Now we're going to conditionally render a filled in checkbox or an empty checkbox, based on its status Firebase. For this one we will have to revisit how we rendered those `li` elements again. Since the checkbox are a span, and the look of the checkbox depend on what class we give these spans - we have to figure out which class to render base on the to-do status.
 
