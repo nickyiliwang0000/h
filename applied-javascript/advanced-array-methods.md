@@ -46,7 +46,7 @@ This is the same thing as:
 ```js
 const addMovieGenre = function(array){
   for (let i=0; i<array.length; i++){
-  $(".movieGenres").append("<p>" + array[i] + "</p>");
+    $(".movieGenres").append("<p>" + array[i] + "</p>");
   }
 }
 ```
