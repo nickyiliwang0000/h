@@ -42,6 +42,15 @@ genres.forEach((genre) =>  {
 });
 ```
 
+This is the same thing as:
+```js
+const addMovieGenre = function(array){
+  for (let i=0; i<array.length; i++){
+  $(".movieGenres").append("<p>" + array[i] + "</p>");
+  }
+}
+```
+
 ### More native methods
 The following methods are included in JavaScript (among others) to help sort data: `.filter()` `.map()` and `.reduce()`.
 
