@@ -108,7 +108,7 @@ Every value in Firebase has a key that is attached to it. We can use this key in
 Right now, our database is empty. Let's put some stuff in it. 
 
 ### Where do we want to put our data?
-Inside your `<script>` tags, write the following code: 
+Inside your `<script>` tags and after your config code, write the following: 
 
 ```javascript
 const dbRef = firebase.database().ref();
@@ -131,7 +131,7 @@ const singleUser = firebase.database().ref(`users/${userId}`);
 
 ## Frequently used write methods in Firebase
 
-`push()` - this creates a new node that is stored at a firebase generated key. It returns an object with a `key` property that's value is the key that was just created. 
+`push()` - this creates a new node that is stored at a Firebase-generated key. It returns an object with a `key` property that's value is the key that was just created. 
 
 `set()` - this can be used to write data to a specific reference that you decide. This method returns a promise and also takes a callback that will be called when the database has been updated. 
 
@@ -185,6 +185,8 @@ const addToProfile = (profileData) => {
 addToProfile(editorTheme);
 ```
 
+Since there was no data stored at `-LYYnjbTOR0Qq03ehjb1`, it just added a node with the editorTheme object as its value.
+
 ```bash
 // The database is updated like this:
 {
@@ -193,7 +195,9 @@ addToProfile(editorTheme);
   }
 }
 ```
-Let's create an object with lots of information in it and replace the node we previously created with this new object:
+
+Let's see what would happen if that node already existed. We're going to create another object with lots of information in it and use `set()` to replace the node we previously created with this new object:
+
 ```js
 const userSettings = {
   editorTheme: 'Monokai Bright',
@@ -226,7 +230,7 @@ const moreUserSettings = {
 }
 addToProfile(moreUserSettings);
 ```
-Oh no! We overwrite the child nodes if we don't include them in the object we're pushing to Firebase.
+Oh no! With `set()`, we overwrite the child nodes if we don't include them in the object we're pushing to Firebase.
 
 #### `update()`
 The Firebase method `update()` is used to write to specific nodes **without overwriting their what's already there**. 
@@ -285,7 +289,8 @@ Now that we have some data stored in our database, let's retrieve it:
 // Once again, we grab a reference to our firebase database.
 const dbRef = firebase.database().ref();
 
-// We call the `on` method here to grab the value of our Firebase database. When it comes back, we store access it in our callback function via the parameter `data`.
+// We call the `on` method here to grab the value of our Firebase database.
+// When it comes back, we store access it in our callback function via the parameter `data`.
 dbRef.on('value', (data) => {
   // We call `.val()` on our data to get the contents of our data to print out in the form of an object
   console.log(data.val());
