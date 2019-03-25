@@ -15,7 +15,7 @@ Let's try this with the Rijksmuseum API. You should be able to find
 <http://rijksmuseum.github.io/>
 
 ## Response format
-Next, we need to know how the responses of this API are delivered to us. Common formats you'll come across are XML and JSON. If we check the **Parameters** section of the docs, we see we can get a response in the following formats: *xml, json, jsonp* Try to stick to APIs that return JSON. It's the easiest to work within JavaScript.
+Next, we need to know how the responses of this API are delivered to us. Common formats you'll come across are XML and JSON. If we check the **Parameters** section of the docs, we see we can get a response in the following formats: *xml, json, jsonp* Try to stick to APIs that return JSON. It's the easiest to work with in JavaScript.
 
 ## CORS or JSONP?
 Remember the "same origin policy" that prevents one domain from requesting data from another?  We need to find out if the API uses JSONP or CORS to get around that restriction. Since JSONP is a valid response format, we can use that.
@@ -32,20 +32,15 @@ Head over to <https://www.rijksmuseum.nl/en/mijn/gegevens> and create an account
 ![](https://hychalknotes.s3.amazonaws.com/Rijksmuseum-api-profile.png)
 
 ## Base URI
+
 This is a RESTful API so all requests should be structured something like this:
 
 `<base_url>/<endpoint>?params=value`
 
-The first section of the documentation and the sample request, 
+The first section of the documentation and the sample request provide us with clues as to how to use this API:
 
-`https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json` 
+![](https://hychalknotes.s3.amazonaws.com/api-url-example.jpg)
 
-provides us with clues as to how to use this API.
-
-`https://www.rijksmuseum.nl/api/` is the **base uri**. All requests will start with this.<br>
-`/nl/collections/` is the **endpoint**. As noted, we'll want to use `/en/` in our requests to ensure we get results in English. <br>
-`/sk-c-5` is the **ID of a single item** in the collection<br>
-`?key=fakekey&format=json` are **query string parameters** that get passed along with our request to specify additional information. The docs here state that every API request should specify a key and a format.
 
 ## Endpoints
 
