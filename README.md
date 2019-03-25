@@ -131,11 +131,11 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
 
 ## Fishbowl exercises
-[HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/html-and-css-fishbowl-exercises.md)
+* [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/html-and-css-fishbowl-exercises.md)
 
-[jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
+* [jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
 
-[JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
+* [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
 
 ## Projects
 Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements. 
