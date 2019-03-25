@@ -1,6 +1,6 @@
 # Project 5 (solo React application)
 ## Due date
-Monday, March 4th, 1:00 p.m.
+Monday, June 3rd, 1:00 p.m.
 
 ## Project description
 Using the React library we would like you to create an interactive application.  This will call on everything you have learned up to now!
@@ -41,7 +41,7 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 * Uses React, and no jQuery
 * Uses modular components
 * Uses Axios and/or Firebase
-* React 'knows' about all DOM changes 
+* React 'knows' about all DOM changes (bind your inputs!)
 * this.state is never directly changed because .setState() is always used to alter state
 * App is dynamic based on user interaction (eg. drop down menu, search field)
 * It is clear to the user what the app does

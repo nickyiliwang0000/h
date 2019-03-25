@@ -1,6 +1,6 @@
 # Project 4 (paired API-powered application with jQuery)
 ## Due date
-Monday, February 25th, 10:00 a.m.
+Monday, May 27th, 10:00 a.m.
 
 ## Project description
 
@@ -8,9 +8,17 @@ Your task for this week is to collaboratively create a web application using Jav
 
 We've provided a list of RESTful APIs that can be accessed publicly and have decent documentation. Try to work with an API that has data you find interesting - it'll be more fun that way! If you're not sure that an API meets requirements, talk to an instructor. 
 
-You may want to use the pair-programming method:  both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
+We encourage you to use the pair-programming method: both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
 
-Your partners are listed [here](https://docs.google.com/spreadsheets/d/1_Al24ZkClAPSVk_SmDTy4N3q4QX3F1Tf7ukJ2ig13Kk/edit#gid=1482031509).
+Your partners are listed [here]().
+
+## Project objective
+To show a understanding of jQuery, DOM manipulation, error handling, and UI design. And to demonstrate competence in pair programming and communication.
+
+### APIs built by people in the HackerYou community
+* [Makeup API](https://makeup-api.herokuapp.com/)
+* [Drag Race API](https://drag-race-api.readme.io/docs)
+* [Harry Potter API](https://potterapi.com/)
 
 ### Public APIs
 * [Zomato](https://developers.zomato.com/api)(restaurants)
@@ -18,11 +26,6 @@ Your partners are listed [here](https://docs.google.com/spreadsheets/d/1_Al24ZkC
 * [Yummly](https://developer.yummly.com/)(recipes)
 * [Open Brewery DB](https://www.openbrewerydb.org/) (breweries)
 * [Pokemon API](https://pokeapi.co/) (Pokemon)
-
-### APIs built by people in the HackerYou community
-* [Makeup API](https://makeup-api.herokuapp.com/)
-* [Drag Race API](https://drag-race-api.readme.io/docs)
-* [Harry Potter API](https://potterapi.com/)
 
 ### Other APIs
 If you want to use another API, start [here](https://github.com/toddmotto/public-apis), but be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
@@ -34,7 +37,7 @@ If you want to use another API, start [here](https://github.com/toddmotto/public
 * Be aware that APIs often lack documentation and the creators have no obligation to make accessing the data an easy task for all. If you get stuck due to information being missing, or complexity, pivot your approach.
 * In pseudo code, write out what you want to accomplish and what steps you'll take to get there. When ready, identify which steps would best be served as methods.
 
-**Pseudo code example**
+**pseudo code example**
 ```javascript
   // Create app namespace to hold all methods
   const app = {};
@@ -113,7 +116,7 @@ You will also be given individual marks for your project presentation:
 ## Submitting your project
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
-1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project. (You don't have to rename your org if its naming convention doesn't match)
+1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project.     * (You don't have to rename your org if its naming convention doesn't match)
 1. Remove any unneeded files from the project.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain.
