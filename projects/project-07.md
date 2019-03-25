@@ -22,7 +22,7 @@ The point of your portfolio is to showcase your development skills. As such, we 
 
 If you get a job, you get an A. 😉  
 
-We'll do group critiques/QA before demo night to catch any weirdness. Your portfolio sites MUST be deployed before the critiques or they will not be eligible for review. 
+We'll do group critiques/QA before demo night to catch any weirdness.
 
 **Requirements:**
 * Have a minimum of 3 portfolio items
@@ -36,7 +36,7 @@ We'll do group critiques/QA before demo night to catch any weirdness. Your portf
 
 ## Submitting your project
 1. Deploy your website and submit the live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
-  * Your portfolio must be deployed to receive a crit.
+  * Your portfolio site **must** be deployed before the critiques or it will not be eligible for review. 
 
 # No plagiarism!! 👀 We'll be watching for it!
 Plagiairism is presenting someone else's work as your own. When you use other developers' work, you must credit them on the site or in the comments. If you think something in your project walks the line, check with an instructor **before handing in your project**.

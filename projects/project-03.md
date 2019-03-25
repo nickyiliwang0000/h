@@ -55,7 +55,7 @@ You'll be submitting your project via GitHub and posting the link to the reposit
 1. Create a repository called `first-name-last-name-project#`
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain
-1. Submit your repo URL and live URL using [the project submission form]().
+1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
 
 ## Lateness
 Projects handed in on the same date as the deadline but after the requested time (usually 10 a.m.) will receive a 10% penalty. Students will receive an additional 10% deduction for each day the project is late, up to a maximum penalty of 30% (or 3 days late). After 3 days, the project will receive a total mark of 0.
