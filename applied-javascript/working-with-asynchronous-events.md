@@ -93,12 +93,12 @@ To invoke a promise, you need to let the browser know what happens when the data
 myPromise.then( (goodResult) => {
   // goodResult is a variable whose value is 
   // whatever we defined in the fulfill function when we created the promise
-    console.log(goodResult);
-  }).catch(error => {
-      // error is a variable whose value is 
-      // whatever we defined in the reject function when we created the promise
+  console.log(goodResult);
+}).catch(error => {
+    // error is a variable whose value is 
+    // whatever we defined in the reject function when we created the promise
     console.log(error)
-  })
+})
 ```
 
 Promises are supported in all modern browsers, but some older ones may require you to use a promise library; jQuery has one built into it. We're already very familiar with one function that returns a promise: the `$.ajax()` method!
