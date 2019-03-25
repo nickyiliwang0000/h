@@ -438,7 +438,7 @@ dbRef.on('value', (data) => {
 ```
 
 ### Bonus: implementing the checkbox
-We can upgrade our to-do app with one more feature. Try getting the checkbox data to also persist using Firebase. If you get stuck, checkout out the the answer key provided. You can download []() to see the final codealong with the checkbox implemented. If you wanted more guidance checkout the steps below.
+We can upgrade our to-do app with one more feature. Try getting the checkbox data to also persist using Firebase. If you get stuck, checkout out the the answer key provided. You can download [to-do-app-firebase-answer.zip](https://hychalknotes.s3.amazonaws.com/to-do-app-firebase-answer.zip) to see the final code-along with the checkbox implemented. If you wanted more guidance checkout the steps below.
 
 Since the complete status of each to-do changes on the click of the `li` elements. We will want to put our code inside that click listener.
 
