@@ -164,7 +164,7 @@ const firebaseKey = firebaseObj.key;
 console.log(firebaseKey);
 ```
 
-> You'll most often use `.push()` when you are creating an instance of something that needs to be unique (e.g. a user ID, a session, an ordered list of tasks to complete).
+> You'll most often use `push()` when you are creating an instance of something that needs to be unique (e.g. a user ID, a session, an ordered list of tasks to complete).
 
 #### `set()`
 The Firebase method `set()` is used to overwrite the data at a specific reference that you decide **and** for all its children.
@@ -225,8 +225,8 @@ const moreUserSettings = {
     fall:'bootcamp',
     winter:'bootcamp',
     spring:'bootcamp',
-    summer:'partying'}
-  };
+    summer:'partying',
+  }
 }
 addToProfile(moreUserSettings);
 ```
@@ -236,11 +236,16 @@ Oh no! With `set()`, we overwrite the child nodes if we don't include them in th
 The Firebase method `update()` is used to write to specific nodes **without overwriting their what's already there**. 
 
 ```js
-const newUserSettings = {company:'U of T'};
+const newUserSettings = {
+  company:'U of T',
+};
 
-const changeSetting =(settingToChange) => {
+const changeSetting = (settingToChange) => {
   firebase.database().ref('/-LYYnjbTOR0Qq03ehjb1').update(settingToChange);
 };
+
+changeSetting(newUserSettings);
+
 ```
 ```bash
 // The database is updated like this:
@@ -303,7 +308,7 @@ You will get back something that looks like this:
 
 
 ## Listening for changes to data in Firebase
-Remember `.on()` from jQuery? Firebase has its own built in `.on()` method, that we can use to listen for events. For example we can listen for when any changes have been made to the database.
+Remember `on()` from jQuery? Firebase has its own built in `on()` method, that we can use to listen for events. For example, we can listen for when any changes have been made to the database.
 
 Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 
@@ -497,7 +502,7 @@ $('ul').on('click', 'li', function() {
 });
 
 ```
-> `.on()` vs. `.once()`. Why are we using `.once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `.once()` is a more appropriate Firebase method. If we were to use `.on()` instead, we would get an infinite loop, YIKES! Since we would be calling `.update()` inside of the `.on()`, the change to the database would trigger the `.on()`, which would trigger the `.update()`, which would trigger `.on()`...∞💥🚨. `.once()` only triggers...once 🤭, which is exactly what we want in this case. 
+> `on()` vs. `once()`. Why are we using `once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `once()` is a more appropriate Firebase method. If we were to use `on()` instead, we would get an infinite loop, YIKES! Since we would be calling `update()` inside of the `on()`, the change to the database would trigger the `.on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. `once()` only triggers...once 🤭, which is exactly what we want in this case. 
 
 ```js
 
