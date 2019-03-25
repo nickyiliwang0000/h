@@ -426,12 +426,108 @@ dbRef.on('value', (data) => {
 ```
 
 ### Bonus: implementing the checkbox
-We can upgrade our to-do app with one more feature. Try persisting the checkbox data as well. If you get stuck, checkout out the the answer key provided. You can download []()to see the final codealong with the checkbox implemented. If you wanted more guidance checkout the steps below:
+We can upgrade our to-do app with one more feature. Try getting the checkbox data to also persist using Firebase. If you get stuck, checkout out the the answer key provided. You can download []() to see the final codealong with the checkbox implemented. If you wanted more guidance checkout the steps below.
+
+Since the complete status of each to-do changes on the click of the `li` elements. We will want to put our code inside that click listener.
+
+```js
+
+$('ul').on('click', 'li', function() {
+  // We'll put our code here
+});
+
+```
+
+When the user clicks on the `li`, we need to identify the corresponding to-do node in Firebase in order to update it. Unfortunately, with the way we originally rendered the `li`, there is no way to identify which to-do belongs to which node. Since each node is assigned a unique Firebase key, we can add this piece of data to each `li` when we render it. Let's revisit how we rendered each li and ammend it slightly:
+
+```js
+dbRef.on('value', (data) => {
+  const toDoData = data.val();
+
+  const arrayOfToDos = [];
+
+  for(prop in toDoData) {
+    arrayOfToDos.push(`<li data-key=${prop}><span class="fa fa-square-o"></span>${toDoData[prop].description}</li>`)
+  }
+  
+  $('ul').html(allToDos);
+})
+
+```
+
+We're using the data attribute to store thea appropriate Firebase key in each li, so we can use it later for the checkbox feature. [For more information on the data attribute, check out MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).  
 
 
+Now that we have a way to identify each to-do, we can store key of the targeted `li` in a variable. We'll use this key to create a reference to the correct node in our database.
+
+```js
+
+$('ul').on('click', 'li', function() {
+  const selectedKey = $(this).data('key');
+  const toDoItemRef = firebase.database().ref(`/${selectedKey}`);
+});
+
+```
+
+Since we have a way to point to the correct node, we can get a snapshot of that data and update that specific to-do object in our database. Since we only want to [read the data once](https://firebase.google.com/docs/database/web/read-and-write#read_data_once), use We're going to use Firebase's `.once()` method. After capturing the correct to-do, we will use `.update()` to change the complete status to be the opposite of what it is currently using the not operator.
+
+```js
+
+$('ul').on('click', 'li', function() {
+  // stores the value of the data-key attribute in a variable. This value is the corresponding Firebase key
+  const selectedKey = $(this).data('key');
+  // creating a reference to the correct node using the previous variable
+  const toDoItemRef = firebase.database().ref(`/${selectedKey}`);
+  // getting snapshot of the appropriate node without listening for changes
+  toDoItemRef.once('value', (data) => {
+    // grab the data
+    const targeted = data.val();
+    // update the complete status of the correct to-do
+    toDoItemRef.update({
+      complete: !targeted.complete
+    })
+  })
+});
+
+```
+> `.on()` vs. `.once()`. Why are we using `.once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `.once()` is a more appropriate Firebase method. If we were to use `.on()` instead, we would get an infinite loop, YIKES! Since we would be calling `.update()` inside of the `.on()`, the change to the database would trigger the `.on()`, which would trigger the `.update()`, which would trigger `.on()`...∞💥🚨. `.once()` only triggers...once 🤭, which is exactly what we want in this case. 
+
+```js
+
+$('ul').on('click', 'li', function() {
+      const selectedKey = $(this).data('key');
+      
+      const toDoItemRef = firebase.database().ref(`/${selectedKey}`)
+
+      toDoItemRef.once('value', (data) => {
+        const targeted = data.val();
+
+        toDoItemRef.update({
+          complete: !targeted.complete
+        })
+
+      });
+  });
+
+```
 
 
+We're almost there! Now we're going to conditionally render a filled in checkbox or an empty checkbox, based on its status Firebase. For this one we will have to revisit how we rendered those `li` elements again. Since the checkbox are a span, and the look of the checkbox depend on what class we give these spans - we have to figure out which class to render base on the to-do status.
 
+```js
+dbRef.on('value', (data) => {
+  const toDoData = data.val();
 
+  const arrayOfToDos = [];
 
+  for(prop in toDoData) {
+    arrayOfToDos.push(`<li><span class="${toDoData[key].complete ? `fa fa-check-square-o`: `fa fa-square-o`}"></span> ${toDoData[key].description}</li>`)
+  }
 
+   $('ul').html(allToDos);
+})
+```
+
+To conditionally render the appropriate class, we're using something called a _[ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)_. If `toDoData[key].complete` evaluates to `true`, the operator will return `fa fa-check-square-o` (the checked version), otherwise it will return `fa fa-square-o` (the unchecked version).  
+
+The data for our to-do app now persists! If a user were to refresh the page, all the data remains on the page. WOOHOO!
