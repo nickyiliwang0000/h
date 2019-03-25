@@ -94,7 +94,7 @@ myPromise.then( (goodResult) => {
   // goodResult is a variable whose value is 
   // whatever we defined in the fulfill function when we created the promise
     console.log(goodResult);
-  }).catch(error =>{
+  }).catch(error => {
       // error is a variable whose value is 
       // whatever we defined in the reject function when we created the promise
     console.log(error)
@@ -249,7 +249,8 @@ They are out of order! The problem here is that we are making a whole bunch of r
 ### Making sure the order matters
 
 How do we make sure we get the pocket monsters back in order? First let's change the `getPokemon` function to return an AJAX call using `$.ajax()` and remove the `.then()` method. 
-> Remember that `$.ajax` returns a promise, so the return value of the function is a promise object.
+
+> Making your function return `$.ajax` is especially helpful when we need to make multiple API calls that depend on one another - similar to how we're making multiple calls to the Pokemon API and logging each Pokemon in the correct order. Remember that `$.ajax` returns a promise, so the return value of the function is a promise object. Most likely, you will only need make your function return a promise when you want to queue up multiple promises.
 
 ```javascript
 function getPokemon(number) {
