@@ -457,5 +457,10 @@ This is another way to structure your code when you need to get one bit of infor
 * Here's a nice flowchart from MDN showing life of a promise.
   ![Diagram of the life of a JavaScript promise](https://user-images.githubusercontent.com/8013918/51422191-6bcaf780-1b78-11e9-8dd0-bd8d7b19fae9.png)
 
-## Spread and rest exercises
+## Exercises
+
+### Spread and rest
 Looking for more practice with spread and rest? Download [spread-rest-exercises.zip](https://hychalknotes.s3.amazonaws.com/spread-rest-exercises.zip) to get started. Feel free to tackle these on your own time. There's an answer key included in case you get stuck! 
+
+### Promise challenge
+Download [hp-promise-bootcamp-challenge](https://hychalknotes.s3.amazonaws.com/hp-promises-bootcamp-challenge.zip) to get started. Feel free to tackle this one on your own time. There's an answer key included in case you get stuck! For this challenge we want to display the names of Gryffindor members on the page.
