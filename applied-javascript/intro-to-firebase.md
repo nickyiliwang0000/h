@@ -425,6 +425,9 @@ dbRef.on('value', (data) => {
 })
 ```
 
+### Bonus: implementing the checkbox
+We can upgrade our to-do app with one more feature. Try persisting the checkbox data as well. If you get stuck, checkout out the the answer key provided. You can download []()to see the final codealong with the checkbox implemented. If you wanted more guidance checkout the steps below:
+
 
 
 
