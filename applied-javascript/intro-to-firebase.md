@@ -502,7 +502,7 @@ $('ul').on('click', 'li', function() {
 });
 
 ```
-> `on()` vs. `once()`. Why are we using `once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `once()` is a more appropriate Firebase method. If we were to use `on()` instead, we would get an infinite loop, YIKES! Since we would be calling `update()` inside of the `on()`, the change to the database would trigger the `.on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. `once()` only triggers...once 🤭, which is exactly what we want in this case. 
+> `on()` vs. `once()`. Why are we using `once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `once()` is a more appropriate Firebase method. If we were to use `on()` for this checkbox feature, we would get an infinite loop, YIKES! Since we would be calling `update()` inside of the `on()`, the change to the database would trigger the `.on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. Fortunately, Firebase offers `once()` and it only triggers...once 🤭, which is exactly what we want in this case. 
 
 ```js
 
