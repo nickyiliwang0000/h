@@ -463,4 +463,4 @@ This is another way to structure your code when you need to get one bit of infor
 Looking for more practice with spread and rest? Download [spread-rest-exercises.zip](https://hychalknotes.s3.amazonaws.com/spread-rest-exercises.zip) to get started. Feel free to tackle these on your own time. There's an answer key included in case you get stuck! 
 
 ### Promise challenge
-Download [hp-promise-bootcamp-challenge.zip](https://hychalknotes.s3.amazonaws.com/hp-promises-bootcamp-challenge.zip) to get started. Feel free to tackle this one on your own time. There's an answer key included in case you get stuck! For this challenge we want to display the names of Gryffindor members on the page.
+Download [hp-promise-bootcamp-challenge.zip](https://hychalknotes.s3.amazonaws.com/hp-promises-bootcamp-challenge.zip) to get started. Feel free to tackle this one on your own time. There's an answer key included in case you get stuck! For this challenge, we want to display the names of Gryffindor members on the page.
