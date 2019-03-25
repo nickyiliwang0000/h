@@ -24,7 +24,7 @@ $.ajax({
     url: 'https://api.recipes.com/'+ weatherConditions,
     type: 'GET',
     dataType: 'jsonp'
-  }).then((data)  => {
+  }).then((data) => {
     // do something
   });
 });
@@ -250,7 +250,7 @@ They are out of order! The problem here is that we are making a whole bunch of r
 
 How do we make sure we get the pocket monsters back in order? First let's change the `getPokemon` function to return an AJAX call using `$.ajax()` and remove the `.then()` method. 
 
-> Making your function return `$.ajax` is especially helpful when we need to make multiple API calls that depend on one another - similar to how we're making multiple calls to the Pokemon API and logging each Pokemon in the correct order. Remember that `$.ajax` returns a promise, so the return value of the function is a promise object. Most likely, you will only need make your function return a promise when you want to queue up multiple promises.
+> Making your function return an AJAX call is especially helpful when we need to make multiple API calls that depend on one another - similar to how we're making multiple calls to the Pokemon API and logging each Pokemon in the correct order. Remember that `$.ajax` returns a promise, so the return value of the function is a promise object. Most likely you will only need make your function return a promise when you want to queue up multiple promises.
 
 ```javascript
 function getPokemon(number) {
