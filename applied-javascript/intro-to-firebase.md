@@ -324,13 +324,13 @@ dbRef.on('value', (data) => {
 
 We can confirm that this is working by manually pushing a new entry into our database from the console: `dbRef.push('pizza')`
 
-## Upgrading our jQuery app using Firebase!
-Now that we've learned some of the fundamental principles of how data gets created and managed between our code and Firebase, let's power up our todo app by adding in Firebase!
+## Code-along: Upgrading our jQuery app using Firebase!
+Now that we've learned how data gets created and managed between our code and Firebase, let's power up our to-do app by adding in Firebase!
 
 Download [to-do-app-firebase-start.html](https://hychalknotes.s3.amazonaws.com/to-do-app-firebase-start.html) and follow along.
 
 ### Create a Firebase project
-Let's create a new Firebase project! Steps can be found above under 'Setting up Firebase'. Add the Firebase CDN to your `html` file and past your config code above your document ready. 
+Let's create a new Firebase project! Steps can be found above under 'Setting up Firebase'. Add the Firebase CDN to your `html` file and paste your config code above your document ready. 
 
 ```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -433,7 +433,7 @@ dbRef.on('value', (data) => {
     arrayOfToDos.push(`<li><span class="fa fa-square-o"></span>${toDoData[prop].description}</li>`)
   }
 
-  $('ul').html(allToDos);
+  $('ul').html(arrayOfToDos);
 })
 ```
 
@@ -462,7 +462,7 @@ dbRef.on('value', (data) => {
     arrayOfToDos.push(`<li data-key=${prop}><span class="fa fa-square-o"></span>${toDoData[prop].description}</li>`)
   }
   
-  $('ul').html(allToDos);
+  $('ul').html(arrayOfToDos);
 })
 
 ```
@@ -502,26 +502,7 @@ $('ul').on('click', 'li', function() {
 });
 
 ```
-> Sidenote: `on()` vs. `once()`. Why are we using `once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `once()` is a more appropriate method. If we were to use `on()` for this checkbox feature, we would get an infinite loop! YIKES! Since we would be calling `update()` inside of the `on()`, the update to the database would trigger the `on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. Fortunately, Firebase offers `once()` and it only triggers...once 🤭, which is exactly what we want in this case. 
-
-```js
-
-$('ul').on('click', 'li', function() {
-  const selectedKey = $(this).data('key');
-  
-  const toDoItemRef = firebase.database().ref(`/${selectedKey}`)
-
-  toDoItemRef.once('value', (data) => {
-    const targeted = data.val();
-
-    toDoItemRef.update({
-      complete: !targeted.complete
-    })
-
-  });
-});
-
-```
+> Sidenote: `on()` vs. `once()`. Why are we using `once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `once()` is a more appropriate method. If we were to use `on()` for this checkbox feature, we would get an infinite loop! YIKES! Since we would be calling `update()` inside of the `on()`, the update to the database would trigger the `on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. Fortunately, Firebase offers `once()` and it only triggers...once 🤭, which is exactly what we want in this case.  
 
 We're almost there! Now we're going to conditionally render a filled in checkbox or an empty checkbox, based on its status Firebase. For this one we will have to revisit how we rendered those `li` elements again. Since the checkbox are a span, and the look of the checkbox depend on what class we give these spans - we have to figure out which class to render base on the to-do status.
 
@@ -532,13 +513,13 @@ dbRef.on('value', (data) => {
   const arrayOfToDos = [];
 
   for(prop in toDoData) {
-    arrayOfToDos.push(`<li><span class="${toDoData[key].complete ? `fa fa-check-square-o`: `fa fa-square-o`}"></span> ${toDoData[key].description}</li>`)
+    arrayOfToDos.push(`<li data-key=${prop}><span class="${toDoData[prop].complete ? `fa fa-check-square-o`: `fa fa-square-o`}"></span> ${toDoData[prop].description}</li>`)
   }
 
-   $('ul').html(allToDos);
+   $('ul').html(arrayOfToDos);
 })
 ```
 
-To conditionally render the appropriate class, we're using something called a _[ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)_. If `toDoData[key].complete` evaluates to `true`, the operator will return `fa fa-check-square-o` (the checked version), otherwise it will return `fa fa-square-o` (the unchecked version).  
+To conditionally render the appropriate class, we're using something called a _[ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)_. If `toDoData[prop].complete` evaluates to `true`, the operator will return `fa fa-check-square-o` (the checked version), otherwise it will return `fa fa-square-o` (the unchecked version).  
 
 The data for our to-do app now persists! If a user were to refresh the page, all the data remains on the page. WOOHOO! 💃!
