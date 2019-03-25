@@ -132,7 +132,9 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 
 ## Fishbowl exercises
 [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/html-and-css-fishbowl-exercises.md)
+
 [jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
+
 [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
 
 ## Projects
