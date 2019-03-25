@@ -22,8 +22,8 @@ If you get a job, you get an A. 😉
 We'll do group critiques/QA before demo night to catch any weirdness. Your portfolio sites MUST be deployed before the critiques or they will not be eligible for review. 
 
 **Requirements:**
-* Use the skills you have learned up until now!
 * Have a minimum of 3 portfolio items
+* The portfolio itself must be coded in plain HTML and CSS with jQuery or vanilla JavaScript for effects (i.e. your portfolio site CANNOT be React)
 * All images considered content have descriptive alt text
 * Extraneous code is removed (including console.log)
 * Semantic HTML elements are used properly
