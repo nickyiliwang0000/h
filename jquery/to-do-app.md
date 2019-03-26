@@ -307,4 +307,4 @@ There is so much more that you can do to enhance the app! Here are some suggesti
 - when the page loads, focus on the input field (i.e. cursor should load inside the input)
 - check out [jQuery UI](https://jqueryui.com/) to drag/drop items to sort
 
-Have a look at <a href="https://hychalknotes.s3.amazonaws.com/to-do-app-extras.html" class="exercise">**to-do-app-extras.html**</a> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.
+Have a look at [to-do-app-extras.html](https://hychalknotes.s3.amazonaws.com/to-do-app-extras.html) to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.
