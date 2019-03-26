@@ -213,42 +213,25 @@ As we start digging in to React, we're going to see a lot more arrow functions.
 
 Reminder, these examples all do **the same thing**.
 
-<table>
-  <tr>
-    <th>
-      Declarative
-    </th>
-    <th>
-      Expression
-    </th>
-    <th>
-      Arrow
-    </th>
-  </tr>
-  <tr>
-    <td>
-      <pre lang="js">
-        function add(a, b) {
-          return a + b;
-        }
-      </pre>
-    </td>
-    <td>
-      <pre lang="js">
-        const add = function(a,b) {
-          return a + b;
-        }
-      </pre>
-    </td>
-    <td>
-      <pre lang="js">
-        const add = (a, b) => {
-          return a + b;
-        }
-      </pre>
-    </td>
-  </tr>
-</table>
+<table><tr><th>
+Declarative
+</th><th>
+Expression
+</th><th>
+Arrow
+</th></tr><tr><td><pre lang="js">
+function add(a, b) {
+  return a + b;
+}
+</pre></td><td><pre lang="js">
+const add = function(a,b) {
+  return a + b;
+}
+</pre></td><td><pre lang="js">
+const add = (a, b) => {
+  return a + b;
+}
+</pre></td></tr></table>
 
 #### Arrow function shorthand syntax
 In addition to the _block body_ style above, arrow functions can also be defined in _concise body_ style. The following is, again, exactly the same as the above:
