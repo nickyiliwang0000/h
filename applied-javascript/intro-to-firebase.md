@@ -365,7 +365,7 @@ $(document).ready(function(){
 });
 ```
 
-Our database needs to know about any new to-do items. When a user submits a new to-do, instead of just appending it on the page, we will want to push it to Firebase. In addition to knowing the description of the to-do, we also need to keep track the completion status of each to-do. Let's organize the data for each to-dp in an object before pushing it to Firebase. 
+Our database needs to know about any new to-do items. When a user submits a new to-do, instead of just appending it on the page, we will want to push it to Firebase. In addition to the description of the to-do, we also need to keep track the completion status of each to-do. For every to-do item, let's organize the data into an object before pushing it to Firebase. 
 
 ```js
 $('form').on('submit', function(e) {
@@ -391,11 +391,12 @@ $('form').on('submit', function(e) {
 
 ```
 
-Next, we will want to display all the to-dos on our page. All of our to-dos will live in Firebase, so we will have to listen for whenever a new todo is added and put it on the page. We're going to use Firebase's `.on()` method to listen for any changes made to our database. `.on()` takes 
+Next, we will want to display all the to-dos on our page. All of our to-dos will live in Firebase, so we will have to listen for whenever a new to-do is added and put it on the page. We're going to use Firebase's `on()` method to listen for any changes made to our database. `on()` takes two arguments - an event and a callback function. `value` is a Firebase event that reads and listens for changes in our database. The callback will be executed when the event happens.
 
 ```js
 dbRef.on('value', (data) => {
-  // creating a variable, inside of this variable we're going to take the argument that was passed in by on(), and call the .val() method on it, to get a snapshot of our database - which is a big object!
+  //an object that represents our data, gets passed into our callback function.
+  //We're able to call val() on this Firebase object and get a snapshot of our database
   const toDoData = data.val();
 
   console.log(toDoData)
@@ -403,11 +404,10 @@ dbRef.on('value', (data) => {
 
 ```
 
-We eventually want to map over our data and render a `li` element on the page for each to-do. Unfortunately the `map()` method could only be called on arrays. Let's convert our data object into an array. We're going to use a `for` in loop to `push()` each to-dos into an empty array.
+We eventually want to map over our data and render a `li` element on the page for each to-do. Unfortunately the `map()` method could only be called on arrays. Let's convert our data object into an array. We're going to use a `for` in loop to `push()` each to-do into an empty array.
 
 ```js
 dbRef.on('value', (data) => {
-  // creating a variable, inside of this variable we're going to take the argument that was passed in by on(), and call the .val() method on it, to get a snapshot of our database - which is a big object!
   const toDoData = data.val();
 
   const arrayOfToDos = [];
@@ -420,11 +420,10 @@ dbRef.on('value', (data) => {
 
 ```
 
-Now that we have this array of `li` elements, we can replace the html contents of the `ul` element with this array.
+Now that we have this array of `li` elements, we can replace the HTML contents of the `ul` element with this array.
 
 ```js
 dbRef.on('value', (data) => {
-  // creating a variable, inside of this variable we're going to take the argument that was passed in by on(), and call the .val() method on it, to get a snapshot of our database - which is a big object!
   const toDoData = data.val();
 
   const arrayOfToDos = [];
@@ -467,7 +466,7 @@ dbRef.on('value', (data) => {
 
 ```
 
-We're using the data attribute to store thea appropriate Firebase key in each li, so we can use it later for the checkbox feature. [For more information on the data attribute, check out MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).  
+We're using the data attribute to store thea appropriate Firebase key in each `li`, so we can use it later for the checkbox feature. [For more information on the data attribute, check out MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).  
 
 
 Now that we have a way to identify each to-do, we can store key of the targeted `li` in a variable. We'll use this key to create a reference to the correct node in our database.
@@ -481,7 +480,7 @@ $('ul').on('click', 'li', function() {
 
 ```
 
-Since we have a way to point to the correct node, we can get a snapshot of that data and update that specific to-do object in our database. Since we only want to [read the data once](https://firebase.google.com/docs/database/web/read-and-write#read_data_once), use We're going to use Firebase's `.once()` method. After capturing the correct to-do, we will use `.update()` to change the complete status to be the opposite of what it is currently using the not operator.
+Since we have a way to point to the correct node, we can get a snapshot of that data and update that specific to-do object in our database. Since we only want to [read the data once](https://firebase.google.com/docs/database/web/read-and-write#read_data_once), use We're going to use Firebase's `once()` method. After capturing the correct to-do, we will use `update()` to change the complete status to be the opposite of what it is currently using the not operator.
 
 ```js
 
@@ -504,7 +503,7 @@ $('ul').on('click', 'li', function() {
 ```
 > Sidenote: `on()` vs. `once()`. Why are we using `once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `once()` is a more appropriate method. If we were to use `on()` for this checkbox feature, we would get an infinite loop! YIKES! Since we would be calling `update()` inside of the `on()`, the update to the database would trigger the `on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. Fortunately, Firebase offers `once()` and it only triggers...once 🤭, which is exactly what we want in this case.  
 
-We're almost there! Now we're going to conditionally render a filled in checkbox or an empty checkbox, based on its status Firebase. For this one we will have to revisit how we rendered those `li` elements again. Since the checkbox are a span, and the look of the checkbox depend on what class we give these spans - we have to figure out which class to render base on the to-do status.
+We're almost there! Now we're going to conditionally render a filled in checkbox or an empty checkbox, based on its status Firebase. For this one we will have to revisit how we rendered those `li` elements again. Since the checkbox are a span, and the look of the checkboxes depend on what class we give the spans - we have to figure out which class to render based on the to-do status.
 
 ```js
 dbRef.on('value', (data) => {
