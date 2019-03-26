@@ -37,7 +37,7 @@ Global execution context
 let name = "Verna";
 let age = "72";
 function callGrandma() {
-  let phoneNumber = '416-555-4321'; 
+  let phoneNumber = "416-555-4321"; 
   phoneCall(phoneNumber, name);
 }
 callGrandma();
@@ -65,7 +65,7 @@ good-grandchild.js
 let name = "Verna";
 let age = "72";
 function callGrandma() {
-  let phoneNumber = '416-555-4321'; 
+  let phoneNumber = "416-555-4321"; 
   phoneCall(phoneNumber, name);
 }
 callGrandma();
