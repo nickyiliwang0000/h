@@ -2,8 +2,8 @@
 Here are your notes, bootcamp studes! We're so glad you're here! If you notice a typo or have an issue with anything in the text, please [create an issue](https://github.com/HackerYou/bootcamp-notes/blob/master/how-to-edit-bootcamp-notes.md)!
 
 ## Topics:
-[Bulletin board](https://github.com/HackerYou/bootcamp-notes/blob/master/bulletin-board.md)
-Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.
+[Stuff you need to know](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know)
+(Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.)
 
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 
