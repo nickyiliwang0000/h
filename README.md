@@ -2,6 +2,9 @@
 Here are your notes, bootcamp studes! We're so glad you're here! If you notice a typo or have an issue with anything in the text, please [create an issue](https://github.com/HackerYou/bootcamp-notes/blob/master/how-to-edit-bootcamp-notes.md)!
 
 ## Topics:
+[Stuff you need to know](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know)
+(Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.)
+
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 
 [CSS](https://github.com/HackerYou/bootcamp-notes/#css)
@@ -51,7 +54,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Background color and images](https://github.com/HackerYou/bootcamp-notes/blob/master/css/background-color-and-images.md)
 * [Web typography](https://github.com/HackerYou/bootcamp-notes/blob/master/css/web-typography.md)
 * [Using webfonts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/using-webfonts.md)
-* [CSS pseudos-selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
+* [CSS pseudo-selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
 * [CSS dimensions](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-dimensions.md)
 * [CSS layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-layouts.md)
 * [Display and positioning](https://github.com/HackerYou/bootcamp-notes/blob/master/css/display-and-positioning.md)
@@ -127,12 +130,20 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
 * [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
 
-## Fishbowl exercises:
-[HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/html-and-css-fishbowl-exercises.md)
-[jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
-[JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
+## Fishbowl exercises
+* [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/html-and-css-fishbowl-exercises.md)
 
-## Projects:
+* [jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
+
+* [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
+
+## Projects
+Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements. 
+
+Turning in an excellent small project is better than turning in a more ambitious project with lots of bugs. 
+
+>**Complete is better than impressive.**
+
 [Project 1](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
 
 [Project 2](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-02.md)
