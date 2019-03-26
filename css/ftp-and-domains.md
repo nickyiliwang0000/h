@@ -67,7 +67,7 @@ Otherwise:
 1. Click the blue and green 'Site Manager' icon in the top left corner.  
   ![Site manager icon below the window's exit and minimize buttons](https://hychalknotes.s3.amazonaws.com/site-manager-icon-screenshot-2019.png) 
 2. Click 'New Site' to enter your credentials.
-  ![Site manager window in FileZilla](https://hychalknotes.s3.amazonaws.com/site-manager-config-screenshot-2019.png)
+  ![Site manager window in FileZilla](https://hychalknotes.s3.amazonaws.com/site-manager-config-screenshot-2019.png =650x)
 3. Rename 'New site' to whatever you like.
 4. Host is `ftp.yourdomainname.com` (replace `yourdomainname` with your domain name).
 5. Leave 'Port' and 'Protocol' as they are.
