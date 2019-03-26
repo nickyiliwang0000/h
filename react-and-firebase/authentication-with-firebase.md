@@ -1,6 +1,6 @@
 <!-- Student takeaway -->
 <!-- By the end of this lesson, the student should know:
-- How to change their database rules to allow only authenticated users to write to/read
+- How to change their database rules to allow only authenticated users to write to / read from their database
 - Create a conditionally rendering button for login/logout
 - Use Firebase's Google authentication method to sign in
 - Use Firebase's Google authentication method to sign out
@@ -88,9 +88,9 @@ Change your rules at 'Database' > 'Rules' and hit 'Publish' so that it the rules
 }
 ```
 
-These rules tell Firebase to only allow users who are authenticated to read and write from the database.
+These rules tell Firebase to only allow users who are authenticated to read from and write to the database.
 
-We are going to create an instance of the Google provider object as well as an instance of the auth module from firebase:
+We are going to create an instance of the Google provider object as well as an instance of the `auth` module from `firebase`:
 ```javascript
 //App.js
 const provider = new firebase.auth.GoogleAuthProvider();
@@ -108,7 +108,7 @@ constructor() {
     }
 ```
 
-Let's set up some buttons to render conditionally whether or not a user is logged in our out.
+Let's set up some buttons to render conditionally based on whether a user's login status:
 
 ```javascript
  render() {
@@ -177,5 +177,75 @@ When the user signs in, the `onAuthStateChanged` method checks the Firebase data
 
 Now, we can update the UI to reflect that the user has been logged in! 
 
-### Additional resources
-[Firebase Authentication Documentation](https://firebase.google.com/docs/auth/web/password-auth)
+## Additional resources
+Have more questions? Want to authenticate with a different email provider? Check out the [Firebase authentication documentation](https://firebase.google.com/docs/auth/web/password-auth)!
+
+<!-- Kristen made a starter file for a code-along to add auth and push data to distinct users -->
+<!-- https://github.com/kristencodes/secret-diary -->
+<!-- It's a create React App this as the App.js: -->
+<!-- 
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      newEntry: "",
+      diaryEntries: {}
+    };
+  }
+  handleSubmit = e => {
+    e.preventDefault();
+    const newDiaryEntry = {
+      date: new Date().toDateString(),
+      body: this.state.newEntry
+    };
+
+    this.setState({
+      newEntry: ""
+    });
+
+    // push data to firebase here
+  };
+  handleChange = e => {
+    this.setState({
+      [e.target.id]: e.target.value
+    });
+  };
+  render() {
+    return (
+      <div className="App">
+        <main>
+          <h1>My ✨Special✨ Special✨ Secret Diary 🙊</h1>
+
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type="text"
+              value={this.state.newEntry}
+              id="newEntry"
+              onChange={this.handleChange}
+            />
+          </form>
+          <input type="submit" />
+          <section className="entries">
+            {Object.entries(this.state.diaryEntries).map(entry => {
+              return (
+                <article key={entry[0]}>
+                  <p>Written on: {entry[1].date}</p>
+                  <p>{entry[1].body}</p>
+                </article>
+              );
+            })}
+          </section>
+        </main>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+
+ -->
