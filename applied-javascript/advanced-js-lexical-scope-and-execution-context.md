@@ -32,7 +32,7 @@ When you think of the term _global_ in JavaScript, think **code that is not insi
 <table><tr><th>
 good-grandchild.js
 </th><th>
-Global Execution Context
+Global execution context
 </th></tr><tr><td><pre lang="js">
 let name = 'Verna';
 let age = '72';
@@ -60,7 +60,7 @@ Whenever a function is **called**, a new execution context is created. All of th
 <table><tr><th>
 good-grandchild.js
 </th><th>
-`callGrandma`'s Execution Context
+**callGrandma**'s execution context
 </th></tr><tr><td><pre lang="js">
 let name = 'Verna';
 let age = '72';
@@ -123,14 +123,14 @@ Let's take a look at `this` inside object methods.
 ```javascript
 // object literal is created 
 const character = {
-  name: 'Kermit',
+  name: "Kermit",
   print: function(){
     console.log(this);
   }
 }
 
 character.print(); 
-// >> {name: 'Kermit', print: f(){}}
+// >> {name: "Kermit", print: f(){}}
 ```
 
 In this case, since the function is a method (i.e. it is attached to an object), and the method is called as a property of the object, the `this` keyword references **the object that contains the method**.
@@ -139,21 +139,21 @@ Now, let's create a function inside of a method.
 
 ```javascript
 const character = {
-  name: 'Kermit',
+  name: "Kermit",
   print: function(){
     console.log(this);
     const changeName = function(newName){
       this.name = newName;
     }
 
-    changeName('Miss Piggy');
+    changeName("Miss Piggy");
     console.log(this);
   }
 }
   
 character.print(); 
-// >> {name: 'Kermit', ...} 
-// >> {name: 'Kermit', ...}
+// >> {name: "Kermit", ...} 
+// >> {name: "Kermit", ...}
 
 ``` 
 
@@ -169,21 +169,21 @@ Let's rewrite our `changeName` method using an arrow function.
 
 ```javascript
 const character = {
-  name: 'Kermit',
+  name: "Kermit",
   print: function(){
     console.log(this);
     const changeName = (newName) => {
       this.name = newName;
     }
     
-    changeName('Miss Piggy');
+    changeName("Miss Piggy");
     console.log(this);
   }
 }
 
 character.print(); 
-// >> {name: 'Kermit', ...} 
-// >> {name: 'Miss Piggy', ...}
+// >> {name: "Kermit", ...} 
+// >> {name: "Miss Piggy", ...}
 ```
 
 It now works like we want it to! How is that the case? We are using an arrow function for our `changeName` method, which measn that the `changeName` function does not have it's own `this`: it uses the `this` from it's enclosing execution context, which is the `print` method. 
@@ -192,7 +192,7 @@ Take note that this is a great solution to our nested function problem but can y
 
 ```js
 const singer = {
-  name: 'Beyoncé',
+  name: "Beyoncé",
   sayMyName: () => {
     return this.name;
   }
