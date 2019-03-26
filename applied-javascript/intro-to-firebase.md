@@ -15,7 +15,7 @@ One hundred million years ago, web development was divided into two camps: front
 
 **Back-end** development focuses on data retrieval and storage. Getting data from a database to the browser so the front end has something to show. It is sometimes referred to as the _server side_ of your application. 
 
-All of the applications that we've built up until this point are front-end applications: they are not hooked up to any kind of database, and since we don't know any back-end languages like PHP or server-side JavaScript environments like Node.js, we haven't been able to build or or manage our own databases.
+All of the applications that we've built up until this point are front-end applications: they are not hooked up to any kind of database, and since we don't know any back-end languages like PHP or server-side JavaScript environments like Node.js, we haven't been able to build or manage our own databases.
 
 Until now!
 
@@ -36,10 +36,10 @@ Firebase was acquired by Google in 2004, so you'll need to pick one of your Goog
 2. Click 'Add Project'.
 ![Step 2](https://hychalknotes.s3.amazonaws.com/firebase-step2-2019.png)  
 
-3. Give your project a name. Let's call ours `first-firebase-app`. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You make be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'.
+3. Give your project a name. Let's call ours `first-firebase-app`. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You may be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'.
 ![Step 3](https://hychalknotes.s3.amazonaws.com/firebase-step3-2019.png)  
 
-4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the Firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need do a bit of configuration. On the 'Project Overview' tab, click on the '</>' icon. 
+4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the Firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need to do a bit of configuration. On the 'Project Overview' tab, click on the '</>' icon. 
 ![Step 4](https://hychalknotes.s3.amazonaws.com/firebase-step4-2019.png)  
 
 5. Firebase will provide some code that will link our application to the Firebase project we've just created. If you make an `html` file, you can paste this code right into it, right before the closing `</body>` tag.
@@ -308,7 +308,7 @@ You will get back something that looks like this:
 
 
 ## Listening for changes to data in Firebase
-Remember `on()` from jQuery? Firebase has its own built in `on()` method, that we can use to listen for events. For example, we can listen for when any changes have been made to the database.
+Remember `on()` from jQuery? Firebase has its own built-in `on()` method, that we can use to listen for events. For example, we can listen for when any changes have been made to the database.
 
 Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 
@@ -365,7 +365,7 @@ $(document).ready(function(){
 });
 ```
 
-Our database needs to know about any new to-do items. When a user submits a new to-do, instead of just appending it on the page, we will want to push it to Firebase. In addition to the description of the to-do, we also need to keep track the completion status of each to-do. For every to-do item, let's organize the data into an object before pushing it to Firebase. 
+Our database needs to know about any new to-do items. When a user submits a new to-do, instead of just appending it on the page, we will want to push it to Firebase. In addition to the description of the to-do, we also need to track the completion status of each to-do. For every to-do item, let's organize the data into an object before pushing it to Firebase. 
 
 ```js
 $('form').on('submit', function(e) {
@@ -449,7 +449,7 @@ $('ul').on('click', 'li', function() {
 
 ```
 
-When the user clicks on the `li`, we need to identify the corresponding to-do node in Firebase in order to update it. Unfortunately, with the way we originally rendered the `li`, there is no way to identify which to-do belongs to which node. Since each node is assigned a unique Firebase key, we can add this piece of data to each `li` when we render it. Let's revisit how we rendered each `li` and ammend it slightly:
+When the user clicks on the `li`, we need to identify the corresponding to-do node in Firebase in order to update it. Unfortunately, with the way we originally rendered the `li`, there is no way to identify which to-do belongs to which node. Since each node is assigned a unique Firebase key, we can add this piece of data to each `li` when we render it. Let's revisit how we rendered each `li` and amend it slightly:
 
 ```js
 dbRef.on('value', (data) => {
@@ -466,7 +466,7 @@ dbRef.on('value', (data) => {
 
 ```
 
-We're using the data attribute to store thea appropriate Firebase key in each `li`, so we can use it later for the checkbox feature. [For more information on the data attribute, check out MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).  
+We're using the data attribute to store the appropriate Firebase key in each `li`, so we can use it later for the checkbox feature. [For more information on the data attribute, check out MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).  
 
 
 Now that we have a way to identify each to-do, we can store key of the targeted `li` in a variable. We'll use this key to create a reference to the correct node in our database.
@@ -487,12 +487,16 @@ Since we have a way to point to the correct node, we can get a snapshot of that 
 $('ul').on('click', 'li', function() {
   // stores the value of the data-key attribute in a variable. This value is the corresponding Firebase key
   const selectedKey = $(this).data('key');
+
   // creating a reference to the correct node using the previous variable
   const toDoItemRef = firebase.database().ref(`/${selectedKey}`);
+
   // getting snapshot of the appropriate node without listening for changes
   toDoItemRef.once('value', (data) => {
+
     // grab the data
     const targeted = data.val();
+
     // update the complete status of the correct to-do
     toDoItemRef.update({
       complete: !targeted.complete
