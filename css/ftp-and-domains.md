@@ -64,7 +64,7 @@ Otherwise:
 
 ## Configuring FileZilla
 
-1. Click the blue and green 'Site Manager' icon in the top left corner. 
+1. Click the blue and green 'Site Manager' icon in the top left corner.  
   ![Site manager icon below the window's exit and minimize buttons](https://hychalknotes.s3.amazonaws.com/site-manager-icon-screenshot-2019.png) 
 2. Click 'New Site' to enter your credentials.
   ![Site manager window in FileZilla](https://hychalknotes.s3.amazonaws.com/site-manager-config-screenshot-2019.png)
