@@ -2,7 +2,7 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 <!-- Week number -->
-### Week 0
+### Week 1
 <!-- Monday -->
 
 <!-- Tuesday -->
