@@ -205,7 +205,7 @@ Nothing is happening. We're clicking on `li` items so why isn't the callback fun
 
 ### Event delegation
 
-Remember, [events in JavaScript](https://developer.mozilla.org/en-US/docs/Web/Events#Keyboard_events) are designated (e.g. `click`, `mouseover`, `touchstart`, `keypress`, etc). When an action takes place, we usually want to run some code. By default, the browser lets every ancestor of an event's target know that an action took place. This event flow is often referred to as either _event bubbling_ or _event propagation_. Here's an example: 
+Remember, [events in JavaScript](https://developer.mozilla.org/en-US/docs/Web/Events#Keyboard_events) are designated actions (e.g. `click`, `mouseover`, `touchstart`, `keypress`, etc). When an action takes place, we usually want to run some code. By default, the browser lets every ancestor of an event's target know that an action took place. This event flow is often referred to as either _event bubbling_ or _event propagation_. Here's an example: 
 
 ```html
 <ul>
@@ -305,6 +305,6 @@ There is so much more that you can do to enhance the app! Here are some suggesti
 - validate the input field with an error message if the input is empty upon submit
 - automatically move completed items to the bottom
 - when the page loads, focus on the input field (i.e. cursor should load inside the input)
-- drag/drop items to sort (have a look at [jQuery UI](https://jqueryui.com/))
+- check out [jQuery UI](https://jqueryui.com/) to drag/drop items to sort
 
 Have a look at <a href="https://hychalknotes.s3.amazonaws.com/to-do-app-extras.html" class="exercise">**to-do-app-extras.html**</a> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.
