@@ -78,7 +78,7 @@ We're going to use Google as our authentication provider for this project, prima
 
 In past versions of our Firebase apps, we've configured them so **anyone** can read and write to the database. We're going to change this so that only users who are signed in can write to the database. 
 
-Change your rules at 'Database' > 'Rules' and hit 'Publish' so that it the rules look like this: 
+Change your rules at 'Database' > 'Rules' and hit 'Publish' so that the rules look like this: 
 ```JSON
 {
   "rules": {
