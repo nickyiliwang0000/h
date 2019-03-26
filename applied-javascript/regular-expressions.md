@@ -1,19 +1,38 @@
-## Regex
+  <!-- Student takeaway -->
+  <!-- By the end of this lesson, the student should know:
+  - What a regular expression is.
+  - When to use a regular expression.
+  - Some common methods that take regular expressions (e.g. exec and replace).
+  - How to build a regex.
+  - Where to check or find a regex.
+  - There are a plenty of common regex snippets out in the world.
+  -->
 
-You might come across regular expressions if you need to check for patterns within string. They look a little complex at first glance, but they are very powerful if you can get your head around them.  
+# Regular expressions
 
-One common use case is form validation. For example, we could check to see if a user's submitted email address in a valid format like `name@domain.tld`. 
+_Regular expressions_ are sequences of characters that define search patterns. They're mostly used to check for specific combinations of characters in a string.
 
-A **regular expression** (abbreviated regex) is a sequence of characters used for pattern matching in strings. Regular expressions can be thought of as their own language. They are implemented in many other programming languages, not just JavaScript.
+One common use case for regex is form validation: we could use a regular expression to check if what a user typed into an input has a valid email like `[name][@][domain][.][tld]`. We could alert the user of any misspellings or errors that would make the email address unusuable (e.g. `pilarsantiagojmail.ca`,  `pilarsantiago@jmailca` or  `@jmail.ca`).
 
-The syntax for a regex is `/` , then a pattern to match, then a closing `/`.
+> Regular expressions are used in lots of programming languages, not just in JavaScript.
+
+## Regex syntax
+The syntax for a regex is `/` , then the pattern you want to match, then a closing `/`.
 
 ```js
 let re = /abc/;
 ```
-This regex would match the characters, "abc".
+This regular expression would match the characters "abc" in that order.
 
-#### Checking for a match with `exec`
+You can also create a new regular expression using the `new` keyword.
+```js
+let regEx = new RegExp();
+```
+> From MDN: `Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.`
+
+For the most part, we'll be using the first syntax.
+
+## Checking for a match with `exec`
 
 To check to see if a regex pattern has any matches in a string, we can use the `exec` method. It returns either an array of the matches or `null` if it doesn't find anything. 
 
@@ -23,92 +42,93 @@ re.exec("I'm learning the alphabet."); //returns null
 re.exec("Now I know my abc's"); //returns "["abc"]";
 ```
 
-#### Regex for string replacement
+## Replacing parts of a string with `replace`
 
-You can also use a regex pattern in the `replace` string method.  
+You can also pass a regular expression to the `replace` string method to replace a chosen character(s) with other one(s).  
 
 ```js
 let name = "HackerYou";
 let newName = name.replace(/You/, "U"); //returns "HackerU"
 ```
 
-Regex can do a lot more than just replace a simple string of characters. You can use it to catch multiple things at once. 
+Regular expressions don't have to search for just one thing - you can use them to catch multiple things at once!
 
-We can make our replace function search for both upper and lower case Y's by matching a set of characters instead of just capital Y. We use `[]` to indicate a set of characters to match.
+### More complicated regular expressions
+We can tell our replace function that we want to search for both upper and lower case Y's by matching a set of characters instead of just capital Y. We use `[]` to indicate a set of characters.
 
 ```js
 let name="HackerYou";
-let newName = name.replace(/[Yy]ou/, "U"); //name="HackerU"
-
-let name="hackeryou";
-let newName = name.replace(/[Yy]ou/, "U"); //name="hackerU"
+let newName = name.replace(/[Yy]ou/, "U");
+// newName
+// "HackerU"
 ```
 
-You can also use what are called **flags** to change the way the search behaves.  Adding the `i` flag to the end of a regex means 'case insensitive'.
+You can also use what are called _flags_ to change the way the search behaves.  Adding the `i` flag to the end of a regex means the search will be **case insensitive**.
 
 ```js
 let name="hackeryOu";
-let newName = name.replace(/You/i, "U"); //name="HackerU"
+let newName = name.replace(/You/i, "U"); 
+// newName
+// "hackerU"
 ```
 
-Some other common symbols:
+There are lots of other diacritics available to you to narrow down what your regular expression is looking for:
 
-`*` => match multiples<br>
-`.` => match any character except line breaks<br>
-`\w` => match all words <br>   
-`\W` => match all non-words  <br>  
-`\d` => match any digit <br>   
-`\s` => match any whitespace character   <br>  
-`[a-z]` => match a range of characters   <br>  
-`[^cd]` => match characters NOT in the set    <br>
+symbol | meaning in a regex
+--|-- 
+`^` |starting at the beginning of a string
+`[]`| a set of characters 
+`*` | match multiples
+`.` | match any character except line breaks
+`\w` | match all words 
+`\W` | match all non-words
+`\d` | match any digit   
+`\s` | match any whitespace character  
+`[a-z]` | match a range of characters (in this case, a to z)
+`[^cd]` | match characters NOT in the set (in this case, )
+`$/` |denotes the end of the string
 
-### Some examples of Regex Patterns that you might find in the wild:
+## Regex patterns
 
-#### Matching a username that has a length between 3 and 16 characters.
+If you want to do something common using regex, chances are someone's already written that regex.
 
-Pattern
-`/^[a-z0-9_-]{3,16}$/`
-
-Let's break down what's happening here:
-`^` => find the beginning of a string<br>
-`[a-z0-9_-]` => followed by any lowercase letter (a-z), number (0-9), an underscore or a hyphen<br>
-`{3,16}` => make sure that there are at least 3 characters, but no more than 16<br>
-`$/` => Notes the end of the string<br>
-
-#### Matching an email address:
-
-Pattern
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+### Matching a username that has a length between 3 and 16 characters
+```js
+let username316 = /^[a-z0-9_-]{3,16}$/;
+```
 
 Let's break down what's happening here:
-`^` => find the beginning of the string<br>
-`([a-z0-9_\.-]+)` => match one or more lowercase letters, numbers, underscores, dots, or hyphens<br>
-`@` => Next is an @ sign<br>
-`([\da-z\.-]+)` => This is the domain name, which must be one or more lowercase letters, numbers, underscores, dots, or hyphens<br>
-`\.` => another escaped dot<br>
- `([a-z\.]{2,6})` => the domain, which is between 2 to 6 letters or dots (for domains like .co.uk)<br>
-`$/` => Notes the end of the string<br>
+1. `^` means: find the beginning of a string...
+2. `[a-z0-9_-]`...that is followed by any lowercase letter `(a-z)`, number `(0-9)`, underscore`(_)` or a hyphen `(-)`.
+3. Make sure that there are at least 3 characters `{3,16}` , but no more than 16.
+4. `$/` means "this is the end of the string."
 
-#### Writing Your Own Regular Expressions
+### Matching an email address
+
+```js
+let emailRegExp = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+```
+
+Let's break down what's happening here:
+1. `^` means: find the beginning of a string...
+2. `([a-z0-9_\.-]+)`: ...that is followed by one or more (`+`) lowercase letters (`a-z`), numbers (`0-9`), underscores (`_`), dots (`\.`), or hyphens (`-`).
+	* Notice that `.` is escaped using the `\` character.
+3. Then, find exactly this character `@` followed by a string...
+4. `([\da-z\.-]+)` ... that is followed by one or more (`+`) digits (`\d`), lowercase letters (`a-z`), dots (`\.`), or hyphens (`-`).
+	* Email providers are usually one word.
+5. Then, find a string`([a-z\.]{2,6})` between 2 to 6 letters (`{2,6}`) or dots (`\.`).
+	* Consider TLDs like `co.uk`, `gc.ca`, `.ca`, and `.pizza`.
+6. End of the string (`$/`).
+
+## Writing your own regular expressions
 
 There are lots more patterns and flags, and you'll probably never remember them all, so don't be afraid to:
 
-##### 1. google for someone else who's written the same regex before
-
-If you're looking for something common like email address validation, you can usually find a pre-written regex online.
-
-##### 2. use a regex tester
-
-<http://www.regexr.com/> We love this online regex tester. You can test your regex against your own text to quickly see if you've got it working. The sidebar also contains a reference of all the different symbols and flags available, and some common examples to get you started.
-
-##### 3. Regexone
-
-<http://regexone.com/> Is a great source for learning regex via interactive exercises.
-
-##### 4. Regexper
-
-<https://regexper.com> helps you visualize your regex
-
-##### 5. Examples of some Regex Patterns
-<https://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149>
-
+1. Search for the regex online.
+	* If you're looking for something common like email address validation, you can usually find a [pre-written regex](https://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149) online.
+2. Use a regex tester.
+	* Like <http://www.regexr.com/>! On this one, the sidebar contains a reference to all the different symbols and flags available and some common examples to get you started.
+3. Practice.
+	* There are lots of ways to practice!
+		* Testing your regex on <http://www.regexr.com/>
+		* [Regexone](http://regexone.com/) is a great source for learning regex via interactive exercises.

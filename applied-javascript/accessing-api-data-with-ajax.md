@@ -186,9 +186,9 @@ $.ajax({
 //   url:'http://myttc.ca/finch_station.json', 
 //   method: 'GET',
 //   dataType: 'jsonp'
-// }).then(resultsFunction());
+// }).then(resultsFunction);
 
-// const resultsFunction(){
+// function resultsFunction(){
 //   // do some stuff
 // }
 ```

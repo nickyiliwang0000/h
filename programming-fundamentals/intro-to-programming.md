@@ -3,7 +3,7 @@
 - What a programming language is (as opposed to a style sheet language or a markup language)
 - That a REPL is a place to test out code
 - That syntax is important
-- What pseudocode is and to write it in the comments
+- What pseudo code is and to write it in the comments
 - The data types we will be working with (SNUBON(S))
 - The difference between an expression and a value
 -->
@@ -53,7 +53,7 @@ public class HelloWorld {
 ```
 ### JavaScript
 ```js
-console.log('hello world');
+console.log('hello, world');
 ```
 
 Some languages are more human-readable than others!
@@ -115,13 +115,12 @@ JavaScript === ECMAScript
 ```
 
 #### More about JavaScript
-Especially the history, ECMAScript, and the uses of JavaScript.
 * [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) (just the Introduction for now)
 * [JavaScript Overview](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/JavaScript_Overview)
 
 ## REPL
 
-_REPL_ stands for read, eval, print, loop. A _REPL enviroment_ is an interactive environment in which you can type instructions for the computer it will read, evaluate/run, and print the results of. Then the computer then makes itself ready for the next instruction (i.e. loops).
+_REPL_ stands for read, eval, print, loop. A _REPL enviroment_ is an interactive environment in which you can type instructions for the computer. The computer will read, evaluate/run, and print the results of those instructions. Then the computer then makes itself ready for the next instruction (i.e. loops).
 
 A JavaScript REPL is available in the dev tools of your browser. Open the JavaScript REPL by navigating to the 'Console' tab.
 
@@ -144,8 +143,7 @@ An _expression_ is any piece of code or instruction given to the computer that p
 // this is the value produced by that expression
 2
 ```
-
-In this example, `1 + 1` is the expression and `2` is the value. In the console, the value is returned immediately after you press enter.
+In the console, the value is returned immediately after you press enter.
 
 Vocabulary is very important because it helps us ask coherent questions and adds structure to our thinking. Just as we learned **selector**, **rule**, **property** and **value** in CSS, so we will drill **expression** and **value** into your head now.
 
@@ -158,13 +156,13 @@ Data type | Description | Example
 number | Integers & decimals/floats | `10`, `10.001`
 string | Characters including spaces | `'internetUser993'` `"123 Main St."`
 boolean | A reserved keyword that looks like an English word| `true`, `false`
-Undefined | Does not have a value | `undefined`
-Null | Has a value of nothing | `null`
-Objects | A set of organized data | `{}`
+undefined | Does not have a value | `undefined`
+null | Has a value of nothing | `null`
+object | A set of organized data | `{studentNumber:231, instructor:"Hyram Outke"}`
 
 > There's also a (new in ES6) data type called Symbol but it's used mostly in library creation and you won't see it much.
 
-If you want a mnemonic, some of our instructors like **SNUBONS**.
+If you want a mnemonic, some of our instructors like **SNUBON(S)**.
 
 ### typeof
 
@@ -181,8 +179,8 @@ typeof "a bunch of fibers rolled up together";
 //string
 
 ```
-## Pseudocode
-When you're writing JavaScript (or other code) it can be helpful to map the detailed steps your program will carry out in plain English, just like we did in the alien exercise. This is called _pseudocode_ and it's a useful strategy for organizing your ideas about how a program should run without worrying about the language's syntax. It's like outlining an essay in point form before going back and writing the actual essay.
+## Pseudo code
+When you're writing JavaScript (or other code) it can be helpful to map the detailed steps your program will carry out in plain English, just like we did in the alien exercise. This is called _pseudo code_ and it's a useful strategy for organizing your ideas about how a program should run without worrying about the language's syntax. It's like outlining an essay in point form before going back and writing the actual essay.
 
 ```json
 when the user scrolls down the page:
@@ -193,4 +191,4 @@ when the user scrolls down the page:
   - hide the tooltip
 ```
 
-Every project you write should have pseudocode. We will often require it, so get into the habit of writing it now!
+Every project you write should have pseudo code. We will often require it, so get into the habit of writing it now!

@@ -73,8 +73,8 @@ artApp.getPieces = function(){
       key: artApp.apikey,
       format: 'json'
     }
-  }).then(function(res) {
-    console.log(res);
+  }).then(function(result) {
+    console.log(result);
   });
 };
 ```
@@ -130,8 +130,8 @@ Let's now fill in the details of `displayPieces`. We want to work through all th
 
 ```js
 artApp.displayPieces = function(data){
-  data.forEach(function(el){
-	console.log(el);
+  data.forEach(function(piece){
+	console.log(piece);
 });
 };
 ```
@@ -159,12 +159,12 @@ Let's take a look at a single piece's data in the console to see how we can get 
 * img url is found in `piece.webImage.url`
 
 
-Inside the `$.each`, function we'll generate that HTML with the following code.
+Inside the `forEach` function we'll generate that HTML with the following code.
 
 ```js
 const title = $('<h2>').text(piece.title);
 const artist = $('<p>').addClass('artist').text(piece.principalOrFirstMaker);
-const image = $('<img>').attr('src', piece.webImage.url;
+const image = $('<img>').attr('src', piece.webImage.url);
 const artPiece = $('<div>').addClass('piece').append(image, title, artist);
 ```
 

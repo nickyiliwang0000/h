@@ -166,7 +166,7 @@ randomNumber(); // Wednesday
 
 ```
 
-We place the name of the function that we want to import from the `randomizer` module inside the curly brackets. You'll remember this syntax [from a previous lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.16-advanced-js-destructuring-immutability-and-purity.md#destructuring-objects). It was new in ES6 and is called **destructuring**. We're plucking **only** the `getRandomNumber` function out of the `randomizer.js` file.
+We place the name of the function that we want to import from the `randomizer` module inside the curly brackets. You'll remember this syntax [from a previous lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-destructuring-mutability-and-purity.md#destructuring-objects). It was new in ES6 and is called **destructuring**. We're plucking **only** the `getRandomNumber` function out of the `randomizer.js` file.
 
 Now you know how to recognize and implement ES6 modules. 💪 Way to go!
 

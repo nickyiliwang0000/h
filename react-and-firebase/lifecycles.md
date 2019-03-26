@@ -1,7 +1,7 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
 - Know the difference between mounting and unmounting to the DOM
-- Name four useful lifecycle methods (constructor, render, componentDidMount, componentWillUnmount)
+- Name four useful lifecycle methods (constructor, render, componentDidMount)
 - Know which lifecycle methods are called when a component is mounted to the DOM (constructor, render, componentDidMount)
  -->
 
@@ -29,14 +29,17 @@ There are many React lifecycle methods (see [The Component Lifecycle](https://fa
 
 ![react component lifecycle methods](https://hychalknotes.s3.amazonaws.com/component-lifecycles.jpg)
 
-You don't need to know all of these methods, especially when first starting out. We're going to focus on some of the most important ones. 
+You don't need to know all of these methods, especially when first starting out. We're going to focus on some of the most important and commonly used ones. 
 
-When a component is mounted to the DOM, four lifecycle methods are called:
+When a component is mounted to the DOM, three lifecycle methods are called:
 
 * **constructor()** - This is where you do things like set initial state and bind any functions to your component.
-* ~~**componentWillMount()**~~ - This method is currently being deprecated and isn't recommend for use.
 * **render()** - This is where you determine what gets displayed to the page.
-* **componentDidMount()** - This is where you do things like make AJAX requests for data you'd like to use in your component. 
+* **componentDidMount()** - This is where you do things like make AJAX requests for data you'd like to use in your component.
+
+When a component updates because its state or prop values were changed, this lifecycle method is called:
+
+* **componentDidUpdate()** - This is where you can operate on the DOM and make network requests. **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
 
 When a component is unmounted from the DOM, the only one lifecycle method is called:
 * **componentWillUnmount()** This is where you stop any recurrent logic associated with that component (like a timer or a recurring API call).
@@ -48,21 +51,25 @@ In order to access the lifecycle methods, simply reference them inside of your c
 
 ```javascript
 class App extends Component {
-    constructor() {
-        // here is our constructor lifecycle method
-    }
+  constructor() {
+    // here is our constructor lifecycle method
+  }
 
-    componentWillMount() {
-        // currently being deprecated, please don't use unless you're 100% sure you need to!
-    }
+  componentDidMount() {
+    //  invoked immediately after a component is mounted
+  }
 
-    render() {
-        // here is any DOM elements we want to display on the page
-    }
+  componentDidUpdate() {
+    // here is anything we want to happen when a component is updated like when props or state change
+  }
 
-    componentDidMount() {
-        // here is anything we want to happen after the component renders - like grab our AJAX data
-    }
+  componentDidMount() {
+    // here is anything we want to happen after the component renders - like grab our AJAX data
+  }
+
+  render() {
+    // here is any DOM elements we want to display on the page
+  }
 }
 ```
 

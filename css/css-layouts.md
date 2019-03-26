@@ -249,6 +249,7 @@ Weird! How do we fix these unexpected bugs?
 ### Collapse of surrounding element
 Floats were created to allow text to wrap around an image and continue down the page. In the layout we're working with, we don't have enough content in the `aside` to continue down the page, so the wrapper sizes to the next element that isn't floated. In this case, the `footer` element.
 
+
 #### Solution: `.clearfix`
 
 The industry standard method of solving this problem is mostly referred to as `clearfix`. (The class name of `clearfix` is an industry standard, but it can be named whatever you'd like.) Along with the `border-box` fix, we recommend that you include the following code at the **top** of all our `styles.css` files moving forward.

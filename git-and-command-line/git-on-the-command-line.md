@@ -151,6 +151,5 @@ When you are actively working on a project, try to commit at **least** at the en
 ## Resources
 
 * [Git cheatsheet](https://help.github.com/articles/git-cheatsheet)!
-* [I Broke Git](http://ibrokegit.com/) is a tool former instructor Drew Minns made that is meant to solve many of the common problems faced by new users of Git on the command line!
 * [GitHub's docs](https://help.github.com/categories/managing-files-in-a-repository/) are helpful and well-written. 
 * [Another version of what we did today](https://readwrite.com/2013/10/02/github-for-beginners-part-2/).

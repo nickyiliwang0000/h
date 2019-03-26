@@ -1,9 +1,12 @@
 # Project 2 (multi-page PSD conversion)
 ## Due date
-Wednesday, February 6th, 1:00 p.m.
+Wednesday, May 8th, 1:00 p.m.
 
 ## Project description
 This project is meant to emulate a common task you will perform as a front-end developer. You will be provided a design and you will be tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for your users regardless of the device on which they are viewing the site.
+
+## Project objective
+To show that you can take a PSD and convert it into a functional, responsive website.
 
 ## Design decisions
 You won't always be provided with the tablet/mobile views from a designer, and this project is meant to put you in that situation. Part of being a front-end developer can be making design/UX decisions - so put some thought into how your users might interact with the site on various devices. Ask your peers for opinions or get ask questions in Helpcue and tag them `#design`. 
@@ -45,19 +48,32 @@ You can find your assignment [here]().
 
 ### Design files
 
-**Willow**<br> [Designs](https://scene.zeplin.io/project/5bd868de140d6a09aca0af25) <br> [Assets](https://www.dropbox.com/sh/q5ke3xhqqg2djyd/AAD6qXuWIi2JNgTJFl7ULpK7a?dl=0)
+**BEACHSTAY**
 
-**Harper** <br>[Designs](https://scene.zeplin.io/project/5bd8719461e1ec76382d36d0) <br> [Assets](https://www.dropbox.com/sh/uss6ws7kv6gwjh2/AADvVILyKjSvzc0uJrz9e42xa?dl=0)
+[design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
 
-**Sophie**<br> [Designs](https://scene.zeplin.io/project/5bd871ba7119da0abc145c86)<br>[Assets](https://www.dropbox.com/sh/c7bl9kraouaru3a/AAAe4_gqBtY8mbvwzdDzqEgUa?dl=0)
+[assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
 
+
+**PLANTED**
+
+[design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
+
+[assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
+
+
+**BAR-ONE** 
+
+[design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
+
+[assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
 ## Submitting your project
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
-1. Create a repository called `first-name-last-name-project#`
+1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Post the link to the repository on Basecamp.
+1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
 
 ## Lateness
 Projects handed in on the same date as the deadline but after the requested time (usually 10 a.m.) will receive a 10% penalty. Students will receive an additional 10% deduction for each day the project is late, up to a maximum penalty of 30% (or 3 days late). After 3 days, the project will receive a total mark of 0.

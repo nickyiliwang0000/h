@@ -15,13 +15,15 @@ Having a database for our application opens up a ton of possibilities for the ki
 ### Setting up Firebase
 As always, the first thing that we'll need to do is create a new project inside our Firebase dashboard.
 
-1. Head over to [firebase.google.com](https://firebase.google.com) and click 'Go to console' in the top right corner.
-
-2. Click 'Create New Project'.
+1. Head over to <https://firebase.google.com> and click 'Go to console' in the top right corner.
+  ![Firebase console](https://hychalknotes.s3.amazonaws.com/01-create-project-firebase-console.png)
+2. Click 'Add Project'.
 
 3. Give your new project a name and click 'Create Project'.
+  ![Firebase console](https://hychalknotes.s3.amazonaws.com/02-name-project-firebase.png)
 
-4. Click 'Add Firebase to your web app'. This will give you the embed code to add Firebase to your project.
+4. Click 'Add Firebase to your web app' or the `</>` icon. This will give you the embed code to add Firebase to your project.
+  ![Firebase config image](https://hychalknotes.s3.amazonaws.com/06-firebase-config.png)
 
 5. You're now ready to hook your React project up to Firebase. Create a new app by running  `create-react-app bookshelf`.
 
@@ -33,6 +35,7 @@ As always, the first thing that we'll need to do is create a new project inside 
 import firebase from 'firebase';
 
 // Initialize Firebase
+//USE YOUR CONFIG OBJECT
 const config = {
 	apiKey: "AIzaSyAs8R3gyKI9pnUyls5jwruEPGlUoTC1RJE",
 	authDomain: "fir-bookshelf-8d68a.firebaseapp.com",
@@ -50,10 +53,13 @@ export default firebase;
 ### Getting data from Firebase
 Let's imagine that we were building a digital bookshelf that kept track of all of our favourite books. To start, let's add some data to our Firebase database.
 
-In your Firebase console, click the 'Database' tab. We're giong to create a realtime database in text mode. When you get through, you should see a screen that looks something like this:
-![Firebase database tab](https://hychalknotes.s3.amazonaws.com/firebase-database-screenshot.png)
+1. In your Firebase console, click the 'Database' tab. We're going to create a **realtime database** in. Firebase REALLY wants you to make a Cloudstore one right now. Do not do that. Scroll past it until you see something like this:
+![Firebase database tab](https://hychalknotes.s3.amazonaws.com/07-firebase-database-screenshot.png)
 
-Let's add some books to our bookshelf. Click the plus next to the name of our database and let's add some lines with your favourite books:
+1. Hit 'Create database'.
+1. Start in test mode.
+
+Let's add some books to our bookshelf. Click the plus next to the name of your database and add some lines with your favourite books:
 
 ```
 book1: "Beloved"
@@ -194,8 +200,10 @@ class App extends Component {
             )
           })}
           </ul>
-          <input type="text" placeholder="Add a book to your bookshelf" />
-          <button>Add Book</button>
+          <form action="submit>
+            <input type="text" placeholder="Add a book to your bookshelf" />
+            <button>Add Book</button>
+          </form>
         </div>
       )
     }
@@ -234,8 +242,11 @@ render() {
         )
       })}
       </ul>
+
+    <form action="submit>
       <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
       <button onClick={this.handleClick}>Add Book</button>
+    </form>
     </div>
   )
 }
@@ -262,7 +273,8 @@ handleChange(event) {
   // ..
 }
 
-handleClick() {
+handleClick(e) {
+  e.preventDefault();
   const dbRef = firebase.database().ref();
   dbRef.push(this.state.userInput);
   this.setState({userInput: ""})
@@ -279,13 +291,14 @@ render() {
 }
 ```
 
-Our `handleClick` function is only three lines, but they are important ones:
+Our `handleClick` function is only four lines, but they are important ones:
 
+1. `e.preventDefault` prevents the default action of form submission.
 1. `const dbRef = firebase.database().ref();` : First, as usual, we grab our reference to the current database.
 
-2. `dbRef.push(this.state.userInput);` : We grab whatever the current value of `this.state.userInput` is (this will be whatever the user has typed in the input field), and push that into the database.
+1. `dbRef.push(this.state.userInput);` : We grab whatever the current value of `this.state.userInput` is (this will be whatever the user has typed in the input field), and push that into the database.
 
-3. `this.setState({userInput: ' '})` : We reset the state of `userInput` to an empty string, effectively clearing the input.
+1. `this.setState({userInput: ' '})` : We reset the state of `userInput` to an empty string, effectively clearing the input.
 
 We're almost there! Now we have to be able to remove the data.
 
@@ -339,8 +352,10 @@ render() {
           )
         })}
         </ul>
-        <input type="text" placeholder="Add a book to your bookshelf" value={this.state.value} onChange={this.handleChange} />
-        <button onClick={this.handleClick}>Add Book</button>
+        <form actions="submit">
+          <input type="text" placeholder="Add a book to your bookshelf" value={this.state.value} onChange={this.handleChange} />
+          <button onClick={this.handleClick}>Add Book</button>
+        </form>
       </div>
     )
   }
