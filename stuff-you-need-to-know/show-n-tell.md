@@ -96,4 +96,4 @@ touchstart
 transition-delay
 typed.js
 
-###Claimed:
+### Claimed:
