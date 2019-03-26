@@ -29,37 +29,28 @@ Let's explore what these things are. Create an HTML file and link it to an empty
 When you think of the term _global_ in JavaScript, think **code that is not inside a function**. 
 
 ### Global execution context example
-<table>
-  <tr>
-    <th>
-      good-grandchild.js
-    </th>
-    <th>
-    Global execution context
-    </th>
-  </tr>
-  <tr>
-    <td>
-      <pre lang="js">
-        let name = 'Verna';
-        let age = '72';
-        function callGrandma() {
-          let phoneNumber = '416-555-4321'; 
-          phoneCall(phoneNumber, name);
-        }
-        callGrandma();
-      </pre>
-    </td>
-    <td>
-      | Item | Inventory |
-      | ---- | --------- |
-      | Variables | `name`, `age` |
-      | Functions | `callGrandma` |
-      | Other scopes | _none_ |
-      | `this` | Reference to `window` |
-    </td>
-  </tr>
-</table>
+<table><tr><th>
+good-grandchild.js
+</th><th>
+Global Execution Context
+</th></tr><tr><td><pre lang="js">
+let name = 'Verna';
+let age = '72';
+function callGrandma() {
+  let phoneNumber = '416-555-4321'; 
+  phoneCall(phoneNumber, name);
+}
+callGrandma();
+</pre></td><td>
+
+| Item | Inventory |
+| ---- | --------- |
+| Variables | `name`, `age` |
+| Functions | `callGrandma` |
+| Other Scopes | _none_ |
+| `this` | Reference to `window` |
+
+</td></tr></table>
 
 ### Function context
 
