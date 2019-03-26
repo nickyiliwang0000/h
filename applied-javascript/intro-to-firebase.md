@@ -39,10 +39,10 @@ Firebase was acquired by Google in 2004, so you'll need to pick one of your Goog
 3. Give your project a name. Let's call ours `first-firebase-app`. If you would like, you can uncheck 'Use the default settings for sharing Google Analytics for Firebase data'. Click 'Continue'. You make be asked to 'Customize data sharing for your new project', you do not need to check any of the boxes. Click 'Create Project'.
 ![Step 3](https://hychalknotes.s3.amazonaws.com/firebase-step3-2019.png)  
 
-4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need do a bit of configuration. On the 'Project Overview' tab, click on the '</>' icon. 
+4. You'll be redirected to the Firebase dashboard. This is where you can manage all of the Firebase tools related to your project, including authentication, database, storage and hosting. Before implementing any of the features, we need do a bit of configuration. On the 'Project Overview' tab, click on the '</>' icon. 
 ![Step 4](https://hychalknotes.s3.amazonaws.com/firebase-step4-2019.png)  
 
-5. Firebase will provide some code that will link our application with the Firebase project we have just created. If you make an `html` file, you can paste this code right into it before the closing `</body>` tags.
+5. Firebase will provide some code that will link our application to the Firebase project we've just created. If you make an `html` file, you can paste this code right into it, right before the closing `</body>` tag.
 ![Step 5](https://hychalknotes.s3.amazonaws.com/firebase-step5-2019.png)  
 
 ```javascript
@@ -391,7 +391,7 @@ $('form').on('submit', function(e) {
 
 ```
 
-Next, we will want to display all the to-dos on our page. All of our to-dos will live in Firebase, so we will have to listen for whenever a new to-do is added and put it on the page. We're going to use Firebase's `on()` method to listen for any changes made to our database. `on()` takes two arguments - an event and a callback function. `value` is a Firebase event that reads and listens for changes in our database. The callback will be executed when the event happens.
+Next, we will want to display all the to-dos on our page. All of our to-dos will live in Firebase, so we will have to listen for whenever a new to-do is added and put it on the page. We're going to use Firebase's `on()` method to listen for any changes made to our database. Remember, `on()` takes two arguments - an event and a callback function. `value` is a Firebase event that reads and listens for changes in our database. The callback will be executed when the event happens.
 
 ```js
 dbRef.on('value', (data) => {
@@ -437,7 +437,7 @@ dbRef.on('value', (data) => {
 ```
 
 ### Bonus: implementing the checkbox
-We can upgrade our to-do app with one more feature. Try getting the checkbox data to also persist using Firebase. If you get stuck, checkout out the the answer key provided. You can download [to-do-app-firebase-answer.zip](https://hychalknotes.s3.amazonaws.com/to-do-app-firebase-answer.zip) to see the final code-along with the checkbox implemented. If you wanted more guidance checkout the steps below.
+We can upgrade our to-do app with one more feature. Try getting the checkbox data to also persist using Firebase. If you get stuck, take a look at the answer key provided. You can download [to-do-app-firebase-answer.zip](https://hychalknotes.s3.amazonaws.com/to-do-app-firebase-answer.zip) to see the final code-along with the checkbox implemented. If you wanted more guidance, check out the steps below.
 
 Since the complete status of each to-do changes on the click of the `li` elements. We will want to put our code inside that click listener.
 
@@ -449,7 +449,7 @@ $('ul').on('click', 'li', function() {
 
 ```
 
-When the user clicks on the `li`, we need to identify the corresponding to-do node in Firebase in order to update it. Unfortunately, with the way we originally rendered the `li`, there is no way to identify which to-do belongs to which node. Since each node is assigned a unique Firebase key, we can add this piece of data to each `li` when we render it. Let's revisit how we rendered each li and ammend it slightly:
+When the user clicks on the `li`, we need to identify the corresponding to-do node in Firebase in order to update it. Unfortunately, with the way we originally rendered the `li`, there is no way to identify which to-do belongs to which node. Since each node is assigned a unique Firebase key, we can add this piece of data to each `li` when we render it. Let's revisit how we rendered each `li` and ammend it slightly:
 
 ```js
 dbRef.on('value', (data) => {
@@ -501,9 +501,9 @@ $('ul').on('click', 'li', function() {
 });
 
 ```
-> Sidenote: `on()` vs. `once()`. Why are we using `once()`? In situations where we want to only get a snapshot of the data and not listen for any changes, `once()` is a more appropriate method. If we were to use `on()` for this checkbox feature, we would get an infinite loop! YIKES! Since we would be calling `update()` inside of the `on()`, the update to the database would trigger the `on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. Fortunately, Firebase offers `once()` and it only triggers...once 🤭, which is exactly what we want in this case.  
+> Sidenote: `on()` vs. `once()`. Why are we using `once()`? In situations where we only want to get a snapshot of the data and not listen for any changes, `once()` is a more appropriate method. If we were to use `on()` for this checkbox feature, we would get an infinite loop! YIKES! Since we would be calling `update()` inside of the `on()`, the update to the database would trigger the `on()`, which would trigger the `update()`, which would trigger `on()`...∞💥🚨. Fortunately, Firebase offers `once()` and it only triggers...once 🤭, which is exactly what we want in this case.  
 
-We're almost there! Now we're going to conditionally render a filled in checkbox or an empty checkbox, based on its status Firebase. For this one we will have to revisit how we rendered those `li` elements again. Since the checkbox are a span, and the look of the checkboxes depend on what class we give the spans - we have to figure out which class to render based on the to-do status.
+We're almost there! Now we're going to conditionally render a filled-in checkbox or an empty checkbox, based on its status Firebase. To implement this, we will have to revisit how we rendered those `li` elements. Since each checkbox is a span, and the look of the checkboxes depend on what class we give them - we have to figure out which class to render based on the to-do status.
 
 ```js
 dbRef.on('value', (data) => {
