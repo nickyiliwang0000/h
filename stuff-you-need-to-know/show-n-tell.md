@@ -1,10 +1,10 @@
-#Show 'n' Tell
+# Show 'n' Tell
 
 Below you'll find some preliminary instructions on how to prep for your Show & Tell week, the date you'll be presenting, and a list of possible topics to cover!  You're welcome to choose anything from the list at any point but once it's taken, it can't be repeated. **Please DM Charlotte on slack to claim a topic!** If you want to pick an out-of-the-box topic on something that's not listed here, please send me a message to get it approved! 
 
 We'll have a practice session **Thursday at 4pm** during the week of your presentation in the back classroom! Don't feel pressured to have a completed, polished presentation ready - we'll talk more in depth about the logistics of the presentations, have everyone do a timed runthrough and I'll offer some notes and advice before the big day!
 
-##The How:
+## The How:
 You'll be presenting on your topic for *3-5 minutes*. You definitely do not have to be an expert on the subject but you'll want to gather enough info to tell us:
 what is it
 how - as developers - we would use it
@@ -15,15 +15,15 @@ For JS libraries I always ask that you choose one where you can explain what's h
 
 Feel free to choose any topic at any time in the Bootcamp - it doesn't need to relate directly to the material covered in the week you're presenting in (aka present JS during HTML review, CSS stuff during react week, whatever!)
 
-##The Why:
+## The Why:
 The whole point of Show & Tell is to help you get comfortable speaking to a technical subject in front of a group! Presentation and public speaking skills are important to hone, especially when it comes to talking technical successes, challenges, and products. Think job interviews, client briefs, project updates with your future teams, etc. for use-cases!
 
-##The When:
+## The When:
 Submit/pitch your topic **to Charlotte by 3:34pm Wednesday of your presentation week**. You can claim or pitch a topic *ANY* time throughout the Bootcamp so feel free to prepare early once your topic is approved!
 
 Class/Project work time stops at 5pm on Fridays - Show & Tell starts with your presentations at ~5:10pm
 
-##The Who:
+## The Who:
 
 Week 1 -
 
@@ -41,10 +41,10 @@ Week 7 -
 
 Week 8 - 
 
-##The What:
+## The What:
 Feel free to choose any topic - just make sure you have it approved before you spend too much time researching and building a presentation! Here are 50 example topics you can choose or use to inspire your choice. Each Monday, I'll update the list below with any topics that have been claimed!
 
-###Available:
+### Available:
 :focus-within
 AMP pages
 animate on scroll
