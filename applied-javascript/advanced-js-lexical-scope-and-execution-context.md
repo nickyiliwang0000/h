@@ -34,8 +34,8 @@ good-grandchild.js
 </th><th>
 Global execution context
 </th></tr><tr><td><pre lang="js">
-let name = 'Verna';
-let age = '72';
+let name = "Verna";
+let age = "72";
 function callGrandma() {
   let phoneNumber = '416-555-4321'; 
   phoneCall(phoneNumber, name);
@@ -62,8 +62,8 @@ good-grandchild.js
 </th><th>
 **callGrandma**'s execution context
 </th></tr><tr><td><pre lang="js">
-let name = 'Verna';
-let age = '72';
+let name = "Verna";
+let age = "72";
 function callGrandma() {
   let phoneNumber = '416-555-4321'; 
   phoneCall(phoneNumber, name);
@@ -107,7 +107,7 @@ someDeclaredFunction();
 
 ### `this` in a function expression's private scope
 ```javascript
-let someFunctionExpression = function(){
+const someFunctionExpression = function(){
     console.log(this);
 }
 
