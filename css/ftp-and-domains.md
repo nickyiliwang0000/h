@@ -54,10 +54,10 @@ If you already have an FTP username and password, you can skip this step.
 
 Otherwise:
 1. Log into your hosting account and click 'FTP accounts'. You may find it in the main menu, however dashboards may vary across different hosting services: 
-  * ![Bluehost main menu](https://hychalknotes.s3.amazonaws.com/ftp-menu-screenshot-2019.png)
+  ![Bluehost main menu](https://hychalknotes.s3.amazonaws.com/ftp-menu-screenshot-2019.png)
 
 2. Go ahead and enter a new set of credentials. Make sure the directory is set to `public_html` and not a sub-directory.
-  ![Form to create an FTP account](https://hychalknotes.s3.amazonaws.com/ftp-account-screenshot-2019.png)
+  ![Form to create an FTP account](https://hychalknotes.s3.amazonaws.com/create-ftp-account-screenshot-2019.png)
 
 3. Put your username and password somewhere safe. 
   * Hot tip: use a password manager. Some popular ones are [1Password](https://1password.com) and [LastPass](https://www.lastpass.com/).
@@ -65,9 +65,9 @@ Otherwise:
 ## Configuring FileZilla
 
 1. Click the blue and green 'Site Manager' icon in the top left corner. 
-  * ![Site manager icon below the window's exit and minimize buttons](https://hychalknotes.s3.amazonaws.com/site-manager-icon-screenshot-2019.png) 
+  ![Site manager icon below the window's exit and minimize buttons](https://hychalknotes.s3.amazonaws.com/site-manager-icon-screenshot-2019.png) 
 2. Click 'New Site' to enter your credentials.
-   ![Site manager window in FileZilla](https://hychalknotes.s3.amazonaws.com/site-manager-config-screenshot-2019.png)
+  ![Site manager window in FileZilla](https://hychalknotes.s3.amazonaws.com/site-manager-config-screenshot-2019.png)
 3. Rename 'New site' to whatever you like.
 4. Host is `ftp.yourdomainname.com` (replace `yourdomainname` with your domain name).
 5. Leave 'Port' and 'Protocol' as they are.
