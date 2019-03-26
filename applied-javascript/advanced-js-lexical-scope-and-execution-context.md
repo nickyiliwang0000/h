@@ -243,4 +243,4 @@ const add = (a,b) => a + b;
 When only an expression is provided to the right-side of the arrow, the function's `return` value is implied to be that expression. Try to become familiar with this shorthand syntax, because it's going to come up a lot in React!
 
 ## Exercise
-[Arrow functions exercises](https://hychalknotes.s3.amazonaws.com/arrow_functions_exercises.zip)
+Try these [exercises](https://hychalknotes.s3.amazonaws.com/arrow_functions_exercises.zip) to practice writing arrow functions.
