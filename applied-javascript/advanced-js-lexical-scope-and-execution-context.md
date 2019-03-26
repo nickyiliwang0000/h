@@ -57,37 +57,28 @@ callGrandma();
 Whenever a function is **called**, a new execution context is created. All of the variables and functions declared **inside** this function are protected from being accessed or modified by the rest of the script. This is referred to as the _private scope_ of the function. A function's execution context also **has a reference to it's outer execution context**. 
 
 ### Function execution context example
-<table>
-  <tr>
-    <th>
-      good-grandchild.js
-    </th>
-    <th>
-      **callGrandma**'s execution context
-    </th>
-  </tr>
-  <tr>
-    <td>
-      <pre lang="js">
-        let name = 'Verna';
-        let age = '72';
-        function callGrandma() {
-          let phoneNumber = '416-555-4321'; 
-          phoneCall(phoneNumber, name);
-        }
-        callGrandma();
-      </pre>
-    </td>
-    <td>
-      | Item | Inventory |
-      | ---- | --------- |
-      | Variables | `phoneNumber` |
-      | Functions | _none_ |
-      | Other scopes | `global execution context` |
-      | `this` | Reference to `window` |
-    </td>
-  </tr>
-</table>
+<table><tr><th>
+good-grandchild.js
+</th><th>
+`callGrandma`'s Execution Context
+</th></tr><tr><td><pre lang="js">
+let name = 'Verna';
+let age = '72';
+function callGrandma() {
+  let phoneNumber = '416-555-4321'; 
+  phoneCall(phoneNumber, name);
+}
+callGrandma();
+</pre></td><td>
+
+| Item | Inventory |
+| ---- | --------- |
+| Variables | `phoneNumber` |
+| Functions | _none_ |
+| Other Scopes | `Global Execution Context` |
+| `this` | Reference to `window` |
+
+</td></tr></table>
 
 ## Revisiting `this`
 
