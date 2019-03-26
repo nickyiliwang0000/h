@@ -47,7 +47,7 @@ callGrandma();
 | ---- | --------- |
 | Variables | `name`, `age` |
 | Functions | `callGrandma` |
-| Other Scopes | _none_ |
+| Other scopes | _none_ |
 | `this` | Reference to `window` |
 
 </td></tr></table>
@@ -75,7 +75,7 @@ callGrandma();
 | ---- | --------- |
 | Variables | `phoneNumber` |
 | Functions | _none_ |
-| Other Scopes | `Global Execution Context` |
+| Other scopes | `global execution context` |
 | `this` | Reference to `window` |
 
 </td></tr></table>
