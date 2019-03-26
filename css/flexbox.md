@@ -289,7 +289,7 @@ In order to fix this weirdness, we need to state that the elements will wrap to 
 
 Toggle between `flex-direction: column;` and `flex-direction: row;` and see how that changes the way the content flows.
 
-In the previous examples, has been a lot of white space all around the elements. Some of the other properties available to us with flexbox allow us to control how the space between elements. (Note that the following ules only apply when there is **more than one row or column of content** (depending on the `flex-direction`).
+In the previous examples, we've had to deal with a lot of white space around the elements. Flexbox also provides us with some properties to better control how we can utilize this extra spacing. (Note that the following rules only apply when there is **more than one row or column of content** (depending on the `flex-direction`).
 
 ### `align-content:space-between;`
 
