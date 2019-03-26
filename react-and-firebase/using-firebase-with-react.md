@@ -4,13 +4,14 @@
 - Retreive data from a Firebase database using .on('value')
 - Delete data using .remove()
  -->
-# Getting Started with Firebase and React
+# Using Firebase with React
+
 ## React and Firebase
 Earlier on, we learned how to add Firebase to our jQuery to-do app so that we could hold on to our to-dos, even after page refresh.
 
-We're now going to learn how to add Firebase to a React project so that our applications can have their own database/back end.
+We're now going to learn how to add Firebase to a React project so that our applications can have their own databases.
 
-Having a database for our application opens up a ton of possibilities for the kinds of applications we can build; our apps can have users, and each one of those users can have a customized experience interacting with our website based on their preferences.
+Having databases for our applications opens up a ton of possibilities for the kinds of applications we can build; our apps can have users, and each one of those users can have a customized experience interacting with our website based on their preferences.
 
 ### Setting up Firebase
 As always, the first thing that we'll need to do is create a new project inside our Firebase dashboard.
@@ -27,8 +28,8 @@ As always, the first thing that we'll need to do is create a new project inside 
 
 5. You're now ready to hook your React project up to Firebase. Create a new app by running  `create-react-app bookshelf`.
 
-6. We will also need to install `firebase` , run `npm install firebase` 
-
+6. We will also need to install `firebase` , run `npm install firebase --save` 
+  * The `npm install` command downloads files. If you go into your `node_modules` folder, you should see a folder called `firebase`.
 7. In your `src` folder create a filed `firebase.js` and add the following lines
 ```javascript
 //firebase.js
@@ -37,11 +38,11 @@ import firebase from 'firebase';
 // Initialize Firebase
 //USE YOUR CONFIG OBJECT
 const config = {
-	apiKey: "AIzaSyAs8R3gyKI9pnUyls5jwruEPGlUoTC1RJE",
-	authDomain: "fir-bookshelf-8d68a.firebaseapp.com",
-	databaseURL: "https://fir-bookshelf-8d68a.firebaseio.com",
-	projectId: "fir-bookshelf-8d68a",
-	storageBucket: "fir-bookshelf-8d68a.appspot.com",
+	apiKey: "YOUR-API-KET",
+	authDomain: "bookshelf-8d68a.firebaseapp.com",
+	databaseURL: "https://bookshelf-8d68a.firebaseio.com",
+	projectId: "bookshelf-8d68a",
+	storageBucket: "bookshelf-8d68a.appspot.com",
 	messagingSenderId: "548100999451"
 };
 firebase.initializeApp(config);
@@ -53,7 +54,7 @@ export default firebase;
 ### Getting data from Firebase
 Let's imagine that we were building a digital bookshelf that kept track of all of our favourite books. To start, let's add some data to our Firebase database.
 
-1. In your Firebase console, click the 'Database' tab. We're going to create a **realtime database** in. Firebase REALLY wants you to make a Cloudstore one right now. Do not do that. Scroll past it until you see something like this:
+1. In your Firebase console, click the 'Database' tab. We're going to create a **realtime database** in. Firebase REALLY wants you to make a Cloud Firestore one right now. Do not do that. Scroll past it until you see something like this:
 ![Firebase database tab](https://hychalknotes.s3.amazonaws.com/07-firebase-database-screenshot.png)
 
 1. Hit 'Create database'.
@@ -146,31 +147,25 @@ Now that we're seeing our data, we need to store it in the state. Let's update o
 //App.js
 const dbRef = firebase.database().ref();
 dbRef.on('value', (response) => {
+  // Here we're creating a variable to store the new state we want to introduce to our app
   const newState = [];
+  // Here we store the response from our query to Firebase inside of a variable called data
+  // .val() is a Firebase method that gets us the information we want
   const data = response.val();
 
+  //data is an object, so we iterate through it using a for in loop to access each book name 
   for (let key in data) {
+    // inside the loop, we push each book name to an array we already created inside the .on() function called newState
     newState.push(data[key]);
   }
 
+ // then, we call this.setState in order to update our component's state using the local array newState
   this.setState({
     books: newState
   });
 
 });
 ```
-
-There's a lot of new code here, so let's break down exactly what we're doing:
-
-1. `const newState = []` : When we set set (or re-set) the state of our component, we need to create a variable that will store the new state we want to introduce to our app.
-
-2. `const data = response.val()`: Here we store our response inside of a `data` variable so that it's easier to reference later
-
-3. `for (let key in data) {`: We need to iterate through our `data` object so that we can grab all the book names out of it!
-
-4. `newState.push(data[key]);`:  We push all of the books into our `newState` array, which is a temporary array we only need inside this function.
-
-5. `this.setState({ books: newState });` : We call `this.setState` in order to update our component's state with our `newBooks` array.
 
 If this worked successfully, you'll notice that the book titles are now appearing on the page! You'll also notice if you go into your database and add a new book, it will appear on the page. Dang!
 
@@ -192,15 +187,15 @@ class App extends Component {
       return (
         <div>
           <ul>
-          {this.state.books.map((book) => {
-            return (
-              <li>
-                {book}
-              </li>
-            )
-          })}
+            {this.state.books.map((book) => {
+              return (
+                <li>
+                  <p>{book}</p>
+                </li>
+              )
+            })}
           </ul>
-          <form action="submit>
+          <form action="submit">
             <input type="text" placeholder="Add a book to your bookshelf" />
             <button>Add Book</button>
           </form>
@@ -226,7 +221,10 @@ constructor() {
   }
 }
 
+// this event will fire every time there is a change in the input it is attached to
 handleChange = (event) => {
+  // when there is a change in the input, 
+  // we're telling React to update the state of our `App` component to be equal to whatever is currently in the input field.
   this.setState({userInput: event.target.value})
 }
 
@@ -237,29 +235,58 @@ render() {
       {this.state.books.map((book) => {
         return (
           <li>
-            {book}
+            <p>{book}</p>
           </li>
         )
       })}
       </ul>
 
-    <form action="submit>
+    <form action="submit">
+      { /* Here, we've attached the `handleChange` method to our input field.*/}
       <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
-      <button onClick={this.handleClick}>Add Book</button>
+    { /* Here, we've attached the `handleClick` method to our input button.*/}
+      <button>Add Book</button>
     </form>
     </div>
   )
 }
 ```
-What's going on here?
-
-1. We've attached the `handleChange` method to our input field.
-
-2. It will be triggered any time the field is "changed" – that is, whenever the user types in it.
-
-3. Every time this happens, React updates the state of our `App` component to be equal to whatever is currently in the input field.
-
 We can see exactly how this is working with a quick glance at the React dev tools. You'll see that `this.state.userInput` is being updated dynamically as you type in the text field!
+
+Now, let's make sure React always knows about the changes in our input field by _binding_ our text input:
+```javascript
+//App.js
+constructor() {
+  super();
+  this.state = {
+    books: [],
+    userInput: ''
+  }
+}
+// ...
+render() {
+  return (
+    <div>
+      <ul>
+      {this.state.books.map((book) => {
+        return (
+          <li>
+            <p>{book}</p>
+          </li>
+        )
+      })}
+      </ul>
+
+    <form action="submit">
+    {/* add the value attribute and set it's value equal to whatever's in state*/}
+      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput}/>
+      <button>Add Book</button>
+    </form>
+    </div>
+  )
+}
+```
+
 
 Now let's add our `handleClick` method:
 
