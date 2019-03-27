@@ -16,12 +16,11 @@ object | A set of organized data | `{}`
 
 > There's also a (new in ES6) data type called Symbol but it's used mostly in library creation and you won't see it much.
 
-We've seen numbers, strings, booleans, and `undefined` when working with variables. Now we're gonna talk about _objects_!
+We've seen numbers, strings, booleans, and `undefined` when working with variables. (These are sometimes known as [_primitives_](https://developer.mozilla.org/en-US/docs/Glossary/Primitive).)Now we're gonna talk about _objects_!
 
 Objects are incredibly useful for storing paired and grouped data in JavaScript. You can think of them as containers. Inside the container are properties, which are composed of **key-value pairs**. Each property contains a name (i.e. a key) and a value which can be referenced directly. 
 
 ![Diagram of key value pairs as properties in an object](https://hychalknotes.s3.amazonaws.com/objects.png)
-
 
 Another way to think about JavaScript objects is to compare them to real-life objects. An apple is an **object** and it has **properties** like colour, size, sugar content, etc.
 
@@ -46,7 +45,7 @@ const apple = {
 };
 ```
 
-> Curly brackets with comma separated properties is the _object literal_ notation for making objects. There are other ways of making objects which will be covered [later](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md).
+> Curly brackets with comma separated properties is the _object literal_ notation for making objects. There are other ways of making objects which will be covered [in other lessons](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md).
 
 ### Object naming conventions
 * Property names follow [the same rules](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/variables.md#variable-naming-conventions) as variable names.
@@ -65,7 +64,7 @@ The other is called _bracket notation_. It looks like this:
 ```js
 myObject["propertyName"];
 ```
-Note that in bracket notation, the property name is contained within quotation marks. 
+Note that in bracket notation, the property name is contained within quotation marks.
 
 Most of the time you'll use dot notation, but bracket notation is useful if the property names require quotes **or** if they are unknown at runtime (e.g. the user's input is used to retrieve a property).
 
@@ -101,7 +100,7 @@ To update a property value you need to know the property name. Use the assignmen
 
 dot notation | bracket notation 
 --- | --- 
-`clothing.shoes = 4` | `clothing['shoes'] = 4` 
+`clothing.shoes = 4` | `clothing['shoes'] = 4`
 
 ## Adding properties to an object
 To add a new property to an existing object, define a new property and value on that object.
@@ -109,6 +108,19 @@ To add a new property to an existing object, define a new property and value on 
 dot notation | bracket notation 
 --- | --- 
 `clothing.scarves = "too many!"` | `clothing['scarves'] = "too many!"` 
+`clothing.uglyClothes = null` | `clothing['uglyClothes'] = null` 
+
+Note that if you have a variable in your code, you may add it as a key in an object using bracket notation:
+```js
+let newItem = "dress"
+
+clothing[newItem] =  1;
+console.log(clothing.dress)
+// 1
+```
+The line that adds the property to the object remains the same no matter what the new item is, and **even if** we don't know what the new item is yet.
+  
+> You may be wondering: can I store a function to an object? Yes! This what's called a _method_ and we'll cover them in detail [in another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/arrays-and-methods.md).
 
 ## Exercises
 
@@ -145,7 +157,7 @@ for (let item in clothing) {
 }
 ```
 
-Here we use bracket notations to access the properties stored in the object. For example the first pass of the `for in` loop sets the `item` variable to have the value of `"socks"`. So when we say `clothing[item]` what the browser really sees is `clothing["socks"]`. And each iterations changes the value of `item`.
+Here we use bracket notations to access the properties stored in the object. For example the first pass of the `for-in` loop sets the `item` variable to have the value of `"socks"`. So when we say `clothing[item]` what the browser really sees is `clothing["socks"]`. And each iterations changes the value of `item`.
 
 The output looks something like this:
 
