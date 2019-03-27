@@ -53,21 +53,21 @@ To use FTP, we need an FTP client. You may have a favourite FTP client already, 
 If you already have an FTP username and password, you can skip this step.
 
 Otherwise:
-1. Log into your hosting account and click 'FTP accounts': 
-  * ![Yellow diamond icon representing FTP accounts page on hosting interface](http://wes.io/L96O/content)
+1. Log into your hosting account and click 'FTP accounts'. You may find it in the main menu, however dashboards may vary across different hosting services: 
+  ![Bluehost main menu](https://hychalknotes.s3.amazonaws.com/ftp-menu-screenshot-2019.png)
 
 2. Go ahead and enter a new set of credentials. Make sure the directory is set to `public_html` and not a sub-directory.
-  ![Form to create an FTP account](http://wes.io/L88a/content)
+  ![Form to create an FTP account](https://hychalknotes.s3.amazonaws.com/create-ftp-account-screenshot-2019.png)
 
 3. Put your username and password somewhere safe. 
   * Hot tip: use a password manager. Some popular ones are [1Password](https://1password.com) and [LastPass](https://www.lastpass.com/).
 
 ## Configuring FileZilla
 
-1. Click the blue and green 'Site Manager' icon in the top left corner. 
-  * ![Site manager icon below the window's exit and minimize buttons](http://f.cl.ly/items/0i0K3B0S1e273V2u0M0S/Screen%20Shot%202014-01-22%20at%201.25.49%20PM.png) 
+1. Click the blue and green 'Site Manager' icon in the top left corner.  
+  ![Site manager icon below the window's exit and minimize buttons](https://hychalknotes.s3.amazonaws.com/site-manager-icon-screenshot-2019.png) 
 2. Click 'New Site' to enter your credentials.
-   ![Site manager window in FileZilla](http://f.cl.ly/items/3Y0V093u08133f0b0G09/Screen%20Shot%202014-01-22%20at%201.37.16%20PM.png)
+  ![Site manager window in FileZilla](https://hychalknotes.s3.amazonaws.com/site-manager-config-screenshot-2019.png)
 3. Rename 'New site' to whatever you like.
 4. Host is `ftp.yourdomainname.com` (replace `yourdomainname` with your domain name).
 5. Leave 'Port' and 'Protocol' as they are.
@@ -80,7 +80,7 @@ Go ahead and click 'Connect' and you should connect to your server.
 
 FileZilla will now show a listing of all the files on your **local** machine on the left side and all the files in the **root** directory of your **remote** web server on right side.
 
-![FileZilla interface, showing local and remote directories](http://f.cl.ly/items/432X360I0h2T3H2Y1b24/Screen%20Shot%202014-01-22%20at%202.16.43%20PM.png)
+![FileZilla interface, showing local and remote directories](https://hychalknotes.s3.amazonaws.com/filezilla-local-and-remote-screenshot-2019.png)
 
 You can navigate between the files and directories on both sides like a normal Explorer or Finder window. To upload to the server, drag and drop from the left side to the right side. 
 
