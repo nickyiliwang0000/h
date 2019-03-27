@@ -1,6 +1,13 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
-- 
+- Create an object literal
+- Read the value of a property using using dot notation
+- Read the value of a property using using bracket notation
+- Retreive the value on a property of an object using dot notation
+- Retreive the value on a property of an object using bracket notation
+- Add a property to an object using dot notation
+- Add a property to an object using bracket notation
+- Write a for-in loop
  -->
 # Objects
 We learned [in a previous lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-programming.md#data-types) that the data types of JavaScript values are: 
@@ -112,14 +119,14 @@ dot notation | bracket notation
 
 Note that if you have a variable in your code, you may add it as a key in an object using bracket notation:
 ```js
-let newItem = "dress"
+let newItem = "dresses"
 
-clothing[newItem] =  1;
-console.log(clothing.dress)
-// 1
+clothing[newItem] =  2;
+console.log(`I have ${clothing.dress} dresses.`)
+// I have 2 dresses.
 ```
 The line that adds the property to the object remains the same no matter what the new item is, and **even if** we don't know what the new item is yet.
-  
+
 > You may be wondering: can I store a function to an object? Yes! This what's called a _method_ and we'll cover them in detail [in another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/arrays-and-methods.md).
 
 ## Exercises
