@@ -60,7 +60,7 @@ Let's imagine that we were building a digital bookshelf that kept track of all o
 1. Hit 'Create database'.
 1. Start in test mode.
 
-Let's add some books to our bookshelf. Click the plus next to the name of your database and add some lines with your favourite books:
+Let's add some books to our bookshelf. Click the '+' next to the name of your database and add some lines with your favourite books:
 
 ```
 book1: "Beloved"
@@ -121,8 +121,12 @@ All that's left to do is grab our data from Firebase. We'll do this by using the
 class App extends Component {
  // ...rest of our code here
  componentDidMount() {
+   // here we create a variable that holds a reference to our database
    const dbRef = firebase.database().ref();
+   // here we add an event listener to that variable that will fire every time there is a change in the database
+   // this event listener takes a callback function which we will use to get our data from the database and call it response
    dbRef.on('value', (response) => {
+     // here we use Firebase's .val() method to parse our database info the way we want it
      console.log(response.val());
    });
  }
@@ -130,14 +134,6 @@ class App extends Component {
 ```
 
 If this worked successfully, you should see your books appear as an object in the console!
-
-Let's break down what's happening here:
-
-1. `dbRef = firebase.database().ref()`: First, we create a variable called `dbRef` and point it towards our Firebase database.
-
-2. `dbRef.on('value', (response) => {`: Second, we add an event listener to the variable that will update us on changes to our database and provide us a callback function to directly access the data from our database (here we named the parameter `response`).
-
-3. `console.log(response.val())`  : Third, we use the `val()` method to grab our database information and print it out into the console.
 
 ### Storing Firebase data in state
 
@@ -171,6 +167,8 @@ If this worked successfully, you'll notice that the book titles are now appearin
 
 ## Updating data
 Now we're able to successfully retrieve and display information from our database, but we still don't have a way to add new books to our bookshelf. Let's add that functionality now!
+
+> Remember that you always use `.setState()` to change state after it's been initialized, never `this.state = `.
 
 We'll need to add an input and a book-adding button to our `App` component:
 
@@ -223,8 +221,7 @@ constructor() {
 
 // this event will fire every time there is a change in the input it is attached to
 handleChange = (event) => {
-  // when there is a change in the input, 
-  // we're telling React to update the state of our `App` component to be equal to whatever is currently in the input field.
+  // we're telling React to update the state of our `App` component to be equal to whatever is currently the value of the input field
   this.setState({userInput: event.target.value})
 }
 
@@ -253,7 +250,8 @@ render() {
 ```
 We can see exactly how this is working with a quick glance at the React dev tools. You'll see that `this.state.userInput` is being updated dynamically as you type in the text field!
 
-Now, let's make sure React always knows about the changes in our input field by _binding_ our text input:
+Now, let's make sure React always knows about the changes in our input field by _controlling_ (sometimes called _binding_) our text input:
+
 ```javascript
 //App.js
 constructor() {
@@ -279,14 +277,14 @@ render() {
 
     <form action="submit">
     {/* add the value attribute and set it's value equal to whatever's in state*/}
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput}/>
+      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
       <button>Add Book</button>
     </form>
     </div>
   )
 }
 ```
-
+Here, we're using [the HTML attribute `value`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#value) to set the intial state of the input and we're using `this.state.userInput` to keep track of it as it changes.
 
 Now let's add our `handleClick` method:
 
@@ -300,10 +298,14 @@ handleChange(event) {
   // ..
 }
 
-handleClick(e) {
-  e.preventDefault();
+handleClick(event) {
+  //event.preventDefault prevents the default action: form submission
+  event.preventDefault();
+  // here, we create a reference to our database
   const dbRef = firebase.database().ref();
+  // here we grab whatever value this.state.userInput has and push it to the database
   dbRef.push(this.state.userInput);
+  // here we reset the state to an empty string
   this.setState({userInput: ""})
 }
 
@@ -311,21 +313,12 @@ render() {
   return (
     <div>
       { /* ... */ }
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
+      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
       <button onClick={this.handleClick}>Add Book</button>
     </div>
   )
 }
 ```
-
-Our `handleClick` function is only four lines, but they are important ones:
-
-1. `e.preventDefault` prevents the default action of form submission.
-1. `const dbRef = firebase.database().ref();` : First, as usual, we grab our reference to the current database.
-
-1. `dbRef.push(this.state.userInput);` : We grab whatever the current value of `this.state.userInput` is (this will be whatever the user has typed in the input field), and push that into the database.
-
-1. `this.setState({userInput: ' '})` : We reset the state of `userInput` to an empty string, effectively clearing the input.
 
 We're almost there! Now we have to be able to remove the data.
 
@@ -336,19 +329,20 @@ If we go back and look at our database in the Firebase dashboard, we can see tha
 
 Each book has a corresponding key. We can tell Firebase which book we want to remove using the book's key.
 
-The first thing we'll need to do is change the structure of the data that we're currently getting back from Firebase. Right now, we grab each one of the books from our database and store it in an array as a series of strings, like this:
+The first thing we'll need to do is change the structure of the data that we're currently getting back from Firebase. Right now, we grab each one of the titles of the books from our database and store it in an array as a atring, like this:
 
 `["A Little Life", "Beloved"]`
 
 So, right now, we aren't storing any reference to each one of these books' unique keys. Let's modify our data so we can get the key as well and store it.
 
-We'll need to modify our `componentDidMount` lifecycle hook:
+We'll need to modify our `componentDidMount` lifecycle method:
 
 ```javascript
 //App.js
 componentDidMount() {
       // ...
       for (let key in data) {
+        // 
         newState.push({key: key, name: data[key]});
       }
 
@@ -356,14 +350,12 @@ componentDidMount() {
 }
 ```
 
-Now, instead of pushing a string, we're pushing in an object with two properties:
+Log the two values we get inside the loop. What are they?
 
-1. a key, which refers to the unique id of the book inside the Firebase database
-and
-2. the actual book title
+1. `key` refers to the unique ID of the book stored in the Firebase database.
+2. `data[key]` refers to the associated book title stored in Firebase.
 
-This means that we're going to store an array of object, rather than an array of strings, inside of `this.state.books`, so we'll need to modify our `render` method to reflect this:
-
+This means that we're going to store an array of objects, rather than an array of strings, inside of `this.state.books`, so we'll need to modify our `render` method to reflect this:
 
 ```javascript
 //App.js
@@ -371,16 +363,16 @@ render() {
     return (
       <div>
         <ul>
-        {this.state.books.map((book, i) => {
+        {this.state.books.map(book => {
           return (
-            <li key={i}>
-              {book.name} - {book.key}
+            <li key={book.key}>
+              <p>{book.name} - {book.key}</p>
             </li>
           )
         })}
         </ul>
         <form actions="submit">
-          <input type="text" placeholder="Add a book to your bookshelf" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
           <button onClick={this.handleClick}>Add Book</button>
         </form>
       </div>
@@ -397,24 +389,25 @@ Now that we're grabbing our book ID, we need to add a 'Remove' button that has a
 </li>
 ```
 
-The reason that we use `() => this.removeBook(book.key)` here is that we are passing a **reference** to a function rather than **calling** the function. If this is confusing for you right now don't worry about it too much, just remember that you may need to do this in order to pass data from your component!
+The reason that we use `() => this.removeBook(book.key)` here is that we are passing a **reference** to a function rather than **calling** a function. If this is confusing for you right now don't worry about it too much, just remember that you may need to do this in order to pass data from your component!
+
+> You can think of this syntax `{ ()=> someFunction(information) }` as saying "Wait a second! I have some information to give `someFunction()` before it runs!"
 
 Now let's write our `removeBook` function inside our `App` component:
 
 ```javascript
 //App.js
+// this function takes an argument, which is the ID of the book we want to remove
 removeBook(bookId) {
+  // here we create a reference to the database AT THE BOOK'S ID
   const dbRef = firebase.database().ref(bookId);
+  // using the Firebase method .remove(), we remove that node
   dbRef.remove();
 }
 ```
 
-In this function, we are:
-1. Grabbing a reference to our database. By passing in the specific `bookId` we sent up from inside of our `render` method, we can grab the specific book that the user wants to remove.
+You'll notice that your app automatically updates to remove that item from your page! This is because we initialized the `.on('value')` event listener when the app is created. `.on('value')` fires every time there is a change to a value in the database.
 
-2. Remove that item from the database by calling `.remove()`
-
-You'll notice that your app automatically updates to remove that item from your page! This is because of the `.on('value')` event listener!
-
-## Additional Resources
-* [Firebase Documentation](https://firebase.google.com/docs/web/setup)
+## Additional resources
+* [Firebase documentation](https://firebase.google.com/docs/web/setup)
+* [React documentation about what controlled inputs are and how to control inputs other than text](https://reactjs.org/docs/forms.html#controlled-components)
