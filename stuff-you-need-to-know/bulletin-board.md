@@ -18,5 +18,6 @@
 <!-- * Topic 2 -->
 <!-- * Topic 3 -->
 
-
+### Bootcamp Calendar
+We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Spring Bootcamp: (event)".
 
