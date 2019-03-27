@@ -1,10 +1,10 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
 - Create an object literal
-- Read the value of a property using using dot notation
-- Read the value of a property using using bracket notation
 - Retreive the value on a property of an object using dot notation
 - Retreive the value on a property of an object using bracket notation
+- Update the value of a property using using dot notation
+- Update the value of a property using using bracket notation
 - Add a property to an object using dot notation
 - Add a property to an object using bracket notation
 - Write a for-in loop
@@ -164,7 +164,7 @@ for (let item in clothing) {
 }
 ```
 
-Here we use bracket notations to access the properties stored in the object. For example the first pass of the `for-in` loop sets the `item` variable to have the value of `"socks"`. So when we say `clothing[item]` what the browser really sees is `clothing["socks"]`. And each iterations changes the value of `item`.
+Here we use bracket notations to access the properties stored in the object. For example the first pass of the `for-in` loop sets the `item` variable to have the value of `"socks"`. So when we say `clothing[item]` what the browser really sees is `clothing["socks"]`. And each iteration changes the value of `item`.
 
 The output looks something like this:
 
