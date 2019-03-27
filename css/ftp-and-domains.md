@@ -80,7 +80,7 @@ Go ahead and click 'Connect' and you should connect to your server.
 
 FileZilla will now show a listing of all the files on your **local** machine on the left side and all the files in the **root** directory of your **remote** web server on right side.
 
-![FileZilla interface, showing local and remote directories](http://f.cl.ly/items/432X360I0h2T3H2Y1b24/Screen%20Shot%202014-01-22%20at%202.16.43%20PM.png)
+![FileZilla interface, showing local and remote directories](https://hychalknotes.s3.amazonaws.com/filezilla-local-to-remote-screenshot-2019.png)
 
 You can navigate between the files and directories on both sides like a normal Explorer or Finder window. To upload to the server, drag and drop from the left side to the right side. 
 
