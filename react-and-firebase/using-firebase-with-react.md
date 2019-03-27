@@ -54,7 +54,7 @@ export default firebase;
 ### Getting data from Firebase
 Let's imagine that we were building a digital bookshelf that kept track of all of our favourite books. To start, let's add some data to our Firebase database.
 
-1. In your Firebase console, click the 'Database' tab. We're going to create a **realtime database** in. Firebase REALLY wants you to make a Cloud Firestore one right now. Do not do that. Scroll past it until you see something like this:
+1. In your Firebase console, click the 'Database' tab. We're going to create a **realtime database**. Firebase REALLY wants you to make a Cloud Firestore one right now. Do not do that. Scroll past it until you see something like this:
 ![Firebase database tab](https://hychalknotes.s3.amazonaws.com/07-firebase-database-screenshot.png)
 
 1. Hit 'Create database'.
@@ -121,11 +121,14 @@ All that's left to do is grab our data from Firebase. We'll do this by using the
 class App extends Component {
  // ...rest of our code here
  componentDidMount() {
+
    // here we create a variable that holds a reference to our database
    const dbRef = firebase.database().ref();
+
    // here we add an event listener to that variable that will fire every time there is a change in the database
    // this event listener takes a callback function which we will use to get our data from the database and call it response
    dbRef.on('value', (response) => {
+
      // here we use Firebase's .val() method to parse our database info the way we want it
      console.log(response.val());
    });
@@ -143,14 +146,17 @@ Now that we're seeing our data, we need to store it in the state. Let's update o
 //App.js
 const dbRef = firebase.database().ref();
 dbRef.on('value', (response) => {
+
   // Here we're creating a variable to store the new state we want to introduce to our app
   const newState = [];
+
   // Here we store the response from our query to Firebase inside of a variable called data
   // .val() is a Firebase method that gets us the information we want
   const data = response.val();
 
   //data is an object, so we iterate through it using a for in loop to access each book name 
   for (let key in data) {
+
     // inside the loop, we push each book name to an array we already created inside the .on() function called newState
     newState.push(data[key]);
   }
@@ -221,6 +227,7 @@ constructor() {
 
 // this event will fire every time there is a change in the input it is attached to
 handleChange = (event) => {
+
   // we're telling React to update the state of our `App` component to be equal to whatever is currently the value of the input field
   this.setState({userInput: event.target.value})
 }
@@ -242,7 +249,7 @@ render() {
       { /* Here, we've attached the `handleChange` method to our input field.*/}
       <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
     { /* Here, we've attached the `handleClick` method to our input button.*/}
-      <button>Add Book</button>
+      <button onClick={this.handleClick}>Add Book</button>
     </form>
     </div>
   )
@@ -278,7 +285,7 @@ render() {
     <form action="submit">
     {/* add the value attribute and set it's value equal to whatever's in state*/}
       <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
-      <button>Add Book</button>
+      <button onClick={this.handleClick}>Add Book</button>
     </form>
     </div>
   )
@@ -329,7 +336,7 @@ If we go back and look at our database in the Firebase dashboard, we can see tha
 
 Each book has a corresponding key. We can tell Firebase which book we want to remove using the book's key.
 
-The first thing we'll need to do is change the structure of the data that we're currently getting back from Firebase. Right now, we grab each one of the titles of the books from our database and store it in an array as a atring, like this:
+The first thing we'll need to do is change the structure of the data that we're currently getting back from Firebase. Right now, we grab each one of the titles of the books from our database and store it in an array as a string, like this:
 
 `["A Little Life", "Beloved"]`
 
@@ -385,11 +392,12 @@ Now that we're grabbing our book ID, we need to add a 'Remove' button that has a
 ```javascript
 //App.js
 <li key={i}>
-  {book.name} <button onClick={() => this.removeBook(book.key)}> Remove </button>
+  <p>{book.name}</p> 
+  <button onClick={() => this.removeBook(book.key)}> Remove </button>
 </li>
 ```
 
-The reason that we use `() => this.removeBook(book.key)` here is that we are passing a **reference** to a function rather than **calling** a function. If this is confusing for you right now don't worry about it too much, just remember that you may need to do this in order to pass data from your component!
+[Remember](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/state-vs.-props.md#passing-functions-with-parameters), the reason that we use `() => this.removeBook(book.key)` here is that we are passing a **reference** to a function rather than **calling** a function.
 
 > You can think of this syntax `{ ()=> someFunction(information) }` as saying "Wait a second! I have some information to give `someFunction()` before it runs!"
 
