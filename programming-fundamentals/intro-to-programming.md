@@ -133,6 +133,17 @@ Your console will look slightly different depending on your browser, but there s
 
 Cool, right?! This is a great environment you can use to test out your fledgling JavaScript skills.
 
+## The DOM
+
+DOM stands for **document object model**, and it represents all the HTML elements on your page. It's represented by a tree structure, where each element is a **node**. You've already seen the DOM when you look at the elements panel in dev tools!
+
+JavaScript can find and modify any DOM node. Some things you might change with JavaScript:
+
+- Update the text inside an element
+- Add or remove a class to trigger CSS3 transitions
+- Hide or show elements
+- Add dynamic HTML to the page
+
 ## Expressions and values
 A _value_ is a piece of data (more abstractly, a sequence of 0's and 1's).  
 An _expression_ is any piece of code or instruction given to the computer that produces a value.
