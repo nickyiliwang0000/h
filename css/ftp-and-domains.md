@@ -33,6 +33,7 @@ To learn more about how your browser connects to a website, check out [this cute
 
 Domains:
 * [Hover](https://hover.com/IbL8v5UV)
+* [Namecheap](http://www.jdoqocy.com/click-8951841-11426545)
 
 Hosting:
 * [DreamHost](http://www.dreamhost.com/r.cgi?2137548)
