@@ -23,4 +23,4 @@
   - Plan on buying for a year; many devs take down their personal sites once they've been working for a while, but you'll need yours for at least 3 months if not 6.
 
 * It is easiest to buy a domain and hosting together. If you're worried, choose a hosting provider that provides a domain name. 
-- If the idea of pointing your domain to your host sounds like a fun challenge, buy them separately.
+  - If the idea of pointing your domain to your host sounds like a fun challenge, buy them separately.
