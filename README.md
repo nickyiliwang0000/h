@@ -26,6 +26,28 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 [Fishbowl exercises](https://github.com/HackerYou/bootcamp-notes/#fishbowl-exercises)
 
+## Projects
+Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements. 
+
+Turning in an excellent small project is better than turning in a more ambitious project with lots of bugs. 
+
+>**Complete is better than impressive.**
+
+[Project 1](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
+
+[Project 2](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-02.md)
+
+[Project 3](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-03.md)
+
+[Project 4](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-04.md)
+
+[Project 5](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-05.md)
+
+[Project 6](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-06.md)
+
+[Project 7](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-07.md)
+
+
 ## Lesson index
 
 <!-- ## How to submit a pull request
@@ -139,23 +161,3 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 
 * [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
 
-## Projects
-Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements. 
-
-Turning in an excellent small project is better than turning in a more ambitious project with lots of bugs. 
-
->**Complete is better than impressive.**
-
-[Project 1](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
-
-[Project 2](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-02.md)
-
-[Project 3](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-03.md)
-
-[Project 4](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-04.md)
-
-[Project 5](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-05.md)
-
-[Project 6](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-06.md)
-
-[Project 7](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-07.md)
