@@ -18,9 +18,11 @@
 
 * A domain name should cost about $15 for a year. 
 
-
 * Hosting and a domain name together should cost **at most** $100/year.
   - Plan on buying for a year; many devs take down their personal sites once they've been working for a while, but you'll need yours for at least 3 months if not 6.
 
 * It is easiest to buy a domain and hosting together. If you're worried, choose a hosting provider that provides a domain name. 
   - If the idea of pointing your domain to your host sounds like a fun challenge, buy them separately.
+
+
+Feel free to use [HY's affiliate links](https://github.com/HackerYou/bootcamp-notes/blob/master/css/ftp-and-domains.md#domain-and-hosting-providers) for some domain name and hosting providers our students have worked with before.
