@@ -1,4 +1,4 @@
-# Hosting and domain name tips
+# Hosting and domain tips
 
 * Don't buy a domain name before you've got your Twitter and your GitHub set up! 
   - It's nice but not necessary to have them all be the same thing.
