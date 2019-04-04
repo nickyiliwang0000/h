@@ -1,10 +1,13 @@
 # Welcome to the new and improved Bootcamp notes!
 Here are your notes, bootcamp studes! We're so glad you're here! If you notice a typo or have an issue with anything in the text, please [create an issue](https://github.com/HackerYou/bootcamp-notes/blob/master/how-to-edit-bootcamp-notes.md)!
 
-## Topics:
+## Student resources
 [Stuff you need to know](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know)
 (Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.)
 
+[Resources not linked in the notes](https://github.com/HackerYou/bootcamp-notes/tree/master/stuff-you-need-to-know/resources-and-cheat-sheets) including a list of [best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/web-development-best-practices.md).
+
+## Lesson topics
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 
 [CSS](https://github.com/HackerYou/bootcamp-notes/#css)
@@ -23,8 +26,7 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 [Fishbowl exercises](https://github.com/HackerYou/bootcamp-notes/#fishbowl-exercises)
 
-## Lesson index:
-
+## Lesson index
 
 <!-- ## How to submit a pull request
 
@@ -124,7 +126,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Lifecycles](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/lifecycles.md)
 * [State vs. props](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/state-vs.-props.md)
 * [Reusable components](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/reusable-components.md)
-* [Using Firebase with React](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/using-firebase-with-react.md)
+* [Using Firebase in React](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/using-firebase-in-react.md)
 * [Structuring data in Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/structuring-data-in-firebase.md)
 * [Deploying with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/deploying-with-firebase.md)
 * [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
