@@ -41,6 +41,7 @@ Hosting:
 * [Bluehost](http://www.bluehost.com/track/hackeryou) 
 * [HostGator](https://partners.hostgator.com/hackeryou)
 
+Before you buy your domain and hosting, check out [this list of tips](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/hosting-and-domain-tips.md).
 ## FTP
 
 A _file transfer protocol_ (FTP) allows you to connect to your server so you can upload your website's files.
