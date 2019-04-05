@@ -24,7 +24,7 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 [Projects](https://github.com/HackerYou/bootcamp-notes/#projects)
 
-[Extra exercises](https://github.com/HackerYou/bootcamp-notes/#fishbowl-exercises)
+[Extra exercises](https://github.com/HackerYou/bootcamp-notes/#extra-exercises)
 
 ## Projects
 Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements. 
