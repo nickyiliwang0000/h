@@ -6,9 +6,9 @@
 - That they should optimize their images (e.g. compress, resize, choose the right file type)
 -->
 
-# Image Formats
+# Image formats and SVG
 
-There are several file types used for adding images to a web page. Each type is best suited for specific kinds of images. As a rule of thumb, use the format that maintains the best quality while reducing the file size.
+There are several file types used for adding images to a web page. Each type is best suited for specific kinds of images. You'll want to use the format that maintains the best quality and the smallest file size.
 
 First, a quick look at two types of compression:   
 
@@ -21,30 +21,32 @@ The _Graphics Interchange Format_ (GIF) uses **lossless** compression, however b
 
 GIF images can also have transparency (though transparency is better handled with PNGs). And of course, they can also be animated!
 
-**Best used for**: images with simple colours, line drawings, icons and animations - mostly replaced by jpgs and svgs.
+**Best used for**: Images with simple colours, line drawings, icons and animations of the same.
+
+In modern web development, they've mostly been replaced by JPEGs and SVGs.
 
 ## JPEG
 
-The _Joint Photographic Experts Group_ format (JPEG) uses **lossy** compression. It can support lots of rich colours and gradients making it optimal for photographic images. It was created in 1992 by(surprise!) the Joint Photographic Experts Group.
+The _Joint Photographic Experts Group_ format (JPEG, sometimes JPG because of [an old quirk in MS DOS](https://theydiffer.com/difference-between-jpg-and-jpeg/)) uses **lossy** compression. It can support lots of rich colours and gradients making it optimal for photographic images. It was created in 1992 by (surprise!) the Joint Photographic Experts Group.
 
-The lossy compression makes it less favourable for images with flat colours and line drawings.  JPEGs generally have larger file sizes than GIFs.
+The lossy compression makes JPEG a less favourable format for images with flat colours and line drawings. JPEGs generally have larger file sizes than GIFs.
 
 Typically, images online are in JPEG format. We recommend using them for background images.
 
-**Best used for**: photographs and images with lots of rich colours and gradients.
+**Best used for**: Photographs and images with lots of rich colours and gradients.
 
 ## PNG
 
 There are two types of _portable network graphics_ formats, PNG-8 and PNG-24. They both use **lossless** compression.  The PNG file format was created in 1995 to replace GIFs.
 
 ### PNG-8
-PNG-8 is short for "8-bit PNG" because the image is 8 bits per pixel. Similar to GIFs, PNG-8 images can only store 256 colours and support transparency but it have better support for *alpha* transparency than GIFs.
+PNG-8 is short for "8-bit PNG" because the image is 8 bits per pixel. Similar to GIFs, PNG-8 images can only store 256 colours and support transparency but they have better support for *alpha* transparency than GIFs.
 
 ![png-8 vs gif](http://i.stack.imgur.com/B09oZ.png)
 
-PNGs do not support animation so stick to GIFs for that.
+PNGs **do not** support animation so stick to GIFs for that.
 
-**Best used for**: Images with simple colours including those that require alpha transparency.
+**Best used for**: Images with simple colours (including those that require alpha transparency).
 
 ### PNG-24
 
@@ -54,54 +56,53 @@ PNG-24 files are usually much bigger than JPEGs, GIFs and PNG-8s. Even though PN
 
 **Best used for:** Images with rich colours, gradients and shadows, that all require transparency, alpha transparency, or opaque background.
 
+## Bitmap vs. vector
+
+All the previous image formats mentioned here are _bitmap_ formats, which means a computer divides up the image into little squares of color. The opposite of bitmap format is _vector_ format, where the computer makes an image without those little squares and the lines are smoooooth.
+
+![Vector vs. bitmap image from Wikipedia, via Darth_Stabro](https://en.wikipedia.org/wiki/Vector_graphics#/media/File:VectorBitmapExample.svg)
+
 ## SVG
 
-Scalable vector graphics (SVG) are a vector graphics format based on an XML format but you can use them like other image types (e.g. in an image tag). SVGs generally have small file sizes and scale without losing clarity. They also look great on retina displays.
+_Scalable vector graphics_ (SVG) is a format based on XML but you can use them like other image types (e.g. in an image tag). SVGs consist of circles, rectangles, and paths created in XML. Because SVG elements are vectors (instead of bitmaps), you can apply colours, gradients, and filters to them (though not all browsers support all filter types). SVGs generally have small file sizes and scale without losing clarity or line sharpness. Because of this, look great on retina displays.
 
-Because SVG is based on XML, it can also be added inline in an HTML document. When included inline, you can apply CSS and JavaScript can to your SVGs!
+SVGs are [not supported in IE8](https://caniuse.com/#search=svg) and below.
 
-SVGs are not supported in IE8 and below.
+**Best used for:** 2D shapes and icons (e. g. cartoon graphics or illustrations) and animations.
 
-**Best used for:** 2D shapes and icons (e. g. cartoon graphics or illustrations) and animations. Not good for photos.
+Because SVG is based on XML, it can also be added inline to an HTML document. When included inline, you can apply CSS and JavaScript to your SVGs!
 
 ### Using SVGs inline
 
-SVGs consist of circles, rectangles, and paths created in XML and combined into drawings on web pages rather than in a bitmap, as other image types are. Because SVG elements aren't bitmaps, you can apply colours, gradients, and filters to them (though not all browsers support all filter types). 
+A great thing about inline SVGs is that they remove unnecessary HTTP requests. When you define an images in an `src` attribute, you asking the browser to **request** that file from your site's server. This request will take bandwidth and time to download. SVGs embedded inline don't need to be requested using HTTP, which makes your website faster.
 
-A great thing about inline SVGs is that they remove unnecessary HTTP requests. When you define an images in an `src` attribute, you are defining a file that the browser will **request**. This request will take up bandwidth and require time to download. SVGs embedded inline don't need to be requested using HTTP which makes your website faster.
-
-However, screen reader support is poor which can create a challenge for sites that use SVG where accessibility is a requirement. [More on SVG and accessibility here](http://schepers.cc/authoring-accessible-svg).
+Screen reader support for SVGs isn't as robust as it is for other elements, so do things like adding `<title>`, `<desc>`, `aria-labelledby` and `role` attributes if there isn't already a clear label for your SVG. [More on SVG and accessibility here](https://css-tricks.com/accessible-svgs/) and [here](https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/).
 
 #### Finding and creating SVGs
 
-SVGs can be created using vector graphics software such as Adobe Illustrator or [Sketch](https://www.sketchapp.com). There are also online resources like [The Noun Project](http://thenounproject.com/) that have a wide variety of icons available for download.
+SVGs can be created using software like Adobe Illustrator or [Sketch](https://www.sketchapp.com). There are also online resources like [The Noun Project](http://thenounproject.com/) that have a wide variety of icons available for download.
 
-But once we've found the perfect image to use, where do we actually get the SVG code that we'll put in our HTML document? Why, inside the SVG file, of course! You can open an SVG file in your text editor and... there's the code.
-
-#### SVG and CSS
-Styling SVG with CSS is the same as for other HTML elements. However, there are CSS properties that are specific for SVG. For example, instead of using `background` or `background-color`, use `fill` to change the colour of the icon. To create a border, use the `stroke` property. 
-
-See the <a href="http://www.w3.org/TR/SVG/propidx.html" target="_blank">full list of SVG properties</a>.
-
-Download [inline-svg.zip](https://hychalknotes.s3.amazonaws.com/inline-svg.zip) and open it in your editor. Let's try adding images using the `<img>` tag and inline (there's a few to choose from in the `images` folder) and some CSS!
+But once we've found the perfect image to use, where do we actually get the SVG code that we'll put inline in our HTML document? Why, inside the SVG file's `<svg>` tags! Open the SVG file in your text editor and... there's the code.
 
 #### The `<svg>` element
-You can also create SVGs without an image editor using SVG-specific tags starting with the `<svg>` element. Note the inclusion of the two namespace declarations so the browser will read this fragment as an SVG element rather than an XML file:
+You can also create SVGs without an image editor using SVG-specific tags inside with the `<svg>` element. Note the inclusion of the two namespace declarations so the browser will read this fragment as an SVG element rather than an XML file:
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<svg>
+</svg>
 ```
 
 #### Basic shape elements
-SVG contains the following set of basic shape elements:
+An `<svg>` tag can contain any of the following basic shape elements:
 
-* rectangles `<rect>`
-* circles `<circle>`
-* ellipses `<ellipse>`
-* straight lines `<line>`
-* polylines `<polyline>`
-* polygons `<polygon>`
+shape | tag
+--|--
+rectangle | `<rect>`
+circle | `<circle>`
+ellipse | `<ellipse>`
+straight line | `<line>`
+polyline | `<polyline>`
+polygon | `<polygon>`
 
 Each element also has different attributes used to define various styles of the shapes.
 
@@ -123,33 +124,33 @@ The `x` and `y` attributes are used to determine the location of the rectangle r
 
 The location of the circle is determined by `cx` and `cy` and has a radius of `r`.
 
+The length and direction of the line is determine by the starting point `x1`, `y1` and the ending point `x2`, `y2`.
+
 #### The `<path>` element
 
-This element is used to draw advanced shapes combined with lines, arcs, curves, etc., with or without fill. 
+This element is used to draw advanced shapes made out of lines, arcs, and curves.
 
 #### The `<g>` element
-This element is used to group SVG shapes together. This group can then be treated as a single shape.
+This element is used to group SVG shapes together so they can be treated as a single shape.
 
-### Exercise
-Download [the wombly path SVG exercise](https://hychalknotes.s3.amazonaws.com/wombly-path-svg-exercise.zip) and follow the notes inside. Or, for a harder challenge, open the ANSWER and code it from scratch.
+#### SVG and CSS
+Styling SVG with CSS is the same as for other HTML elements. However, there are CSS properties that are specific for SVG. For example, instead of using `background` or `background-color`, `fill` will change the colour of the icon. To create a border, use the `stroke` property. 
+
+See the [full list of SVG properties](http://www.w3.org/TR/SVG/propidx.html).
+
+Download [inline-svg.zip](https://hychalknotes.s3.amazonaws.com/inline-svg.zip) and open it in your editor. Let's try adding images using the `<img>` tag and inline (there's a few to choose from in the `images` folder) and some CSS!
 
 ### More SVG resources
-* <a href="http://css-tricks.com/using-svg/" target="_blank">Using SVG</a>
-* <a href="http://www.hongkiat.com/blog/scalable-vector-graphic-css-styling/" target="_blank">Styling Scalable Vector Graphic (SVG) With CSS</a>
-* <a href="http://joshuasortino.com/journal/creating-a-responsive-svg" target="_blank">How to Create a Responsive SVG</a>
-* <a href="http://www.w3.org/TR/SVG11/expanded-toc.html" target="_blank">W3C SVG documentation</a>
-
-## Image Formats: TL;DR
-
-![Concise, graphic explanation of image formats](https://hychalknotes.s3.amazonaws.com/image-information-grid.png)
+* [Using SVG](http://css-tricks.com/using-svg/)
+* [Styling Scalable Vector Graphic (SVG) With CSS](http://www.hongkiat.com/blog/scalable-vector-graphic-css-styling/)
+* [How to Create a Responsive SVG](http://joshuasortino.com/journal/creating-a-responsive-svg)
+* [W3C SVG documentation](http://www.w3.org/TR/SVG11/expanded-toc.html)
 
 ## The `picture` element
 
-Introduced by a group called the [Responsive Images Community Group](https://responsiveimages.org/), the `<picture>` element was designed to allow developers the ability to art direct their pages!
+Introduced by a group called the [Responsive Images Community Group](https://responsiveimages.org/), the `<picture>` element was designed to allow developers to art direct their pages!
 
-The idea is this: you have an element that internally defines many different sources. These sources have breakpoints that mean that specific images will load at specific times.
-
-This prevents wasted bandwidth if you have a really large image for desktop, but need a smaller one for mobile.  
+The `<picture>` element internally defines many different sources. These sources have breakpoints that designate which image is loaded at which breakpoint. This prevents wasted bandwidth if you have a really large image for desktop, but need a smaller one for mobile. At the same time, when you specify the resolutions of images, you can change the cropping or orientation.
 
 > The most important thing about the `<picture>` element is that **it allows you to load different versions of the image for different screen sizes.**
 
@@ -167,7 +168,14 @@ The `<picture>` element uses `<source>` elements inside of it to determine the i
 
 You can use an `<img>` tag as a fallback if none of your conditions are met or if the browser does not support the `<picture>` element.
 
+* [An example of using the `<picture>` element](https://googlechrome.github.io/samples/picture-element/) to show different images at different screen sizes.
+* [A walk-through](https://www.html5rocks.com/en/tutorials/responsive/picture-element/) of the `<picture>` element
+
 Let's try a few together to see it in action!
+
+## Image Formats: TL;DR
+
+![Concise, graphic explanation of image formats](https://hychalknotes.s3.amazonaws.com/image-information-grid.png)
 
 ## Image optimization
 
@@ -176,7 +184,7 @@ It's important to choose the best image format and to optimize your images. Ther
 **Remember to:**
 * Use the appropriate file type for the content of the image.
 * Resize images to the dimensions you need **before** using them in a web page.
-* Save images using the **save for web** option if you're using an image editor like Photoshop.
+* Save images using the 'Save for web' option if you're using an image editor like Photoshop.
 * Try to keep your image file sizes as small as possible (up to 400KB at an absolute maximum).
 
 ### Optimization resources
