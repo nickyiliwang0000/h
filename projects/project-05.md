@@ -32,9 +32,11 @@ Your data should come from an API or be stored in Firebase.
 To show a understanding of React basic concepts (e.g. state, props, components) as well as error handling and UI design. 
 
 ## Project proposals
-A key component of planning any web application is managing scope. We will again require a completed [scope outline](https://docs.google.com/document/d/1Xz9-80T2bHxZpqXOD_CfAHSlmesN_6_V0QAZwCbsMhI/edit?usp=sharing) before you begin any meaningful work on your project. Once you have an idea (before you fill out your scope document, even!), you will be required to pitch it to us. This pitch should include an outline of the functionality that your app will offer users, as well as some stretch features you plan to add if you have extra time.
+Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1t1l591AZadar30FyrURnNQU6XIJ-9bdm62mpJrKEQFk/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
-Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. It is always better to under-promise and over-deliver.
+Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
+
+> **It is always better to under-promise and over-deliver.**
 
 <!--- ### Deployment
 (optional) In order to make deploying your app easy use the Firebase hosting features to get your site up online! There is the ability to add a custom domain if you would like, so think about a fun, shareable domain for your application . --->
@@ -46,7 +48,7 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 * Uses Axios and/or Firebase
 * React 'knows' about all DOM changes (bind your inputs!)
 * this.state is never directly changed because .setState() is always used to alter state
-* App is dynamic based on user interaction (eg. drop down menu, search field)
+* App is dynamic based on user interaction (e.g. drop down menu, search field)
 * It is clear to the user what the app does
 * App and interactions are accessible
 * Errors are handled effectively
