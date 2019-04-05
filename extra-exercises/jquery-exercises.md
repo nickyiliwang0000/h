@@ -1,4 +1,4 @@
-# jQuery fishbowl exercises
+# Extra jQuery exercises
 
 Try these four exercises to give jQuery a go on your own! 
 
