@@ -154,10 +154,10 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
 * [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
 
-## Fishbowl exercises
-* [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/html-and-css-fishbowl-exercises.md)
+## Extra exercises
+* [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/extra-exercises/html-and-css-exercises.md)
 
-* [jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
+* [jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/extra-exercises/jquery-exercises.md)
 
-* [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
+* [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/extra-exercises/javascript-exercises.md)
 
