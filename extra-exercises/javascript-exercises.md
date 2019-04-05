@@ -309,4 +309,4 @@ pigLatin('My very educated mother just served us noodles.')
 ```
 
 ## Answer key
-Please don't look at the answer key until you've attempted on your own. Remember, there is more than one way to solve a problem in JavaScript. If your answer is different that's okay! As long as you understand your code, and it works, you're good! [extraExercises-ANSWER.html]()
+Please don't look at the answer key until you've attempted on your own. Remember, there is more than one way to solve a problem in JavaScript. If your answer is different that's okay! As long as you understand your code, and it works, you're good! [extraExercises-ANSWER.html](https://hychalknotes.s3.amazonaws.com/extraExercises-ANSWER.html).w
