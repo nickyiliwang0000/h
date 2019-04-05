@@ -150,9 +150,9 @@ Download [inline-svg.zip](https://hychalknotes.s3.amazonaws.com/inline-svg.zip) 
 
 Introduced by a group called the [Responsive Images Community Group](https://responsiveimages.org/), the `<picture>` element was designed to allow developers to art direct their pages!
 
-The `<picture>` element internally defines many different sources. These sources have breakpoints that designate which image is loaded at which breakpoint. This prevents wasted bandwidth if you have a really large image for desktop, but need a smaller one for mobile. At the same time, when you specify the resolutions of images, you can change the cropping or orientation.
+The `<picture>` element can internally define multiple image sources. Usually, these images differ in size, resolution, and/or orientation. These sources have breakpoints that designate when each image should be loaded. Smaller (size, resolution) files can be loaded on smaller screens and larger ones can be loaded on larger screens. This prevents wasted bandwidth and gives a developer lots of control over the art direction of their images.
 
-> The most important thing about the `<picture>` element is that **it allows you to load different versions of the image for different screen sizes.**
+Use the `<picture>` element when you have images of different sizes, resolutions, or orientations (or any combination of those) that **are considered content**. 
 
 ### Syntax for the `picture` element
 
@@ -168,12 +168,14 @@ The `<picture>` element uses `<source>` elements inside of it to determine the i
 
 You can use an `<img>` tag as a fallback if none of your conditions are met or if the browser does not support the `<picture>` element.
 
+Let's open up [an example](https://hychalknotes.s3.amazonaws.com/picture-element-example-bootcamp.zip) and take a look.
+
+### More `<picture>` resources
 * [An example of using the `<picture>` element](https://googlechrome.github.io/samples/picture-element/) to show different images at different screen sizes.
 * [A walk-through](https://www.html5rocks.com/en/tutorials/responsive/picture-element/) of the `<picture>` element
 
-Let's try a few together to see it in action!
 
-## Image Formats: TL;DR
+## Image formats: TL;DR
 
 ![Concise, graphic explanation of image formats](https://hychalknotes.s3.amazonaws.com/image-information-grid.png)
 
