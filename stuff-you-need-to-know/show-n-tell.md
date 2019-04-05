@@ -11,7 +11,7 @@ how - as developers - we would use it
 and most importantly *why* we'd use it (beyond just "it's cool!"). 
 You'll also want to have samples you've created and/or real life use case examples. You must have sent your topic/pitched your topic if it's not listed here, by Wednesday of your presentation week.
 
-For JS libraries I always ask that you choose one where you can explain what's happening in the code/how it works as opposed to just demoing the samples provided. Again, you'll also tell us what it is, and ~why~ it's useful. ideally you'll show us sample code that you've written and a couple of examples of effects that could be created using the library you chose, in the wild. 
+For JS libraries I always ask that you choose one where you can explain what's happening in the code/how it works as opposed to just demoing the samples provided. Again, you'll also tell us what it is, and **why** it's useful. ideally you'll show us sample code that you've written and a couple of examples of effects that could be created using the library you chose, in the wild. 
 
 Feel free to choose any topic at any time in the Bootcamp - it doesn't need to relate directly to the material covered in the week you're presenting in (aka present JS during HTML review, CSS stuff during react week, whatever!)
 
