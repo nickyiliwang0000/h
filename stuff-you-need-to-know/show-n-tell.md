@@ -30,54 +30,103 @@ Your Show & Tell groups have been assigned by week. You can find the list of gro
 Feel free to choose any topic - just make sure you have it approved before you spend too much time researching and building a presentation! Here are 50 example topics you can choose or use to inspire your choice. Each Monday, I'll update the list below with any topics that have been claimed!
 
 ### Available:
-*:focus-within
-*AMP pages
-*animate on scroll
-*anime.js
-*brain.js
-*chart.js
-*color-adjust
-*CSS clip-path
-*CSS knock-out
-*CSS Masks
-*CSS shapes
-*CSS shine
-*CSS text-path
-*CSS Variables
-*CSS-perspective
-*Custom cursors
-*custom SVGs
-*custom tool tips
-*cycle.js
-*DNS
-*draft.js
-*draggable.js
-*float-labels
-*granim.js
-*impress.js
-*konami codes
-*Label & Labelledby
-*lodash
-*mix-blend-mode
-*night/dark mode vs day/light mode
-*parallax
-*particle.js
-*pointer events
-*pose.js
-*preloaders
-*react autocomplete
-*react dnd
-*react joyride
-*React Native
-*reveal.js
-*scroll-then-fix
-*sticky, Smooth & Active Nav"
-*stoke-dash
-*SVG morph
-*SweetAlerts
-*three.js
-*touchstart
-*transition-delay
-*typed.js
+:focus-within
+
+AMP pages
+
+animate on scroll
+
+anime.js
+
+brain.js
+
+chart.js
+
+color-adjust
+
+CSS clip-path
+
+CSS knock-out
+
+CSS Masks
+
+CSS shapes
+
+CSS shine
+
+CSS text-path
+
+CSS Variables
+
+CSS-perspective
+
+Custom cursors
+
+custom SVGs
+
+custom tool tips
+
+cycle.js
+
+DNS
+
+draft.js
+
+draggable.js
+
+float-labels
+
+granim.js
+
+impress.js
+
+konami codes
+
+Label & Labelledby
+
+lodash
+
+mix-blend-mode
+
+night/dark mode vs day/light mode
+
+parallax
+
+particle.js
+
+pointer events
+
+pose.js
+
+preloaders
+
+react autocomplete
+
+react dnd
+
+react joyride
+
+React Native
+
+reveal.js
+
+scroll-then-fix
+
+sticky, Smooth & Active Nav"
+
+stoke-dash
+
+SVG morph
+
+SweetAlerts
+
+three.js
+
+touchstart
+
+transition-delay
+
+typed.js
+
 
 ### Claimed:
