@@ -60,7 +60,7 @@ PNG-24 files are usually much bigger than JPEGs, GIFs and PNG-8s. Even though PN
 
 All the previous image formats mentioned here are _bitmap_ formats, which means a computer divides up the image into little squares of color. The opposite of bitmap format is _vector_ format, where the computer makes an image without those little squares and the lines are smoooooth.
 
-![Vector vs. bitmap image from Wikipedia, via Darth_Stabro](https://en.wikipedia.org/wiki/Vector_graphics#/media/File:VectorBitmapExample.svg)
+![Vector vs. bitmap image from johnsadlouskos.com](https://johnsadlouskos.files.wordpress.com/2015/06/vector-3.gif?w=374&h=385)
 
 ## SVG
 
