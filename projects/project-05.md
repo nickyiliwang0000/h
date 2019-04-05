@@ -2,6 +2,9 @@
 ## Due date
 Monday, June 3rd, 1:00 p.m.
 
+## Project scope due date
+Wednesday, May 29th, 6 p.m.
+
 ## Project description
 Using the React library we would like you to create an interactive application. This will call on everything you have learned up to now!
 
@@ -18,7 +21,6 @@ This application could be a:
 * Bill splitter (roommates!)
 * Personal expense tracker
 * Blog
-
 
 Your data should come from an API or be stored in Firebase.
 
@@ -40,6 +42,11 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 
 <!--- ### Deployment
 (optional) In order to make deploying your app easy use the Firebase hosting features to get your site up online! There is the ability to add a custom domain if you would like, so think about a fun, shareable domain for your application . --->
+
+## Project scope due date
+Wednesday, May 29th, 6 p.m.
+
+If you have not gotten an instructor's approval on a scope document by this time, **you will be assigned a project**.
 
 ## How will this project be graded?
 **Requirements:**
