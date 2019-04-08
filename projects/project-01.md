@@ -50,7 +50,7 @@ You can find your assignment [here]().
 You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
-1. Create a repository called `firstNameLastNameProject#`
+1. Create a repository called `firstNameLastNameProjectOne`
 1. Push your files to GitHub.
 1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
 
