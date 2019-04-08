@@ -87,7 +87,7 @@ Some common colors are:
 | black | `#000000` | `rgb(0,0,0)`|
 | white| `#ffffff` | `rgb(255,255,255)`|
 | red| `#ff0000` | `rgb(255,0,0)`|
-| blue| `#0000ff` |`rgb(0,255,0) `|
+| blue| `#0000ff` |`rgb(0,0,255) `|
 
 
 ## Alpha channel
