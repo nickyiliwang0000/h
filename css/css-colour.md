@@ -91,7 +91,7 @@ Some common colors are:
 
 
 ## Alpha channel
-The alpha channel is an optional fourth value you can provide to HSL and RGB color declarations to acheive a transparent look. When you use the alpha channel, you need to tell the browser you're doing so by using the letter `a` after the `rgb` declaration. Alpha channel values can be percentages or decimals between 0 (totally see-through) and 1 (totally opaque).
+The alpha channel is an optional fourth value you can provide to HSL and RGB color declarations to achieve a transparent look. When you use the alpha channel, you need to tell the browser you're doing so by using the letter `a` after the `rgb` declaration. Alpha channel values can be percentages or decimals between 0 (totally see-through) and 1 (totally opaque).
 
 
 `rgba(0,255,100,.5)`
