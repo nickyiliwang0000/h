@@ -109,7 +109,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 
 ### Programming fundamentals
 * [Intro to programming](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-programming.md)
-* [Debugging JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/debugging-javascript.md)
+* [Intro to JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-javascript.md)
 * [Variables](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/variables.md)
 * [Working with JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/working-with-javascript.md)
 * [Programming control flow](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/programming-control-flow.md)
