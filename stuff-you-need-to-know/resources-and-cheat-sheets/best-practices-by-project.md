@@ -1,3 +1,5 @@
+<!-- Per https://docs.google.com/spreadsheets/d/13YswvGjg_AqMw4sTBTo_Rvbv6GPAGQW12nZAdg9iUrQ/edit#gid=0 -->
+
 <table>
   <tr>
     <th colspan="8">Best practices by project</th>
