@@ -9,6 +9,7 @@
 - What each of those built-in functions returns
  -->
 
+# Intro to JavaScript
 ## JavaScript
 The first iteration of the language that we know as JavaScript was developed over 10 days in 1995. Its purpose was to allow developers to add functionality and interactivity to the browser, something that was not possible at the time. You'll hear lots of people complain about JavaScript's faults, but for something that was created in a bit over a week, it's pretty impressive!
 

@@ -47,6 +47,7 @@ public class HelloWorld {
     }
 }
 ```
+
 ### JavaScript
 ```js
 console.log('hello, world');
@@ -59,7 +60,7 @@ The role of a programmer is to think of a solution to a real-world problem and b
 
 ### Think like a computer
 
-As with learning a new spoken language, the best way to learn programming is real-world practice with a native speaker. To do this effectively, it helps to **think like a computer**. Human spoken language has rhyme, tone, irony, humour, homophones, and onomatopoeia to convey meaning; most programming languages do not. So we have to be much more explicit in programming than in English; we have to break instructions into very small steps when speaking a computer's language.
+As with learning a new spoken language, the best way to learn programming is real-world practice with a native speaker. To do this in programming, it helps to **think like a computer**. Human spoken language has rhyme, tone, irony, humour, homophony, and onomatopoeia to convey meaning; most programming languages do not. So, we have to be much more explicit in programming than in English; we have to break instructions into very small steps when speaking a computer's language.
 
 Imagine that an alien of average human intelligence but with **very basic English vocabulary** has landed in the classroom. How would you give this alien instructions for getting to the washrooms? Tell them it's "just down the hall"? What if they don't know what "hall" means? We'll have to be more specific. What are all the little steps that are involved in getting to the washroom?
 
@@ -92,7 +93,7 @@ It seems like we're explaining things in **too** much detail, but this strategy 
 
 #### Exercise: Computerthink
 
-In small groups, write out detailed step-by-step instructions for how to make a cheese and spinach omelette. We'll compare your answers together to see just how specific you can get!
+In small groups, write out detailed step-by-step instructions for how to make an apple pie from scratch. We'll compare your answers together to see just how specific you can get!
 
 ### Invent the world, maybe
 There's a quote attributed to Carl Sagan that goes: 
