@@ -17,28 +17,24 @@ Enter 🙌 _flexbox_ 🙌. Flexbox solves many float layout issues elegantly.
 As of today, [the browser support for flexbox](http://caniuse.com/#search=flex) is great! However, there will be issues with older versions of IE, and we should use vendor prefixes to support older versions of Chrome, Safari, and Firefox. 
 <!-- For the examples throughout this lesson, we'll use vendor prefixes for IE. -->
 
-MDN has helpfully created [a set of mixins which include vendor prefixes for all flexbox properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mixins).
-
-If you are working on a project that requires support for older devices and browsers, be aware that there are **no fallbacks** and the layouts will simply break, so be careful!
-
 ## Using flexbox
 Create a new HTML file including the following styles and markup:
 
 ```css
 /* CSS */
 .flexContainer {
-  border: #333 solid 2px;
-  height:300px;
+  border: 2px solid #333;
+  height: 300px;
 }
 
 .flexItem {
   width: 50px;
   height: 50px;
   background: #D12026;
-  border: #333 solid 1px;
+  border: 1px solid #333;
   margin: 5px;
   text-align: center;
-  color:white;
+  color: white;
 }
 
 .flexItem:first-child {
@@ -55,21 +51,27 @@ Create a new HTML file including the following styles and markup:
     <div class="flexItem">
       <span>1</span>
     </div>
+
     <div class="flexItem">
       <span>2</span>
     </div>
+
     <div class="flexItem">
       <span>3</span>
     </div>
+
     <div class="flexItem">
       <span>4</span>
     </div>
+
     <div class="flexItem">
       <span>5</span>
     </div>
+
     <div class="flexItem">
       <span>6</span>
-      </div>
+    </div>
+
     <div class="flexItem">
       <span>7</span>
     </div>
@@ -78,8 +80,8 @@ Create a new HTML file including the following styles and markup:
 
 Or check out [this CodePen](https://codepen.io/zkdan/pen/OaKQjx).
 
-### `display:flex;`
-In order to use flexbox in a layout, we must have the elements we want to lay out inside their own container. We will apply a `display:flex;` property to this container element. 
+### `display: flex;`
+In order to use flexbox in a layout, we must have the elements we want to lay out inside their own container. We will apply a `display: flex;` property to this container element. 
 
 ```css
 .flexContainer {
@@ -88,11 +90,11 @@ In order to use flexbox in a layout, we must have the elements we want to lay ou
 ```
 
 ### `flex-direction`
-You know how when we say `position:absolute;` on an element, we unlock the ability to use the `top`, `right`, `bottom` and `left` properties? Something similar happens when we set a container to `display:flex;`. We now have access to a bunch of properties that will describe how the content inside the container behaves.
+You know how when we say `position: absolute;` on an element, we unlock the ability to use the `top`, `right`, `bottom` and `left` properties Something similar happens when we set a container to `display: flex;`. We now have access to a bunch of properties that will describe how the content inside the container behaves.
 
 The default behavior of all child elements of a parent that is `display:flex;` is for them to flow next to each other. 
 
-Child elements are positioned along a main axis. We can choose this axis using the `flex-direction` property. When we choose a main axis,the other axis becomes _the secondary axis_.
+Child elements are positioned along a main axis. We can choose this axis using the `flex-direction` property. When we choose a main axis, the other axis becomes _the secondary axis_.
 
 For the next four examples, the first child element in the page will have a different background colour.
 
@@ -267,7 +269,7 @@ We can also give `margin: auto` to the **element** we want to center.
 }
 ```
 
-Notice that `margin:auto;` for our `.flexItem` class in the CodePen centers every element with a class of `.flexItem`, rather than the group of them. (Create a `div` to wrap the elements we want centered and set that margin to `auto`.)
+Notice that `margin: auto;` for our `.flexItem` class in the CodePen centers every element with a class of `.flexItem`, rather than the group of them. (Create a `div` to wrap the elements we want centered and set that margin to `auto`.)
 
 ## Adjusting white space
 
@@ -282,8 +284,8 @@ In order to fix this weirdness, we need to state that the elements will wrap to 
   display: flex;
   height: 300px;
   width: 200px;
-  border: #333 solid 2px;
-  flex-wrap:wrap;
+  border: 2px solid #333;
+  flex-wrap: wrap;
 }
 ```
 
@@ -291,11 +293,11 @@ Toggle between `flex-direction: column;` and `flex-direction: row;` and see how 
 
 In the previous examples, we've had to deal with a lot of white space around the elements. Flexbox also provides us with some properties to better control how we can utilize this extra spacing. (Note that the following rules only apply when there is **more than one row or column of content** (depending on the `flex-direction`).
 
-### `align-content:space-between;`
+### `align-content: space-between;`
 
 Setting `align-content` to `space-between` will position the content so that the first line is at the start of the container, and the last line is at the end.
 
-### `align-content:space-around;`
+### `align-content: space-around;`
 
 Setting `align-content` to `space-around` will position the content so that the empty space before the first and after the last item equals half of the space between each pair of adjacent items, giving them the appearance of equal margins.
 
@@ -352,7 +354,7 @@ Setting `flex` to `1 0 auto` is shorthand for `flex-grow: 1;`, `flex-shrink: 0;`
 ### `flex-basis`
 The value of this property is the ideal size of the element. It can be declared in pixels or percentage. As you've seen, once items are placed in a flexbox, their dimensions can change.
 
-Go to your file or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx) and add the rule `flex-basis:100px;` to `.flexItem:last-child`. See how it got up to 100px if there is space for it to do so?
+Go to your file or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx) and add the rule `flex-basis: 100px;` to `.flexItem:last-child`. See how it got up to 100px if there is space for it to do so?
 
 [This article](http://gedd.ski/post/the-difference-between-width-and-flex-basis/) does a great job explaining the difference between `width` and `flex-basis`.
 
