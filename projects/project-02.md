@@ -19,9 +19,10 @@ Remember that you can discuss font sizes with the designer if you think they are
 * Site is responsive and uses media queries
 * Flexbox is used
 * Sass variables are used
+* All images considered content have descriptive alt text
 * Form is accessible
 * Mobile view provides good user experience
-* All images considered content have descriptive alt text
+* Files, folders & naming conventions followed 
 * Project is organized using Sass partials (minimum 2)
 * Project represents the provided design well
 * Navigation should link to other pages made for the project
