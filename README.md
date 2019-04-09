@@ -5,9 +5,14 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 [Stuff you need to know](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know)
 (Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.)
 
+<<<<<<< Updated upstream
 [Resources](https://github.com/HackerYou/bootcamp-notes/tree/master/stuff-you-need-to-know/resources-and-cheat-sheets) including a list of [best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/web-development-best-practices.md).
 
 ## Lesson topics
+=======
+[Resources not linked in the notes](https://github.com/HackerYou/bootcamp-notes/blob/917b7a927d55c11314045c6c5a625b3c31ba1a53/resources-and-cheat-sheets/) including [best practices](https://github.com/HackerYou/bootcamp-notes/blob/917b7a927d55c11314045c6c5a625b3c31ba1a53/resources-and-cheat-sheets/web-development-best-practices.md) and a [JavaScript cheat sheet](https://github.com/HackerYou/bootcamp-notes/blob/917b7a927d55c11314045c6c5a625b3c31ba1a53/resources-and-cheat-sheets/javascript-cheat-sheet.md).
+
+>>>>>>> Stashed changes
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 
 [CSS](https://github.com/HackerYou/bootcamp-notes/#css)
