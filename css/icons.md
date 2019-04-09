@@ -3,6 +3,7 @@
 - What a favicon is
 - The optimal dimensions for favicons and Apple Touch icons
 - How to use Font Awesome
+- How to make a Font Awesome icon accessible
 -->
 # Icons
 ## Favicons
