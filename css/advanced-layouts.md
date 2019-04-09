@@ -21,7 +21,9 @@ You'll notice that in all of our layout examples, we have a surrounding element 
 
 We've usually given this element a class of `.wrapper` (this is an arbitrary name). The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window.
 
-If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a 14" Acer Swift is different than 50% of a 27" iMac Pro. And what happens when a user scales their browser? When working with percetages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
+If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a full-screen window on a 14" Acer Swift is different than 50% of a full-screen window on a 27" iMac Pro. And what happens when a user scales their browser? That size changes again! 
+
+When working with percentages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
 
 ```html
 <div class="wrapper">
@@ -51,7 +53,7 @@ In the above example, we can see that the `section` element is 65% of the parent
 
 ### `max-width`
 
-If we've set a width on our wrapper to 1280px, what happens when the viewport is less than 1280px wide? The browser will still render an element that is 1280px wide and scroll bars to see the hidden parts of it.
+If we've set a width on our wrapper to 1280px, what happens when the viewport is less than 1280px wide? The browser will still render an element that is 1280px with scroll bars to see the hidden parts of it.
 
 To combat this problem, we can replace the `width` property on the wrapper with a `max-width` property.
 
@@ -76,7 +78,7 @@ Moving forward, it's best practice to include a `max-width` property with a pixe
 
 Now that we understand how to limit the sizing and see the benefits of using percentages with our elements, what if we want to put some space between our elements?
 
-Open up [calcLayout.html](https://hychalknotes.s3.amazonaws.com/calcLayout.html) to follow along.
+Open up <a href="https://hychalknotes.s3.amazonaws.com/calcLayout.html" class="exercise" download>calcLayout.html</a> to follow along.
 
 In previous examples, we had to ensure that the widths of child elements added up to the same width of the parent container.
 
@@ -157,7 +159,7 @@ If we were using percentages, we could easily change the units of the margin to 
 </style>
 ```
 
-So instead of working with unclear percentage margins, why don't we work with percentages for widths, and something more tangible for margins: pixels.
+So instead of working with unclear percentage margins, why don't we work with percentages for widths, and something more tangible for margins - pixels.
 
 ```html
 <div class="wrapper">
@@ -184,11 +186,11 @@ So instead of working with unclear percentage margins, why don't we work with pe
 </style>
 ```
 
-So 10px + 10px = 20px. 65% - 20px = ?
+So 10px +10px = 20px. 65% - 20px = ?
 
-This is where it gets tricky - percentages are relative values. Because we're using a fluid layout, we have to do the math every time we wanted to resize the screen.
+This is where it gets tricky - percentages are relative values. Because we're using a fluid layout, we would have to do the math every time we wanted to resize the screen.
 
-### CSS calculations
+### CSS Calculations
 
 Luckily there is a CSS tool that allows us to resize things accordingly. We can use `calc()`, which does the math for us. We provide `calc()` as a value for a property and pass in the equation we want to be evaluated between the parentheses.
 
@@ -198,9 +200,9 @@ section {
 }
 ```
 
-> Note that calc() is whitespace sensitive, so `calc(65%-20px)` will not work.
+<em>Note that calc() is whitespace sensitive, so `calc(65%-20px)` will not work. Make sure to add spaces `calc(65% - 20px)`.</em>
 
-Currently, `calc()` is pretty well supported across different browsers and will become part of our CSS toolkit moving forward. [To see the current support of calc() click here](https://caniuse.com/#search=calc()).
+Currently, `calc()` is pretty well supported across different browsers and will become part of our CSS toolkit moving forward. [To see the current support of calc() click here](<https://caniuse.com/#search=calc()>).
 
 Using `calc()`, we can now mix percentages and pixels to create a layout that is fluid and looks great.
 
@@ -229,8 +231,7 @@ Using `calc()`, we can now mix percentages and pixels to create a layout that is
 </style>
 ```
 
-Look at you go!
-![A dog trying to carry a stick over a bridge, but the stick's too wide.](http://i.giphy.com/UKkes2qN2T70s.gif)
+![mathdog](http://i.giphy.com/UKkes2qN2T70s.gif)
 
 ### Resources
 
@@ -239,30 +240,32 @@ Look at you go!
 
 ## Using the viewport to size content
 
-The _viewport_ is the current size of the viewable content area of your browser. The viewport does **not** include the address or bookmarks bar. It is the entire area within which HTML is rendered.
+The _viewport_ is the current size of the viewable content area of your browser. The viewport does not include the address or bookmarks bar. It is the entire area within which HTML is rendered.
 
 ![browser viewport](https://hychalknotes.s3.amazonaws.com/viewport.png)
 
-The size of the viewport is dynamic. Viewport width and height are relative values that can be different on every user's device and when the user drags the browser window.
+The size of the viewport is different everywhere. Viewport width is a relative value that changes with every user's device, and when the user drags the browser window.
 
 Web experiences often feature full browser header images or content that is relative to the size of the user's browser. Imagine how difficult it would be to ensure that an element fit 100% of the viewport on every screen. In the past, we used JavaScript to measure the size of the window once all the content was loaded, and resize the elements accordingly.
 
-We discussed other standard units found on the web in the [CSS measurement units](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-measurement-units.md) lesson, but there are a couple more recent additions to the dimension discussion. `vw` and `vh` units allow us to measure the user's viewport in CSS without the need for JavaScript. These units measure the width of the viewport and return a relative value. These units are [not fully supported in legacy browsers](http://caniuse.com/#search=view) but can be very handy.
+<!-- Add link to other lesson -->
+
+We discussed other standard units found on the web in the CSS measurement units lesson, but there are a couple more recent additions to the dimension discussion. We can use the viewport to size our elements. `vw` and `vh` units allow us to measure the user's viewport in CSS without the need for JavaScript. These units measure the width of the viewport and return a relative value. These units are [not fully supported in legacy browsers](http://caniuse.com/#search=view) but can be very handy.
 
 ### `vh`
 
-`vh` measures viewport height. Think of it as a percentage - the full height of the viewport is 100%. This gets used mainly for large header images or initial load pages.
-Remember, `vh` **does not** include the URL bar on mobile devices.
+This one measures viewport height. Think of it as a percentage - the full height of the viewport is 100%. This gets used mainly for large header images or initial load pages.
+Remember, vh **does not** include the URL bar on mobile devices.
 
-> 100% of the height of the viewport is `100vh`.
+> **100% of the height of the viewport = 100vh**
 
-![Diagram of a browser showing where viewport height is measured](https://hychalknotes.s3.amazonaws.com/viewportVH.png)
+![viewport height](https://hychalknotes.s3.amazonaws.com/viewportVH.png)
 
 ### `vw`
 
-`vw` is viewport width. You may find that you do not use it as often as other units.
+This one's viewport width. You may find that you will not use this as often as other units.
 
-![Diagram of a browser showing where viewport width is measured](https://hychalknotes.s3.amazonaws.com/viewportVW.png)
+![viewport width](https://hychalknotes.s3.amazonaws.com/viewportVW.png)
 
 ## Full bleed code-along
 
