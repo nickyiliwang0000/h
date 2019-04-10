@@ -96,8 +96,6 @@ The default behavior of all child elements of a parent that is `display:flex;` i
 
 Child elements are positioned along a main axis. We can choose this axis using the `flex-direction` property. When we choose a main axis, the other axis becomes _the secondary axis_.
 
-For the next four examples, the first child element in the page will have a different background colour.
-
 ### `flex-direction:row;`
 Setting `flex-direction` to `row` will make the X axis (horizontal) the main axis. Your content will flow **left to right**.
 
@@ -351,12 +349,10 @@ Flexbox was built in response to the move toward responsive web design and devel
 ### `flex: 1 0 auto;`
 Setting `flex` to `1 0 auto` is shorthand for `flex-grow: 1;`, `flex-shrink: 0;`, and `flex-basis: auto;`, which describes how the element will resize when the parent container does.
 
-### `flex-basis`
-The value of this property is the ideal size of the element. It can be declared in pixels or percentage. As you've seen, once items are placed in a flexbox, their dimensions can change.
+### `flex-grow` 
+The value of this property is a unitless value that represents how much the element will grow in relation to the other elements in its container when its container grows.
 
-Go to your file or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx) and add the rule `flex-basis: 100px;` to `.flexItem:last-child`. See how it got up to 100px if there is space for it to do so?
-
-[This article](http://gedd.ski/post/the-difference-between-width-and-flex-basis/) does a great job explaining the difference between `width` and `flex-basis`.
+[Still confused](https://css-tricks.com/flex-grow-is-weird/)?
 
 ### `flex-shrink`
 The value of this property is a unitless value that represents how much the element will shrink in relation to the other elements in its container when its container shrinks.
@@ -367,10 +363,13 @@ You can download and play around with [this great example](https://hychalknotes.
 
 Visit the [documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink) for a detailed example of `flex-shrink`.
 
-### `flex-grow` 
-The value of this property is a unitless value that represents how much the element will grow in relation to the other elements in its container when its container grows.
+### `flex-basis`
+The value of this property is the ideal size of the element. It can be declared in pixels or percentage. As you've seen, once items are placed in a flexbox, their dimensions can change.
 
-[Still confused](https://css-tricks.com/flex-grow-is-weird/)?
+Go to your file or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx) and add the rule `flex-basis: 100px;` to `.flexItem:last-child`. See how it got up to 100px if there is space for it to do so?
+
+[This article](http://gedd.ski/post/the-difference-between-width-and-flex-basis/) does a great job explaining the difference between `width` and `flex-basis`.
+
 
 ## Flexbox code-alongs
 We'll download [a starter file](https://hychalknotes.s3.amazonaws.com/flex.html) to see how the flexbox can be used to create a common website layout we've previously made with floats.
