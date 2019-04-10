@@ -292,7 +292,7 @@ Setting `flex` to `1 0 auto` is shorthand for `flex-grow: 1;`, `flex-shrink: 0;`
 ### `flex-grow` 
 The value of this property is a unitless value that represents how much the element will grow in relation to the other elements in its container when its container grows.
 
-[Still confused](https://css-tricks.com/flex-grow-is-weird/)?
+[Confused](https://css-tricks.com/flex-grow-is-weird/)?
 
 ### `flex-shrink`
 The value of this property is a unitless value that represents how much the element will shrink in relation to the other elements in its container when its container shrinks.
