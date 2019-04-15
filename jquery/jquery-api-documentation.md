@@ -4,7 +4,7 @@
 
 jQuery objects have tons of methods, but lucky for us, they're extremely well documented and always available at [api.jquery.com](http://api.jquery.com).
 
-This is something you should get used to having to look up; even seasoned developers do it! The best way to find out what a method does, is to _read about what it does_. 
+This is something you should get used to having to look up; even seasoned developers do it! The best way to find out what a method does is to read about what it does. 
 
 #### If you're not sure what method to use
 
@@ -12,7 +12,7 @@ Take a look at the side panel on [api.jquery.com](http://api.jquery.com). This i
 
 **Example**
 
-How do select a DOM element with jQuery?
+How do we select a DOM element with jQuery?
 
 Things like `Ajax`, `CSS`, and `Deprecated` don't look like they fit the bill, but keep going and you'll see `Selectors`.  That sounds promising, so let's look at a sub-category like `Basic`. You'll see some familiar methods like the Class Selector. From here you can explore an individual method to see if it does what you want. For example, the docs for Class Selector say it "Selects all elements with the given class." 
 
@@ -30,7 +30,7 @@ For example, if we want to replace the inner HTML of a DOM node but aren't sure 
 
 Let's look at [the documentation](https://api.jquery.com/html/) for the `.html()` method to see how we can change the text inside an `h1` tag.
 
-1. Check to make sure the **Description** matches what you're trying to accomplish. Note that some methods are **getters and setters** - meaning they can do two different things. The first way that `.html()` is described is it will '**Get** the HTML...'. You may have to scroll down to see the right one. In our example, we want to change the text, so move down to the section that says "**Set** the HTML contents..." 
+1. Check to make sure the **Description** matches what you're trying to accomplish. Note that some methods are **getters and setters**, meaning they can do two different things (you may have to scroll down to see the correct one). The first way that `.html()` is described is that it will '**get** the HTML...'. In our example however, we want to change the text, so move down to the section that says "**set** the HTML contents..."
 
 	![A screenshot of the jQuery documentation page for the .html method that accepts an argument description, reading: "Description: Set the HTML contents of each element in the set of matched elements."](https://i.cloudup.com/VWmTxZ1eOT-1200x1200.png)
 
@@ -40,7 +40,7 @@ In this case, it takes one argument, `htmlString`. Also, there is an alternate w
 	![A screenshot of the description of the type of argument the .html method will accept, reading "A string of HTML to set as the content of each matched element."](https://i.cloudup.com/HfrGuwa5ME-3000x3000.png)
 
 
-A lot of methods can take different types or amounts of arguments, so pick the method that's best suited to what you need and figure out what kind of argument it takes. When in doubt, clicking the linked text in the type will bring you to a page that explains what the method is looking for. 
+A lot of methods can take different types or numbers of arguments, so pick the method that's best suited to what you need and figure out what kind of argument it takes. When in doubt, clicking the linked text in the type will bring you to a page that explains what the method is looking for. 
 
 3. When in doubt, scroll down to find an **example** of this method in practice!
 
