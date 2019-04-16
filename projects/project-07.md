@@ -31,7 +31,7 @@ We'll do group critiques/QA before demo night to catch any weirdness.
 
 **Requirements:**
 * Have a minimum of 3 portfolio items
-* The portfolio itself must be coded in plain HTML and CSS with jQuery or vanilla Jav aScript for effects (i.e. your portfolio site CANNOT be React)
+* The portfolio itself must be coded in plain HTML and CSS with jQuery or vanilla JavaScript for effects (i.e. your portfolio site CANNOT be React)
 * All images considered content have descriptive alt text
 * Extraneous code is removed (including console.log)
 * Semantic HTML elements are used properly
