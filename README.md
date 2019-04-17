@@ -7,6 +7,7 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 [Resources](https://github.com/HackerYou/bootcamp-notes/tree/master/stuff-you-need-to-know/resources-and-cheat-sheets) including a list of what [best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/best-practices-by-project.md) means for your projects.
 
+
 ## Lesson topics
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 

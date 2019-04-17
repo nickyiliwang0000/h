@@ -21,7 +21,9 @@ You'll notice that in all of our layout examples, we have a surrounding element 
 
 We've usually given this element a class of `.wrapper` (this is an arbitrary name). The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window.
 
-If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a 14" Acer Swift is different than 50% of a 27" iMac Pro. And what happens when a user scales their browser? When working with percetages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
+If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a full-screen window on a 14" Acer Swift is different than 50% of a full-screen window on a 27" iMac Pro. And what happens when a user scales their browser? That size changes again! 
+
+When working with percentages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
 
 ```html
 <div class="wrapper">
