@@ -9,9 +9,9 @@ A beautiful, responsive portfolio for all your ✨amazing✨ work that you've co
 To show off all the skills you've learned in the bootcamp, especially HTML, CSS, and modern web standards.
 
 ## Design
-The point of your portfolio is to showcase your development skills. As such, we encourage you to code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou)  (don't bother with WordPress themes - we want to write our own CSS). You will choose a PSD of a portfolio site design that you like and check the [portfolio-past-themes doc](https://docs.google.com/spreadsheets/d/1ZQqQnn-gSbyRlk_Au_MRoRsttsgy4BRdRnldnoclt6I/edit#gid=0) to make sure a recent grad hasn't used tehe same one. Once Fatima has approved your design, she'll update the portfolio-theme doc to reflect your choice. Themes can **only** be PSDs (no HTML/Code by any means)
+The point of your portfolio is to showcase your development skills. As such, we encourage you to code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). You will choose a PSD of a portfolio site design that you like and check the [past portfolio themes doc](https://docs.google.com/spreadsheets/d/1ZQqQnn-gSbyRlk_Au_MRoRsttsgy4BRdRnldnoclt6I/edit#gid=0) to make sure a recent grad hasn't used the same one. Once Fatima has approved your design, she'll update the past portfolio themes doc to reflect your choice. Themes can **only** be PSDs (they may not contain **any** HTML or CSS at all).
 
-Resourses to open PDS without Photoshop:
+Resourses to open PSDs without Photoshop:
 * https://studio.psdetch.com/
 * https://www.photopea.com/ (similar to Photoshop)
 
