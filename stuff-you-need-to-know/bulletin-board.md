@@ -26,3 +26,5 @@ Submission Form: http://bit.ly/HYsubmissions
 
 Feedback Form: https://forms.gle/dgfwHCbSjkx6EiZF8
 
+Group Assignments: https://docs.google.com/spreadsheets/d/1NxNPhvE2nyfkh1zwraA8YGM2SPIMXVm0PHSv430CCGw
+
