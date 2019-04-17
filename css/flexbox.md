@@ -17,69 +17,11 @@ Enter 🙌 _flexbox_ 🙌. Flexbox solves many float layout issues elegantly.
 As of today, [the browser support for flexbox](http://caniuse.com/#search=flex) is great! However, there will be issues with older versions of IE, and we should use vendor prefixes to support older versions of Chrome, Safari, and Firefox. 
 <!-- For the examples throughout this lesson, we'll use vendor prefixes for IE. -->
 
-MDN has helpfully created [a set of mixins which include vendor prefixes for all flexbox properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mixins).
-
-If you are working on a project that requires support for older devices and browsers, be aware that there are **no fallbacks** and the layouts will simply break, so be careful!
-
 ## Using flexbox
-Create a new HTML file including the following styles and markup:
+To get started, download the starter files [here](https://hychalknotes.s3.amazonaws.com/learning-flexbox.zip). We will be using these files throughout the lesson.
 
-```css
-/* CSS */
-.flexContainer {
-  border: #333 solid 2px;
-  height:300px;
-}
-
-.flexItem {
-  width: 50px;
-  height: 50px;
-  background: #D12026;
-  border: #333 solid 1px;
-  margin: 5px;
-  text-align: center;
-  color:white;
-}
-
-.flexItem:first-child {
-  background: #26A6C9;
-}
-.flexItem:last-child{
-  background-color: #673AB7;
-}
-```
-
-```html
-<!-- HTML -->
-<div class="flexContainer">
-    <div class="flexItem">
-      <span>1</span>
-    </div>
-    <div class="flexItem">
-      <span>2</span>
-    </div>
-    <div class="flexItem">
-      <span>3</span>
-    </div>
-    <div class="flexItem">
-      <span>4</span>
-    </div>
-    <div class="flexItem">
-      <span>5</span>
-    </div>
-    <div class="flexItem">
-      <span>6</span>
-      </div>
-    <div class="flexItem">
-      <span>7</span>
-    </div>
-</div>
-```
-
-Or check out [this CodePen](https://codepen.io/zkdan/pen/OaKQjx).
-
-### `display:flex;`
-In order to use flexbox in a layout, we must have the elements we want to lay out inside their own container. We will apply a `display:flex;` property to this container element. 
+### `display: flex;`
+In order to use flexbox in a layout, we must have the elements we want to lay out inside their own container. We will apply a `display: flex;` property to this container element. 
 
 ```css
 .flexContainer {
@@ -88,13 +30,11 @@ In order to use flexbox in a layout, we must have the elements we want to lay ou
 ```
 
 ### `flex-direction`
-You know how when we say `position:absolute;` on an element, we unlock the ability to use the `top`, `right`, `bottom` and `left` properties? Something similar happens when we set a container to `display:flex;`. We now have access to a bunch of properties that will describe how the content inside the container behaves.
+You know how when we say `position: absolute;` on an element, we unlock the ability to use the `top`, `right`, `bottom` and `left` properties Something similar happens when we set a container to `display: flex;`. We now have access to a bunch of properties that will describe how the content inside the container behaves.
 
 The default behavior of all child elements of a parent that is `display:flex;` is for them to flow next to each other. 
 
-Child elements are positioned along a main axis. We can choose this axis using the `flex-direction` property. When we choose a main axis,the other axis becomes _the secondary axis_.
-
-For the next four examples, the first child element in the page will have a different background colour.
+Child elements are positioned along a main axis. We can choose this axis using the `flex-direction` property. When we choose a main axis, the other axis becomes _the secondary axis_.
 
 ### `flex-direction:row;`
 Setting `flex-direction` to `row` will make the X axis (horizontal) the main axis. Your content will flow **left to right**.
@@ -135,7 +75,7 @@ With both properties, `flex-start` and `flex-end` can be used to position accord
 }
 ```
 
-![justify-content: flex-start; with numbered boxes. They begin at the upper left corner of the parent container.](https://hychalknotes.s3.amazonaws.com/justify-content-flex-start.png)
+![justify-content: flex-start; with numbered boxes. They begin at the upper left corner of the parent container.](https://hychalknotes.s3.amazonaws.com/01-flexbox-jc-fs-min.png)
 
 ### `justify-content: flex-end`
 ```css
@@ -145,7 +85,7 @@ With both properties, `flex-start` and `flex-end` can be used to position accord
   justify-content: flex-end;
 }	
 ```
-![justify-content: flex-end; with numbered boxes. They begin at the upper right corner of the parent container.](https://hychalknotes.s3.amazonaws.com/justify-content-flex-end.png)
+![justify-content: flex-end; with numbered boxes. They begin at the upper right corner of the parent container.](https://hychalknotes.s3.amazonaws.com/02-flexbox-jc-fe-min.png)
 
 
 ### `align-items: flex-start`
@@ -156,7 +96,7 @@ With both properties, `flex-start` and `flex-end` can be used to position accord
   align-items: flex-start;
 }	
 ```
-![align-items: flex-start; with numbered boxes. They begin at the upper left corner of the parent container.](https://hychalknotes.s3.amazonaws.com/align-items-flex-start.png)
+![align-items: flex-start; with numbered boxes. They begin at the upper left corner of the parent container.](https://hychalknotes.s3.amazonaws.com/03-flexbox-ai-fs-min.png)
 
 ### `align-items: flex-end`
 ```css
@@ -166,7 +106,7 @@ With both properties, `flex-start` and `flex-end` can be used to position accord
   align-items: flex-end;
 }
 ```
-![align-items: flex-end; with numbered boxes. They begin at the lower left corner of the parent container.](https://hychalknotes.s3.amazonaws.com/align-items-flex-end.png)
+![align-items: flex-end; with numbered boxes. They begin at the lower left corner of the parent container.](https://hychalknotes.s3.amazonaws.com/04-flexbox-ai-fe-min.png)
 
 ## Spacing content
 
@@ -181,7 +121,7 @@ Setting `justify-content` to `space-between` will position the content so that t
 }
 ```
 
-![justify-content: space-between; with numbered boxes. The outer edges of the first and last boxes touch the container's border.](https://hychalknotes.s3.amazonaws.com/justify-content-space-between.png)
+![justify-content: space-between; with numbered boxes. The outer edges of the first and last boxes touch the container's border.](https://hychalknotes.s3.amazonaws.com/05-flexbox-jc-sb-min.png)
 
 
 ### `justify-content: space-around;`
@@ -196,7 +136,7 @@ Setting `justify-content` to `space-around` will position the content so that th
 }
 ```
 
-![justify-content: space-between; with numbered boxes. Each box has the same amount of space around it on all sides.](https://hychalknotes.s3.amazonaws.com/justify-content-space-around.png)
+![justify-content: space-between; with numbered boxes. Each box has the same amount of space around it on all sides.](https://hychalknotes.s3.amazonaws.com/06-flexbox-jc-sa-min.png)
 
 ## Combining spacing properties
 `justify-content` and `align-items` can be used together as well to position elements where they are needed.
@@ -210,7 +150,7 @@ Setting `justify-content` to `space-around` will position the content so that th
 }	
 ```
 
-![justify-content: flex-end;, align-items:flex-end; with numbered boxes.The boxes are positioned at the lower right corner of the parent container.](https://hychalknotes.s3.amazonaws.com/justify-content-flex-end-align-items-flex-end.png)
+![justify-content: flex-end;, align-items:flex-end; with numbered boxes.The boxes are positioned at the lower right corner of the parent container.](https://hychalknotes.s3.amazonaws.com/07-flexbox--min.png)
 
 One of the many great benefits of flexbox is that you can easily center content vertically and horizontally.
 
@@ -226,7 +166,7 @@ We use `justify-content` to center along the main axis and `align-items` to cent
 }	
 ```
 
-![justify-content: center; with numbered boxes. The boxes are positioned at the middle top of the parent container.](https://hychalknotes.s3.amazonaws.com/justify-content-center.png)
+![justify-content: center; with numbered boxes. The boxes are positioned at the middle top of the parent container.](https://hychalknotes.s3.amazonaws.com/08-flexbox-min.png)
 
 ### `align-items: center;`
 ```css
@@ -237,7 +177,7 @@ We use `justify-content` to center along the main axis and `align-items` to cent
 }	
 ```
 
-![align-items:center; with numbered boxes. The boxes are positioned at the left middle of the parent container.](https://hychalknotes.s3.amazonaws.com/align-items-center.png)
+![align-items:center; with numbered boxes. The boxes are positioned at the left middle of the parent container.](https://hychalknotes.s3.amazonaws.com/09-flexbox-min.png)
 
 These together give us:
 
@@ -250,7 +190,7 @@ These together give us:
 }	
 ```
 
-![align-items:center; justify-content:center; with numbered boxes. The boxes in the exact middle the parent container.](https://hychalknotes.s3.amazonaws.com/centering-in-flexbox.png)
+![align-items:center; justify-content:center; with numbered boxes. The boxes in the exact middle the parent container.](https://hychalknotes.s3.amazonaws.com/10-flexbox-min.png)
 
 Lovely centering!
 
@@ -267,11 +207,11 @@ We can also give `margin: auto` to the **element** we want to center.
 }
 ```
 
-Notice that `margin:auto;` for our `.flexItem` class in the CodePen centers every element with a class of `.flexItem`, rather than the group of them. (Create a `div` to wrap the elements we want centered and set that margin to `auto`.)
+Notice that `margin: auto;` for our `.flexItem` class in the CodePen centers every element with a class of `.flexItem`, rather than the group of them. (Create a `div` to wrap the elements we want centered and set that margin to `auto`.)
 
 ## Adjusting white space
 
-Add a new rule to `.flexContainer` in your file or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx): `width: 200px;`.
+Add a new rule to `.flexContainer` in your file: `width: 200px;`.
 
 When working with floats, we expect our elements to wrap to the next line when they don't fit in the parent space. This is not the case with flexbox: when we have many elements inside of a parent container, they resize to fit the space.
 
@@ -282,8 +222,8 @@ In order to fix this weirdness, we need to state that the elements will wrap to 
   display: flex;
   height: 300px;
   width: 200px;
-  border: #333 solid 2px;
-  flex-wrap:wrap;
+  border: 2px solid #333;
+  flex-wrap: wrap;
 }
 ```
 
@@ -291,11 +231,11 @@ Toggle between `flex-direction: column;` and `flex-direction: row;` and see how 
 
 In the previous examples, we've had to deal with a lot of white space around the elements. Flexbox also provides us with some properties to better control how we can utilize this extra spacing. (Note that the following rules only apply when there is **more than one row or column of content** (depending on the `flex-direction`).
 
-### `align-content:space-between;`
+### `align-content: space-between;`
 
 Setting `align-content` to `space-between` will position the content so that the first line is at the start of the container, and the last line is at the end.
 
-### `align-content:space-around;`
+### `align-content: space-around;`
 
 Setting `align-content` to `space-around` will position the content so that the empty space before the first and after the last item equals half of the space between each pair of adjacent items, giving them the appearance of equal margins.
 
@@ -318,7 +258,7 @@ Setting `align-self` will overwrite the inherited or default position of a child
 
 (Note that, in opposition to `align-content`, `align-self` only applies when there is **one row or column of content** (depending on the `flex-direction`).
 
-Go to your code or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx) and add the following CSS:
+Go to your code and add the following CSS:
 
 ```css
 .flexItem:last-child {
@@ -330,7 +270,7 @@ Go to your code or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx) and add th
 
 By default, children of flexed parents are laid out in the order they appear in the markup. Setting the `order` property to an integer value (e.g. `10`, `3`, `-1`) on a specific element will appear to move that item. By default, each element has a value of `0`. Elements are laid out in the ascending order. If two flex child elements have the same `order` value, they will appear in on screen in order they appear in the markup.
 
-Add a class of `.lastNameStartsWithA` to a `.flexItem` in the middle of the group in [our CodePen.](https://codepen.io/zkdan/pen/OaKQjx)
+Add a class of `.lastNameStartsWithA` to a `.flexItem` in the middle of the group:
 
 ```css
 .lastNameStartsWithA {
@@ -349,12 +289,10 @@ Flexbox was built in response to the move toward responsive web design and devel
 ### `flex: 1 0 auto;`
 Setting `flex` to `1 0 auto` is shorthand for `flex-grow: 1;`, `flex-shrink: 0;`, and `flex-basis: auto;`, which describes how the element will resize when the parent container does.
 
-### `flex-basis`
-The value of this property is the ideal size of the element. It can be declared in pixels or percentage. As you've seen, once items are placed in a flexbox, their dimensions can change.
+### `flex-grow` 
+The value of this property is a unitless value that represents how much the element will grow in relation to the other elements in its container when its container grows.
 
-Go to your file or [our CodePen](https://codepen.io/zkdan/pen/OaKQjx) and add the rule `flex-basis:100px;` to `.flexItem:last-child`. See how it got up to 100px if there is space for it to do so?
-
-[This article](http://gedd.ski/post/the-difference-between-width-and-flex-basis/) does a great job explaining the difference between `width` and `flex-basis`.
+[Confused](https://css-tricks.com/flex-grow-is-weird/)?
 
 ### `flex-shrink`
 The value of this property is a unitless value that represents how much the element will shrink in relation to the other elements in its container when its container shrinks.
@@ -365,10 +303,13 @@ You can download and play around with [this great example](https://hychalknotes.
 
 Visit the [documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink) for a detailed example of `flex-shrink`.
 
-### `flex-grow` 
-The value of this property is a unitless value that represents how much the element will grow in relation to the other elements in its container when its container grows.
+### `flex-basis`
+The value of this property is the ideal size of the element. It can be declared in pixels or percentage. As you've seen, once items are placed in a flexbox, their dimensions can change.
 
-[Still confused](https://css-tricks.com/flex-grow-is-weird/)?
+Go to your file and add the rule `flex-basis: 100px;` to `.flexItem:last-child`. See how it got up to 100px if there is space for it to do so?
+
+[This article](http://gedd.ski/post/the-difference-between-width-and-flex-basis/) does a great job explaining the difference between `width` and `flex-basis`.
+
 
 ## Flexbox code-alongs
 We'll download [a starter file](https://hychalknotes.s3.amazonaws.com/flex.html) to see how the flexbox can be used to create a common website layout we've previously made with floats.
