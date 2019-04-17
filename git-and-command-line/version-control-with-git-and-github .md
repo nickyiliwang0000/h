@@ -24,7 +24,7 @@ The purpose of Git is to manage and store information about the changes in a set
 
 After you create a repository, it is stored in the same folder as the project itself, in a subfolder called **.git**. Note that directories that start with a `.` are hidden by default on your computer.  You may not see this .git directory on your computer but it may show in other places, such as your FTP client. 
 
-To show files like these, Mac users can type `com.apple.finder AppleShowAllFiles YES` in the command line. Windows users go to **Control Panel > Appearance and Personalization**. In **Folder Options**, select the **View** tab. Under **Advanced Settings**, select **Show hidden files, folders, and drives**.
+To show files like these, Mac users can type `Command + Shift + .` while Windows users can go to **Explorer > View** and toggle on the **Hidden** checkbox.
 
 ### Cloning a repository
 **Cloning** a repo refers to creating a local copy of an existing repository that you may have access to in your github.com account.  
