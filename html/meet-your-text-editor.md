@@ -235,6 +235,12 @@ Inside of this `css.json` file, paste the following code:
     "body": " .clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; } ",
     "description":"Clearfix Snippet" 
   },
+
+  "VisuallyHidden": {
+    "prefix": "vhidden",
+    "body": ".visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}",
+    "description": "Visually Hidden Snippet"
+  },
   
   "Setup": {
   "prefix": "setup",
@@ -243,31 +249,30 @@ Inside of this `css.json` file, paste the following code:
     "",
     ".clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }",
     "",
-    "* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }"
+    "* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }",
+    "",
+    ".visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}"
   ],
-  "description": "Normalize, Border-Box, Clearfix"
-  },
-
-  "VisuallyHidden": {
-    "prefix": "vhidden",
-    "body": ".visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}",
-    "description": "Visually Hidden Snippet"
+  "description": "Normalize, Border-Box, Clearfix and Visually Hidden"
   }
 }
 ```
 Repeat the above steps for `scss.json`.
 
-You should now have access to the following snippets in CSS/SCSS: 
+Keep in mind that the above `setup` snippet includes four different rule sets, and you might not need all for every project. Be mindful of this, and either use the individual snippets when you don't need all, or if you use `setup`, make sure to delete the sections you don't need out of your CSS.
+
+You should now have access to the following snippets in HTML: 
+
+* `jquery` + `tab`
+* `responsive` + `tab`
+
+And the following snippets in CSS/SCSS: 
 
 * `bor-box` + `tab`
 * `normalize` + `tab`
 * `clearfix` + `tab`
+* `vhidden` + `tab`
 * `setup` + `tab`
-
-And the following snippets in HTML: 
-
-* `jquery` + `tab`
-* `responsive` + `tab`
 
 Don't stop here - feel free to make your own! 
 
