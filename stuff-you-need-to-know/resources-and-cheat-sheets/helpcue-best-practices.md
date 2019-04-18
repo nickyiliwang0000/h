@@ -1,5 +1,5 @@
 # HelpCue
-HelpCue is a tool that helps us distribute instructor support in a fair way. We can use it to ask for one on one help from instructors during project work time. Through HelpCue you can enter a question or a problem you have and the app queues up all questions up in the order they were asked and instructor will help students based on that order. In addition to making sure everyone gets the help they need, HelpCue will also give you the opportunity to explain technical issues to other developers.
+HelpCue is a tool that helps us distribute instructor support in a fair way. We can use it to ask for one on one help from instructors during project work time. Through HelpCue you can enter a question or a problem you have and the app queues up all questions up in the order they were asked and instructor will help students based on that order. In addition to making sure everyone gets the help they need, HelpCue will also give us the opportunity to explain technical issues to other developers.
 
 ## How to join HelpCue
 1. Go to [https://www.helpcue.com/](https://www.helpcue.com/)
@@ -10,13 +10,18 @@ HelpCue is a tool that helps us distribute instructor support in a fair way. We 
 
 We recommend you bookmark HelpCue to easily access the application during Bootcamp
 
-## When is HelpCue open/closed?
-* HelpCue will be open during project work time throughout the week (Monday to Friday)
-* HelpCue will also be open during Fishbowl sessions
-* HelpCue is closed 1:00pm - 2:00pm for lunch
-* HelpCue is closed at 5:30pm Monday to Thursdays
-* HelpCue is closed at 5:00pm on Fridays
-* HelpCue is closed 10:00am - 11:30am on Friday morning
+## When is HelpCue available?
+We ask that you do not add questions when HelpCue is closed. We will have to delete questions that were added outside of HelpCue hours to keep things fair.
+
+### HelpCue is open...
+* Monday to Friday during project work time
+* Fishbowls. Check the [bootcamp calendar](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) for dates.
+
+### HelpCue is closed...
+* Monday to Friday from 1:00pm to 2:00pm for lunch
+* at 5:30pm Monday to Thursdays
+* at 5:00pm on Fridays for show and tell
+* Friday mornings from 10:00am to 11:30am
 
 ## HelpCue etiquette
 ### What to do before asking your question...
@@ -76,4 +81,4 @@ _"My styles aren't applying"_
 * **OR** you’ve been working on it for 45mins or more!
 
 ## Do your best
-In addition to building great projects, we want to be able to articulate problems and explaining code to other people. HelpCue is an opportunity for us to practice these skills. Don't be afraid to use HelpCue! We want to help you. We ask that you try solving things on your own, but ultimately we are here to help you!
+In addition to building great projects, we want to be able to articulate problems and explaining code to other people. HelpCue is an opportunity for us to practice these skills. Don't be afraid to use HelpCue! Ultimately, we are here for you! We want to help you! 
