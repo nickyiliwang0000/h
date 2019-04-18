@@ -13,11 +13,11 @@ HTML is written is plain text, so we could technically use Notepad (Windows) or 
 
 Text editors give you something called _syntax highlighting_, which colour-codes your tags to help you quickly scan your code for relevant parts. When you make a mistake, the colour of the tag changes so you can see that something isn't right. Take a look this snippet in TextEdit:
 
-[Using Textedit or Notepad](http://wes.io/IJBn/Screen%20Shot%202012-07-24%20at%203.11.49%20PM.png)
+![Using Textedit or Notepad](http://wes.io/IJBn/Screen%20Shot%202012-07-24%20at%203.11.49%20PM.png)
 
 Now look at it in a text editor:
 
-[Using a Text Editor](http://wes.io/IINV/Screen%20Shot%202012-07-24%20at%203.15.00%20PM.png)
+![Using a Text Editor](http://wes.io/IINV/Screen%20Shot%202012-07-24%20at%203.15.00%20PM.png)
 
 See how all the tags are blue and the current selected tag `<body>` is underlined in yellow? When your code gets long and nested, little features like these are very helpful for finding errors.
 
