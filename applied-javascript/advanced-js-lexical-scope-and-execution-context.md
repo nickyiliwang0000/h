@@ -123,14 +123,14 @@ Let's take a look at `this` inside object methods.
 ```javascript
 // object literal is created 
 let character = {
-  name: 'Kermit',
+  firstName: 'Kermit',
   print: function(){
     console.log(this);
   }
 }
 
 character.print(); 
-// >> {name: 'Kermit', print: f(){}}
+// >> {firstName: 'Kermit', print: f(){}}
 ```
 
 In this case, since the function is a method (i.e. it is attached to an object), and the method is called as a property of the object, the `this` keyword references **the object that contains the method**.
@@ -139,11 +139,11 @@ Now, let's create a function inside of a method.
 
 ```javascript
 let character = {
-  name: 'Kermit',
+  firstName: 'Kermit',
   print: function(){
     console.log(this);
     let changeName = function(newName){
-      this.name = newName;
+      this.firstName = newName;
     }
 
     changeName('Miss Piggy');
@@ -152,12 +152,11 @@ let character = {
 }
   
 character.print(); 
-// >> {name: 'Kermit', ...} 
-// >> {name: 'Kermit', ...}
-
+// >> {firstName: 'Kermit', ...} 
+// >> {firstName: 'Kermit', ...} 
 ``` 
 
-Why didn't the name change? Inside of our `print` method, `this` references the object in which the print method is defined, so it might seem to make sense that our `changeName` function inside that method would also make reference to the same object. This is not the case! Even though it's nested inside your object, it is not *called* as a property of an object, so the `this` keyword defaults back to the global object, `window`.  This function is actually creating a new global `name` variable and setting it to `"Miss Piggy"` (check it out in the console!)
+Why didn't the name change? Inside of our `print` method, `this` references the object in which the print method is defined, so it might seem to make sense that our `changeName` function inside that method would also make reference to the same object. This is not the case! Even though it's nested inside your object, it is not *called* as a property of an object, so the `this` keyword defaults back to the global object, `window`.  This function is actually creating a new global `firstName` variable and setting it to `"Miss Piggy"` (check it out in the console!)
 
 How can this be solved? One way is with ES6 arrow functions! 
 
@@ -169,11 +168,11 @@ Let's rewrite our `character` method using an arrow function.
 
 ```javascript
 let character = {
-  name: 'Kermit',
+  firstName: 'Kermit',
   print: function(){
     console.log(this);
     let changeName = (newName) => {
-      this.name = newName;
+      this.firstName = newName;
     }
     
     changeName('Miss Piggy');
@@ -182,8 +181,8 @@ let character = {
 }
 
 character.print(); 
-// >> {name: 'Kermit', ...} 
-// >> {name: 'Miss Piggy', ...}
+// >> {firstName: 'Kermit', ...} 
+// >> {firstName: 'Miss Piggy', ...} 
 ```
 
 It now works like we want it to! How is that the case? Now that we are using an arrow function for our `changeName` method, it does not have it's own `this` — it uses the `this` from it's enclosing execution context, which is the `print` method. 
@@ -191,17 +190,19 @@ It now works like we want it to! How is that the case? Now that we are using an 
 Take note that this is a great solution to our nested function problem but can yield some unexpected results when used in other contexts:
 
 ```js
-let singer = {
-  name: "Beyoncé",
-  sayMyName: () => {
-    return this.name;
+let song = {
+  artist: "Carly Rae Jepsen",
+  title: "Call Me Maybe",
+  
+  artistAndTitle: () => {
+    return `${this.artist} - ${this.title}`;
   }
 }
-console.log(singer.sayMyName());
-// >> 
+console.log(song.artistAndTitle());
+// >> "undefined - undefined"
 ```
 
-In this example, the arrow function assigned to the `sayMyName` property get's it's `this` value from the scope in which the function is defined. The arrow function is defined as part of creating the object in the global execution context, so `this` will reference the global execution context's `this` value, the `window` object.  
+In this example, the arrow function assigned to the `artistAndTitle` property get's it's `this` value from the scope in which the function is defined. The arrow function is defined as part of creating the object in the global execution context, so `this` will reference the global execution context's `this` value, the `window` object.  
 
 To learn more about arrow function check out this <a href="https://youtu.be/oTRujqZYhrU?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX" target="_blank">video</a>!
 
