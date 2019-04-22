@@ -11,7 +11,9 @@ HelpCue is a tool that helps us distribute instructor support in a fair way. You
 We recommend you bookmark HelpCue to easily access the application during Bootcamp.
 
 ## When is HelpCue available?
-HelpCue will be open during project work time. We will also be using HelpCue during fishbowls. Check the [bootcamp calendar](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto).  
+HelpCue will be open during project work time, which you can expect throughout the week. We will also be using HelpCue during fishbowls. 
+
+> Check the [bootcamp calendar](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) for fishbowl dates.  
 
 We ask that you do not add questions when HelpCue is closed. We will be deleting questions that were added outside of HelpCue hours to keep things fair.
 
