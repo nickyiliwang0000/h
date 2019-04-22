@@ -8,14 +8,12 @@ HelpCue is a tool that helps us distribute instructor support in a fair way. You
 4. Click 'Join Classroom'
 5. Enter our classroom access code and click 'Join Classroom'
 
-We recommend you bookmark HelpCue to easily access the application during Bootcamp
+We recommend you bookmark HelpCue to easily access the application during Bootcamp.
 
 ## When is HelpCue available?
-We ask that you do not add questions when HelpCue is closed. We will have to delete questions that were added outside of HelpCue hours to keep things fair.
+HelpCue will be open during project work time. We will also be using HelpCue during fishbowls. Check the [bootcamp calendar](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto).  
 
-### HelpCue is open...
-* Monday to Friday during project work time
-* Fishbowls. Check the [bootcamp calendar](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) for dates.
+We ask that you do not add questions when HelpCue is closed. We will be deleting questions that were added outside of HelpCue hours to keep things fair.
 
 ### HelpCue is closed...
 * Monday to Friday from 1:00pm to 2:00pm for lunch
@@ -36,7 +34,7 @@ We ask that you do not add questions when HelpCue is closed. We will have to del
 * I’m sitting in...
 * *I’m wearing...
 
-> If you have added a profile picture to your HelpCue account, no need to describe what you're wearing!
+> If you have added a profile picture to your HelpCue account, you don't need to tell us what you're wearing!
 
 ## Examples of good and bad HelpCue questions
 ### Good questions
@@ -81,4 +79,4 @@ _"My styles aren't applying"_
 * **OR** you’ve been working on it for 45mins or more!
 
 ## Do your best
-In addition to building great projects, we want to be able to articulate problems and explaining code to other people. HelpCue is an opportunity for us to practice these skills. Don't be afraid to use HelpCue! Ultimately, we are here for you! We want to help you! 
+In addition to building great projects, we want to be able to articulate problems and explaining code to other people. HelpCue is just an opportunity for us to practice these skills. Don't be afraid to use HelpCue. Ultimately, we are here for you and we want to help you!
