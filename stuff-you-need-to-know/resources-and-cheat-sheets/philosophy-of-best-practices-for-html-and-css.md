@@ -12,7 +12,7 @@
 
 _Best practices_ is a nebulous term that sometimes alludes to the web development community's current favorite things. You will never nail down everything that can fall under the umbrella term "best practices" and different people use it different ways. At HackerYou, best practices are how we encourage ourselves to write clean code. The following is a non-exhaustive list of ways to do that.
 
-As your projects go on, we move some of the previous project requirements into a "best practices" catch-all that you can find [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/web-development-best-practices.md).
+As your projects go on, we move some of the previous project requirements into a "best practices" catch-all that you can find [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/best-practices-by-project.md).
 
 ## What do we mean by clean code?
 
