@@ -50,7 +50,7 @@ before underscore case| after underscore case
 
 Some people consider underscore a type of kebab case. It really doesn't matter what you use as long as you are **consistent**. When you work with other developers, it's very important to make sure you're on the same page.
 
-There's also a convention called _BEM_, which stands for block-element-modifier. People have verrrry strong opinions about BEM and it's implemented differently in different workplaces, so feel free to [check it out](https://github.com/HackerYou/bootcamp-notes/blob/master/css/X-css-organization-with-bem.md) and try it on one of your projects.
+There's also a convention called _BEM_, which stands for block-element-modifier. People have verrrry strong opinions about BEM and it's implemented differently in different workplaces, so feel free to [check it out](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/dead-lessons/X-css-organization-with-bem.md) and try it on one of your projects.
 
 ## Development workspace
 Working with files all over your computer can get messy quickly, especially because you'll have multiple files named `index.html` and folders named `styles` or `scripts`. There should only be one `index.html` for any given project.
