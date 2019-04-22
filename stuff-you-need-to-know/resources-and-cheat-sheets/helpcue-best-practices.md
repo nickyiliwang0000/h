@@ -1,14 +1,16 @@
-# HelpCue
-HelpCue is a tool that helps us distribute instructor support in a fair way. You can use it to ask for one on one help from instructors during project work time. You can enter a question or a problem and instructors will help students based the order they were asked. In addition to making sure everyone gets the help they need, HelpCue will also give us the opportunity to explain technical issues to other developers.
+# HelpCue best practices
+HelpCue is a tool that helps us distribute instructor support in a fair way. You can use it to ask for one-on-one help from instructors during project work time. You can enter a question or a problem and instructors will help you in the order the questions were asked. In addition to making sure everyone gets the help they need, HelpCue will also gives you the opportunity to explain technical issues to other developers.
 
 ## How to join HelpCue
 1. Go to [https://www.helpcue.com/](https://www.helpcue.com/)
 2. Sign in with Google Account or register for an account
-3. Add a profile picture through Gravatar
+3. Add a profile picture through Gravatar (Optional)
 4. Click 'Join Classroom'
 5. Enter our classroom access code and click 'Join Classroom'
 
 We recommend you bookmark HelpCue to easily access the application during Bootcamp.
+
+> If you do not add a photo to your account, we ask that you describe what you are wearing every time you add a question to HelpCue
 
 ## When is HelpCue available?
 HelpCue will be open during project work time, which you can expect throughout the week. We will also be using HelpCue during fishbowls. 
@@ -25,16 +27,13 @@ We ask that you do not add questions when HelpCue is closed. We will be deleting
 
 ## HelpCue etiquette
 ### What to do before asking your question...
-1. Reflect! Ask yourself, what are you trying to do? What do you know so far? Has the browser provided any errors?
+1. Reflect! Ask yourself what are you trying to do. What do you know so far? Has the browser provided any errors?
 2. Try solving it on your own first. Is there something in the HackerYou notes that might help? Have you googled the problem and tried some of the suggestions? Read the documentation!
 3. Think of how you can word this issue to someone who doesn’t know as much about on what you’re currently working on.
 
 ## Question template
 
-* I’m having trouble with...
-* I've tried...
-* I’m sitting in...
-* *I’m wearing...
+"I am having trouble with _____, I am sitting ______ wearing _____. I've tried _______ and _____."
 
 > If you have added a profile picture to your HelpCue account, you don't need to tell us what you're wearing!
 
@@ -60,11 +59,11 @@ _"My styles aren't applying"_
 
 ## General HelpCue best practices
 * One question at a time
-* Don’t add questions when HelpCue is closed! We will delete any questions that were added! :(
+* Don't add questions when HelpCue is closed! We will delete any questions that were added! :(
 * Add your location - it will help instructors figure out where you are in the space
 * Use #design for design help
 * Do not ask for a specific instructor by name
-* Try googling it first and don’t be afraid to break something! It’s just code!
+* Try googling it first and don’t be afraid to break something! It's just code!
 * Try a hard refresh
 
 ## What you can expect
@@ -81,4 +80,4 @@ _"My styles aren't applying"_
 * **OR** you’ve been working on it for 45mins or more!
 
 ## Do your best
-In addition to building great projects, we want to be able to articulate problems and explaining code to other people. HelpCue is just an opportunity for us to practice these skills. Don't be afraid to use HelpCue. Ultimately, we are here for you and we want to help you!
+In addition to building great projects, we want you to be able to articulate problems and explain code to other people. HelpCue is just an opportunity for you to practice these skills. Don't be afraid to use HelpCue. Ultimately, we are here for you and we want to help you!
