@@ -1,5 +1,5 @@
 # HelpCue
-HelpCue is a tool that helps us distribute instructor support in a fair way. We can use it to ask for one on one help from instructors during project work time. Through HelpCue you can enter a question or a problem you have and the app queues up all questions up in the order they were asked and instructor will help students based on that order. In addition to making sure everyone gets the help they need, HelpCue will also give us the opportunity to explain technical issues to other developers.
+HelpCue is a tool that helps us distribute instructor support in a fair way. You can use it to ask for one on one help from instructors during project work time. You can enter a question or a problem and instructors will help students based the order they were asked. In addition to making sure everyone gets the help they need, HelpCue will also give us the opportunity to explain technical issues to other developers.
 
 ## How to join HelpCue
 1. Go to [https://www.helpcue.com/](https://www.helpcue.com/)
