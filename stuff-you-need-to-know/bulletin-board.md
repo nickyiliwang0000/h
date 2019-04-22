@@ -3,15 +3,64 @@
 
 <!-- Week number -->
 ### Week 1
-<!-- Monday -->
 
-<!-- Tuesday -->
+Welcome! Let's review!
 
-<!-- Wednesday -->
+< Monday /> 
+Intro to the Internet
+Keeping organized as a developer
+Meet your text editor
+Space orientation
+LUNCH
+HY culture presentation
+Marking up content with HTML elements
+Video and audio
+Intro to CSS
+CSS selectors
 
-<!-- Thursday -->
+< Tuesday /> 
+Kickoff
+Browser dev tools
+CSS color
+Curriculum orientation
+Extra curricular orientation
+LUNCH
+Sexual violence and harassment policy orientation
+Project 1 introduced
+CSS measurement units
+CSS background colour and images
+Web typography
+Using webfonts
+CSS pseudo selectors
 
-<!-- Friday -->
+< Wednesday /> 
+CSS dimensions
+CSS layout
+Display and positioning
+SALAD CLUB
+Philosophy of best practices for HTML and CSS
+Project work time
+
+< Thursday /> 
+Kickoff
+Emmet
+Icons
+Advanced layouts
+LUNCH
+Responsive design
+Project work time
+
+< Friday />
+Kickoff
+Feedback form
+Bootcamp team meeting 1030-1130
+Pseudo-elements
+Intro to command line
+LUNCH
+Personal branding with Heather
+Project work time
+Show 'n' Tell
+
 
 ### Review topics
 <!-- * Topic 1 -->
