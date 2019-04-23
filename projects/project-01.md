@@ -39,7 +39,7 @@ You will also be given marks for your project presentation:
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/1NxNPhvE2nyfkh1zwraA8YGM2SPIMXVm0PHSv430CCGw/edit#gid=1501222648).
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1NxNPhvE2nyfkh1zwraA8YGM2SPIMXVm0PHSv430CCGw/edit#gid=1501222648). Headings of the columns are links to the Zeplin files.
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
