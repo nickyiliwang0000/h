@@ -1,11 +1,12 @@
 # This is your cohort's bulletin board! 
-## Here is where we will post the [weekly schedule](), review topics for texts, and anything else we need you to know
+## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 <!-- Week number -->
 ### Week 1
 
 Welcome! Let's review!
 
+```bash
 < Monday /> 
 Intro to the Internet
 Keeping organized as a developer
@@ -17,7 +18,8 @@ Marking up content with HTML elements
 Video and audio
 Intro to CSS
 CSS selectors
-
+```
+```bash
 < Tuesday /> 
 Kickoff
 Browser dev tools
@@ -32,7 +34,9 @@ CSS background colour and images
 Web typography
 Using webfonts
 CSS pseudo selectors
+```
 
+```bash
 < Wednesday /> 
 CSS dimensions
 CSS layout
@@ -40,7 +44,8 @@ Display and positioning
 SALAD CLUB
 Philosophy of best practices for HTML and CSS
 Project work time
-
+```
+```bash
 < Thursday /> 
 Kickoff
 Emmet
@@ -49,7 +54,8 @@ Advanced layouts
 LUNCH
 Responsive design
 Project work time
-
+```
+```bash
 < Friday />
 Kickoff
 Feedback form
@@ -60,7 +66,7 @@ LUNCH
 Personal branding with Heather
 Project work time
 Show 'n' Tell
-
+```
 
 ### Review topics
 <!-- * Topic 1 -->
