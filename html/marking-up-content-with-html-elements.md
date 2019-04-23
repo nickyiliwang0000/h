@@ -202,7 +202,7 @@ We would first wrap our sentence in a paragraph tag:
 Then we wrap the word(s) we want to target in a `span` tag and give that `span` tag a class of `contains-red`. We use a class so we can target only these **specific** `span` tags with CSS.
 
 ```html
-<p>There are lots of colors I like: <span class="contains-red">red</span>, blue, <span class="contains-red">purple</span>, green to name a few.</p>
+<p>There are lots of colors I like: <span class="contains-red">red</span>, blue, <span class="contains-purple">purple</span>, green to name a few.</p>
 
 ```
 
@@ -227,7 +227,7 @@ The technical difference between the two is that `div` is a block element and `s
 <p>There are lots of colors I like: 
   <div class="contains-red">red</div>, 
   blue, 
-  <div class="contains-red">purple</div>, 
+  <div class="contains-purple">purple</div>, 
   green to name a few.
 </p>
 
