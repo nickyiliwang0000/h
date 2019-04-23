@@ -207,11 +207,9 @@ We can also give `margin: auto` to the **element** we want to center.
 }
 ```
 
-Notice that `margin: auto;` for our `.flexItem` class in the CodePen centers every element with a class of `.flexItem`, rather than the group of them. (Create a `div` to wrap the elements we want centered and set that margin to `auto`.)
-
 ## Adjusting white space
 
-Add a new rule to `.flexContainer` in your file: `width: 200px;`.
+Add a new rule to `.flexContainer` in your file: `width: 300px;`.
 
 When working with floats, we expect our elements to wrap to the next line when they don't fit in the parent space. This is not the case with flexbox: when we have many elements inside of a parent container, they resize to fit the space.
 
@@ -221,7 +219,7 @@ In order to fix this weirdness, we need to state that the elements will wrap to 
 .flexContainer {
   display: flex;
   height: 300px;
-  width: 200px;
+  width: 300px;
   border: 2px solid #333;
   flex-wrap: wrap;
 }

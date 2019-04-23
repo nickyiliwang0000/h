@@ -187,7 +187,7 @@ To control the position of each colour stop, provide a percentage value next to 
 
 ```css
 div {
-  background: linear-gradient( to right, blue 40%, red 20%, green, yellow, pink, lime 70%);
+  background: linear-gradient( to right, blue 20%, red 40%, green, yellow, pink, lime 70%);
 }
 ```
 

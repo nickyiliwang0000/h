@@ -21,7 +21,7 @@ Let's take a look at some markup:
 <div>BLOCK</div>
 ```
 
-How will the above be displayed in the browser? Let's open [displayExample.html](https://hychalknotes.s3.amazonaws.com/displayExample.html) in the browser and check it out. (The elements have a pink background and some margin added to see their shape better.)
+How will the above be displayed in the browser? Let's open [displayExample.html](https://hychalknotes.s3.amazonaws.com/displayExample.html) in the browser and check it out. (The elements have a teal background and some margin added to see their shape better.)
 
 Why do the spans line up beside each other and the divs start on a new line when their contents are almost identical?
 
@@ -101,7 +101,7 @@ This is what we have worked with so far. You won't need to set `position:static;
 
 Open [positionRelative.html](https://hychalknotes.s3.amazonaws.com/positionRelative.html) in your editor and do the following:
 
-1. Set the position of the `div.box` to relative.
+1. Set the position of the `div.text` to relative.
 1. Give the properties `top` and `left` a value of 100px each.
 1. Try a negative left value (-100px).
 1. Replace `top` with `margin-top`. What is the difference?
