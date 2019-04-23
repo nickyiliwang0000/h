@@ -39,7 +39,7 @@ You will also be given marks for your project presentation:
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
 
-You can find your assignment [here]().
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1NxNPhvE2nyfkh1zwraA8YGM2SPIMXVm0PHSv430CCGw/edit#gid=1501222648).
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
@@ -47,7 +47,6 @@ You can find your assignment [here]().
 [Here](https://docs.google.com/document/u/1/d/17GYf0CfvD8Mdt4fXXH_03Hc-L-y9V3xLSbO5AIfdK54/edit?usp=sharing) is a checklist that will help perfect your conversion!
 
 ## Submitting your project
-You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
 1. Create a repository called `firstNameLastNameProjectOne`

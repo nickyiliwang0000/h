@@ -49,7 +49,6 @@ You will also be given marks for your project presentation:
 * Student did not go over time
 
 ## Submitting your project
-You'll be posting your project on GitHub and "turning in" a link to said project via email.
 
 1. Remove any unneeded files from the project.
 1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
