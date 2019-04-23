@@ -15,7 +15,7 @@ The browser default for typographical elements is typically a serif font like Ti
 
 ```css
 body {
-  font-family: "Helvetica";
+  font-family: "Georgia";
 }
 ```
 
@@ -23,14 +23,14 @@ Or, a font-family:
 
 ```css
 body {
-  font-family: sans-serif;
+  font-family: serif;
 }
 ```
 
 The standard font families are:
 
 * serif (e.g. Times New Roman, Georgia)
-* sans-serif (e.g. Helvetica, Arial)
+* sans-serif (e.g. Arial)
 * cursive (e.g. Zapf-Chancery)
 * fantasy (e.g. Western)
 * monospace (e.g. Courier)
@@ -53,11 +53,11 @@ To prevent this disappointment, we use a _font stack_. A font stack is a list of
 
 ```css
 body {
-  font-family: "WoweeWhatACoolFont", "Helvetica", cursive;
+  font-family: "WoweeWhatACoolFont", "Zapf-Chancery", cursive;
 }
 ```
 
-The code above checks for `WoweeWhatACoolFont`. If it isn't found, it checks for `Helvetica`. If that isn't found, the `body` will be rendered in the default cursive font for that computer.
+The code above checks for `WoweeWhatACoolFont`. If it isn't found, it checks for `Zapf-Chancery`. If that isn't found, the `body` will be rendered in the default cursive font for that computer.
 
 An excellent resource for building fail-proof font stacks is [http://cssfontstack.com/](http://cssfontstack.com/). Let's take a look.
 
