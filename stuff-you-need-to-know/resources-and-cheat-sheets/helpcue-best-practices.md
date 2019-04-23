@@ -1,5 +1,5 @@
 # HelpCue best practices
-HelpCue is a tool that helps us distribute instructor support in a fair way. You can use it to ask for one-on-one help from instructors during project work time. You can enter a question or a problem and instructors will help you in the order the questions were asked. In addition to making sure everyone gets the help they need, HelpCue will also gives you the opportunity to explain technical issues to other developers.
+HelpCue is a tool that helps us distribute instructor support in a fair way. You can use it to ask for one-on-one help from instructors during project work time. You can enter a question or a problem and instructors will help you in the order the questions were asked. In addition to making sure everyone gets the help they need, HelpCue will also give you the opportunity to explain technical issues to other developers.
 
 ## How to join HelpCue
 1. Go to [https://www.helpcue.com/](https://www.helpcue.com/)
