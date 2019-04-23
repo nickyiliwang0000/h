@@ -182,13 +182,10 @@ Download and open up [box-model-playground.html](https://hychalknotes.s3.amazona
 The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make the padding and border **not** add to the computed size of our element.
 
 ```css
-html { 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box; 
-} 
-*, *:before, *:after { 
-  box-sizing: inherit; 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 ```
 
