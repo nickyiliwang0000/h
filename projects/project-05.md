@@ -77,7 +77,6 @@ You will also be given marks for your project presentation:
 
 
 ## Submitting your project
-You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
 1. Create a repository with a descriptive name that matches your naming convention.

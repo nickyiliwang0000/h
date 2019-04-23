@@ -72,7 +72,6 @@ You can find your assignment [here]().
 
 [assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
 ## Submitting your project
-You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
 1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
