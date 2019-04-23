@@ -160,14 +160,14 @@ Imagine that three different classes share an identical style:
 	background: orange;
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
-  font-style: italic;
+	font-style: italic;
 }
 
 .pumpkin {
 	background: orange;
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
-  font-style: italic;
+	font-style: italic;
 	color: white;
 }
 
@@ -175,7 +175,7 @@ Imagine that three different classes share an identical style:
 	background: orange;
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
-  font-style: italic;
+	font-style: italic;
 	color: brown;
 }
 ```
@@ -218,7 +218,7 @@ With CSS, you'll often want to apply styles to a nested block of elements (e.g. 
 ```
 Here, all of the child elements of `.content-box` will have the CSS rule `color:grey;` applied to them, even if the `body` has a different font color. You may have noticed that on many websites there are a bunch of styles applied to the `body` selector. Why? 
 
-**To take advantge of typographic inheritance!**
+**To take advantage of typographic inheritance!**
 
 An expansion of the example above might be:
 ```css
@@ -230,7 +230,7 @@ body {
 	color:grey;
 }
 ```
-Here, the rule `color:grey;` will apply to every child of the `body` tag, except `.content-box` and its children, because the cascade of rules is being interrupted by the explicit redeclaration of color. 
+Here, the rule `color: black;` will apply to every child of the `body` tag, except `.content-box` and its children, because the inheritance of rules is being overridden by the explicit redeclaration of color. 
 
 This should make everything on the page black, right?
 
