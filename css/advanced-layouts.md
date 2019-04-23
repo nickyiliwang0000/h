@@ -13,7 +13,7 @@ When using floats to lay out a page, we need to ensure that the sum of the width
 
 If the parent's width is, say, 800px, the childrens' widths can't add up to more than 800px, otherwise the children will break on to separate lines. Add in some border or margin and this math can get tedious. Instead of using exact pixel values for our floated child elements, let's use percentages.
 
-Open [advanced-layouts-starter.html](https://hychalknotes.s3.amazonaws.com/advanced-layouts-starter--bootcamp.html) and follow along as we replace the pixel values with percentages.
+Open [advanced-layouts-starter--bootcamp.html](https://hychalknotes.s3.amazonaws.com/advanced-layouts-starter--bootcamp.html) and follow along as we replace the pixel values with percentages.
 
 ### Container elements
 
