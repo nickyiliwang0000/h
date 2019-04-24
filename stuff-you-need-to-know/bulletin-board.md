@@ -79,7 +79,7 @@ We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj69
 ### Important Links
 Submission Form: http://bit.ly/HYsubmissions
 
-Feedback Form: https://forms.gle/dgfwHCbSjkx6EiZF8
+Feedback Form: http://bit.ly/HYBootcampFeedback
 
 Group Assignments: https://docs.google.com/spreadsheets/d/1NxNPhvE2nyfkh1zwraA8YGM2SPIMXVm0PHSv430CCGw
 
