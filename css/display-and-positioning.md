@@ -335,6 +335,8 @@ Getting comfortable with the positioning and display properties will help you so
 
 There are six exercises, labelled `ex1` to `ex6`.
 
-## Bonus challenge!
+## More exercises
 
-Test your knowledge with this bonus challenge. Recreate Glossier's featured product section! You can download these files to get started: [glossier-featured-section.zip](https://hychalknotes.s3.amazonaws.com/glossier-featured-section.zip).
+* Test your knowledge with this bonus challenge. Recreate Glossier's featured product section! You can download these files to get started: [glossier-featured-section.zip](https://hychalknotes.s3.amazonaws.com/glossier-featured-section.zip).
+
+* Download [poolPartyFloatsExercise.zip](https://hychalknotes.s3.amazonaws.com/poolPartyFloatsExercise.zip) for more practice with floats. Open the answer file in your browser and try to match it!
