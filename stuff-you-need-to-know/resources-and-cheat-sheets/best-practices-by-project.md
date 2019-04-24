@@ -15,7 +15,7 @@
     <th>7 (portfolio)</th>
   </tr>
   <tr>
-    <th align="left">Site is responsive and media queries are used</th>
+    <th align="left">Site is responsive and media queries are used (smallest screen size 320px)</th>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
