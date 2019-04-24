@@ -83,7 +83,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [CSS dimensions](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-dimensions.md)
 * [CSS layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-layouts.md)
 * [Display and positioning](https://github.com/HackerYou/bootcamp-notes/blob/master/css/display-and-positioning.md)
-* [Best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/css/best-practices.md)
+* [Philosophy of best practices for HTML and CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/philosophy-of-best-practices-for-html-and-css.md)
 * [Emmet](https://github.com/HackerYou/bootcamp-notes/blob/master/css/emmet.md)
 * [Icons](https://github.com/HackerYou/bootcamp-notes/blob/master/css/icons.md)
 * [Advanced layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-layouts.md)
