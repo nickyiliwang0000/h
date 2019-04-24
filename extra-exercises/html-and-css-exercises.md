@@ -1,4 +1,4 @@
-# Woofer HTML/CSS Fishbowl Exercise
+# Extra HTML/CSS exercise
 
 ## Flexbox and responsive design
 Time to practice flexbox and media queries! Mastering flexbox will allow us to achieve more complex layouts. While knowing how to craft media queries is important when we want to build websites that will flex to users' devices.

@@ -13,11 +13,11 @@ HTML is written is plain text, so we could technically use Notepad (Windows) or 
 
 Text editors give you something called _syntax highlighting_, which colour-codes your tags to help you quickly scan your code for relevant parts. When you make a mistake, the colour of the tag changes so you can see that something isn't right. Take a look this snippet in TextEdit:
 
-![Using Textedit or Notepad](http://wes.io/IJBn/Screen%20Shot%202012-07-24%20at%203.11.49%20PM.png)
+[Using Textedit or Notepad](http://wes.io/IJBn/Screen%20Shot%202012-07-24%20at%203.11.49%20PM.png)
 
 Now look at it in a text editor:
 
-![Using a Text Editor](http://wes.io/IINV/Screen%20Shot%202012-07-24%20at%203.15.00%20PM.png)
+[Using a Text Editor](http://wes.io/IINV/Screen%20Shot%202012-07-24%20at%203.15.00%20PM.png)
 
 See how all the tags are blue and the current selected tag `<body>` is underlined in yellow? When your code gets long and nested, little features like these are very helpful for finding errors.
 
@@ -102,7 +102,7 @@ Some staff favourites are `Oceanic Next`, `Material Theme`, `Material Dark`, and
 
 ### Edit user settings 
 
-It's worthwhile to spend a bit of time customizing your text editor since you will be spending so much time with it. You can override defaults in your user settings file which can be found at 'Code' > 'Preferences' > 'Settings' or via the shortcut `cmd + ,` (Mac) or `ctrl + ,` (Windows). You can play around with the visual interface provided or, if you click on the three dots in the corner and go to `Open in settings.json`, you can customize the settings in JSON.
+It's worthwhile to spend a bit of time customizing your text editor since you will be spending so much time with it. You can override defaults in your user settings file which can be found at 'Code' > 'Preferences' > 'Settings' or via the shortcut `cmd + ,` (Mac) or `ctrl + ,` (Windows). You can play around with the visual interface provided or, if you click on the curly brackets (`{}`) in the corner, you can customize the settings in JSON.
 
 The _JavaScript Object Notation_ (JSON) format is a data format that, despite its name, is language-independent. (Though we will be seeing it again when we get into JavaScript.) JSON's syntax uses key-value pairs that are separated by commas, with a colon between they key and the value, like this: 
 
@@ -235,6 +235,12 @@ Inside of this `css.json` file, paste the following code:
     "body": " .clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; } ",
     "description":"Clearfix Snippet" 
   },
+
+  "VisuallyHidden": {
+    "prefix": "vhidden",
+    "body": ".visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}",
+    "description": "Visually Hidden Snippet"
+  },
   
   "Setup": {
   "prefix": "setup",
@@ -243,31 +249,30 @@ Inside of this `css.json` file, paste the following code:
     "",
     ".clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }",
     "",
-    "* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }"
+    "* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }",
+    "",
+    ".visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}"
   ],
-  "description": "Normalize, Border-Box, Clearfix"
-  },
-
-  "VisuallyHidden": {
-    "prefix": "vhidden",
-    "body": ".visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}",
-    "description": "Visually Hidden Snippet"
+  "description": "Normalize, Border-Box, Clearfix and Visually Hidden"
   }
 }
 ```
 Repeat the above steps for `scss.json`.
 
-You should now have access to the following snippets in CSS/SCSS: 
+Keep in mind that the above `setup` snippet includes four different rule sets, and you might not need all for every project. Be mindful of this, and either use the individual snippets when you don't need all, or if you use `setup`, make sure to delete the sections you don't need out of your CSS.
+
+You should now have access to the following snippets in HTML: 
+
+* `jquery` + `tab`
+* `responsive` + `tab`
+
+And the following snippets in CSS/SCSS: 
 
 * `bor-box` + `tab`
 * `normalize` + `tab`
 * `clearfix` + `tab`
+* `vhidden` + `tab`
 * `setup` + `tab`
-
-And the following snippets in HTML: 
-
-* `jquery` + `tab`
-* `responsive` + `tab`
 
 Don't stop here - feel free to make your own! 
 

@@ -72,14 +72,14 @@ Previous projects by HackerYou students have included the use of geolocation in 
 
 In order to secure your site, it's best to see if your host offers SSL certificates, or use a third-party service like [Cloudflare](https://www.cloudflare.com/plans). If this isn't possible, GitHub offers free hosting of sites with secured certificates. Ask an instructor to help you down this path. If you DO host your project on a domain that has `https` you will need to make sure any thing that you link or and AJAX requests that you make have a domain that is `https`. Otherwise you will get errors when it is deployed!
 
-If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at <https://proxy.hackeryou.com/> , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.22-fetching-data-with-something-other-than%24.ajax.md#axios-with-a-proxy-server).
+If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.22-fetching-data-with-something-other-than%24.ajax.md#axios-with-a-proxy-server).
 
-## Scope document
-In order to keep you on track this week we want you to fill out a scope outline document and get it approved by an instructor. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional project). You can have as many stretch goals as you want, but only commit to what you are **dead certain** you can produce by the deadline.
+## Project proposals
+Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1t1l591AZadar30FyrURnNQU6XIJ-9bdm62mpJrKEQFk/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
-The scope document can be found [here](https://docs.google.com/document/d/1Xz9-80T2bHxZpqXOD_CfAHSlmesN_6_V0QAZwCbsMhI/edit?usp=sharing). There will also be print-outs provided for you.
+Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
 
-Again, you have to get this approved before you start any significant work. An instructor will take your copy when they sign off on it, so please take a picture for yourself.
+> **It is always better to under-promise and over-deliver.**
 
 ## How will this project be graded?
 You will be given an opportunity to provide feedback about the experience of working with your partner at the end of the project. 
@@ -114,9 +114,9 @@ You will also be given individual marks for your project presentation:
 * Student did not go over time
 
 ## Submitting your project
-You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
-1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project.     * (You don't have to rename your org if its naming convention doesn't match)
+1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project.     
+  * (You don't have to rename your org if its naming convention doesn't match)
 1. Remove any unneeded files from the project.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain.

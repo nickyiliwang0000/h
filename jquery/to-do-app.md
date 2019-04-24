@@ -4,7 +4,7 @@
 
 Let's create a to-do app using JavaScript and jQuery, following the steps below.
 
-Open up <a href="https://hychalknotes.s3.amazonaws.com/to-do-app.html" class="exercise" download>**to-do-app.html**</a> in your text editor and a browser. We've loaded in jQuery and [bootstrap](http://getbootstrap.com/) for some basic styles. We've also gone ahead and added the skeleton markup required for the app.
+Open up [to-do-app.html](https://hychalknotes.s3.amazonaws.com/to-do-app.html) in your text editor and a browser. We've loaded in jQuery and gone ahead and added the skeleton markup required for the app.
 
 Here is what we want our app to do:
 
@@ -71,8 +71,8 @@ Notice that the only difference is the `event` parameter. We can call this anyth
 
 ```js
 $(function(){
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
     console.log("form is submitted!")
   });
 });
@@ -86,8 +86,8 @@ Instead of printing `form is submitted!` lets print the value that the user put 
 
 ```js
 $(function(){
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
 
     let toDoItem = $('input').val();
     console.log(toDoItem);
@@ -99,8 +99,8 @@ This works but there is a usability issue. After submitting the form, users woul
 
 ```js
 $(function(){
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
 
     let toDoItem = $('input').val();
     console.log(toDoItem);
@@ -109,14 +109,14 @@ $(function(){
 });
 ```
 
-`.val()` is what we call a _getter_ and a _setter_. Based on how we call the method, it will either GET `.val()` or SET `.val('some text')`. These methods that can either assign or read a value. When the method is called with a value as an argument, it's referred to as a setter since it sets (or assigns) that value. When the method is called with no argument, it gets (or reads) the value.
+`.val()` is what we call a _getter_ and a _setter_. A getter method can read a value. A setter method can assign a value. So, when the method is called with a value as an argument, it's referred to as a setter since it sets (or assigns) that value. When the method is called with no argument, it gets (or reads) the value.
 
 We should only do something if the input value is not empty, otherwise we would be adding empty items to our list.
 
 ```js
 $(function(){
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
     let toDoItem = $('input').val();
 
     if (toDoItem !== '') {
@@ -133,8 +133,8 @@ Let's construct an HTML string using concatenation that will in the end look lik
 
 ```js
 $(function(){
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
     let toDoItem = $('input').val();
 
     if (toDoItem !== '') {			
@@ -151,8 +151,8 @@ We want to add list items to the end of `ul` so `.append()` will do. If we wante
 
 ```js
 $(function(){
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
 
     if ($('input').val() !== '') {
       let toDoItem = $('input').val();
@@ -167,8 +167,8 @@ Since we have Font Awesome imported into our app we can add icons indicating tha
 
 ```js
 $(function(){
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
 
     if ($('input').val() !== '') {
       let toDoItem = $('input').val();
@@ -179,12 +179,12 @@ $(function(){
 });
 ```
 
-### Item completion part 1
+### Item completion level 1
 
 A to-do app is no good if we can't check off items. We need a way change the Font Awesome icon class from `fa-square-o` to `fa-check-square-o` when an item is clicked. This means we need another event listener except this time we're listening for a `click` event. Add the following under your existing code (**inside of the document ready but after the `form` listener**):
 
 ```js
-$('form').on('submit', function(e) {
+$('form').on('submit', function(event) {
   ...
 });
 
@@ -205,14 +205,25 @@ Nothing is happening. We're clicking on `li` items so why isn't the callback fun
 
 ### Event delegation
 
-Events _propagate_ or _bubble_ up the DOM when they are triggered. So clicking on an element will trigger the event listeners that are directly attached to it and then the event will tell the parent element about the event, and so on until the event reaches the top object (the document). 
+Remember, [events in JavaScript](https://developer.mozilla.org/en-US/docs/Web/Events#Keyboard_events) are designated actions (e.g. `click`, `mouseover`, `touchstart`, `keypress`, etc). When an action takes place, we usually want to run some code. By default, the browser lets every ancestor of an event's target know that an action took place. This event flow is often referred to as either _event bubbling_ or _event propagation_. Here's an example: 
 
-So what we can do is attach our listener on a "higher" level element that gets loaded with the DOM. `ul` is a good candidate because it wraps up the `li` elements and it is loaded at the start. When someone clicks an `li` element, the event goes up to the `ul` and "notifies it of what happened". The event will then go up to the container div and so on until it reaches the top most level.
+```html
+<ul>
+  <li>
+    <a href=""> 
+      <img src="" alt="" />
+    </a>
+  </li>
+</ul>
+```
 
+When a click event is triggered on the `img`, the browser is going to communicate to every parent element (`a`, `li`, `ul`) that this event took place. As a result, the click on the image not only generates a `click` event for the `img` element, but it also generates a `click` event for every parent element. The event is _bubbling_ up through the DOM tree.
+
+We can use this bubbling behaviour to address our issue of not being able to add an event listener to our dynamic `li` elements. We can delegate our click event to a ancestor element that gets loaded with the DOM. `ul` is a good candidate because it is the parent of the `li` elements and it is rendered when the DOM is ready. When someone clicks an `li` element, that click event will bubble up to the `ul`.
 We can delegate an event by using the following syntax:
 
 ```js
-$(**parentElement**).on(event, **childElement**, function(){
+$(**parentElement**).on(**event**, **targetElement**, function(){
   // do something
 });
 ```
@@ -225,7 +236,7 @@ $('ul').on('click', 'li', function(){
 });
 ```
 
-To print the item that was clicked we use the `this` variable.
+To print the item that was clicked we use the `this` keyword.
 
 ```js
 $('ul').on('click', 'li', function(){
@@ -233,7 +244,7 @@ $('ul').on('click', 'li', function(){
 });
 ```
 
-### Item completion part 2
+### Item completion level 2
 
 Instead of printing to the console we want to:
 
@@ -274,7 +285,7 @@ And it works!
 
 ### Lots more
 
-Bootstrap has a class named `text-muted` which will help convey meaning to the user through color. Our completed tasks should be "muted" when compared to uncompleted tasks.
+We can apply a class named `text-muted` which will help convey meaning to the user through color. Our completed tasks should look inactive when compared to uncompleted tasks.
 
 ```js
 $('ul').on('click', 'li', function(){
@@ -291,9 +302,9 @@ Have a look at <a download href="https://hychalknotes.s3.amazonaws.com/to-do-app
 There is so much more that you can do to enhance the app! Here are some suggestions:
 
 - allow the removal of items completely from the list
-- drag/drop items to sort (have a look at [jQuery UI](https://jqueryui.com/))
-- when the page loads focus on the input field (i.e. cursor should load inside the input, ready to type)
 - validate the input field with an error message if the input is empty upon submit
 - automatically move completed items to the bottom
+- when the page loads, focus on the input field (i.e. cursor should load inside the input)
+- check out [jQuery UI](https://jqueryui.com/) to drag/drop items to sort
 
-Have a look at <a href="https://hychalknotes.s3.amazonaws.com/to-do-app-extras.html" class="exercise">**to-do-app-extras.html**</a> to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.
+Have a look at [to-do-app-extras.html](https://hychalknotes.s3.amazonaws.com/to-do-app-extras.html) to see the solution to the above extras. Can you think of something not on the list? Try to personalize your app.

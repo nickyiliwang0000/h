@@ -24,5 +24,5 @@
 * `this.state` is never directly changed / `.setState()` is always used to alter state
 * React should 'know' about all DOM changes (e.g. don't use `document.getElementById` to change the DOM and remember to bind your inputs)
 * No useless constructors
-* Unique key value for each child of a `.map`
+* Create a unique key value for each child of a `.map`
 * Only import what you use in each file

@@ -1,4 +1,5 @@
 # JavaScript cheat sheet
+
 ## Variables
 
 A jar to store a something you might want to use again in your code. It is best to start off declaring variables using the keyword `const`. `const` variables cannot be reassigned.

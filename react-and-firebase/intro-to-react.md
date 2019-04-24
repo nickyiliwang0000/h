@@ -32,7 +32,7 @@ Let's inspect those sites we were looking at before and see what we find!
 To build React projects, we will be using a tool built by React's developers called _Create React App_.
 
 ### Installing Create React App
-We're going to install Create React App via the _node package manager_(npm) using the command line.
+We're going to install Create React App via the _node package manager_ (npm) using the command line.
 
 ```bash
 npm i -g create-react-app
@@ -44,10 +44,9 @@ With `create-react-app` installed, we are able to quick start applications with 
 The Create React App tool gives us everything we need to get started and it's important to know what some of the files do. In the project folder you will find a `src` folder, which will contain a bunch of files that Create React App made just for you! Let's look at a few of the important ones: `index.js` and `App.js`.
 
 #### `index.js`
+The `index.js` file contains all the information needed to render our React application to the page. You won't need to make any edits to this file.
 
-The `index.js` file contains all the information needed to render our React application to the page. 
-
-```javascript
+```jsx
 //index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -59,22 +58,28 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 ```
 
-Notice that we import `React` and `ReactDom` in this file. `react-dom` [is a module](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.17-making-our-code-more-modular.md#what-are-modules) needed to render our application to the DOM. (There is a version of React that can be used server-side that doesn't need this file.)
+Notice that we import `React` and `ReactDOM` in this file. `react-dom` [is a module](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.17-making-our-code-more-modular.md#what-are-modules) needed to render our application to the DOM. (There is a version of React that can be used server-side, called _Next.js_, which doesn't need this file.)
 
 After that, we import `index.css`. With the Create React App system, we import our CSS straight into the JavaScript. This allows the underlying system that runs Create React App to bundle up the JavaScript and CSS in the most efficient way.
 
 The `App` component is also imported and rendered to the page using `ReactDOM.render()`. This `App` component is the place where we will be writing most of our code.
 
-Don't worry about `registerServiceWorker` - just know that you need it for now. [Keeners can click here.](https://stackoverflow.com/questions/47953732/what-does-registerserviceworker-do-in-react-js)
+Don't worry about `registerServiceWorker` - just know that you need it for now. [Those interested can click here.](https://stackoverflow.com/questions/47953732/what-does-registerserviceworker-do-in-react-js)
 
 #### `App.js`
 
 This file is the main component of our application and the file you'll be spending most of your time in.
 
-```javascript
+```jsx
 //App.js
+
+// a couple of functions from the React library
 import React, { Component } from 'react';
+
+// an image from `./logo.svg` 
 import logo from './logo.svg';
+
+// CSS for the `App` component
 import './App.css';
 
 class App extends Component {
@@ -94,13 +99,7 @@ class App extends Component {
 }
 
 export default App;
-
 ```
-
-This file has three lines of imports: 
- * a couple of functions from `react` (don't worry too much about this right now)
- * an image from `./logo.svg` 
- * CSS for the `App` component
 
 The `App` component is a `class` that extends the `Component` class from React. This class has a `render` method, and inside the render method we define the HTML we want to show on the page. But what looks like HTML there... is actually not HTML! Weird, right? It's something called _JSX_ (JavaScript XML) and we'll talk about it more at the end of this lesson.
 
@@ -113,11 +112,11 @@ A _component_ is a small reusable chunk of code that is usually responsible for 
 Let's make some of our own components. Start by creating a new file called `Header.js` in the `src` folder. 
 
 Inside `Header.js`, write the following:
-```javascript
+```jsx
 // Header.js
-import React from 'react';
+import React, { Component } from 'react';
 
-class Header extends React.Component {
+class Header extends Component {
   render() {
     return (
       <header>
@@ -133,12 +132,12 @@ export default Header;
 Go back to `App.js` and import our new component like this:
 
 ```javascript
-import Header from './Header';
+import Header from './Header.js';
 ```
 
 We can now use the `<Header />` component in the `App.js` file. 
 
-```javascript
+```jsx
 //App.js
 class App extends Component {
   render() {
@@ -162,7 +161,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
 #### JSX gotchas
 
-* Since it's basis is JavaScript, not HTML, we can't use certain HTML attributes in JSX because they are reserved words in JavaScript. 
+* Since its basis is JavaScript, not HTML, we can't use certain HTML attributes in JSX because they are reserved words in JavaScript. 
 
   HTML | JSX
   ---|---
@@ -177,10 +176,10 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
 * In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, it's `render` method).
 
-* One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI )_sometimes_. 
+* One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI ) _sometimes_. 
 
   * You will be tempted to put an `if` statement in your JSX like this: 
-    ```javascript
+    ```jsx
     render() {
       return (
         <div>
@@ -191,14 +190,14 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
       )
     }
     ```
-    But `if` statements are _statements_, not expressions.
+    But `if` statements are **statements**, not expressions.
 
   * React has lots of ways to get around this. One is to use a ternary operator:
-    ```javascript
+    ```jsx
     render() {
       return (
         <div>
-        {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
+          {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
         </div>
       )
     }
@@ -206,7 +205,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
     The code above is saying: if the variable `userIsLoggedIn` is `true`, return the `h1` tag, otherwise don't return anything. 
 
   * Using ternary operators to conditionally render content can get complicated pretty quickly, so it is also common to use functions or variables **outside** of the return to accomplish this:
-    ```javascript
+    ```jsx
     render() {
       let markupShowingOnPage = null;
 
@@ -216,7 +215,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
       return (
         <div>
-        {markupShowingOnPage}
+          {markupShowingOnPage}
         </div>
       )
     }
@@ -228,7 +227,7 @@ One of the incredibly powerful features of React is the ability to organize and 
 For example, let's say we wanted to create a search bar component for our application.
 
 We'd create a new `SearchBar` component above your `App` component:
-```javascript
+```jsx
 //App.js
 class SearchBar extends React.Component {
   render() {
@@ -237,6 +236,7 @@ class SearchBar extends React.Component {
     )
   }
 }
+
 class App extends React.Component { 
   // All that App stuff
 }
@@ -244,7 +244,7 @@ class App extends React.Component {
 
 And then you can nest it within your `App` component like so:
 
-```javascript
+```jsx
 //App.js
 class App extends React.Component {
   render() {
@@ -253,7 +253,7 @@ class App extends React.Component {
         <Header />
         <SearchBar />
         <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
     )

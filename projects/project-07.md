@@ -9,7 +9,12 @@ A beautiful, responsive portfolio for all your ✨amazing✨ work that you've co
 To show off all the skills you've learned in the bootcamp, especially HTML, CSS, and modern web standards.
 
 ## Design
-The point of your portfolio is to showcase your development skills. As such, we encourage you to code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). You will choose a PSD of a portfolio site design that you like and check the [portfolio doc]() to make sure a recent grad hasn't used tehe same one. Once Fatima has approved your design, she'll update the portfolio doc to reflect your choice. 
+The point of your portfolio is to showcase your development skills. As such, we encourage you to code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). You will choose a PSD of a portfolio site design that you like and check the [past portfolio themes doc](https://docs.google.com/spreadsheets/d/1ZQqQnn-gSbyRlk_Au_MRoRsttsgy4BRdRnldnoclt6I/edit#gid=0) to make sure a recent grad hasn't used the same one. Once Fatima has approved your design, she'll update the past portfolio themes doc to reflect your choice. Themes can **only** be PSDs (they may not contain **any** HTML or CSS at all).
+
+Resourses to open PSDs without Photoshop:
+* https://studio.psdetch.com/
+* https://www.photopea.com/ (similar to Photoshop)
+
 
 > If you are a designer/want to design your own portfolio, you MUST get approval from Fatima. 
 
@@ -26,7 +31,7 @@ We'll do group critiques/QA before demo night to catch any weirdness.
 
 **Requirements:**
 * Have a minimum of 3 portfolio items
-* The portfolio itself must be coded in plain HTML and CSS with jQuery or vanilla Jav aScript for effects (i.e. your portfolio site CANNOT be React)
+* The portfolio itself must be coded in plain HTML and CSS with jQuery or vanilla JavaScript for effects (i.e. your portfolio site CANNOT be React)
 * All images considered content have descriptive alt text
 * Extraneous code is removed (including console.log)
 * Semantic HTML elements are used properly

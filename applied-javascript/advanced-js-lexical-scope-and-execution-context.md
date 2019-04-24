@@ -122,15 +122,24 @@ Let's take a look at `this` inside object methods.
 
 ```javascript
 // object literal is created 
+<<<<<<< HEAD
 const character = {
   name: "Kermit",
+=======
+let character = {
+  firstName: 'Kermit',
+>>>>>>> ccc4614615bb76298e9c4bfd580dc8d272744b16
   print: function(){
     console.log(this);
   }
 }
 
 character.print(); 
+<<<<<<< HEAD
 // >> {name: "Kermit", print: f(){}}
+=======
+// >> {firstName: 'Kermit', print: f(){}}
+>>>>>>> ccc4614615bb76298e9c4bfd580dc8d272744b16
 ```
 
 In this case, since the function is a method (i.e. it is attached to an object), and the method is called as a property of the object, the `this` keyword references **the object that contains the method**.
@@ -138,12 +147,21 @@ In this case, since the function is a method (i.e. it is attached to an object),
 Now, let's create a function inside of a method. 
 
 ```javascript
+<<<<<<< HEAD
 const character = {
   name: "Kermit",
   print: function(){
     console.log(this);
     const changeName = function(newName){
       this.name = newName;
+=======
+let character = {
+  firstName: 'Kermit',
+  print: function(){
+    console.log(this);
+    let changeName = function(newName){
+      this.firstName = newName;
+>>>>>>> ccc4614615bb76298e9c4bfd580dc8d272744b16
     }
 
     changeName("Miss Piggy");
@@ -152,12 +170,20 @@ const character = {
 }
   
 character.print(); 
+<<<<<<< HEAD
 // >> {name: "Kermit", ...} 
 // >> {name: "Kermit", ...}
 
 ``` 
 
 Why didn't the name change? Inside of our `print` method, `this` references the object in which the print method is defined, so it might seem to make sense that our `changeName` function inside that method would also make reference to the same object. This is not the case! Even though it's nested inside your object, it is not **called** as a property of an object, so the `this` keyword defaults back to the global object, `window`.  This function is actually creating a new global `name` variable and setting it to `"Miss Piggy"` (check it out in the console!)
+=======
+// >> {firstName: 'Kermit', ...} 
+// >> {firstName: 'Kermit', ...} 
+``` 
+
+Why didn't the name change? Inside of our `print` method, `this` references the object in which the print method is defined, so it might seem to make sense that our `changeName` function inside that method would also make reference to the same object. This is not the case! Even though it's nested inside your object, it is not *called* as a property of an object, so the `this` keyword defaults back to the global object, `window`.  This function is actually creating a new global `firstName` variable and setting it to `"Miss Piggy"` (check it out in the console!)
+>>>>>>> ccc4614615bb76298e9c4bfd580dc8d272744b16
 
 How can this be solved? One way is with ES6 arrow functions! 
 
@@ -168,12 +194,21 @@ Arrow functions handle the `this` keyword a little differently. Unlike the above
 Let's rewrite our `changeName` method using an arrow function.
 
 ```javascript
+<<<<<<< HEAD
 const character = {
   name: "Kermit",
   print: function(){
     console.log(this);
     const changeName = (newName) => {
       this.name = newName;
+=======
+let character = {
+  firstName: 'Kermit',
+  print: function(){
+    console.log(this);
+    let changeName = (newName) => {
+      this.firstName = newName;
+>>>>>>> ccc4614615bb76298e9c4bfd580dc8d272744b16
     }
     
     changeName("Miss Piggy");
@@ -182,8 +217,13 @@ const character = {
 }
 
 character.print(); 
+<<<<<<< HEAD
 // >> {name: "Kermit", ...} 
 // >> {name: "Miss Piggy", ...}
+=======
+// >> {firstName: 'Kermit', ...} 
+// >> {firstName: 'Miss Piggy', ...} 
+>>>>>>> ccc4614615bb76298e9c4bfd580dc8d272744b16
 ```
 
 It now works like we want it to! How is that the case? We are using an arrow function for our `changeName` method, which measn that the `changeName` function does not have it's own `this`: it uses the `this` from it's enclosing execution context, which is the `print` method. 
@@ -191,6 +231,7 @@ It now works like we want it to! How is that the case? We are using an arrow fun
 Take note that this is a great solution to our nested function problem but can yield some unexpected results when used in other contexts:
 
 ```js
+<<<<<<< HEAD
 const singer = {
   name: "Beyoncé",
   sayMyName: () => {
@@ -202,6 +243,21 @@ console.log(singer.sayMyName());
 ```
 
 In this example, the arrow function assigned to the `sayMyName` property get's it's `this` value from the scope in which the function is defined. The arrow function is part of the object, which is in in the global execution context, so `this` will reference the global execution context's `this` value: the `window` object.  
+=======
+let song = {
+  artist: "Carly Rae Jepsen",
+  title: "Call Me Maybe",
+  
+  artistAndTitle: () => {
+    return `${this.artist} - ${this.title}`;
+  }
+}
+console.log(song.artistAndTitle());
+// >> "undefined - undefined"
+```
+
+In this example, the arrow function assigned to the `artistAndTitle` property get's it's `this` value from the scope in which the function is defined. The arrow function is defined as part of creating the object in the global execution context, so `this` will reference the global execution context's `this` value, the `window` object.  
+>>>>>>> ccc4614615bb76298e9c4bfd580dc8d272744b16
 
 To learn more about arrow functions check out this [video](https://youtu.be/oTRujqZYhrU?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX)!
 

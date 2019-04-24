@@ -8,7 +8,11 @@
 - Know to compress their CSS and images
  -->
 
-# CSS and HTML best practices
+# Philosophy of best practices for HTML and CSS
+
+_Best practices_ is a nebulous term that sometimes alludes to the web development community's current favorite things. You will never nail down everything that can fall under the umbrella term "best practices" and different people use it different ways. At HackerYou, best practices are how we encourage ourselves to write clean code. The following is a non-exhaustive list of ways to do that.
+
+As your projects go on, we move some of the previous project requirements into a "best practices" catch-all that you can find [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/best-practices-by-project.md).
 
 ## What do we mean by clean code?
 
@@ -44,7 +48,7 @@ When you have more than one file of any given type, group them into a folder. A 
       header-image.jpeg
       logo.png
 ```
-Check out the [keeping organized as a developer](https://github.com/HackerYou/bootcamp-notes/blob/master/css/best-practices.md) lesson for more about at organization.
+Check out the [keeping organized as a developer](https://github.com/HackerYou/bootcamp-notes/blob/master/html/keeping-organized-as-a-developer.md) lesson for more about at organization.
 
 ## We keep our HTML files readable
 ### HTML indentation
@@ -98,14 +102,14 @@ OR
 
 The second one is longer, but you are able to get an idea of the page structure almost right away. If you are messy with indentation, chances are you end up spending 15 minutes searching for a `div` tag that is not closed properly.
 
-Indenting code is easy: press the tab button in front of your line. Most good text editors will automatically indent your code as you write it as well as providing shortcuts for indenting large blocks of code.
+Indenting code is easy: press the `tab` button in front of your line. Most good text editors will automatically indent your code as you write it as well as providing shortcuts for indenting large blocks of code.
 
-* Sublime Text 3
+<!-- * Sublime Text 3
   Sublime Text has a shortcut for **paste and indent**:
 
   Instead of pressing `cmd/ctrl + v` to paste, press `cmd/ctrl + shift + v` to paste and indent properly.
 
-  Sometimes you will also have to indent several lines at a time. To do this, select all the lines you want and press `cmd/ctrl + }` to indent all of them at once, forward and `cmd/ctrl + {` to indent back.
+  Sometimes you will also have to indent several lines at a time. To do this, select all the lines you want and press `cmd/ctrl + }` to indent all of them at once, forward and `cmd/ctrl + {` to indent back. -->
 
 * VSCode
   VSCode has a setting for paste and indent:

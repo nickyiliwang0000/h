@@ -70,7 +70,7 @@ In this example, the `</p>`, `</div>` and `</strong>` tags are closed in the wro
 ### HTML Comments
 Comments are used to make your code more readable by future-you or another person.
 
-Anything between `<!--` and `-->` will be commented out. You can type those characters or use the shortcuts `cmd` + `/` (Mac) or `ctrl` + `/`.
+Anything between `<!--` and `-->` will be commented out. You can type those characters or use the shortcuts `cmd` + `/` (Mac) or `ctrl` + `/` (PC).
 
 ```html
 <!-- This is a basic comment -->
@@ -187,11 +187,11 @@ The `<i>` and `<b>` tags are not completely gone. They still render bold and ita
 #### `span` tags
 Spans are small but mighty HTML tags. They're **inline elements** which means that you can pop one right in the middle of a block element (like a `<p>`) and it won't give you a line break or any other unwanted effect.
 
-Create an HTML file or follow along with [this CodePen](https://codepen.io/zkdan/pen/xmKrXg) that contains this sentence:
+Create an HTML file or follow along with [this CodePen](https://codepen.io/CoderOfNote/pen/QPxXEQ?editors=1000) that contains this sentence:
 
 > There are lots of colors I like: red, blue, purple, green to name a few.
 
-Suppose we were wanted to visually highlight some of the words. Since this particular visual highlight is just for fun and has nothing to do with importance or emphasis, we'll use a `<span>`. 
+Suppose we wanted to visually highlight some of the words. Since this particular visual highlight is just for fun and has nothing to do with importance or emphasis, we'll use a `<span>`. 
 
 We would first wrap our sentence in a paragraph tag:
 
@@ -202,7 +202,7 @@ We would first wrap our sentence in a paragraph tag:
 Then we wrap the word(s) we want to target in a `span` tag and give that `span` tag a class of `contains-red`. We use a class so we can target only these **specific** `span` tags with CSS.
 
 ```html
-<p>There are lots of colors I like: <span class="contains-red">red</span>, blue, <span class="contains-red">purple</span>, green to name a few.</p>
+<p>There are lots of colors I like: <span class="contains-red">red</span>, blue, <span class="contains-purple">purple</span>, green to name a few.</p>
 
 ```
 
@@ -227,7 +227,7 @@ The technical difference between the two is that `div` is a block element and `s
 <p>There are lots of colors I like: 
   <div class="contains-red">red</div>, 
   blue, 
-  <div class="contains-red">purple</div>, 
+  <div class="contains-purple">purple</div>, 
   green to name a few.
 </p>
 
@@ -235,7 +235,7 @@ The technical difference between the two is that `div` is a block element and `s
 
 Why does each item break on to a new line? Because `div` is a block element, which means it should not be used **in a line** or **inline**.
 
-In general, spans go inside other elements — such as `<p>` or `<h2>` — so we can later specifically target that bit of content. `div`s are used to wrap larger sections of content together.
+In general, spans go inside other elements — such as `<p>` or `<h2>` — so we can later specifically target that bit of content. `div`s are used to wrap sections of content together.
 
 
 #### Image tags
@@ -428,7 +428,7 @@ Different elements require different types of attributes. We already saw  `src`,
 
 The class attribute can be applied to any element. We use CSS to target classes (and by extension, elements) and apply styles to them.
 
-The value passed into the attribute is what is known as a _class name_ and should be descriptive. Within a page, you can use a class name on as many elements as you want. Keep in mind there are conventions for writing class names.
+The value passed into the attribute is what is known as a _class name_ and should be descriptive. Within a page, you can use a class name on as many elements as you want. Keep in mind that there are conventions for writing class names - we will discuss these in a later lesson.
 
 ```html
 <div class="banner">
@@ -560,7 +560,7 @@ Bam! You've built a multi-page navigation!
 
 
 ### Semantic elements
-Before HTML5, a group of HTML elements could be wrapped in `<div>` with an `id` or a `class` which was targeted to style that content. This can lead to confusion on a page because it can be difficult to tell which element does what. **Semantic elements**, introduced in HTML5, are used to define the role some content plays on a website. They don't have default styling and exist to help developers (and browsers) understand the code better.
+Before HTML5, a group of HTML elements could be wrapped in `<div>` with an `id` or a `class` which was targeted to style that content. This can lead to confusion on a page because it can be difficult to tell which element does what. **Semantic elements**, introduced in HTML5, are used to define the role some content plays on a website. They don't have default styling and exist to help developers and browsers understand the code better.
 
 `header` : Defines the header of a page or a section. It often contains the title of a page, and a tagline/subtitle.
 

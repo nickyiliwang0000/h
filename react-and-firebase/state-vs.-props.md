@@ -1,4 +1,4 @@
-# Props, and how they differ from state in React
+# State vs. props
 
 In our previous lesson on state, we saw how information can be stored inside of a component using `this.state`. Storing data this way is useful when we're receiving that data from an external source or updating our component after a user has interacted with it (like incrementing a counter when a user clicks on it).
 

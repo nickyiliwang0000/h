@@ -1,4 +1,4 @@
-# JavaScript fishbowl exercises
+# Extra JavaScript exercises
 Want to spend more time practicing your JavaScript? Try these extra questions and 💪beef up💪 your brain.
 
 Questions are divided into three categories: [level 1](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md#level-1), [level 2](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md#level-2), [level 3](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md#level-3). If you're having trouble, don't hestitate to grab your nearest mentor.
@@ -309,4 +309,4 @@ pigLatin('My very educated mother just served us noodles.')
 ```
 
 ## Answer key
-Please don't look at the answer key until you've attempted on your own. Remember, there is more than one way to solve a problem in JavaScript. If your answer is different that's okay! As long as you understand your code, and it works, you're good! [extraExercises-ANSWER.html]()
+Please don't look at the answer key until you've attempted on your own. Remember, there is more than one way to solve a problem in JavaScript. If your answer is different that's okay! As long as you understand your code, and it works, you're good! [extraExercises-ANSWER.html](https://hychalknotes.s3.amazonaws.com/extraExercises-ANSWER.html).w
