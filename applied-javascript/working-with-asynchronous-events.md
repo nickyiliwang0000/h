@@ -337,6 +337,8 @@ But wait! `pokeBag` is an **array of promises!** Promises are not values, they a
 How do we listen? With `$.when()`!
 How do we get `$.when()` to listen to each promises? With the spread operator!
 
+> Note that arrow functions don't have an arguments object the same way that function expressions and declarations do. For more about that, [check out MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_binding_of_arguments).
+
 ## Spread operator
 The _spread operator_ allows us to pass an array of arguments into a function as if we were doing it manually one-by-one. 
 
