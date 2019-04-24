@@ -116,23 +116,23 @@ Where exactly are `top`, `left`, `right` and `bottom` referring to?
 
 You can position an element with `position:absolute;` exactly where you want it to go. Open [positionAbsolute.html](https://hychalknotes.s3.amazonaws.com/positionAbsolute.html) in your browser and editor. Here we have four `div` tags that are 100px square, and they're all `position:static` (the default).
 
-Go ahead and set `.blueBorder` to `position: absolute;`:
+Go ahead and set `.blueBox` to `position: absolute;`:
 
 ```css
-.blueBorder {
+.blueBox {
     background: rgba(65, 105, 255, 0.7);
     position: absolute;
 }
 ```
 
-What just happened? Where is the `.redBorder`? Where did the picture of meat go?
+What just happened? Where is the `.redBox`? Where did the picture of meat go?
 
 The box with a blue border was set to `position: absolute;` and no longer takes up any space, so the box with the red border bumps itself right up and under the box with the blue border. Since the background of each `div` is not transparent, you can't see any of the box with the red border behind it. If we were to add opacity for all of our `div` elements, what do we see?
 
 Let's use `top` and `left` to position the blue box:
 
 ```css
-.blueBorder {
+.blueBox {
     border: 2px solid rgba(65, 105, 255, 0.7);
     position: absolute;
     top: 500px;
@@ -142,7 +142,7 @@ Let's use `top` and `left` to position the blue box:
 Or `bottom` and `right` values:
 
 ```css
-.blueBorder {
+.blueBox {
     background: 2px solid rgba(65, 105, 255, 0.7);
     position: absolute;
     bottom: 20px;
@@ -153,7 +153,7 @@ Or `bottom` and `right` values:
 We can also use percentages:
 
 ```css
-.blueBorder {
+.blueBox {
     background: rgba(65, 105, 255, 0.7);
     position: absolute;
     width: 5%;
