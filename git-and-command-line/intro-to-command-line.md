@@ -150,3 +150,6 @@ command could delete a bunch of files you didn't intend to.
 
 You might want to in Finder / Explorer and delete the directory you want 
 instead. 
+
+## Exercise
+If you'd like to practice the commands from this lesson, follow the directions in this [command line exercise](https://hychalknotes.s3.amazonaws.com/command-line-dolly.md).
