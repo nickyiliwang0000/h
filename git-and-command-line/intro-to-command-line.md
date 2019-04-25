@@ -1,3 +1,7 @@
+<!-- Student takeaway -->
+<!-- By the end of this lesson, the student should know:
+- Various common console commands
+-->
 # Intro to command line
 
 As developers, we write in many different languages and have lots of exciting products at our disposal. One of the most powerful tools in our arsenal is tucked away inside the system folder on our computer. It's the low-level interface of our computers which we call the _command line_, and it can greatly improve our workflow.
