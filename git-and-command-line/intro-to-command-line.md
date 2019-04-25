@@ -126,7 +126,7 @@ MacOS / Linux | Windows | What it does
 <code>rmdir _name_</code> | <code>rd _name_</code> | remove (delete) an **empty** directory called _name_
 <code>touch _name_</code> | | makes a new empty file called _name_
 <code>rm _name_</code> | <code>del _name_</code> | deletes a file called _name_
-<code>rm -r _name_</code> | <code>rd /s /q _name_</code> | deletes a directory **and everything inside it** called _name_
+<code>rm -r _name_</code> | <code>rd /s /q _name_</code> | deletes a directory called _name_ **and everything inside it** 
 <code>mv _name_ _newname_</code> | <code>move _name_ _newname_</code> | rename a file or directory called _name_ to _newname_  
 <code>mv _some/path/name_ _new/path/name_</code> | <code>move _some/path/name_ _new/path/name_</code> | move a file or directory located at _some/path/name_ to _new/path/name_  
 <code>cp _name_ _newname_</code> | <code>copy _name_ _newname_</code> | copies a file named to _name_ to _newname_
@@ -139,7 +139,7 @@ MacOS / Linux | Windows | What it does
 > Deleting files from the console skips the recycling bin. The files are deleted 
 > immediately with no easy way to recover them. 
 
-### Forcefully Deleting Files
+### Forcefully deleting files
 
 You may come across resources on the internet that use `rm -rf` when deleting 
 files. The `f` option tells `rm` to "Attempt to remove the files without 
