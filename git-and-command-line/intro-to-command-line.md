@@ -67,13 +67,17 @@ drwx------@  71 cooluser  staff   2272 25 Apr 14:26 Library
 ```
 
 ### Parameters
-*Parameters* typically provide extra information about what you want a command to 
-do. Some commands require them, in other cases they're optional. Optional 
-parameters are often written with square brackets in documentation (e.g. 
-`ls [path]`).  
+*Parameters* typically provide extra information about what you want a command 
+to do. Some commands have *required parameters* which must be provided after the
+command. For example, the copy command on MacOS and Linux, `cp`, has two 
+required parameters: <code>cp _source_ _destination_</code>.
+ 
+Parameters that aren't required are called *optional parameters*, and are often
+written in documentation with square brackets in documentation (e.g. 
+<code>ls _[path]_</code>). 
 
-If your parameter contains a space, you will almost always need to wrap the 
-parameter in double-quote characters:
+If your parameter value contains a space, you will almost always need to wrap 
+the parameter in double-quote characters:
 
 ```bash
 mkdir "My Awesome Directory"
