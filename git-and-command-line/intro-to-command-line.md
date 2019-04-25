@@ -28,16 +28,17 @@ To open the command line, we can either use the pre-installed command line tool 
 
 The name `bash` is a joke because it's a [shell](https://en.wikipedia.org/wiki/Shell_(computing)) based on an [older shell](https://en.wikipedia.org/wiki/Bourne_shell) written by a person named Stephen Bourne. This **new** shell is a Bo(u)rn(e) Again SHell a.k.a. BASH a.k.a. bash. (This is why memes caught on so fast: low bar for internet humor.)
 
-## Command, Parameters, Options
+## Command parameters and options
 
 Often a command requires additional information to achieve the desired results.
 
-### Options / Flags
+### Options
 
-Options or flags typically change how the command will behave. These options 
-usually start with `-` or `--` for MacOS and Linux, and `/` for Windows.
+*Options*, which are sometimes also called *flags*, typically change how a 
+command will behave. These options usually start with `-` or `--` for MacOS and Linux, and `/` for Windows.
 
-**List a directory (MacOS/Linux)**
+For example the following command lists a directory in MacOS and Linux:
+
 ```bash
 ls
 ```
@@ -49,10 +50,11 @@ Downloads                               Pictures
 Dropbox                                 Projects
 ```
 
-**List a directory in "long format" (MacOS/Linux)**
+You can specify the "long format" option by using `-l`:
 ```bash
 ls -l 
 ```
+
 ```
 total 104
 drwx------@   6 cooluser  staff    192 22 Apr 14:21 Applications
@@ -65,7 +67,7 @@ drwx------@  71 cooluser  staff   2272 25 Apr 14:26 Library
 ```
 
 ### Parameters
-Parameters typically provide extra information about what you want a command to 
+*Parameters* typically provide extra information about what you want a command to 
 do. Some commands require them, in other cases they're optional. Optional 
 parameters are often written with square brackets in documentation (e.g. 
 `ls [path]`).  
@@ -79,7 +81,7 @@ mkdir "My Awesome Directory"
 
 ### Help!
 When in doubt read the documentation for a command. In MacOS and Linux check to 
-see if the command has a **manual page** by typing `man` followed by the command
+see if the command has a *manual page* by typing `man` followed by the command
 you want to learn more about. If a manual page exists you'll be able to browse
 the documentation using your arrow keys. Press `q` to quit.
 
@@ -114,7 +116,6 @@ dir /?
 In the examples below words in _italics_ (e.g. <code>cd _some/directory_</code>) 
 are required parameters for that command that will change depending on what 
 you're trying to accomplish. 
-
 
 MacOS / Linux | Windows | What it does
 :-----------: | :---: | ---
