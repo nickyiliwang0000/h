@@ -157,8 +157,8 @@ hierarchy. However, if you have accidentally provided an incorrect path, the
 command may delete a bunch of files you didn't intend to delete with no easy way
 to recover them.
 
-You might want to in Finder / Explorer and delete the directory you want 
-instead. 
+You might want to open the parent directory in Finder / Explorer and use your 
+operating system's standard delete process instead. 
 
 ## Exercise
 If you'd like to practice the commands from this lesson, follow the directions in this [command line exercise](https://hychalknotes.s3.amazonaws.com/command-line-dolly.md).
