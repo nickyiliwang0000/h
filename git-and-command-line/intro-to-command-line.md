@@ -122,21 +122,21 @@ dir /?
 ## Common command line commands
 
 In the examples below words in _italics_ (e.g. <code>cd _some/directory_</code>) 
-are required parameters for that command that will change depending on what 
-you're trying to accomplish. 
+are required parameters for that command that you will replace with your own 
+text depending on what you're trying to accomplish. 
 
 MacOS / Linux | Windows | What it does
 :-----------: | :---: | ---
 `pwd` | `cd` | prints the working directory (i.e. the folder you are inside)
 `ls` | `dir` | lists every file and folder inside your working directory
 <code>cd _some/path_</code> | <code>cd _some\path_</code> | changes directory to _some/path_
-<code>mkdir _name_</code> | <code>mkdir _name_</code> | make a new directory called _name_
-<code>rmdir _name_</code> | <code>rd _name_</code> | remove (delete) an **empty** directory called _name_
+<code>mkdir _name_</code> | <code>mkdir _name_</code> | makes a new directory called _name_
+<code>rmdir _name_</code> | <code>rd _name_</code> | removes (deletes) an **empty** directory called _name_
 <code>touch _name_</code> | | makes a new empty file called _name_
 <code>rm _name_</code> | <code>del _name_</code> | deletes a file called _name_
 <code>rm -r _name_</code> | <code>rd /s /q _name_</code> | deletes a directory called _name_ **and everything inside it** 
-<code>mv _name_ _newname_</code> | <code>move _name_ _newname_</code> | rename a file or directory called _name_ to _newname_  
-<code>mv _some/path/name_ _new/path/name_</code> | <code>move _some/path/name_ _new/path/name_</code> | move a file or directory located at _some/path/name_ to _new/path/name_  
+<code>mv _name_ _newname_</code> | <code>move _name_ _newname_</code> | renames a file or directory called _name_ to _newname_  
+<code>mv _some/path/name_ _new/path/name_</code> | <code>moves _some/path/name_ _new/path/name_</code> | move a file or directory located at _some/path/name_ to _new/path/name_  
 <code>cp _name_ _newname_</code> | <code>copy _name_ _newname_</code> | copies a file named to _name_ to _newname_
 <code>cp -r _some/path/name_ _new/path/name_</code> | <code>copy _some/path/name_ _new/path/name_</code> | copies directory located at _some/path/name_ **and everything inside it** to _new/path/name_
 `clear` | `cls` | clears your terminal window
