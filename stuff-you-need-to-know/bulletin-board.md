@@ -2,68 +2,49 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 <!-- Week number -->
-### Week 1
+### Week 2
 
-Welcome! Let's review!
+Shoring up the little knowledge gaps!
 
 ```bash
 < Monday /> 
-Intro to the Internet
-Keeping organized as a developer
-Meet your text editor
-Space orientation
+DUE: Blog post 1
+Navigations
+Forms
 LUNCH
-HY culture presentation
-Marking up content with HTML elements
-Video and audio
-Intro to CSS
-CSS selectors
-```
-```bash
-< Tuesday /> 
-Kickoff
-Browser dev tools
-CSS color
-Curriculum orientation
-Extra curricular orientation
-LUNCH
-Sexual violence and harassment policy orientation
-Project 1 introduced
-CSS measurement units
-CSS background colour and images
-Web typography
-Using webfonts
-CSS pseudo selectors
-```
+More forms
+Project work time
+6pm: Bootcamp buddy meet up
 
-```bash
+< Tuesday /> 
+Flexbox
+LUNCH
+Version control with Git and GitHub
+Git on the command line
+Project work time
+
 < Wednesday /> 
-CSS dimensions
-CSS layout
-Display and positioning
+DUE: Project 1 
+Advanced CSS selectors
+Preprocessors (SCSS)
 SALAD CLUB
-Philosophy of best practices for HTML and CSS
+Project 1 presentations
+Project 2 introduced
 Project work time
-```
-```bash
+
 < Thursday /> 
-Kickoff
-Emmet
-Icons
-Advanced layouts
+Reminder: purchase your domain name and hosting and download an FTP client for Monday!
+Image formats and SVG
+CSS transitions, transforms and animations
 LUNCH
-Responsive design
 Project work time
-```
-```bash
+
 < Friday />
-Kickoff
 Feedback form
-Bootcamp team meeting 1030-1130
-Pseudo-elements
-Intro to command line
+Cross-browser testing
+Grid systems
+CSS grid
 LUNCH
-Personal branding with Heather
 Project work time
 Show 'n' Tell
 ```
