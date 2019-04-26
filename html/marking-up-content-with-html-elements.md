@@ -649,5 +649,9 @@ It's okay, we don't expect anyone to memorize all of it by the end of this lesso
 * <a href="https://www.w3.org/TR/html52/" target="_blank">World Wide Web Consortium</a>
 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla Developer Network</a>
 
+> **Accessibility tip**
+>
+> Check out `<abbr>`, `<time>`, `<address>`, and `<cite>` as these are often overlooked semantic elements you may find have use in a lot of the code you'll be writing. Remember, user experience with assistive technology will be greatly improved. 
+
 ### Exercise
 Let's	download and open up [fixThisMarkup.zip](https://hychalknotes.s3.amazonaws.com/fix-this-markup-bootcamp.zip) to practice semantic HTML markup and best practices for HTML.
