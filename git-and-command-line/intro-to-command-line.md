@@ -38,7 +38,7 @@ Often a command requires additional information to achieve the desired results.
 
 ### Options
 
-*Options*, which are sometimes also called *flags*, typically change how a 
+_Options_, which are sometimes also called _flags_, typically change how a 
 command will behave. These options usually start with `-` or `--` for MacOS and Linux, and `/` for Windows.
 
 For example the following command lists a directory in MacOS and Linux:
@@ -71,12 +71,12 @@ drwx------@  71 cooluser  staff   2272 25 Apr 14:26 Library
 ```
 
 ### Parameters
-*Parameters* typically provide extra information about what you want a command 
-to do. Some commands have *required parameters* which must be provided after the
+_Parameters_ typically provide extra information about what you want a command 
+to do. Some commands have _required parameters_ which must be provided after the
 command. For example, the copy command on MacOS and Linux, `cp`, has two 
 required parameters: <code>cp _source_ _destination_</code>.
  
-Parameters that aren't required are called *optional parameters*, and are often
+Parameters that aren't required are called _optional parameters_, and are often
 written in documentation with square brackets in documentation (e.g. 
 <code>ls _[path]_</code>). 
 
@@ -89,7 +89,7 @@ mkdir "My Awesome Directory"
 
 ### Help!
 When in doubt read the documentation for a command. In MacOS and Linux check to 
-see if the command has a *manual page* by typing `man` followed by the command
+see if the command has a _manual page_ by typing `man` followed by the command
 you want to learn more about. If a manual page exists you'll be able to browse
 the documentation using your arrow keys. Press `q` to quit.
 
