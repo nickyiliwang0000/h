@@ -361,6 +361,10 @@ Anchor tags have an `href` attribute which tells the browser where the user will
   </a>
 ```
 
+> **Accessibility tip**
+>
+> Do not rely on something like "click here" for your link content. Using descriptive link text is important to explain their context to assistive technologies. 
+
 
 #### Table tags
 Table tags used to be how everyone laid out their web pages.
@@ -496,7 +500,7 @@ The link below will bring you to the section of the page with an `id` attribute 
 <a href="http://en.wikipedia.org/wiki/HTML#Markup" target="_blank">http://en.wikipedia.org/wiki/HTML#Markup</a>
 
 #### All the rest
-We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`, `checked=" "`, `for=" "`, `name=" "`, to name a few.
+We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`, `checked=" "`, `for=" "`, `name=" "`, `tel=" "` to name a few.
 
 In your travels around the Internet, you may see some attributes from older versions of HTML that you should **never** use.  They are presented here as apocryphal reference:
 
