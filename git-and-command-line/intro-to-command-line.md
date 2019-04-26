@@ -154,7 +154,8 @@ files. The `f` option tells `rm` to "Attempt to remove the files without
 prompting for confirmation." The force option, when combined with the `r` 
 option can be a really quick way to remove a ton of files in a particular 
 hierarchy. However, if you have accidentally provided an incorrect path, the 
-command could delete a bunch of files you didn't intend to.
+command may delete a bunch of files you didn't intend to delete with no easy way
+to recover them.
 
 You might want to in Finder / Explorer and delete the directory you want 
 instead. 
