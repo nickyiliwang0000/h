@@ -81,7 +81,7 @@ written in documentation with square brackets in documentation (e.g.
 <code>ls _[path]_</code>). 
 
 If your parameter value contains a space, you will almost always need to wrap 
-the parameter in double-quote characters:
+the parameter in double quotes:
 
 ```bash
 mkdir "My Awesome Directory"
