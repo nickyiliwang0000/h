@@ -361,6 +361,10 @@ Anchor tags have an `href` attribute which tells the browser where the user will
   </a>
 ```
 
+> **Accessibility tip**
+>
+> Do not rely on something like "click here" for your link content. Using descriptive link text is important to explain their context to assistive technologies. 
+
 
 #### Table tags
 Table tags used to be how everyone laid out their web pages.
@@ -496,7 +500,7 @@ The link below will bring you to the section of the page with an `id` attribute 
 <a href="http://en.wikipedia.org/wiki/HTML#Markup" target="_blank">http://en.wikipedia.org/wiki/HTML#Markup</a>
 
 #### All the rest
-We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`, `checked=" "`, `for=" "`, `name=" "`, to name a few.
+We will run into many more attributes as we work with HTML. `type=" "`,`value=" "`,`placeholder=" "`,`style=" "`, `checked=" "`, `for=" "`, `name=" "`, `tel=" "` to name a few.
 
 In your travels around the Internet, you may see some attributes from older versions of HTML that you should **never** use.  They are presented here as apocryphal reference:
 
@@ -648,6 +652,10 @@ That's a lot of semantic elements to remember! 😳
 It's okay, we don't expect anyone to memorize all of it by the end of this lesson. You can always refer back here. These resources may be handy as well:  
 * <a href="https://www.w3.org/TR/html52/" target="_blank">World Wide Web Consortium</a>
 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla Developer Network</a>
+
+> **Accessibility tip**
+>
+> Check out `<abbr>`, `<time>`, `<address>`, and `<cite>` as these are often overlooked semantic elements you may find have use in a lot of the code you'll be writing. Remember, user experience with assistive technology will be greatly improved. 
 
 ### Exercise
 Let's	download and open up [fixThisMarkup.zip](https://hychalknotes.s3.amazonaws.com/fix-this-markup-bootcamp.zip) to practice semantic HTML markup and best practices for HTML.
