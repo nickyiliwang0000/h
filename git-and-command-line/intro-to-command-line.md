@@ -144,7 +144,7 @@ MacOS / Linux | Windows | What it does
 
 > **Deleting files with `rm`/`del`**
 >
-> Deleting files from the console skips the recycling bin. The files are deleted 
+> Deleting files from the terminal skips the recycling bin. The files are deleted 
 > immediately with no easy way to recover them. 
 
 ### Forcefully deleting files
