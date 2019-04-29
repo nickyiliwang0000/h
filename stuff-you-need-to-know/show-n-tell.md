@@ -46,8 +46,6 @@ CSS clip-path
 
 CSS knock-out
 
-CSS Masks
-
 CSS shapes
 
 CSS shine
@@ -84,8 +82,6 @@ react autocomplete
 
 react dnd
 
-react joyride
-
 React Native
 
 reveal.js
@@ -95,8 +91,6 @@ scroll-then-fix
 sticky, Smooth & Active Nav"
 
 stoke-dash
-
-SVG morph
 
 SweetAlerts
 
@@ -132,3 +126,13 @@ CORS & its limitations
 impress.js
 
 CSS variables
+
+CSS Masks
+
+Browsh
+
+FOUT
+
+React Joyride
+
+SVG Morph
