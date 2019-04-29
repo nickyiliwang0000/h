@@ -1,13 +1,13 @@
 <!-- Student takeaway -->
 <!-- By the end of this lesson, the student should know:
-- How to make an element using Emmet
-- How to make an element with a class name using Emmet
-- How to make an element with an ID name using Emmet
-- How to make child elements using Emmet
-- How to make multiple elements using Emmet
-- How to make sibling elements using Emmet
-- How to add attributes to elements using Emmet
-- A bunch of CSS tab triggers in Emmet
+- How to use the following advanced CSS selectors:
+    Adjacent (+)
+    Direct child (>)
+    Following (~)
+    Attribute ([])
+    Checked (:checked)
+    Not (:not)
+    First letter and line (::first-letter, ::first-line)
 -->
 
 # Advanced CSS selectors
@@ -105,7 +105,7 @@ Kind of uninspired on it's own, but we can use this selector in conjunction with
 
 Check out [this CodePen](https://codepen.io/hackeryou/pen/VqGKea) for an example.
 
-##More pseudo selectors
+## More pseudo selectors
 
 ### `:not()`
 
