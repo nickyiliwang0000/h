@@ -52,25 +52,26 @@ You can find your assignment [here]().
 
 ### Design files
 
-**BEACHSTAY**
+**Captured**
 
-[design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
+[design](https://scene.zeplin.io/project/5cb78913fae8ad09e8372c93)
 
-[assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
-
-
-**PLANTED**
-
-[design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
-
-[assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
 
 
-**BAR-ONE** 
+**FunPlace**
 
-[design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
+[design](https://scene.zeplin.io/project/5cb78ae2e6267e081e91a1df)
 
-[assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
+
+
+**Mindn'Soul** 
+
+[design](https://scene.zeplin.io/project/5cc747bf7cbe272d01e3698d)
+
+[assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
+
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
