@@ -245,7 +245,7 @@ p {
 }
 ```
 
-We can even get Sass to do math for us! Say we want it to dymanimcally generate our font sizes in rems with a pixel fallback. So far, we have been setting the base font size in our HTML to 62.5% to allow for easy rem calculation. Here's how we might make it even easier with a mixin:
+We can even get Sass to do math for us! Say we want it to dymanimcally generate our font sizes in rems with a pixel fallback. So far, we have been setting the base font size in our HTML to 125% to allow for easy rem calculation. Here's how we might make it even easier with a mixin:
 
 ```scss
 @mixin fontSize($sizeValue){
@@ -267,18 +267,16 @@ h1{
 }
 ```
 
-#### Positioning mixin
+Mixins can also accept multiple variables, opening up a whole world of possibilities:
 
 ```scss
-@mixin position($type, $top, $right, $bottom, $left) { 
+@mixin position($type, $top, $left) { 
   position: $type; 
-  top: $top; 
-  right: $right; 
-  bottom: $bottom; 
+  top: $top;
   left: $left; 
 }
 .box { 
-	@include position(absolute, 10px, 10px, 5px 10px); 
+	@include position(absolute, 15px, 30px); 
 }
 ```
 
@@ -290,14 +288,14 @@ You **gotta** link your images using the location of your `.css` file as the bas
 If your file structure looks like this:
 ```bash
 - projectOne
-  index.html
-  - styles 
-    - partials
-      style.scss
-      style.css
-  - images
-      logo.png
-      background-image.jpg
+    index.html
+    - styles 
+        style.css
+        - partials
+            style.scss
+    - images
+        logo.png
+        background-image.jpg
 ```
 
 Your image path should look like this:
