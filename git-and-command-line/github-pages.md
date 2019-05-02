@@ -7,7 +7,7 @@
 
 # What is GitHub Pages?
 
-GitHub Pages is a service you can use to host your github projects directly from your GitHub repository.
+GitHub Pages is a service you can use to host your GitHub projects directly from your GitHub repository.
 
 You can make a website for your user account, an organization you belong to, or for an individual project. You get **one** top-level site per GitHub account (or organization) and unlimited project sites. This means that you can have `studentname.github.io` and `studentname.github.io/coolproject` at the same time, but you can't have `studentname.github.io` and `coolproject.github.io`.
 
