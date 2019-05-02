@@ -90,7 +90,7 @@ In the event you want to host an existing repository on GitHub Pages, there are 
 ```bash
   git checkout -b gh-pages
 ```
-Once on this your `gh-pages` branch you can make some additional changes or immediately push your brach
+Once on this `gh-pages` branch you can make some additional changes or immediately push your branch to GitHub:
 
 ```bash
 git push origin gh-pages
