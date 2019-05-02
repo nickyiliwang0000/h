@@ -292,7 +292,7 @@ If your file structure looks like this:
     - styles 
         style.css
         - partials
-            style.scss
+            header.scss
     - images
         logo.png
         background-image.jpg
