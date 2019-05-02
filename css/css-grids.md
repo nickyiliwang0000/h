@@ -83,9 +83,7 @@ What happens if we have more items in our grid than we expected? Let's change ou
 }
 ```
 
-Copy this Emmet snippet to add more markup, and see how our current grid setup handles the additional content: `.gridItem.gridItem$@7*6>p{Grid Item $@7}`.
-
-Here we have 12 grid items, and a grid set up to accomodate two rows of three items per column (i.e. a 2x3 grid). What will happen to the three extra elements?
+Let's comment-in our remaining 5 elements so we have 12 grid items, and a grid set up to accomodate two rows of three items per column (i.e. a 2x3 grid). What will happen to the three extra elements?
 
 CSS Grids will automatically fit your new content in a new row. The size of the row will be determined by the content that falls to that new row. These new rows are called _implicit rows_. The rows we created initially are called _explicit rows_.
 
