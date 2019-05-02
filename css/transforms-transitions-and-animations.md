@@ -451,5 +451,3 @@ Each element needs two classes:
 2. the class of the animation name, like `rubberBand` or `shake`
 
 Open up <a href="https://hychalknotes.s3.amazonaws.com/animate.html" class="exercise" download>animate.html</a> and let's load in animate.css.
-
-We can even integrate Animate.css to be applied on specific events by utilizing jQuery. Open up <a href="https://hychalknotes.s3.amazonaws.com/jqueryanimate.html" class="exercise" download>jqueryanimate.html</a>.
