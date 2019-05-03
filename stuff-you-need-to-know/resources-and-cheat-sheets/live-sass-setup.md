@@ -21,7 +21,7 @@ projectFolder
   index.html
   - .vscode
 ```
-5. Create a file inside `.vscode` called `settings.json`
+5. Create a file inside `.vscode` called `settings.json`:
 
 ```bash
 projectFolder
@@ -54,7 +54,7 @@ projectFolder
 ```
 7. Save `settings.json`.
 
-8. Create a folder called `styles` with a `sass` folder inside of it.
+8. Create a folder called `styles` with a `sass` folder inside of it:
 
 ```bash
 projectFolder
@@ -65,14 +65,14 @@ projectFolder
     settings.json
 ```
 
-9. Create a `style.scss` file:
+9. Create a `style.scss` file inside your `sass` folder:
 
 ```bash
 projectFolder
   index.html
   - styles
     - sass
-    style.scss
+      style.scss
   - .vscode
     settings.json
 ```
@@ -84,13 +84,12 @@ projectFolder
 11. This should create a `style.css` file inside the `styles` folder.
   * If it doesn't, check to make sure your folder organization and save all your files.
 
-12. Create some partials inside the `sass` folder.
-
+12. Create some partials inside the `sass` folder:
 ```bash
 projectFolder
   index.html
   - styles
-    - partials
+    - sass
       _header.scss
       _footer.scss
       _setup.scss
@@ -108,7 +107,3 @@ projectFolder
 ```
 
 Now, you should see your styles from your partials showing up in the `style.css` file. 
-
-
-
-
