@@ -14,6 +14,7 @@ LUNCH
 Project work time
 
 < Tuesday /> 
+GitHub collaboration (branching)
 GitHub pages
 LUNCH
 Project work time
