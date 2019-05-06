@@ -74,7 +74,7 @@ When building out your navigation menu to contain a mobile hamburger menu, we re
 ```html
 <header>
   <nav >
-    <button class="mobile-menu-toggle">MENU</button>
+    <button>MENU Toggle</button>
     <ul>
       <li>Menu Item 1</li>
       <li>Menu Item 2</li>
@@ -88,7 +88,7 @@ It's important to use native semantic elements when possible. Using `nav` here w
 
 > **Accessibility tip**
 >
-> Avoid hiding the `<nav>` element because it provides semantic meaning to assistive-technology when scanning the page and informs users that there is a collection of list items that are intended for page navigation. When this element is hidden, that information will not be shared. If required, try hiding the embedded list element. 
+> When possible, avoid hiding the `<nav>` element because it provides semantic meaning to assistive-technology. When scanning the page, devices like screen-rreader will inform users that there is a collection of list items that are intended for page navigation. When this element is hidden, that information will not be shared. If required, try hiding the embedded list element. 
 
 
 ## Dropdown navigations
