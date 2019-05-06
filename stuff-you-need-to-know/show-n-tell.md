@@ -38,23 +38,15 @@ anime.js
 
 brain.js
 
-chart.js
-
 color-adjust
 
 CSS clip-path
 
 CSS knock-out
 
-CSS shapes
-
 CSS shine
 
 CSS text-path
-
-custom SVGs
-
-custom tool tips
 
 cycle.js
 
@@ -62,15 +54,9 @@ draft.js
 
 draggable.js
 
-float-labels
-
 Label & Labelledby
 
 lodash
-
-mix-blend-mode
-
-particle.js
 
 pointer events
 
@@ -85,8 +71,6 @@ react dnd
 React Native
 
 reveal.js
-
-scroll-then-fix
 
 sticky, Smooth & Active Nav"
 
@@ -136,3 +120,20 @@ FOUT
 React Joyride
 
 SVG Morph
+
+scroll-then-fix
+
+mix-blend-mode
+
+float-labels
+
+CSS shapes
+
+custom SVGs
+
+custom tool tips
+
+chart.js
+
+particle.js
+
