@@ -73,25 +73,22 @@ When building out your navigation menu to contain a mobile hamburger menu, we re
 
 ```html
 <header>
-  <nav role="navigation">
-    <button>MENU</button>
+  <nav >
+    <button class="mobile-menu-toggle">MENU</button>
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <li>Menu Item 1</li>
+      <li>Menu Item 2</li>
+      <li>Menu Item 3</li>
     </ul>
   </nav>
 </header>
 ```
-In our `css`, we will hide our `<ul>` by default and display it on mobile with a media-query. 
 
-```css
-ul {
-  display: none;
-}
-```
+It's important to use native semantic elements when possible. Using `nav` here will inform assitive technologies of the presence of a navigation menu. Additionally, by making the `button` element a child of the `nav`, assistive technologies will associate it's relevance to the navigation.
 
-We don’t want to hide the `<nav>` element because it provides semantic meaning to assistive-technology and informs users that there is a navigation landmark on the page they can skip to. The `role` attribute is an ARIA `landmark`. It will help identify to assistive technologies that we have a collection of list items that are intended for page navigation. You can learn more about landmarks [here](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/HTML5.html).
+> **Accessibility tip**
+>
+> Avoid hiding the `<nav>` element because it provides semantic meaning to assistive-technology when scanning the page and informs users that there is a collection of list items that are intended for page navigation. When this element is hidden, that information will not be shared. If required, try hiding the embedded list element. 
 
 
 ## Dropdown navigations
