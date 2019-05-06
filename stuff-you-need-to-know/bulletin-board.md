@@ -2,51 +2,51 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 <!-- Week number -->
-### Week 2
+### Week 3
 
-Shoring up the little knowledge gaps!
+Intro to JavaScript
 
 ```bash
 < Monday /> 
-DUE: Blog post 1
-Navigations
-Forms
+FTP and domains
+Host your website using FTP
 LUNCH
-More forms
 Project work time
-6pm: Bootcamp buddy meet up
 
 < Tuesday /> 
-Flexbox
+GitHub pages
 LUNCH
-Version control with Git and GitHub
-Git on the command line
 Project work time
 
 < Wednesday /> 
-DUE: Project 1 
-Advanced CSS selectors
-Preprocessors (SCSS)
-SALAD CLUB
-Project 1 presentations
-Project 2 introduced
+HTML/CSS test
 Project work time
+DUE Project 2 
+SALAD CLUB
+Project 2 presentations
+Intro to programming 
+Intro to JavaScript
 
 < Thursday /> 
-Reminder: purchase your domain name and hosting and download an FTP client for Monday!
-Image formats and SVG
-CSS transitions, transforms and animations
+JavaScript all day!
+Variables
+Working with JS
+Programming control flow
 LUNCH
-Project work time
+Functions
 
 < Friday />
+Mock tech test
 Feedback form
-Cross-browser testing
-Grid systems
-CSS grid
+Objects
+Arrays
 LUNCH
 Project work time
-Show 'n' Tell
+Show ‘n’ Tell
+
+Reminder: You must have something up on your server for  Monday at 10 a.m.!!!!!
+
+No project this weekend -  let those foundational JS concepts sink in!
 ```
 
 ### Review topics
