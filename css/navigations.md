@@ -88,7 +88,7 @@ It's important to use native semantic elements when possible. Using `nav` here w
 
 > **Accessibility tip**
 >
-> When possible, avoid hiding the `<nav>` element because it provides semantic meaning to assistive-technology. When scanning the page, devices like screen-rreader will inform users that there is a collection of list items that are intended for page navigation. When this element is hidden, that information will not be shared. If required, try hiding the embedded list element. 
+> When possible, avoid hiding the `<nav>` element because it provides semantic meaning to assistive-technology. When scanning the page, devices like screen-reader will inform users that there is a collection of list items that are intended for page navigation. When this element is hidden, that information will not be shared. If required, try hiding the embedded list element. 
 
 
 ## Dropdown navigations
