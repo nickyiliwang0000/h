@@ -439,3 +439,4 @@ Looking for more exercises to do on your own? Download the files below for more 
 * [Starter files and answer key](https://hychalknotes.s3.amazonaws.com/using-animate.css-library.zip) for using Animate.css, and optionally creating your own animations.
 * [Starter files and answer key](https://hychalknotes.s3.amazonaws.com/wombly-path-svg-exercise.zip) to animate an SVG.
 * Open up [these files](https://hychalknotes.s3.amazonaws.com/jquery-and-animate-bootcamp.zip) and use Animate.css to animate the text on click.
+<!-- Open up <a href="https://hychalknotes.s3.amazonaws.com/animate.html" class="exercise" download>animate.html</a> and let's load in animate.css. -->

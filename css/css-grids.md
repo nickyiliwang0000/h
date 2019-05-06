@@ -31,22 +31,6 @@ Add the following CSS to our stylesheet:
 ```
 Not only can use both pixel values and percentages, but we also have another unit of measurement available. 
 
-### Introducing the `fr` unit
-
-CSS Grid introduces a new unit of measurement called the `fr` unit, meaning **fraction of the free space in the grid container**. The `fr` value is determined after any non-flexible columns or rows are declared. Meaning if you have a five-column layout where two columns are set to `100px` each and the remaining columns are `1fr` each, the free space will be split up into three fractions and distributed evenly between the remaining columns. This is very similar to how the `flex-grow` and `flex-shrink` properties work.
-
-Let's change our CSS to match the following:
-
-```css
-.container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 100px 100px;
-} 
-```
-
-What happens if we change the second column value to be `300px`? The `fr` units scale according to the free space available once the rest of the columns have been defined.
-
 ## Creating space between grid items
 
 In order to create gaps (sometimes referred to as _gutters_) between columns and rows, there are two properties available: `grid-row-gap` and `grid-column-gap` which can be condensed into the shorthand `grid-gap`. When using the shorthand, the first value indicates `grid-row-gap` and the second value indicates `grid-column-gap`. If you provide one value only, it will apply to both. This property is set on the grid container, and will only give you extra space between grid areas, not on the outer edges.
@@ -70,6 +54,22 @@ Let's look at what happens when we add `grid-gap: 40px;` to our grid and switch 
 } 
 ```
 
+### Introducing the `fr` unit
+
+CSS Grid introduces a new unit of measurement called the `fr` unit, meaning **fraction of the free space in the grid container**. The `fr` value is determined after any non-flexible columns or rows are declared. Meaning if you have a five-column layout where two columns are set to `100px` each and the remaining columns are `1fr` each, the free space will be split up into three fractions and distributed evenly between the remaining columns. This is very similar to how the `flex-grow` and `flex-shrink` properties work.
+
+Let's change our CSS to match the following:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 100px;
+} 
+```
+
+What happens if we change the second column value to be `300px`? The `fr` units scale according to the free space available once the rest of the columns have been defined.
+
 ### Explicit and implicit rows and columns
 
 What happens if we have more items in our grid than we expected? Let's change our CSS to match:
@@ -83,9 +83,7 @@ What happens if we have more items in our grid than we expected? Let's change ou
 }
 ```
 
-Copy this Emmet snippet to add more markup, and see how our current grid setup handles the additional content: `.gridItem.gridItem$@7*6>p{Grid Item $@7}`.
-
-Here we have 12 grid items, and a grid set up to accomodate two rows of three items per column (i.e. a 2x3 grid). What will happen to the three extra elements?
+Let's comment-in our remaining 5 elements so we have 12 grid items, and a grid set up to accomodate two rows of three items per column (i.e. a 2x3 grid). What will happen to the three extra elements?
 
 CSS Grids will automatically fit your new content in a new row. The size of the row will be determined by the content that falls to that new row. These new rows are called _implicit rows_. The rows we created initially are called _explicit rows_.
 
@@ -312,32 +310,6 @@ Let's adjust our CSS to the following:
 
 Using `order` on grid items will change the order of your grid items. If the order of your content matters to the users understanding then **do not use** this property. In general, would be fine for something like an image gallery but bad for blocks of text.
 
-<!-- Once we're finished, let's revisit `grid-auto-flow: dense;` for a minute! 
-
-Go ahead and add a wide class in our css and to the first image with the tall class.
-
-```css
-.wide {
-	grid-column: span 2;
-}
-```
-```html
-<img src="images/greece.jpg" class="tall wide" alt="white painted houses of greece">
-```
-
-![](https://hychalknotes.s3.amazonaws.com/Screen+Shot+2018-05-27+at+3.35.04+PM.png)
-
-Notice the empty spot in the right hand corner? Let's add `grid-auto-flow: dense;` to our parent container (the grid element!).
-
-```css
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	grid-auto-rows: 255px;
-	grid-auto-flow: dense;
-}
-```
-Magic! The grid automatically finds an element that will fit in this space, and places it there! This is not so great for items where order matters, but for an image gallery or maybe even independent articles, this could be perfect!  -->
 
 ## Additional learning topics
 

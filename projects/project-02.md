@@ -19,9 +19,10 @@ Remember that you can discuss font sizes with the designer if you think they are
 * Site is responsive and uses media queries
 * Flexbox is used
 * Sass variables are used
+* All images considered content have descriptive alt text
 * Form is accessible
 * Mobile view provides good user experience
-* All images considered content have descriptive alt text
+* Files, folders & naming conventions followed 
 * Project is organized using Sass partials (minimum 2)
 * Project represents the provided design well
 * Navigation should link to other pages made for the project
@@ -51,27 +52,27 @@ You can find your assignment [here]().
 
 ### Design files
 
-**BEACHSTAY**
+**Captured**
 
-[design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
+[design](https://scene.zeplin.io/project/5cb78913fae8ad09e8372c93)
 
-[assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
-
-
-**PLANTED**
-
-[design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
-
-[assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
 
 
-**BAR-ONE** 
+**FunPlace**
 
-[design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
+[design](https://scene.zeplin.io/project/5cb78ae2e6267e081e91a1df)
 
-[assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
+
+
+**Mindn'Soul** 
+
+[design](https://scene.zeplin.io/project/5cc747bf7cbe272d01e3698d)
+
+[assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
+
 ## Submitting your project
-You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
 1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
