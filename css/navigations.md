@@ -84,7 +84,7 @@ When building out your navigation menu to contain a mobile hamburger menu, we re
 </header>
 ```
 
-It's important to use native semantic elements when possible. Using `nav` here will inform assitive technologies of the presence of a navigation menu. Additionally, by making the `button` element a child of the `nav`, assistive technologies will associate it's relevance to the navigation.
+It's important to use native semantic elements when possible. Using `nav` here will inform assistive technologies of the presence of a navigation menu. Additionally, by making the `button` element a child of the `nav`, assistive technologies will associate it's relevance to the navigation when reading the menu content to a user.
 
 > **Accessibility tip**
 >
