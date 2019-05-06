@@ -67,6 +67,33 @@ Allowing users the ability to get to the main content for your site is important
 
 You also want to use CSS to hide the anchor until the user uses they keys to focus on the anchor. For more information checkout this <a href="http://webaim.org/techniques/skipnav/" target="_blank">link</a> for more information
 
+### Mobile navigations
+
+When building out your navigation menu to contain a mobile hamburger menu, we recommend the following HTML structure:
+
+```html
+<header>
+  <nav role="navigation">
+    <button>MENU</button>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </nav>
+</header>
+```
+In our `css`, we will hide our `<ul>` by default and display it on mobile with a media-query. 
+
+```css
+ul {
+  display: none;
+}
+```
+
+We don’t want to hide the `<nav>` element because it provides semantic meaning to assistive-technology and informs users that there is a navigation landmark on the page they can skip to. The `role` attribute is an ARIA `landmark`. It will help identify to assistive technologies that we have a collection of list items that are intended for page navigation. You can learn more about landmarks [here](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/HTML5.html).
+
+
 ## Dropdown navigations
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
