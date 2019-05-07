@@ -308,7 +308,7 @@ To transition these properties, we have to provide all the values again, includi
 
 ### Transform exercise
 
-Transforms can be used for some pretty interesting effects. Download (transform-transition-bootcamp.zip](https://hychalknotes.s3.amazonaws.com/transform-transition-bootcamp.zip) and try to recreate the answer key!
+Transforms can be used for some pretty interesting effects. Download [transform-transition-bootcamp.zip](https://hychalknotes.s3.amazonaws.com/transform-transition-bootcamp.zip) and try to recreate the answer key!
 
 ## CSS animations
 
