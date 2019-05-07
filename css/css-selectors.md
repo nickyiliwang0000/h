@@ -45,7 +45,7 @@ We need to add a class attribute to the element we want to choose.
 <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 ```
 
-In our CSS, we can write a new selector. We use the `.` period to denote the clas attribute.
+In our CSS, we can write a new selector. We use the `.` period to denote the class attribute.
 
 ```css
 /* Turns any element with a class of special yellow */
@@ -154,14 +154,29 @@ The order in which you provide the class names does not matter, the selector wil
 
 ## Declaring CSS rules for more than one selector
 
-Imagine that two different classes have identical styles: 
+Imagine that three different classes share an identical style: 
 ``` css 
 .caramel {
 	background: orange;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	font-style: italic;
 }
 
 .pumpkin {
 	background: orange;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	font-style: italic;
+	color: white;
+}
+
+.chocolate {
+	background: orange;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	font-style: italic;
+	color: brown;
 }
 ```
 In the above example, we are repeating the same CSS declaration. To condense our CSS, how do we target more than one class or element type with one CSS declaration? 
@@ -169,8 +184,19 @@ In the above example, we are repeating the same CSS declaration. To condense our
 The humble comma `,`.
 
 ```css 
-.caramel, .pumpkin {
+.caramel, .pumpkin, .chocolate {
 	background: orange;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+  font-style: italic;
+}
+
+.pumpkin {
+	color: white;
+}
+
+.chocolate {
+	color: brown;
 }
 ```
 
@@ -192,25 +218,27 @@ With CSS, you'll often want to apply styles to a nested block of elements (e.g. 
 ```
 Here, all of the child elements of `.content-box` will have the CSS rule `color:grey;` applied to them, even if the `body` has a different font color. You may have noticed that on many websites there are a bunch of styles applied to the `body` selector. Why? 
 
-**To take advantge of typographic inheritance!**
+**To take advantage of typographic inheritance!**
 
 An expansion of the example above might be:
 ```css
 body {
 	color:black;
 }
-.content-box{
+
+.content-box {
 	color:grey;
 }
 ```
-Here, the rule `color:grey;` will apply to every child of the `body` tag, except `.content-box` and its children, because the cascade of rules is being interrupted by the explicit redeclaration of color. 
+Here, the rule `color: black;` will apply to every child of the `body` tag, except `.content-box` and its children, because the inheritance of rules is being overridden by the explicit redeclaration of color. 
 
 This should make everything on the page black, right?
 
 ```css
-.content-box{
+.content-box {
 	color:grey;
 }
+
 body {
 	color:black;
 }

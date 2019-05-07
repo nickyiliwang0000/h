@@ -1,4 +1,16 @@
-# Your pal Emmet!
+<!-- Student takeaway -->
+<!-- By the end of this lesson, the student should know:
+- How to make an element using Emmet
+- How to make an element with a class name using Emmet
+- How to make an element with an ID name using Emmet
+- How to make child elements using Emmet
+- How to make multiple elements using Emmet
+- How to make sibling elements using Emmet
+- How to add attributes to elements using Emmet
+- A bunch of CSS tab triggers in Emmet
+-->
+
+# Emmet
 
 Now that we're comfortable with the syntax of HTML and CSS, we can leverage some tools to help us write it faster. One of the most popular tools in the industry is [Emmet](http://emmet.io/). Emmet comes pre-installed with Visual Studio Code.
 

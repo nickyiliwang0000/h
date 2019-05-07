@@ -26,7 +26,6 @@ Since we are also nearing the end of Helpcue, we'll be encouraging you even more
 * Errors are handled effectively
 * Site is live on Firebase Hosting, student's own URL or GitHub Pages
 
-
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed (including console.log)
 * Semantic HTML elements are used properly

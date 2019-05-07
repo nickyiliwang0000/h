@@ -313,3 +313,7 @@ Let's try making a navigation responsive. Download the [navigation-float](https:
 ### More exercises
 Check out [responsive-exercises-roundup.zip](https://hychalknotes.s3.amazonaws.com/responsive-exercises-roundup.zip) for the exercises and answers.
 
+## Code along
+
+Download [mediaQueriesCodeAlong.zip](https://hychalknotes.s3.amazonaws.com/mediaQueriesCodeAlong.zip) and we can apply media queries to a desktop website and make it responsive!
+

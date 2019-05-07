@@ -11,17 +11,19 @@
 
 When using floats to lay out a page, we need to ensure that the sum of the widths of floated elements is less than or equal to the width of the parent container so that the children can sit next to each other.
 
-If the parent's width is, say, 800px, the childrens' widths can't add up to more than 800px, otherwise the children will break on to separate lines. This math can get tedious, so instead of using exact pixel sizes for our floated child elements, let's use percentage values.
+If the parent's width is, say, 800px, the children's widths can't add up to more than 800px, otherwise the children will break on to separate lines. Add in some border or margin and this math can get tedious. Instead of using exact pixel values for our floated child elements, let's use percentages.
 
-Open [advanced-layouts-starter.html](https://hychalknotes.s3.amazonaws.com/advanced-layouts-starter.html) and changes the pixels sizes of the floated child elements to percentages.
+Open [advanced-layouts-starter--bootcamp.html](https://hychalknotes.s3.amazonaws.com/advanced-layouts-starter--bootcamp.html) and follow along as we replace the pixel values with percentages.
 
 ### Container elements
 
-You'll notice that in all of our layout examples, we have a surrounding element that acts as our parent element. This element has a pixel size and `margin: 0 auto;` applied.
+You'll notice that in all of our layout examples, we have a surrounding element that acts as a parent to the floated elements. This element has a pixel size and `margin: 0 auto;` applied.
 
 We've usually given this element a class of `.wrapper` (this is an arbitrary name). The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window.
 
-If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a 14" Acer Swift is different than 50% of a 27" iMac Pro. And what happens when a user scales their browser? When working with percetages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
+If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a full-screen window on a 14" Acer Swift is different than 50% of a full-screen window on a 27" iMac Pro. And what happens when a user scales their browser? That size changes again! 
+
+When working with percentages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
 
 ```html
 <div class="wrapper">
@@ -76,9 +78,7 @@ Moving forward, it's best practice to include a `max-width` property with a pixe
 
 Now that we understand how to limit the sizing and see the benefits of using percentages with our elements, what if we want to put some space between our elements?
 
-Open up <a href="https://hychalknotes.s3.amazonaws.com/calcLayout.html" class="exercise" download>calcLayout.html</a> to follow along.
-
-In previous examples, we had to ensure that the widths of child elements added up to the same width of the parent container.
+In previous examples, we had to ensure that the widths of child elements added up to the same width of the parent container even when we were using percentages.
 
 ```html
 <div class="wrapper">
@@ -130,7 +130,7 @@ However, if we used margin to provide spacing between our elements, we would hav
 </style>
 ```
 
-If we were using percentages, we could easily change the units of the margin to match, but 10% of a container is quite a big size for a margin.
+If we were using percentages, we could easily change the units of the margin to match, but 10% of a container is quite a lot for a margin.
 
 ```html
 <div class="wrapper">
@@ -157,7 +157,7 @@ If we were using percentages, we could easily change the units of the margin to 
 </style>
 ```
 
-So instead of working with unclear percentage margins, why don't we work with percentages for widths, and something more tangible for margins - pixels.
+So instead of working with unclear percentage margins, why don't we work with percentages for widths, and something more tangible for margins: pixels.
 
 ```html
 <div class="wrapper">
@@ -184,13 +184,13 @@ So instead of working with unclear percentage margins, why don't we work with pe
 </style>
 ```
 
-So 10px +10px = 20px. 65% - 20px = ?
+So 10px + 10px = 20px. 65% - 20px = ?
 
-This is where it gets tricky - percentages are relative values. Because we're using a fluid layout, we would have to do the math every time we wanted to resize the screen.
+Percentages are relative values. Because we're using a fluid layout, we want the browser to recalculate the math every time we resize the browser window.
 
-### CSS Calculations
+### CSS calculations
 
-Luckily there is a CSS tool that allows us to resize things accordingly. We can use `calc()`, which does the math for us. We provide `calc()` as a value for a property and pass in the equation we want to be evaluated between the parentheses.
+Luckily there is a CSS tool that allows us to resize elements accordingly. `calc()` does our math for us. We provide `calc()` as a value for a property and pass in the equation we want to be evaluated between the parentheses.
 
 ```css
 section {
@@ -198,7 +198,7 @@ section {
 }
 ```
 
-<em>Note that calc() is whitespace sensitive, so `calc(65%-20px)` will not work. Make sure to add spaces `calc(65% - 20px)`.</em>
+> Note that calc() is whitespace sensitive, so `calc(65%-20px)` will not work. Make sure to add spaces: `calc(65% - 20px)`.
 
 Currently, `calc()` is pretty well supported across different browsers and will become part of our CSS toolkit moving forward. [To see the current support of calc() click here](<https://caniuse.com/#search=calc()>).
 
@@ -242,7 +242,7 @@ The _viewport_ is the current size of the viewable content area of your browser.
 
 ![browser viewport](https://hychalknotes.s3.amazonaws.com/viewport.png)
 
-The size of the viewport is different everywhere. Viewport width is a relative value that changes with every user's device, and when the user drags the browser window.
+The size of the viewport is different everywhere. Viewport width is a relative value that changes with every user's device and when the user drags the browser window.
 
 Web experiences often feature full browser header images or content that is relative to the size of the user's browser. Imagine how difficult it would be to ensure that an element fit 100% of the viewport on every screen. In the past, we used JavaScript to measure the size of the window once all the content was loaded, and resize the elements accordingly.
 
