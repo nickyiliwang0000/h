@@ -14,7 +14,7 @@
 
 Normally, instructions (i.e. **statements**) in a JavaScript are executed one after the other in the order in which they are written. 
 
-The term _control flow_ describes how a developer might choose to order the statements, regardless of the order in which they appear in the JavaScript file.
+The term _control flow_ describes how a developer might choose to order the execution of statements, regardless of the order in which they appear in the JavaScript file.
 
 An example of control flow is an `if` statement:
 ```js
@@ -48,7 +48,7 @@ Some vocabulary:
 * `condition` will usually be an expression that evaluates to a boolean 
 * `block statement` will be a chunk of code
 
-The whole `else` block is **optional**! If you don't include an `else` block and the condition isn't met, the block statement after the `if` gets ignored.
+The whole `else` block is **optional**! If you don't include an `else` block and the condition isn't met, the block statement after the `if` is ignored and the program moves on without doing anything further there.
 
 ### Block statements
 A _block_ is used to group statements. The block is delimited by a pair of curly brackets `{}`:
@@ -89,7 +89,7 @@ Operator     |  Description
 `<=`| less than or equal to
 
 **Exercise**:
-Compare two values them using the `===` and `!==` operators. 
+Compare two values using the `===` and `!==` operators. 
 
 Compare two values using the `>=` and `<=` operators and then the `>` and `<` operators.
 
