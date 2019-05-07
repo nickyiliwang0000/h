@@ -38,7 +38,7 @@ projectFolder
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "./styles"
+      "savePath": "/styles"
     }
   ],
   "liveSassCompile.settings.excludeList": [
