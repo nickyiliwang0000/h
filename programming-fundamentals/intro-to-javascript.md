@@ -67,7 +67,7 @@ undefined | Does not have a value | `undefined`
 null | Has a value of nothing | `null`
 object | A set of organized data | `{studentNumber:231, instructor:"Hyram Outke"}`
 
-> There's also a (new in ES6) data type called Symbol but it's used mostly in library creation and you won't see it much in this course.
+> There's also an ES6 data type called Symbol but it's used mostly in library creation and you won't see it much in this course.
 
 If you want a mnemonic, some of our instructors like **SNUBON(S)**.
 
@@ -109,8 +109,6 @@ Just like in CSS, `/*  */` are used for multiline comments.
 
 Multiline comments are also great for hiding large blocks of code so you can try something new without erasing your old code. Remember to remove them at production, though!
 
-**Get used to commenting your code.** Comments help you (or other developers) understand your code in the future.
-
 ## Pseudo code
 When you're writing JavaScript (or other code) it can be helpful to map the detailed steps your program will carry out in plain English, just like we did in the alien exercise. This is called _pseudo code_ and it's a useful strategy for organizing your ideas about how a program should run without worrying about the language's syntax. It's like outlining an essay in point form before going back and writing the actual essay.
 
@@ -136,7 +134,7 @@ To get the function to execute, you have to _call_ it using the function name fo
 functionName();
 ```
 
-Some times this is also referred to as _running_ or _executing_ a function.
+Sometimes this is also referred to as _running_ or _executing_ a function.
 
 Sometimes you will need to _pass_ some data into the function. This data is called an _argument_.
 
@@ -148,7 +146,9 @@ You can pass more than one piece of data to a function by using a comma:
 ```js
 functionName(firstArgument, secondArgument);
 ```
-When you call a function, it does something, and very often it will _return_ a value to you. 
+When you call a function, it does something, and very often it will _return_ a value to you.
+
+<!-- All fuctions in JS technically have a return. Beyond Bootcamp goes into this. -->
 
 Terminology recap:
 * An **argument** is a value provided to a function.
@@ -159,7 +159,7 @@ Terminology recap:
 ### Debugging functions
 A few built-in JavaScript functions that we will use are `prompt()`, `alert()` and `confirm()`. All three display a dialog box containing a message. `prompt()` also allows the user to input some text. `confirm()` also includes 'Cancel' and 'OK' buttons.
 
-These dialogs are built into the browser and not generally able to be restyled for use in production code but they are useful when we're working on our projects.
+These dialogs are built into the browser and not able to be restyled for use in production code but they are useful when we're working on our projects.
 
 Let's try calling these functions in the browser's console REPL with and without arguments and see what happens, one function at a time.
 
@@ -190,7 +190,6 @@ In the example above, the **values** "What's your name?", "hello" and "yay or na
 * the **argument** shows in the dialog
 * no matter what, this function returns `undefined` (i.e. "does not have a value") because the function doesn't produce a value.
 
-<!-- All fuctions in JS technically have a return. Beyond bootcamp goes into this -  don't worry about it now. -->
 
 #### `confirm()`:
 
