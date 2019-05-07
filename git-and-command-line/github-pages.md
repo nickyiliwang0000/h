@@ -22,7 +22,7 @@ Let's start with a new site for an individual project. There are two options:
 
 We're going to do the second one.
 
-1. Head over to github.com and create a new repository including a README file. If you want this site to be a User/Organization page, you need to name your repository like so: `<username>.github.io` or `<orgname>.github.io`. Project sites can be named whater you prefer.
+1. Head over to github.com and create a new repository including a README file. If you want this site to be a User/Organization page, you need to name your repository like so: `<username>.github.io` or `<orgname>.github.io`. Project sites can be named anything.
 
 2. Clone the repo to make a local copy:
 
