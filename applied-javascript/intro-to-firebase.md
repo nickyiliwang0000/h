@@ -87,7 +87,7 @@ If you see this, you have successfully configured your project to use Firebase.
 <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
 ```
 
-You should now have a setup this resembles this:
+You should now have a setup that resembles this:
 
 ```javascript
 <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
@@ -105,7 +105,7 @@ You should now have a setup this resembles this:
   };
 
   firebase.initializeApp(config);
-  
+
 </script>
 ```
 
