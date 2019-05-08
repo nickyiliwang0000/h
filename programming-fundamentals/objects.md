@@ -23,13 +23,13 @@ object | A set of organized data | `{}`
 
 > There's also a (new in ES6) data type called Symbol but it's used mostly in library creation and you won't see it much.
 
-We've seen numbers, strings, booleans, and `undefined` when working with variables. (These are sometimes known as [_primitives_](https://developer.mozilla.org/en-US/docs/Glossary/Primitive).)Now we're gonna talk about _objects_!
+We've seen numbers, strings, booleans, and `undefined` when working with variables (these are sometimes known as [_primitives_](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)). Now we're gonna talk about _objects_!
 
 Objects are incredibly useful for storing paired and grouped data in JavaScript. You can think of them as containers. Inside the container are properties, which are composed of **key-value pairs**. Each property contains a name (i.e. a key) and a value which can be referenced directly. 
 
 ![Diagram of key value pairs as properties in an object](https://hychalknotes.s3.amazonaws.com/objects.png)
 
-Another way to think about JavaScript objects is to compare them to real-life objects. An apple is an **object** and it has **properties** like colour, size, sugar content, etc.
+Another way to think about JavaScript objects is to compare them to real-life objects. An apple is an **object** and it has **properties** like colour, cultivar, sugar content, etc.
 
 ## Defining an object
 The syntax for creating an object looks like this:
@@ -47,7 +47,7 @@ In JavaScript, we might represent information about an apple in an object, like 
 ```js
 const apple = {
   colour: 'red',
-  size: 'small',
+  cultivar: 'Honeycrisp',
   sugarContent: 200
 };
 ```
