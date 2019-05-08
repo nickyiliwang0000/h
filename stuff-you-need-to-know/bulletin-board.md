@@ -51,7 +51,7 @@ No project this weekend -  let those foundational JS concepts sink in!
 ```
 
 ### Review topics
-HTML / CSS test on Wednesday 10 a.m. -  be on time!
+HTML / CSS test 
 
 Topics to review:
 
