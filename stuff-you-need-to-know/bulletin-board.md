@@ -54,13 +54,21 @@ No project this weekend -  let those foundational JS concepts sink in!
 HTML / CSS test on Wednesday 10 a.m. -  be on time!
 
 Topics to review:
+
 Organization best practices
+
 Media query best practices
+
 Rems
+
 Semantic elements
+
 The box model
+
 CSS calculations
+
 Color
+
 Positioning, flexbox, floats (no grid)
 
 ### Bootcamp calendar
