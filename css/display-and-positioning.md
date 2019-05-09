@@ -320,6 +320,9 @@ Try changing the orange box to `z-index:2;`.
 
 ![overlapping squares with green, red, blue, and orange borders](https://hychalknotes.s3.amazonaws.com/z-indexExample2.png)
 
+## Code-along
+Let's see how `postion: relative` and `position: absolute` could be used to elevate a design! Download [relative-absolute-code-along--bootcamp.zip](https://hychalknotes.s3.amazonaws.com/relative-absolute-code-along--bootcamp.zip) and follow along.
+
 ## Exercises
 
 Getting comfortable with the positioning and display properties will help you solve common layout issues. Download [positioningAndFloats.zip](https://hychalknotes.s3.amazonaws.com/positionAndFloats.zip) to help you practice the following concepts:
