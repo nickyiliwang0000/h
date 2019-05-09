@@ -38,7 +38,7 @@ The syntax for creating an object looks like this:
 const myObject = {
   propertyOneName: propertyOneValue,
   propertyTwoName: propertyOneValue,
-  propertyThreeName: propertyOneValue,
+  propertyThreeName: propertyOneValue
 };
 ```
 
