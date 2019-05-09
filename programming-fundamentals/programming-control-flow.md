@@ -259,6 +259,7 @@ When `i === 9` the block executes one final time, 9 is printed and `i` is increm
 
 Note that after printing `1` through `9` in your console, there's a `10` with a little arrow beside it. That's not a return, we can't directly capture that value. This is your dev tools console trying to be helpful by printing the last expression it executed.
 
+
 ## The `break` keyword
 
 We can terminate a loop at any time by using a _break statement_:
