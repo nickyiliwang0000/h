@@ -155,7 +155,7 @@ Data type  | Value
 `null` | `false`
 `undefined` | `false`
 any `string`| `true`
-an empty string | false
+an empty `string` | false
 the `number` 0 | `false`
 any `number` higher than 0 |`true`
 
