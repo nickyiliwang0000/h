@@ -49,7 +49,7 @@ Project work time
 Show 'n' Tell
 ```
 <!-- ### Review topics -->
-### Feedback from the mock tech test
+### General feedback from the mock tech test
 
 > Test text:
 > Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox,or grids.
@@ -69,7 +69,7 @@ Great job remembering your setup/reset snippets and wrappers.
 
 A lot of people wrote **actual code**. The instructions ask for `pseudo code` - pseudo code doesn't have any code in it! It's just you breaking down the steps you'd go through to solve the problem in English. The interviewer may have wanted to see how well you can explain technical subjects, not whether you can write the rules to make something happen.
 
-Also, some people wrote code that seems to demonstrate a misunderstanding of HTML. It's harder to be wrong if you're talking about _your approach_ to something, not trying to write elements with a PEN like some kind of VICTORIAN SCHOOLCHILD.
+Also, some people wrote code that seems to demonstrate a misunderstanding of HTML. It's harder to be wrong if you're talking about how you _would_ code if you had a computer than it is when you're writing elements with a PEN like some kind of VICTORIAN SCHOOLCHILD.
 
 All images don't need to be figures. 
   > Usually a <figure> is an image, illustration, diagram, code snippet, etc., that is referenced in the main flow of a document, but that can be moved to another part of the document or to an appendix without affecting the main flow. -  From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
