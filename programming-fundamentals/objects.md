@@ -122,7 +122,7 @@ Note that if you have a variable in your code, you may add it as a key in an obj
 let newItem = "dresses"
 
 clothing[newItem] =  2;
-console.log(`I have ${clothing.dress} dresses.`)
+console.log(`I have ${clothing.dresses} dresses.`)
 // I have 2 dresses.
 ```
 The line that adds the property to the object remains the same no matter what the new item is, and **even if** we don't know what the new item is yet.
