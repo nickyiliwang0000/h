@@ -44,7 +44,7 @@ A lot of methods can take different types or amounts of arguments, so pick the m
 
 3. When in doubt, scroll down to find an **example** of this method in practice!
 
-[A screenshot of the jQuery documentation showing a functioning example of using the .html method, replacing an inner div with a paragraph element](https://hychalknotes.s3.amazonaws.com/htmlmethodexample.png)
+![A screenshot of the jQuery documentation showing a functioning example of using the .html method, replacing an inner div with a paragraph element](https://hychalknotes.s3.amazonaws.com/htmlmethodexample.png)
 
 #### Exercise 
 
