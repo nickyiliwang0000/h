@@ -10,18 +10,19 @@ Week 4: Our pals jQuery and JavaScript!
 < Monday />
 Kickoff
 Stand-ups
-JS Review
+Arrays
+LUNCH
 Intro to jQuery
 jQuery API documentation
 jQuery best practices
+MVP exercise
 Project 3 introduction
-LUNCH
-Queen Street hot treat code-along
 
 < Tuesday /> 
-To-do app code-along
+Queen Street hot treat code-along
 How to organize your JavaScript
 LUNCH
+To-do app code-along
 Project work time
 
 < Wednesday /> 
@@ -43,7 +44,6 @@ Project work time
 Feedback form
 Mock tech test
 Midpoint check-ins
-GitHub collaboration
 LUNCH
 Project work time
 Show 'n' Tell
