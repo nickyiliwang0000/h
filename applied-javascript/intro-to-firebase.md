@@ -28,7 +28,7 @@ Firebase also comes with loads of other amazing features, like helping us set up
 
 ## Setting up Firebase
 To set up Firebase, navigate to [https://firebase.google.com/](https://firebase.google.com/) and sign in.
-Firebase was acquired by Google in 2004, so you'll need to pick one of your Google accounts to log in.
+Firebase was acquired by Google in 2014, so you'll need to pick one of your Google accounts to log in.
 
 1. Once you've logged in, you should see a screen that looks like the photo below. Click on the 'Get Started' button.
 ![Step 1](https://hychalknotes.s3.amazonaws.com/firebase-step1-2019.png)  
