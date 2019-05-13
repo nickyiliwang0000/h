@@ -36,8 +36,6 @@ AMP pages
 
 anime.js
 
-brain.js
-
 color-adjust
 
 CSS clip-path
@@ -58,11 +56,11 @@ Label & Labelledby
 
 lodash
 
+particle.js
+
 pointer events
 
 pose.js
-
-preloaders
 
 react autocomplete
 
@@ -72,11 +70,7 @@ React Native
 
 reveal.js
 
-sticky, Smooth & Active Nav"
-
 stoke-dash
-
-SweetAlerts
 
 three.js
 
@@ -135,5 +129,16 @@ custom tool tips
 
 chart.js
 
-particle.js
+preloaders
 
+Big O Notation
+
+recursion vs iteration
+
+brain.js
+
+SweetAlerts
+
+custom browser extensions
+
+sticky/smooth/active nav
