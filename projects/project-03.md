@@ -32,7 +32,7 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 * Site is live on GH Pages or student's own URL
 * Errors are handled effectively
 * Sass is used
-* Files, folders & naming conventions followed 
+* Files, folders & naming conventions followed (kabob case)(this includes your project repo)
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed (including console.log)
@@ -51,7 +51,7 @@ You will also be given marks for your project presentation:
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
+1. Create a repository with a name made up of your own first name, then your last name, then `project-2`. 
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain
 1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
