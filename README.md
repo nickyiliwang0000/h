@@ -6,7 +6,6 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
   * (Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.)
 * [Resources](https://github.com/HackerYou/bootcamp-notes/tree/master/stuff-you-need-to-know/resources-and-cheat-sheets) including a list of what [best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/philosophy-of-best-practices-for-html-and-css.md) means in general and [in the context of your projects](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/best-practices-by-project.md).
 
-
 ## Lesson topics
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 
