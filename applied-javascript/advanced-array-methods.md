@@ -208,6 +208,6 @@ reduce([🍿, 🍳], eat)
 * [Ramda](http://ramdajs.com/0.18.0/index.html) - A library of functional programming methods
 * [LoDash](https://lodash.com/) - Similar data transformation library to Underscore.js
 
-## Filtering exercise
+## Function methods code-along
 
 To further practice, let's use jQuery and these new methods to populate this app. [Download the exercise here](https://hychalknotes.s3.amazonaws.com/functional-methods-codealong.zip).
