@@ -57,7 +57,7 @@ The following methods are included (among others) in JavaScript to help sort dat
 <!-- `.map()`, `.filter()` and `.reduce()` are considered pure functions.  -->
 Each of these methods iterates over an array or object in a slightly different way. But two things all these methods have in common are:
 1. each one uses a callback function to define the task to be performed on the data 
-1. each one returns a new array instead of changing the array provided to it
+1. each one returns something (an array or a value) instead of changing the array provided to it
 
 #### `.map()`
 We give the `.map()` method an array and a set of directions (i.e. a **callback function**) about what to do with each item in that array. The `.map()` method then gives us back (i.e. **returns**) an array of each item with the thing done to it. Because it returns an array, it's smart to store the return in a variable.
@@ -149,7 +149,7 @@ console.log(sum)
 // 20
 ```
 
-Similar to `.map()`, `.filter()`, and `.forEach()`, the `.reduce()` function expects a callback function as an argument: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used insinde of the function - kind of like `i` in a `for` loop.
+Similar to `.map()`, `.filter()`, and `.forEach()`, the `.reduce()` function expects a callback function as an argument: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used inside of the function - kind of like `i` in a `for` loop.
 
 You can also use `.reduce()` on non-numbers:
 
