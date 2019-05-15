@@ -31,7 +31,6 @@ Advanced array methods
 Regular expressions
 SALAD CLUB
 Project work time
-6pm Fishbowl Session: jQuery
 
 < Thursday /> 
 Working with APIs
@@ -39,6 +38,7 @@ Accessing data with AJAX + When AJAX goes wrong
 LUNCH
 AJAX code-along
 Project work time
+6pm Fishbowl Session: jQuery
 
 < Friday />
 Feedback form
@@ -47,6 +47,9 @@ Midpoint check-ins
 LUNCH
 Project work time
 Show 'n' Tell
+
+< Saturday />
+1pm-4pm Fishbowl Session: JS
 ```
 <!-- ### Review topics -->
 ### General feedback from the mock tech test
