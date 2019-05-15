@@ -85,7 +85,7 @@ symbol | meaning in a regex
 `\d` | match any digit   
 `\s` | match any whitespace character  
 `[a-z]` | match a range of characters (in this case, a to z)
-`[^cd]` | match characters NOT in the set (in this case, )
+`[^cd]` | match characters NOT in the set (in this case,c & d )
 `$/` |denotes the end of the string
 
 ## Regex patterns
