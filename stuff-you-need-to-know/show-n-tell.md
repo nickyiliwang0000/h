@@ -34,13 +34,7 @@ Feel free to choose any topic - just make sure you have it approved before you s
 
 AMP pages
 
-animate on scroll
-
 anime.js
-
-brain.js
-
-chart.js
 
 color-adjust
 
@@ -48,49 +42,19 @@ CSS clip-path
 
 CSS knock-out
 
-CSS Masks
-
-CSS shapes
-
 CSS shine
 
 CSS text-path
 
-CSS Variables
-
-CSS-perspective
-
-Custom cursors
-
-custom SVGs
-
-custom tool tips
-
 cycle.js
-
-DNS
 
 draft.js
 
 draggable.js
 
-float-labels
-
-granim.js
-
-impress.js
-
-konami codes
-
 Label & Labelledby
 
 lodash
-
-mix-blend-mode
-
-night/dark mode vs day/light mode
-
-parallax
 
 particle.js
 
@@ -98,27 +62,15 @@ pointer events
 
 pose.js
 
-preloaders
-
 react autocomplete
 
 react dnd
-
-react joyride
 
 React Native
 
 reveal.js
 
-scroll-then-fix
-
-sticky, Smooth & Active Nav"
-
 stoke-dash
-
-SVG morph
-
-SweetAlerts
 
 three.js
 
@@ -130,3 +82,63 @@ typed.js
 
 
 ### Claimed:
+
+Custom Cursors
+
+Konami Codes
+
+Animate on Scroll
+
+CSS Perspective
+
+Parallax scrolling
+
+DNS
+
+night/day mode
+
+granim.js
+
+CORS & its limitations
+
+impress.js
+
+CSS variables
+
+CSS Masks
+
+Browsh
+
+FOUT
+
+React Joyride
+
+SVG Morph
+
+scroll-then-fix
+
+mix-blend-mode
+
+float-labels
+
+CSS shapes
+
+custom SVGs
+
+custom tool tips
+
+chart.js
+
+preloaders
+
+Big O Notation
+
+recursion vs iteration
+
+brain.js
+
+SweetAlerts
+
+custom browser extensions
+
+sticky/smooth/active nav

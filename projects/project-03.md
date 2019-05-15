@@ -20,6 +20,13 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 * [Shake It Up!](http://haleybowes.com/shake-it-up/)
 * [Drake Soundboard](http://jenniferyeung.ca/drizzy/)
 
+## Project proposals
+Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1t1l591AZadar30FyrURnNQU6XIJ-9bdm62mpJrKEQFk/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
+
+Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
+
+> **It is always better to under-promise and over-deliver.**
+
 ## How will this project be graded? 
 
 **Requirements:**
@@ -32,7 +39,7 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 * Site is live on GH Pages or student's own URL
 * Errors are handled effectively
 * Sass is used
-* Files, folders & naming conventions followed 
+* Files, folders & naming conventions followed (kabob case)(this includes your project repo)
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed (including console.log)
@@ -49,10 +56,9 @@ You will also be given marks for your project presentation:
 * Student did not go over time
 
 ## Submitting your project
-You'll be posting your project on GitHub and "turning in" a link to said project via email.
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
+1. Create a repository with a name made up of your own first name, then your last name, then `project-2`. 
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain
 1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).

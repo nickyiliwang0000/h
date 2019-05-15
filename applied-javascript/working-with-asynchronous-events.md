@@ -106,6 +106,7 @@ Promises are supported in all modern browsers, but some older ones may require y
 Download [pokemon-promise-example.html](https://hychalknotes.s3.amazonaws.com/pokemon-promise-example.html).
 
 You'll see that instead of using a success callback like this:
+
 ```js
 $.ajax({
   url: 'https://www.weather.com/toronto',
@@ -119,6 +120,7 @@ $.ajax({
 
 ```js
 const pokemonApp = {};
+
 pokemonApp.url = 'http://pokeapi.co/api/v2/pokemon/1/';
 
 pokemonApp.getPokemon = $.ajax({
@@ -135,6 +137,7 @@ $.when(pokemonApp.getPokemon).then((caughtPokemon) => {
 });
 ```
 Because we only have one promise, can omit `$.when()` and write:
+
 ```js
 const pokemonApp = {};
 pokemonApp.url = 'http://pokeapi.co/api/v2/pokemon/1/';
@@ -162,13 +165,15 @@ $.when(pokemonApp.getPokemon)
     console.log(err);
   });
 ```
-This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`:
+
+This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`. However, because we are using jQuery, we need to use their specific implementation of the failure handler known as `fail()`:
+
 ```js
 $.when(pokemonApp.pokemon)
   .then((caughtPokemon) => {
     console.log(caughtPokemon);
   })
-  .catch((error) => {
+  .fail((error) => {
     console.log(error);
   });
 ```
@@ -337,6 +342,8 @@ But wait! `pokeBag` is an **array of promises!** Promises are not values, they a
 How do we listen? With `$.when()`!
 How do we get `$.when()` to listen to each promises? With the spread operator!
 
+> Note that arrow functions don't have an arguments object the same way that function expressions and declarations do. For more about that, [check out MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_binding_of_arguments).
+
 ## Spread operator
 The _spread operator_ allows us to pass an array of arguments into a function as if we were doing it manually one-by-one. 
 
@@ -367,7 +374,7 @@ The difference between the spread operator and rest parameters is the difference
 Using the spread operator  we can take an array of promises and pass it to `$.when()`. We are saying, "Please do this function for every single item in the array." Then, using rest parameters, we can gather all the arguments passed to the `.then()` method into an array.
 
 ```javascript
-$.when(...pokemon)
+$.when(...pokeBag)
   .then((...args) => {
     console.log(args);
     args.forEach((poke,i) => console.log(poke[0].name,poke[0].id));

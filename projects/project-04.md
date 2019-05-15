@@ -114,7 +114,6 @@ You will also be given individual marks for your project presentation:
 * Student did not go over time
 
 ## Submitting your project
-You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project.     
   * (You don't have to rename your org if its naming convention doesn't match)

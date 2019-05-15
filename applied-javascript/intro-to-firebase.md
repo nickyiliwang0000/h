@@ -82,6 +82,33 @@ If you see this, you have successfully configured your project to use Firebase.
 4. If you were successful at creating a database, you would be redirected to a page that looks like the one below.
 ![Step 9](https://hychalknotes.s3.amazonaws.com/firebase-step9-2019.png)
 
+5. Back in your HTML file, underneath the first `firebase` script tag copy and paste in this required database cdn:
+```js
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+```
+
+You should now have a setup that resembles this:
+
+```javascript
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+
+<script>
+  // Initialize Firebase
+  const config = {
+    apiKey: "AIzaSyCIA9bxxwIgMijlvzKRcNkVVfYOIEWGoD0",
+    authDomain: "first-firebase-app-bbf53.firebaseapp.com",
+    databaseURL: "https://first-firebase-app-bbf53.firebaseio.com",
+    projectId: "first-firebase-app-bbf53",
+    storageBucket: "first-firebase-app-bbf53.appspot.com",
+    messagingSenderId: "266243704518"
+  };
+
+  firebase.initializeApp(config);
+
+</script>
+```
+
 ## Understanding data structure in Firebase
 
 Data is structured a little bit differently in Firebase when compared to more traditional, relational databases like `SQL`. There are no tables or records, everything is stored in a large `JSON` object with an associated key. 

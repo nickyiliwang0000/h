@@ -1,6 +1,10 @@
+<!-- Student takeaway -->
+<!-- By the end of this lesson, the student should know:
+- Various common console commands
+-->
 # Intro to command line
 
-As developers, we write in many different languages and have lots of exciting products at our disposal. One of the most powerful tools in our arsenal is tucked away inside the system folder on our computer. It's the low-level interface of our computers which we call the _command line_, and it can greatly improve our workflow.
+As developers, we write in many different languages and have lots of exciting tools at our disposal. One of the most powerful tools in our arsenal is tucked away inside the system folder on our computer. It's the low-level interface of our computers which we call the _command line_, and it can greatly improve our workflow.
 
 ## Why should a front end developer learn to use the command line?
 
@@ -28,24 +32,133 @@ To open the command line, we can either use the pre-installed command line tool 
 
 The name `bash` is a joke because it's a [shell](https://en.wikipedia.org/wiki/Shell_(computing)) based on an [older shell](https://en.wikipedia.org/wiki/Bourne_shell) written by a person named Stephen Bourne. This **new** shell is a Bo(u)rn(e) Again SHell a.k.a. BASH a.k.a. bash. (This is why memes caught on so fast: low bar for internet humor.)
 
+## Command parameters and options
+
+Often a command requires additional information to achieve the desired results.
+
+### Options
+
+_Options_, which are sometimes also called _flags_, typically change how a 
+command will behave. These options usually start with `-` or `--` for MacOS and Linux, and `/` for Windows.
+
+For example the following command lists a directory in MacOS and Linux:
+
+```bash
+ls
+```
+```
+Applications                            Library
+Desktop                                 Movies
+Documents                               Music
+Downloads                               Pictures
+Dropbox                                 Projects
+```
+
+You can specify the "long format" option by using `-l`:
+```bash
+ls -l 
+```
+
+```
+total 104
+drwx------@   6 cooluser  staff    192 22 Apr 14:21 Applications
+drwx------@  28 cooluser  staff    896 25 Apr 10:24 Desktop
+drwx------@ 108 cooluser  staff   3456 25 Apr 15:12 Documents
+drwx------+ 104 cooluser  staff   3328 25 Apr 15:01 Downloads
+drwx------@  60 cooluser  staff   1920 19 Apr 23:19 Dropbox
+drwx------@  71 cooluser  staff   2272 25 Apr 14:26 Library
+...
+```
+
+### Parameters
+_Parameters_ typically provide extra information about what you want a command 
+to do. Some commands have _required parameters_ which must be provided after the
+command. For example, the copy command on MacOS and Linux, `cp`, has two 
+required parameters: <code>cp _source_ _destination_</code>.
+ 
+Parameters that aren't required are called _optional parameters_, and are often
+written in documentation with square brackets in documentation (e.g. 
+<code>ls _[path]_</code>). 
+
+If your parameter value contains a space, you will almost always need to wrap 
+the parameter in double quotes:
+
+```bash
+mkdir "My Awesome Directory"
+```
+
+### Help!
+When in doubt read the documentation for a command. In MacOS and Linux check to 
+see if the command has a _manual page_ by typing `man` followed by the command
+you want to learn more about. If a manual page exists you'll be able to browse
+the documentation using your arrow keys. Press `q` to quit.
+
+```bash
+man ls
+``` 
+```
+NAME
+     ls -- list directory contents
+
+SYNOPSIS
+     ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1] [file ...]
+
+DESCRIPTION
+     For each operand that names a file of a type other than directory, ls displays its name as well as any requested, asso-
+```
+
+If there isn't a manual page, or if you're on Windows, often a command will 
+provide it's own help summary, usually with the `h` or `help` option and 
+on Windows sometimes `?`.
+
+```bash
+man -h
+curl --help
+```
+```
+dir /?
+``` 
+
 ## Common command line commands
 
-command | what it does
----: | ---
-`pwd` | prints the working directory (i.e. the folder you are inside)
-`ls` | lists every file and folder inside your working directory
-`cd` | changes directories (followed by the directory name)
-`mkdir` | makes a new directory (followed by the directory name)
-`rm -r` | deletes a directory and everything inside (followed by the directory name)
-`touch` | makes a new file (followed by the file name)
-`rm` | deletes a file (followed by the file name)
-`:q` | gets you out of the Vim editor
-`mv` | moves a file or directory into a specified file or directory ( followed by the thing to move and the place to move it to) 
-`cp` | copies a file (followed by the file to copy and what you want to name the copy)
-`cp -r`| copies a folder (followed by the name of the folder to copy and what you want to name the copy)
-`clear` | clears your terminal window
-<!-- `rm -rf` | removes a directory  -->
+In the examples below words in _italics_ (e.g. <code>cd _some/directory_</code>) 
+are required parameters for that command that you will replace with your own 
+text depending on what you're trying to accomplish. 
 
-Somewhere on the internet you might see someone telling you to delete your files like this: `rm -rf`. That command deletes everything in the directory following that command without any `Are you sure you want to delete this?` prompts. You will probably be fine with `rm -r`.
+MacOS / Linux | Windows | What it does
+:-----------: | :---: | ---
+`pwd` | `cd` | prints the working directory (i.e. the folder you are inside)
+`ls` | `dir` | lists every file and folder inside your working directory
+<code>cd _some/path_</code> | <code>cd _some\path_</code> | changes directory to _some/path_
+<code>mkdir _name_</code> | <code>mkdir _name_</code> | makes a new directory called _name_
+<code>rmdir _name_</code> | <code>rd _name_</code> | removes (deletes) an **empty** directory called _name_
+<code>touch _name_</code> | <code>echo. > _name_ | makes a new empty file called _name_
+<code>rm _name_</code> | <code>del _name_</code> | deletes a file called _name_
+<code>rm -r _name_</code> | <code>rd /s /q _name_</code> | deletes a directory called _name_ **and everything inside it** 
+<code>mv _name_ _newname_</code> | <code>move _name_ _newname_</code> | renames a file or directory called _name_ to _newname_  
+<code>mv _some/path/name_ _new/path/name_</code> | <code>moves _some/path/name_ _new/path/name_</code> | move a file or directory located at _some/path/name_ to _new/path/name_  
+<code>cp _name_ _newname_</code> | <code>copy _name_ _newname_</code> | copies a file named to _name_ to _newname_
+<code>cp -r _some/path/name_ _new/path/name_</code> | <code>copy _some/path/name_ _new/path/name_</code> | copies directory located at _some/path/name_ **and everything inside it** to _new/path/name_
+`clear` | `cls` | clears your terminal window
+<code>open _name_</code> | <code>start _name_</code> | opens _name_ in it's default program, or if _name_ is a directory in Finder / Explorer
 
-If you'd like to practice these commands, follow the directions in this [command line exercise](https://hychalknotes.s3.amazonaws.com/command-line-dolly.md).
+> **Deleting files with `rm`/`del`**
+>
+> Deleting files from the terminal skips the recycling bin. The files are deleted 
+> immediately with no easy way to recover them. 
+
+### Forcefully deleting files
+
+You may come across resources on the internet that use `rm -rf` when deleting 
+files. The `f` option tells `rm` to "Attempt to remove the files without 
+prompting for confirmation." The force option, when combined with the `r` 
+option can be a really quick way to remove a ton of files in a particular 
+hierarchy. However, if you have accidentally provided an incorrect path, the 
+command may delete a bunch of files you didn't intend to delete with no easy way
+to recover them.
+
+You might want to open the parent directory in Finder / Explorer and use your 
+operating system's standard delete process instead. 
+
+## Exercise
+If you'd like to practice the commands from this lesson, follow the directions in this [command line exercise](https://hychalknotes.s3.amazonaws.com/command-line-dolly.md).

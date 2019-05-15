@@ -251,7 +251,7 @@ Compressing (or _minifiying_) CSS and image files will make our sites faster. Co
 
 Lossless image compression will optimize images by removing unnecessary bytes without affecting image quality. 
 
-(Read more about image compression in 3.24 Image Formats and SVG)
+(Read more about image compression [the lesson on image formats](https://github.com/HackerYou/bootcamp-notes/blob/master/css/image-formats-and-svg.md).)
 
 * [csscompressor.com](http://www.csscompressor.com/), a CSS minification tool
 * [imgopt.com](http://www.imgopt.com/), an image compression tool
