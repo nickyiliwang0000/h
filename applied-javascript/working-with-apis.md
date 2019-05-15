@@ -11,11 +11,11 @@
 # Working with APIs
 
 ## What is an API?
- _Application programming interface_ is a general term in computer programming, but in web development, we use it to refer to a set of instructions and protocols of communication that facilitate communication between a client and a server. (The client can be another server but most often for us, it will be the browser.)
+ _Application programming interface_ is a general term in computer programming; in web development specifically, we use it to refer to a set of instructions and protocols of communication that facilitate communication between a client and a server (the client can be another server but most often for us, it will be the browser).
 
-> Think of an API as the string between two tin cans - it's the thing that makes it possible for a child in one house can hear their neighbor's plan for sneaking out at night. 
+> Think of an API as the string between two tin cans - it's the thing that makes it possible for a child in one house to hear their neighbor's plan for sneaking out at night. 
 
-We'll mostly be using API to access data from a source external to our websites. Many organiations have APIs that allow developers to use organizational data inside their websites. Twitter has an API that you call to populate a widget on your website that shows your three most recent tweets. Facebook has an API that you interact with when you hit the 'share' or 'like' button on an article from The Globe and Mail.
+We'll mostly be using APIs to access data from sources external to our websites. Many organizations have APIs that allow their data to be used by external developers in their own websites; Twitter has an API that you call to populate a widget on your website that shows your three most recent tweets; Facebook has an API that you interact with when you hit the 'share' or 'like' button on an article from The Globe and Mail.
 
 There are [tons and tons of public APIs](https://www.programmableweb.com/category/all/apis?data_format=21190). They differ in quality, documentation, and organization. We'll mostly be working with RESTful APIs during the bootcamp.
 
@@ -52,7 +52,7 @@ Try viewing these endpoints in your browser:
 
 ### Anatomy of a GET request
 
-Notice that some of those endpoints have a `?` in them followed by what looks like a key-value pair in the format `key=value`. Endpoints often allow additional options to be passed along with a request after the URL in what's called the _query string_. The `?` and everything after it is the query string. These additional options are called _parameters_, just like in JavaScript. Query string key-value pairs are to `GET` request URLs as parameters are to JavaScript functions.
+Notice that some of those endpoints have a `?` in them followed by what looks like a key-value pair in the format `key=value`. Endpoints often allow additional options to be passed along with a request after the URL in what's called a _query string_. The `?` and everything after it is the query string. These additional options are called _parameters_, just like in JavaScript. Query string key-value pairs are to `GET` request URLs as parameters are to JavaScript functions.
 
 ![anatomy of an API query](https://cl.ly/image/093S2d001811/api-query.png)
 
