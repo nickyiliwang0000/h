@@ -75,7 +75,7 @@ A lot of people wrote **actual code**. The instructions ask for `pseudo code` - 
 Also, some people wrote code that seems to demonstrate a misunderstanding of HTML. It's harder to be wrong if you're talking about how you _would_ code if you had a computer than it is when you're writing elements with a PEN like some kind of VICTORIAN SCHOOLCHILD.
 
 All images don't need to be figures. 
-  > Usually a <figure> is an image, illustration, diagram, code snippet, etc., that is referenced in the main flow of a document, but that can be moved to another part of the document or to an appendix without affecting the main flow. -  From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
+  > Usually a `<figure>` is an image, illustration, diagram, code snippet, etc., that is referenced in the main flow of a document, but that can be moved to another part of the document or to an appendix without affecting the main flow. -  From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
 
 If you use background images on divs to display these images, you're gonna have to be using explicit heights. You're not gonna want to make those heights percentages. At best, use vh.
 
