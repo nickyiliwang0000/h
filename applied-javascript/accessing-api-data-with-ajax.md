@@ -24,7 +24,7 @@ AJAX is used all over the web to help provide continuous user experiences. Twitt
 ## `$.ajax` with jQuery
 There are many ways to perform AJAX requests but they do have some cross-browser quirks, so we'll work with jQuery's `$.ajax()` method to handle our requests. 
 
-[Looking at the documentation](https://api.jquery.com/jQuery.ajax/), the `$.ajax()` method lets us specify the URL we're requesting from and a settings object in two different ways:
+[Looking at the documentation](https://api.jquery.com/jQuery.ajax/), the `$.ajax()` method lets us specify the URL we're using and a settings object in two different ways:
 ```js
 $.ajax('https://www.urlWeAreRequestingFrom.com', {
     this:'is',
@@ -41,7 +41,7 @@ $.ajax({
 ```
 We're going to do it the second way so that all the information is in one place, but you'll see both in the wild.
 
-If the `$.ajax()` method is successful, it returns the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/10ee6cbd78aaad16a0b1718eda9fa27ad6dd90cb/06-applied-javacript/6.4-accessing-api-data-with-ajax.md#debugging-other-ajax-request-errors)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()`. 
+If the `$.ajax()` method is successful, it returns the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/10ee6cbd78aaad16a0b1718eda9fa27ad6dd90cb/06-applied-javacript/6.4-accessing-api-data-with-ajax.md#debugging-ajax-requests)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()`. 
 
 > `.then()` is a special JavaScript method; we'll learn more about it the deeper we get into AJAXland.
 
@@ -68,17 +68,17 @@ Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remot
 
 Click the `Learn More` link and you'll be redirected to [the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin) telling you that a _CORS_ (cross-origin resource sharing) header is missing. 
 
-> When we make an _HTTP_ (hypertext transfer protocol) request to a different domain than the one that hosts the file with the request in it, we are creating a _cross-site_ HTTP request. HTTP requests come with information for the browsers called _headers_. Think of headers like the front of a letter: they say who the message is from, who it's to, and where the addressee expected to be located. Most servers will not allow HTTP requests from external sources for security reasons. Kind of like how government officials don't open letters with no return addresses. [Could be anthrax](https://en.wikipedia.org/wiki/2001_anthrax_attacks)!
+> When we make an _HTTP_ (hypertext transfer protocol) request to a different domain than the one that hosts the file with the request in it, we are creating a _cross-site_ HTTP request. HTTP requests come with information for the browsers called _headers_. Think of headers like the front of a letter: they say who the message is from, who it's to, and where the addressee expected to be located. Most servers will not allow HTTP requests from external sources for security reasons - kind of like how you don't open emails from unknown senders because it could be a virus.
 
-AJAX is restricted by the _same-origin policy_ which [basically states](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) that people can only send letters to themselves (i.e. AJAX requests to a domain/subdomain can only come from that same domain/subdomain). 
+AJAX is restricted by the _same-origin policy_ which [basically states](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) that people can only send emails to themselves (i.e. AJAX requests to a domain/subdomain can only come from that same domain/subdomain). 
 
-#### How do we send letters to other people!?
+#### How do we send emails to other people!?
 ##### JSONP
 One way of getting around the same-origin policy without messing directly with the headers is to ask for a data format called _JSON with padding_ (JSONP) in your AJAX request. The "padding" is a JavaScript wrapper that the server has set up. 
 
 When we request JSONP in our `$.ajax()` method, jQuery injects a script tag into our website temporarily. The script's `src` attribute points to a bit of JavaScript on the server from which we requested data. The server then wraps the JSON data in a JavaScript function (the aforementioned padding). This function becomes available to us, gets executed, and we get our data. Then, the script tag is removed from our website.
 
-This technique doesn't break the same-origin policy because you are requesting **JavaScript** from another server, not JSON data. Requesting JavaScript from another domain is an integral part of the modern web and we do it all the time (e.g. loading jQuery from Google's CDN). In the extended anthrax metaphor from above, think of requesting JavaScript as a government official ordering a coffee - it **could** have anthrax in it, but it's so much less likely than a letter mailed to them with covered in creepy handwriting.
+This technique doesn't break the same-origin policy because you are requesting **JavaScript** from another server, not JSON data. Requesting JavaScript from another domain is an integral part of the modern web and we do it all the time (e.g. loading jQuery from Google's CDN).
 
 #### If you API doesn't have a JSONP wrapper set up
 
@@ -173,24 +173,28 @@ The `.then()` method has three parameters:
 
 We will only be using the required parameter right now.
 
-[The docs](https://api.jquery.com/deferred.then/) say that this first parameter is expected to be a function, so let's add one:
+[The docs](https://api.jquery.com/deferred.then/) say that this first parameter is expected to be a function; that's what we've got in there, we're using an anonymous function to call our console.log:
 ```js
 $.ajax({
   url:'http://myttc.ca/finch_station.json',
   method: 'GET',
   dataType: 'jsonp'
-}).then(function() { });
+}).then(function() {
+  console.log('It worked!');
+});
+```
 
-// this is the same as:
-// $.ajax({
-//   url:'http://myttc.ca/finch_station.json', 
-//   method: 'GET',
-//   dataType: 'jsonp'
-// }).then(resultsFunction);
+We could also do the same using a named function, which we define elsewhere:
+```js
+$.ajax({
+  url:'http://myttc.ca/finch_station.json',
+  method: 'GET',
+  dataType: 'jsonp'
+}).then(resultsFunction);
 
-// function resultsFunction(){
-//   // do some stuff
-// }
+function resultsFunction(){
+  console.log('It worked!');
+}
 ```
 
 This is the function that will run when the request is successful. We can expect to have some JSON data from the API if the request is successful, so we'll pass that data as an argument called `result`:
@@ -200,7 +204,9 @@ $.ajax({
   url:'http://myttc.ca/finch_station.json',
   method: 'GET',
   dataType: 'jsonp'
-}).then(function(result) { });
+}).then(function(result) {
+  console.log('It worked!');
+});
 ```
 
 When a function calls another function like this, we say that second one is the _callback function_. We've previously seen callback functions in event handlers:
@@ -230,19 +236,20 @@ Once we can see our payload in the console, clicking on the little arrow next to
 
 We can use the parameter name we created (`result`) to refer to the object and access entries on it using dot notation:
 
-* `result.lat` gives the latitude of the stop. 
-* `result.vehicles` gives an array of all the vehicles near the stop.
+* `result.time` gives the time the TTC server was pinged for information. 
+* `result.stops` gives an array of all the vehicle stops in and around the station.
 
-We can do all the usual JavaScript and jQuery things with the data, like store the values in a variable:
+We can do all the usual JavaScript and jQuery things with the data, like store the values in variables:
 
 ```js
-let closestVehicle = result.vehicles[0].distance;
+let busRoute = result.stops[1].routes[0].name;
+let nextBusLeavingTime = result.stops[1].routes[0].stop_times[0].departure_time;
 ```
 
 Or update the DOM:
 
 ```js
-$("p.distance").html(closestVehicle + "m");
+$("p.nextDeparture").html("The next " + busRoute + " bus leaves at " + nextBusLeavingTime);
 ```
 
 #### Exercise: Working with `$.ajax()`
