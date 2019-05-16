@@ -2,84 +2,57 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 <!-- Week number -->
-### Week 4
+### Schedule
 
-Week 4: Our pals jQuery and JavaScript!
+Week 5: Deep in the wilds of JS
 
 ```
 < Monday />
-Kickoff
-Stand-ups
-Arrays
-LUNCH
-Intro to jQuery
-jQuery API documentation
-jQuery best practices
-MVP exercise
-Project 3 introduction
+NO CLASS
 
 < Tuesday /> 
-Queen Street hot treat code-along
-How to organize your JavaScript
+DUE Project 3 
+Kickoff
+Stand-ups
+Understanding API documentation
+Art code-along
 LUNCH
-To-do app code-along
+Project 3 presentations
+Project 4 introduction
 Project work time
 
 < Wednesday /> 
-Design lesson with Fatima
-Advanced array methods
-Regular expressions
+Working with asynchronous events
+Intro to Firebase
+To-do app with Firebase code-along
 SALAD CLUB
 Project work time
 
-< Thursday /> 
-Working with APIs
-Accessing data with AJAX + When AJAX goes wrong
+< Thursday />
+Class-based programming
 LUNCH
-AJAX code-along
+Lexical scope and execution context
 Project work time
-6pm Fishbowl Session: jQuery
 
 < Friday />
+JavaScript + jQuery test
 Feedback form
-Mock tech test
-Midpoint check-ins
+Fetching data with something other than $.ajax
+Destructuring, mutability, and purity
 LUNCH
 Project work time
 Show 'n' Tell
-
-< Saturday />
-1pm-4pm Fishbowl Session: JS
 ```
 <!-- ### Review topics -->
-### General feedback from the mock tech test
 
-> Test text:
-> Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox,or grids.
+### Review topics for JavaScript + jQuery test (Friday May 24)
+Objects and arrays 
+Variable assignment and scope
+Differences between the functional programming methods we learned
+Arrow functions
+Promises
 
-🎉 Successes 🎉 
-Almost everyone mentioned the clearfix class on the parent when they're floating children.
-
-A couple people mentioned that how they grouped the images would depend on how the site is supposed to look on smaller screens - absolutely!
-
-Draw all over the picture! Hell yes!
-
-Lots of people mentioning using CSS classes / reusing code. 👍👍👍
-
-Great job remembering your setup/reset snippets and wrappers.
-
-🔨 Things to think about 🔨 
-
-A lot of people wrote **actual code**. The instructions ask for `pseudo code` - pseudo code doesn't have any code in it! It's just you breaking down the steps you'd go through to solve the problem in English. The interviewer may have wanted to see how well you can explain technical subjects, not whether you can write the rules to make something happen.
-
-Also, some people wrote code that seems to demonstrate a misunderstanding of HTML. It's harder to be wrong if you're talking about how you _would_ code if you had a computer than it is when you're writing elements with a PEN like some kind of VICTORIAN SCHOOLCHILD.
-
-All images don't need to be figures. 
-  > Usually a <figure> is an image, illustration, diagram, code snippet, etc., that is referenced in the main flow of a document, but that can be moved to another part of the document or to an appendix without affecting the main flow. -  From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
-
-If you use background images on divs to display these images, you're gonna have to be using explicit heights. You're not gonna want to make those heights percentages. At best, use vh.
-
-If they are images _don't forget your alt text_!
+<!-- ### General feedback from the mock tech test -->
 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Spring Bootcamp: (event)".
