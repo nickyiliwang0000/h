@@ -58,6 +58,7 @@ Show 'n' Tell
 > Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox,or grids.
 
 🎉 Successes 🎉 
+
 Almost everyone mentioned the clearfix class on the parent when they're floating children.
 
 A couple people mentioned that how they grouped the images would depend on how the site is supposed to look on smaller screens - absolutely!
