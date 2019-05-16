@@ -12,7 +12,7 @@ JavaScript is an _object-oriented_ programming language which means that the lan
 
 Let's imagine that you were building your own text-based game about raccoons in JavaScript. You want to have a player (think back to our `Warrior` object) with some health, the ability to move around, and the ability to attack. Based on all the [data types](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-programming.md#data-types) we've learned about so far, an object called `raccoon` would be the best way to contain all of this information.
 
-So you start by creating a player object:
+So you start by creating a `raccoon` object:
 
 ```javascript
 const raccoon = {
@@ -23,10 +23,10 @@ const raccoon = {
   },
   equipment: [],
   walk: function() {
-    // ...code to make your player walk around
+    // ...code to make it walk around
   },
   attack: function() {
-    // ...code to make your player attack
+    // ...code to make it attack
   }
 }
 ```
@@ -42,10 +42,10 @@ const human = {
   },
   equipment: [],
   walk: function() {
-    // ...code to make the enemy walk around
+    // ...code to make it walk around
   },
   attack: function() {
-    // ...code to make the enemy attack
+    // ...code to make it attack
   }
 }
 ```
@@ -80,11 +80,11 @@ class Character {
 }
 ```
 
-Note that there are no commas in between methods within the constructor - if you try to put one, you will get a syntax error!
+> Note that there are no commas in between methods within the constructor - if you try to add one, you will get a syntax error!
 
-Think of classes like the blueprint or mould or boilerplate for building out your various objects. In our example, the `Character` class is a blueprint for building players, enemies, basically anything in the game that has health, a location, can attack, walk, etc. You might have an `vehicle` prototype if you wanted to build out garbage trucks and bicycles.
+Think of classes like the blueprint or boilerplate for building out your various objects. In our example, the `Character` class is a blueprint for building players, enemies, basically anything in the game that has health, a location, can attack, walk, etc. You might have a `Vehicle` prototype if you wanted to build out garbage trucks and bicycles for our valiant raccoons to dodge.
 
-Once we have created our classes, we create objects that inherit from that class using the `new` keyword, like this:
+Once we have created a class, we can create objects that inherit from that class using the `new` keyword:
 
 ```javascript
 const raccoon = new Character();
@@ -94,11 +94,12 @@ console.log(raccoon.health); // 100
 console.log(human.health); // 100
 ```
 
-Now we have a raccoon object and a player object that both have health, equipment, etc. which they have inherited from their class (`Character`) without having re-define any of their properties or methods.
+Now we have a raccoon object and a player object that both have health, equipment, etc. which they have inherited from their parent class (`Character`) without having to re-define any of their properties or methods!
 
 You'll also notice if you change the `health` property of your player, it won't effect the enemy and vice versa!
 
-> You'll notice that we use capital letters when naming our classes - this is a common convention and is a helpful signal to other developers using your code. When a new feature simplifies the syntax of something that previously existed in the language, it is sometimes referred to as **syntactic sugar**  because it "sweetens" the way that particular thing is written.
+> We use capital letters when naming our classes - this is a common convention and is a helpful signal to other developers using your code. 
+> When a new feature or pattern simplifies the syntax of something that previously existed in a programming language, it is sometimes referred to as **syntactic sugar**  because it "sweetens" the way that particular thing is written.
 
 ## Customizing our class instances
 Right now, every new character we create in the game will have the same health. But what if we wanted our raccoon and our human to have different health?
@@ -125,7 +126,7 @@ console.log(dog.health); // 100
 ```
 
 ## Classes and extends
-One major benefit that classes have over constructor functions is that they can be _extended_. What does this mean? Let's imagine for a second that in the game you're making, your raccoon can choose to be either a warrior, mage, or sandwich artist. Depending on which option they choose, the raccoon gains certain benefits.
+One major benefit that classes have is that they can be _extended_. What does this mean? Let's imagine for a second that in the game you're making, your raccoon can choose to be either a warrior, mage, or sandwich artist. Depending on which one they choose, the raccoon gains certain benefits.
 
 Using the `extends` keyword, we can extend our `Character` class into a new `SandwichArtist` class, like this:
 
@@ -161,13 +162,13 @@ By using `extends`, we can grab all of the properties and methods from our `Char
 Now if we want to create a new sandwich artist for our game (we shall call them `archibald`), we use our `new` keyword:
 
 ```javascript
-  const archibald = new sandwichArtist();
+  const archibald = new SandwichArtist();
 ```
 
 Oh no! We get an error: `ReferenceError: must call super constructor before using [this] in SandwichArtist class constructor`. This is because `extends` does not provide us access to the `this` keyword right out of the box. We must include a special method called `super()` inside of our constructor. This command invokes something called the _super constructor_ (i.e. the constructor method on the parent class), and must be placed before any references to `this` inside the constructor:
 
 ```javascript
-class sandwichArtist extends Character {
+class SandwichArtist extends Character {
   constructor() {
     super();
     this.health = 200;
@@ -176,7 +177,7 @@ class sandwichArtist extends Character {
     // ... code that gives our sandwich artist the ability to bake parmesan oregano bread
   }
 }
-const archibald = new sandwichArtist();
+const archibald = new SandwichArtist();
 ```
 
 We have now created a new object called `archibald`, that has a `health` of `200` and a `bake` method which it has inherited from the `sandwichArtist` class, as well as the `location` property, `walk` and `attack` methods that it inherited from the `Character` class.
@@ -184,8 +185,8 @@ We have now created a new object called `archibald`, that has a `health` of `200
 Class extends are an awesome way to build upon objects that already exist, and this will be particularly useful when we start working with React!
 
 Let's do this as a group, and then you'll try it on your own:
-* Think of something that could act as a good class (e.g. vehicle,)
-* Think of some properties that class might have (e.g. wheels, color, doors, drive, seats)
+* Think of of a category of things (e.g. vehicle, pet, book, etc.) to make a class.
+* Think of some specific properties that class might have (e.g. wheels, color, doors, number of pages, fur length, etc.)
 * Create some objects that inherit from that class using the `new` keyword
 * Mess around with those objects independently of one another and see what happens!
 
