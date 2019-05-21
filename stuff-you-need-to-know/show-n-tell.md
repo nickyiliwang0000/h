@@ -44,13 +44,9 @@ CSS knock-out
 
 CSS shine
 
-CSS text-path
-
 cycle.js
 
 draft.js
-
-draggable.js
 
 Label & Labelledby
 
@@ -60,15 +56,11 @@ particle.js
 
 pointer events
 
-pose.js
-
 react autocomplete
 
 react dnd
 
 React Native
-
-reveal.js
 
 stoke-dash
 
@@ -142,3 +134,14 @@ SweetAlerts
 custom browser extensions
 
 sticky/smooth/active nav
+
+reveal.js
+
+recursion vs iteration
+
+draggable.js
+
+pose.js
+
+CSS text-path
+
