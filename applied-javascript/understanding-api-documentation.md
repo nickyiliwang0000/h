@@ -57,15 +57,13 @@ Let's take a look at the **Collections** endpoints.  Scrolling through, there ar
 
 Let's try making a request using the [Postman](https://www.getpostman.com/) app. Postman will provide us with a friendly GUI (graphical user interface) where we can build HTTP requests and get back detailed responses.
 
-![](https://hychalknotes.s3.amazonaws.com/postman-min.png)
+![A screenshot of the Postman GUI.](https://hychalknotes.s3.amazonaws.com/postman-min.png)
 
 Let's look at this together.
 
 ### Getting collection info
 
-Add the /collection/ endpoint as the destination for our request and then click "Launch Request". hurl.it will format the response nicely.
-
-Destination: https://www.rijksmuseum.nl/api/en/collection/
+Let's use the following URL for our request endpoint: https://www.rijksmuseum.nl/api/en/collection/
 
 In postman make sure you click params beside the URL and add `key` as a URL param with your API key, then hit send.
 
