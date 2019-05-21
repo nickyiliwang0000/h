@@ -46,9 +46,13 @@ Show 'n' Tell
 
 ### Review topics for JavaScript + jQuery test (Friday May 24)
 Objects and arrays 
+
 Variable assignment and scope
+
 Differences between the functional programming methods we learned
+
 Arrow functions
+
 Promises
 
 <!-- ### General feedback from the mock tech test -->
