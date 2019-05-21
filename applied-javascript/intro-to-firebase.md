@@ -324,6 +324,7 @@ const dbRef = firebase.database().ref();
 // We call the `on` method here to grab the value of our Firebase database.
 // When it comes back, we store access it in our callback function via the parameter `data`.
 dbRef.on('value', (data) => {
+
   // We call `.val()` on our data to get the contents of our data to print out in the form of an object
   console.log(data.val());
 });
@@ -335,7 +336,7 @@ You will get back something that looks like this:
 
 
 ## Listening for changes to data in Firebase
-Remember `on()` from jQuery? Firebase has its own built-in `on()` method, that we can use to listen for events. For example, we can listen for when any changes have been made to the database.
+ Firebase's `on()` method will also listen for events. Therefore, we can listen for when any changes have been made to the database and update our applicaiton in real-time to reflect those changes.
 
 Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 
