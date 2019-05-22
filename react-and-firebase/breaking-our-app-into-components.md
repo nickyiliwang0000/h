@@ -5,7 +5,7 @@
 - Refactor a section of code into a new component
 -->
 
-# Breaking out app into components
+# Breaking our app into components
 
 One of the tenets of efficient, modern programming is to avoid repeating yourself. This improves code maintainability, readability, and reusability, and decreases complication. The less complicated our code is, the easier bugs will be to track down and squash!
 
