@@ -59,8 +59,20 @@ Promises
 
 > Given the array below, how would you create a new array that holds **only** the names of the beaches with pictures?
 
-The most concise way to solve this this problem is with `.filter()` **and** `.map()`:
+🎉 Successes 🎉
+* Lots of people know for loop syntax by heart. Woo!
+* A couple people drew on the data to highlight what they _expected_ to get back. That's great! Know your data, know which ones you expect to get back, so you don't get a false positive for your filtering condition. (e.g. both beaches, or `Tyrell beach` and `Lowell forest`)
+* Lots of people couldn't remember the syntax for what they wanted to do (totally okay!), but could explain the method they wanted and what it did (excellent!). 
+* Lots of saying you're use `const` for the new array, which is great, because you don't have a reason for it to be a `let`.
+* Lots of people correctly mentioning that `map` returns an array.
 
+🔨 Things to work on 🔨
+* If you only wrote code and you're not 1000000% sure your code works, **write some pseudo code**!
+* A lot of people wrote code that returned `['Tyrell beach', 'Lowell forest']`, which would have been fine if all the locations were beaches. But they were not.
+* A couple people mentioned jQuery, but remember: `map`, `filter`, and `forEach` (and `reduce`) are now native JS methods! 
+
+
+The most concise way to solve this this problem is with `.filter()` **and** `.map()`:
 ```js
 const locations = [
   {name:'Tyrell beach',
@@ -84,7 +96,6 @@ const beachesWithPicture = locations.filter(location =>{
 ```
 
 A more readable version breaks the return from the `.map` out into its own variable:
-
 ```js
 const beachesWithPicture = locations.filter(location =>{
   return location.type === 'beach' && location.img
@@ -95,7 +106,7 @@ const beachNames = beachesWithPicture.map(beach =>{
 });
 ```
 
-Or, using `.forEach`:
+You could also use `.forEach`:
 ```js
 const beachNames =[];
 
@@ -110,8 +121,7 @@ const beachNames = beachesWithPicture.map(beach =>{
 });
 ```
 
-Or, with a `for` loop:
-
+You could also use a `for` loop:
 ```js
 const beachNames =[];
 for(let i=0;i<locations.length;i++){
@@ -121,7 +131,7 @@ for(let i=0;i<locations.length;i++){
 }
 ```
 
-Less preferred would be nested `if` statements:
+Less preferred would be nested `if` statements inside that `for` loop:
 ```js
 const beachNames =[];
 
@@ -132,20 +142,8 @@ for(let i=0;i<locations.length;i++){
     }
   }
 }
+
 ```
-
-🎉 Successes 🎉
-* Lots of people know for loop syntax by heart. Woo!
-* A couple people drew on the data to highlight what they _expected_ to get back. That's great! Know your data, know which ones you expect to get back, so you don't get a false positive for your filtering condition. (e.g. both beaches, or `Tyrell beach` and `Lowell forest`)
-* Lots of people couldn't remember the syntax for what they wanted to do (totally okay!), but could explain the method they wanted and what it did (excellent!). 
-* Lots of saying you're use `const` for the new array, which is great, because you don't have a reason for it to be a `let`.
-* Lots of people correctly mentioning that `map` returns an array.
-
-🔨 Things to work on 🔨
-* If you only wrote code and you're not 1000000% sure your code works, **write some pseudo code**!
-* A lot of people wrote code that returned `['Tyrell beach', 'Lowell forest']`, which would have been fine if all the locations were beaches. But they were not.
-* A couple people mentioned jQuery, but remember: `map`, `filter`, and `forEach` (and `reduce`) are now native JS methods! 
-
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Spring Bootcamp: (event)".
 
