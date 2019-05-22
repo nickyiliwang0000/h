@@ -24,7 +24,7 @@ When a JavaScript engine first starts a new script, it creates a default executi
 
 Let's explore what these things are. Create an HTML file and link it to an empty JavaScript file. Open the HTML file in the browser. Open the console and type `this`. What is `this` equal to?
 
-> The `Window` object! The `Window` object is the global object for any scripts executed in a browser. 
+> The `window` object! The `window` object is the global object for any scripts executed in a browser. 
 
 When you think of the term _global_ in JavaScript, think **code that is not inside a function**. 
 
@@ -51,9 +51,9 @@ callGrandma();
 | Item | Inventory |
 | ---- | --------- |
 | Variables | `name`, `age` |
-| Functions | `callGrandma` `phoneCall`|
+| Functions | `callGrandma`, `phoneCall`|
 | Other scopes | _none_ |
-| `this` | Reference to `Window` |
+| `this` | Reference to `window` |
 
 </td></tr></table>
 
@@ -91,7 +91,7 @@ callGrandma();
 | Variables | `phoneNumber` |
 | Functions | _none_ |
 | Other scopes | `global execution context` |
-| `this` | Reference to `Window` |
+| `this` | Reference to `window` |
 
 </td></tr></table>
 
@@ -101,7 +101,7 @@ The `this` keyword can take some practice to master. Every time an execution con
 
 Depending on how a function is defined or called, its `this` keyword will point at (or _reference_) a different object.
 
-In the following examples, `this` always references the `Window` object:
+In the following examples, `this` always references the `window` object:
 
 ### `this` in the global execution context
 ```javascript
