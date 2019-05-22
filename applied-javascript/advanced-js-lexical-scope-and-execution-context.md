@@ -9,12 +9,12 @@
 
 ## Load, compile, and execute
 
-Our JavaScript files are not directly read and run by the browser. The browser's _JavaScript engine_ (the part of the browser dedicated to reading and running JavaScript code) has a step in between loading a script and running (or executing_) it called _compilation_. In the compilation step, the human-readable script is translated to something that the computer can understand. A few different things happen during the compilation stage that can affect how your code is run. In particular, this is where _execution contexts_ and _scopes_ are determined.
+Our JavaScript files are not directly read and run by the browser. The browser's _JavaScript engine_ (the part of the browser dedicated to reading and running JavaScript code) has a step in between loading and running (or _executing_) a script called _compilation_. In the compilation step, the human-readable script is translated to something that the computer can understand. A few different things happen during the compilation stage that can affect how your code is run. In particular, this is where _execution contexts_ and _scopes_ are determined.
 
 ## Execution contexts and scope
-During the compilation step, the JavaScript engine scans the code it's been asked to execute and creates an inventory of all the variables and functions each line of code will have access to when it's being run. This inventory is called the _execution context_.
+During the compilation step, the JavaScript engine scans the code it's been asked to execute and creates an inventory of all the variables and functions each line of code will have access to when it's being run. This inventory is called an _execution context_.
 
-The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a _lexical_ scope strategy because **where** a variable or function is declared explicitly determines it's availability to the rest of the program.
+The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a _lexical_ scope strategy because **where** a variable or function is declared explicitly in the code determines its availability to the rest of the program.
 
 ### The global execution context
 When a JavaScript engine first starts a new script, it creates a default execution context called the _global execution context_, which will be available to every level of the script. By default the global execution context gives you access to two things: 
@@ -24,7 +24,7 @@ When a JavaScript engine first starts a new script, it creates a default executi
 
 Let's explore what these things are. Create an HTML file and link it to an empty JavaScript file. Open the HTML file in the browser. Open the console and type `this`. What is `this` equal to?
 
-> The `Window` object! The `Window` object is the global object for any scripts executed in a browser. 
+> The `window` object! The `window` object is the global object for any scripts executed in a browser. 
 
 When you think of the term _global_ in JavaScript, think **code that is not inside a function**. 
 
@@ -36,6 +36,11 @@ Global execution context
 </th></tr><tr><td><pre lang="js">
 let name = "Verna";
 let age = "72";
+
+function phoneCall(number, person){
+  console.log("Calling " + number + "for " + person)
+}
+
 function callGrandma() {
   let phoneNumber = "416-555-4321"; 
   phoneCall(phoneNumber, name);
@@ -46,7 +51,7 @@ callGrandma();
 | Item | Inventory |
 | ---- | --------- |
 | Variables | `name`, `age` |
-| Functions | `callGrandma` |
+| Functions | `callGrandma`, `phoneCall`|
 | Other scopes | _none_ |
 | `this` | Reference to `window` |
 
@@ -56,7 +61,8 @@ callGrandma();
 
 Whenever a function is **called**, a new execution context is created. All of the variables and functions declared **inside** this function are protected from being accessed or modified by the rest of the script. This is referred to as the _private scope_ of the function. A function's execution context also **has a reference to it's outer execution context**. 
 
-### Function execution context example
+**Example of function context**
+
 <table><tr><th>
 good-grandchild.js
 </th>
@@ -68,6 +74,11 @@ good-grandchild.js
 <tr><td><pre lang="js">
 let name = "Verna";
 let age = "72";
+
+function phoneCall(number, person){
+  console.log("Calling " + number + "for " + person)
+}
+
 function callGrandma() {
   let phoneNumber = "416-555-4321"; 
   phoneCall(phoneNumber, name);
@@ -90,7 +101,7 @@ The `this` keyword can take some practice to master. Every time an execution con
 
 Depending on how a function is defined or called, its `this` keyword will point at (or _reference_) a different object.
 
-In the following examples, `this` always references the `Window` object:
+In the following examples, `this` always references the `window` object:
 
 ### `this` in the global execution context
 ```javascript
@@ -247,5 +258,14 @@ const add = (a,b) => a + b;
 
 When only an expression is provided to the right-side of the arrow, the function's `return` value is implied to be that expression. Try to become familiar with this shorthand syntax, because it's going to come up a lot in React!
 
+
+<!-- > Q: Are arrow functions and function declarations and function expressions the exact same!?
+> A: **No!** But, if the function you're writing does not use `this` or `arguments` and is not called with `new`, they act the same.  -->
+
 ## Exercise
-Try these [exercises](https://hychalknotes.s3.amazonaws.com/arrow_functions_exercises.zip) to practice writing arrow functions.
+Try these [exercises](https://hychalknotes.s3.amazonaws.com/arrow-functions-exercises--bootcamp.zip) to practice writing arrow functions.
+
+## More reading on scope and `this`
+* [Scope in JavaScript](http://www.digital-web.com/articles/scope_in_javascript/) -  an easy-to-read explanation of scope with a neighborhood analogy.
+* [How does the `this` keyword work?](https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work) - a great StackOverflow answer with a little quiz!
+* [How does a browser read JavaScript?](https://stackoverflow.com/questions/15395347/does-a-browser-truly-read-javascript-line-by-line-or-does-it-make-multiple-passe) -  an answer with many links to lower-level computing concepts.
