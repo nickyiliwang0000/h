@@ -56,7 +56,8 @@ callGrandma();
 
 Whenever a function is **called**, a new execution context is created. All of the variables and functions declared **inside** this function are protected from being accessed or modified by the rest of the script. This is referred to as the _private scope_ of the function. A function's execution context also **has a reference to it's outer execution context**. 
 
-### Function execution context example
+**Example of function context**
+
 <table><tr><th>
 good-grandchild.js
 </th>
@@ -248,4 +249,4 @@ const add = (a,b) => a + b;
 When only an expression is provided to the right-side of the arrow, the function's `return` value is implied to be that expression. Try to become familiar with this shorthand syntax, because it's going to come up a lot in React!
 
 ## Exercise
-Try these [exercises](https://hychalknotes.s3.amazonaws.com/arrow_functions_exercises.zip) to practice writing arrow functions.
+Try these [exercises](https://hychalknotes.s3.amazonaws.com/arrow-functions-exercises--bootcamp.zip) to practice writing arrow functions.
