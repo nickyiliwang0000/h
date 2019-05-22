@@ -184,11 +184,14 @@ We have now created a new object called `archibald`, that has a `health` of `200
 
 Class extends are an awesome way to build upon objects that already exist, and this will be particularly useful when we start working with React!
 
-Let's do this as a group, and then you'll try it on your own:
+Let's do this as a group:
 * Think of of a category of things (e.g. vehicle, pet, book, etc.) to make a class.
 * Think of some specific properties that class might have (e.g. wheels, color, doors, number of pages, fur length, etc.)
 * Create some objects that inherit from that class using the `new` keyword
 * Mess around with those objects independently of one another and see what happens!
+
+<!-- Take this exercise up to level 1. -->
+Here's [an exercise](https://hychalknotes.s3.amazonaws.com/class-execises--bootcamp.zip) to practice: we'll go over level 1 together. 
 
 ## Additional resources
 * [Let's Learn ES6 - Classes](https://www.youtube.com/watch?v=EUtZRwA7Fqc) is a great overview of the difference between objects and classes and how they work.
