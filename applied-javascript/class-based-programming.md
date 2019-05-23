@@ -55,9 +55,10 @@ Notice anything? The `raccoon` and `human` objects are the exact same! If you wa
 Thankfully, JavaScript's got your back! We can take advantage of something called _prototypal inheritence_ to make our lives easier.
 
 ## Prototypal inheritance
-Once we realize that we want our `raccoon` and `human` have all (or many) of the same properties, it's a sign that they can probably share a common ancestor. Just like a dog and a cat both have fur and legs and so can be classified as **animals**, our raccoon and human both have health, location, equipment, and mobility, and so could be classified as **characters**.
+Once we realize that we want our `raccoon` and `human` have all (or many) of the same properties, it's a sign that they can probably share a common ancestor. Just like a dog and a cat both have fur and legs and so can be classified as **animals**, our raccoon and human both have health, location, equipment, mobility, and are playable in this game, and so could be classified as **characters**.
 
-In much the same way that a child inherits characteristics from their parents (e.g. eye colour, hair colour, height), so too can objects inherit characteristics from their parent objects. In JavaScript, this shared parent object is called a **prototype**.
+In much the same way that a child inherits characteristics from their parents (e.g. eye colour, hair colour, height), so too can objects inherit characteristics from their parent objects. In JavaScript, this shared parent object is called a **
+**.
 
 How do we create a prototype in JavaScript? Using something called a _class_:
 
@@ -82,7 +83,7 @@ class Character {
 
 > Note that there are no characters between methods within the class declaration.
 
-Think of classes like the blueprint or boilerplate for building out your various objects. In our example, the `Character` class is a blueprint for building players, enemies, basically anything in the game that has health, a location, can attack, walk, etc. You might have a `Vehicle` prototype if you wanted to build out garbage trucks and bicycles for our valiant raccoons to dodge.
+Think of classes like the blueprint or boilerplate for building out your various objects. In our example, the `Character` class is a blueprint for building players, enemies, basically anything in the game that has health, a location, can attack, walk, etc. You might have a `Vehicle` class if you wanted to build out garbage trucks and bicycles for our valiant raccoons to dodge.
 
 Once we have created a class, we can create objects that inherit from that class using the `new` keyword:
 
@@ -190,7 +191,7 @@ Let's do this as a group:
 * Mess around with those objects independently of one another and see what happens!
 
 <!-- Take this exercise up to level 1. -->
-Here's [an exercise](https://hychalknotes.s3.amazonaws.com/class-execises--bootcamp.zip) to practice: we'll go over level 1 together. 
+Here's [an exercise](https://hychalknotes.s3.amazonaws.com/class-execises--bootcamp.zip) to practice!
 
 ## Additional resources
 * [Let's Learn ES6 - Classes](https://www.youtube.com/watch?v=EUtZRwA7Fqc) is a great overview of the difference between objects and classes and how they work.
