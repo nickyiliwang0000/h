@@ -57,8 +57,7 @@ Thankfully, JavaScript's got your back! We can take advantage of something calle
 ## Prototypal inheritance
 Once we realize that we want our `raccoon` and `human` have all (or many) of the same properties, it's a sign that they can probably share a common ancestor. Just like a dog and a cat both have fur and legs and so can be classified as **animals**, our raccoon and human both have health, location, equipment, mobility, and are playable in this game, and so could be classified as **characters**.
 
-In much the same way that a child inherits characteristics from their parents (e.g. eye colour, hair colour, height), so too can objects inherit characteristics from their parent objects. In JavaScript, this shared parent object is called a **
-**.
+In much the same way that a child inherits characteristics from their parents (e.g. eye colour, hair colour, height), so too can objects inherit characteristics from their parent objects. In JavaScript, this shared parent object is called a _prototype_.
 
 How do we create a prototype in JavaScript? Using something called a _class_:
 
