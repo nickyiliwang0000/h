@@ -80,7 +80,7 @@ class Character {
 }
 ```
 
-> Note that there are no commas in between methods within the constructor - if you try to add one, you will get a syntax error!
+> Note that there are no characters between methods within the class declaration.
 
 Think of classes like the blueprint or boilerplate for building out your various objects. In our example, the `Character` class is a blueprint for building players, enemies, basically anything in the game that has health, a location, can attack, walk, etc. You might have a `Vehicle` prototype if you wanted to build out garbage trucks and bicycles for our valiant raccoons to dodge.
 
@@ -99,7 +99,6 @@ Now we have a raccoon object and a player object that both have health, equipmen
 You'll also notice if you change the `health` property of your player, it won't effect the enemy and vice versa!
 
 > We use capital letters when naming our classes - this is a common convention and is a helpful signal to other developers using your code. 
-> When a new feature or pattern simplifies the syntax of something that previously existed in a programming language, it is sometimes referred to as **syntactic sugar**  because it "sweetens" the way that particular thing is written.
 
 ## Customizing our class instances
 Right now, every new character we create in the game will have the same health. But what if we wanted our raccoon and our human to have different health?
