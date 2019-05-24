@@ -30,13 +30,14 @@ As always, the first thing that we'll need to do is create a new project inside 
 
 6. We will also need to install `firebase` , run `npm install firebase --save` 
   * The `npm install` command downloads files. If you go into your `node_modules` folder, you should see a folder called `firebase`.
-7. In your `src` folder create a filed `firebase.js` and add the following lines
+7. In your `src` folder create a filed `firebase.js` and add the following lines:
+
 ```javascript
-//firebase.js
+// firebase.js
 import firebase from 'firebase';
 
 // Initialize Firebase
-//USE YOUR CONFIG OBJECT
+// USE YOUR CONFIG OBJECT
 const config = {
 	apiKey: "YOUR-API-KET",
 	authDomain: "bookshelf-8d68a.firebaseapp.com",
@@ -70,8 +71,8 @@ book3: "A Little Life"
 
 Now that we have some data, let's build a little React app that can grab it. We'll import `firebase` into the `App.js` component and set up an initial `book` state.
 
-```javascript
-//App.js
+```jsx
+// App.js
 import React, { Component} from 'react';
 import firebase from './firebase';
 
@@ -88,24 +89,22 @@ In React, when we grab data from external sources to be used in our app, we need
 
 Let's prepare our state to receive some book data and tell our `render` method what to do with the books data once we've got it:
 
-```javascript
-//App.js
+```jsx
+// App.js
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      books: []
+      books: [],
     }
   }
+
   render() {
     return (
       <ul>
-
-      return(
         {this.state.books.map((book) => {
-          <li>{book}</li>
+          return <li>{book}</li>
         })}
-      )
       </ul>
     )
   }
@@ -116,8 +115,8 @@ Now our component will map through our `books` array, grabbing any books it find
 
 All that's left to do is grab our data from Firebase. We'll do this by using the `componentDidMount` lifecycle hook to call for the data we want and store it in state.
 
-```javascript
-//App.js
+```jsx
+// App.js
 class App extends Component {
  // ...rest of our code here
  componentDidMount() {
@@ -125,8 +124,11 @@ class App extends Component {
    // here we create a variable that holds a reference to our database
    const dbRef = firebase.database().ref();
 
-   // here we add an event listener to that variable that will fire every time there is a change in the database
-   // this event listener takes a callback function which we will use to get our data from the database and call it response
+   // here we add an event listener to that variable that will fire
+   // every time there is a change in the database
+
+   // this event listener takes a callback function which we will use to get our data
+   // from the database and call it response
    dbRef.on('value', (response) => {
 
      // here we use Firebase's .val() method to parse our database info the way we want it
@@ -142,8 +144,8 @@ If this worked successfully, you should see your books appear as an object in th
 
 Now that we're seeing our data, we need to store it in the state. Let's update our `componentDidMount` function to do that:
 
-```javascript
-//App.js
+```jsx
+// App.js
 const dbRef = firebase.database().ref();
 dbRef.on('value', (response) => {
 
@@ -161,7 +163,7 @@ dbRef.on('value', (response) => {
     newState.push(data[key]);
   }
 
- // then, we call this.setState in order to update our component's state using the local array newState
+  // then, we call this.setState in order to update our component's state using the local array newState
   this.setState({
     books: newState
   });
@@ -178,8 +180,8 @@ Now we're able to successfully retrieve and display information from our databas
 
 We'll need to add an input and a book-adding button to our `App` component:
 
-```js
-//App.js
+```jsx
+// App.js
 class App extends Component {
   constructor() {
     super();
@@ -187,25 +189,27 @@ class App extends Component {
       books: []
     }
   }
-    render() {
-      return (
-        <div>
-          <ul>
-            {this.state.books.map((book) => {
-              return (
-                <li>
-                  <p>{book}</p>
-                </li>
-              )
-            })}
-          </ul>
-          <form action="submit">
-            <input type="text" placeholder="Add a book to your bookshelf" />
-            <button>Add Book</button>
-          </form>
-        </div>
-      )
-    }
+
+  render() {
+    return (
+      <div>
+        <ul>
+          {this.state.books.map((book) => {
+            return (
+              <li>
+                <p>{book}</p>
+              </li>
+            )
+          })}
+        </ul>
+
+        <form action="submit">
+          <input type="text" placeholder="Add a book to your bookshelf" />
+          <button>Add Book</button>
+        </form>
+      </div>
+    )
+  }
 
     componentDidMount() {
       // ....
@@ -215,8 +219,8 @@ class App extends Component {
 
 Now we have an input and a button, but they currently don't do anything! Let's start by attaching a `handleChange` method to store information about what the user is typing into the input field within our state:
 
-```javascript
-//App.js
+```jsx
+// App.js
 constructor() {
   super();
   this.state = {
@@ -228,7 +232,8 @@ constructor() {
 // this event will fire every time there is a change in the input it is attached to
 handleChange = (event) => {
 
-  // we're telling React to update the state of our `App` component to be equal to whatever is currently the value of the input field
+  // we're telling React to update the state of our `App` component to be 
+  // equal to whatever is currently the value of the input field
   this.setState({userInput: event.target.value})
 }
 
@@ -245,12 +250,15 @@ render() {
       })}
       </ul>
 
-    <form action="submit">
-      { /* Here, we've attached the `handleChange` method to our input field.*/}
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
-    { /* Here, we've attached the `handleClick` method to our input button.*/}
-      <button onClick={this.handleClick}>Add Book</button>
-    </form>
+      <form action="submit">
+
+        { /* Here, we've attached the `handleChange` method to our input field.*/}
+        <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
+
+        { /* Here, we've attached the `handleClick` method to our input button.*/}
+        <button onClick={this.handleClick}>Add Book</button>
+
+      </form>
     </div>
   )
 }
@@ -259,8 +267,8 @@ We can see exactly how this is working with a quick glance at the React dev tool
 
 Now, let's make sure React always knows about the changes in our input field by _controlling_ (sometimes called _binding_) our text input:
 
-```javascript
-//App.js
+```jsx
+// App.js
 constructor() {
   super();
   this.state = {
@@ -268,6 +276,7 @@ constructor() {
     userInput: ''
   }
 }
+
 // ...
 render() {
   return (
@@ -282,11 +291,18 @@ render() {
       })}
       </ul>
 
-    <form action="submit">
-    {/* add the value attribute and set it's value equal to whatever's in state*/}
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
-      <button onClick={this.handleClick}>Add Book</button>
-    </form>
+      <form action="submit">
+
+        {/* add the value attribute and set it's value equal to whatever's in state*/}
+        <input 
+          type="text" 
+          onChange={this.handleChange} 
+          placeholder="Add a book to your bookshelf" 
+          value={this.state.userInput} 
+        />
+
+        <button onClick={this.handleClick}>Add Book</button>
+      </form>
     </div>
   )
 }
@@ -295,8 +311,8 @@ Here, we're using [the HTML attribute `value`](https://developer.mozilla.org/en-
 
 Now let's add our `handleClick` method:
 
-```javascript
-//App.js
+```jsx
+// App.js
 constructor() {
   // ..
 }
@@ -308,21 +324,31 @@ handleChange(event) {
 handleClick(event) {
   //event.preventDefault prevents the default action: form submission
   event.preventDefault();
+
   // here, we create a reference to our database
   const dbRef = firebase.database().ref();
+
   // here we grab whatever value this.state.userInput has and push it to the database
   dbRef.push(this.state.userInput);
+
   // here we reset the state to an empty string
   this.setState({userInput: ""})
 }
 
 render() {
   return (
-    <div>
-      { /* ... */ }
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
+    // ...
+
+    <form>
+      <input 
+        type="text" 
+        onChange={this.handleChange} 
+        placeholder="Add a book to your bookshelf" 
+        value={this.state.userInput} 
+      />
+
       <button onClick={this.handleClick}>Add Book</button>
-    </div>
+    </form>
   )
 }
 ```
@@ -344,16 +370,16 @@ So, right now, we aren't storing any reference to each one of these books' uniqu
 
 We'll need to modify our `componentDidMount` lifecycle method:
 
-```javascript
-//App.js
+```jsx
+// App.js
 componentDidMount() {
-      // ...
-      for (let key in data) {
-        // 
-        newState.push({key: key, name: data[key]});
-      }
+  // ...
+  for (let key in data) {
+    // 
+    newState.push({key: key, name: data[key]});
+  }
 
-      //...
+  //...
 }
 ```
 
@@ -364,12 +390,13 @@ Log the two values we get inside the loop. What are they?
 
 This means that we're going to store an array of objects, rather than an array of strings, inside of `this.state.books`, so we'll need to modify our `render` method to reflect this:
 
-```javascript
-//App.js
+```jsx
+// App.js
 render() {
-    return (
-      <div>
-        <ul>
+  return (
+    <div>
+
+      <ul>
         {this.state.books.map(book => {
           return (
             <li key={book.key}>
@@ -377,20 +404,26 @@ render() {
             </li>
           )
         })}
-        </ul>
-        <form actions="submit">
-          <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
-          <button onClick={this.handleClick}>Add Book</button>
-        </form>
-      </div>
-    )
-  }
+      </ul>
+
+      <form actions="submit">
+        <input 
+          type="text" 
+          onChange={this.handleChange} 
+          placeholder="Add a book to your bookshelf" 
+          value={this.state.userInput} 
+        />
+        <button onClick={this.handleClick}>Add Book</button>
+      </form>
+    </div>
+  )
+}
 ```
 
 Now that we're grabbing our book ID, we need to add a 'Remove' button that has a click event on it that will tell Firebase which ID we want to remove:
 
-```javascript
-//App.js
+```jsx
+// App.js
 <li key={i}>
   <p>{book.name}</p> 
   <button onClick={() => this.removeBook(book.key)}> Remove </button>
@@ -403,12 +436,15 @@ Now that we're grabbing our book ID, we need to add a 'Remove' button that has a
 
 Now let's write our `removeBook` function inside our `App` component:
 
-```javascript
-//App.js
+```jsx
+// App.js
+
 // this function takes an argument, which is the ID of the book we want to remove
 removeBook(bookId) {
+
   // here we create a reference to the database AT THE BOOK'S ID
   const dbRef = firebase.database().ref(bookId);
+
   // using the Firebase method .remove(), we remove that node
   dbRef.remove();
 }
