@@ -33,11 +33,11 @@ As always, the first thing that we'll need to do is create a new project inside 
 7. In your `src` folder create a filed `firebase.js` and add the following lines:
 
 ```javascript
-//firebase.js
+// firebase.js
 import firebase from 'firebase';
 
 // Initialize Firebase
-//USE YOUR CONFIG OBJECT
+// USE YOUR CONFIG OBJECT
 const config = {
 	apiKey: "YOUR-API-KET",
 	authDomain: "bookshelf-8d68a.firebaseapp.com",
@@ -250,14 +250,15 @@ render() {
       })}
       </ul>
 
-    <form action="submit">
+      <form action="submit">
 
-      { /* Here, we've attached the `handleChange` method to our input field.*/}
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
+        { /* Here, we've attached the `handleChange` method to our input field.*/}
+        <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
 
-      { /* Here, we've attached the `handleClick` method to our input button.*/}
-      <button onClick={this.handleClick}>Add Book</button>
-    </form>
+        { /* Here, we've attached the `handleClick` method to our input button.*/}
+        <button onClick={this.handleClick}>Add Book</button>
+
+      </form>
     </div>
   )
 }
@@ -290,12 +291,18 @@ render() {
       })}
       </ul>
 
-    <form action="submit">
-      {/* add the value attribute and set it's value equal to whatever's in state*/}
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
+      <form action="submit">
 
-      <button onClick={this.handleClick}>Add Book</button>
-    </form>
+        {/* add the value attribute and set it's value equal to whatever's in state*/}
+        <input 
+          type="text" 
+          onChange={this.handleChange} 
+          placeholder="Add a book to your bookshelf" 
+          value={this.state.userInput} 
+        />
+
+        <button onClick={this.handleClick}>Add Book</button>
+      </form>
     </div>
   )
 }
@@ -330,11 +337,18 @@ handleClick(event) {
 
 render() {
   return (
-    <div>
-      { /* ... */ }
-      <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
+    // ...
+
+    <form>
+      <input 
+        type="text" 
+        onChange={this.handleChange} 
+        placeholder="Add a book to your bookshelf" 
+        value={this.state.userInput} 
+      />
+
       <button onClick={this.handleClick}>Add Book</button>
-    </div>
+    </form>
   )
 }
 ```
@@ -359,13 +373,13 @@ We'll need to modify our `componentDidMount` lifecycle method:
 ```jsx
 // App.js
 componentDidMount() {
-      // ...
-      for (let key in data) {
-        // 
-        newState.push({key: key, name: data[key]});
-      }
+  // ...
+  for (let key in data) {
+    // 
+    newState.push({key: key, name: data[key]});
+  }
 
-      //...
+  //...
 }
 ```
 
@@ -379,10 +393,10 @@ This means that we're going to store an array of objects, rather than an array o
 ```jsx
 // App.js
 render() {
-    return (
-      <div>
+  return (
+    <div>
 
-        <ul>
+      <ul>
         {this.state.books.map(book => {
           return (
             <li key={book.key}>
@@ -390,15 +404,20 @@ render() {
             </li>
           )
         })}
-        </ul>
+      </ul>
 
-        <form actions="submit">
-          <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" value={this.state.userInput} />
-          <button onClick={this.handleClick}>Add Book</button>
-        </form>
-      </div>
-    )
-  }
+      <form actions="submit">
+        <input 
+          type="text" 
+          onChange={this.handleChange} 
+          placeholder="Add a book to your bookshelf" 
+          value={this.state.userInput} 
+        />
+        <button onClick={this.handleClick}>Add Book</button>
+      </form>
+    </div>
+  )
+}
 ```
 
 Now that we're grabbing our book ID, we need to add a 'Remove' button that has a click event on it that will tell Firebase which ID we want to remove:
