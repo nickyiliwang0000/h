@@ -19,7 +19,6 @@ This application could be a:
 * Voting app
 * Notes application
 * Bill splitter (roommates!)
-* Personal expense tracker
 * Blog
 
 Your data should come from an API or be stored in Firebase.
@@ -43,19 +42,16 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 <!--- ### Deployment
 (optional) In order to make deploying your app easy use the Firebase hosting features to get your site up online! There is the ability to add a custom domain if you would like, so think about a fun, shareable domain for your application . --->
 
-## Project scope due date
-Wednesday, May 29th, 6 p.m.
-
-If you have not gotten an instructor's approval on a scope document by this time, **you will be assigned a project**.
+If you have not gotten an instructor's approval on a scope document by Wednesday, May 29th, 6 p.m., **you will be assigned a project**.
 
 ## How will this project be graded?
 **Requirements:**
 * Uses React, and no jQuery
 * Uses modular components
-* Uses Axios and/or Firebase
+* Uses axios and/or Firebase
 * React 'knows' about all DOM changes (bind your inputs!)
 * this.state is never directly changed because .setState() is always used to alter state
-* App is dynamic based on user interaction (e.g. drop down menu, search field)
+* App is dynamic based on user interaction (e.g. drop-down menu, search field)
 * It is clear to the user what the app does
 * App and interactions are accessible
 * Errors are handled effectively
@@ -74,7 +70,6 @@ You will also be given marks for your project presentation:
 * Student was able to identify a technical win
 * Student was able to effectively identify a technical challenge
 * Student did not go over time
-
 
 ## Submitting your project
 
