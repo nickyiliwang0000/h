@@ -64,13 +64,9 @@ React Native
 
 stoke-dash
 
-three.js
-
 touchstart
 
 transition-delay
-
-typed.js
 
 
 ### Claimed:
@@ -145,3 +141,6 @@ pose.js
 
 CSS text-path
 
+three.js
+
+typed.js
