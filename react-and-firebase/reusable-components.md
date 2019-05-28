@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        My application!
+        // My application!
       </div>
     )
   }
@@ -34,7 +34,7 @@ A simple component looks like this:
 const MySimpleComponent = () => {
   return (
     <div>
-      Hello friends!
+      <p>Hello friends!</p>
     </div>
   )
 } 
@@ -46,7 +46,7 @@ You can include them in your code just like the more complex components:
 const MySimpleComponent = () => {
   return (
     <div>
-      Hello friends!
+      <p>Hello friends!</p>
     </div>
   )
 } 
