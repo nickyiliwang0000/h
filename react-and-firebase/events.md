@@ -93,10 +93,12 @@ class Counter extends Component {
   }
 
   render() {
-    <div>
-      {/* anything inside curly brackets is vanilla JavaScript - here we are accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. */}
-      <p>You are visitor number {this.state.visitors}.</p>
-    </div>
+    return (
+      <div>
+        {/* anything inside curly brackets is vanilla JavaScript - here we are accessing the `state` object on the `Counter` component, and printing out the value of the `visitors` property on to the page. */}
+        <p>You are visitor number {this.state.visitors}.</p>
+      </div>
+    )
   }
 }
 ```
