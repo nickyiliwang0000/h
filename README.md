@@ -147,7 +147,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Lifecycles](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/lifecycles.md)
 * [State vs. props](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/state-vs.-props.md)
 * [Reusable components](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/reusable-components.md)
-* [Using Firebase in React](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/using-firebase-with-react.md)
+* [Using Firebase with React](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/using-firebase-with-react.md)
 * [Structuring data in Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/structuring-data-in-firebase.md)
 * [Deploying with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/deploying-with-firebase.md)
 * [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
