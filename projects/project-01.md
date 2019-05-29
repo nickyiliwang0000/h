@@ -25,7 +25,7 @@ Remember that you can discuss font sizes with the designer if you think they are
 * Floats and .clearfix are used properly
 * Google web fonts are used
 * Project represents the provided design well
-* Files, folders, & naming conventions followed (camelCase) (this includes your project repo)
+* Files, folders, & naming conventions followed (kabob-case) (this includes your project repo)
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed
@@ -49,7 +49,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1NxNP
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
-1. Create a repository called `firstNameLastNameProjectOne`
+1. Create a repository called `firstname-lastname-project-one`
 1. Push your files to GitHub.
 1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
 

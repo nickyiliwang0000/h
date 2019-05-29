@@ -75,7 +75,7 @@ You can find your assignment [here]().
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
+1. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
 
