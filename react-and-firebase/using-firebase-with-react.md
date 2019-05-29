@@ -204,7 +204,9 @@ class App extends Component {
         </ul>
 
         <form action="submit">
-          <input type="text" placeholder="Add a book to your bookshelf" />
+          <label htmlFor="newBook">Add a book to your bookshelf</label>
+          <input type="text" id="newBook"/>
+          
           <button>Add Book</button>
         </form>
       </div>
@@ -252,8 +254,10 @@ render() {
 
       <form action="submit">
 
+        <label htmlFor="newBook">Add a book to your bookshelf</label>
+
         { /* Here, we've attached the `handleChange` method to our input field.*/}
-        <input type="text" onChange={this.handleChange} placeholder="Add a book to your bookshelf" />
+        <input type="text" id="newBook" onChange={this.handleChange} />
 
         { /* Here, we've attached the `handleClick` method to our input button.*/}
         <button onClick={this.handleClick}>Add Book</button>
@@ -293,11 +297,13 @@ render() {
 
       <form action="submit">
 
+        <label htmlFor="newBook">Add a book to your bookshelf</label>
+
         {/* add the value attribute and set it's value equal to whatever's in state*/}
         <input 
           type="text" 
-          onChange={this.handleChange} 
-          placeholder="Add a book to your bookshelf" 
+          id="newBook"
+          onChange={this.handleChange}
           value={this.state.userInput} 
         />
 
@@ -340,10 +346,11 @@ render() {
     // ...
 
     <form>
+      <label htmlFor="newBook">Add a book to your bookshelf</label>
       <input 
         type="text" 
-        onChange={this.handleChange} 
-        placeholder="Add a book to your bookshelf" 
+        id="newBook"
+        onChange={this.handleChange}
         value={this.state.userInput} 
       />
 
@@ -407,10 +414,11 @@ render() {
       </ul>
 
       <form actions="submit">
+        <label htmlFor="newBook">Add a book to your bookshelf</label>
         <input 
           type="text" 
-          onChange={this.handleChange} 
-          placeholder="Add a book to your bookshelf" 
+          id="newBook"
+          onChange={this.handleChange}
           value={this.state.userInput} 
         />
         <button onClick={this.handleClick}>Add Book</button>
