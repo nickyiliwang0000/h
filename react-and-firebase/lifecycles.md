@@ -56,15 +56,20 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // here is anything we want to happen immediately after the component renders - like grab our AJAX data
+    // here is anything we want to happen 
+    // immediately after the component renders
+    // (e.g. grab our AJAX data)
   }
 
   componentDidUpdate() {
-    // here is anything we want to happen when a component is updated like when props or state change
+    // here is anything we want to happen 
+    // when a component is updated 
+    // (e.g. when props or state change)
   }
 
   render() {
-    // here is any DOM elements we want to display on the page
+    // here are any DOM elements 
+    // we want to display on the page
   }
 }
 ```
