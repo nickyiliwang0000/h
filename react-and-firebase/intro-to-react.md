@@ -164,7 +164,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>My header!!</h1>
+        <h1>Welcome to the Toronto Parks' website</h1>
       </header>
     )
   }
@@ -321,7 +321,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>My header!!</h1>
+        <h1>Welcome to the Toronto Parks' website</h1>
         <SearchBar />
       </header>
     )

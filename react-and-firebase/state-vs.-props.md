@@ -6,17 +6,18 @@ Sometimes we want to pass information from a parent component to child component
 
 Think about props as the options or configuration settings for a specific component. Props are one-time pieces of information that determine what the component should look like when it renders.
 
-## An example of props: the donut bakery
+## An example of props: Toronto parks
 
-Let's imagine we're building an application for a bakery. They want a way to highlight this week's featured donut on their website.
+Let's reopen our first-ever React app, the one with the `Welcome to the Toronto Parks' website`
+ header. Imagine we're building an application for the city that shows off our city parks. Every week, a different one of the parks is featured.
 
 We might make a component that looks like this:
 
 ```jsx
-class FeaturedDonut extends Component {
+class FeaturedPark extends Component {
   render() {
     return (
-      <h1>Today's featured donut is: PB & J</h1>
+      <h2>This week's featured park is: Sunnybrook</h2>
     ) 
   }
 }
@@ -24,7 +25,7 @@ class FeaturedDonut extends Component {
 class App extends Component {
   render() {
     return (
-      <FeaturedDonut />
+      <FeaturedPark />
     ) 
   }
 }
@@ -32,47 +33,47 @@ class App extends Component {
 
 ## Customizing our component with props
 
-People LOVE this bakery's featured donuts. The bakery does a brisk trade in featured donuts. Featured donuts are their bread and butter, you could say. As such, they want the landing page of their website to show **three different** featured donuts.
+People LOVE the featured park. They flock to it in droves. In fact, it's getting so busy that the city decides to feature **three** parks to spread the traffic around. 
 
-We could modify the JSX inside our `FeaturedDonut` component to include the other two featured donuts, but what happens if elsewhere on the site they only want to feature one donut, not three, or a completely different set of donuts?
+We could modify the JSX inside our `FeaturedPark` component to include the other two featured parks, but what happens if elsewhere on the site they only want to feature one park, not three, or a completely different set of parks? 
 
-Let's create the ability to customize our `FeaturedDonut` component to display any flavor of donut we want depending on what options (a.k.a. props) we provide to it!
+Let's create the ability to customize our `FeaturedPark` component to display any park depending on what options (a.k.a. props) we provide to it!
 
 ```jsx
 class App extends Component {
   render() {
     return (
       <div>
-        <FeaturedDonut name={"PB & J"} />
-        <FeaturedDonut name={"Chocolate Glaze"} />
-        <FeaturedDonut name={"Smore"} />
+        <FeaturedPark name="Sunnybrook" />
+        <FeaturedPark name="Trinity Bellwoods" />
+        <FeaturedPark name="Cherry Beach" />
       </div>
     );
   }
 }
 ```
 
-Any attribute value that we give to our `FeaturedDonut` component will become accessible within the `FeaturedDonut` component through `this.props`.
+Any attribute value that we give to our `FeaturedPark` component will become accessible within the `FeaturedPark` component through `this.props`.
 
-This means that we can change our `FeaturedDonut` component to look like this:
+This means that we can change our `FeaturedPark` component to look like this:
 
 ```jsx
-class FeaturedDonut extends Component {
+class FeaturedPark extends Component {
   render() {
     return (
-      <h1>Today's featured donut is: {this.props.name}</h1>
+      <h2>This week's featured park is: {this.props.name}</h2>
     )
   }
 }
 ```
 
-Now let's imagine that our awesome donut shop had some kind of database they were constantly updating with new featured donuts. Let's also pretend we've already grabbed this information and it's stored in our state like so:
+Now let's imagine that the city is demolishing condos to make room for more parks. Let's pretend we've already grabbed this information and it's stored in our state like so:
 
 ```jsx
-class FeaturedDonut extends Component {
+class FeaturedPark extends Component {
   render() {
     return (
-      <h1>Today's featured donut is: {this.props.name}</h1>;
+      <h1>This week's featured park is: {this.props.name}</h1>;
     ) 
   }
 }
@@ -81,34 +82,34 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      featuredDonuts: ["PB&J", "Apple Cinnamon", "Double Chocolate"]
+      featuredParks: ["Sunnybrook", "Trinity Bellwoods", "Cherry Beach"]
     };
   }
 
   render() {
     return (
-      <FeaturedDonut name="PB & J" />
+      <FeaturedPark name="Sunnybrook" />
     ) 
   }
 }
 ```
 
-We can use `map` to loop through `this.state.featuredDonuts` and feed the name of each individual donut to our `FeaturedDonut` component as a prop. Then, we can return all the featured donuts to the page like this:
+We can use `map` to loop through `this.state.featuredParks` and feed the name of each individual park to our `FeaturedPark` component as a prop. Then, we can return all the featured parks to the page like this:
 
 ```jsx
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      featuredDonuts: ["PB & J", "Apple Cinnamon", "Double Chocolate"]
+      featuredParks: ["Sunnybrook", "Trinity Bellwoods", "Cherry Beach"]
     };
   }
 
   render() {
     return (
       <div>
-        {this.state.featuredDonuts.map(flavour => {
-          return <FeaturedDonut name={flavour} />;
+        {this.state.featuredParks.map((parkName, index) => {
+          return <FeaturedPark name={parkName} index={index}/>;
         })}
       </div>
     );
@@ -116,26 +117,26 @@ class App extends Component {
 }
 ```
 
-This way, in the future, if more featured donuts get added to the state (i.e. the bakery's featured donut database), our `App` component will automatically render them all to the page!
+This way, in the future, as the city builds more parks, their names will get added to the state (i.e. the city's featured park database)and our `App` component will automatically render all the featured parks to the page!
 
 **PRO TIP:** If you're ever unsure what's going to be in `this.props`, just `console.log` it out in your render function! (You can also find it in your React dev tools!)
 
 ## Passing functions as props
 
-Let's create a new function within our `<App />` and name it `removeDonut`. We will use it to clear our featuredDonuts state. We will attach this function to a button element inside the`<FeaturedDonut />` component. To gain access to the function inside `<FeaturedDonut /> component, we need to pass a reference to it as a prop:
+Let's create a new function within our `<App />` and name it `removePark`. We will use it to clear our `featuredParks` state. We will attach this function to a button element inside the`<FeaturedPark />` component. To gain access to the function inside `<FeaturedPark />` component, we need to pass a reference to it as a prop:
 
 ```jsx
-  removeDonut = () => {
+  removePark = () => {
     this.setState({
-      featuredDonuts: []
+      featuredParks: []
     })
   };
 
   render() {
     return (
       <div>
-        {this.state.featuredDonuts.map(flavour => {
-          return <FeaturedDonut removeDonut={this.removeDonut} name={flavour} />;
+        {this.state.featuredParks.map((parkName, index) => {
+          return <FeaturedPark removePark={this.removePark} name={parkName} index={index}/>;
         })}
       </div>
     );
@@ -144,12 +145,12 @@ Let's create a new function within our `<App />` and name it `removeDonut`. We w
 ```
 
 ```jsx
-class FeaturedDonut extends Component {
+class FeaturedPark extends Component {
   render() {
     return (
       <div>
-        <h1>Today's featured donut is: {this.props.name}</h1>
-        <button onClick={this.props.removeDonut}>Remove Donut</button>
+        <h2>This week's featured park is: {this.props.name}</h2>
+        <button onClick={this.props.removePark}>Remove park</button>
       </div>
     );
   }
@@ -158,33 +159,41 @@ class FeaturedDonut extends Component {
 
 ### Passing functions with parameters
 
-Our `<FeaturedDonut />` component is successfully updating state in the parent `<App />` component. However, we are clearing all of our state on any button click. We only want the donut we click on to be removed. Since we are mapping through our state of featured donuts, we can pass the index value as a parameter to our `removeDonut` function. This will force us to change how we pass `removeDonut` as a prop:
+Our `<FeaturedPark />` component is successfully updating state in the parent `<App />` component! However, it makes more sense for each button to clear only the park it's attached to from the App's state. Since we are mapping through our state of featured parks, we can pass the index value as a parameter to our `removePark` function. This will force us to change how we pass `removePark` as a prop:
 
 ```jsx
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      featuredDonuts: ["PB & J", "Apple Cinnamon", "Double Chocolate"]
+      featuredParks: ["Sunnybrook", "Trinity Bellwoods", "Cherry Beach"]
     };
   }
 
-  removeDonut = index => {
-    const oldDonuts = [...this.state.featuredDonuts];
-    const updatedFeaturedDonuts = oldDonuts.filter((item, i) => i !== index);
+  removePark = index => {
+    // create a new array from the featuredParks in state
+    const oldParks = [...this.state.featuredParks];
+    // go through the oldParks array checking the index of the item to be removed against the iterator for this filter method
+    // if the index of the item to be removed is NOT equal to the iterator for this filter method, put it in the updatedFeaturedParks array
+    // otherwise, if the index is the same as the iterator, get rid of that entry
+    const updatedFeaturedParks = oldParks.filter((name, i) => i !== index);
+    // filter returns a new array, so we can use the return from the filter method to update our app's state
     this.setState({
-      featuredDonuts: updatedFeaturedDonuts
+      featuredParks: updatedfeaturedParks
     });
   };
 
   render() {
     return (
       <div className="App">
-        {this.state.featuredDonuts.map((flavour, index) => {
+        {this.state.featuredParks.map((parkName, index) => {
           return (
-            <FeaturedDonut
-              removeDonut={() => this.removeDonut(index)}
-              name={flavour}
+            // here, we're asking the removePark function inside FeaturedPark 
+            // to only run when the button is clicked
+            // this way, we can include an argument
+            <FeaturedPark
+              removePark={() => this.removePark(index)}
+              name={parkName}
             />
           );
         })}
@@ -194,18 +203,12 @@ class App extends Component {
 }
 ```
 
-A few significant changes took place here so let's break them down:
-
-- We pass an arrow function inline with our custom function `removeDonut` as the return value. This way, we can include the index as an argument.
-- In `removeDonut` we are making a copy of our state array using the spread operator and storing it in a new variable because we need to treat React state as immutable. 
-- We filter through the copied array and return only the array item that matches our condition.
-- `filter()` returns a new array and we can update our state with that new array from our `filter` function.
 ## Props and destructuring
 
-So far our components have been fairly lightweight with only a few props. This won't always be the case and when it's not, we can take advantage of object destructuring to help improve our component readability. Let's imagine that our props object looks like the following:
+So far our components have been fairly lightweight with only a few props. This won't always be the case. When we have lots of props, we can take advantage of object destructuring to help improve our component readability. Let's imagine that our props object looks like the following:
 
-```javascript
-props = {
+```js
+const props = {
   author: {
     name: "Margaret Atwood",
     location: {
@@ -213,43 +216,32 @@ props = {
       province: "Ontario"
     }
   },
-  review: "",
+  review: "Really good at writing books.",
   date: "January 14, 1988"
 };
 ```
 
 ```jsx
-const authorDetails = props => {
-  return (
-    <div>
-      <h1>{props.author.name}</h1>
-      <h2>{props.author.location.city}</h2>
-      <p>{props.review}</p>
-    </div>
-  );
+class AuthorDetails extends Component {
+  render(){
+    return (
+      <div>
+        <h1>{this.props.author.name}</h1>
+        <h2>{this.props.author.location.city}</h2>
+        <p>{this.props.review}</p>
+      </div>
+    );
+  }
 };
 ```
 
-With destructuring, we can remove the need to specify the props keyword:
-
-```jsx
-const AuthorDetails = ({ author, review }) => {
-  return (
-    <div>
-      <h1>{author.name}</h1>
-      <h2>{author.location.city}</h2>
-      <p>{review}</p>
-    </div>
-  );
-};
-```
-
-Destructuring works similarly in complex components, the main difference is that we will destructure our props within the `render()` method:
+We can destructure our props within the `render()` method:
 
 ```jsx
 class AuthorDetails extends Component {
-  render() {
+  render(){
     const { author, review } = this.props;
+    
     return (
       <div>
         <h1>{author.name}</h1>
@@ -258,7 +250,7 @@ class AuthorDetails extends Component {
       </div>
     );
   }
-}
+};
 ```
 
 ## So what's the difference between state and props?

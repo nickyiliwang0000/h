@@ -30,7 +30,7 @@ The `this` keyword represents our `Button` component so we can think of our `han
 ```jsx
 class Button extends Component {
 
-  handleClick() {
+  handleClick(){
     alert("Item added to the shopping cart!");
   }
 
