@@ -3,43 +3,35 @@
 
 ### Schedule
 
-Week 6: YAY! REACT WEEK!
+Week 7:  A taste of some cool tools to explore 
 
 ```bash
 < Monday />
-DUE Project 4 
-Kickoff!
-Pair project feedback form
+Kickoff
 Stand-ups
-Project 4 presentations
-Introduce project 5
-Making our code more modular
+Project work time
+DUE Project 5 
 LUNCH
-Intro to React
-Breaking our apps into components
+Project 5 presentations
+Introduce project 6
 
 < Tuesday />
-Events
-Lifecycles
-LUNCH
-State vs. props
-Reusable components
+Authentication with Firebase
+Project work time
 
 < Wednesday />
-Using Firebase in React
-Structuring data in Firebase
+Routing
+Hackflix code-along
 SALAD CLUB
 Project work time
 
 < Thursday />
+Unspecified group activity, 10 a.m. (DO NOT BE LATE)
 Project work time
-Optional React code-along
-6pm Fishbowl Session: React
 
 < Friday />
-Mock tech test
+React test
 Feedback form
-Deploying with Firebase
 Project work time
 Show 'n' Tell
 ```
