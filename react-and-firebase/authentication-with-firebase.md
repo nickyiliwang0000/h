@@ -158,6 +158,8 @@ logout  = () => {
 }
 ```
 
+> If it's not working, make sure you have a support email set up.
+ 
 ### Persisting login across refresh
 
 Right now, every time you refresh the page, your application forgets that you were already logged in, which is a bit of a bummer. Firebase has an event listener called `onAuthStateChange` that can check every single time the app loads to see if the user was already signed in last time they visited your app. If they were, you can automatically sign them back in.

@@ -16,6 +16,7 @@ Project 5 presentations
 Introduce project 6
 
 < Tuesday />
+Authentication with Firebase
 Project work time
 
 < Wednesday />
