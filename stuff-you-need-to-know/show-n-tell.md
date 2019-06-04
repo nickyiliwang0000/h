@@ -52,8 +52,6 @@ Label & Labelledby
 
 lodash
 
-particle.js
-
 pointer events
 
 react autocomplete
@@ -144,3 +142,7 @@ CSS text-path
 three.js
 
 typed.js
+
+particle.js
+
+sketch.js

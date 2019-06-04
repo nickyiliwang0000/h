@@ -67,6 +67,30 @@ Allowing users the ability to get to the main content for your site is important
 
 You also want to use CSS to hide the anchor until the user uses they keys to focus on the anchor. For more information checkout this <a href="http://webaim.org/techniques/skipnav/" target="_blank">link</a> for more information
 
+### Mobile navigations
+
+When building out your navigation menu to contain a mobile hamburger menu, we recommend the following HTML structure:
+
+```html
+<header>
+  <nav >
+    <button>MENU Toggle</button>
+    <ul>
+      <li>Menu Item 1</li>
+      <li>Menu Item 2</li>
+      <li>Menu Item 3</li>
+    </ul>
+  </nav>
+</header>
+```
+
+It's important to use native semantic elements when possible. Using `nav` here will inform assistive technologies of the presence of a navigation menu. Additionally, by making the `button` element a child of the `nav`, assistive technologies will associate it's relevance to the navigation when reading the menu content to a user.
+
+> **Accessibility tip**
+>
+> When possible, avoid hiding the `<nav>` element because it provides semantic meaning to assistive-technology. When scanning a website, devices like a screen-reader will inform users that there is a collection of list items that are intended for page navigation. When this element is hidden, that information will not be shared. If you need to hide nav items (to show/hide on click, for example), try to only hide the embedded list elements, leaving the nav element on the page to be visible to screen readers. 
+
+
 ## Dropdown navigations
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
