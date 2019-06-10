@@ -3,9 +3,10 @@
 
 ### Schedule
 
-Week 8: The home stretch 
 
 ```bash
+Week 8: The home stretch 
+
 < Monday />
 Kickoff
 Stand-ups
@@ -40,6 +41,18 @@ Portfolio Work Time
 Final Show ‘n’ Tell
 ```
 
+Next Monday is your final exam. Review topics:
+
+* HTML fundamentals
+* CSS quirks (e.g. browser defaults, ghost space, resets,box-sizing, cross-browser inconsistencies, floats, etc.)
+* JS syntax (e.g. arrow functions, template literals, let vs. const, variable scope, etc.)
+* What modules are and how we use them
+* React lifecycle methods
+* State in React
+* Complex and simple components
+* Basic Firebase methods
+* git commands
+* Definitions including abbreviations (e.g. ECMAScript, AJAX, JSX etc.)
 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Spring Bootcamp: (event)".
