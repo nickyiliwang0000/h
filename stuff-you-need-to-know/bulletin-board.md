@@ -41,11 +41,13 @@ Portfolio Work Time
 Final Show ‘n’ Tell
 ```
 
-Next Monday is your final exam. Review topics:
+Next Monday is your final exam. 25 multiple choiced questions covering everything we've learned. 
+
+Specific review topics:
 
 * HTML fundamentals
 * CSS quirks (e.g. browser defaults, ghost space, resets,box-sizing, cross-browser inconsistencies, floats, etc.)
-* JS syntax (e.g. arrow functions, template literals, let vs. const, variable scope, etc.)
+* JS syntax (e.g. arrow functions/other ways of declaring functions, template literals, let vs. const, variable scope, etc.)
 * What modules are and how we use them
 * React lifecycle methods
 * State in React

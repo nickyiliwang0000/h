@@ -17,7 +17,7 @@ Choose a portfolio site design that:
 * does NOT have **any** HTML or CSS in it (PSD only)
 * no recent grad has used (check the [past portfolio themes doc](https://docs.google.com/spreadsheets/d/1ZQqQnn-gSbyRlk_Au_MRoRsttsgy4BRdRnldnoclt6I/edit#gid=0)) 
 
-Submit your first, second, and third choice to Fatima by 1 p.m. on June 13th. She is aiming to have everyone's approved by 6 p.m. on the same day.
+Submit your first and second choices to Fatima by email (fatima@hackeryou.com) by 1 p.m. on June 13th. She is aiming to have everyone's approved by 6 p.m. on the same day.
 
 Once Fatima has approved your design, she'll update the past portfolio themes doc to reflect your choice.
 
@@ -50,7 +50,7 @@ We'll do group critiques/QA before demo night to catch any weirdness.
 * Site is responsive and uses media queries
 
 ## Submitting your project
-1. Submit your top three theme choices to Fatima for approval by June 13th at 1 p.m. using the [submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+1. Submit your top two theme choices to Fatima for approval by June 13th at 1 p.m. via email (fatima@hackeryou.com).
 2. Deploy your website by June 18th at 1 p.m. and submit the live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
   * It is HIGHLY ENCOURAGED that you start your deploy on Tuesday evening, as Wednesday morning there will not be a lot of time for deployment debugging.
   * Your portfolio site **must** be deployed before the critiques or it will not be eligible for review. 
