@@ -2,8 +2,6 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-
-
 ```bash
 Week 9: CAN YOU BELIEVE?!
 
