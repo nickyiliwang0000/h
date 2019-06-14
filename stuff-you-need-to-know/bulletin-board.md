@@ -81,20 +81,20 @@ JavaScript sees two `tool` variables, one in the global scope and one in `makeAr
 Remember how when a function is run (e.g. `console.log(tool)`), the JavaScript engine looks around for a variable called `tool` in the current execution context ? And if it doesn't find one, it looks for variables in the enclosing execution contexts until it finds one? 
 
 The execution context for `console.log` is as follows:
-| Item | Inventory |
-| ---- | --------- |
-|Variables |	tool (the one defined with `let`)|
-|Functions |	_none_|
-|Other scopes |	`makeArt`,`global execution context`|
-| `this` | Reference to window|
+Item | Inventory
+--- | ---
+Variables |	tool (the one defined with `let`)
+Functions |	_none_
+Other scopes |	`makeArt`,`global execution context`
+ `this` | Reference to window
 
 The execution context for `makeArt` is as follows:
-| Item | Inventory |
-| ---- | --------- |
-| Variables |	tool (the one defined with `const`)|
-| Functions |	_none_|
-| Scopes |	`global execution context`|
-| `this` | Reference to window|
+Item | Inventory
+--- | ---
+Variables |	tool (the one defined with `const`)
+Functions |	_none_
+Other scopes |	`global execution context`
+ `this` | Reference to window
 
 If there hadn't been a `tool` variable declared inside the `makeArt` scope, `console.log()` would have gone looking to the global execution context for `tool`. As it stands, `console.log()` finds what it needs and can perform its task without ever seeing know `const tool = "paintbrush"` exists.
 
