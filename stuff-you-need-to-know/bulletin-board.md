@@ -5,40 +5,40 @@
 
 
 ```bash
-Week 8: The home stretch 
+Week 9: CAN YOU BELIEVE?!
 
 < Monday />
 Kickoff
-Stand-ups
-Project Work Time
-Blog Post #3 Due
+Final exam
+Portfolio site should be deployed today!
+Project/Portfolio/Resume work time
 
 < Tuesday />
-Project Work Time
-Lunch ‘n’ Learn - Career Planning with Miguel Bautista
+Resumes Due - 10am
+DUE Project 7 (portfolio) - 1pm
+LUNCH
+Portfolio critiques
+Project/Portfolio/Resume work time
+Demo Night presenter practice - 4pm
 
 < Wednesday />
-DUE Project 6 - 10am
-Project 6 presentations
-Introduce final project
-Group React project feedback form
-LAST SALAD CLUB ;-;
-Resume & Cover Letter Lesson
-Project Clean-Up/Resume Work Time
+Demo Night presenter practice - 10pm
+Project/Portfolio/Resume work time
+HelpCue closes at 1pm….forever! ;-;
+Demo Night setup - 4pm
+Demo Night guests arrive ~ 5:30pm!
+Demo Night presentation ~ 7pm
 
 < Thursday />
-Project Clean-Up/Resume Work Time
-Portfolio Theme Due for Approval
+Industry Day brief and practice @ 10am
 LUNCH
-Soft Skills with Sarah & Charlotte
-Extra-Curricular: Design Fishbowl - 6pm to 8pm
+Tech Interview Prep @ 2pm
 
 < Friday />
-Mock Tech Test
-Feedback Form
-Week 9 (and beyond) Overview
-Portfolio Work Time
-Final Show ‘n’ Tell
+Industry Day practice - 10am
+Industry Day setup - 1pm
+Industry Day guests arrive ~ 2:30pm
+Dinner & a very Normal graduation ceremony ~ 6pm
 ```
 
 Next Monday is your final exam. 25 multiple choiced questions covering everything we've learned. 
