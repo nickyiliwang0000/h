@@ -83,17 +83,17 @@ Remember how when a function is run (e.g. `console.log(tool)`), the JavaScript e
 The execution context for `console.log` is as follows:
 Item | Inventory
 --- | ---
-Variables |	tool (the one defined with `let`)
-Functions |	_none_
-Other scopes |	`makeArt`,`global execution context`
+Variables | tool (the one defined with `let`)
+Functions | _none_
+Other scopes | `makeArt`,`global execution context`
  `this` | Reference to window
 
 The execution context for `makeArt` is as follows:
 Item | Inventory
 --- | ---
-Variables |	tool (the one defined with `const`)
-Functions |	_none_
-Other scopes |	`global execution context`
+Variables | tool (the one defined with `const`)
+Functions | _none_
+Other scopes | `global execution context`
  `this` | Reference to window
 
 If there hadn't been a `tool` variable declared inside the `makeArt` scope, `console.log()` would have gone looking to the global execution context for `tool`. As it stands, `console.log()` finds what it needs and can perform its task without ever seeing know `const tool = "paintbrush"` exists.
