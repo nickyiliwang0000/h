@@ -84,16 +84,17 @@ The execution context for `console.log` is as follows:
 
 Item | Inventory
 --- | ---
-Variables | tool (the one defined with `let`)
+Variables | `tool` (the one defined with `let`)
 Functions | _none_
 Other scopes | `makeArt`,`global execution context`
 `this` | Reference to window
+
 
 The execution context for `makeArt` is as follows:
 
 Item | Inventory
 --- | ---
-Variables | tool (the one defined with `const`)
+Variables | `tool` (the one defined with `const`)
 Functions | _none_
 Other scopes | `global execution context`
 `this` | Reference to window
