@@ -20,7 +20,7 @@ Project/Portfolio/Resume work time
 Demo Night presenter practice - 4pm
 
 < Wednesday />
-Demo Night presenter practice - 10pm
+Demo Night presenter practice - 10am
 Project/Portfolio/Resume work time
 HelpCue closes at 1pm….forever! ;-;
 Demo Night setup - 4pm
