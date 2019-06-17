@@ -1,3 +1,15 @@
+<!-- Student takeaway -->
+<!-- By the end of this lesson, the student should know:
+- How to use the following advanced CSS selectors:
+    Adjacent (+)
+    Direct child (>)
+    Following (~)
+    Attribute ([])
+    Checked (:checked)
+    Not (:not)
+    First letter and line (::first-letter, ::first-line)
+-->
+
 # Advanced CSS selectors
 
 By now, we have become pretty comfortable with the following selectors:
@@ -14,27 +26,48 @@ Compatibility and examples of each can be found in this [excellent article](http
 Download [adv-selector-playground.zip](https://hychalknotes.s3.amazonaws.com/adv-selector-playground.zip) for this lesson.
 
 ## Adjacent selectors
-Putting `+` between two selectors targets the second element **only when**  it appears in the markup directly after the first element. This can be handy when you are trying to pad text, but only when it comes after an image element.
+Putting `+` between two selectors targets the second element **only when**  it appears in the markup directly after the first element. For example, this can be useful when you want to add padding to any text on a page which comes directly after an image.
 
 ```css
-img + p{
-  padding-right:10px;
+img + p {
+  padding-right: 10px;
 }
 ```
-This rule will target all images that come after paragraphs.
+This rule will target all paragraphs which come after images.
 
 ## Direct child selector
-Putting `>` between two selectors targets the second element **only when**  it is a child of the first element. No other instances of that second element will be selected, nor will any other children of that parent.
+Putting `>` between two selectors targets the second element **only when**  it is a _direct child_ of the first element - that is to say, the second element is nested immediately inside the parent and not any more layers deep (as opposed to the more general parent-child selector). No other instances of that second element will be selected, nor will any other children of that parent.
+
+Take a look at the following HTML:
+
+```html
+<div class="container">
+  <article class="anElement">
+    <h2>Lorem ipsum</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita?</p>
+
+    <section class="anElement">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptatum.</p>
+    </section>
+  </article>
+</div>
+
+<aside class="anElement">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, earum.</p>
+</aside>
+```
+
+We could write the following CSS:
 
 ```css
-.parent > .child {
-  font-size:20px;
+.container > .anElement {
+  margin: 20px;
 }
 ```
-This will target everything with a class of `child` inside the element with a class of `parent`.
+This will target everything with a class of `anElement` that is directly inside an element with a class of `container`. In our above HTML, that means we will be applying 20px of margin only to the `article` with a class of `anElement`, but not to the `section` or the `aside`.
 
 ## Following selector
-Putting `~` between two selectors targets every instance of the second element that appears in the markup after the first element.
+Putting `~` between two selectors targets all instances of the second element which appear in the markup after the first element, and share the first element's parent. This is also called the _general sibling selector_.
 
 ```css
 img ~ p {
@@ -44,11 +77,7 @@ img ~ p {
 
 This will select every paragraph that appears in the markup after an image tag, regardless of whether it is directly after the image tag or a couple paragraphs down.
 
-### Will the following selector work when the following element is nested inside of a sibling element?
-
-No! The element must be a direct sibling to the following selector. If we have an element that fits the following selector rule, but it is a sibling's child, the styles will not be applied. 
-
-<!-- Try it in [this CodePen]()! -->
+Note that the following selector won't work if the element you're targeting is nested inside of a sibling element; it must be a direct sibling to the first element. If we have an element that fits the following selector rule, but it is a sibling's child, the styles will not be applied.
 
 ## Attribute selectors
 
@@ -76,7 +105,7 @@ Kind of uninspired on it's own, but we can use this selector in conjunction with
 
 Check out [this CodePen](https://codepen.io/hackeryou/pen/VqGKea) for an example.
 
-##More pseudo selectors
+## More pseudo selectors
 
 ### `:not()`
 

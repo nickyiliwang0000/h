@@ -7,7 +7,7 @@
 
 # Advanced array methods
 
-The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. It's the idea that a developer should have the proper tools (functions) on hand to accomplish a task.
+The methods and libraries we will be looking at in this section are part of a programming paradigm called _functional programming_. It's the idea that a developer should have the proper tools (i.e. functions) on hand to accomplish a task.
 
 ## Working with data
 
@@ -52,12 +52,12 @@ const addMovieGenre = function(array){
 ```
 
 ### More native methods
-The following methods are included in JavaScript (among others) to help sort data: `.filter()` `.map()` and `.reduce()`.
+The following methods are included (among others) in JavaScript to help sort data: `.filter()` `.map()` and `.reduce()`.
 
 <!-- `.map()`, `.filter()` and `.reduce()` are considered pure functions.  -->
 Each of these methods iterates over an array or object in a slightly different way. But two things all these methods have in common are:
 1. each one uses a callback function to define the task to be performed on the data 
-1. each one returns a new array instead of changing the array provided to it
+1. each one returns something (an array or a value) instead of changing the array provided to it
 
 #### `.map()`
 We give the `.map()` method an array and a set of directions (i.e. a **callback function**) about what to do with each item in that array. The `.map()` method then gives us back (i.e. **returns**) an array of each item with the thing done to it. Because it returns an array, it's smart to store the return in a variable.
@@ -121,12 +121,12 @@ console.log(ofAge);
 
 ```
 
-**Filter titles longer than 8 characters:**
+**Filter song titles longer than 8 characters:**
 
 ```js
-const posts = ["Pain", "Sweetness", "Work", "The Middle", "I Will Steal You Back"];
+const songs = ["Pain", "Sweetness", "Work", "The Middle", "I Will Steal You Back"];
 
-const longTitles = posts.filter((value) => {
+const longTitles = songs.filter((value) => {
   return value.length >= 8;
 });
 
@@ -148,7 +148,8 @@ const sum = nums.reduce((total, integer) => {
 console.log(sum)
 // 20
 ```
-Similar to `.map()`, `.filter()`, and `.forEach()`, the `.reduce()` function expects a callback function as an argument: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used insinde of the function - kind of like `i` in a `for` loop.
+
+Similar to `.map()`, `.filter()`, and `.forEach()`, the `.reduce()` function expects a callback function as an argument: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used inside of the function - kind of like `i` in a `for` loop.
 
 You can also use `.reduce()` on non-numbers:
 
@@ -207,6 +208,6 @@ reduce([🍿, 🍳], eat)
 * [Ramda](http://ramdajs.com/0.18.0/index.html) - A library of functional programming methods
 * [LoDash](https://lodash.com/) - Similar data transformation library to Underscore.js
 
-## Filtering exercise
+## Function methods code-along
 
 To further practice, let's use jQuery and these new methods to populate this app. [Download the exercise here](https://hychalknotes.s3.amazonaws.com/functional-methods-codealong.zip).

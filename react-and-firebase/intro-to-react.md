@@ -82,32 +82,76 @@ import logo from './logo.svg';
 // CSS for the `App` component
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
         </p>
-      </div>
-    );
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+As you can see, `App()` is a function. We're going to refactor this function to be a class, like this:
+
+```js
+//App.js
+
+// a couple of functions from the React library
+import React, { Component } from 'react';
+
+// an image from `./logo.svg` 
+import logo from './logo.svg';
+
+// CSS for the `App` component
+import './App.css';
+
+class App extends Component{
+  render(){
+      return (
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+          </header>
+        </div>
+      );
   }
 }
 
 export default App;
 ```
 
-The `App` component is a `class` that extends the `Component` class from React. This class has a `render` method, and inside the render method we define the HTML we want to show on the page. But what looks like HTML there... is actually not HTML! Weird, right? It's something called _JSX_ (JavaScript XML) and we'll talk about it more at the end of this lesson.
+Here, `App` is a class that extends the `Component` class from React, which has a `render` method. Inside the `render` method we define the HTML we want to show on the page. But what looks like HTML there... is actually not HTML! Weird, right? It's something called _JSX_ (JavaScript XML) and we'll talk about it more at the end of this lesson.
 
 Enough talk! Let's get this app running and create our first component. In order to start everything, we need to use the `npm start` command on our command line. Make sure you are **inside** the folder Create React App made for you, then run `npm start`.
 
 ### What is a component?
 
-A _component_ is a small reusable chunk of code that is usually responsible for rendering one piece of UI. A React application can contain hundreds of components that render each other and interact with each other thus composing the UI of your application. 
+A _component_ is a small reusable chunk of code that is usually responsible for rendering **one** piece of the user interface. A React application can contain hundreds of components that render each other and interact with each other thus composing the UI of your application. 
 
 Let's make some of our own components. Start by creating a new file called `Header.js` in the `src` folder. 
 
@@ -120,7 +164,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>My header!!</h1>
+        <h1>Welcome to the Toronto Parks' website</h1>
       </header>
     )
   }
@@ -132,6 +176,7 @@ export default Header;
 Go back to `App.js` and import our new component like this:
 
 ```javascript
+//App.js
 import Header from './Header.js';
 ```
 
@@ -144,16 +189,42 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
       </div>
     );
   }
 }
 ```
+Let's get that default header element out of there:
 
-Try making a new component called `Footer` and add it to the bottom of the `div` with a class of `App`.
+```js
+//App.js
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header />
+      </div>
+    );
+  }
+}
+
+```
+
+Try making a new component called `Footer` and add it inside `div.App`.
 
 ### JSX 
 
@@ -226,9 +297,10 @@ One of the incredibly powerful features of React is the ability to organize and 
 
 For example, let's say we wanted to create a search bar component for our application.
 
-We'd create a new `SearchBar` component above your `App` component:
+We'd create a new `SearchBar.js` file:
 ```jsx
-//App.js
+//SearchBar.js
+
 class SearchBar extends React.Component {
   render() {
     return (
@@ -236,45 +308,46 @@ class SearchBar extends React.Component {
     )
   }
 }
-
-class App extends React.Component { 
-  // All that App stuff
-}
 ```
 
-And then you can nest it within your `App` component like so:
+And then you can nest it within your `Header` component like so:
 
 ```jsx
-//App.js
-class App extends React.Component {
+// Header.js
+import React, { Component } from 'react';
+import SearchBar from './SearchBar';
+
+class Header extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
+      <header>
+        <h1>Welcome to the Toronto Parks' website</h1>
         <SearchBar />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </header>
     )
   }
 }
+
+export default Header;
 ```
 
-Your `SearchBar` component should now appear inside your `App` component in the browser!
+Your `SearchBar` component should now appear inside your `Header` component in your app!
 
 What's really great about mixing and matching components this way is that it allows for a ton of code re-use. If we want the same `SearchBar` to appear in ten different places on the website, we don't have to rewrite the code for it ten times - we just have to insert the `<SearchBar />` component anywhere we need it!
 
 Also - you'll notice that when we write out the `<SearchBar />` component that we include a `/` at the end. This is because our React elements are always **self-closing**. Just like in HTML and JSX, any time we create a component that doesn't have any children, we let React know by adding a `/`.
 
 #### Component kitchen - cook 'em up!
-Practice making a few new components of your own choosing and nesting them inside your `<App>` component. They can do whatever you want - this is just to practice and get used to the class component syntax.
+Practice making a few new components of your own choosing and nesting them inside each other. They can do whatever you want - this is just to practice and get used to the class component syntax.
 
 ### Styling in React 
-React is fairly new and there are lots of opinions on the best way to style components. Inline styling, one big CSS file, a CSS file for each component, a library like [CSS Modules](https://github.com/css-modules/css-modules) or [any of these other ones](https://github.com/MicheleBertoli/css-in-js#features).
+There are lots of opinions on the best way to style React components. Inline styling, one big CSS file, a CSS file for each component, a library like [CSS Modules](https://github.com/css-modules/css-modules) or [any of these other ones](https://github.com/MicheleBertoli/css-in-js#features).
 
 CSS-preprocessors further complicate that discussion.
+
 **We are only going to require CSS files in the bootcamp.**
+
+For your projects, we do not allow inline styling and require that there be only one CSS file. How you get there is up to you.
 
 #### Sass and Create React App
 In order to use Sass when working with Create React App, we need to add a few things.  You can find a write up of this in [the documentation for Create React App](https://facebook.github.io/create-react-app/docs/adding-a-sass-stylesheet#docsNav). 
@@ -321,6 +394,7 @@ Now that both of those are installed, we need to change the `package.json` file 
   }
 ```
 Now, when we use the `npm start` command, the `npm-run-all` package will set up our local server and watch our JS and our chokidar will watch our Sass files. -->
+
 #### Animations and transitions
 To animate components, the React documentation suggests [React Motion](https://github.com/chenglou/react-motion) and [React Transition Group](https://reactcommunity.org/react-transition-group/).
 

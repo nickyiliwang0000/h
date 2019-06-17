@@ -40,76 +40,76 @@ _Reference_ the value of the variable we just created by typing `email`. What do
 To assign a value to a variable, we use the `=` operator:
 
 ```js
-let email;
-email = "hello@email.com";
+let anotherEmail;
+anotherEmail = "hello@email.com";
 ```
 *The value on the right hand side is stored in the variable on the left hand side.*
 
 Once you have declared a variable with `let` you don't need to keep using that keyword when you're referencing that variable.
 
-Now type `email` into your console again:
+Now type `anotherEmail` into your console again:
 ```js
-email
+anotherEmail
 ```
 
-We have assigned a value to `email` which we can access by using that value's name.
+We have assigned a value to `anotherEmail` which we can access by using that value's name.
 
 ```js
-email
+anotherEmail
 // "hello@email.com"
 ```
 
 Variables can also be declared and assigned a value in a single line of code:
 ```js
-let email = "hello@email.com";
+let threemail = "hiAgain@email.com";
 // undefined
 ```
 
 Why did the above example return undefined?   
-Because `let email = "hello@email.com";` is not an expression, it's a _statement_. The REPL evaluated it and came up with `undefined`. 
+Because `let threemail = "hiAgain@email.com";` is not an expression, it's a _statement_. The REPL evaluated it and came up with `undefined`. 
 
-Like expressions, **statements** give instructions to the computer but statements *don't always* return a value (while expressions *always* do).
+Like expressions, statements give instructions to the computer but statements don't always return a value (while expressions always do).
 
 > Remember that an **expression** would be something like `5+7`. Type this in your console and you will see that it returns a value of `12`. 
 
 We've already seen that *referencing* a variable name returns its value. What happens when you _assign_ a variable to a second value without using one of the declaration keywords? 
 
-In other words, what do you think `email` will return here:
+In other words, what do you think `yetAnotherEmail` will return here:
 ```js
-let email = "hello@email.com";
-email = 'hi@email.com';
-email;
+let yetAnotherEmail = "hello@email.com";
+yetAnotherEmail = 'hi@email.com';
+yetAnotherEmail;
 ```
 > Yep! It returns the second value, because `=` (re)assigns the value of the variable.
 
-Notice that we've used double quotes **and** single quotes here. It doesn't matter which we choose, but we should stay consistent within our program:
+Notice that we've used both double and single quotes here. It doesn't matter which we choose, but we should stay consistent within our program:
 ```js
-let email = "hello@email.com";
-email = "hi@email.com";
-email;
+let yetAnotherEmail = "hello@email.com";
+yetAnotherEmail = "hi@email.com";
+yetAnotherEmail;
 ```
 #### `const`
 
 Along with `let` we can use `const` to declare variables. `const` will created a variable that is _read only_, meaning that you cannot change the value of it once it has been defined.
 
 ```js
-const email = "sally@test.com";
-email = "bryan@test.com";
+const electronicMail = "sally@test.com";
+electronicMail = "bryan@test.com";
 ```
 
-This will throw an error `TypeError: invalid assignment to const 'email'`. 
+This will throw an error `TypeError: invalid assignment to const 'electronicMail'`. 
 
 For the most part in our JavaScript, we will be able to declare all our variables with `const`. When a case arises that forces us to use `let` we will *let* you know why! The reason we can use `const` for most every declaration is that we will not be reassigning values very often. So we can make our variables "safer" by creating constant version of them, reducing the possibility of them being overwritten.
 
 #### `var`
-`var` is a less-specific way of declaring variables and can be unpredictable in your programs. It's being phased out in favor of `let` and `const` so somtimes you may see it in older code examples. We are only telling you about it so you know it exists. Don't use it!
+`var` is a less-specific way of declaring variables and can be unpredictable in your programs. It's being phased out in favor of `let` and `const`; while sometimes you may see it in older code examples, we are only telling you about it so you know it exists. Don't use it!
 
 ### Variable naming conventions
-* Variables can't contain spaces. Start with a non-numeric character (letter, `_`, or `$)` followed by any character. (e.g. `let 23people` is invalid)
-* Use camelCase to separate words. (e.g. `let myName`)
+* Variables can't contain spaces. They must start with a non-numeric character (letter, `_`, or `$)`, followed by any character. (e.g. `let 23people` is invalid).
+* Use camelCase to separate words. (e.g. `let myName`).
 * JavaScript is case sensitive so variable names are also case sensitive.
-* Another convention is to use underscores to_separate_words. This is common in other programming languages (like PHP) but is generally avoided in JavaScript.
-* When naming a variable, it's best to give it a descriptive name. (e.g. `let username` instead of `let u`)
+* Using underscores to_separate_words is a common convention in other programming languages (like PHP) but is generally avoided in JavaScript.
+* When naming a variable, it's best to give it a descriptive name. (e.g. `let userName` instead of `let u`).
 
 Consider the following code: 
 
@@ -165,7 +165,7 @@ This is how you use exponents in Javascript:
 2 ** 5
 ```
 
-> A fun gotcha! When numbers are contained within quotes, they are considered **strings** they can't be used to perform arithmetic operations.
+> A fun gotcha! When numbers are contained within quotes, they are considered **strings**, meaning they can't be used to perform arithmetic operations.
 
 ```js
 '2' + 2
@@ -240,23 +240,23 @@ If you want to concatenate strings together you can use the `+` operator.
 const name = "Shauna";
 const job = "bus driver";
 const sentence = name + " works for the city as a " + job;
-console.log(sentence);// "Shauna works afor the city as a bus driver."
+console.log(sentence);// "Shauna works for the city as a bus driver."
 ```
 
 To create a template literal string, we use the backtick `` ` `` in place of the quotes. 
 
 ```js
-const name = `Shauna`;
-const job = `bus driver`;
+const name = `Rukmini`;
+const job = `streetcar driver`;
 ```
 
 Strings and template literals behave in exactly the same way, but backticks make concatenation a lot easier. 
 
 ```js
-const name = `Shauna`;
-const job = `bus driver`;
+const name = `Rukmini`;
+const job = `streetcar driver`;
 const sentence = `${name} works for the city as a ${job}`;
-console.log(sentence);// "Shauna works afor the city as a bus driver."
+console.log(sentence);// "Rukmini works afor the city as a streetcar driver."
 ```
 
 Notice the `${}` syntax inside of the string, this is a _template expression_. It allows us to create a template for our strings; the browser will evaluate the `${}` expression and leave the proper value in its place at runtime. This makes concatenating large strings a lot more enjoyable.
@@ -266,7 +266,7 @@ _Whitespace_ refers to blank characters and includes spaces, tabs, and line brea
 
 Note how a spaces were added to the strings in the concatenation examples above.
 
-**Exercise**: In the statement `let email = "hello@email.com";`, which white spaces are optional and which are not?
+**Exercise**: In the statement `let youveGotEmail = "meg@aol.com";`, which white spaces are optional and which are not?
 
 ## Bonus: multiline template literal strings
 
@@ -279,9 +279,9 @@ console.log(multi);
 You'd have to include the `\n` new line character. If you tried to put that on two lines:
 
 ```js
-const multi = "This is a \n 
+const multiForReal = "This is a \n 
 multiline string";
-console.log(multi);
+console.log(multiForReal);
 ```
 
 It would throw a very descriptive error `SyntaxError: "" string literal contains an unescaped line break`. 

@@ -5,9 +5,9 @@
 - Refactor a section of code into a new component
 -->
 
-# Breaking out app into components
+# Breaking our app into components
 
-One of the tenets of efficient, modern programming is to avoid repeating yourself. This improves code maintainability, readability, and reusability, and decreases complexity. The less complex our code is, the easier bugs will be to track down and squash!
+One of the tenets of efficient, modern programming is to avoid repeating yourself. This improves code maintainability, readability, and reusability, and decreases complication. The less complicated our code is, the easier bugs will be to track down and squash!
 
 Code reusability is one of the huge benefits we gain from building our app using the React library. Our components can be reused across our project, which means less work for us (and fewer files to go through when bug hunting).
 
@@ -71,15 +71,16 @@ class App extends Component {
       <div>
         <h1>Adopt Us!</h1>
         <div className="pet">
+          <h2>{animals[0].name}</h2>
           <p>Type: {animals[0].type}</p>
           <p>Size: {animals[0].type}</p>
-          <img src={animals[0].picture} alt={`An adorable ${animals[0].type}`} />
+          <img src={animals[0].picture} alt={`An adorable ${animals[0].type}.`} />
         </div>
         <div className="pet">
           <h2>{animals[1].name}</h2>
           <p>Type: {animals[1].type}</p>
           <p>Size: {animals[1].size}</p>
-          <img src={animals[1].picture} alt={`An adorable ${animals[1].type}`}/>
+          <img src={animals[1].picture} alt={`An adorable ${animals[1].type}.`}/>
         </div>
         // another .pet div for every pet ...
       </div>
@@ -93,9 +94,9 @@ As you can see, we have to repeat the `div.pet` element for every animal inside 
 ## Your new best friend in React: `.map()`
 JavaScript to the rescue! In the past, when we have wanted to iterate over a bunch of items inside of an array and do something to them, what did we use? `.map()`! (Okay, we used a `for` loop sometimes, but in React we're going to stick with `map()`.)
 
-Looping over items to do stuff to them works just as well in React as it did in jQuery. Remember that inside of JSX we can write any vanilla JS we want by escaping it with curly brackets `{}`. We can add a `.map` right inside the `render` method and have it print out all of our animals!
+Looping over items to do stuff to them works just as well in React as it did in jQuery. Remember that inside of JSX we can write any vanilla JS we want by escaping it with curly brackets `{}`. We can add a `.map()` right inside the `render` method and have it print out all of our animals!
 
-Let's refactor our JSX to incorporate a `.map` instead of manually typing out JSX for each animal:
+Let's refactor our JSX to incorporate a `.map()` instead of manually typing out JSX for each animal:
 
 ```jsx
 // App.js
@@ -157,7 +158,7 @@ class App extends Component {
 }
 ```
 
-When we want to work on the `Animals Featured for Adoption` section, we have to dig a bit through our `App` component in order to find that section. Not only that, but what happens if we want to feature our pets in different parts of our app? We'd have to copy this code and paste it somewhere else. This isn't good because then if we need to change it, we have to change it in **_both_** places!
+When we want to work on the "Animals Featured for Adoption" section, we have to dig a bit through our `App` component in order to find that section. Not only that, but what happens if we want to feature our pets in different parts of our app? We'd have to copy this code and paste it somewhere else. This isn't good because then if we need to change it, we have to change it in **_both_** places!
 
 ## Importing a component 
 So what can we do? Let's create a `PetList` component to hold the JSX information about all of our pets. That way, anywhere we need to print this information to the page, we'll be able to reference it by typing `<PetList />`.
@@ -214,7 +215,7 @@ class App extends React.Component {
   }
 }
 ```
-> Don't forget to import it at the top!
+> Don't forget to import `PetList` at the top!
 
 By breaking `PetList` into its own component, we have made our code more modular, more readable, and more maintainable!
 

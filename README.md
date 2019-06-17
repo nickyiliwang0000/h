@@ -1,10 +1,12 @@
 # Welcome to the new and improved Bootcamp notes!
 Here are your notes, bootcamp studes! We're so glad you're here! If you notice a typo or have an issue with anything in the text, please [create an issue](https://github.com/HackerYou/bootcamp-notes/blob/master/how-to-edit-bootcamp-notes.md)!
 
-## Topics:
-[Stuff you need to know](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know)
-(Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.)
+## Student resources
+* [Stuff you need to know](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know)
+  * (Here's where we'll post the weekly schedule, review topics for tests, and any other ephemera.)
+* [Resources](https://github.com/HackerYou/bootcamp-notes/tree/master/stuff-you-need-to-know/resources-and-cheat-sheets) including a list of what [best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/philosophy-of-best-practices-for-html-and-css.md) means in general and [in the context of your projects](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/best-practices-by-project.md).
 
+## Lesson topics
 [HTML](https://github.com/HackerYou/bootcamp-notes/#html)
 
 [CSS](https://github.com/HackerYou/bootcamp-notes/#css)
@@ -21,10 +23,31 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 [Projects](https://github.com/HackerYou/bootcamp-notes/#projects)
 
-[Fishbowl exercises](https://github.com/HackerYou/bootcamp-notes/#fishbowl-exercises)
+[Extra exercises](https://github.com/HackerYou/bootcamp-notes/#extra-exercises)
 
-## Lesson index:
+## Projects
+Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements. 
 
+Turning in an excellent small project is better than turning in a more ambitious project with lots of bugs. 
+
+>**Complete is better than impressive.**
+
+[Project 1](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
+
+[Project 2](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-02.md)
+
+[Project 3](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-03.md)
+
+[Project 4](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-04.md)
+
+[Project 5](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-05.md)
+
+[Project 6](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-06.md)
+
+[Project 7](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-07.md)
+
+
+## Lesson index
 
 <!-- ## How to submit a pull request
 
@@ -58,7 +81,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [CSS dimensions](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-dimensions.md)
 * [CSS layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-layouts.md)
 * [Display and positioning](https://github.com/HackerYou/bootcamp-notes/blob/master/css/display-and-positioning.md)
-* [Best practices](https://github.com/HackerYou/bootcamp-notes/blob/master/css/best-practices.md)
+* [Philosophy of best practices for HTML and CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/philosophy-of-best-practices-for-html-and-css.md)
 * [Emmet](https://github.com/HackerYou/bootcamp-notes/blob/master/css/emmet.md)
 * [Icons](https://github.com/HackerYou/bootcamp-notes/blob/master/css/icons.md)
 * [Advanced layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-layouts.md)
@@ -85,7 +108,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 
 ### Programming fundamentals
 * [Intro to programming](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-programming.md)
-* [Debugging JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/debugging-javascript.md)
+* [Intro to JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-javascript.md)
 * [Variables](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/variables.md)
 * [Working with JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/working-with-javascript.md)
 * [Programming control flow](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/programming-control-flow.md)
@@ -130,30 +153,10 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
 * [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
 
-## Fishbowl exercises
-* [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/html-and-css-fishbowl-exercises.md)
+## Extra exercises
+* [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/extra-exercises/html-and-css-exercises.md)
 
-* [jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/jquery-fishbowl-exercises.md)
+* [jQuery](https://github.com/HackerYou/bootcamp-notes/blob/master/extra-exercises/jquery-exercises.md)
 
-* [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md)
+* [JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/extra-exercises/javascript-exercises.md)
 
-## Projects
-Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements. 
-
-Turning in an excellent small project is better than turning in a more ambitious project with lots of bugs. 
-
->**Complete is better than impressive.**
-
-[Project 1](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-01.md)
-
-[Project 2](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-02.md)
-
-[Project 3](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-03.md)
-
-[Project 4](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-04.md)
-
-[Project 5](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-05.md)
-
-[Project 6](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-06.md)
-
-[Project 7](https://github.com/HackerYou/bootcamp-notes/blob/master/projects/project-07.md)

@@ -14,7 +14,7 @@
 
 Normally, instructions (i.e. **statements**) in a JavaScript are executed one after the other in the order in which they are written. 
 
-The term _control flow_ describes how a developer might choose to order the statements, regardless of the order in which they appear in the JavaScript file.
+The term _control flow_ describes how a developer might choose to order the execution of statements, regardless of the order in which they appear in the JavaScript file.
 
 An example of control flow is an `if` statement:
 ```js
@@ -48,7 +48,7 @@ Some vocabulary:
 * `condition` will usually be an expression that evaluates to a boolean 
 * `block statement` will be a chunk of code
 
-The whole `else` block is **optional**! If you don't include an `else` block and the condition isn't met, the block statement after the `if` gets ignored.
+The whole `else` block is **optional**! If you don't include an `else` block and the condition isn't met, the block statement after the `if` is ignored and the program moves on without doing anything further there.
 
 ### Block statements
 A _block_ is used to group statements. The block is delimited by a pair of curly brackets `{}`:
@@ -89,7 +89,7 @@ Operator     |  Description
 `<=`| less than or equal to
 
 **Exercise**:
-Compare two values them using the `===` and `!==` operators. 
+Compare two values using the `===` and `!==` operators. 
 
 Compare two values using the `>=` and `<=` operators and then the `>` and `<` operators.
 
@@ -155,6 +155,7 @@ Data type  | Value
 `null` | `false`
 `undefined` | `false`
 any `string`| `true`
+an empty string | false
 the `number` 0 | `false`
 any `number` higher than 0 |`true`
 
@@ -254,7 +255,9 @@ while (i < 10) {
 }
 ```
 
-When `i === 9` the block executes one final time, 9 is printed and `i` is incremented to 10. The block doesn't execute anymore because the condition is false. However, the value from the last executed expression is returned (that's why `10` has a little arrow beside it).
+When `i === 9` the block executes one final time, 9 is printed and `i` is incremented to 10. The block doesn't execute anymore because the condition is false.
+
+Note that after printing `1` through `9` in your console, there's a `10` with a little arrow beside it. That's not a return, we can't directly capture that value. This is your dev tools console trying to be helpful by printing the last expression it executed.
 
 ## The `break` keyword
 

@@ -19,9 +19,10 @@ Remember that you can discuss font sizes with the designer if you think they are
 * Site is responsive and uses media queries
 * Flexbox is used
 * Sass variables are used
+* All images considered content have descriptive alt text
 * Form is accessible
 * Mobile view provides good user experience
-* All images considered content have descriptive alt text
+* Files, folders & naming conventions followed 
 * Project is organized using Sass partials (minimum 2)
 * Project represents the provided design well
 * Navigation should link to other pages made for the project
@@ -41,37 +42,40 @@ You will also be given marks for your project presentation:
 
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
+
 You can find your assignment [here]().
+
+> Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
 ### Design checklist
 [Here](https://docs.google.com/document/u/1/d/17GYf0CfvD8Mdt4fXXH_03Hc-L-y9V3xLSbO5AIfdK54/edit?usp=sharing) is a checklist that will help perfect your conversion!
 
 ### Design files
 
-**BEACHSTAY**
+**Captured**
 
-[design](https://scene.zeplin.io/project/5c50b7cac990febefb25d600)
+[design](https://scene.zeplin.io/project/5cb78913fae8ad09e8372c93)
 
-[assets](https://hychalknotes.s3.amazonaws.com/beach-final-images.zip)
-
-
-**PLANTED**
-
-[design](https://scene.zeplin.io/project/5c50b079d28a5a6b7aa52283)
-
-[assets](https://hychalknotes.s3.amazonaws.com/planted-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
 
 
-**BAR-ONE** 
+**FunPlace**
 
-[design](https://scene.zeplin.io/project/5c50a5955ab596bf49dd1275)
+[design](https://scene.zeplin.io/project/5cb78ae2e6267e081e91a1df)
 
-[assets](https://hychalknotes.s3.amazonaws.com/bar-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
+
+
+**Mindn'Soul** 
+
+[design](https://scene.zeplin.io/project/5cc747bf7cbe272d01e3698d)
+
+[assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
+
 ## Submitting your project
-You'll be submitting your project via GitHub and posting the link to the repository on Basecamp.
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a name made up of your own first name, then your last name, then `project2`. The way you structure this should match whatever naming convention you pick for your folders, files, classes etc.
+1. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
 

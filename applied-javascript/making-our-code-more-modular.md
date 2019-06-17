@@ -162,7 +162,7 @@ Importing our named export is similar to importing a default export. It looks li
 // app.js
 import { getRandomNumber } from './randomizer.js';
 
-randomNumber(); // Wednesday
+console.log(getRandomNumber()); // 47
 
 ```
 

@@ -8,10 +8,10 @@ We'll have a practice session **Thursday at 4pm** during the week of your presen
 You'll be presenting on your topic for *3-5 minutes*. You definitely do not have to be an expert on the subject but you'll want to gather enough info to tell us:
 what is it
 how - as developers - we would use it
-and most importantly ~why~ we'd use it (beyond just "it's cool!"). 
+and most importantly *why* we'd use it (beyond just "it's cool!"). 
 You'll also want to have samples you've created and/or real life use case examples. You must have sent your topic/pitched your topic if it's not listed here, by Wednesday of your presentation week.
 
-For JS libraries I always ask that you choose one where you can explain what's happening in the code/how it works as opposed to just demoing the samples provided. Again, you'll also tell us what it is, and ~why~ it's useful. ideally you'll show us sample code that you've written and a couple of examples of effects that could be created using the library you chose, in the wild. 
+For JS libraries I always ask that you choose one where you can explain what's happening in the code/how it works as opposed to just demoing the samples provided. Again, you'll also tell us what it is, and **why** it's useful. ideally you'll show us sample code that you've written and a couple of examples of effects that could be created using the library you chose, in the wild. 
 
 Feel free to choose any topic at any time in the Bootcamp - it doesn't need to relate directly to the material covered in the week you're presenting in (aka present JS during HTML review, CSS stuff during react week, whatever!)
 
@@ -31,54 +31,118 @@ Feel free to choose any topic - just make sure you have it approved before you s
 
 ### Available:
 :focus-within
+
 AMP pages
-animate on scroll
+
 anime.js
-brain.js
-chart.js
+
 color-adjust
+
 CSS clip-path
+
 CSS knock-out
-CSS Masks
-CSS shapes
+
 CSS shine
-CSS text-path
-CSS Variables
-CSS-perspective
-Custom cursors
-custom SVGs
-custom tool tips
+
 cycle.js
-DNS
+
 draft.js
-draggable.js
-float-labels
-granim.js
-impress.js
-konami codes
+
 Label & Labelledby
+
 lodash
-mix-blend-mode
-night/dark mode vs day/light mode
-parallax
-particle.js
+
 pointer events
-pose.js
-preloaders
+
 react autocomplete
+
 react dnd
-react joyride
+
 React Native
-reveal.js
-scroll-then-fix
-sticky, Smooth & Active Nav"
+
 stoke-dash
-SVG Animations
-SVG morph
-SweetAlerts
-three.js
+
 touchstart
+
 transition-delay
-typed.js
+
 
 ### Claimed:
+
+Custom Cursors
+
+Konami Codes
+
+Animate on Scroll
+
+CSS Perspective
+
+Parallax scrolling
+
+DNS
+
+night/day mode
+
+granim.js
+
+CORS & its limitations
+
+impress.js
+
+CSS variables
+
+CSS Masks
+
+Browsh
+
+FOUT
+
+React Joyride
+
+SVG Morph
+
+scroll-then-fix
+
+mix-blend-mode
+
+float-labels
+
+CSS shapes
+
+custom SVGs
+
+custom tool tips
+
+chart.js
+
+preloaders
+
+Big O Notation
+
+recursion vs iteration
+
+brain.js
+
+SweetAlerts
+
+custom browser extensions
+
+sticky/smooth/active nav
+
+reveal.js
+
+recursion vs iteration
+
+draggable.js
+
+pose.js
+
+CSS text-path
+
+three.js
+
+typed.js
+
+particle.js
+
+sketch.js

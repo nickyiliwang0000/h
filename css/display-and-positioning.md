@@ -21,7 +21,7 @@ Let's take a look at some markup:
 <div>BLOCK</div>
 ```
 
-How will the above be displayed in the browser? Let's open [displayExample.html](https://hychalknotes.s3.amazonaws.com/displayExample.html) in the browser and check it out. (The elements have a pink background and some margin added to see their shape better.)
+How will the above be displayed in the browser? Let's open [displayExample.html](https://hychalknotes.s3.amazonaws.com/displayExample.html) in the browser and check it out. (The elements have a teal background and some margin added to see their shape better.)
 
 Why do the spans line up beside each other and the divs start on a new line when their contents are almost identical?
 
@@ -101,7 +101,7 @@ This is what we have worked with so far. You won't need to set `position:static;
 
 Open [positionRelative.html](https://hychalknotes.s3.amazonaws.com/positionRelative.html) in your editor and do the following:
 
-1. Set the position of the `div.box` to relative.
+1. Set the position of the `div.text` to relative.
 1. Give the properties `top` and `left` a value of 100px each.
 1. Try a negative left value (-100px).
 1. Replace `top` with `margin-top`. What is the difference?
@@ -116,23 +116,23 @@ Where exactly are `top`, `left`, `right` and `bottom` referring to?
 
 You can position an element with `position:absolute;` exactly where you want it to go. Open [positionAbsolute.html](https://hychalknotes.s3.amazonaws.com/positionAbsolute.html) in your browser and editor. Here we have four `div` tags that are 100px square, and they're all `position:static` (the default).
 
-Go ahead and set `.blueBorder` to `position: absolute;`:
+Go ahead and set `.blueBox` to `position: absolute;`:
 
 ```css
-.blueBorder {
+.blueBox {
     background: rgba(65, 105, 255, 0.7);
     position: absolute;
 }
 ```
 
-What just happened? Where is the `.redBorder`? Where did the picture of meat go?
+What just happened? Where is the `.redBox`? Where did the picture of meat go?
 
 The box with a blue border was set to `position: absolute;` and no longer takes up any space, so the box with the red border bumps itself right up and under the box with the blue border. Since the background of each `div` is not transparent, you can't see any of the box with the red border behind it. If we were to add opacity for all of our `div` elements, what do we see?
 
 Let's use `top` and `left` to position the blue box:
 
 ```css
-.blueBorder {
+.blueBox {
     border: 2px solid rgba(65, 105, 255, 0.7);
     position: absolute;
     top: 500px;
@@ -142,7 +142,7 @@ Let's use `top` and `left` to position the blue box:
 Or `bottom` and `right` values:
 
 ```css
-.blueBorder {
+.blueBox {
     background: 2px solid rgba(65, 105, 255, 0.7);
     position: absolute;
     bottom: 20px;
@@ -153,7 +153,7 @@ Or `bottom` and `right` values:
 We can also use percentages:
 
 ```css
-.blueBorder {
+.blueBox {
     background: rgba(65, 105, 255, 0.7);
     position: absolute;
     width: 5%;
@@ -320,6 +320,9 @@ Try changing the orange box to `z-index:2;`.
 
 ![overlapping squares with green, red, blue, and orange borders](https://hychalknotes.s3.amazonaws.com/z-indexExample2.png)
 
+## Code-along
+Let's see how `postion: relative` and `position: absolute` could be used to elevate a design! Download [relative-absolute-code-along--bootcamp.zip](https://hychalknotes.s3.amazonaws.com/relative-absolute-code-along--bootcamp.zip) and follow along.
+
 ## Exercises
 
 Getting comfortable with the positioning and display properties will help you solve common layout issues. Download [positioningAndFloats.zip](https://hychalknotes.s3.amazonaws.com/positionAndFloats.zip) to help you practice the following concepts:
@@ -335,6 +338,8 @@ Getting comfortable with the positioning and display properties will help you so
 
 There are six exercises, labelled `ex1` to `ex6`.
 
-## Bonus challenge!
+## More exercises
 
-Test your knowledge with this bonus challenge. Recreate Glossier's featured product section! You can download these files to get started: [glossier-featured-section.zip](https://hychalknotes.s3.amazonaws.com/glossier-featured-section.zip).
+* Test your knowledge with this bonus challenge. Recreate Glossier's featured product section! You can download these files to get started: [glossier-featured-section.zip](https://hychalknotes.s3.amazonaws.com/glossier-featured-section.zip).
+
+* Download [poolPartyFloatsExercise.zip](https://hychalknotes.s3.amazonaws.com/poolPartyFloatsExercise.zip) for more practice with floats. Open the answer file in your browser and try to match it!

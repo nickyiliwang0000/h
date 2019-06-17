@@ -7,16 +7,16 @@
 -->
 # Functions
 
-[We said before](https://github.com/HackerYou/bootcamp-notes/blob/791520b13524bf56d557c1e8806ae5f369571b78/programming-fundamentals/debugging-javascript.md) that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language but this is especially true for JavaScript. 
+[We said before](https://github.com/HackerYou/bootcamp-notes/blob/791520b13524bf56d557c1e8806ae5f369571b78/programming-fundamentals/debugging-javascript.md) that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language, but this is especially true for JavaScript. 
 <!-- where, as we'll see, functions can be passed around like any other value. -->
 
-So far we've mostly worked with built-in functions but now it's time to learn how to create your own. 
+So far we've mostly worked with built-in functions; now it's time to learn how to create your own.
 
 The purpose of writing a function to reduce verbosity in your code. Why write a set of instructions multiple times when you can create a function to do the work for you? Repeat less code!
 
 ## Defining a function
 
-A function is _defined_ by giving it a name and the code you would like it to execute, and then **called** by referencing the name at a later point in the code. To define a function, we use the `function` keyword followed by the name of the function. The syntax looks like this:
+A function is _defined_ by giving it a name and the code you would like it to execute, and then _called_ by referencing the name at a later point in the code. To define a function, we use the `function` keyword followed by the name of the function. The syntax looks like this:
 
 ```js
 function nameOfFunction() {
@@ -51,7 +51,7 @@ helloWorld();
 // "Hello there!"
 ```
 
-**Exercise:** Write a function called `sayMyName` that will `alert` your name, then call it.
+**Exercise:** Write a function called `sayMyName` that will `alert` your name, then call the function.
 
 ## Parameters
 
@@ -87,7 +87,7 @@ console.log(result) // 6
 
 1. Here we **define** a function called `add` that takes the parameters `a` and `b` and returns their sum. 
 2. Then we declare a variable in which we **call** the function and **pass** it the **values** `2` and `4` as **arguments**. 
-  * Inside the function, `a` refers to the value `2` and `b` refers to the value `4`. 
+    * Inside the function, `a` refers to the value `2` and `b` refers to the value `4`. 
 3. The variable `result` stores the **return** of the function - the value `6` - which we then console log.
 
 **Exercise:** Edit your `sayMyName` function to accept one parameter called `name`, then call it. It should alert the name that was passed in as an argument. 
@@ -118,14 +118,14 @@ num; //undefined
 If we use a `return` statement, we can make the function a lot more useful.
 
 ```js
-const add = function(a,b) {
+const adding = function(a,b) {
   return a+b;
 }
 ```
 
 ```js
-const num = add(1,2);
-num; //3
+const number = adding(1,2);
+number; //3
 ```
 ## Arrow functions
 Arrow functions are a newer syntax for creating functions (created in ES6). Arrow functions are not going to replace the function declarations and expressions we know and love, but we will be seeing them more and more. This is the basic arrow function syntax:

@@ -7,11 +7,14 @@
 
 # What is GitHub Pages?
 
-GitHub Pages is a tool you can use to create live sites hosted by GitHub directly from your GitHub repos!
+GitHub Pages is a service you can use to host your GitHub projects directly from your GitHub repository.
 
-You can make a website for your user account, an organization you belong to, or for an individual project. You get **one** top-level site per GitHub account (or organization) and unlimited project sites. This means that you can have `studentname.github.io` and `studentname.github.io/coolproject` at the same time, but you can't have `studentname.github.io` and `coolproject.github.io`.
+There are two types of GitHub Pages: User/Organization Pages sites and Project Pages sites. So, you can make a website for your user account, an organization you belong to, or for an individual project. 
+
+You get **one** top-level site per GitHub account (or organization) and unlimited project sites. This means that you can have `studentname.github.io` and `studentname.github.io/coolproject` at the same time, but you can't have `studentname.github.io` and `coolproject.github.io`.
 
 ## How to create a site from a repo
+
 Let's start with a new site for an individual project. There are two options:
 
 * generate a site with one of the pre-built themes
@@ -19,38 +22,41 @@ Let's start with a new site for an individual project. There are two options:
 
 We're going to do the second one.
 
-1. Head over to github.com and create a new repository including a README file. **If you're using an existing repo, skip to step 5.**
+1. Head over to github.com and create a new repository including a README file. If you want this site to be a User/Organization page, you need to name your repository like so: `<username>.github.io` or `<orgname>.github.io`. Project sites can be named anything.
 
-2. Clone the repo to make a local copy. 
+2. Clone the repo to make a local copy:
+
   ```bash
     git clone https://github.com/username/repo-name.git
   ```
 
-3. Using the command line, `cd` into the new repo. 
+3. Using the command line, `cd` into the new repo:
+
   ```bash
     cd repo-name
   ```
 
-4. Create and switch to a branch called `gh-pages`.
+4. Create and switch to a branch called `gh-pages`:
+
   ```bash
     git checkout -b gh-pages
   ```
+
   As we've learned, `git checkout` switches between branches, and the `-b` flag creates a new branch at the same time. In our case, `git checkout -b gh-pages` both creates and switches to a new branch called `gh-pages`.
 
   We should get this message to confirm the switch:
+
   ```bash
     Switched to a new branch 'gh-pages'
   ```
   (You may get an error message saying you don't have admin privileges, in which case you'll need to type `sudo` at the start of that command.)
 
-5. If this is a new repository, create an `index.html` file (use the `touch` command).
-    * If this is an existing repository, make a change to your local copy. 
+5. Create an `index.html` file (use the `touch` command).
 
 6. Add, commit, and push the update to the `gh-pages` branch via the command line.
   ```bash
   git push origin gh-pages
   ```
-  * If you're using the GitHub GUI, go to the 'Branches' tab and ensure `gh-pages` is selected.
 
 It's that easy! Your site can be viewed at `http://username.github.io/repository-name`. (It might take a few minutes to show up. Go stretch!)
 
@@ -84,7 +90,28 @@ Now we have to `push` these changes to the repository on GitHub.
 git push origin master
 ```
 
+### Using an existing repo
+
+In the event you want to host an existing repository on GitHub Pages, there are two approaches you can take:
+
+1. Create and switch to a branch called `gh-pages`.
+```bash
+  git checkout -b gh-pages
+```
+
+Once on this `gh-pages` branch you can make some additional changes or immediately push your branch to GitHub:
+
+```bash
+git push origin gh-pages
+```
+
+2. In your project repository on GitHub under `Settings`, turn on the GitHub Pages Service by choosing a `source` branch:
+
+![Screencap of settings page](https://hychalknotes.s3.amazonaws.com/setting-gh-pages-source.png)
+
+
 ### Optional: Make `gh-pages` the default branch of a repository
+
 1. In the repository on GitHub, go to the 'Settings' page. 
 1. Choose 'Options' in the top section, set the default branch in the dropdown.
 

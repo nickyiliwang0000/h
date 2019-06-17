@@ -140,9 +140,9 @@ Go ahead and add some margin to container1, padding to container2 and both to co
 
 ![A screenshot of three HTML elements with text inside. There is space between the elements and some space inside of the elements walls and the text illustrating the use of padding and margin.](https://hychalknotes.s3.amazonaws.com/css-dimensions-example4.png)
 
-1. Container 1 has 20px of margin outside the red, but the text is still squished inside.
-2. Container 2 has 20px of padding inside the blue, but it's right up against the side of the browser.
-3. Container 3 has both, allowing for enough space between both the text and the blue element above it.
+1. Container 1 has 20px of margin outside the green, but the text is still squished inside.
+2. Container 2 has 20px of padding inside the yellow, but it's right up against the side of the browser.
+3. Container 3 has both, allowing for enough space between both the text and the yellow element above it.
 
 ### One step further
 

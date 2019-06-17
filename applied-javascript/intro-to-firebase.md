@@ -28,7 +28,7 @@ Firebase also comes with loads of other amazing features, like helping us set up
 
 ## Setting up Firebase
 To set up Firebase, navigate to [https://firebase.google.com/](https://firebase.google.com/) and sign in.
-Firebase was acquired by Google in 2004, so you'll need to pick one of your Google accounts to log in.
+Firebase was acquired by Google in 2014, so you'll need to pick one of your Google accounts to log in.
 
 1. Once you've logged in, you should see a screen that looks like the photo below. Click on the 'Get Started' button.
 ![Step 1](https://hychalknotes.s3.amazonaws.com/firebase-step1-2019.png)  
@@ -81,6 +81,33 @@ If you see this, you have successfully configured your project to use Firebase.
 
 4. If you were successful at creating a database, you would be redirected to a page that looks like the one below.
 ![Step 9](https://hychalknotes.s3.amazonaws.com/firebase-step9-2019.png)
+
+5. Back in your HTML file, underneath the first `firebase` script tag copy and paste in this required database cdn:
+```js
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+```
+
+You should now have a setup that resembles this:
+
+```javascript
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+
+<script>
+  // Initialize Firebase
+  const config = {
+    apiKey: "AIzaSyCIA9bxxwIgMijlvzKRcNkVVfYOIEWGoD0",
+    authDomain: "first-firebase-app-bbf53.firebaseapp.com",
+    databaseURL: "https://first-firebase-app-bbf53.firebaseio.com",
+    projectId: "first-firebase-app-bbf53",
+    storageBucket: "first-firebase-app-bbf53.appspot.com",
+    messagingSenderId: "266243704518"
+  };
+
+  firebase.initializeApp(config);
+
+</script>
+```
 
 ## Understanding data structure in Firebase
 
@@ -297,6 +324,7 @@ const dbRef = firebase.database().ref();
 // We call the `on` method here to grab the value of our Firebase database.
 // When it comes back, we store access it in our callback function via the parameter `data`.
 dbRef.on('value', (data) => {
+
   // We call `.val()` on our data to get the contents of our data to print out in the form of an object
   console.log(data.val());
 });
@@ -308,7 +336,7 @@ You will get back something that looks like this:
 
 
 ## Listening for changes to data in Firebase
-Remember `on()` from jQuery? Firebase has its own built-in `on()` method, that we can use to listen for events. For example, we can listen for when any changes have been made to the database.
+ Firebase's `on()` method will also listen for events. Therefore, we can listen for when any changes have been made to the database and update our applicaiton in real-time to reflect those changes.
 
 Let's say we're building a game and someone just hit a new high score - we want to make sure to listen to that score entering the database so we can update our high score table.
 

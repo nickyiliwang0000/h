@@ -18,14 +18,13 @@ Since we are also nearing the end of Helpcue, we'll be encouraging you even more
 * Uses React, and no jQuery
 * Uses flexbox or grid where appropriate
 * Uses Axios and/or Firebase
-* this.state is never directly changed because .setState() is always used to alter state
-* Vanilla JS is not used to manipulate the DOM (don't use document.getElementByID) (a.k.a. React 'knows' about all DOM changes)
-* App is dynamic based on user interaction (eg. drop down menu, search field)
+* Every group member has at least one significant commit on GitHub
+* React 'knows' about all DOM changes (bind your inputs! don't use vanilla JS to manipulate the DOM! .setState() is always used to alter state!)
+* App is dynamic based on user interaction (e.g. drop down menu, search field)
 * It is clear to the user what the app does
 * App and interactions are accessible
 * Errors are handled effectively
 * Site is live on Firebase Hosting, student's own URL or GitHub Pages
-
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed (including console.log)

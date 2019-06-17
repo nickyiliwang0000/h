@@ -2,7 +2,7 @@
 <!--Student will be able to:
 - Store a function in a variable
 - Know that Math. and console.log exist
-- Where to insert senicolons (at the end of an instruction but not after a statement block)
+- Where to insert semicolons (at the end of an instruction but not after a statement block)
 - How to link a script file
 - How to write script in an HTML file
  -->
@@ -11,7 +11,7 @@
 
 ## Combining variables and functions
 
-The variable's value can be a function in JavaScript.
+A variable's value can be a function in JavaScript.
 
 ```js
 let someVariable = function(){
@@ -39,7 +39,7 @@ We've already looked `prompt()`, `alert()` and `confirm()` but there are many mo
 * `Math.` (always has a return value)
 Type `Math.` in the console (without hitting enter) and you'll see a list pop up of available math related functions. E.g., `Math.cos()`, `Math.max()`, `Math.min()` and many more.
 
-Note that these functions look a little different from the previously discussed since they have a `prefix.functionname()` syntax. We will expand on this in [another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/objects.md).
+Note that these functions look a little different from the ones we previously discussed since they have a `prefix.functionname()` syntax. We will expand on this in [another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/objects.md).
 
 As with CSS properties, there are too many built-in functions to memorize them all so it's a good idea to have some handy resources nearby. Go to the [MDN](https://developer.mozilla.org/en-US/) and use the search box at the top of the page to learn more about these functions. 
 
@@ -77,11 +77,11 @@ JavaScript code is composed of statements and expressions that are usually execu
 
 ```js
 const name = "Your Name";
-name;
+console.log(name);
 	
 //same as
 	
-const name = "Your Name"; name;
+const name = "Your Name"; console.log(name);
 ```
 
 > Because of a technique called **automatic semicolon insertion** (ASI), some statements on a new line that are well-formed will be executed as if a semicolon had been added. We encourage you to explicitly add semicolons everywhere they are needed.
@@ -89,13 +89,13 @@ const name = "Your Name"; name;
 ```js
 // will execute both statements
 const name = "Your Name" 
-name;
+console.log(name);
 	
 // will throw an error
-const name = "Your Name" name;
+const name = "Your Name" console.log(name);
 ```
 
-In the example above, `name` the instruction will run as if there was a semicolon after `const name = "Your Name"` thanks to ASI because it is on a new line.
+In the example above, the `console.log(name)` instruction will run as if there was a semicolon after `const name = "Your Name"` thanks to ASI because it is on a new line.
 
 #### Block statements
 Single line statements should end in a semicolon but _block statements_ do not. 
