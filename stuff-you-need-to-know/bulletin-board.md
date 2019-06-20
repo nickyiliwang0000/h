@@ -19,8 +19,9 @@ LUNCH
 4:30 pm - drinks and mingling 
 5:30pm - all guests are asked to leave!!
 6:00 pm - relax, reset space & congratulate yourselves!
-6:30 pm to 10:00 pm - dinner, totally normal graduation ceremony, drinks & celebrayshe```
+6:30 pm to 10:00 pm - dinner, totally normal graduation ceremony, drinks & celebrayshe
 ```
+
 ### Headshot Order (each session will be ~3 min each)
 * Alice Lau
 * Austen Valentine
