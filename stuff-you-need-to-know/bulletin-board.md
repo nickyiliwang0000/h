@@ -9,7 +9,7 @@ LUNCH
 2 pm - Tech Interview Prep
 
 < Friday />
-10:00 am - Industry Day prep & practice **_(Please be on time!)_**
+10:00 am - Industry Day prep & practice **(Please be on time!)**
 11:30am-1pm - Headshots ~3 min per person (order below, please be mindful of this so you're available for your photos!)
 12:30 pm - early lunch 
 1:30 pm - set up and cleaning, all hands on deck: EVERYBODY to participate
