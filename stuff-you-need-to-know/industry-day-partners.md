@@ -30,3 +30,4 @@ _(please keep in mind there may be last minute additions or cancellations!)_
 * TrewKnowledge
 * BSpoke Media
 * Bespoke Metrics
+* Numeris
