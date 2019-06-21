@@ -16,7 +16,6 @@ _(please keep in mind there may be last minute additions or cancellations!)_
 * TD
 * Jam 3
 * Allied Technical Solutions
-* Allied Technical Solutions
 * Bounteous
 * Reason 1 Inc.
 * Soapbox
