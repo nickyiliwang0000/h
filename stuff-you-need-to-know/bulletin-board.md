@@ -3,66 +3,49 @@
 
 ### Schedule
 ```bash
-< Thursday />
-10 am - Industry Day brief and practice
-LUNCH
-2 pm - Tech Interview Prep
+< POST BOOTCAMP STUFF />
+June 24 to 27
+- Cover letter reviews
 
-< Friday />
-10:00 am - Industry Day prep & practice **(Please be on time!)**
-11:30am-1pm - Headshots ~3 min per person (order below, please be mindful of this so you're available for your photos!)
-12:30 pm - early lunch 
-1:30 pm - set up and cleaning, all hands on deck: EVERYBODY to participate
-2:15 pm - space set up should be done and everybody waiting and ready to go
-3:00 pm - guests arrive
-3:15 pm - speed interview rounds start
-4:30 pm - drinks and mingling 
-5:30pm - all guests are asked to leave!!
-6:00 pm - relax, reset space & congratulate yourselves!
-6:30 pm to 10:00 pm - dinner, totally normal graduation ceremony, drinks & celebrayshe
+June 25
+- Job Seeker Kick-Off meeting @ 5pm - 6pm
+(ft. The Patent Pending Heather Payne Job Seeker Method)
+
+July 2
+- Workshop: Intro to Full-Stack @ 2pm
+
+July 5
+- Job Seeker Meeting 1 @5pm
+- Moderated Q&A Panel @ 5:30pm - 7pm
+(you'll be asked to submit questions to the panelists ahead of time)
+
+July 9
+- Beyond Bootcamp starts
+
+July 11
+- Job Seeker Co-working day @ 2pm - 6pm
+(ft. interview & whiteboarding questions)
+
+July 18
+- Job Seeker Meeting 3 @ 4pm - 6pm
+(drop in casual chats)
+
+July 22 & 23
+- One month 1:1 Check-ins
+(appointment slots will be sent out)
+
+August 21
+- Job Seeker Two Month Check-in
+
+September 30
+- Job Seeker Three Month Check-in
 ```
 
-### Headshot Order (each session will be ~3 min each)
-* Alice Lau
-* Austen Valentine
-* Brian Kan
-* Cheryl Leung
-* David Thavixay
-* Eugene Michasiw
-* Harry Grewal
-* Jamie Yeung
-* Jeffrey Xu
-* Laura Chuang
-* Robert Chun
-* Rushabh Parekh
-* Terri Persad
-* Tommy Lay
-* Adam Pachulski
-* Andrew Tham
-* Annie Liew
-* Chitra Shah
-* Darwin Lyons
-* Derek Murr
-* Fazaa Ahmed
-* Frankie Wang
-* Inder Singh
-* Ismahan Ali
-* Jonathan McWilliam
-* Julien Bigras
-* Paul Rocca
-* Alex Dodd
-* Andrea Maille
-* Becky Robinson
-* Can Rozanes
-* Christina Greene
-* Geoff Grossman
-* Irene Truong
-* Jasmine Tossan
-* Jeff Yeung
-* Jonathan Tung
-* Kat Bosnic
-* Natalie Caracciolo
-* Soo Yeon Shim
+## Beyond Bootcamp Course
+### July 9 to Aug 15
+Tuesdays and Thursdays 6:30pm to 9:30pm
+* Taught by Simon Bloom mentored by Garrett Levine and Ksenija Gogic
+
  
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Spring Bootcamp: (event)".
