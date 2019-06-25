@@ -191,7 +191,7 @@ Occasionally you will see three numbers. This sets `left` and `right` with a sin
 }
 ```
 
-### Centring elements with margins
+### Centering elements with margins
 
 Often we will want to center our website on a page. Since CSS doesn't have a center property for elements, we just use auto margins on the left and right to do this.
 
