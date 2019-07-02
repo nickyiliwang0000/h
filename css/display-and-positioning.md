@@ -333,7 +333,7 @@ Getting comfortable with the positioning and display properties will help you so
 * CSS3 border radius
 * Using `box-sizing:border-box;`
 * z-index
-* RBGA colours
+* RGBA colours
 * display inline, block and inline-block
 
 There are six exercises, labelled `ex1` to `ex6`.

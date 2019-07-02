@@ -1,4 +1,4 @@
-# Welcome to the new and improved Bootcamp notes!
+# Welcome to your Bootcamp notes!
 Here are your notes, bootcamp studes! We're so glad you're here! If you notice a typo or have an issue with anything in the text, please [create an issue](https://github.com/HackerYou/bootcamp-notes/blob/master/how-to-edit-bootcamp-notes.md)!
 
 ## Student resources

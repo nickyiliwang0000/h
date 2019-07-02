@@ -309,4 +309,6 @@ For performance reasons, this validation only takes place in development mode an
 ## Additional Resources
 
 - [React Docs on Props vs. State](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+- [Exploring State Management in React](https://hackeryou.com/blog/exploring-state-management-in-react)
+- [React Destructuring Techniques](https://hackeryou.com/blog/react-destructuring-techniques)
 - [Props vs. State](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md) by the team at UberVU
