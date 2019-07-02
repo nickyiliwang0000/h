@@ -11,6 +11,8 @@ To show off all the skills you've learned in the bootcamp, especially HTML, CSS,
 ## Design
 The point of your portfolio is to showcase your development skills. As such, we require that you code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). 
 
+You may not update an existing portfolio, you must start from scratch. 
+
 ## Choosing a design
 Choose a portfolio site design that:
 * you like!
