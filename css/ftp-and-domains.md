@@ -39,7 +39,6 @@ Hosting:
 * [DreamHost](http://www.dreamhost.com/r.cgi?2137548)
 * [SiteGround](https://www.siteground.com/index.htm?afcode=8d0b6cfbb3392c6083f2310e4d1ae00a)
 * [GreenGeeks](https://www.greengeeks.com/track/hackeryou/cp-default)
-* [Bluehost](http://www.bluehost.com/track/hackeryou) 
 * [HostGator](https://partners.hostgator.com/hackeryou)
 
 Before you buy your domain and hosting, check out [this list of tips](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/hosting-and-domain-tips.md).
@@ -56,7 +55,7 @@ If you already have an FTP username and password, you can skip this step.
 
 Otherwise:
 1. Log into your hosting account and click 'FTP accounts'. You may find it in the main menu, however dashboards may vary across different hosting services: 
-  ![Bluehost main menu](https://hychalknotes.s3.amazonaws.com/ftp-menu-screenshot-2019.png)
+  ![GreenGeeks main menu](https://hychalknotes.s3.amazonaws.com/ftp-menu-screenshot-2019.png)
 
 2. Go ahead and enter a new set of credentials. Make sure the directory is set to `public_html` and not a sub-directory.
   ![Form to create an FTP account](https://hychalknotes.s3.amazonaws.com/create-ftp-account-screenshot-2019.png)
