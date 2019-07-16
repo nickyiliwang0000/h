@@ -172,7 +172,7 @@ Now, what do you think `top`, `left`, `right` and `bottom` are referring to?
 
 It can be hard to visualize what absolute positioning looks like in a real-world example. The bellow graphics can help illustrate some practical use cases:
 
-[!Position absolute image example](https://hychalknotes.s3.amazonaws.com/practical-position-absolute.jpg)
+![Position absolute image example](https://hychalknotes.s3.amazonaws.com/practical-position-absolute.jpg)
 
 ##### Combining `position: relative;` and `position: absolute;`
 
