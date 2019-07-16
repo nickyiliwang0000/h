@@ -168,6 +168,12 @@ You'll notice that the box can be positioned at any point on the screen. It does
 Now, what do you think `top`, `left`, `right` and `bottom` are referring to?
 > They're referring to the viewport!
 
+##### Practical examples of absolute positioning
+
+It can be hard to visualize what absolute positioning looks like in a real-world example. The bellow graphics can help illustrate some practical use cases:
+
+[!Position absolute image example](https://hychalknotes.s3.amazonaws.com/practical-position-absolute.jpg)
+
 ##### Combining `position: relative;` and `position: absolute;`
 
 The last example was good for understanding absolute positioning, but it's unlikely that all your elements are direct children of the body like that. You'll probably have a wrapper, a sidebar, (or some other kind of container) and some content between your elements and the body.
