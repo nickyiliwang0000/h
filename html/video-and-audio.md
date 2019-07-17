@@ -34,12 +34,12 @@ Add the `controls` attribute to your HTML file:
 
 Each browser also has their own policies regarding autoplay for HTML5 videos.
 
-As of January 2018, these are the rules for autoplay of video on desktop:
+As of March 2019, these are the rules for autoplay of video on desktop:
 
 browser | allow `autoplay` with sound | allow `autoplay` with sound with `controls` | allow `autoplay` with `muted` 
 ---|:---:|:---:|:---:
 Safari| no | yes | yes
-Firefox| yes | yes| yes
+Firefox| no | yes| yes
 Chrome| no | no | yes
 IE| | |
 
