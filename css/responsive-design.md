@@ -150,7 +150,7 @@ Trying to target a specific device is not a good idea: you are better off using 
 
 Orientation is which way you are holding a device: portrait or landscape.
 
-![iPhone in portrait and landscape mode](http://wes.io/Kk2i/iPhone-5-Black-White-MockUp.png)
+![iPhone in portrait and landscape mode](https://hychalknotes.s3.amazonaws.com/iPhone-5-Black-White-MockUp.png)
 
 It's less important to think about the width of the landscape screen (width media queries can direct your styles) and more important to think about **why** the user holding their phone at that particular orientation. If they are holding the device in portrait rather than landscape, there may be a few things to consider:
 
@@ -179,7 +179,7 @@ However, very little has changed for our CSS. A 640px-wide HiDPI phone screen st
 
 Here's a helpful graphic from [Smashing magazine](https://www.smashingmagazine.com/2012/08/towards-retina-web/) on the topic:
 
-![retina display graphic](http://wes.io/Kjax/Screen%20Shot%202012-11-07%20at%202.37.48%20PM.png)
+![retina display graphic](https://hychalknotes.s3.amazonaws.com/standard-retina-comparison.png)
 
 The one thing that has changed is that our images and graphics are blown up to 2x their natural size which can result in blurry images. The solution to this issue is to use a device resolution media query to swap in images that are 2x the size of the normal ones when the user is on a HiDPI screen.
 
