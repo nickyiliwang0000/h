@@ -1,6 +1,6 @@
 # Project 1 (1 page PSD conversion)
 ## Due date
-Wednesday, May 1st, 10:00 a.m.
+Wednesday, August 7th, 10:00 a.m.
 
 ## Project description
 This project is meant to emulate a common task you will perform as a front-end developer. You will be provided a design and you will be tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for your users regardless of the device on which they are viewing the site.
@@ -57,4 +57,4 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1NxNP
 Projects handed in on the same date as the deadline but after the requested time (usually 10 a.m. or 1 p.m.) will receive a 10% penalty. Students will receive an additional 10% deduction for each day the project is late, up to a maximum penalty of 30% (or 3 days late). After 3 days, the project will receive a total mark of 0.
 
 # No plagiarism!! 👀 We'll be watching for it!
-Plagiairism is presenting someone else's work as your own. When you use other developers' work, you must credit them on the site or in the comments. If you think something in your project walks the line, check with an instructor **before handing in your project**.
+Plagiarism is presenting someone else's work as your own. When you use other developers' work, you must credit them on the site or in the comments. If you think something in your project walks the line, check with an instructor **before handing in your project**.
