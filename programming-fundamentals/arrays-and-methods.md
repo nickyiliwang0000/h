@@ -345,6 +345,6 @@ Create an object that represents a "warrior". This warrior has the following pro
 
 
 ### Want more practice? 
-[Download and complete this exercise](https://hychalknotes.s3.amazonaws.com/method-practice-exercise-bootcamp.zip) to practice creating an object with methods on it.
-
+* [Download and complete this exercise](https://hychalknotes.s3.amazonaws.com/method-practice-exercise-bootcamp.zip) to practice creating an object with methods on it.
+* Check out [this fun resource](https://arrayexplorer.netlify.com/) to help you!
 <!-- What happens if you use the update uniform method to change something that doesn't exist in the uniform object? -->
