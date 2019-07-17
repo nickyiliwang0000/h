@@ -116,8 +116,8 @@ Write a function that takes in two arrays of any length, and reports on any valu
 stringsInCommon(['do','re','mi'],['fa','so','la','ti','do'])
 >> ['do']
 
-var animals = ['cow','deer','goat','chicken','pig','fish']
-var meats = ['chicken','beef','fish','pork']; 
+const animals = ['cow','deer','goat','chicken','pig','fish']
+const meats = ['chicken','beef','fish','pork']; 
 stringsInCommon(animals,meats)
 >> ['chicken','fish']
 
