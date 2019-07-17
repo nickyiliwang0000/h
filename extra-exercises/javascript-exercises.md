@@ -1,7 +1,7 @@
 # Extra JavaScript exercises
 Want to spend more time practicing your JavaScript? Try these extra questions and 💪beef up💪 your brain.
 
-Questions are divided into three categories: [level 1](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md#level-1), [level 2](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md#level-2), [level 3](https://github.com/HackerYou/bootcamp-notes/blob/master/fishbowl-exercises/javascript-fishbowl-exercises.md#level-3). If you're having trouble, don't hestitate to grab your nearest mentor.
+Questions are divided into three categories: [level 1](#level-1), [level 2](#level-2), [level 3](#level-3). If you're having trouble, don't hestitate to grab your nearest mentor.
 
 Remember: There's no one right answer out there. If an answer works, and you understand and can explain why it works, it's a correct one. (Optimization is another thing, however…)
 
@@ -116,8 +116,8 @@ Write a function that takes in two arrays of any length, and reports on any valu
 stringsInCommon(['do','re','mi'],['fa','so','la','ti','do'])
 >> ['do']
 
-var animals = ['cow','deer','goat','chicken','pig','fish']
-var meats = ['chicken','beef','fish','pork']; 
+const animals = ['cow','deer','goat','chicken','pig','fish']
+const meats = ['chicken','beef','fish','pork']; 
 stringsInCommon(animals,meats)
 >> ['chicken','fish']
 
