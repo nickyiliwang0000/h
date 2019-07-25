@@ -46,6 +46,28 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1NxNP
 ### Design checklist
 [Here](https://docs.google.com/document/u/1/d/17GYf0CfvD8Mdt4fXXH_03Hc-L-y9V3xLSbO5AIfdK54/edit?usp=sharing) is a checklist that will help perfect your conversion!
 
+### Design files
+
+**Galass Handbags**
+
+[design](https://scene.zeplin.io/project/5d14daaa78189773b2f59efc)
+
+[assets](https://hychalknotes.s3.amazonaws.com/Galass-Handbags-Assets.zip)
+
+
+**Hangry Tummy**
+
+[design](https://scene.zeplin.io/project/5d39c3af8425042d9644b616)
+
+[assets](https://hychalknotes.s3.amazonaws.com/Haungry-Tummy-Assets.zip)
+
+
+**Electric Select** 
+
+[design](https://app.zeplin.io/project/5d39c44d8b7034775ac89766/dashboard)
+
+[assets](https://hychalknotes.s3.amazonaws.com/Electric-Select-Assets.zip)
+
 ## Submitting your project
 
 1. Remove any unneeded files from the project.

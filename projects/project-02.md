@@ -1,6 +1,6 @@
 # Project 2 (multi-page PSD conversion)
 ## Due date
-Wednesday, May 8th, 1:00 p.m.
+Wednesday, Aug 14th, 10:00 a.m.
 
 ## Project description
 This project is meant to emulate a common task you will perform as a front-end developer. You will be provided a design and you will be tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for your users regardless of the device on which they are viewing the site.

@@ -1,9 +1,9 @@
 # Project 5 (solo React application)
 ## Due date
-Monday, June 3rd, 1:00 p.m.
+Tuesday, Sep 10th, 1:00 p.m.
 
 ## Project scope due date
-Wednesday, May 29th, 6 p.m.
+Thursday, Sep 5th, 6 p.m.
 
 ## Project description
 Using the React library we would like you to create an interactive application. This will call on everything you have learned up to now!

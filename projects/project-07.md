@@ -1,6 +1,6 @@
 # Project 7 (personal portfolio)
 ## Due date
-Tuesday, June 18th, 1:00 p.m.
+Tuesday, Sept 24th, 1:00 p.m.
 
 ## Project description
 A beautiful, responsive portfolio for all your ✨amazing✨ work that you've coded from scratch to match your chosen design.
