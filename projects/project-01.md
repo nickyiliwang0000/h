@@ -44,7 +44,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1NxNP
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
 ### Design checklist
-[Here](https://docs.google.com/document/u/1/d/17GYf0CfvD8Mdt4fXXH_03Hc-L-y9V3xLSbO5AIfdK54/edit?usp=sharing) is a checklist that will help perfect your conversion!
+[Here]() is a checklist that will help perfect your conversion!
 
 ### Design files
 
