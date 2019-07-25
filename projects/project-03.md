@@ -1,6 +1,6 @@
 # Project 3 (solo interactive jQuery site)
 ## Due date
-Tuesday, May 21st, 10:00 a.m.
+Monday, Aug 26, 10:00 a.m.
 
 ## Project description
 This week you are going to write some JavaScript using the jQuery library in order to build an interactive site of your choosing. It could be:
