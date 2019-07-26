@@ -39,7 +39,7 @@ Now that we're comfortable with the syntax of HTML and CSS, we can leverage some
   * `div.box.box$*5` + `tab` → `<div class="box box1"></div> <div class="box box2"></div> <div class="box box3"></div> <div class="box box4"></div> <div class="box box5"></div>`
 
 * `element+element` + `tab` creates sibling elements. 
-* `h2+p`+ `tab` → `<h2></h2><p></p>`
+  * `h2+p`+ `tab` → `<h2></h2><p></p>`
 
 If you want to declare an attribute, use `[]`. 
  * `img[src="images/header.png"]` + `tab` →   ` <img src="images/header.png" alt="">`
