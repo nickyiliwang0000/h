@@ -9,7 +9,7 @@ A beautiful, responsive portfolio for all your ✨amazing✨ work that you've co
 To show off all the skills you've learned in the bootcamp, especially HTML, CSS, and modern web standards.
 
 ## Design
-The point of your portfolio is to showcase your development skills. As such, we require that you code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). 
+The point of your portfolio is to showcase your development skills. As such, we require that you code an existing design. You must purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). Your design files must be complete before starting the project.
 
 You may not update an existing portfolio, you must start from scratch. 
 
@@ -19,20 +19,21 @@ Choose a portfolio site design that:
 * does NOT have **any** HTML or CSS in it (PSD only)
 * no recent grad has used (check the [past portfolio themes doc](https://docs.google.com/spreadsheets/d/1ZQqQnn-gSbyRlk_Au_MRoRsttsgy4BRdRnldnoclt6I/edit#gid=0)) 
 
-Submit your first and second choices to Fatima by email (fatima@hackeryou.com) by 1 p.m. on June 13th. She is aiming to have everyone's approved by 6 p.m. on the same day.
+Submit your first and second choices to Fatima by email (fatima@hackeryou.com) by 1 p.m. on September 19th. She is aiming to have everyone's approved by 6 p.m. on the same day.
 
 Once Fatima has approved your design, she'll update the past portfolio themes doc to reflect your choice.
 
-> If you are a designer/want to design your own portfolio, you MUST get approval from Fatima. 
+> Even if you are a designer/want to design your own portfolio, you must buy a theme. The day you finish bootcamp you can make a whole new portfolio if you want, but you may not design your own for this project.
 
 ### Resources to open PSDs without Photoshop
 * https://studio.psdetch.com/
 * https://www.photopea.com/ (similar to Photoshop)
 
 ### Some previous examples
-* [http://angelalagao.com/](http://angelalagao.com/)
-* [http://estelacodes.com/](http://estelacodes.com/)
-* [http://www.lauraduggan.ca/](http://www.lauraduggan.ca/)
+* <http://angelalagao.com/>
+* <http://www.christinalaba.com/>
+* <http://www.lauraduggan.ca/>
+* <http://www.braedencraig.com/>
 
 ## How will this project be graded?
 
