@@ -16,15 +16,15 @@ Let's right-click our page and select 'Inspect Element'. This brings up two pane
 
 ![screenshot of developer tools in a browser](https://hychalknotes.s3.amazonaws.com/devTools-example.png)
 
-On the left, you will see the markup from earlier and on the right, you will see the CSS that applies to the element you selected.
+On the left you will see the markup and on the right you will see the CSS that applies to the element you selected.
 
 ### Editing a selector
-Remember we wrote the selector to make all h1 tags red? Click the **cursor within a square** icon (top left corner) and then click the red "HackerYou dev tools testing facility" title. You'll see the CSS rule we wrote! Go ahead and try to change the colour or font size. You can even add new properties like `border:2px solid green;`
+Notice that the first letters of all the words in the header elements are capitalized? Click the **cursor within a square** icon (top left corner) and then click the red "HackerYou dev tools testing facility" title. You'll see the CSS rule which is formatting the headers - `text-transform: capitalize`. Go ahead and try to change the colour or font size. You can even add new properties like `border:2px solid green;`
 
 ### Playing with dev tools
 Here are a bunch of tasks to get comfortable with dev tools. When you're done, we'll go through some of the ones you had trouble with.
 
-1. Decrease the padding on the `<div class="titleText">` and add a black border.
+1. Decrease the padding on the `<div class="titleText">` and add a turquoise border.
 2. Change the `<body>` background colour to something you like better.  
   * Hint: You can click the white square to reveal the colour picker.
 3. Increase the padding of the `<div class="description">` and add 20px of margin to the top of it.

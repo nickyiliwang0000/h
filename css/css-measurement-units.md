@@ -24,11 +24,18 @@ section {
 }
 ```
 
-Most browsers default to a font size of 16px. Larger base font sizes (between 18px and 22px) are becoming more common beacuse they are easier to read. Check out [the web typography lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/03-css/3.7-web-typography.md#sizing-fonts) for more information on sizing fonts.
+Most browsers default to a font size of 16px. Larger base font sizes (between 18px and 22px) are becoming more common because they are easier to read. Check out [the web typography lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/03-css/3.7-web-typography.md#sizing-fonts) for more information on sizing fonts.
 
 ## Percentages
 
 Another popular way to size fonts and elements is _percentages_, which are indispensible in responsive design. An element whose width is a percentage will take up that percentage of its parent's width. 
+
+```html
+<div class="wrapper">
+  <main></main>
+  <aside></aside>
+</div>
+```
 
 ```css
 .wrapper{
@@ -46,14 +53,7 @@ main {
 }
 ```
 
-```html
-<div class="wrapper">
-  <main></main>
-  <aside></aside>
-</div>
-```
-
-Percentages are also commonly used for fonts. If the parent has a font size of 20px, a 50% font size would be 10px. 
+Percentages can also be used for fonts. If the parent has a font size of 20px, a 50% font size would be 10px. 
 
 ```css
 div {
