@@ -52,7 +52,7 @@ Icon fonts are way to implement any number of icons into your website. Rather th
 
 [Font Awesome](https://fontawesome.com/) is the most popular icon font, but there are many available. 
 
-You will need to link the necessary Font Awesome files to get started.[Font Awesome](https://fontawesome.com/) often changes it's method to use their service so the best way to find out what is current is to check [Font Awesome's "Get Started" page](https://fontawesome.com/start)
+You will need to link the necessary Font Awesome files to get started. The best way to find the current directions for using Font Awesome is to check [Font Awesome's "Get Started" page](https://fontawesome.com/start).
 
 ### Using Font Awesome in your Code
 
