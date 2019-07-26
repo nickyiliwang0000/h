@@ -66,9 +66,6 @@ touchstart
 
 transition-delay
 
-
-### Claimed:
-
 Custom Cursors
 
 Konami Codes
@@ -85,17 +82,11 @@ night/day mode
 
 granim.js
 
-CORS & its limitations
-
 impress.js
 
 CSS variables
 
 CSS Masks
-
-Browsh
-
-FOUT
 
 React Joyride
 
@@ -117,10 +108,6 @@ chart.js
 
 preloaders
 
-Big O Notation
-
-recursion vs iteration
-
 brain.js
 
 SweetAlerts
@@ -130,8 +117,6 @@ custom browser extensions
 sticky/smooth/active nav
 
 reveal.js
-
-recursion vs iteration
 
 draggable.js
 
