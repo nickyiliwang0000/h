@@ -46,29 +46,15 @@ Services like [Iconogen](http://iconogen.com/) can create all these at once for 
 
 ## Font Awesome
 
-<!-- we are still using font awesome 4 to render the examples of the icons, however, the code snippets that we show students will references font awesome 5 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 Icon fonts are way to implement any number of icons into your website. Rather than downloading am image and changing the size and colour in Photoshop to use as an icon, you can embed a file of icons as a font. (Kind of like Zapf Dingbats!) From there, you can change the size and colour of the icons using CSS.
 
 [Font Awesome](https://fontawesome.com/) is the most popular icon font, but there are many available. 
 
-There are two ways you can embed Font Awesome on your site. 
-* **CSS + web fonts**: Use the Font Awesome stylesheet and have the icons render as web fonts
-* **JS + SVG**: Use the Font Awesome script files and have the icons render as SVG
+You will need to link the necessary Font Awesome files to get started.[Font Awesome](https://fontawesome.com/) often changes it's method to use their service so the best way to find out what is current is to check [Font Awesome's "Get Started" page](https://fontawesome.com/start)
 
-Whether you choose to import the icons as a web font or as SVG, you will need to link the necessary Font Awesome files to get started. If you would like to host the files yourself you can check out [Font Awesome's documentation for `Hosting Font Awesome Yourself`](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself).
-
-**TL;DR**: Download the files they tell you to, stick 'em in your project folder, link it in your head element.
-
-We're not going to be downloading the files, we're going to use Font Awesome's _content delivery network_ (CDN).
-
-### Font Awesome with web fonts and CSS
-Head on over to [Font Awesome's "Get Started" page](https://fontawesome.com/get-started) and select the `Web Fonts & CSS` tab.
-
-![Font Awesome Get Started interface](https://hychalknotes.s3.amazonaws.com/font-awesome.png)
-
-It's best to copy the link directly from the Font Awesome website, to ensure you have the most up-to-date link. 
+### Using Font Awesome in your Code
 
 To get an icon on your page, use the repurposed `<i>` tag. (Remember that it used to be used for italics?) The `<i>` tag needs two classes. These classes will be specified in the Font Awesome documentation. The first class you provide your icons will depend on the type of icons you're are using. There are four types available from Font Awesome. Since we're using the free version, we will only have access to the solid and brand icons.
 
