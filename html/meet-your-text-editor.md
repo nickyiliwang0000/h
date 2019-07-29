@@ -37,7 +37,7 @@ Some other popular text editors currently available are:
 * Sublime Text 
   * [http://www.sublimetext.com/3](http://www.sublimetext.com/3)
   * Paid (with unlimited free trial) with extensive customization options. 
-  * Widely used (you might be using Sublime if you are coming to us from part time!)
+  * Widely used
 
 * Atom
   * [https://atom.io/](https://atom.io/)
