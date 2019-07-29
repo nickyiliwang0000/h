@@ -35,6 +35,7 @@ Week 1: Welcome! Let’s review!
 
 
 < Wednesday /> 
+- Kickoff activity 
 - CSS dimensions
 - CSS layout
 - Display and positioning
