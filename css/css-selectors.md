@@ -35,9 +35,7 @@ Let's say we have three paragraphs, but we only want the middle one to have a ye
 
 ```html
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-<p>
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-</p>
+<p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 ```
 
@@ -47,9 +45,7 @@ We need to add a class attribute to the element we want to choose.
 
 ```html
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-<p class="special">
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-</p>
+<p class="special">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
 ```
 
