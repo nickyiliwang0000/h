@@ -64,7 +64,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/126VV
 
 **Electric Select** 
 
-[design](https://app.zeplin.io/project/5d39c44d8b7034775ac89766/dashboard)
+[design](https://scene.zeplin.io/project/5d39c44d8b7034775ac89766)
 
 [assets](https://hychalknotes.s3.amazonaws.com/Electric-Select-Assets.zip)
 
