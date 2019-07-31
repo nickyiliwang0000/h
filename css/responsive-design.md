@@ -315,5 +315,5 @@ Check out [responsive-exercises-roundup.zip](https://hychalknotes.s3.amazonaws.c
 
 ## Code along
 
-Download [mediaQueriesCodeAlong.zip](https://hychalknotes.s3.amazonaws.com/mediaQueriesCodeAlong.zip) and we can apply media queries to a desktop website and make it responsive!
+Download [mediaQueriesCodeAlong.zip](https://hychalknotes.s3.amazonaws.com/mediaQueriesCodeAlong--bootcamp.zip) and we can apply media queries to a desktop website and make it responsive!
 
