@@ -74,8 +74,7 @@ Screen readers won't read elements with their `display` properties set to `none`
 
 #### `display: none;` vs. `visibility: hidden;`
 
-`visibility: hidden` is another property that **appears** to perform the same task as `display: none`. But when using `visibility: hidden`, the space the element would take up remains and screen readers can read the element. It's like a chameleon blending into a branch it's sitting on. It's still there, but you can't see it. `display:none;` is like taking the chameleon off the branch.
-
+`visibility: hidden` is another property that **appears** to perform the same task as `display: none`. But when using `visibility: hidden`, the space the element would take up remains. It's like a chameleon blending into a branch it's sitting on. It's still there, but you can't see it. `display:none;` is like taking the chameleon off the branch. Any elements that have either `display: none` or `visibility: hidden` will not be read by screen readers.
 
 ## Positioning your elements
 
