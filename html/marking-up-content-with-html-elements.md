@@ -110,7 +110,7 @@ You can also use comments during development if you want to temporarily remove a
 ### Classic elements
 
 #### Heading tags
-A web page is made up of blocks of content. Each content section will have a header that denotes the content's place in the page hierarchy. 
+A web page is made up of blocks of content. Each content section will have a heading that denotes the content's place in the page hierarchy. 
 
 Think of your HTML document as a research paper. You would probably have a heading at the top of the page with the paper's name on it. In an HTML document, you would make that clear like this: `<h1>Paper Title</h1>`.
 

@@ -22,8 +22,8 @@ Read the project requirements carefully, they are what you should be checking fo
   </tr>
   <tr>
     <th align="left">Site is responsive and media queries are used (smallest screen size 320px)</th>
-    <td>✓</td>
-    <td>✓</td>
+    <td> </td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -32,7 +32,7 @@ Read the project requirements carefully, they are what you should be checking fo
   </tr>
   <tr>
     <th align="left">Wrapper used to constrain content on large displays effectively</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -42,7 +42,7 @@ Read the project requirements carefully, they are what you should be checking fo
   </tr>
   <tr>
     <th align="left">Semantic HTML elements are used properly</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -52,8 +52,8 @@ Read the project requirements carefully, they are what you should be checking fo
   </tr>
   <tr>
     <th align="left">All images considered content have descriptive alt text</th>
-    <td>✓</td>
-    <td>✓</td>
+    <td> </td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -62,7 +62,7 @@ Read the project requirements carefully, they are what you should be checking fo
   </tr>
   <tr>
     <th align="left">One external .css stylesheet is used for whole project</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -72,7 +72,7 @@ Read the project requirements carefully, they are what you should be checking fo
   </tr>
   <tr>
     <th align="left">Setup snippet is used</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
