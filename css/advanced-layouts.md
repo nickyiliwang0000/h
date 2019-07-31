@@ -267,4 +267,4 @@ This one's viewport width. You may find that you will not use this as often as o
 
 ## Full bleed code-along
 
-Download [fulbleed-codealong-bootcamp.zip](https://hychalknotes.s3.amazonaws.com/fulbleed-codealong-bootcamp.zip) and we'll see how `vh` can be used to create a modern-looking website.
+Download [fullbleed-layout-starter--bootcamp.zip](https://hychalknotes.s3.amazonaws.com/fullbleed-layout-starter--bootcamp.zip) and we'll see how `vh` can be used to create a modern-looking website.
