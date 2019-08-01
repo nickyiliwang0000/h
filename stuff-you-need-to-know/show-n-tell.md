@@ -5,7 +5,7 @@ Below you'll find some preliminary instructions on how to prep for your Show & T
 We'll have a practice session **Thursday at 4pm** during the week of your presentation in the back classroom! Don't feel pressured to have a completed, polished presentation ready - we'll talk more in depth about the logistics of the presentations, have everyone do a timed runthrough and I'll offer some notes and advice before the big day!
 
 ## The How:
-You'll be presenting on your topic for *3-5 minutes*. You definitely do not have to be an expert on the subject but you'll want to gather enough info to tell us:
+You'll each be presenting on your topic for *3-5 minutes*. Your topics don't have to be related - you're presenting individually, not as a group, so don't worry about coordinating! You definitely do not have to be an expert on the subject but you'll want to gather enough info to tell us:
 what is it
 how - as developers - we would use it
 and most importantly *why* we'd use it (beyond just "it's cool!"). 
@@ -30,19 +30,12 @@ Your Show & Tell groups have been assigned by week. You can find the list of gro
 Feel free to choose any topic - just make sure you have it approved before you spend too much time researching and building a presentation! Here are 50 example topics you can choose or use to inspire your choice. Each Monday, I'll update the list below with any topics that have been claimed!
 
 ### Available:
-:focus-within
 
 AMP pages
 
 anime.js
 
-color-adjust
-
 CSS clip-path
-
-CSS knock-out
-
-CSS shine
 
 cycle.js
 
@@ -50,13 +43,9 @@ draft.js
 
 Label & Labelledby
 
-lodash
-
 pointer events
 
 react autocomplete
-
-react dnd
 
 React Native
 
@@ -98,8 +87,6 @@ mix-blend-mode
 
 float-labels
 
-CSS shapes
-
 custom SVGs
 
 custom tool tips
@@ -131,3 +118,18 @@ typed.js
 particle.js
 
 sketch.js
+
+### Claimed:
+lodash
+
+:focus-within
+
+color-adjust
+
+CSS shine
+
+CSS shapes
+
+react dnd
+
+CSS knock-out
