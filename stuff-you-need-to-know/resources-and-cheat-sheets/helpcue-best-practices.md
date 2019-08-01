@@ -22,7 +22,8 @@ We ask that you do not add questions when HelpCue is closed. We will be deleting
 ### HelpCue is closed...
 * Monday to Friday from 1:00pm to 2:00pm for lunch
 * at 5:30pm Monday to Thursdays
-* at 5:00pm on Fridays for show and tell
+* at 4:40pm on Fridays for show and tell
+* during daily breaks
 * Friday mornings from 10:00am to 11:30am
 
 ## HelpCue etiquette
