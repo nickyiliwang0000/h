@@ -52,7 +52,7 @@ You can find your assignment [here]().
 
 ### Design files
 
-**Sanctuart Helpers**
+**Sanctuary Helpers**
 
 [design](https://scene.zeplin.io/project/5d49d1c3066e193158bf3d48)
 
