@@ -5,7 +5,7 @@ Below you'll find some preliminary instructions on how to prep for your Show & T
 We'll have a practice session **Thursday at 4pm** during the week of your presentation in the back classroom! Don't feel pressured to have a completed, polished presentation ready - we'll talk more in depth about the logistics of the presentations, have everyone do a timed runthrough and I'll offer some notes and advice before the big day!
 
 ## The How:
-You'll each be presenting on your topic for *3-5 minutes*. Your topics don't have to be related - you're presenting individually, not as a group, so don't worry about coordinating! You definitely do not have to be an expert on the subject but you'll want to gather enough info to tell us:
+You'll each be presenting on your topic for *3 minutes*. Your topics don't have to be related - you're presenting individually, not as a group, so don't worry about coordinating! You definitely do not have to be an expert on the subject but you'll want to gather enough info to tell us:
 what is it
 how - as developers - we would use it
 and most importantly *why* we'd use it (beyond just "it's cool!"). 
@@ -30,106 +30,59 @@ Your Show & Tell groups have been assigned by week. You can find the list of gro
 Feel free to choose any topic - just make sure you have it approved before you spend too much time researching and building a presentation! Here are 50 example topics you can choose or use to inspire your choice. Each Monday, I'll update the list below with any topics that have been claimed!
 
 ### Available:
-
-AMP pages
-
+```AMP pages
 anime.js
-
 CSS clip-path
-
 cycle.js
-
 draft.js
-
 Label & Labelledby
-
 pointer events
-
 react autocomplete
-
 React Native
-
 stoke-dash
-
 touchstart
-
-transition-delay
-
 Custom Cursors
-
 Konami Codes
-
 Animate on Scroll
-
 CSS Perspective
-
-Parallax scrolling
-
 DNS
-
 night/day mode
-
 granim.js
-
-impress.js
-
 CSS variables
-
 CSS Masks
-
 React Joyride
-
 SVG Morph
-
 scroll-then-fix
-
 mix-blend-mode
-
 float-labels
-
 custom SVGs
-
 custom tool tips
-
-chart.js
-
 preloaders
-
 brain.js
-
 SweetAlerts
-
 custom browser extensions
-
 sticky/smooth/active nav
-
 reveal.js
-
 draggable.js
-
 pose.js
-
 CSS text-path
-
 three.js
-
 typed.js
-
-particle.js
-
 sketch.js
+```
 
 ### Claimed:
+```
 lodash
-
 :focus-within
-
 color-adjust
-
 CSS shine
-
 CSS shapes
-
 react dnd
-
 CSS knock-out
+transition-delay
+parallax
+chart.js
+particle.js
+impress.js
+```
