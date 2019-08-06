@@ -30,7 +30,7 @@ Week 2: Shoring up the little knowledge gaps
 - Preprocessors (SCSS)
 - Image formats and SVG
 - CSS transitions, transforms and animations
-- 🍴LUNCH 🍴(accessibility lunch n learn)
+- 🍴LUNCH 🍴
 - Project work time
 
 < Friday /> 
