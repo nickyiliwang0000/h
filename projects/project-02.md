@@ -52,25 +52,25 @@ You can find your assignment [here]().
 
 ### Design files
 
-**Captured**
+**Sanctuart Helpers**
 
-[design](https://scene.zeplin.io/project/5cb78913fae8ad09e8372c93)
+[design](https://scene.zeplin.io/project/5d49d1c3066e193158bf3d48)
 
-[assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
-
-
-**FunPlace**
-
-[design](https://scene.zeplin.io/project/5cb78ae2e6267e081e91a1df)
-
-[assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/sanctuary-helpers-final-images.zip)
 
 
-**Mindn'Soul** 
+**Boat Ride Adventures**
 
-[design](https://scene.zeplin.io/project/5cc747bf7cbe272d01e3698d)
+[design](https://scene.zeplin.io/project/5d433e5a011ec788608a7319)
 
-[assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/boat-ride-adventures-final-assets.zip)
+
+
+**Under The Sea** 
+
+[design](https://scene.zeplin.io/project/5d49df79c974ef129de7684b)
+
+[assets](https://hychalknotes.s3.amazonaws.com/under-the-sea-assets.zip)
 
 ## Submitting your project
 
