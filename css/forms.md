@@ -125,14 +125,14 @@ This one is technically an input, but you probably think of it as a button. The 
 When `<button>Submit</button>` is inside a form element, it acts exactly like `<input type="submit" />`. This means if a user clicks the button, the form will be submitted.
 
 ```html
-<button type="submit"></button>
+<button type="submit">Submit Form</button>
 
 ```
 ### `button[type=reset]`
 If a user clicks this button, all the elements in the associated form will be reset. This means all inputs and text areas in that form will be cleared.
 
 ```html
-<button type="reset"></button>
+<button type="reset">Reset Form</button>
 ```
 
 #### `button[type="submit"]` vs. `input[type="submit"]` 
