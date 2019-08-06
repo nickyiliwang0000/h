@@ -1,6 +1,6 @@
 # Navigations
 
-Almost all navigations on the web are unordered lists filled with list items and links. Let's start with a really simple example. Open up <a href="https://hychalknotes.s3.amazonaws.com/simple-nav.html" download>simple-nav.html</a> in your browser and editor and we will work through an example.
+Almost all navigations on the web are unordered lists filled with list items and links. Let's start with a really simple example. Open up [simple-nav.html](https://hychalknotes.s3.amazonaws.com/simple-nav.html) in your browser and editor and we will work through an example.
 
 First off we need to take the default margin and padding off that unordered list:
 
@@ -33,12 +33,27 @@ ul li {
 }
 ```
 
+Since we're using floats, we also have to remember to add in a clearfix snippet at the top of our CSS, and to give the `ul` a class of `clearfix` in our HTML.
+
+```css
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; }
+```
+
+```html
+<ul class="clearfix">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="work.html">Work</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+```
+
 We can now go ahead and style it as we wish.
 
 Note: it is best practice to put your styles on the link themselves rather than the `<li>` because we want the entire link to take up all the space.
 
 ## Accessibility and navigations
-Allowing users the ability to get to the main content for your site is important. The main content is probably not the first thing on your site, an important piece to creating an accessible site is creating a link to skip to the main content. The idea is fairly straightforward, the first bit of content on the pages is an anchor tag that links to an id further down. <a href="https://www.canada.ca/en.html" target="_blank">See an example of a skip link in action on the Government of Canada's site.</a>
+Allowing users the ability to get to the main content for your site is important. The main content is probably not the first thing on your site, an important piece to creating an accessible site is creating a link to skip to the main content. The idea is fairly straightforward, the first bit of content on the pages is an anchor tag that links to an id further down. [See an example of a skip link in action on the Government of Canada's site.](https://www.canada.ca/en.html)
 
 ```html
 <body>
@@ -65,7 +80,7 @@ Allowing users the ability to get to the main content for your site is important
 }
 ```
 
-You also want to use CSS to hide the anchor until the user uses they keys to focus on the anchor. For more information checkout this <a href="http://webaim.org/techniques/skipnav/" target="_blank">link</a> for more information
+You also want to use CSS to hide the anchor until the user uses they keys to focus on the anchor. Check out this [link](http://webaim.org/techniques/skipnav/) for more information
 
 ### Mobile navigations
 
@@ -95,7 +110,7 @@ It's important to use native semantic elements when possible. Using `nav` here w
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
 
-Let's work through an example. Things can get a little confusing here so stay with me. Open up <a href="https://hychalknotes.s3.amazonaws.com/dropdown-nav.html" download>dropdown-nav.html</a> and you'll see a basic navigation unordered list.
+Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav-ANSWER.html).
 
 Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the anchor tags to black:
 
@@ -104,7 +119,7 @@ Let's style the list and nested list different colours so we know what's going o
   background: yellow;
 }
 
-ul.sub-menu {
+.sub-menu {
   background: #ececa9;
 }
 
@@ -113,7 +128,7 @@ ul.sub-menu {
 }
 ```
 
-Now we need to make the first list items next to each other:
+Now we need to make the first list items sit next to each other:
 
 ```css
 .main-menu li {
@@ -122,28 +137,28 @@ Now we need to make the first list items next to each other:
 }
 ```
 
-Hrm, but that makes both the parent nav and the sub nav inline, we only want the parent nav to be inline, so let's revert the second nav:
+Again, we're using floats, so don't forget to define a `clearfix` class at the top of your CSS and to add it to the `.main-menu` in your HTML.
+
+The problem with what we've done is that it makes both the parent nav and the sub nav inline. We only want the parent nav to be inline, so let's revert the second nav:
 
 ```css
-ul.sub-menu li {
-  float: none; /* Set the sub navs list items back by removing the float */
+.sub-menu li {
+  float: none; /* Set the sub nav's list items back by removing the float */
 }
 ```
-
-The above uses parent &rarr; child selectors to select only those list items nested inside another unordered list.
 
 Okay, looking okay so far. Let's get the hover part working. The first thing we need to do is hide the submenus by default.
 
 ```css
-ul.sub-menu {
+.sub-menu {
   background: #ececa9;
   display: none;
 }
 ```
 
-Then, how do we show them only when we hover? What should we trigger the hover on?
+How do we show them only when we hover? What element should we trigger the hover on?
 
-Since the sub nav is nested inside of the parents `<li>`, we want to trigger it on there. We use `display: block;` to switch it back from `display: none;`
+Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We use `display: block;` to switch it back from `display: none;`
 
 ```css
 .main-menu li:hover ul {
@@ -151,13 +166,7 @@ Since the sub nav is nested inside of the parents `<li>`, we want to trigger it 
 }
 ```
 
-Now you should see the sub nav when you hover over its parent:
-
-Problem now is that it pushes everything after the sub navigation down? Why? Because we are using `display: block;` !
-
-If only we could position it that it did not take up any extra space. It should "give up its seat". This is where we start to use `position: relative` and `position: absolute;`
-
-We want the sub menu to be absolute so it doesn't take up any room within its parent and the parent `<li>` to be relative so we can base out positioning off of that.
+Now you should see the sub nav when you hover over its parent. However, the problem now is that it pushes everything after the sub navigation down. Instead, we want it to be positioned on the page such that it doesn't take up any room within its parent or shift other elements around. We can accomplish this by giving the sub nav `position: absolute;` and the parent `li` `position: relative;`:
 
 ```css
 .main-menu li {
@@ -173,14 +182,12 @@ ul.sub-menu {
 }
 ```
 
-Bam! with just that, we now have a very simple dropdown menu. It works! We can use CSS to make cosmetic changes in the future.
-
-Did this on your own? <a href="https://hychalknotes.s3.amazonaws.com/dropdown-navANSWER.html" download>Check your answer here!</a>
+We now have a very simple dropdown menu, and we can use CSS to make cosmetic changes in the future.
 
 ## Using lists and positioning together
 
-Another great use of lists and positioning are to make galleries with text that appears on hover.
+Another great use of lists and positioning are to make galleries with text which appears on hover.
 
-Open up <a href="https://hychalknotes.s3.amazonaws.com/gallery-grid.html" download>gallery-grid.html</a> and use your creativity to code a gallery. You can tackle this in partners if you wish.
+Open up [gallery-grid.html](https://hychalknotes.s3.amazonaws.com/gallery-grid.html) and use your creativity to code a gallery. You can tackle this in partners if you wish.
 
-This is the <a href="https://hychalknotes.s3.amazonaws.com/gallery-gridANSWER.html" download>answer.</a>
+This is the [answer](https://hychalknotes.s3.amazonaws.com/gallery-gridANSWER.html).
