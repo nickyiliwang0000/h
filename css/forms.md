@@ -107,7 +107,7 @@ Again, similar to the text input, but some browsers provide an icon to clear the
 
 ### `input[type="color"]`
 
-A new input in HTML5! This input looks like a color picker in Chrome and Firefox. [It's not supported in Safari or Edge yet](https://caniuse.com/#feat=input-color), so it will render as a text input.
+A new input in HTML5! This input looks like a color picker. [It's not supported in IE or Opera mini](https://caniuse.com/#feat=input-color), so those browsers will render it as a text input.
 
 ```html
 <input type="color">
@@ -209,7 +209,7 @@ You can set the default value on any input by setting the `value` attribute.
 This is also the information that gets sent to the server when the form is submitted.
 
 ### `placeholder`
-This attribute denotes default text in your input that clears when a user starts typing. Placeholders are **not** read by screen readers. 
+This attribute denotes default text in your input, which clears when a user starts typing. Placeholders are **not** read by screen readers. 
 
 ```html
 <input type="email" placeholder="Please enter your email address">
@@ -253,16 +253,16 @@ A basic form might look like this:
 ```html
 <form action="submit">
   <label for="username">Your Username:</label>
-  <input type="text" id="username">
+  <input type="text" name="username" id="username">
 
   <label for="userpass">Password</label>
-  <input type="password" id="userpass">
+  <input type="password" name="userpass" id="userpass">
 
   <input type="submit" value="Log me in!">
 </form>
 ```
 
-We use the input's `id` attribute to connect it to the appropriate label. The `for` attribute exists to make the forms accessible for screen readers. Notice that when we click the label for a checkbox or radio button, it's as though we've clicked the box or button! That's thanks to the connection between the label and the input's `id`.
+We use each input's `id` attribute to connect it to the appropriate label. The `for` attribute exists to make the forms accessible for screen readers. Notice that when we click the label for a checkbox or radio button, it's as though we've clicked the box or button! That's thanks to the connection between the label and the input's `id`.
 
 It's common to see designs where labels are omitted from form elements in favor of placeholders. This is problematic because as soon as a user starts typing in a field, the placeholder disappears, so users no longer have instructions on what the input is for. Also, placeholders will never be read by screen readers. It's important to use labels to ensure all users understand what an input is for before, while, and after they use it.
 
@@ -283,7 +283,7 @@ If you don't have control of the design, still use labels but hide them using a 
 }
 ```
 
-This is going to hide the content. We need to have a height and width of 1px for the label, because anything smaller won't be read by a screen reader. There are a few new CSS properties in there, like `clip` and `clip-path`. All this is doing is ensuring visual users won't be able to see the content. You can also add this class to text that describes icons.
+This is going to hide the content. We need to have a height and width of 1px for the label, because anything smaller won't be read by a screen reader. There are a few new CSS properties in there, like `clip` and `clip-path`; all this is doing is ensuring visual users won't be able to see the content. You can also add this class to text which describes icons.
 
 It's a good idea to include the `visuallyhidden` class in all of your base styles and use it as necessary. Remember to change the class name to adhere to your naming convention, though!
 
@@ -304,7 +304,7 @@ The this is a semantic element that groups inputs. Browsers will add a bit of de
   <legend>Tell us about you!</legend>
 
   <label for="firstName">First Name</label>
-  <input type="text" name="firstName" palceholder="First name here" id="firstName">
+  <input type="text" name="firstName" placeholder="First name here" id="firstName">
 
   <label for="lastName">Last Name</label>
   <input type="text" name="lastName" placeholder="Last name here" id="lastName">
@@ -317,6 +317,7 @@ Radio buttons are useful when you want users to select **one thing** from a list
 ```html
 <fieldset>
   <legend>Select your pizza size:</legend>
+
   <label for="smallOption">Small</label>
   <input type="radio" name="pizzaSize" value="small" id="smallOption">
 
@@ -336,14 +337,15 @@ Radio buttons are useful when you want users to select **one thing** from a list
 <input type="radio" name="pizzaSize" value="large" checked="checked">
 ```
 
-Both are valid and work the same as `checked=true`.
+Both are valid and work the same as `checked="true"`.
 
-### `input[type=checkbox]`
+### `input[type="checkbox"]`
 Checkboxes are useful when you want users to select as many things as they want from a list of options:
 
 ```html
 <fieldset>
   <legend>Pizza toppings</legend>
+
   <label for="olives">Olives</label>
   <input type="checkbox" id="olives" name="topping" value="olives" checked>
 
@@ -367,17 +369,17 @@ In some cases, you will need to append a set of square brackets to whatever valu
 
 ### `textarea`
 
-This element is the weird cousin of the input bunch: it's not actually an input tag **and** it allows for multiple lines. Also, it requires a closing tag, but no content goes between the tags!
+This element is the weird cousin of the input bunch: it's not actually an `input` tag **and** it allows for multiple lines. Also, it requires a closing tag, but no content goes between the tags!
 
 ```html
 <textarea name="specialInstructions" cols="30" rows="10"></textarea>
 ```
-This element has two new attributes: `cols` and `rows`. This value is the number of characters the element can hold vertically and horizontally. 
+This element has two new attributes: `cols` and `rows`. These values set the visible width and height of the element (based on average character sizes).
 
 <!-- These attributes are no longer required: we can just use widths and heights, but it's nice to know. -->
 
 ### `select`
-The `select` element is useful when you want users to select **one thing** from a list of options. The browser usually styles it as a dropdown menu. Unlike radio buttons, the options don't need to share a name. They get their own tag: `option`.
+The `select` element is useful when you want users to select **one thing** from a list of options. The browser usually styles it as a dropdown menu. Unlike radio buttons, the options don't need to share a name, as the `name` attribute is on the parent `select` element. They get their own tag: `option`.
 
 ```html
 <select name="levelOfSpiciness">
@@ -388,7 +390,7 @@ The `select` element is useful when you want users to select **one thing** from 
   <option value="deathlySpicy" selected>Death.</option>
 </select>
 ```
-In the above example, the `value` attribute is what gets sent to the server and the text in between the option tags is what the user sees. To set the default option, use the `selected` attribute. `selected="true"` and `selected=selected` are also valid.
+In the above example, the `value` attribute is what gets sent to the server and the text in between the option tags is what the user sees. To set the default option, use the `selected` attribute. `selected="true"` and `selected="selected"` are also valid.
 Note that we cannot use any HTML inside of an option tag.
 
 ## The `form` element
