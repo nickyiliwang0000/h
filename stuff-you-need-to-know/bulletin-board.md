@@ -2,71 +2,48 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 1: Welcome! Let’s review!
+Week 2: Shoring up the little knowledge gaps
 
-< Monday />
-- Intro to the Internet
-- Keeping organized as a developer
-- Meet your text editor
-- Space orientation
-- 🍴**LUNCH** 🍴
-- HY culture presentation
-- Marking up content with HTML elements
-- Video and audio
-- Intro to CSS
-- CSS selectors
-
+< Monday /> 
+- 📆NO CLASS 📆
 
 < Tuesday /> 
-- Kickoff activity
-- Browser dev tools
-- CSS color
-- Curriculum orientation
-- Extra curricular orientation
-- 🍴**LUNCH** 🍴
-- Career Services orientation
-- Sexual violence and harassment policy orientation
-- Project 1 introduced
-- CSS measurement units
-- CSS background colour and images
-- CSS pseudo selectors
-- Web typography
-- Using webfonts
+- DUE: Blog post 1
+- Navigations
+- 🍴LUNCH 🍴
+- Forms
+- Version control with Git and GitHub
+- Git on the command line
+- 6pm: Bootcamp buddy meet up
 
 
 < Wednesday /> 
-- Kickoff activity 
-- CSS dimensions
-- CSS layout
-- Display and positioning
-- 🥗**SALAD CLUB** 🥗
-- Philosophy of best practices for HTML and CSS
-- HelpCue Orientation
-- Project work time
-
+- DUE: Project 1 
+- Flexbox
+- 🥗SALAD CLUB 🥗
+- Project 1 presentations
+- Project 2 introduced
+- Advanced CSS selectors
 
 < Thursday /> 
-- Kickoff activity 
-- Emmet
-- Icons
-- Advanced layouts
-- 🍴**LUNCH** 🍴
-- Responsive design
+- Reminder: purchase your domain name and hosting and download an FTP client for Monday
+- Preprocessors (SCSS)
+- Image formats and SVG
+- CSS transitions, transforms and animations
+- 🍴LUNCH 🍴(accessibility lunch n learn)
 - Project work time
 
-
-< Friday />
+< Friday /> 
 - Feedback form
 - Bootcamp team meeting 1030-1130
-- Pseudo-elements
-- Intro to command line
-- 🍴**LUNCH** 🍴
-- Personal branding
+- Grid systems
+- CSS grid
+- 🍴LUNCH 🍴
+- Cross-browser testing
 - Project work time
 - Show ‘n’ Tell
 
 
- 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Summer Bootcamp: (event)".
 
