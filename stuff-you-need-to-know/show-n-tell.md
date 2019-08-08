@@ -41,19 +41,14 @@ react autocomplete
 React Native
 stoke-dash
 touchstart
-Custom Cursors
-Konami Codes
 Animate on Scroll
-CSS Perspective
 DNS
 night/day mode
 granim.js
-CSS variables
 CSS Masks
 React Joyride
 SVG Morph
 scroll-then-fix
-mix-blend-mode
 float-labels
 custom SVGs
 custom tool tips
@@ -85,4 +80,9 @@ parallax
 chart.js
 particle.js
 impress.js
+mix-blend-mode
+Konami Codes
+CSS Perspective
+CSS variables
+custom cursors
 ```
