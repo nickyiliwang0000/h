@@ -295,7 +295,7 @@ Let's adjust our CSS to the following:
 }
 ```
 
-Combining the `minmax` function with `auto-fit` and `auto-fill` can help create some intuitively responsive layouts. You can create a layout with a flexible number of columns as well as flexible widths of columns. Let's adjust our CSS to the following:
+Combining the `minmax` function with `auto-fit` and `repeat` can help create some intuitively responsive layouts. You can create a layout with a flexible number of columns as well as flexible widths of columns. Let's adjust our CSS to the following:
 
 ```css
 .container {
@@ -312,7 +312,7 @@ Using `order` on grid items will change the order of your grid items. If the ord
 
 ## Exercises and Resources
 
-Try this exercise: [grid-placement-exercise-start.html](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise.html). The answer key is available [here](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise-answer.html): 
+Try this exercise: [grid-placement-exercise-start.html](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise.html). The answer key is available [here](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise-answer.html).
 
 For a gameified version of CSS Grids, try [Grid Gardern](https://cssgridgarden.com/).
 
