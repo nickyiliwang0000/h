@@ -2,46 +2,56 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 2: Shoring up the little knowledge gaps
+Week 3: Intro to JavaScript
 
 < Monday /> 
-- 📆NO CLASS 📆
+- FTP and domains
+- Host your website using FTP
+- 🍴LUNCH 🍴
+- Project work time
+- 6pm Fishbowl Session: HTML & CSS
 
 < Tuesday /> 
-- DUE: Blog post 1
-- Navigations
-- 🍴LUNCH 🍴
-- Forms
-- Version control with Git and GitHub
-- Git on the command line
-- 6pm: Bootcamp buddy meet up
-
+- Project work time
+- GitHub Collaboration
+- 🍴LUNCH 🍴(accessibility lunch n learn)
+- GitHub pages
+- Project work time
 
 < Wednesday /> 
-- DUE: Project 1 
-- Flexbox
+- DUE: Project 2 
+- 📝HTML/CSS test 📝
+- Intro to programming 
+- Intro to JavaScript
+- Project 2 presentations
 - 🥗SALAD CLUB 🥗
-- Project 1 presentations
-- Project 2 introduced
-- Advanced CSS selectors
+- JS Variables
+- Working with JS	
 
 < Thursday /> 
-- Reminder: purchase your domain name and hosting and download an FTP client for Monday
-- Preprocessors (SCSS)
-- Image formats and SVG
-- CSS transitions, transforms and animations
+- JavaScript all day!
+- Programming control flow
 - 🍴LUNCH 🍴
-- Project work time
+- Functions
 
-< Friday /> 
+< Friday />
+- Mock tech test
 - Feedback form
-- Bootcamp team meeting 1030-1130
-- Grid systems
-- CSS grid
+- Objects
 - 🍴LUNCH 🍴
-- Cross-browser testing
-- Project work time
+- Arrays
 - Show ‘n’ Tell
+
+## Study areas for HTML/CSS test:
+- Folder/Project organization best practices
+- Media query best practices
+- Rems/Ems
+- Accessibility best practices
+- Semantic elements
+- The box model
+- CSS calculations
+- Display properties
+- Positioning, flexbox, floats (no grid)
 
 
 ### Bootcamp calendar
