@@ -14,7 +14,7 @@ Week 3: Intro to JavaScript
 < Tuesday /> 
 - Project work time
 - GitHub Collaboration
-- 🍴LUNCH 🍴(accessibility lunch n learn)
+- 🍴LUNCH 🍴
 - GitHub pages
 - Project work time
 
