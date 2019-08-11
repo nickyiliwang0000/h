@@ -73,15 +73,14 @@ git push origin myfeaturebranch
    * If you're in your `myfeaturebranch`, use `git checkout master` to switch to your `master` branch.
 2. Use `git pull origin master` to make sure your local is up to date with the latest from the upstream `master`. 
 3. Use `git merge myfeaturebranch` to merge your feature branch into the `master` branch.
-4. Use `git commit origin master` to commit your merge.
-5. Use `git push origin master` to push your merge to the master branch of your repo on GitHub.
+4. Use `git push origin master` to push your merge to the master branch of your repo on GitHub.
 
 If you've got merge conflicts, now is a great time to sit down with your teammates and see which changes you want to keep.
 
 ### (Optional) Delete the feature branch if you don't need to come back to it
 If you're in your feature branch, use `git checkout master` to go somewhere that's not the branch you want to delete.
-Use `git push origin :myfeaturebranch`  to delete the myfeaturebranch branch on GitHub (upstream). 
-`git branch -d myfeaturebranch` will delete the branch on your computer.
+Use `git push origin :myfeaturebranch`  to delete the `myfeaturebranch` branch on GitHub (upstream). 
+`git branch -d myfeaturebranch` will delete the local branch on your computer.
 
 ## Resources
 
