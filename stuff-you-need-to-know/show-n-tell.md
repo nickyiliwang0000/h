@@ -39,24 +39,20 @@ Label & Labelledby
 pointer events
 react autocomplete
 React Native
-stoke-dash
 touchstart
 Animate on Scroll
 DNS
-night/day mode
 granim.js
 CSS Masks
 React Joyride
 SVG Morph
 scroll-then-fix
-float-labels
 custom SVGs
 custom tool tips
 preloaders
 brain.js
 SweetAlerts
 custom browser extensions
-sticky/smooth/active nav
 reveal.js
 draggable.js
 pose.js
@@ -85,4 +81,7 @@ Konami Codes
 CSS Perspective
 CSS variables
 custom cursors
+stroke-dash
+night/day mode
+float-labels
 ```
