@@ -116,7 +116,7 @@ Here's a handy [Stack Overflow discussion](http://stackoverflow.com/questions/18
 **Exercise**: In the example below, add the semicolons and line breaks that allow the code to run without errors.
 
 ```js
-"I'm just a value!" let schoolName = "HackerYou" let numOfStudents = 25 schoolName + " has " + numOfStudents + " students." 
+"I'm just a value!" let schoolName = "HackerYou" let numOfStudents = 40 schoolName + " has " + numOfStudents + " students." 
 ```
 
 ## JavaScript + HTML = ❤️
@@ -133,7 +133,7 @@ To include it internally, write all of your JavaScript within a `<script></scrip
 </body>
 ```
 
-To include it as an external file, save your file using a `.js` extension and link to it using the script tag with a `src` attribute like this:
+To include it as an external file, save your file using a `.js` extension and link to it using the script tag with a `src` attribute like this (still at the bottom of the page):
 
 ```html
 <script src="scripts.js"></script> 

@@ -157,7 +157,7 @@ Data type  | Value
 any `string`| `true`
 an empty `string` | false
 the `number` 0 | `false`
-any `number` higher than 0 |`true`
+any `number` higher or lower than 0 |`true`
 
 Data types and values that evaluate to false (i.e. `0`,`null`, and `undefined`) are known as _falsy_, whereas data types and values that evaluate to true (i.e. strings, any number higher than 0) are known as _truthy_. This is why the `===` operator exists: it checks for equality in both type **and** value; `==` checks for equality **only** in value.
 

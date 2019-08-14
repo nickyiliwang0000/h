@@ -106,9 +106,8 @@ For the most part in our JavaScript, we will be able to declare all our variable
 
 ### Variable naming conventions
 * Variables can't contain spaces. They must start with a non-numeric character (letter, `_`, or `$)`, followed by any character. (e.g. `let 23people` is invalid).
-* Use camelCase to separate words. (e.g. `let myName`).
+* Use camelCase to separate words (e.g. `let myName`). Using underscores to_separate_words is a common convention in other programming languages (like PHP) but is generally avoided in JavaScript.
 * JavaScript is case sensitive so variable names are also case sensitive.
-* Using underscores to_separate_words is a common convention in other programming languages (like PHP) but is generally avoided in JavaScript.
 * When naming a variable, it's best to give it a descriptive name. (e.g. `let userName` instead of `let u`).
 
 Consider the following code: 
@@ -246,20 +245,20 @@ console.log(sentence);// "Shauna works for the city as a bus driver."
 To create a template literal string, we use the backtick `` ` `` in place of the quotes. 
 
 ```js
-const name = `Rukmini`;
-const job = `streetcar driver`;
+const nameTwo = `Rukmini`;
+const jobTwo = `streetcar driver`;
 ```
 
 Strings and template literals behave in exactly the same way, but backticks make concatenation a lot easier. 
 
 ```js
-const name = `Rukmini`;
-const job = `streetcar driver`;
-const sentence = `${name} works for the city as a ${job}`;
-console.log(sentence);// "Rukmini works afor the city as a streetcar driver."
+const nameTwo = `Rukmini`;
+const jobTwo = `streetcar driver`;
+const sentenceTwo = `${name} works for the city as a ${job}`;
+console.log(sentenceTwo);// "Rukmini works for the city as a streetcar driver."
 ```
 
-Notice the `${}` syntax inside of the string, this is a _template expression_. It allows us to create a template for our strings; the browser will evaluate the `${}` expression and leave the proper value in its place at runtime. This makes concatenating large strings a lot more enjoyable.
+Notice the `${}` syntax inside of the string - this is a _template expression_. It allows us to create a template for our strings. The browser will evaluate the `${}` expression and leave the proper value in its place at runtime. This makes concatenating large strings a lot more enjoyable.
 
 ### Whitespace
 _Whitespace_ refers to blank characters and includes spaces, tabs, and line breaks. JavaScript usually ignores whitespace except when a *string* is being outputted into the browser.
