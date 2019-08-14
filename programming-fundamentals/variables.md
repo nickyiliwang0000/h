@@ -227,7 +227,7 @@ Error! How would you solve this issue?
 
 ### Template literals
 
-In ES6 there is a new way to define a string, and it comes with some added benefits. Currently if you want to define a string, you can use `''` or `""`.
+Since ES6 there is another way to define a string, and it comes with some added benefits. Currently if you want to define a string, you can use `''` or `""`.
 
 ```js
 const name = "Shauna";
