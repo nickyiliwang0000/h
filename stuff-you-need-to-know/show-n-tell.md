@@ -40,7 +40,6 @@ pointer events
 react autocomplete
 React Native
 touchstart
-Animate on Scroll
 DNS
 granim.js
 CSS Masks
@@ -59,7 +58,6 @@ pose.js
 CSS text-path
 three.js
 typed.js
-sketch.js
 ```
 
 ### Claimed:
@@ -84,4 +82,6 @@ custom cursors
 stroke-dash
 night/day mode
 float-labels
+sketch.js
+animate-on-scroll
 ```
