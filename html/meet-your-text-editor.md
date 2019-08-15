@@ -280,9 +280,9 @@ Don't stop here - feel free to make your own!
 
 Some instructor favorite setups include:
 * 'View' > 'Editor Layout' > 'Two Columns' will give you to panes in which to open files - perhaps the HTML and CSS for the same project, instead of putting them in tabs?
-* Open the command palette (`cmd + shift + p` on Mac or `ctrl + shift + p` on PC), type `shell command` and select 'Install code command in PATH' ![shell command screenshot](https://code.visualstudio.com/assets/docs/setup/mac/shell-command.png)
+* If you've got a Mac, open the command palette (`cmd + shift + p`, type `shell command` and select 'Install code command in PATH' ![shell command screenshot](https://code.visualstudio.com/assets/docs/setup/mac/shell-command.png)
 
-  Now you'll be able to type `code .` in a file in the command line and have it open in VSCode!
+  Now you'll be able to type `code .` in a file in the command line and have it open in VSCode! PC users are lucky -  this is built in for them!
 
 We'll be learning more about this text editor as the course goes on and features become useful to us. If you're keen to take an even deeper dive, you can check out these [intro videos](https://code.visualstudio.com/docs/getstarted/introvideos)! 
 
