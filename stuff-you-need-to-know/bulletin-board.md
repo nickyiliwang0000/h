@@ -2,56 +2,55 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 3: Intro to JavaScript
+Week 4: jQuery && JavaScript
 
-< Monday /> 
-- FTP and domains
-- Host your website using FTP
-- 🍴LUNCH 🍴
-- Project work time
-- 6pm Fishbowl Session: HTML & CSS
+< Monday />
+Kickoff
+Stand-ups
+JS Review
+Intro to jQuery
+jQuery API documentation
+jQuery best practices
+Project 3 introduction
+🍴LUNCH 🍴
+MVP Exercise
+Project 3 Introduction
+Queen Street hot treat code-along
+
 
 < Tuesday /> 
-- Project work time
-- GitHub Collaboration
-- 🍴LUNCH 🍴
-- GitHub pages
-- Project work time
+To-do app code-along
+How to organize your JavaScript
+🍴LUNCH 🍴
+Project work time
+
 
 < Wednesday /> 
-- DUE: Project 2 
-- 📝HTML/CSS test 📝
-- Intro to programming 
-- Intro to JavaScript
-- Project 2 presentations
-- 🥗SALAD CLUB 🥗
-- JS Variables
-- Working with JS	
+Design lesson with Fatima
+Advanced array methods
+🥗SALAD CLUB 🥗
+Regular expressions
+Project work time
+
 
 < Thursday /> 
-- JavaScript all day!
-- Programming control flow
-- 🍴LUNCH 🍴
-- Functions
+Working with APIs
+Accessing data with AJAX + When AJAX goes wrong
+🍴LUNCH 🍴(Performance Lunch n Learn w/Henri Helvetica)
+AJAX code-along
+Project work time
+6pm Fishbowl Session: jQuery
+
 
 < Friday />
-- Mock tech test
-- Feedback form
-- Objects
-- 🍴LUNCH 🍴
-- Arrays
-- Show ‘n’ Tell
-
-## Study areas for HTML/CSS test:
-- Folder/Project organization best practices
-- Media query best practices
-- Rems/Ems
-- Accessibility best practices
-- Semantic elements
-- The box model
-- CSS calculations
-- Display properties
-- Positioning, flexbox, floats (no grid)
+Feedback form
+Mock tech test
+Bootcamp team meeting 1030-1130
+Project work time
+Midpoint check-ins
+🍴LUNCH 🍴
+Project work time
+Show ‘n’ Tell
 
 
 ### Bootcamp calendar
