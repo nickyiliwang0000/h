@@ -44,7 +44,6 @@ Week 4: jQuery && JavaScript
 
 < Friday />
 - Feedback form
-- Mock tech test
 - Bootcamp team meeting 1030-1130
 - Project work time
 - Midpoint check-ins
