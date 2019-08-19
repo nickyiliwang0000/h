@@ -32,13 +32,11 @@ Feel free to choose any topic - just make sure you have it approved before you s
 ### Available:
 ```AMP pages
 anime.js
-CSS clip-path
 cycle.js
 draft.js
 Label & Labelledby
 pointer events
 react autocomplete
-React Native
 touchstart
 DNS
 granim.js
@@ -48,7 +46,6 @@ SVG Morph
 scroll-then-fix
 custom SVGs
 custom tool tips
-preloaders
 brain.js
 SweetAlerts
 custom browser extensions
@@ -57,7 +54,6 @@ draggable.js
 pose.js
 CSS text-path
 three.js
-typed.js
 ```
 
 ### Claimed:
@@ -84,4 +80,10 @@ night/day mode
 float-labels
 sketch.js
 animate-on-scroll
+CSS clip-path
+recursion
+preloaders
+redux
+React Native
+typed.js
 ```
