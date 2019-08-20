@@ -1,4 +1,4 @@
-In programming a *callback function* is a function that is used for something that might happen at a later point in time. In JavaScript this is most commonly used for events.
+In programming, a *callback function* is a function that is passed as an argument to another function. A *callback function* is created in order to be executed at a later point in time. In JavaScript, this is most commonly used for events.
 
 An example of this might be a click event with jQuery.
 
@@ -8,7 +8,7 @@ $('div').on('click', function() {
 });
 ```
 
-Here we set up an event using the `on` method. The `on` method takes two arguments here, the first is the event. In our case, the event is `click`. The second argument is what function we want to run when the click happens. *This function* is the callback function. 
+Here we set up an event using the `on` method. The `on` method takes two arguments here, the first is a string describing the name of the event. In our case, the event is `click`. The second argument is what function we want to run when the click happens. *This function* is the callback function. 
 
 When we provide the callback function to the `on` method, it has not run yet. The function is placed there as a value and only when we click the `div` will that function be called. 
 
@@ -17,18 +17,25 @@ Callback functions in JavaScript are functions that we are **passing as values**
 So we could handle that above differently if we wanted.
 
 ```js
-function handleClick() {
+const handleClick = function() {
 	//Do some stuff
 }
 
 $('div').on('click', handleClick);
 ```
 
-Notice how we change the function passed to `on` and reference this new `handleClick` function. If we pass that into the method and do NOT use the `()`, we are passing the value of a function  inside of the `on` method. This function will be called when the click happens. 
+Notice how we first define the function `handleClick` and then *reference* this new function as the second argument of the `on` method. Notice that we do NOT use the `()`. Instead of calling the function, we are passing the value of `handleClick` inside of the `on` method, which happens to be a function. This function will be called when the click happens. 
 
 ## Making our own.
 
-Let's explore this more by making our own function that accepts a callback. We will recreate the array `map` method, which is a method that takes a callback function and returns a new array based on it.
+In order to further understand how callback functions work, let's write our own function that accepts a callback function. 
+
+```js
+
+```
+
+
+<!-- Let's explore this more by making our own function that accepts a callback. We will recreate the array `map` method, which is a method that takes a callback function and returns a new array based on it.
 
 ```js
 function map(array, callback) {
@@ -167,6 +174,6 @@ for(var i = 0; i < array.length; i = i + 1) {
 }
 ```
 
-Once the `for` loop is done, it will have created an array of results that looks like this `[2,4,6,8,10]`.
+Once the `for` loop is done, it will have created an array of results that looks like this `[2,4,6,8,10]`. -->
 
 
