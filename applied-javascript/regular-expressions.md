@@ -120,14 +120,14 @@ symbol | meaning in a regex | example
 `[xyz]`| Any character from the specified set (in this case either x, y, or z) | `/bread[sy]/` matches both `"breads"` and `"bready"`, but not `"bread"`.
 `[a-z]` | Any character from a the specified range of characters (in this case any letter from a to z) | `/pear[a-z]/` matches `"pear"` followed by any lowercase letter between `a` and `z`.
 `[^cd]` | Any character *not* in the specified set (in this case any character that's not c or d) | `/[^1a]23/` matches the number 23 preceded by any character other than a `1` or an `a`.
-`\w` | Any _word character_. i.e. a-z, A-Z, 0-9, and _. Equivalent to [a-zA-Z0-9_]. | `/\w\w.` matches any two letters, numbers, or underscores. 
-`\W` | Any non-_word character_ i.e. any character other than a-z, A-Z, 0-9, and _. Equivalent to [^a-zA-Z0-9_] | `/bird\W/` matches an "bird" followed by any non-alphabet, numeral, or underscore character.
+`\w` | Any _word character_. i.e. a-z, A-Z, 0-9, and \_. Equivalent to [a-zA-Z0-9_]. | `/\w\w.` matches any two letters, numbers, or underscores. 
+`\W` | Any non-_word character_ i.e. any character other than a-z, A-Z, 0-9, and \_. Equivalent to [^a-zA-Z0-9\_] | `/bird\W/` matches an "bird" followed by any non-alphabet, numeral, or underscore character.
 `\d` | Any digit. Equivalent to [0-9]. | `/\d friends/` matches the numbers 0-9 followed by " friends".    
 `\s` | Any _whitespace_ character (i.e. spaces, tabs, and others) | `/cats\sdogs/` matches "cats" and "dogs" separated by a space or tab.
 `*` | 0 or more of the preceding character or group | `/hearts*/` matches `"heart"`, `"hearts"`, `"heartssss"`, and so on.
 `+` | 1 or more of the preceding character or group | `/brains+/` matches `"brains"`, `"brainssss"`, and so on, but _not_ `"brain"`. 
 `(expression)` | group an expression | `/my friend (\w+)/` matches `"my friend "` followed by 1 or more word characters.
-`(expressionA|expressionB)` | match *either* _expressionA_ *OR* _expressionB_ | `/(soccer|base)ball/` matches `"soccerball"` or `"baseball"`
+(expressionA\|expressionB) | match *either* _expressionA_ *OR* _expressionB_ | `/(soccer\|base)ball/` matches `"soccerball"` or `"baseball"`
 `{n}` | Where `n` is an integer, match exactly `n` of the preceding expression | `/go{3}al/` only matches `"goooal"` <br> `/a(ha){3}/` only matches "ahahaha".
 `{n,m}` | Where `n` and `m` are integers, match between `n` and `m` sets of the preceding expression | `hello{1,3}` matches only `"hello"`, `"helloo"`, and `"hellooo"`.
 `\` | Ignore the following character's special meaning. | `/1\.9/` matches exactly `1.9`.
