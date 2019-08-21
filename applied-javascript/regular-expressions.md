@@ -127,7 +127,7 @@ symbol | meaning in a regex | example
 `*` | 0 or more of the preceding character or group | `/hearts*/` matches `"heart"`, `"hearts"`, `"heartssss"`, and so on.
 `+` | 1 or more of the preceding character or group | `/brains+/` matches `"brains"`, `"brainssss"`, and so on, but _not_ `"brain"`. 
 `(expression)` | group an expression | `/my friend (\w+)/` matches `"my friend "` followed by 1 or more word characters.
-(expressionA\|expressionB) | match *either* _expressionA_ *OR* _expressionB_ | `/(soccer\|base)ball/` matches `"soccerball"` or `"baseball"`
+`(expressionA\|expressionB)` | match *either* _expressionA_ *OR* _expressionB_ | `/(soccer\|base)ball/` matches `"soccerball"` or `"baseball"`
 `{n}` | Where `n` is an integer, match exactly `n` of the preceding expression | `/go{3}al/` only matches `"goooal"` <br> `/a(ha){3}/` only matches "ahahaha".
 `{n,m}` | Where `n` and `m` are integers, match between `n` and `m` sets of the preceding expression | `hello{1,3}` matches only `"hello"`, `"helloo"`, and `"hellooo"`.
 `\` | Ignore the following character's special meaning. | `/1\.9/` matches exactly `1.9`.
