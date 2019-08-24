@@ -6,10 +6,16 @@
 
 # Reusable components
 
-So far, we've been building all of our components like this:
+So far, we've been building all of our components as Class Components, which look like this:
 
 ```jsx
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      data: [],
+    }
+  }
   render() {
     return (
       <div>
@@ -20,18 +26,18 @@ class App extends Component {
 }
 ```
 
-This is what's known as a _complex_ or _stateful_ component. In our applications, we'll often have most of the information about our program in the app's state.
+These components can be very complex because we can access multiple lifecycles methods, create functions, and define how we will manage our app state. This method of creating components in React is what's known as a _stateful_ component. 
 
-The applications that we will make will usually have one or two complex components that hold all the state, and a bunch of components that do presentational tasks like render the title and image of every movie we have in state. These presentational components don't need state, they don't need lifecycle methods - they only need to render the component and return some JSX. 
+The applications that we will make will usually have a handful of stateful components that hold all the state, and a bunch of components that do presentational tasks like render the title and image of every movie we have in state. These presentational components don't need state, they don't need lifecycle methods - they only need to render the component and return some JSX. 
 
-The opposite of a complex component is a _simple component_. Simple components **do not** have state or access to the React lifecycle methods. (You may also see them called _stateless components_ or _presentational components_.) 
+The opposite of a stateful component is a _Function (Stateless) component_. Function components **do not** have state or access to the React lifecycle methods. (You may also see them called _presentational components_.) 
 
-## Simple components
+## Function components
 
-A simple component looks like this:
+A function component looks like this:
 
 ```javascript
-const MySimpleComponent = () => {
+const MyFunctionComponent = () => {
   return (
     <div>
       <p>Hello friends!</p>
@@ -40,10 +46,10 @@ const MySimpleComponent = () => {
 } 
 ```
 
-You can include them in your code just like the more complex components:
+You can include them in your code just like class components:
 
 ```javascript
-const MySimpleComponent = () => {
+const MyFunctionComponent = () => {
   return (
     <div>
       <p>Hello friends!</p>
@@ -55,7 +61,7 @@ class App extends Component {
   render(){
     return (
     <div>
-      <MySimpleComponent />
+      <MyFunctionComponent />
     </div>
     )
   }
@@ -66,7 +72,7 @@ Because simple components cannot hold any state, you can provide information to 
 
 As we learned in a previous lesson, props are a way to pass data from one component to another. Props are references to information that get passed between components and that affect the way components are rendered.
 
-If we wanted to build a simple component that displayed a featured park, it might look like this:
+If we wanted to build a function component that displayed a featured park, it might look like this:
 
 ```javascript
 const FeaturedPark = (props) => {
@@ -89,9 +95,9 @@ class App extends Component {
 ```
 Here, the `name` prop is being passed to the `FeaturedPark` component and should render in our browser wherever the code has `{props.name}`.
 
-### Destructuring simple components
+### Destructuring function components
 
-In our [state v. props lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/state-vs.-props.md), we showed how to destructure props in a complex component. You can also destructure props in a simple component.
+In our [state v. props lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/state-vs.-props.md), we showed how to destructure props in a class component. You can also destructure props in a function component.
 
 Give a props object that looks like this:
 ```jsx
@@ -108,7 +114,7 @@ const props = {
 };
 ```
 
-Our simple component would look like this, initially:
+Our function component would look like this, initially:
 ```jsx
 const AuthorDetails = props => {
   return (
@@ -136,7 +142,7 @@ const AuthorDetails = ({ author, review }) => {
 
 
 ## Code-along
-We're going to refactor our art app to include simple component(s).
+We're going to refactor our art app to include function component(s).
 
 <!-- Check the Trello card for a link to this code-along -->
 <!-- finished code-along: https://hychalknotes.s3.amazonaws.com/dutch-art-react.zip -->
