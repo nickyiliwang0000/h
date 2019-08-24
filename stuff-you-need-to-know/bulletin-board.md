@@ -2,73 +2,48 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 4: jQuery && JavaScript
+Week 5: Deep in the wilds of JS and a React sighting...
 
 < Monday />
-- Kickoff
+- DUE Project 3 
 - Stand-ups
-- JS Review
-- Intro to jQuery
-- jQuery API documentation
-- jQuery best practices
-- Project 3 introduction
+- Understanding API documentation
+- Art code-along
 - 🍴LUNCH 🍴
-- MVP Exercise
-- Project 3 Introduction
-- Queen Street hot treat code-along
-
+- Project 3 presentations
+- Project 4 introduction
+- Project work time
 
 < Tuesday /> 
-- To-do app code-along
-- How to organize your JavaScript
+- Working with asynchronous events
 - 🍴LUNCH 🍴
+- Intro to Firebase
+- To-do app with Firebase code-along
 - Project work time
-
 
 < Wednesday /> 
-- Design lesson with Fatima
-- Advanced array methods
+- Class-based programming
+- Lexical scope and execution context
 - 🥗SALAD CLUB 🥗
-- Regular expressions
+- Career Services Presentation
+- Destructuring 
 - Project work time
 
-
-< Thursday /> 
-- Working with APIs
-- Accessing data with AJAX + When AJAX goes wrong
-- 🍴LUNCH 🍴(Performance Lunch n Learn w/Henri Helvetica)
-- AJAX code-along
+< Thursday />
+- Making our code more modular
+- Intro to React
+- 🍴LUNCH 🍴
+- Breaking our apps into components
 - Project work time
-- 6pm Fishbowl Session: jQuery
-
 
 < Friday />
+- JavaScript +jQuery test
 - Feedback form
-- Mock tech test
-- Bootcamp team meeting 1030-1130
-- Project work time
-- Midpoint check-ins
+- Events in React
 - 🍴LUNCH 🍴
-- Project work time
+- React Lifecycles
 - Show ‘n’ Tell
 
-### Feedback from the mock tech test
-> Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox,or grids.
-
-🎉 Successes 🎉 
-- 🎨bunch of people drew over the image to help explain their ideas. FANTASTIC!
-
-- Great job remembering the importance of setup/reset snippets and wrappers.
-
-- LOTS of talk about the clearfix class when floating elements.
-
-- A couple people mentioned the role of responsiveness. We should always be thinking about this.
-
-🔨 Things to think about 🔨
-
-A couple of y’all wrote actual HTML/CSS code. Always make sure to read your instructions carefully. Pseudo code shouldn’t have any actual code in it! Remember, with pseudo code we are essentially trying to help organize our thoughts and break down our process into small digestible steps to solve a problem. A Technical interviewer will be looking for your ability to explain technical concepts, not just write the rules to achieve it.
-
-Great work 🤙
 
 
 ### Bootcamp calendar
