@@ -44,6 +44,15 @@ Week 5: Deep in the wilds of JS and a React sighting...
 - React Lifecycles
 - Show ‘n’ Tell
 
+### Study areas for JS/jQuery Test
+- Objects
+- Arrays
+- Variable assignment and scope
+- Difference between the functional programming methods we learned (map, filter, reduce, forEach)
+- Arrow functions
+- Promises (Tuesday lesson)
+
+
 
 
 ### Bootcamp calendar
