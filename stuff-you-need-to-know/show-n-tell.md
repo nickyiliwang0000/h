@@ -53,7 +53,6 @@ reveal.js
 draggable.js
 pose.js
 CSS text-path
-three.js
 ```
 
 ### Claimed:
@@ -86,4 +85,5 @@ preloaders
 redux
 React Native
 typed.js
+three.js
 ```
