@@ -118,17 +118,19 @@ Data is structured a little bit differently in Firebase when compared to more tr
 You can nest data 32 levels deep, but just like Sass - avoid unneeded nesting whenever possible. When you fetch data from a location in the database, all of the child nodes come along with it. It's best practice to keep your data structure as flat as possible. 
 
 
-```javascript
-myProject = {
-  user: "Simon",
-  hobbies: {
-    1: "skiing",
-    2: "rowing",
-    3: "running"
+```js
+{
+  "users": {
+    "one": {
+      "name": "Amy",
+      "hobbies": { ... },
+      "timestamp": 1459361875666
+    },
+    "two": { ... },
+    "three": { ... }
   }
 }
 ```
-
 Every value in Firebase has a key that is attached to it. We can use this key in order to grab any value we desire. You can assign your own keys, or have Firebase generate these keys for you depending on what methods you choose. 
 
 ## Adding data to our Firebase database
