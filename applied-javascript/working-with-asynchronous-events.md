@@ -65,7 +65,7 @@ Chaining functions like this (i.e. so that they are executed from top to bottom 
 
 Rather than putting our AJAX calls (or any code) into callback after callback, we can queue up what's called a _promise_. A promise [is an object that represents the eventual completion or failure of an asynchronous event](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). 
 
-You can think of a JavaScript promise like a regular, real-life promise. If your best friend promises to get you a birthday gift, you can reasonably expect to receive that present on your birthday: ✨🎁✨ . It's not your birthday **yet** so they haven't made you a gift **right now**, but by the end of the day on your birthday, you will know if they've done what they promised. 
+You can think of a JavaScript promise like a regular, real-life promise. If your best friend promises to make you special a birthday gift, you can reasonably expect to receive that present on your birthday: ✨🎁✨ . It's not your birthday **yet** so they haven't made you a gift **right now**, but by the end of the day on your birthday, you will know if they've done what they promised. 
 
 A _fulfilled_ promise is one where your best friend gives you a gift (or you receive the data you expect from your API).
 A _rejected_ promise is one where your best friend wasn't able to get you a gift (or you don't receive any data from your API).
@@ -123,7 +123,7 @@ $.ajax({
 ```js
 const pokemonApp = {};
 
-pokemonApp.url = 'http://pokeapi.co/api/v2/pokemon/1/';
+pokemonApp.url = 'https://pokeapi.co/api/v2/pokemon/1/';
 
 pokemonApp.getPokemon = $.ajax({
   url: 'pokemonApp.url',
@@ -135,7 +135,7 @@ The JavaScript method `.then()` tells the browser what to do with the data retur
 
 ```js
 const pokemonApp = {};
-pokemonApp.url = 'http://pokeapi.co/api/v2/pokemon/1/';
+pokemonApp.url = 'https://pokeapi.co/api/v2/pokemon/1/';
 
 pokemonApp.getPokemon = $.ajax({
   url: 'pokemonApp.url',
@@ -157,7 +157,7 @@ Here's an example of a `.then()` function with two callbacks: the first one (the
 pokemonApp.getPokemon
   .then((caughtPokemon) => {
     console.log(caughtPokemon);
-  }, function(err) {
+  }, (err) => {
     console.log(err);
   });
 ```
@@ -183,14 +183,14 @@ Imagine we want to catch two Pokémon and then console log the contents of the P
 ```js
 // create a variable to hold the first promise
 pokemonApp.pokemonOne = $.ajax({
-  url : 'http://pokeapi.co/api/v2/pokemon/1/',
+  url : 'https://pokeapi.co/api/v2/pokemon/1/',
   dataType : 'json',
   method: 'GET'
 });
 
 // create a variable to hold the second promise
 pokemonApp.pokemonTwo = $.ajax({
-  url : 'http://pokeapi.co/api/v2/pokemon/2/',
+  url : 'https://pokeapi.co/api/v2/pokemon/2/',
   dataType : 'json',
   method: 'GET'
 });
@@ -264,7 +264,7 @@ How do we make sure we get the pocket monsters back in order? First let's change
 ```javascript
 function getPokemon(number) {
   return $.ajax({
-    url : `http://pokeapi.co/api/v2/pokemon/${number}/`,
+    url : `https://pokeapi.co/api/v2/pokemon/${number}/`,
     dataType : 'json',
     method: 'GET'
   });
@@ -291,46 +291,57 @@ Okay, so, how do we get the data out of that array?
 
 _Rest parameters_ allow us to gather the first, second, third, and all the **rest** of our **parameters** from a function and store them in a array.
 
-Imagine you have a function that takes any number of arguments and returns the sum:
+Imagine you want a function that takes any number of arguments, and returns them in an array so that we can use `.map()`, `.filter()` and other super powerful array methods on them:
+
 ```js
-add(2,3,4,5,6,7)
-// 27
-```
-You'd probably end up writing a function that looks like this:
-```js
-const add = function() {
-  const numbers = Array.prototype.slice.call(arguments);
-  return numbers.reduce( (a,b) => a + b );
-};
+// I want this function:
+arrayIt(2, 3, 4, 5, 6, 7);
+// To result in an array like [2, 3, 4, 5, 6, 7] 
 ```
 
-Whattttttt in the world does `Array.prototype.slice.call(arguments)` mean?! `arguments` is an **array-like object** (not an actual array) that is accessible on all functions. 
+You'd probably end up writing a function that looks like this:
+
+```js
+const arrayIt = function() {
+  const numbers = Array.prototype.slice.call(arguments);
+  console.log(numbers);
+};
+
+arrayIt(2, 3, 4, 5, 6, 7);
+// [2, 3, 4, 5, 6, 7]
+```
+
+Whattttttt in the world does `Array.prototype.slice.call(arguments)` mean?! This is a complicated way that we used to have to solve this problem.
+
+`arguments` is an _array-like object_ (not an actual array) that is accessible on all functions. 
 
 Check this out in the console:
+
 ```js
-const add = function() {
+const argumentsLog = function() {
   console.log(arguments);
 };
-// add(1,2,3)
+
+argumentsLog(1, 2, 3)
 // Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ]
 ```
-We can, however, use the `arguments` object to create an **actual** array!
 
-The `arguments` object, like all objects in JavaScript (and everything in JavaScript is an object!), has a parent object from which it inherits its methods (via the `.prototype` property). Arrays made from the Array prototype have the `.slice()` method. So, `Array.prototype.slice`. We can use `.slice()` to create an actual array from our `arguments` value. Using `.call`, we can use the `.slice` method with `arguments` as the context to create an array...
+We can, however, use the `arguments` object to create an actual array! Like all objects in JavaScript, the `arguments` object has a parent object from which it inherits its methods (via the `.prototype` property). Arrays made from the Array prototype have the `.slice()` method. So, `Array.prototype.slice`. We can use `.slice()` to create an actual array from our `arguments` value. Using `.call`, we can use the `.slice` method with `arguments` as the context to create an array...
 
-...that we can [use `.reduce` on](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)!
-
-😅It's a lot!😅
+😅 It's a lot! 😅
 
 Rest parameters make that whole thing much faster! Using the syntax `...` before the name of the variable that is an array-like object of values, you can turn whatever the `arguments` of the function are into an actual array!
 
 ```js
-const add = function(...numbers) {
-  return numbers.reduce( (a,b) => a + b );
+const arrayItRockapella = function(...numbers) {
+  console.log(numbers);
 };
-add(2,3,4,5,6,7);
-// 27
+
+arrayItRockapella(2, 3, 4, 5, 6, 7);
+// [2, 3, 4, 5, 6, 7]
 ```
+
+> Note that arrow functions don't have an arguments object the same way that function expressions and declarations do. For more about that, [check out MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_binding_of_arguments).
 
 For our Pokémon example, we can use rest parameters to tell our browser that we want to run the `.then()` function with each of the responses from the promises held in the `pokeBag` passed in.
 
@@ -341,12 +352,9 @@ $.when(pokeBag)
   });
 ```
 
-But wait! `pokeBag` is an **array of promises!** Promises are not values, they are only the promise of a future value! This means we have to listen to **each** item in the array. 
+But wait! `pokeBag` is an array of promises! Promises are not values, they are only the promise of a future value. This means we have to listen to each item in the array. 
 
-How do we listen? With `$.when()`!
-How do we get `$.when()` to listen to each promises? With the spread operator!
-
-> Note that arrow functions don't have an arguments object the same way that function expressions and declarations do. For more about that, [check out MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_binding_of_arguments).
+We know we can listen to promises with `$.when()`. To give `$.when()` access to each of the promise objects inside our array, we will use another new operator - the _spread operator_.
 
 ## Spread operator
 The _spread operator_ allows us to pass an array of arguments into a function as if we were doing it manually one-by-one. 
@@ -365,23 +373,26 @@ const numbers = [39, 25, 90, 123];
 const max = Math.max.apply(null, numbers);
 console.log(max); // 123
 ```
-Like rest parameters, the spread operator is also denoted by `...`.
+
+Nowadays, instead of `.apply`, we can use the spread operator. Like rest parameters, the spread operator is also denoted by `...`:
 
 ```js
-const numbers = [39,25,90,123];
+const numbers = [39, 25, 90, 123];
 const max = Math.max(...numbers);
 console.log(max); // 123
 ```
 
 The difference between the spread operator and rest parameters is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator). 
 
-Using the spread operator  we can take an array of promises and pass it to `$.when()`. We are saying, "Please do this function for every single item in the array." Then, using rest parameters, we can gather all the arguments passed to the `.then()` method into an array.
+Using the spread operator  we can take an array of promises and pass it to `$.when()`. We are saying, "Please do this function for every single item in the array." Then, using rest parameters, we can gather all the resolved promises passed as arguments to the `.then()` method back into another array, which is convenient for us to work with.
 
 ```javascript
 $.when(...pokeBag)
-  .then((...args) => {
-    console.log(args);
-    args.forEach((poke,i) => console.log(poke[0].name,poke[0].id));
+  .then( (...fulfilledPokes) => {
+    console.log(fulfilledPokes);
+    fulfilledPokes.forEach( (pokemon) => {
+      console.log(pokemon[0].name, pokemon[0].id);
+    });
   });
 ```
 
@@ -399,10 +410,11 @@ We just want that `DataObject`, so let's make one last change to the code above 
 
 ```javascript
 $.when(...pokeBag)
-  .then((...args) => {
-    args = args.map(pokemon => 
-      console.log(pokemon[0])
-    );
+  .then((...fulfilledPokes) => {
+    fulfilledPokes = fulfilledPokes.map(pokemon => {
+      return pokemon[0];
+    });
+    console.log(fulfilledPokes);
   });
 ```
 
