@@ -53,6 +53,80 @@ Week 5: Deep in the wilds of JS and a React sighting...
 - Promises (Tuesday lesson)
 
 
+### Mock Test Feedback
+> Given the array below, how would you create a new array that holds **only** the names of the beaches with pictures?
+
+Many solutions to this one. One way would be a very concise chaining of `.filter()` **and** `.map()`:
+
+```JS
+const locations = [
+  {
+    name: "Tyrell beach",
+    type: "beach",
+    img: "images/tyrellBeach.png",
+  },
+  {
+    name: "Mo'okai beach",
+    type: "beach",
+  },
+  {
+    name: "Lowell forest",
+    type: "forest",
+    img: "images/lowellForest.png",
+  },
+];
+
+const newBeachesArray = locations
+    .filter(location => {
+      return location.img && location.type === "beach";
+    })
+    .map(beach => {
+      return beach.name;
+    });
+```
+A more readable version breaks the return from the `.map` out into its own variable:
+
+```js
+  const beachesWithPicture = locations.filter(location => {
+    return location.type === 'beach' && location.img
+  });
+  const beachNames = beachesWithPicture.map(beach => {
+    return beach.name
+  });
+```
+
+Using `.forEach()`:
+
+```js
+const beachNames = [];
+
+const beachesWithPicture = locations.forEach(location => {
+  if (location.type === "beach" && location.img) {
+    beachNames.push(location.name);
+  }
+});
+```
+
+Or, with a `for` loop:
+
+```js
+const beachNames =[];
+for(let i=0; i < locations.length; i++) {
+  if(locations[i].img && locations[i].type === 'beach'){
+    beachNames.push(locations[i].name)
+  }
+}
+```
+
+🎉 Successes 🎉
+* Lots of people know their JS method syntax by heart!
+* Lots of people highlighted or made notations on the data provided. AWESOME! Know your data so you can make accurate conclusions.
+* When you can't remember the specific syntax, it's still valuable to be able to explain the method you want to use or the logic behind the process. A lot of people did this so 👍👍
+* Lots of people highlighted or made notations on the data provided. AWESOME! Know your data so you can make accurate conclusions.
+
+🔨 Things to work on 🔨
+* Make sure you are reading the instructions and your data carefully!! A few people wrote code that only returned the images and not the name. Some wrote code that returned `['Tyrell beach', 'Lowell forest']` which would be ok if all locations were beaches.
+
 
 
 ### Bootcamp calendar
