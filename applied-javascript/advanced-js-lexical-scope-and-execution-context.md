@@ -153,9 +153,11 @@ console.log(character.introduction());
 In this case, since the function is a method (i.e. it is attached to an object), and the method is called as a property 
 of the object, the `this` keyword references **the object that contains the method**.
 
-The second qualifier, that "the method is called as a property of the object" is where things get complicated.
+Pay attention to that second condition: "the method is called as a property of the object". This condition is a big part
+of what makes predicting what `this` will reference challenging. 
 
-If we create a variable to refer to the objects method, `this` changes:
+For example, if we create a variable and assign it the object's `introduction` method and then call that variable as a 
+function, the `this` keyword will reference a different value. 
 
 ```javascript
 let character = {
@@ -172,9 +174,10 @@ console.log(intro());
 // >> "Hello! My name is undefined."
 ``` 
 
-When calling *the reference* to `character`'s `introduction` method, the `this` keyword references the global object 
-once again. This becomes a problem when you want to organize your code using objects, but pass those organized methods 
-as callbacks to other functions. 
+When calling **the reference** to `character`'s `introduction` method, the `this` keyword references the global object 
+once again. This becomes a problem when you want to organize your code using objects. If you pass those organized 
+methods as callbacks to other functions, when the callbacks are executed, their `this` value won't reference the 
+organizing object any longer. 
 
 ```javascript
 let character = {
@@ -200,9 +203,11 @@ console.log(result);
 // >> "Hello! My name is undefined."
 ``` 
 
-Remember that what `this` references is determined by the *execution context*, not the scope. A similar issue will occur  
-if you create a function inside an object's method. Variables in the object's method's scope will be available to that
-function, but the function's `this` value will be different than the containing method's `this` value.
+Remember that what `this` references is determined by the execution context, **not the scope**. 
+
+A similar situation will occur if you create a function **inside an object method**. Variables in the object method's 
+scope will be available to that inner function, but the function's `this` value will be **different** than the 
+containing method's `this` value.
   
 ```javascript
 let fourSidedDie = {
@@ -213,7 +218,7 @@ let fourSidedDie = {
     let possibleNumbers = this.numbers;
     function newRandomNumber() {
       // the code here can't access dice's properties or methods because the newRandomNumber function cannot be called 
-      // *as a property on the dice object*. But it CAN access the variables in scope from the parent function.
+      // **as a property on the dice object**. But it CAN access the variables in scope from the parent function.
 
       console.log(this); // Window
       console.log(this.numbers); // undefined 
