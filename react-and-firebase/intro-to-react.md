@@ -291,7 +291,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
       )
     }
     ```
-* VSCode's Emmet will not work in  JSX unless you enable it in your user settings. To enable it go [follow these directions](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c);
+* VSCode's Emmet will not work in  JSX unless you enable it in your user settings. To enable it go [follow these directions](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c).
 
 ### Nesting and splitting components
 One of the incredibly powerful features of React is the ability to organize and split your code into components and then arrange and rearrange them like Lego.
