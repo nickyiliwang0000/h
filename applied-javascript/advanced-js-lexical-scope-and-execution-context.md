@@ -29,6 +29,7 @@ Let's explore what these things are. Create an HTML file and link it to an empty
 When you think of the term _global_ in JavaScript, think **code that is not inside a function**. 
 
 ### Global execution context example
+<!-- NOTE: The weird function indentation in the example below is needed for github to render the code properly --> 
 <table><tr><th>
 good-grandchild.js
 </th><th>
@@ -37,14 +38,14 @@ Global execution context
 let name = "Verna";
 let age = "72";
 
-function phoneCall(number, person){
-  console.log("Calling " + number + "for " + person)
-}
-
-function callGrandma() {
-  let phoneNumber = "416-555-4321"; 
-  phoneCall(phoneNumber, name);
-}
+    function phoneCall(number, person){
+      console.log("Calling " + number + "for " + person)
+    }
+  
+    function callGrandma() {
+      let phoneNumber = "416-555-4321"; 
+      phoneCall(phoneNumber, name);
+    }
 callGrandma();
 </pre></td><td>
 
@@ -63,6 +64,7 @@ Whenever a function is **called**, a new execution context is created. All of th
 
 **Example of function context**
 
+<!-- NOTE: The weird function indentation in the example below is needed for github to render the code properly --> 
 <table><tr><th>
 good-grandchild.js
 </th>
@@ -75,14 +77,14 @@ good-grandchild.js
 let name = "Verna";
 let age = "72";
 
-function phoneCall(number, person){
-  console.log("Calling " + number + "for " + person)
-}
+    function phoneCall(number, person){
+      console.log("Calling " + number + "for " + person)
+    }
 
-function callGrandma() {
-  let phoneNumber = "416-555-4321"; 
-  phoneCall(phoneNumber, name);
-}
+    function callGrandma() {
+      let phoneNumber = "416-555-4321"; 
+      phoneCall(phoneNumber, name);
+    }
 callGrandma();
 </pre></td><td>
 
