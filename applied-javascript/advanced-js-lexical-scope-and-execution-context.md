@@ -154,7 +154,7 @@ In this case, since the function is a method (i.e. it is attached to an object),
 of the object, the `this` keyword references **the object that contains the method**.
 
 Pay attention to that second condition: "the method is called as a property of the object". This condition is a big part
-of what makes predicting what `this` will reference challenging. 
+of what it challenging to predicting what `this` will reference. 
 
 For example, if we create a variable and assign it the object's `introduction` method and then call that variable as a 
 function, the `this` keyword will reference a different value. 
@@ -175,9 +175,11 @@ console.log(intro());
 ``` 
 
 When calling **the reference** to `character`'s `introduction` method, the `this` keyword references the global object 
-once again. This becomes a problem when you want to organize your code using objects. If you pass those organized 
-methods as callbacks to other functions, when the callbacks are executed, their `this` value won't reference the 
-organizing object any longer. 
+once again. 
+
+This can become problematic organizing your code using objects and then passing those organized methods as callbacks to 
+other functions. When the callbacks functions are executed, their `this` value won't reference the organizing object 
+any longer. 
 
 ```javascript
 let character = {
@@ -213,12 +215,15 @@ containing method's `this` value.
 let fourSidedDie = {
   numbers: [1,2,3,4],
   roll: function() {
-    console.log(this); // Object { numbers: [] ... } if called as `fourSidedDie.roll()`, `Window` otherwise 
+    console.log(this); 
+    // Object { numbers: [] ... } if called as `fourSidedDie.roll()`, `Window` otherwise 
   
     let possibleNumbers = this.numbers;
     function newRandomNumber() {
-      // the code here can't access dice's properties or methods because the newRandomNumber function cannot be called 
-      // **as a property on the dice object**. But it CAN access the variables in scope from the parent function.
+      // the code here can't access dice's properties or methods because 
+      // the newRandomNumber function cannot be called **as a property on 
+      // the dice object**. But it CAN access the variables in scope from 
+      // the parent function.
 
       console.log(this); // Window
       console.log(this.numbers); // undefined 
