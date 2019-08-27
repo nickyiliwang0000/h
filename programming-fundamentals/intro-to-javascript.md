@@ -134,7 +134,7 @@ To get the function to execute, you have to _call_ it using the function name fo
 functionName();
 ```
 
-Sometimes this is also referred to as _running_ or _executing_ a function.
+Sometimes this is also referred to as _running_ or _executing_ a function..
 
 Sometimes you will need to _pass_ some data into the function. This data is called an _argument_.
 
