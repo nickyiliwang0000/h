@@ -73,7 +73,7 @@ class App extends Component {
         <div className="pet">
           <h2>{animals[0].name}</h2>
           <p>Type: {animals[0].type}</p>
-          <p>Size: {animals[0].type}</p>
+          <p>Size: {animals[0].size}</p>
           <img src={animals[0].picture} alt={`An adorable ${animals[0].type}.`} />
         </div>
         <div className="pet">
