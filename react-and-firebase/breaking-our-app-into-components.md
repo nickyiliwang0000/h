@@ -64,9 +64,10 @@ So, how do we get this information on the page? Well, we could write something l
 ```jsx
 // App.js
 import React, { Component } from 'react';
+import animals from './animals';
 
 class App extends Component {
-  render() {
+    render(){
     return (
       <div>
         <h1>Adopt Us!</h1>
@@ -82,7 +83,6 @@ class App extends Component {
           <p>Size: {animals[1].size}</p>
           <img src={animals[1].picture} alt={`An adorable ${animals[1].type}.`}/>
         </div>
-        // another .pet div for every pet ...
       </div>
     )
   }
@@ -92,7 +92,7 @@ class App extends Component {
 As you can see, we have to repeat the `div.pet` element for every animal inside of our `animals` array. This totally works, but requires writing a ton of repetitive code!
 
 ## Your new best friend in React: `.map()`
-JavaScript to the rescue! In the past, when we have wanted to iterate over a bunch of items inside of an array and do something to them, what did we use? `.map()`! (Okay, we used a `for` loop sometimes, but in React we're going to stick with `map()`.)
+JavaScript to the rescue! In the past, when we have wanted to iterate over a bunch of items inside of an array and do something to them, what did we use? `.map()`! (Okay, we used a `for` loop or the .forEach() method sometimes, but in React we're going to stick with `map()`.)
 
 Looping over items to do stuff to them works just as well in React as it did in jQuery. Remember that inside of JSX we can write any vanilla JS we want by escaping it with curly brackets `{}`. We can add a `.map()` right inside the `render` method and have it print out all of our animals!
 
@@ -101,13 +101,14 @@ Let's refactor our JSX to incorporate a `.map()` instead of manually typing out 
 ```jsx
 // App.js
 import React, { Component } from 'react';
+import animals from './animals';
 
 class App extends Component {
   render() {
     return (
       <div>
         {animals.map((animal) => {
-          return (
+          return(
             <div>
               <h2>{animal.name}</h2>
               <p>Type: {animal.type}</p>
@@ -158,7 +159,9 @@ class App extends Component {
 }
 ```
 
-When we want to work on the "Animals Featured for Adoption" section, we have to dig a bit through our `App` component in order to find that section. Not only that, but what happens if we want to feature our pets in different parts of our app? We'd have to copy this code and paste it somewhere else. This isn't good because then if we need to change it, we have to change it in **_both_** places!
+This creates two issues:
+1. When we want to work on the "Animals Featured for Adoption" section, we have to dig a bit through our `App` component in order to find that section.
+2. What happens if we want to feature our pets in different parts of our app? We'd have to copy this code and paste it somewhere else. This isn't good because then if we need to change it, we have to change it in **_both_** places!
 
 ## Importing a component 
 So what can we do? Let's create a `PetList` component to hold the JSX information about all of our pets. That way, anywhere we need to print this information to the page, we'll be able to reference it by typing `<PetList />`.
@@ -166,6 +169,7 @@ So what can we do? Let's create a `PetList` component to hold the JSX informatio
 ```jsx
 //PetList.js
 import React, { Component } from 'react';
+import animals from './animals';
 
 class PetList extends Component {
   render() {
@@ -188,15 +192,16 @@ class PetList extends Component {
 
 export default PetList;
 ```
+> Don't forget to import `animals` to this new PetList file instead of the App.js file!
 
 Now we have a `PetList` component that we can use anywhere to print out our list of pets! Let's refactor our `App` component to bring in our `PetList` component:
 
 ```jsx
 //App.js
-import React, { Component } from 'react;
+import React, { Component } from 'react';
 import PetList from './PetList.js';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
