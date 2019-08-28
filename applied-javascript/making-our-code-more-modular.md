@@ -23,12 +23,16 @@ The separate, small modules are grouped together in a process called _bundling_ 
 
 ## How do we use modules?
 
-Modules aren't natively supported by all browsers. But they are supported by Firefox 63+, so let's take a look at how they work:
-
-Download [learning-modules.zip](https://hychalknotes.s3.amazonaws.com/learning-modules.zip) to follow along.
+Modules aren't natively supported by all browsers but we can use a live server extension in VSCode to take a look at how they work:
 
 ### Set up 
-To start, we need to include a `type` attribute whose value is `module` on our script tag.
+
+1. Download [learning-modules.zip](https://hychalknotes.s3.amazonaws.com/learning-modules.zip) to follow along.
+
+2. Install [live-server]
+(https://ritwickdey.github.io/vscode-live-server/) in your VSCode Extensions Tab. 
+
+3. We need to include a `type` attribute whose value is `module` on our script tag.
 
 ```javascript
 <script type="module" src="scripts/app.js"></script>
@@ -177,6 +181,6 @@ Moving forward, we're going to become very familiar with the _Node package manag
 
 ## Resources
 * [Let's Learn ES6: Modules](https://www.youtube.com/watch?v=aQr2bV1BPyE) with Ryan Christiani
-* [An Intro to Using npm and ES6 Modules for Front End Development](http://wesbos.com/javascript-modules/) An introd to ES6 modules by Wes Bos
+* [An Intro to Using npm and ES6 Modules for Front End Development](http://wesbos.com/javascript-modules/) An introduction to ES6 modules by Wes Bos
 * [An comprehensive discussion of npm basics](https://www.sitepoint.com/beginners-guide-node-package-manager/) (it says for beginners but it's closer to intermediate).
 * [The Wikipedia for Node.js](https://en.wikipedia.org/wiki/Node.js) does a better job of explaining what it is than Node's website does.
