@@ -156,7 +156,7 @@ In this case, since the function is a method (i.e. it is attached to an object),
 of the object, the `this` keyword references **the object that contains the method**.
 
 Pay attention to that second condition: "the method is called as a property of the object". This condition is a big part
-of what it challenging to predicting what `this` will reference. 
+of what makes it challenging to predict what `this` will reference. 
 
 For example, if we create a variable and assign it the object's `introduction` method and then call that variable as a 
 function, the `this` keyword will reference a different value. 
