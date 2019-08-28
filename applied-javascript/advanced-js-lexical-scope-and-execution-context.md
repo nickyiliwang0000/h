@@ -222,9 +222,9 @@ let fourSidedDie = {
   
     let possibleNumbers = this.numbers;
     function newRandomNumber() {
-      // the code here can't access dice's properties or methods because 
+      // the code here can't access fourSidedDie's properties or methods because 
       // the newRandomNumber function cannot be called **as a property on 
-      // the dice object**. But it CAN access the variables in scope from 
+      // the fourSidedDie object**. But it CAN access the variables in scope from 
       // the parent function.
 
       console.log(this); // Window
