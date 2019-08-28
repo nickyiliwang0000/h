@@ -41,7 +41,7 @@ When a component updates because its state or prop values were changed, this lif
 
 * **componentDidUpdate()** - This is where you can operate on the DOM and make network requests. **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
 
-When a component is unmounted from the DOM, the only one lifecycle method is called:
+When a component is unmounted from the DOM, this one lifecycle method is called:
 * **componentWillUnmount()** This is where you stop any recurrent logic associated with that component (like a timer or a recurring API call).
 
 ## Using the lifecycle methods
