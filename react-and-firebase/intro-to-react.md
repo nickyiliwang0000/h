@@ -31,14 +31,14 @@ Let's inspect those sites we were looking at before and see what we find!
 ## Create React App
 To build React projects, we will be using a tool built by React's developers called _Create React App_.
 
-### Installing Create React App
-We're going to install Create React App via the _node package manager_ (npm) using the command line.
+### Installing with Create React App
+We're going to use Create React App via the _node package manager_ (npm/npx) on the command line to make our first app.
 
 ```bash
-npm i -g create-react-app
+npx create-react-app my-first-app
 ```
 
-With `create-react-app` installed, we are able to quick start applications with the `create-react-app` command. Typing `create-react-app my-first-app` into your command line will create a folder called `my-first-app` and inside will be all the boilerplate needed to start building a React app! It will also give you instructions on how to run your application.
+Typing `npx create-react-app my-first-app` into your command line will create a folder called `my-first-app` and inside will be all the boilerplate needed to start building a React app! It will also give you instructions on how to run your application.
 
 ### Build your first app with Create React App
 The Create React App tool gives us everything we need to get started and it's important to know what some of the files do. In the project folder you will find a `src` folder, which will contain a bunch of files that Create React App made just for you! Let's look at a few of the important ones: `index.js` and `App.js`.
