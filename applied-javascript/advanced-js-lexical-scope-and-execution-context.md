@@ -29,6 +29,7 @@ Let's explore what these things are. Create an HTML file and link it to an empty
 When you think of the term _global_ in JavaScript, think **code that is not inside a function**. 
 
 ### Global execution context example
+<!-- NOTE: The weird function indentation in the example below is needed for github to render the code properly --> 
 <table><tr><th>
 good-grandchild.js
 </th><th>
@@ -37,14 +38,14 @@ Global execution context
 let name = "Verna";
 let age = "72";
 
-function phoneCall(number, person){
-  console.log("Calling " + number + "for " + person)
-}
-
-function callGrandma() {
-  let phoneNumber = "416-555-4321"; 
-  phoneCall(phoneNumber, name);
-}
+    function phoneCall(number, person){
+      console.log("Calling " + number + "for " + person)
+    }
+  
+    function callGrandma() {
+      let phoneNumber = "416-555-4321"; 
+      phoneCall(phoneNumber, name);
+    }
 callGrandma();
 </pre></td><td>
 
@@ -63,6 +64,7 @@ Whenever a function is **called**, a new execution context is created. All of th
 
 **Example of function context**
 
+<!-- NOTE: The weird function indentation in the example below is needed for github to render the code properly --> 
 <table><tr><th>
 good-grandchild.js
 </th>
@@ -75,14 +77,14 @@ good-grandchild.js
 let name = "Verna";
 let age = "72";
 
-function phoneCall(number, person){
-  console.log("Calling " + number + "for " + person)
-}
+    function phoneCall(number, person){
+      console.log("Calling " + number + "for " + person)
+    }
 
-function callGrandma() {
-  let phoneNumber = "416-555-4321"; 
-  phoneCall(phoneNumber, name);
-}
+    function callGrandma() {
+      let phoneNumber = "416-555-4321"; 
+      phoneCall(phoneNumber, name);
+    }
 callGrandma();
 </pre></td><td>
 
@@ -139,68 +141,138 @@ Let's take a look at `this` inside object methods.
 // object literal is created 
 let character = {
   firstName: 'Kermit',
-  print: function(){
+  introduction: function(){
     console.log(this);
+    return `Hello! My name is ${this.firstName}.`;
   }
 }
 
-character.print(); 
-// >> {firstName: 'Kermit', print: f(){}}
+console.log(character.introduction()); 
+// >> Object { firstName: "Kermit", introduction: introduction() }
+// >> Hello! My name is Kermit.
 ```
 
-In this case, since the function is a method (i.e. it is attached to an object), and the method is called as a property of the object, the `this` keyword references **the object that contains the method**.
+In this case, since the function is a method (i.e. it is attached to an object), and the method is called as a property 
+of the object, the `this` keyword references **the object that contains the method**.
 
-Now, let's create a function inside of a method. 
+Pay attention to that second condition: "the method is called as a property of the object". This condition is a big part
+of what it challenging to predicting what `this` will reference. 
+
+For example, if we create a variable and assign it the object's `introduction` method and then call that variable as a 
+function, the `this` keyword will reference a different value. 
 
 ```javascript
 let character = {
   firstName: 'Kermit',
-  print: function(){
+  introduction: function(){
     console.log(this);
-    let changeName = function(newName){
-      this.firstName = newName;
-    }
-
-    changeName("Miss Piggy");
-    console.log(this);
+    return `Hello! My name is ${this.firstName}.`;
   }
 }
-  
-character.print(); 
-// >> {firstName: 'Kermit', ...} 
-// >> {firstName: 'Kermit', ...} 
+
+let intro = character.introduction; 
+console.log(intro());
+// >> Window 
+// >> "Hello! My name is undefined."
 ``` 
 
-Why didn't the name change? Inside of our `print` method, `this` references the object in which the print method is defined, so it might seem to make sense that our `changeName` function inside that method would also make reference to the same object. This is not the case! Even though it's nested inside your object, it is not *called* as a property of an object, so the `this` keyword defaults back to the global object, `window`.  This function is actually creating a new global `firstName` variable and setting it to `"Miss Piggy"` (check it out in the console!)
+When calling **the reference** to `character`'s `introduction` method, the `this` keyword references the global object 
+once again. 
 
-How can this be solved? One way is with ES6 arrow functions! 
+This can become problematic organizing your code using objects and then passing those organized methods as callbacks to 
+other functions. When the callbacks functions are executed, their `this` value won't reference the organizing object 
+any longer. 
+
+```javascript
+let character = {
+  firstName: 'Kermit',
+  introduction: function(){
+    console.log(this);
+    return `Hello! My name is ${this.firstName}.`;
+  }
+};
+
+let app = {
+  startUp: function(afterStartUpCallback) {
+    // Do some start up stuff ...
+    
+    // Call the provided callback and return whatever it returns
+    return afterStartUpCallback() 
+  }
+};
+
+result = app.startUp(character.introduction);
+console.log(result);
+// >> Window 
+// >> "Hello! My name is undefined."
+``` 
+
+Remember that what `this` references is determined by the execution context, **not the scope**. 
+
+A similar situation will occur if you create a function **inside an object method**. Variables in the object method's 
+scope will be available to that inner function, but the function's `this` value will be **different** than the 
+containing method's `this` value.
+  
+```javascript
+let fourSidedDie = {
+  numbers: [1,2,3,4],
+  roll: function() {
+    console.log(this); 
+    // Object { numbers: [] ... } if called as `fourSidedDie.roll()`, `Window` otherwise 
+  
+    let possibleNumbers = this.numbers;
+    function newRandomNumber() {
+      // the code here can't access dice's properties or methods because 
+      // the newRandomNumber function cannot be called **as a property on 
+      // the dice object**. But it CAN access the variables in scope from 
+      // the parent function.
+
+      console.log(this); // Window
+      console.log(this.numbers); // undefined 
+      console.log(possibleNumbers); // [1,2,3,4]
+  
+      return possibleNumbers[Math.floor(Math.random() * possibleNumbers.length)];
+    }
+        
+    return newRandomNumber();
+  }
+}
+
+fourSidedDie.roll();
+```
+
+How can we make what `this` references more predictable? One way is with arrow functions! 
 
 ## Arrow functions revisited
 
 Arrow functions handle the `this` keyword a little differently. Unlike the above examples where the way a function is called determines one of many different possible values for `this`, arrow functions **never** have their own `this` value. They **always** inherit their `this` value from the scope in which the function was defined.  
 
-Let's rewrite our `changeName` method using an arrow function.
+Let's rewrite our `newRandomNumber` method using an arrow function.
 
 ```javascript
-let character = {
-  firstName: 'Kermit',
-  print: function(){
-    console.log(this);
-    let changeName = (newName) => {
-      this.firstName = newName;
+let fourSidedDie = {
+  numbers: [1,2,3,4],
+  roll: function() {
+    console.log(this); // Object { numbers: [] ... } if called as `fourSidedDie.roll()`, `Window` otherwise 
+  
+    let newRandomNumber = () => {
+      // the code here can't access dice's properties or methods because the newRandomNumber function cannot be called 
+      // *as a property on the dice object*. But it CAN access the variables in scope from the parent function.
+
+      console.log(this); // Object { numbers: [] ... }
+      console.log(this.numbers); // [1,2,3,4]
+  
+      return this.numbers[Math.floor(Math.random() * this.numbers.length)];
     }
-    
-    changeName("Miss Piggy");
-    console.log(this);
+        
+    return newRandomNumber();
   }
 }
 
-character.print(); 
-// >> {firstName: 'Kermit', ...} 
-// >> {firstName: 'Miss Piggy', ...} 
+fourSidedDie.roll();
 ```
 
-It now works like we want it to! How is that the case? We are using an arrow function for our `changeName` method, which means that the `changeName` function does not have it's own `this`: it uses the `this` from its enclosing execution context, which is the `print` method. 
+It now works like we want it to! How is that the case? We are using an arrow function for our `newRandomNumber` method, which means that the `newRandomNumber` function does not have it's own `this`: it uses the `this` from its enclosing execution context, which is the `roll` method. 
 
 Take note that this is a great solution to our nested function problem but can yield some unexpected results when used in other contexts:
 
