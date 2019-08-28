@@ -173,10 +173,14 @@ class App extends Component {
   removePark = index => {
     // create a new array from the featuredParks in state
     const oldParks = [...this.state.featuredParks];
-    // go through the oldParks array checking the index of the item to be removed against the iterator for this filter method
-    // if the index of the item to be removed is NOT equal to the iterator for this filter method, put it in the updatedFeaturedParks array
+    
+    // go through the oldParks array checking the index of the item to be removed 
+    // against the iterator for this filter method
+    // if the index of the item to be removed is NOT equal to the iterator for this filter method, 
+    // put it in the updatedFeaturedParks array
     // otherwise, if the index is the same as the iterator, get rid of that entry
     const updatedFeaturedParks = oldParks.filter((name, i) => i !== index);
+    
     // filter returns a new array, so we can use the return from the filter method to update our app's state
     this.setState({
       featuredParks: updatedfeaturedParks
