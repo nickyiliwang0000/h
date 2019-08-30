@@ -1,7 +1,7 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
 - Know the difference between mounting and unmounting to the DOM
-- Name four useful lifecycle methods (constructor, render, componentDidMount)
+- Name three useful lifecycle methods (constructor, render, componentDidMount)
 - Know which lifecycle methods are called when a component is mounted to the DOM (constructor, render, componentDidMount)
  -->
 
@@ -14,7 +14,7 @@ And just like the stages in a human's life, React components have stages called 
 ## What are the lifecycle methods?
 Sometimes, you will find you need to perform a little bit of business before you're ready for your component to render on the page. Maybe you'd like to make sure you have a piece of data that you're retrieving from an API, or you'd like to make sure a user is authenticated to view the page that they've requested. Lifecycle methods can help you do that.
 
-Lifecycle methods allow you to intervene at various stages of a React component's lifecycle (i.e. during its its creation/birth, updating/life, and destruction/death), in order to perform some kind of action. Since you don't have direct access to the React codebase, these lifecycle methods offer an opportunity for you to interact with and inject your own code into what would otherwise be a black box.
+Lifecycle methods allow you to intervene at various stages of a React component's lifecycle (i.e. during its creation/birth, updating/life, and destruction/death), in order to perform some kind of action. Since you don't have direct access to the React codebase, these lifecycle methods offer an opportunity for you to interact with and inject your own code into what would otherwise be a black box.
 
 When a method allows you to intervene in the process of an existing piece of code, it is often called a _hook_.
 

@@ -80,7 +80,12 @@ Allowing users the ability to get to the main content for your site is important
 }
 ```
 
-You also want to use CSS to hide the anchor until the user uses they keys to focus on the anchor. Check out this [link](http://webaim.org/techniques/skipnav/) for more information
+You also want to use CSS to hide the anchor until the user uses they keys to focus on the anchor. Check out this [link](http://webaim.org/techniques/skipnav/) for more information. 
+
+_Note:_ In order for skip links to work in the Firefox browser on Mac, you may have to change the accessibiliy settings. 
+
+1. Go to System Preferences > Keyboard > Shortcuts > 'All controls' radio button at the bottom of the pane.
+2. In Firefox, type "about:config" in the URL bar. There is no accessibility.tabfocus preference on the mac, so you'll have to make one. Right click in the window, create a new "integer" pref, and set it to 7.
 
 ### Mobile navigations
 

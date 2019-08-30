@@ -83,6 +83,7 @@ class App extends Component {
           <p>Size: {animals[1].size}</p>
           <img src={animals[1].picture} alt={`An adorable ${animals[1].type}.`}/>
         </div>
+        // another .pet div for every pet ...
       </div>
     )
   }
@@ -108,7 +109,7 @@ class App extends Component {
     return (
       <div>
         {animals.map((animal) => {
-          return(
+          return (
             <div>
               <h2>{animal.name}</h2>
               <p>Type: {animal.type}</p>
