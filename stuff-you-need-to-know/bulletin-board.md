@@ -2,55 +2,42 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 5: Deep in the wilds of JS and a React sighting...
+Week 6 - YAY! REACT LIVES! 
 
 < Monday />
-- DUE Project 3 
-- Stand-ups
-- Understanding API documentation
-- Art code-along
-- 🍴LUNCH 🍴
-- Project 3 presentations
-- Project 4 introduction
-- Project work time
+* NO CLASS!
 
-< Tuesday /> 
-- Working with asynchronous events
-- 🍴LUNCH 🍴
-- Intro to Firebase
-- To-do app with Firebase code-along
-- Project work time
+< Tuesday />
+* DUE Project 4 
+* Kickoff!
+* Pair project feedback form
+* Stand-ups
+* Project 4 Presentations
+* State vs. props
+* 🍴LUNCH 🍴
+* Reusable components
+* Introduce project 5
 
-< Wednesday /> 
-- Class-based programming
-- Lexical scope and execution context
-- 🥗SALAD CLUB 🥗
-- Career Services Presentation
-- Destructuring 
-- Project work time
+< Wednesday />
+* Using Firebase in React
+* 🥗SALAD CLUB 🥗
+* Project work time
 
 < Thursday />
-- Making our code more modular
-- Intro to React
-- 🍴LUNCH 🍴
-- Breaking our apps into components
-- Project work time
+* Deploying with Firebase
+* Project work time
+* 🍴LUNCH 🍴(Accessibility Lunch n Learn w/Jen Taylor)
+* Project work time
+* 6pm Fishbowl Session: React
 
 < Friday />
-- JavaScript +jQuery test
-- Feedback form
-- Events in React
-- 🍴LUNCH 🍴
-- React Lifecycles
-- Show ‘n’ Tell
-
-### Study areas for JS/jQuery Test
-- Objects
-- Arrays
-- Variable assignment and scope
-- Difference between the functional programming methods we learned (map, filter, reduce, forEach)
-- Arrow functions
-- Promises (Tuesday lesson)
+* Mock tech test
+* Bootcamp Team Meeting
+* Feedback form
+* Project work time
+* 🍴LUNCH 🍴
+* Project work time
+* Show ‘n’ Tell
 
 
 ### Mock Test Feedback
