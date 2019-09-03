@@ -51,7 +51,6 @@ SweetAlerts
 custom browser extensions
 reveal.js
 draggable.js
-pose.js
 CSS text-path
 ```
 
@@ -86,4 +85,5 @@ redux
 React Native
 typed.js
 three.js
+pose.js
 ```
