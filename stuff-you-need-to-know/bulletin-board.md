@@ -2,42 +2,45 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 6 - YAY! REACT LIVES! 
+Week 7:  A taste of some cool tools to explore 
 
 < Monday />
-* NO CLASS!
+* Kickoff
+* Stand-ups
+* Project work time
+* 🍴LUNCH 🍴
+* Git Collab Cont’d
+* Project work time
 
 < Tuesday />
-* DUE Project 4 
-* Kickoff!
-* Pair project feedback form
-* Stand-ups
-* Project 4 Presentations
-* State vs. props
-* 🍴LUNCH 🍴
-* Reusable components
-* Introduce project 5
+* Project work time
+* DUE Project 5 
+* 🍴LUNCH 🍴(Accessibility Lunch n Learn w/Jen Taylor)
+* Project 5 Presentations
+* Introduce Project 6
+* Project work time
 
 < Wednesday />
-* Using Firebase in React
+* Routing
+* Hackflix code-along
 * 🥗SALAD CLUB 🥗
 * Project work time
 
 < Thursday />
-* Deploying with Firebase
+* Unspecified group activity
 * Project work time
-* 🍴LUNCH 🍴(Accessibility Lunch n Learn w/Jen Taylor)
+* 🍴LUNCH 🍴
+* Extra React code-along
 * Project work time
-* 6pm Fishbowl Session: React
 
 < Friday />
-* Mock tech test
-* Bootcamp Team Meeting
+* React test
 * Feedback form
 * Project work time
 * 🍴LUNCH 🍴
 * Project work time
 * Show ‘n’ Tell
+
 
 
 ### Mock Test Feedback
