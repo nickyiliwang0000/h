@@ -41,6 +41,16 @@ Week 7:  A taste of some cool tools to explore
 * Project work time
 * Show ‘n’ Tell
 
+### React Study Areas
+* Class Components and Function Components
+* Lifecycle methods
+* JSX
+* State
+* Props
+* Updating State
+* Routing (Wednesday lesson)
+
+
 
 
 ### Mock Test Feedback
