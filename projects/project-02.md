@@ -79,6 +79,12 @@ You can find your assignment [here]().
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
 
+## #design in Helpcue
+
+Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces. 
+
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of the Bootcamp Designer. 🎨
+
 ## Lateness
 Projects handed in on the same date as the deadline but after the requested time (usually 10 a.m.) will receive a 10% penalty. Students will receive an additional 10% deduction for each day the project is late, up to a maximum penalty of 30% (or 3 days late). After 3 days, the project will receive a total mark of 0.
 
