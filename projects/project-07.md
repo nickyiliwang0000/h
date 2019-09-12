@@ -57,6 +57,12 @@ We'll do group critiques/QA before demo night to catch any weirdness.
 2. Deploy your website by June 18th at 1 p.m. and submit the live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
   * It is HIGHLY ENCOURAGED that you start your deploy on Tuesday evening, as Wednesday morning there will not be a lot of time for deployment debugging.
   * Your portfolio site **must** be deployed before the critiques or it will not be eligible for review. 
+  
+## #design in Helpcue
+
+Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces. 
+
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of the Bootcamp Designer. 🎨
 
 # No plagiarism!! 👀 We'll be watching for it!
 Plagiairism is presenting someone else's work as your own. When you use other developers' work, you must credit them on the site or in the comments. If you think something in your project walks the line, check with an instructor **before handing in your project**.
