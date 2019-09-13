@@ -5,38 +5,38 @@
 Week 8:  One step closer to the edge of and I’m about to break into web development
 
 < Monday />
-Kickoff
-Stand-ups
-Project Work Time
-Blog Post #3 Due
+* Kickoff
+* Stand-ups
+* Project Work Time
+* Blog Post #3 Due
 
 < Tuesday />
-Project Work Time
+* Project Work Time
 
 < Wednesday />
-DUE Project 6 - 10am
-Project 6 presentations
-Introduce Portfolio project
+* DUE Project 6 - 10am
+* Project 6 presentations
+* Introduce Portfolio project
 🥗LAST SALAD CLUB 🥗
-Group React project feedback form
-Project Clean-Up Time
+* Group React project feedback form
+* Project Clean-Up Time
 
 < Thursday />
-Resume Lesson with Chi Chi & Charlotte
-Job Seeker intro with Chi Chi & Charlotte
-Project Clean-Up/Resume Work Time
-🍴LUNCH 🍴
-Portfolio Theme Due for Approval
-Extra-Curricular: Design Fishbowl - 6pm to 8pm
+* Resume Lesson with Chi Chi & Charlotte
+* Job Seeker intro with Chi Chi & Charlotte
+* Project Clean-Up/Resume Work Time
+* 🍴LUNCH 🍴
+* Portfolio Theme Due for Approval
+* Extra-Curricular: Design Fishbowl - 6pm to 8pm
 
 < Friday />
-Mock Tech Test
-Feedback Form
-Portfolio/Project Clean-Up/Resume Work Time
-Career Path lunch’n’learn with Miguel
-Week 9 (and beyond) Overview
-Portfolio Work Time
-Final Show ‘n’ Tell 😢
+* Mock Tech Test
+* Feedback Form
+* Portfolio/Project Clean-Up/Resume Work Time
+* Career Path lunch’n’learn with Miguel
+* Week 9 (and beyond) Overview
+* Portfolio Work Time
+* Final Show ‘n’ Tell 😢
 
 
 
