@@ -2,54 +2,41 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 7:  A taste of some cool tools to explore 
+Week 8:  One step closer to the edge of and I’m about to break into web development
 
 < Monday />
-* Kickoff
-* Stand-ups
-* Project work time
-* 🍴LUNCH 🍴
-* Git Collab Cont’d
-* Project work time
+Kickoff
+Stand-ups
+Project Work Time
+Blog Post #3 Due
 
 < Tuesday />
-* Project work time
-* DUE Project 5 
-* 🍴LUNCH 🍴(Accessibility Lunch n Learn w/Jen Taylor)
-* Project 5 Presentations
-* Introduce Project 6
-* Project work time
+Project Work Time
 
 < Wednesday />
-* Routing
-* Hackflix code-along
-* 🥗SALAD CLUB 🥗
-* Project work time
+DUE Project 6 - 10am
+Project 6 presentations
+Introduce Portfolio project
+🥗LAST SALAD CLUB 🥗
+Group React project feedback form
+Project Clean-Up Time
 
 < Thursday />
-* Unspecified group activity
-* Project work time
-* 🍴LUNCH 🍴
-* Extra React code-along
-* Project work time
+Resume Lesson with Chi Chi & Charlotte
+Job Seeker intro with Chi Chi & Charlotte
+Project Clean-Up/Resume Work Time
+🍴LUNCH 🍴
+Portfolio Theme Due for Approval
+Extra-Curricular: Design Fishbowl - 6pm to 8pm
 
 < Friday />
-* React test
-* Feedback form
-* Project work time
-* 🍴LUNCH 🍴
-* Project work time
-* Show ‘n’ Tell
-
-### React Study Areas
-* Class Components and Function Components
-* Lifecycle methods
-* JSX
-* State
-* Props
-* Updating State
-* Routing (Wednesday lesson)
-
+Mock Tech Test
+Feedback Form
+Portfolio/Project Clean-Up/Resume Work Time
+Career Path lunch’n’learn with Miguel
+Week 9 (and beyond) Overview
+Portfolio Work Time
+Final Show ‘n’ Tell 😢
 
 
 
