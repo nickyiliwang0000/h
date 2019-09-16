@@ -53,7 +53,7 @@ We'll do group critiques/QA before demo night to catch any weirdness.
 * Site is responsive and uses media queries
 
 ## Submitting your project
-1. Submit your top two theme choices to Fatima for approval by June 13th at 1 p.m. via email (fatima@hackeryou.com).
+1. Submit your top two theme choices to Fatima for approval by September 19th at 1 p.m. via email (fatima@hackeryou.com).
 2. Deploy your website by September 24th at 1 p.m. and submit the live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
   * It is HIGHLY ENCOURAGED that you start your deploy on Monday, as Tuesday morning there will not be a lot of time for deployment debugging.
   * Your portfolio site **must** be deployed before the critiques or it will not be eligible for review. 
