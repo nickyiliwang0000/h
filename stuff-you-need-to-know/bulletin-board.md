@@ -39,6 +39,18 @@ Week 8:  One step closer to the edge of and I’m about to break into web develo
 * Final Show ‘n’ Tell 😢
 
 
+### Final Exam Review Topics
+* HTML Fundamentals
+* CSS quirks (e.g browser defaults, ghost space, resets, box-sizing, cross-browser inconsistencies, floats, etc)
+* JS syntax (e.g arrow functions, template literals, let vs. const, variable scope, etc).
+* What JS modules are and how we use them
+* React lifecycle methods
+* State in React
+* Class and Function Components
+* Basic Firebase methods
+* Git commands
+* Definitions including abbreviations (e.g. ECMAScript, Ajax, JSX etc.)
+
 
 ### Mock Test Feedback
 > Write 1-2 sentences explaining what a map function does AND write 4-10 lines of pseudo code that break down each step.
