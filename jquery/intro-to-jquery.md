@@ -31,7 +31,7 @@ jQuery is really one big object with a lot of helpful methods that you get to us
 The document object model represents all of the HTML element on the page in a tree structure, where each individual element is a node. 
 
 ```js
-const allParagraphs = document.getElementByTagName('p');
+const allParagraphs = document.getElementsByTagName('p');
 ```
 
 This JavaScript method will return all of the paragraph elements and store them in an array, which is then the value for the variable `allParagraphs`.
