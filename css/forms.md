@@ -432,6 +432,14 @@ input[type=email] {
 ```
 This can be a great selector to use to reset browser defaults.
 
+In addition, trigger styling when the user clicks or taps on an element or selects it with the keyboard's "tab" key:
+
+```css
+input:focus {
+
+}
+```
+
 ### Styling `select` elements
 
 Often, in a design, a dropdown will need to be styled beyond the default browser styling for the `select` tag, or it will need a custom dropdown icon. The `select` element (and most other form elements) will need their default browser appearance "turned off" to make styling easier.
