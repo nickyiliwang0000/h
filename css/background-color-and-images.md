@@ -88,6 +88,37 @@ section {
 }
 ```
 Here is [a little demo](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-position&preval=10px%20200px) where you can play around with background position.
+<!-- Background attatchemt -->
+
+### Background attachment
+
+Sometimes you will want to have control over whether a background image is fixed within the viewport or scrolls. For this we use the `background-attachment` property. There are three primary types of attachment: `fixed`, ` scroll`, and `local`. 
+
+`background-attachment: scroll` is the defualt attachment property and will make the background you are targeting scroll relative to the main view but stay fixed in the local view. **Note**: when the background is fixed in the local view, it is attached to the border of that element (more on this below). What this means is it will behave like you would expect, if you scroll the site, the image scrolls along with everything else.
+
+```css
+section {
+  background-attachment: scroll;
+}
+```
+
+`background-attachment: fixed` will "fix" the image to the viewport. So even as other content scrolls, the image will stay in its place. This is sometimes used to achieve the a "parallax" scroll effect by fixing an image as a background to other content that will scroll.
+
+```css
+section {
+  background-attachment: fixed;
+}
+```
+
+`background-attachment: local` solves a unique problem for us. If the content you are trying to scroll relative to (the local view) has its own scroll bar, `background-attachment: scroll` ends up behaving like `background-attachment: fixed`. The expected behaviour will still apply when you scroll the page (main view) itself. This is because `background-attachment: scroll` stays fixed within its local view.  `background-attachment: local` to the rescue! This fixes the background to the content rather than the border of the element allowing things to scroll along with the page, even when the element it is attached to has its own scroll bar.
+
+```css
+section {
+ background-attachment: local;
+}
+```
+Here is [a little demo](https://codepen.io/kevinpowell/pen/bzMvzN) to see a comparison of these 3 attachment properties in action!
+
 
 ### Background size properties
 
