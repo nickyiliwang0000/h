@@ -110,7 +110,7 @@ section {
 }
 ```
 
-There is a third attachment propery called `background-attachment: local` solves a unique problem for us. To learn more about this property visit this blog post by Kevin Powell (https://codepen.io/kevinpowell/pen/bzMvzN)
+There is a third attachment propery called `background-attachment: local` solves a unique problem for us. To learn more about this property visit this blog post by Kevin Powell (https://www.kevinpowell.co/article/background-attachment-local/)
 
 Here is [a little demo](https://codepen.io/kevinpowell/pen/bzMvzN) to see a comparison of these 3 attachment properties in action!
 
