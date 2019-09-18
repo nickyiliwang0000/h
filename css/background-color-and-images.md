@@ -88,6 +88,32 @@ section {
 }
 ```
 Here is [a little demo](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-position&preval=10px%20200px) where you can play around with background position.
+<!-- Background attatchemt -->
+
+### Background attachment
+
+Sometimes you will want to have control over whether a background image is fixed within the viewport or scrolls. For this we use the `background-attachment` property. There are two primary types of attachment: `fixed` and ` scroll`. 
+
+`background-attachment: scroll` is the defualt attachment property and will make the background you are targeting scroll relative to the main view. What this means is it will behave like you would expect, if you scroll the site, the image scrolls along with everything else.
+
+```css
+section {
+  background-attachment: scroll;
+}
+```
+
+`background-attachment: fixed` will "fix" the image to the viewport. So even as other content scrolls, the image will stay in its place. This is sometimes used to achieve the a "parallax" scroll effect by fixing an image as a background to other content that will scroll.
+
+```css
+section {
+  background-attachment: fixed;
+}
+```
+
+There is a third attachment propery called `background-attachment: local` solves a unique problem for us. To learn more about this property visit this blog post by Kevin Powell (https://www.kevinpowell.co/article/background-attachment-local/)
+
+Here is [a little demo](https://codepen.io/kevinpowell/pen/bzMvzN) to see a comparison of these 3 attachment properties in action!
+
 
 ### Background size properties
 
