@@ -432,13 +432,26 @@ input[type=email] {
 ```
 This can be a great selector to use to reset browser defaults.
 
-In addition, trigger styling when the user clicks or taps on an element or selects it with the keyboard's "tab" key:
+In addition, we can target trigger styling (i.e. when the user clicks or taps on an element or selects it with the keyboard's "tab" key) by using the :focus state.
 
 ```css
 input:focus {
 
 }
 ```
+
+To access the styling of an active input field (i.e. a button element that is clicked by the user), use the :active state.
+
+```css
+input:active {
+
+}
+```
+
+> **Accessibility tip**
+>
+> Set element focus with a border or highlight for those who rely on the keyboard navigations.
+
 
 ### Styling `select` elements
 
