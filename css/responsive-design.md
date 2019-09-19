@@ -32,7 +32,8 @@ Remember that `meta` tags go inside the `head` tag to provide information about 
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
-
+<details>
+  <summary>Click here to find out what each piece of the meta tag means</summary>
 * `meta` is the name of the tag.
 * `viewport` is the value of the `name` attribute. It specifies what this `meta` tag applies to.
 * `content` is where we provide the information about the viewport. We provide as many key-value pairs as we want here, each comma separated.
@@ -40,6 +41,7 @@ Remember that `meta` tags go inside the `head` tag to provide information about 
 * `initial scale` is how much the site is zoomed in or out by default. A value of 1.0 will render the size just as it is, no zoom in or out. A value of 0.5 would zoom it out while 1.5 would zoom it in.
 * `user-scalable=no` (not shown in tag above), is how we can keep users from zooming. This could be used if providing a mobile-optimized experience and zooming/panning is not required.
 * `minimum-scale` and `maximum-scale` is how we can limit how much a user is allowed to scale (e.g. these could be set to .5 and 2 respectively).
+</details>
 
 You should **always** put this tag into the `head` of your document. Add it as a snippet to your code editor! Without this tag, your site **will not be responsive**. It will render as a shrunk down version of your desktop site. 
 
@@ -105,8 +107,10 @@ Change all the media queries from `max-width` to `min-width`. How does that chan
 You may hear the phrase _mobile-first design_ which means pretty much what it sounds like: your base CSS will be the mobile styling. Therefore, you will mostly use `min-width` media queries because you are watching for where the mobile styles no longer look good. The opposite approach (it doesn't have a catchy name) assumes that the base CSS is for the desktop site and as it get smaller (or larger, but mostly smaller), new rules will have to be introduced -  then you'll use `max-width` to target smaller.
 
 Download this [width-media-queries-exercise.zip](https://hychalknotes.s3.amazonaws.com/width-media-queries-exercise.zip) to see how you can acheive the same look with mobile-first or desktop-first media queries.
-
+<details>
+<summary>
 #### Media query for height
+</summary>
 
 Occasionally you may want to check if a device has a certain height.
 
@@ -145,8 +149,11 @@ If the issue applies when the screen is narrow but longer than a phone screen, y
   * Some people use Google Chrome on the iPhone which takes up a different amount of vertical height than Safari.
 
 Trying to target a specific device is not a good idea: you are better off using width media queries most of the time.
-
+</details>
+<details>
+<summary>
 #### Media query for orientation
+</summary>
 
 Orientation is which way you are holding a device: portrait or landscape.
 
@@ -170,8 +177,9 @@ A media query like this one will target iPad-sized tablets that are oriented in 
 For most cases, **you will be okay using width media queries** instead of orientation. 
 
 But we tell you so you know. 🙏
-
-#### Media query for pixel resolution
+</details>
+<details>
+<summary>#### Media query for pixel resolution</summary>
 
 Pixels can bend your mind (especially if you are coming from a print background where everything is in 300 DPI and measured in inches). Pixels don't necessarily correspond to the physical size of the screen: a 50-inch 1080p TV is 1080px high while a 9-inch ipad is 1536px high. Some devices on the market today have _High Density Pixels_ (HiDPI). The marketing term for this kind of resolution is "retina". The number of pixels on these devices is doubled and crammed into the same sized screen as their regular density kinfolk, which results in a sharper image.
 
@@ -201,9 +209,13 @@ The one thing that has changed is that our images and graphics are blown up to 2
 ```
 
 Note that above we use both the more widely-functional `min-resolution` query and the vendor-prefixed `-webkit-min-device-pixel-ratio` to account for a few specific special-requirement cases (for details, take a look at [CanIUse](https://caniuse.com/#feat=css-media-resolution)).
+</details>
 
+
+<details>
+<summary>
 #### Other media queries
-
+</summary>
 These are used less often, but might be fun: 
   * **color**: if you could somehow get a web browser on an old gameboy color, you could target low or no bits of color.
   ```css
@@ -218,7 +230,7 @@ These are used less often, but might be fun:
   * **mac theme,windows theme**: targets specific themes on Mac or Windows
 
 There are a bunch more on [MDN](https://developer.mozilla.org/en-US/docs/CSS/Media_queries).
-
+</details>
 ### How to use breakpoints effectively
 
 In general, we won't create breakpoints based on specific devices. There are hundreds of screen sizes out there now and more to come. What we **will** do is create them based on the design and content of our websites. (For edge cases where you absolutely **must** target specific devices, check out [this resource by Chris Coyier](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) which provides media queries for some known devices sizes.) 
@@ -241,6 +253,7 @@ In the broadest sense, the following breakpoints correspond to general device si
 As you design your site, you may need breakpoints that are larger, smaller, or in between some of these. That's fine! We want you to always **create breakpoints based on your design/content.**
 
 ### Responsive layouts
+
 Percentage widths on your elements and flexbox are gonna be your good pals when creating responsive layouts, but even they can't do **all** the work.
 
 Download [responsive2.html](https://hychalknotes.s3.amazonaws.com/responsive2.html) and zoom all the way out on your dev tools (`cmd + - ` Mac and `ctrl + -` on Windows) to emulate a very wide screen - an external monitor, perhaps. See how all the content gets unreadably streeeeeeeeeeetched?
@@ -302,8 +315,8 @@ Some tips for using dev tools to check responsiveness:
 * Go to the 'Responsive' tab in the top left of the device emulator and select 'Edit List' and you can add known or custom devices to your emulator.
 * Under the settings cog in the top right, select 'Reload when user agent is changed' to reload the page when a different device is chosen.
 
-## Helpful patterns
-There are a lot of common patterns and problems that you will find when it comes to creating a responsive site. There is a great resource from Brad Frost called [Responsive Patterns](https://bradfrost.github.io/this-is-responsive/patterns.html) that has a lot of great examples and code for common issues.
+<!-- ## Helpful patterns
+There are a lot of common patterns and problems that you will find when it comes to creating a responsive site. There is a great resource from Brad Frost called [Responsive Patterns](https://bradfrost.github.io/this-is-responsive/patterns.html) that has a lot of great examples and code for common issues. -->
 
 ## Exercises
 
