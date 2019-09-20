@@ -55,7 +55,7 @@ September 30 to October 23
 Beyond Bootcamp Course
 * October 15 to November 21
 * Tuesdays and Thursdays 6:30pm to 9:30pm
-* Taught by Simon Bloom and mentored by Talia HM/Max Leduc
+* Taught by Simon Bloom mentored by Talia Harrison-Marcassa and Max Leduc
 
 
 ### Final Exam Review Topics
