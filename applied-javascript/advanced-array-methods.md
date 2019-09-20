@@ -99,7 +99,7 @@ console.log(people);
 
 We give the `.filter()` method an array and a filtering condition (i.e. a **callback function**). The `.filter()` method then gives us back (i.e. **returns**) an array of each item that fulfilled (i.e. returned `true`) the condition. Again, because it returns an array, it's smart to store the return in a variable.
 
-**Filtering out users who are younger than 19:**
+**Filtering out users who are younger than 18:**
 ```js
 
 const users = [
@@ -109,11 +109,11 @@ const users = [
   { name: 'Arthur Read', age: 9 }
 ];
 
-const ofAge = users.filter((value) => {
-  return value.age >= 19
+const votingAge = users.filter((value) => {
+  return value.age >= 18
 });
 
-console.log(ofAge);
+console.log(votingAge);
 //[
 //  { name: 'Buffy Summers', age: 25 },
 //  { name: 'Gandalf the Grey', age: 90 }
