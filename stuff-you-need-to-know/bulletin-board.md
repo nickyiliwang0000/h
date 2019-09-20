@@ -2,41 +2,60 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 8:  One step closer to the edge of and I’m about to break into web development
+Week 9: Loose ends + launch
 
 < Monday />
 * Kickoff
-* Stand-ups
-* Project Work Time
-* Blog Post #3 Due
+* Final exam
+* Portfolio site should be deployed today!
+* Project/Portfolio/Resume work time
 
 < Tuesday />
-* Project Work Time
+* Resumes Due - 10am
+* DUE Project 7(portfolio) - 1pm
+* 🍴LUNCH 🍴
+* Portfolio critiques
+* Project/Portfolio/Resume work time
+* Demo Night presenter practice 
 
 < Wednesday />
-* DUE Project 6 - 10am
-* Project 6 presentations
-* Introduce Portfolio project
-🥗LAST SALAD CLUB 🥗
-* Group React project feedback form
-* Project Clean-Up Time
+* Demo Night presenter practice - 10am
+* Project/Portfolio/Resume work time
+* HelpCue closes at 1pm….forever! ;-;
+* Demo Night setup - 4pm
+* Demo Night guests arrive any time after 5:30pm!
+* Demo Night presentation ~ 7pm
 
 < Thursday />
-* Resume Lesson with Chi Chi & Charlotte
-* Job Seeker intro with Chi Chi & Charlotte
-* Project Clean-Up/Resume Work Time
+* Industry Day brief and practice @ 10am
 * 🍴LUNCH 🍴
-* Portfolio Theme Due for Approval
-* Extra-Curricular: Design Fishbowl - 6pm to 8pm
+* Tech Interview Prep @ 2pm
 
 < Friday />
-* Mock Tech Test
-* Feedback Form
-* Portfolio/Project Clean-Up/Resume Work Time
-* Career Path lunch’n’learn with Miguel
-* Week 9 (and beyond) Overview
-* Portfolio Work Time
-* Final Show ‘n’ Tell 😢
+* Industry Day practice - 10am
+* Industry Day setup - 1pm
+* Industry Day guests arrive ~ 2:30pm
+* Dinner & Graduation ~ 6pm
+
+
+#### POST BOOTCAMP STUFF
+September 30 to October 23
+* Career Labs - Mondays and Wednesdays, 2pm to 6pm
+* Cover Letter & Resume reviews - Mon Sep 30, Tue Oct 1, Wed Oct 2 (a link to sign up for individual 20 minute appointments will be sent out closer to)	
+* Job Seeker Kick-off - Mon Sep 30, 2pm
+* Industry Buzzwords Lunch’n’Learn - Wed Oct 2, 1pm
+* Job Search Planning - Wed Oct 2, 2pm
+* Alumni Q&A Panel - Mon Oct 7, 5:30pm - 7:30pm
+* Interview Co-working Day - October 9 2pm 
+* Thanksgiving Monday (no CL) - Mon Oct 14
+* Employer Partner Power Hour with Klick Health - Wed Oct 16, 5pm
+* Intro to Full Stack Workshop - Mon Oct 21, 2pm
+* Employer Partner Power Hour with Sensei Labs - Wed Oct 23, 5pm
+
+Beyond Bootcamp Course
+* October 15 to November 21
+* Tuesdays and Thursdays 6:30pm to 9:30pm
+* Taught by Simon Bloom 
 
 
 ### Final Exam Review Topics
@@ -52,23 +71,38 @@ Week 8:  One step closer to the edge of and I’m about to break into web develo
 * Definitions including abbreviations (e.g. ECMAScript, Ajax, JSX etc.)
 
 
+
 ### Mock Test Feedback
-> Write 1-2 sentences explaining what a map function does AND write 4-10 lines of pseudo code that break down each step.
+> What is a React Component? How does a Function component differ from a Class component?
 
-They key here is to highlight the essential components that make up `.map()`:
+The major takeaways we are looking for are:
 
-* .map() is an array method
-* .map() invokes a callback function for each index in the provided array
-* .map() returns a new array
-* .map() does not mutate the original array
+What is a React Component:
+* React components are either a function or ES6 class that lets you optionally render a piece of UI (a view)
+* Components are independent and reusable blocks of code
+
+Function Component:
+* Can be referred to as presentational or stateless component
+* A regular JS object that can render JSX and can accept props as an argument
+* Function components do not have access to state or lifecycle methods
+
+Class Component:
+* Can be referred to as a stateful component
+* Class components are ES6 classes that extends the React Component class
+* Class components have access to state and component lifecycle methods
+
 
 🎉 Successes 🎉
-* At least three of the aforementioned details were consistently highlighted in your responses 👍This demonstrates a really strong understanding of this method!
-
-* Everyones pseudo code has improved so so much over the course of these tests! 
+* Y’all are talking like React developers.🤓Great use and understanding of the library and JS terminology
 
 🔨 Things to work on 🔨
-* Even though you pseudo code has improved, continue to work on it! It will be an ongoing process to effectively communicate your code logic in short but precise statements.
+* Keep reading questions carefully. Answers should have defined what a react component is, what a function component is, and what a class component is.
+
+
+* While everyone was able to correctly note a function component’s inability to access state, a lot of people left out their inability to access lifecycle methods as well. This is a very important distinction between the two
+
+
+* There was some mention of the create-react-app infrastructure (App.js). While this is definitely helpful for your understanding, that environment is unique to create-react-app and not all React projects will use it or have a component named App.js
 
 
 
