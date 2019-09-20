@@ -25,10 +25,10 @@ In 2010, a developer [described one solution to these problems](https://alistapa
 ## How to make a site responsive
 
 To make a responsive website, you need two things:
-* a special `meta` tag  
-* _media queries_ in your CSS
+1. a special `meta` tag  
+2. _media queries_ in your CSS
 
-### `<meta name="viewport">`
+### 1. `<meta name="viewport">`
 
 Remember that `meta` tags go inside the `head` tag to provide information about the web page to the browser but not the user.
 
@@ -47,7 +47,7 @@ Remember that `meta` tags go inside the `head` tag to provide information about 
 
 You should **always** put this tag into the `head` of your document. Add it as a snippet to your code editor! Without this tag, your site **will not be responsive**. It will render as a shrunk down version of your desktop site. 
 
-### Media queries
+### 2. Media queries
 
 Once you've added the viewport tag, _media queries_ are what actually make your site responsive. Media queries are conditional statements for your CSS that start with the `@media` keyword.
 
@@ -155,7 +155,7 @@ If the issue applies when the screen is narrow but longer than a phone screen, y
 Trying to target a specific device is not a good idea: you are better off using width media queries most of the time.
 
 
-### How to use breakpoints effectively
+#### How to use breakpoints effectively
 
 In general, we won't create breakpoints based on specific devices. There are hundreds of screen sizes out there now and more to come. What we **will** do is create them based on the design and content of our websites. (For edge cases where you absolutely **must** target specific devices, check out [this resource by Chris Coyier](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) which provides media queries for some known devices sizes.) 
 
@@ -176,17 +176,17 @@ In the broadest sense, the following breakpoints correspond to general device si
 
 As you design your site, you may need breakpoints that are larger, smaller, or in between some of these. That's fine! We want you to always **create breakpoints based on your design/content.**
 
-### Holistic Coding when creating Responsive Design
+## Holistic Coding when creating Responsive Design
 
-Media Queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Here are some patterns you can implement in your code to make your site fully responsive.
+Media Queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
 
-#### Layouts and Wrappers
+### Layouts and Wrappers
 
 Percentage widths on your elements and flexbox are gonna be your good pals when creating responsive layouts, but even they can't do **all** the work.
 
 Download [responsive2.html](https://hychalknotes.s3.amazonaws.com/responsive2.html) and zoom all the way out on your dev tools (`cmd + - ` Mac and `ctrl + -` on Windows) to emulate a very wide screen - an external monitor, perhaps. See how all the content gets unreadably streeeeeeeeeeetched? -->
 
-To keep it contained, add a `max-width` property to the wrapper. Like so:
+To keep it contained, add a fixed pixel `max-width` property to the wrapper. Like so:
 
 ```css
 .wrapper {
@@ -197,7 +197,7 @@ To keep it contained, add a `max-width` property to the wrapper. Like so:
 ```
 This allows the wrapper to be any size up to this value.
 
-#### Scaling images within their parent containers
+### Scaling images within their parent containers
 
 It's pretty common for your big, beautiful desktop images... 
 
@@ -217,11 +217,11 @@ img {
 }
 ```
 
-Try changing the size of the parent container!
+Now try changing the size of the parent container!
 
 ## Responsive testing
 
-It's ideal to test on an actual device because, as mentioned, the predicted size of a device screen and the actual size (and resolution) said screen can be different, but to get a general sense of the responsiveness of your site, drag the edge of your browser to emulate phone screen sizes or use the device emulator in your dev tools. 
+It's ideal to test on an actual device because, as mentioned, the predicted size of a device screen and the actual size (and resolution) said screen can be different. But to get a general sense of the responsiveness of your site, drag the edge of your browser to emulate phone screen sizes or use the device emulator in your dev tools. 
 
 Some tips for using dev tools to check responsiveness:
 
