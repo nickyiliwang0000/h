@@ -115,7 +115,6 @@ Download this [width-media-queries-exercise.zip](https://hychalknotes.s3.amazona
 
 #### Media query for height
 
-
 Occasionally you may want to check if a device has a certain height.
 
 Imagine that you have a header set to `height: 100vh` with a long title inside of it. On phones with short screens or small tablets in landscape mode the title might get cut off or break out of its container. 
@@ -176,6 +175,21 @@ In the broadest sense, the following breakpoints correspond to general device si
 
 As you design your site, you may need breakpoints that are larger, smaller, or in between some of these. That's fine! We want you to always **create breakpoints based on your design/content.**
 
+### Other Media Queries
+  * **orientation**:
+  * **pixel-width**: 
+  * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
+  * **monochrome**: targets monochrome screens (like Kindles)
+  * **progressive scan**: important pretty much only if you are making TV web apps
+  * **mac theme,windows theme**: targets specific themes on Mac or Windows
+  * **color**: if you could somehow get a web browser on an old gameboy color, you could target low or no bits of color.
+  ```css
+  @media all and (color:0) and (width:160px) and (height:144px) {
+    /* Target original gameboy */ 
+  }
+  ```
+  
+
 ## Holistic Coding when creating Responsive Design
 
 Media Queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
@@ -199,15 +213,16 @@ This allows the wrapper to be any size up to this value.
 
 ### Scaling images within their parent containers
 
-It's pretty common for your big, beautiful desktop images... 
+It's pretty common for your big, beautiful desktop images to be way too large for small screens. 
+<!-- 
+![screenshot of an image staying within its browser](https://hychalknotes.s3.amazonaws.com/image-within-container.png) -->
 
-![screenshot of an image staying within its browser](https://hychalknotes.s3.amazonaws.com/image-within-container.png)
-
-...to be way too large for small screens.
-
-![screenshot of an image breaking out of its container in a browser](https://hychalknotes.s3.amazonaws.com/image-breaking-out-of-container.png)
+<!-- 
+![screenshot of an image breaking out of its container in a browser](https://hychalknotes.s3.amazonaws.com/image-breaking-out-of-container.png) -->
 
 Open up [responsiveImages.html](https://hychalknotes.s3.amazonaws.com/responsiveImages.html) to get an idea of this issue.
+
+When an image renders on a page, by default it starts at it's original pixel width. It doesn't care how big it's parent container is or how wide the browser window is it will continue to render at the size that it started as unless we specify otherwise.
 
 The fix is easy. We apply `max-width:100%;` to all images. This ensures that images are never larger than their parent elements.
 
@@ -217,13 +232,11 @@ img {
 }
 ```
 
-Now try changing the size of the parent container!
+Now try changing the size of the browser window. 
 
 ## Responsive testing
 
-It's ideal to test on an actual device because, as mentioned, the predicted size of a device screen and the actual size (and resolution) said screen can be different. But to get a general sense of the responsiveness of your site, drag the edge of your browser to emulate phone screen sizes or use the device emulator in your dev tools. 
-
-Some tips for using dev tools to check responsiveness:
+It's ideal to test on an actual device because, as mentioned, the predicted size of a device screen and the actual size (and resolution) said screen can be different. But to get a general sense of the responsiveness of your site, drag the edge of your browser to emulate phone screen sizes or use the device emulator in your dev tools:
 
 * Dock your dev tools to the right of the screen (or in a new window completely). Click the three dots in the top right of your dev tools and select the option you want.
 
