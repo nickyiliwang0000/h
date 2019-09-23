@@ -24,7 +24,7 @@ section {
 }
 ```
 
-Most browsers default to a font size of 16px. Larger base font sizes (between 18px and 22px) are becoming more common because they are easier to read. Check out [the web typography lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/03-css/3.7-web-typography.md#sizing-fonts) for more information on sizing fonts.
+Most browsers default to a font size of 16px. Larger base font sizes (between 18px and 22px) are becoming more common because they are easier to read. Check out [the web typography lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/css/web-typography.md#sizing-fonts) for more information on sizing fonts.
 
 ## Percentages
 
