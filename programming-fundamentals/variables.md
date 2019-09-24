@@ -145,7 +145,13 @@ You can do basic arithmetic with numbers using _operators_. Arithmetic operators
 
 34 + 66.3
 
+// Modulo operator returns the remainder left over when one operand is divided by another operand.
 47 % 5
+
+// You can use modulo to check for even number
+47 % 2 // not even
+8 % 2 // even
+-10 % 2 // even
 ```
 
 Parentheses can be used to group operations. Just like you learned in grade school, BEDMAS applies. This is the order in which the computer will do the math:
