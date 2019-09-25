@@ -134,7 +134,7 @@ const days = years * 365;
 
 ## Operators
 
-You can do basic arithmetic with numbers using _operators_. Arithmetic operators in JavaScript are (`+`) for addition, (`-`) for subtraction, (`*`) for multiplication and (`/`) for division.
+You can do basic arithmetic with numbers using _operators_. Arithmetic operators in JavaScript are (`+`) for addition, (`-`) for subtraction, (`*`) for multiplication, (`/`) for division, and (`%`) for modulo.
 
 ```js
 55 * 20 
@@ -144,6 +144,14 @@ You can do basic arithmetic with numbers using _operators_. Arithmetic operators
 6 / 1.5
 
 34 + 66.3
+
+// Modulo operator returns the remainder left over when one operand is divided by another operand.
+47 % 5
+
+// You can use modulo to check for even number
+47 % 2 // not even
+8 % 2 // even
+-10 % 2 // even
 ```
 
 Parentheses can be used to group operations. Just like you learned in grade school, BEDMAS applies. This is the order in which the computer will do the math:
@@ -156,7 +164,7 @@ Parentheses can be used to group operations. Just like you learned in grade scho
 **S**ubtraction 
 
 ```js
-(2+1) * 5
+(2 + 1) * 5
 ```
 
 This is how you use exponents in Javascript:
