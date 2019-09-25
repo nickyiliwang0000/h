@@ -1,0 +1,197 @@
+<!-- Student takeaway: -->
+<!--Student will:
+- Understand how to use useState
+- Understand how to use useEffect in it's simplest context
+- Ce able to change a class component with state and lifecycle methods to a function component
+- Know where resources are to investigate further
+ -->
+
+# Intro to React Hooks
+
+React Hooks are special functions that make it possible to "hook into" state and lifecycle methods in function components. React introduced Hooks in 2018 to solve some problems that the team had come up against while maintaining the React codebase for 5 years:
+
+1. Classes can be difficult to understand (and take a lot of computer power to process).
+2. `App.js` gets big and confusing with business logic that could be more reusable and componentized. 
+
+Hooks eliminate the need for class components. (But Hooks are totally backwards compatiple and there are no plans to remove class components from the spec.) 
+
+Because Hooks are functions, you can write your own!
+
+> Imagine writing a handleClick function that manipulates the state in your `App.js` component. Instead of passing it down through the component tree, you can write a hook for it and import that hook into the components that need to manipulate that piece of statae.
+
+## Using state in a function component
+React Hooks includes a built-in Hook called `useState` that allows us to create and update state. `useState` is a function that accepts one argument: the starting value of the state we want to declare. The `useState` function returns an array of 2 items: 
+1. the variable we are declaring
+2. a function that we can use to update that specific piece of state 
+
+To use `useState`, we have to import `useState` from the React library.
+
+```jsx
+import React, { useState } from 'react';
+```
+
+We can name the two values returned from the `useState` function with array destructuring:
+```jsx
+const [likes, setLikes] = useState(0);
+```
+
+Here, we are creating a variable to hold the return value of useState, which is an array of 2 items. We are naming the first item `likes`, which will be the name of the piece of state we want to access.
+
+The second value in the destructed array names the function that we will use to update the `likes` value in state. In this case we have named it `setLikes`. This function will replace the use of `this.setState()`. When we call `setLikes`, we will pass in the new value of the `likes` state as an argument.
+
+The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
+
+```jsx
+this.state({
+    likes: 0,
+})
+```
+
+
+## Refactoring a class component to a function component using Hooks
+
+Consider this class component:
+```jsx
+class App extends Component {
+  componentDidMount(){
+    super();
+    this.state = {
+        likes: 0
+    }
+  }
+  addLike = () =>{
+      this.setState({
+          likes: this.state.likes + 1
+      })
+  }
+  render() {
+    return (
+        <div>
+            Likes: {this.state.like}
+            <button onClick={this.addLike}>♥️</button>
+        </div>
+    ) 
+  }
+}
+```
+
+Using Hooks, that same component looks like this:
+```jsx
+function App() {
+    const [likes, setLikes] = useState(0);
+    return (
+        <div>
+            Likes: {likes}
+            <button onClick={() => setLikes(likes + 1)}>♥️</button>
+        </div>
+    ) 
+  }
+}
+```
+
+👀👀C👀👀O👀👀O👀👀L👀👀👀
+
+
+### Calling useState() multiple times
+
+We can call `useState()` as many times as we like within our components for different pieces of state.
+
+```jsx
+const [likes, setLikes] = useState(0);
+const [currentUser, setCurrentUser] = useState('Guest');
+const [musicList, setMusicList] = useState(['The Beatles', 'War on Drugs', 'Florence and the Machine']);
+```
+
+Now our state object has three keys on it - 'likes', 'currentUser', and 'musicList'. You could visualize it like this: 
+
+```jsx
+this.state = {
+    likes: 0,
+    currentUser: 'Guest',
+    musicList: ['The Beatles', 'War on Drugs', 'Florence and the Machine']
+}
+```
+
+## Using lifecycle methods in a function component
+React Hooks includes a built-in Hook called `useEffect` that allows us to hook into a component's lifecycle methods.
+
+`useEffect` is like `componentDidMount`, `componentDidUpdate` and `componentWillUnmount` combined. It is called after the first render and after every update. 
+
+We load it in from React the same way we load in `useState`:
+```jsx
+import React, { useState, useEffect } from 'react';
+```
+
+`useEffect` accepts [a callback function](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/how-do-callbacks-work.md) as an argument. 
+
+```jsx
+function App(){
+    useEffect(() => {
+        console.log('hello');
+    })
+}
+```
+
+We probably want to do something more interesting than `console.log`. `useEffect` seems like a great place to make API calls, connect to Firebase, or subscribe to some external information. 
+```jsx
+useEffect(() => {
+    const dbRef = firebase.database().ref();
+        dbRef.on('value', (snapshot) => {
+            const database = snapshot.val();
+            setMessages(database)
+        })
+    })
+```
+
+And it is! But there was a reason that we made these API calls in `componentDidMount` rather than in `componentDidUpdate`. The `componentDidMount` method usually only runs once. If we try to refactor an API call in `componentDidMount` to look like the code above, we will run into an infinite loop error because we are **setting the state after every render** which is causing the component to rerender... which is causing the component to rerender... which is causing the component to rerender...
+
+<!-- IMAGE OF THE ERROR MESSAGE -->
+![Infinite loop error message](https://hychalknotes.s3.amazonaws.com/infinite-loop-screenshot--bootcamp.png)
+
+To remedy this, we can pass an empty array as the second argument to `useEffect`. This argument is a list of properties that the `useEffect` function will compare against current state and props to check if it should run the callback we passed to it. 
+Passing an empty array means it will never have to rerun because it has nothing to check against. 
+
+```jsx
+useEffect(() => {
+    const dbRef = firebase.database().ref();
+        dbRef.on('value', (snapshot) => {
+            const database = snapshot.val();
+            setMessages(database)
+        })
+    }, [])
+```
+
+### Calling useEffect() multiple times
+
+Just like `useState`, we can call `useEffect` multiple times within a component. This allows us to separate different code functionality into different instances of `useEffect` which makes our code more modular. When React runs the code, it keeps track of the order in which each `useEffect` is called. For this reason, we can't call `useEffect` from inside a conditional. Instead, we will conditionally run code inside of useEffect.
+
+Incorrect 👎
+```jsx
+if(currentUser === 'Guest'){
+    useEffect(() => {
+            console.log('The current user is Guest.')
+    });    
+}  
+```
+
+Correct 👍
+```jsx
+useEffect(() => {
+    if(currentUser === 'Guest'){
+        console.log('The current user is Guest.')
+    } 
+});      
+```
+
+<!-- - this is just javascript --> 
+
+## Excercise
+App.js to functional component
+
+## Next Steps
+Make your own hook
+
+## Additional Resources 
+React Hooks documentation
+
+
