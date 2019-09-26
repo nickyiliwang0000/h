@@ -59,7 +59,7 @@ class App extends Component {
         likes: 0
     }
   }
-  addLike = () =>{
+  addLike = () => {
       this.setState({
           likes: this.state.likes + 1
       })
@@ -163,7 +163,7 @@ useEffect(() => {
 
 ### Calling useEffect() multiple times
 
-Just like `useState`, we can call `useEffect` multiple times within a component. This allows us to separate different code functionality into different instances of `useEffect` which makes our code more modular. When React runs the code, it keeps track of the order in which each `useEffect` is called. For this reason, we can't call `useEffect` from inside a conditional. Instead, we will conditionally run code inside of useEffect.
+Just like `useState`, we can call `useEffect` multiple times within a component. This allows us to separate different code functionality into different instances of `useEffect` making our code more modular. When React runs the code, it keeps track of the order in which each `useEffect` is called. For this reason, we can't call `useEffect` from inside a conditional. Instead, we will conditionally run code inside of useEffect.
 
 Incorrect 👎
 ```jsx
@@ -183,15 +183,18 @@ useEffect(() => {
 });      
 ```
 
-<!-- - this is just javascript --> 
+## React Hooks in the Wild
+React recommends that companies start using Hooks when they are ready but not rewrite all of the components in their codebase at once. Hooks will most likely become widely used over the next couple of years.  But you have the chance to be an expert at your workplace because it is new to everyone. 
+
 
 ## Excercise
-App.js to functional component
+Let's download [this folder]() and change App.js to functional component. Make sure to run `npm install` and then `npm start` to open the site in your browser. 
 
 ## Next Steps
-Make your own hook
+Make your own hook.
+Take a look at all the built-in Hooks available.
 
 ## Additional Resources 
-React Hooks documentation
+[React Hooks documentation](https://reactjs.org/docs/hooks-intro.html)
 
 
