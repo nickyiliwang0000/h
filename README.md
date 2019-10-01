@@ -126,6 +126,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 
 ### Applied JavaScript
 * [How to organize your JavaScript](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/how-to-organize-your-javascript.md)
+* [Callback functions](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/callback-functions.md)
 * [Advanced array methods](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-array-methods.md)
 * [Regular expressions](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/regular-expressions.md)
 * [Working with APIs](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/working-with-apis.md)
