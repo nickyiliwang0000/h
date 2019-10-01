@@ -1,10 +1,12 @@
+# Callback functions
+
 In programming, a *callback function* is a function that is passed as an argument to another function. A *callback function* is created in order to be executed at a later point in time. In JavaScript, this is often used for events.
 
 An example of this might be a click event with jQuery.
 
 ```js
 $('button').on('click', function() {
-	//Do some work in here
+	// Do some work in here
 });
 ```
 
@@ -18,7 +20,7 @@ So we could handle that above differently if we wanted.
 
 ```js
 const handleClick = function() {
-	//Do some stuff
+	// Do some stuff
 }
 
 $('button').on('click', handleClick);
@@ -38,7 +40,7 @@ const doChores = function(chore){
 }
 
 doChores('sweeping floor');
-//outputs "I finished sweeping the floor."
+// outputs "I finished sweeping the floor."
 
 ```
 
@@ -61,13 +63,15 @@ const doChores = function(chore, reward){
 	console.log(`I finished ${chore}.`);
 	reward();
 }
+
 const getDollars = function(){
 	console.log(`You earned $1.`);
 }
+
 doChores('sweeping floor', getDollars);
-//outputs 
-//"I finished sweeping the floor."
-//"You earned $1."
+// outputs 
+// "I finished sweeping the floor."
+// "You earned $1."
 ```
 
 In this case `getDollars` is a callback function.
