@@ -49,7 +49,7 @@ September 30 to October 23
 * Interview Co-working Day - October 9 2pm 
 * Thanksgiving Monday (no CL) - Mon Oct 14
 * Employer Partner Power Hour with Klick Health - Wed Oct 16, 5pm
-* Intro to Full Stack Workshop - Mon Oct 21, 2pm
+* Intro to Full Stack Workshop - Wed Oct 23, 2pm
 * Employer Partner Power Hour with Sensei Labs - Wed Oct 23, 5pm
 
 Beyond Bootcamp Course
