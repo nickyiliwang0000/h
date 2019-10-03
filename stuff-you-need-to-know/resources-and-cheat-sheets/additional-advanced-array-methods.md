@@ -45,7 +45,7 @@ The `every()` array method will return a `boolean` value if `all items` in the p
 const myArray = [5, 10, 15, 20, 25];
 
 const result = myArray.every(item => {
-	return item > 4;
+  return item > 4;
 });
 
 result // true
