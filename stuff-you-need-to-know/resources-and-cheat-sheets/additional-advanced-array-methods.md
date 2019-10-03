@@ -37,7 +37,22 @@ const result = myArray.some( item => {
 result // true
 ```
 
+## .every()
+
+The `every()` array method will return a `boolean` value if `all items` in the provided array satisfies the condition you are checking for.
+
+```js
+const myArray = [5, 10, 15, 20, 25];
+
+const result = myArray.every(item => {
+	return item > 4;
+});
+
+result // true
+```
+
 If no match is found, you will be returned a `false` value.
+
 ## .includes()
 
 The `includes()` array method will return a `boolean` value if the provided array contains a specific item.
@@ -50,6 +65,8 @@ const result = myArray.includes(20);
 
 result // true
 ```
+
+If no match is found, you will be returned a `false` value.
 
 *This method is not supported in Internet Explorer.
 
