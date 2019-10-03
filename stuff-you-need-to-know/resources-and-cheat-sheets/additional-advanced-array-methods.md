@@ -151,5 +151,6 @@ One syntax change to notice is the addition of the `0` as a second argument to t
 
 `.reduce()` is often used in combination with other functions to solve complex problems, (e.g. to count [the number of times a string occurs in an array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Counting_instances_of_values_in_an_object)). 
 
+For more examples of array methods in practice, check out this [article](https://itnext.io/15-useful-javascript-examples-of-map-reduce-and-filter-74cbbb5e0a1f).
 
 
