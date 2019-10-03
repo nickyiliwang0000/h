@@ -64,6 +64,7 @@ Before the `reduce()` method was introduced, we could utilize the same functiona
 
 ```js
 const numbers = [10, 20, 60, 10];
+
 let numbersTotal = 0;
 
 for (let i = 0; i < numbers.length; i++) {
@@ -81,7 +82,7 @@ Here is that same example from but using the `reduce()` method:
 const numbers = [10, 20, 60, 10];
 
 const total = numbers.reduce((totalValue, currentAmount) => {
-	return totalValue + currentAmount;
+  return totalValue + currentAmount;
 });
 
 total // 100
@@ -93,6 +94,7 @@ Here's another useful example of when we can use `.reduce()` to _flatten_ multip
 
 ```javascript
 const nums = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
 const flatArray = nums.reduce((total, amount) => {
   return total.concat(amount);
 });
@@ -104,25 +106,25 @@ Let's upgrade our data to illustrate another example:
 
 ```js
 const dogRoster = [
-	{
-		id: 1,
-		name: "Marley",
-		age: 1,
-	},
-	{
-		id: 2,
-		name: "Trixie",
-		age: 3,
-	},
-	{
-		id: 3,
-		name: "Dug",
-		age: 78,
-	},
+  {
+    id: 1,
+    name: "Marley",
+    age: 1,
+  },
+  {
+    id: 2,
+    name: "Trixie",
+    age: 3,
+  },
+  {
+    id: 3,
+    name: "Dug",
+    age: 78,
+  },
 ];
 
 const totalAge = dogRoster.reduce((currentValue, dog) => {
-	return currentValue + dog.age;
+  return currentValue + dog.age;
 }, 0);
 
 totalAge // 82
