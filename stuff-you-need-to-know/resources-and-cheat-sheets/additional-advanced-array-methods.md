@@ -87,7 +87,15 @@ total // 100
 
 We pass *two* arguments to the callback function: the `totalValue` (which is the initial value or the previously returned value of the function) and the `currentAmount` (i.e. the value of the current item in the array). These two arguments are *required*. 
 
-As the `.reduce()` method cycles through the array, the callback function is executed against the `totalValue`and each element in the array (from left or right) to reduce it to a single value. The `totalValue` parameter is used inside of the function - kind of like `i` in a `for` loop.
+As the `.reduce()` method cycles through the array, the callback function is executed against the `totalValue`and each element in the array (from left or right) to reduce it to a single value. 
+
+Let's deconstruct what is happening each time the callback method is run:
+
+```
+1st run: returns totalValue = 10 + currentAmount = 20
+2nd run: returns totalValue = 30 + currentAmount = 60
+3rd run: returns totalValue = 90 + currentAmount = 10
+```
 
 Before the `reduce()` method was introduced, we could utilize the same functionality with a _for loop_:
 
