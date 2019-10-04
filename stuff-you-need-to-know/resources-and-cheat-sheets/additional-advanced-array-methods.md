@@ -75,7 +75,19 @@ If no match is found, you will be returned a `false` value.
 
 The `reduce()` array method applies a callback function to each item in an array to *reduce* it to return a `single` value.
 
-Once we provide an array we want to work with, we pass *two* arguments to the callback function: the total value (or the previously returned value of the function) and the current amount (i.e. current value of the item in the array). 
+```js
+const numbers = [10, 20, 60, 10];
+
+const total = numbers.reduce((totalValue, currentAmount) => {
+  return totalValue + currentAmount;
+});
+
+total // 100
+```
+
+We pass *two* arguments to the callback function: the `totalValue` (which is the initial value or the previously returned value of the function) and the `currentAmount` (i.e. the value of the current item in the array). These two arguments are *required*. 
+
+As the `.reduce()` method cycles through the array, the callback function is executed against the `totalValue`and each element in the array (from left or right) to reduce it to a single value. The `totalValue` parameter is used inside of the function - kind of like `i` in a `for` loop.
 
 Before the `reduce()` method was introduced, we could utilize the same functionality with a _for loop_:
 
@@ -92,20 +104,6 @@ numbersTotal // 100
 ```
 
 So, for each number in the array, add its value to the `numbersTotal` variable so when the loop is done, we have the total of each number combined.
-
-Here is that same example from but using the `reduce()` method:
-
-```js
-const numbers = [10, 20, 60, 10];
-
-const total = numbers.reduce((totalValue, currentAmount) => {
-  return totalValue + currentAmount;
-});
-
-total // 100
-```
-
-As the `.reduce()` method cycles through the array, the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used inside of the function - kind of like `i` in a `for` loop.
 
 Here's another useful example of when we can use `.reduce()` to _flatten_ multiple arrays into one single array.
 
