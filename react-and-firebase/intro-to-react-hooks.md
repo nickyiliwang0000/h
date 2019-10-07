@@ -8,20 +8,16 @@
 
 # Intro to React Hooks
 
-React Hooks are special functions that make it possible to "hook into" state and lifecycle methods in function components. React introduced Hooks in 2018 to solve some problems that the team had come up against while maintaining the React codebase for 5 years:
+React Hooks are functions provided by React that make it possible to "hook into" state and lifecycle methods in function components. React introduced Hooks in 2018 to solve some problems that the team had come up against while maintaining the React codebase for 5 years:
 
 1. Classes can be difficult to understand (and take a lot of computer power to process).
 2. `App.js` gets big and confusing with business logic that could be more reusable and componentized. 
 
-Hooks eliminate the need for class components. (But Hooks are totally backwards compatiple and there are no plans to remove class components from the spec.) 
-
-Because Hooks are functions, you can write your own!
-
-> Imagine writing a handleClick function that manipulates the state in your `App.js` component. Instead of passing it down through the component tree, you can write a hook for it and import that hook into the components that need to manipulate that piece of statae.
+Hooks eliminate the need for class components. (But Hooks are totally backwards compatible and there are no plans to remove class components from the spec.) 
 
 ## Using state in a function component
 React Hooks includes a built-in Hook called `useState` that allows us to create and update state. `useState` is a function that accepts one argument: the starting value of the state we want to declare. The `useState` function returns an array of 2 items: 
-1. the variable we are declaring
+1. a single variable that will represent a piece of state
 2. a function that we can use to update that specific piece of state 
 
 To use `useState`, we have to import `useState` from the React library.
@@ -53,7 +49,7 @@ this.state({
 Consider this class component:
 ```jsx
 class App extends Component {
-  componentDidMount(){
+  constructor(){
     super();
     this.state = {
         likes: 0
@@ -133,6 +129,7 @@ function App(){
 ```
 
 We probably want to do something more interesting than `console.log`. `useEffect` seems like a great place to make API calls, connect to Firebase, or subscribe to some external information. 
+
 ```jsx
 useEffect(() => {
     const dbRef = firebase.database().ref();
@@ -143,13 +140,19 @@ useEffect(() => {
     })
 ```
 
-And it is! But there was a reason that we made these API calls in `componentDidMount` rather than in `componentDidUpdate`. The `componentDidMount` method usually only runs once. If we try to refactor an API call in `componentDidMount` to look like the code above, we will run into an infinite loop error because we are **setting the state after every render** which is causing the component to rerender... which is causing the component to rerender... which is causing the component to rerender...
+And it is! But there was a reason that we made these API calls in `componentDidMount` rather than in `componentDidUpdate`. The `componentDidMount` method usually only runs once. 
+
+If we run this code, we will run into an infinite loop error because we are **setting the state after every render** which is causing the component to rerender... which is causing the component to rerender... which is causing the component to rerender...
 
 <!-- IMAGE OF THE ERROR MESSAGE -->
 ![Infinite loop error message](https://hychalknotes.s3.amazonaws.com/infinite-loop-screenshot--bootcamp.png)
 
-To remedy this, we can pass an empty array as the second argument to `useEffect`. This argument is a list of properties that the `useEffect` function will compare against current state and props to check if it should run the callback we passed to it. 
+To remedy this, we can pass an empty array as an *optional second argument* to `useEffect`. This argument accepts an array of properties that the `useEffect` function will compare against current state and props to check if it should run the callback we passed to it. 
+
 Passing an empty array means it will never have to rerun because it has nothing to check against. 
+
+#### TL;DR
+Add an empty array as the second argument to the `useEffect` hook in order to only run it once, thus acting like `componentDidMount`.
 
 ```jsx
 useEffect(() => {
@@ -163,7 +166,7 @@ useEffect(() => {
 
 ### Calling useEffect() multiple times
 
-Just like `useState`, we can call `useEffect` multiple times within a component. This allows us to separate different code functionality into different instances of `useEffect` making our code more modular. When React runs the code, it keeps track of the order in which each `useEffect` is called. For this reason, we can't call `useEffect` from inside a conditional. Instead, we will conditionally run code inside of useEffect.
+Just like `useState`, we can call `useEffect` multiple times within a component. This allows us to separate different code functionality into different instances of `useEffect` making our code more modular. When React runs the code, it keeps track of the order in which each `useEffect` is called. For this reason, we can't call `useEffect` from inside a conditional statement. Instead, we will conditionally run code inside of `useEffect`.
 
 Incorrect 👎
 ```jsx
@@ -184,15 +187,31 @@ useEffect(() => {
 ```
 
 ## React Hooks in the Wild
-React recommends that companies start using Hooks when they are ready but not rewrite all of the components in their codebase at once. Hooks will most likely become widely used over the next couple of years.  But you have the chance to be an expert at your workplace because it is new to everyone. 
+React recommends that companies start using Hooks when they are ready but not rewrite all of the components in their codebase at once. Hooks will most likely become widely used over the next couple of years.  But you have the chance to be an expert at your workplace because it is new to everyone. Use what you are comfortable with and adopt more React Hook functionality as you gain confidence and understanding.
 
 
-## Excercise
+## Exercise
 Let's download [this folder]() and change App.js to functional component. Make sure to run `npm install` and then `npm start` to open the site in your browser. 
 
 ## Next Steps
-Make your own hook.
-Take a look at all the built-in Hooks available.
+
+
+1. Because Hooks are functions, you can write your own!
+
+> Imagine writing a handleClick function that manipulates the state in your `App.js` component. Instead of passing it down through the component tree, you can write a hook for it and import that hook into the components that need to manipulate that piece of state.
+
+Check out the React Hooks [documentation](https://reactjs.org/docs/hooks-custom.html) to learn more.
+
+2. There are many more built-in Hooks available:
+| Hook | Functionality  |
+|---|---|
+|`useContext` | lets you read the context object and subscribe to its changes  |
+| `useReducer`  | is preferable to `useState` when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one |
+|  `useMemo` | Returns a memoized value --> memoization stores the results of expensive function calls and returns the cached result when the same inputs occur again |
+|  `useCallback` | Returns a memoized callback  |
+|  `useRef` |  useRef returns a mutable ref object |
+
+Take a look at the [documentation](https://reactjs.org/docs/hooks-reference.html) to find out more.
 
 ## Additional Resources 
 [React Hooks documentation](https://reactjs.org/docs/hooks-intro.html)
