@@ -74,20 +74,58 @@ Changing our original array also changes our copy! This is because unlike primit
 A simple solution to this is to spread our array out, creating a new set of individual values, and then to wrap those values in square brackets (collecting them into a new array):
 
 ```js
-const myArray = [68, 43, 5, 11];
-const aTotallyNewArray = [...myArray];
+const yourArray = [68, 43, 5, 11];
+const aTotallyNewArray = [...yourArray];
 
-myArray.push("a string");
+yourArray.push("a string");
 
-console.log(myArray);
+console.log(yourArray);
 // [68, 43, 5, 11, "a string"]
 console.log(aTotallyNewArray);
 // [68, 43, 5, 11]
 ```
 
+`aTotallyNewArray` is exactly that - totally new. It is stored in a new space in memory, so it isn't affected when we alter the original array.
 
 
+## Rest Parameters
 
+_Rest parameters_ are like spread's cousin. They look similar (both use the `...` syntax), but where spread pulls the items out of an array passed as an argument, rest does the reverse - it lets us tell a function to gather the first, second, third and all the **rest** of our parameters, and store them in a array.
 
+Imagine you want a function that takes any number of arguments and returns them in an array so that we can use `.map()`, `.filter()` and other powerful array methods on them:
 
-<!-- The difference between the spread operator and rest parameters is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator). -->
+```js
+// I want this function:
+arrayIt(3, 44, 81, 6, 19, 27);
+// To result in an array like [3, 44, 81, 6, 19, 27] 
+```
+
+You'd probably end up writing a function that looks like this:
+
+```js
+const arrayItToMe = function(param1, param2, param3, param4, param5, param6) {
+  const numbers = [param1, param2, param3, param4, param5, param6];
+  console.log(numbers);
+};
+
+arrayItToMe(3, 44, 81, 6, 19, 27);
+// [3, 44, 81, 6, 19, 27]
+```
+
+OK, this works, but what if somewhere else in our code we also want to call a function to return an array, but we only have 4 arguments to pass it? Or 10? We would have to write a whole new `arrayIt` function for each instance, which isn't clean or DRY.
+
+Instead, we can make a single function that is more dynamic by using rest parameters. Adding the `...` before the name of a parameter, we can turn an array-like object of values (like a list of arguments) into an actual array!
+
+```js
+const arrayItRockapella = function(...numbers) {
+  console.log(numbers);
+};
+
+arrayItRockapella(3, 44, 81, 6, 19, 27);
+// [3, 44, 81, 6, 19, 27]
+
+arrayItRockapella("any values work", true, {worth: 100}, "awesome, right?");
+// ["any values work", true, {worth: 100}, "awesome, right?"]
+```
+
+The spread operator and rest parameters look the same, but the difference between them is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator).
