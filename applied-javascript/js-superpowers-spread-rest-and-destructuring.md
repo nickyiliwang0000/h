@@ -129,3 +129,174 @@ arrayItRockapella("any values work", true, {worth: 100}, "awesome, right?");
 ```
 
 The spread operator and rest parameters look the same, but the difference between them is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator).
+
+
+## Destructuring
+
+Sometimes our problem isn't unpredictable data sets, but just overly complex structures that take a lot of typing to access over and over. _Destructuring_ is a quick way to grab properties from objects or arrays, and can significantly clean up our code and make our lives easier.
+
+### Destructuring objects
+
+Say we have an object that looks like this:
+
+```javascript
+const curry = {
+  type: 'baingan bharta',
+  side: 'naan',
+  spiciness: ["mild", "medium", "hot", "extra hot"]
+}
+```
+
+Now imagine we want to grab all the properties inside that object and store them in variables. In the past, we would have done this:
+
+```javascript
+const type = curry.type;
+const side = curry.side;
+const spiciness = curry.spiciness;
+console.log(`My favorite order is a ${spiciness[1]} ${type} with some ${side}!`);
+// My favorite order is a medium baingan bharta with some naan!
+```
+
+Instead of setting variables one-by-one, we can destructure our curry object like this:
+
+```javascript
+const { type, side, spiciness } = curry;
+
+console.log(`My favorite order is a ${spiciness[1]} ${type} with some ${side}!`);
+// My favorite order is a medium baingan bharta with some naan!
+
+```
+
+The curly brackets on the left might make you think that this is some kind of object, but don't be fooled! It's just our way of telling JavaScript to pluck the `type`, `side`, and `spiciness` variables out of the `curry` object and store them locally.
+
+Remember, 'cause this might trip you up: When destructuring, the word on the **right hand** side of the assignment (in this case, `curry`) is the thing you want to destructure, and the words between the curly brackets on the **left hand** side (`type`, `side`, `spiciness`) are the properties you want to pull out of the object.
+
+Writing fewer lines of code is nice, but when might you use this yourself? Well, if you remember back to your API projects, chances are you were getting a big object back from the REST API that looked maybe something like this:
+
+```javascript
+// Let's say the JSON Object that we get back from our API looks like this:
+
+{
+  'cities' : {
+    'toronto': {
+      country: 'canada',
+      population: 1200,
+      weather: 'temperate',
+      food: 'poutine' 
+    },
+    'berlin': {
+      country: 'germany',
+      population: 1900,
+      weather: 'temperate',
+      food: 'donair'
+    },
+    'sydney': {
+      country: 'australia',
+      population: 1000,
+      weather: 'warm',
+      food: 'ramen'
+    }
+  }
+}
+
+// And we pass that object to our displayResults function
+
+const displayResults = function(response) {
+
+  const country = response.cities.berlin.country;
+  const population = response.cities.berlin.population;
+  const weather = response.cities.berlin.weather;
+  const food = response.cities.berlin.food;
+
+  console.log(`Berlin is a city of ${population} people in ${country}, where they like to eat ${food} in a ${weather} climate.`);  
+
+}
+```
+
+Kind of long and annoying. Instead, with destructuring, we can do this:
+
+```javascript
+// again, our JSON object from the API
+
+{
+  'cities' : {
+    'toronto': {
+      country: 'canada',
+      population: 1200,
+      weather: 'temperate',
+      food: 'poutine' 
+    },
+    'berlin': {
+      country: 'germany',
+      population: 1900,
+      weather: 'temperate',
+      food: 'donair'
+    },
+    'sydney': {
+      country: 'australia',
+      population: 1000,
+      weather: 'warm',
+      food: 'ramen'
+    }
+  }
+}
+
+// And our new displayResults function using destructuring
+const displayResults = function(response) {
+
+  const { food, country, weather, population } = response.cities.berlin;
+
+  console.log(`Berlin is a city of ${population} people in ${country}, where they like to eat ${food} in a ${weather} climate.`); 
+
+}
+```
+
+Pretty cool, right? If we we had an API call which **only** returned the information for Berlin, we could go **even more** abstract and do the destructuring inside the function parameters:
+
+```javascript
+// Here we made a **brand new** API call that gives us back only the entry for 'berlin'
+{
+  country:'germany',
+  population:1900,
+  weather:'temperate',
+  food:'donair'
+}
+
+const displayResults = function({ food, population, weather, country }) {
+  console.log(`Berlin is a city of ${population} people in ${country}, where they like to eat ${food} in a ${weather} climate.`); }
+```
+
+Woah!!
+
+### Destructuring arrays
+
+Destructuring can also be used on an array. Let's say we have an array of pizza toppings, like this:
+
+```javascript
+const toppings = ["pepperoni", "green pepper", "mushroom"];
+```
+
+We can destructure this array in the same way we destructured the previous object:
+
+```javascript
+const toppings = ["pepperoni", "green pepper", "mushroom"];
+
+const [toppingOne, toppingTwo] = toppings;
+
+console.log(toppingOne, toppingTwo);
+// pepperoni, green pepper
+```
+
+Note that you don't have to grab every item out of the array, only as many as you want to use.
+
+If you want to only grab, say, the third item in the array, you can add commas in to skip items in the array, like so:
+
+```javascript
+const toppings = ["pepperoni", "green pepper", "mushroom"];
+
+const [,,toppingThree] = toppings;
+
+console.log(toppingThree); // mushroom
+```
+
+Check out [this article](https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f) for more info on destructuring!
