@@ -254,13 +254,13 @@ Argument | a value provided to a function
 Pass | to provide arguments to a function
 Call | to ask JavaScript to evaluate a function Return| to pass back a value from a function
 
-## A note on scope
+## Intro to scope
 
-In JavaScript, `scope` defines the visibility or accessibility of our variables.
+In JavaScript, *scope* defines the visibility or accessibility of our variables.
 
-When working with functions, the parameters and variables that we define _inside_ of a function are visible and accessible only within that function and are not accessible outside of the function. This is known as `function scope` (sometimes referred to as `local scope`).
+When working with functions, the parameters and variables that we define _inside_ of a function are visible and accessible only within that function and are not accessible outside of the function. This is known as *function scope* (sometimes referred to as *local scope*).
 
-Any variables defined outside of a function have `global scope`. This means that these variables can be accessed anywhere within an application, including within functions.
+Any variables defined outside of a function have *global scope*. This means that these variables can be accessed anywhere within an application, including within functions.
 
 ```js
 // global scope
