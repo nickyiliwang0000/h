@@ -281,11 +281,140 @@ for(let i = 1; i <= 40; i++) {
 }
 ```
 
-Now the `pokeBag` variable holds an array of promises! **And** the order that we pushed the promises in will remain intact because: arrays! Aren't they swell? Now, no matter how long the promises take to settle, the array order will never change.
+Now the `pokeBag` variable holds an array of promises! **And** the order that we pushed the promises in will remain intact because - arrays! Aren't they swell? Now, no matter how long the promises take to settle, the array order will never change.
 
 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
 Okay, so, how do we get the data out of that array?
+
+We know that we want to use `$.when()` to listen for the fulfillment of the many promises in our `pokeBag`, and once they have successfully returned, we want to pass the results to our `.then()` method. So, our code will look something like this:
+
+```javascript
+$.when(pokeBag)
+  .then((fulfilledPokes) => {
+    console.log(fulfilledPokes);
+  });
+```
+
+When we try this code out though, we're just getting an array full of objects. If we open one of the objects up, we see that it has some properties in it, a bunch of which are methods like `.complete()`, `.fail()`, `.then()`... it's a promise object! The array we're looking at is still just our original `pokeBag` array of promises. You can console log `pokeBag` directly and see that it's exactly that.
+
+There are two problems here for us to work through though:
+* `pokeBag` is an array of promises (not values). The array *is* a value though. When we pass that array to `$.when()`, it believes that the array itself is the result we're waiting for and passes it along as-is to `.then()`. To fix this, we need to give `$.when()` access to each of the individual promises inside our array.
+* Second, once we have the successful result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For our Pokémon example, we can use rest parameters to tell our browser that we want to run the `.then()` function with each of the responses from the promises held in the `pokeBag` passed in.
+
+```javascript
+$.when(pokeBag)
+  .then((...args) => {
+    console.log(args);
+  });
+```
+
+But wait! `pokeBag` is an array of promises! Promises are not values, they are only the promise of a future value. This means we have to listen to each item in the array. 
+
+We know we can listen to promises with `$.when()`. To give `$.when()` access to each of the promise objects inside our array, we will use another new operator - the _spread operator_.
+
+## Spread operator
+The _spread operator_ allows us to pass an array of arguments into a function as if we were doing it manually one-by-one. 
+
+Imagine you wanted to find the highest of the numbers in an array using `Math.max`:
+```js
+const numbers = [39, 25, 90, 123];
+const max = Math.max(numbers);
+console.log(max); // NaN
+```
+
+You can't! `Math.max` is a method that accepts a comma separated list of values returns the max. It doesn't know what to do when we pass it an array. In the old days, the way get around this was a method called `.apply` that takes an array and calls a function on each item in the array.
+
+```js
+const numbers = [39, 25, 90, 123];
+const max = Math.max.apply(null, numbers);
+console.log(max); // 123
+```
+
+Nowadays, instead of `.apply`, we can use the spread operator. Like rest parameters, the spread operator is also denoted by `...`:
+
+```js
+const numbers = [39, 25, 90, 123];
+const max = Math.max(...numbers);
+console.log(max); // 123
+```
+
+The difference between the spread operator and rest parameters is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator). 
+
+Using the spread operator  we can take an array of promises and pass it to `$.when()`. We are saying, "Please do this function for every single item in the array." Then, using rest parameters, we can gather all the resolved promises passed as arguments to the `.then()` method back into another array, which is convenient for us to work with.
+
+```javascript
+$.when(...pokeBag)
+  .then( (...fulfilledPokes) => {
+    console.log(fulfilledPokes);
+    fulfilledPokes.forEach( (pokemon) => {
+      console.log(pokemon[0].name, pokemon[0].id);
+    });
+  });
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Rest parameters
 
@@ -421,6 +550,25 @@ $.when(...pokeBag)
 Now we just have an array of the data we want! 😚👌 
 
 > `$.when()` and `.then()` are great tools, but make sure you're using them correctly! Don't use them in place of a regular callback function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Syntactic sugar: `async` and `await`
 
