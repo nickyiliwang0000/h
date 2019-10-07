@@ -131,11 +131,10 @@ const longTitles = songs.filter((value) => {
 });
 
 // longTitles = ["Sweetness", "The Middle", "I Will Steal You Back"]
-
+```
 
 ## Resources and concepts: 
 <!-- * Video: [Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) -->
-* Extra Resource: [Additional advanced array methods](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/additional-advanced-array-methods.md)
 * Article: [Functions as first class citizens](http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/)
 * Check out these [great videos](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) on YouTube for more information about functional programming!
 * For more information on the iteration methods available within native JavaScript, read [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods) on MDN. 
