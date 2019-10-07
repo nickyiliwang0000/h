@@ -278,7 +278,7 @@ const mySecondFunction = function(){
 // global scope
 ```
 
-Scope provides an important layer of security to our applications and knowing the different scope levels helps us to better insulate our code from bugs. We don’t need to know too much more about scope at this stage as we will be exploring it in-depth in a later lesson.
+Knowing the different scope levels helps us to better insulate our code from bugs. We don’t need to know too much more about scope at this stage as we will be exploring it in-depth in a later lesson.
 
 
 ## Exercises
