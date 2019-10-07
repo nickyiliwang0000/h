@@ -200,9 +200,10 @@ Let's download [this folder]() and change App.js to functional component. Make s
 
 > Imagine writing a handleClick function that manipulates the state in your `App.js` component. Instead of passing it down through the component tree, you can write a hook for it and import that hook into the components that need to manipulate that piece of state.
 
-Check out the React Hooks [documentation](https://reactjs.org/docs/hooks-custom.html) to learn more.
+Check out the React Hooks [Build Your Own Hooks](https://reactjs.org/docs/hooks-custom.html) documentation to learn more.
 
-2. There are many more built-in Hooks available:
+2. There are many more built-in Hooks available!
+
 | Hook | Functionality  |
 |---|---|
 |`useContext` | lets you read the context object and subscribe to its changes  |
@@ -211,7 +212,7 @@ Check out the React Hooks [documentation](https://reactjs.org/docs/hooks-custom.
 |  `useCallback` | Returns a memoized callback  |
 |  `useRef` |  useRef returns a mutable ref object |
 
-Take a look at the [documentation](https://reactjs.org/docs/hooks-reference.html) to find out more.
+Take a look at the [Hooks API](https://reactjs.org/docs/hooks-reference.html) documentation to find out more.
 
 ## Additional Resources 
 [React Hooks documentation](https://reactjs.org/docs/hooks-intro.html)
