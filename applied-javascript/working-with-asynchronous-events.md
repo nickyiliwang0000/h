@@ -296,236 +296,63 @@ $.when(pokeBag)
   });
 ```
 
-When we try this code out though, we're just getting an array full of objects. If we open one of the objects up, we see that it has some properties in it, a bunch of which are methods like `.complete()`, `.fail()`, `.then()`... it's a promise object! The array we're looking at is still just our original `pokeBag` array of promises. You can console log `pokeBag` directly and see that it's exactly that.
+When we try this code out though, we're just getting an array full of objects. If we open one of the objects up, we see that it has some properties in it, a bunch of which are methods like `.complete()`, `.fail()`, `.then()`... that's a promise object! The array we're looking at is still just our original `pokeBag` array of promises.
 
 There are two problems here for us to work through though:
-* `pokeBag` is an array of promises (not values). The array *is* a value though. When we pass that array to `$.when()`, it believes that the array itself is the result we're waiting for and passes it along as-is to `.then()`. To fix this, we need to give `$.when()` access to each of the individual promises inside our array.
-* Second, once we have the successful result
+
+* `pokeBag` is an array of promises (not values). The array as a whole **is** a value though. When we pass that array to `$.when()`, it believes that the array itself is the result we're waiting for and passes it along as-is to `.then()`. To fix this, we need to give `$.when()` access to each of the individual promises inside our array.
+* Once we have the successful results, `$.when()` will pass them as individual arguments to the `.then()` method. Now we have the opposite problem - a large set of individual results that we want to work with as a whole (say, by iterating over them). We will need to collect the results together again inside our `.then()`, back into a new array.
+
+So, we need to separate items out of an array to pass them as separate arguments, and then we will need to gather all the individual arguments passed to a function up into a new array. To do each of these, we can use the [spread operator](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md#spread-operator), then [rest parameters](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md#rest-parameters).
 
 
+### Spread and rest
 
+To give `$.when()` access to each of the individual promise objects inside our `pokeBag` array, we will use the spread operator, which allows us to use its `...` syntax to pass an array of arguments into a function as if we were doing it manually one-by-one.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-For our Pokémon example, we can use rest parameters to tell our browser that we want to run the `.then()` function with each of the responses from the promises held in the `pokeBag` passed in.
+We wrote this code:
 
 ```javascript
 $.when(pokeBag)
-  .then((...args) => {
-    console.log(args);
+  .then((fulfilledPokes) => {
+    console.log(fulfilledPokes);
   });
 ```
 
-But wait! `pokeBag` is an array of promises! Promises are not values, they are only the promise of a future value. This means we have to listen to each item in the array. 
+However, rather than `$.when( [PROMISE, PROMISE, PROMISE, PROMISE, (etc)] )`, our JS reads it like `$.when( [AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!] )`. Instead, we will spread those promises out:
 
-We know we can listen to promises with `$.when()`. To give `$.when()` access to each of the promise objects inside our array, we will use another new operator - the _spread operator_.
-
-## Spread operator
-The _spread operator_ allows us to pass an array of arguments into a function as if we were doing it manually one-by-one. 
-
-Imagine you wanted to find the highest of the numbers in an array using `Math.max`:
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(numbers);
-console.log(max); // NaN
+```javascript
+/// The three dots before 'pokeBag' are the spread operator separating the values out of our array
+$.when(...pokeBag)
+  .then((fulfilledPokes) => {
+    console.log(fulfilledPokes);
+  });
 ```
 
-You can't! `Math.max` is a method that accepts a comma separated list of values returns the max. It doesn't know what to do when we pass it an array. In the old days, the way get around this was a method called `.apply` that takes an array and calls a function on each item in the array.
+Now, our JS sees `$.when( PROMISE, PROMISE, PROMISE, PROMISE, (etc) )`, which is the correct syntax. `$.when()` will now wait until each of the individual promises is fulfilled, and if they are it will then pass the return from each to `.then()`.
 
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max.apply(null, numbers);
-console.log(max); // 123
-```
-
-Nowadays, instead of `.apply`, we can use the spread operator. Like rest parameters, the spread operator is also denoted by `...`:
-
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(...numbers);
-console.log(max); // 123
-```
-
-The difference between the spread operator and rest parameters is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator). 
-
-Using the spread operator  we can take an array of promises and pass it to `$.when()`. We are saying, "Please do this function for every single item in the array." Then, using rest parameters, we can gather all the resolved promises passed as arguments to the `.then()` method back into another array, which is convenient for us to work with.
+We will want to tell our `.then()` what to do with the results of our many promises (ie. the results of our API calls), but to write our parameters out in this case (both in the parentheses and then in the function itself) would be arduous, messy and very long, like:
 
 ```javascript
 $.when(...pokeBag)
-  .then( (...fulfilledPokes) => {
-    console.log(fulfilledPokes);
-    fulfilledPokes.forEach( (pokemon) => {
-      console.log(pokemon[0].name, pokemon[0].id);
-    });
+  .then((pokeResult01, pokeResult02, pokeResult03, pokeResult04, pokeResult05, pokeResult06, pokeResult07, pokeResult08, pokeResult09, pokeResult10, pokeResult11 .....etc. etc.) => {
+    // We never even get to here because we die of fatigue while typing our parameters.
   });
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Rest parameters
-
-_Rest parameters_ allow us to gather the first, second, third, and all the **rest** of our **parameters** from a function and store them in a array.
-
-Imagine you want a function that takes any number of arguments, and returns them in an array so that we can use `.map()`, `.filter()` and other super powerful array methods on them:
-
-```js
-// I want this function:
-arrayIt(2, 3, 4, 5, 6, 7);
-// To result in an array like [2, 3, 4, 5, 6, 7] 
-```
-
-You'd probably end up writing a function that looks like this:
-
-```js
-const arrayIt = function() {
-  const numbers = Array.prototype.slice.call(arguments);
-  console.log(numbers);
-};
-
-arrayIt(2, 3, 4, 5, 6, 7);
-// [2, 3, 4, 5, 6, 7]
-```
-
-Whattttttt in the world does `Array.prototype.slice.call(arguments)` mean?! This is a complicated way that we used to have to solve this problem.
-
-`arguments` is an _array-like object_ (not an actual array) that is accessible on all functions. 
-
-Check this out in the console:
-
-```js
-const argumentsLog = function() {
-  console.log(arguments);
-};
-
-argumentsLog(1, 2, 3)
-// Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ]
-```
-
-We can, however, use the `arguments` object to create an actual array! Like all objects in JavaScript, the `arguments` object has a parent object from which it inherits its methods (via the `.prototype` property). Arrays made from the Array prototype have the `.slice()` method. So, `Array.prototype.slice`. We can use `.slice()` to create an actual array from our `arguments` value. Using `.call`, we can use the `.slice` method with `arguments` as the context to create an array...
-
-😅 It's a lot! 😅
-
-Rest parameters make that whole thing much faster! Using the syntax `...` before the name of the variable that is an array-like object of values, you can turn whatever the `arguments` of the function are into an actual array!
-
-```js
-const arrayItRockapella = function(...numbers) {
-  console.log(numbers);
-};
-
-arrayItRockapella(2, 3, 4, 5, 6, 7);
-// [2, 3, 4, 5, 6, 7]
-```
-
-> Note that arrow functions don't have an arguments object the same way that function expressions and declarations do. For more about that, [check out MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_binding_of_arguments).
-
-For our Pokémon example, we can use rest parameters to tell our browser that we want to run the `.then()` function with each of the responses from the promises held in the `pokeBag` passed in.
-
-```javascript
-$.when(pokeBag)
-  .then((...args) => {
-    console.log(args);
-  });
-```
-
-But wait! `pokeBag` is an array of promises! Promises are not values, they are only the promise of a future value. This means we have to listen to each item in the array. 
-
-We know we can listen to promises with `$.when()`. To give `$.when()` access to each of the promise objects inside our array, we will use another new operator - the _spread operator_.
-
-## Spread operator
-The _spread operator_ allows us to pass an array of arguments into a function as if we were doing it manually one-by-one. 
-
-Imagine you wanted to find the highest of the numbers in an array using `Math.max`:
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(numbers);
-console.log(max); // NaN
-```
-
-You can't! `Math.max` is a method that accepts a comma separated list of values returns the max. It doesn't know what to do when we pass it an array. In the old days, the way get around this was a method called `.apply` that takes an array and calls a function on each item in the array.
-
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max.apply(null, numbers);
-console.log(max); // 123
-```
-
-Nowadays, instead of `.apply`, we can use the spread operator. Like rest parameters, the spread operator is also denoted by `...`:
-
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(...numbers);
-console.log(max); // 123
-```
-
-The difference between the spread operator and rest parameters is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator). 
-
-Using the spread operator  we can take an array of promises and pass it to `$.when()`. We are saying, "Please do this function for every single item in the array." Then, using rest parameters, we can gather all the resolved promises passed as arguments to the `.then()` method back into another array, which is convenient for us to work with.
+Moreover, this means that we then have to write out the use of each of our results one-by-one, and if we change the number of promises then we have to also manually change the parameters. To make this shorter and more dynamic, we can use rest parameters, which similarly uses the `...` syntax, but this time to gather the first, second, third and all the **rest** of our parameters, and store them in a array:
 
 ```javascript
 $.when(...pokeBag)
-  .then( (...fulfilledPokes) => {
+  .then((...fulfilledPokes) => {
     console.log(fulfilledPokes);
-    fulfilledPokes.forEach( (pokemon) => {
-      console.log(pokemon[0].name, pokemon[0].id);
-    });
   });
 ```
 
-This will allow us to take all the data and do something with it! One thing to think about with the `$.when` method is that when it is given more than one promise it will give you each bit of data as an array. So now we have an array of arrays, or a _multi-dimensional array_. It will look something like this:
+
+### Finishing up
+
+Our `fulfilledPokes` array contains our successful API results, but also some other things; it is an array of arrays, or a _multi-dimensional array_. This is because if the `$.when` method is given more than one promise, it returns each individual one as a three-item array - something like this:
 
 ```javascript
 [
@@ -535,39 +362,36 @@ This will allow us to take all the data and do something with it! One thing to t
 ]
 ```
 
-We just want that `DataObject`, so let's make one last change to the code above so it only gives us the thing we want:
+We just want that `DataObject`, since that's the successful result of our API call. We can map over `fulfilledPokes` so it only gives us the thing we want:
 
 ```javascript
 $.when(...pokeBag)
   .then((...fulfilledPokes) => {
-    fulfilledPokes = fulfilledPokes.map(pokemon => {
+    justTheGoodStuff = fulfilledPokes.map(pokemon => {
       return pokemon[0];
     });
-    console.log(fulfilledPokes);
+    console.log(justTheGoodStuff);
   });
 ```
 
-Now we just have an array of the data we want! 😚👌 
+Now we just have an array of the data we want. Let's print out all 40 of our Pokemon, in order:
+
+```javascript
+$.when(...pokeBag)
+  .then((...fulfilledPokes) => {
+    justTheGoodStuff = fulfilledPokes.map(pokemon => {
+      return pokemon[0];
+    });
+    
+    justTheGoodStuff.forEach( (pokemon) => {
+      console.log(`${pokemon.name} is Pokémon number ${pokemon.id}.`);
+    });
+  });
+```
+
+Incredible! 😚👌
 
 > `$.when()` and `.then()` are great tools, but make sure you're using them correctly! Don't use them in place of a regular callback function.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Syntactic sugar: `async` and `await`
