@@ -6,7 +6,7 @@
 - Pluck a value from an array with destructuring
  -->
 
-# JavaScript Superpowers: Spread, Rest and Destructuring
+# JavaScript superpowers: Spread, rest and destructuring
 
 As we build increasingly complex JavaScript apps, we will run into situations where we deal with data sets of unpredictable size, or which require particularly lengthy code just to access the data. A few years ago, ES6 introduced some great tools we can use to cut down our workload and clean up our code.
 
@@ -88,7 +88,7 @@ console.log(aTotallyNewArray);
 `aTotallyNewArray` is exactly that - totally new. It is stored in a new space in memory, so it isn't affected when we alter the original array.
 
 
-## Rest Parameters
+## Rest parameters
 
 _Rest parameters_ are like spread's cousin. They look similar (both use the `...` syntax), but where spread pulls the items out of an array passed as an argument, rest does the reverse - it lets us tell a function to gather the first, second, third and all the **rest** of our parameters, and store them in a array.
 

@@ -138,7 +138,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md)
 * [Advanced JS: lexical scope and execution context](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md)
 * [Fetching data with something other than $.ajax](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md)
-* [JavaScript Superpowers: Spread, Rest and Destructuring](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md)
+* [JavaScript superpowers: Spread, rest and destructuring](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md)
 * [Making our code more modular](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/making-our-code-more-modular.md)
 
 ### React and firebase
