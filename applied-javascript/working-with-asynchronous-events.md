@@ -319,7 +319,15 @@ $.when(pokeBag)
   });
 ```
 
-However, rather than `$.when( [PROMISE, PROMISE, PROMISE, PROMISE, (etc)] )`, our JS reads it like `$.when( [AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!] )`. Instead, we will spread those promises out:
+However, rather than
+
+`$.when( [PROMISE, PROMISE, PROMISE, PROMISE, (etc)] )`
+
+our JS reads it like
+
+`$.when( [AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!] )`
+
+Instead, we will spread those promises out:
 
 ```javascript
 /// The three dots before 'pokeBag' are the spread operator separating the values out of our array
