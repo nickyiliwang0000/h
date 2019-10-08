@@ -364,7 +364,7 @@ $.when(...pokeBag)
 
 ### Finishing up
 
-Our `fulfilledPokes` array contains our successful API results, but also some other things; it is an array of arrays, or a _multi-dimensional array_. This is because if the `$.when` method is given more than one promise, it returns each individual one as a three-item array - something like this:
+Our `fulfilledPokes` array contains our successful API results, but also some other things; it is an array of arrays, or a _multi-dimensional array_. This is because if the `$.when` method is given more than one promise, it returns each as a three-item array - something like this:
 
 ```javascript
 [
