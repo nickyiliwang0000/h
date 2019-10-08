@@ -191,7 +191,9 @@ React recommends that companies start using Hooks when they are ready but not re
 
 
 ## Exercise
-Let's download [this folder]() and change App.js to functional component. Make sure to run `npm install` and then `npm start` to open the site in your browser. 
+1. Let's download [this folder](https://hychalknotes.s3.amazonaws.com/learning-hooks.zip)2. Make sure to run `npm install` and then `npm start` to open the site in your browser. 
+3. Change App.js file to functional component using `useState` and `useEffect`. 
+
 
 ## Next Steps
 
