@@ -23,7 +23,7 @@ const max = Math.max(numbers);
 console.log(max); // NaN
 ```
 
-You can't! `Math.max` is a method which accepts a comma separated list of values, then returns the highest one. It doesn't know what to do when we pass it an array.
+You can't! `Math.max` is a method that accepts a comma separated list of values, then returns the highest one. It doesn't know what to do when we pass it an array.
 
 We could solve this by manually getting data out of our array:
 
@@ -251,7 +251,7 @@ const displayResults = function(response) {
 }
 ```
 
-Pretty cool, right? If we we had an API call which **only** returned the information for Berlin, we could go **even more** abstract and do the destructuring inside the function parameters:
+Pretty cool, right? If we had an API call which **only** returned the information for Berlin, we could go **even more** abstract and do the destructuring inside the function parameters:
 
 ```javascript
 // Here we made a **brand new** API call that gives us back only the entry for 'berlin'
