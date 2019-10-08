@@ -8,7 +8,7 @@
 
 # Intro to React Hooks
 
-React Hooks are functions provided by React that make it possible to "hook into" state and lifecycle methods in function components. React introduced Hooks in 2018 to solve some problems that the team had come up against while maintaining the React codebase for 5 years:
+React Hooks are special functions provided by React that make it possible to "hook into" state and lifecycle methods in function components. React introduced Hooks in 2018 to solve some problems that the team had come up against while maintaining the React codebase for 5 years:
 
 1. Classes can be difficult to understand (and take a lot of computer power to process).
 2. `App.js` gets big and confusing with business logic that could be more reusable and componentized. 
@@ -33,7 +33,7 @@ const [likes, setLikes] = useState(0);
 
 Here, we are creating a variable to hold the return value of useState, which is an array of 2 items. We are naming the first item `likes`, which will be the name of the piece of state we want to access.
 
-The second value in the destructed array names the function that we will use to update the `likes` value in state. In this case we have named it `setLikes`. This function will replace the use of `this.setState()`. When we call `setLikes`, we will pass in the new value of the `likes` state as an argument.
+The second value in the destructured array names the function that we will use to update the `likes` value in state. In this case we have named it `setLikes`. This function will replace the use of `this.setState()`. When we call `setLikes`, we will pass in the new value of the `likes` state as an argument.
 
 The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
 
@@ -147,7 +147,7 @@ If we run this code, we will run into an infinite loop error because we are **se
 <!-- IMAGE OF THE ERROR MESSAGE -->
 ![Infinite loop error message](https://hychalknotes.s3.amazonaws.com/infinite-loop-screenshot--bootcamp.png)
 
-To remedy this, we can pass an empty array as an *optional second argument* to `useEffect`. This argument accepts an array of properties that the `useEffect` function will compare against current state and props to check if it should run the callback we passed to it. 
+To remedy this, we can pass an empty array as an *optional second argument* to `useEffect`. This optional second parameter expects an array of properties that the `useEffect` function will compare against current state and props to check if it should run the callback function. 
 
 Passing an empty array means it will never have to rerun because it has nothing to check against. 
 
@@ -187,12 +187,13 @@ useEffect(() => {
 ```
 
 ## React Hooks in the Wild
-React recommends that companies start using Hooks when they are ready but not rewrite all of the components in their codebase at once. Hooks will most likely become widely used over the next couple of years.  But you have the chance to be an expert at your workplace because it is new to everyone. Use what you are comfortable with and adopt more React Hook functionality as you gain confidence and understanding.
+React recommends that companies start using Hooks when they are ready but not to rewrite all of the components in their codebase at once. Hooks will most likely become widely used over the next couple of years.  But you have the chance to be an expert at your workplace because it is new to everyone. Use what you are comfortable with and adopt more React Hook functionality as you gain confidence and understanding.
 
 
 ## Exercise
-1. Let's download [this folder](https://hychalknotes.s3.amazonaws.com/learning-hooks.zip)2. Make sure to run `npm install` and then `npm start` to open the site in your browser. 
-3. Change App.js file to functional component using `useState` and `useEffect`. 
+1. Let's download [this folder](https://hychalknotes.s3.amazonaws.com/learning-hooks.zip).
+2. Navigate to the file in your terminal. Then run `npm install` and `npm start` to open the site in your browser. 
+3. In the App.js file, change `App` from a class component to a functional component using `useState` and `useEffect`. 
 
 
 ## Next Steps
@@ -208,13 +209,13 @@ Check out the React Hooks [Build Your Own Hooks](https://reactjs.org/docs/hooks-
 
 | Hook | Functionality  |
 |---|---|
-|`useContext` | lets you read the context object and subscribe to its changes  |
+|`useContext` | lets you read the context object and subscribe to its changes. [More about the Context API](https://reactjs.org/docs/context.html) |
 | `useReducer`  | is preferable to `useState` when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one |
 |  `useMemo` | Returns a memoized value --> memoization stores the results of expensive function calls and returns the cached result when the same inputs occur again |
 |  `useCallback` | Returns a memoized callback  |
-|  `useRef` |  useRef returns a mutable ref object |
+|  `useRef` |  useRef returns a mutable ref object. [More about using refs](https://reactjs.org/docs/refs-and-the-dom.html)|
 
-Take a look at the [Hooks API](https://reactjs.org/docs/hooks-reference.html) documentation to find out more.
+Take a look at the [Hooks API](https://reactjs.org/docs/hooks-reference.html) documentation to find even more built-in hooks.
 
 ## Additional Resources 
 [React Hooks documentation](https://reactjs.org/docs/hooks-intro.html)
