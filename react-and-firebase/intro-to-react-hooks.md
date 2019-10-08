@@ -38,9 +38,9 @@ The second value in the destructured array names the function that we will use t
 The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
 
 ```jsx
-this.state({
+this.state = {
     likes: 0,
-})
+}
 ```
 
 
@@ -63,7 +63,7 @@ class App extends Component {
   render() {
     return (
         <div>
-            Likes: {this.state.like}
+            Likes: {this.state.likes}
             <button onClick={this.addLike}>♥️</button>
         </div>
     ) 
@@ -131,13 +131,17 @@ function App(){
 We probably want to do something more interesting than `console.log`. `useEffect` seems like a great place to make API calls, connect to Firebase, or subscribe to some external information. 
 
 ```jsx
+//setting a `message` key on our state object
+const [message, setMessage] = useState('');
 useEffect(() => {
-    const dbRef = firebase.database().ref();
-        dbRef.on('value', (snapshot) => {
-            const database = snapshot.val();
-            setMessages(database)
-        })
-    })
+    axios({
+        method: 'get',
+        url: 'https://8ball.delegator.com/magic/JSON/Are showers a mandatory thing?',
+    }).then((res) => {
+        //here we update the `message` key in state
+        setMessage(res);
+    });
+})
 ```
 
 And it is! But there was a reason that we made these API calls in `componentDidMount` rather than in `componentDidUpdate`. The `componentDidMount` method usually only runs once. 
@@ -155,13 +159,16 @@ Passing an empty array means it will never have to rerun because it has nothing 
 Add an empty array as the second argument to the `useEffect` hook in order to only run it once, thus acting like `componentDidMount`.
 
 ```jsx
+const [message, setMessage] = useState('');
 useEffect(() => {
-    const dbRef = firebase.database().ref();
-        dbRef.on('value', (snapshot) => {
-            const database = snapshot.val();
-            setMessages(database)
-        })
-    }, [])
+    axios({
+        method: 'get',
+        url: 'https://8ball.delegator.com/magic/JSON/Are showers a mandatory thing?',
+    }).then((res) => {
+        setMessage(res);
+    });
+//👇 this is where we add the empty array
+}, []);
 ```
 
 ### Calling useEffect() multiple times
