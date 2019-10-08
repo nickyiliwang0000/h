@@ -321,15 +321,11 @@ $.when(pokeBag)
 
 However, rather than
 
-```javascript
-$.when( [PROMISE, PROMISE, PROMISE, PROMISE, (etc)] )
-```
+`$.when( [PROMISE, PROMISE, PROMISE, PROMISE, (etc)] )`
 
 our JS reads it like
 
-```javascript
-$.when( [AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!] )
-```
+`$.when( [AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!] )`
 
 Instead, we will spread those promises out:
 
@@ -341,7 +337,11 @@ $.when(...pokeBag)
   });
 ```
 
-Now, our JS sees `$.when( PROMISE, PROMISE, PROMISE, PROMISE, (etc) )`, which is the correct syntax. `$.when()` will now wait until each of the individual promises is fulfilled, and if they are it will then pass the return from each to `.then()`.
+Now, our JS sees
+
+`$.when( PROMISE, PROMISE, PROMISE, PROMISE, (etc) )`
+
+which is the correct syntax. `$.when()` will now wait until each of the individual promises is fulfilled, and if they are it will then pass the return from each to `.then()`.
 
 We will want to tell our `.then()` what to do with the results of our many promises (ie. the results of our API calls), but to write our parameters out in this case (both in the parentheses and then in the function itself) would be arduous, messy and very long, like:
 
