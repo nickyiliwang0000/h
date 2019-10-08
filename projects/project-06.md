@@ -13,7 +13,7 @@ You will be given an opportunity to provide feedback about the experience of wor
 
 >  **It is just as important to make a functional product as it is to work well with your partners.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. All members of the team should have a complete understanding of the technical aspects of the project.
 
-It can be valuable to set your group's working expectations from the beginning. Take some time to decide what your group's working hours should be (times that all members are expected to be available and present), how to handle pull requests (how many `thumbs up` are required before a merge can be executed), and any other arrangements that will help accomodate the needs of your specifc group.  
+It can be valuable to set your group's working expectations from the beginning. Take some time to decide what your group's working hours should be (times that all members are expected to be available and present), how to handle pull requests (how many `👍` are required before a merge can be executed), and any other arrangements that will help accomodate the needs of your specifc group.  
 
 Since we are also nearing the end of Helpcue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue'. Use your peers, your bootcamp buddies, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life. 
 
