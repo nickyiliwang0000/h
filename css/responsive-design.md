@@ -25,12 +25,12 @@ In 2010, a developer [described one solution to these problems](https://alistapa
 ## How to make a site responsive
 
 To make a responsive website, you need two things:
-1. a special `meta` tag  
+1. a special `<meta>` tag  
 2. _media queries_ in your CSS
 
-### 1. `<meta name="viewport">`
+### 1. `<meta>` tag
 
-Remember that `meta` tags go inside the `head` tag to provide information about the web page to the browser but not the user.
+Remember that `<meta>` tags go inside the `head` tag to provide information about the web page to the browser but not the user.
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
@@ -153,8 +153,22 @@ If the issue applies when the screen is narrow but longer than a phone screen, y
 
 Trying to target a specific device is not a good idea: you are better off using width media queries most of the time.
 
+#### Other Media Queries
+  * **orientation**: Thinking about **why** the user is holding their phone at that particular orientation may help you make decisions about design. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
+  * **pixel-density**: Images and graphics are blown up to 2x their natural size on retina or HPDI screens which can result in blurry images. The solution to this issue is to use a device resolution media query to swap in images that are 2x the size of the normal ones when the user is on a HiDPI screen. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
+  * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
+  * **monochrome**: targets monochrome screens (like Kindles)
+  * **progressive scan**: important pretty much only if you are making TV web apps
+  * **color**: if you could somehow get a web browser on an old gameboy color, you could target low or no bits of color.
+  ```css
+  @media all and (color:0) and (width:160px) and (height:144px) {
+    /* Target original gameboy */ 
+  }
+  ```
 
-#### How to use breakpoints effectively
+There are a bunch more on [MDN](https://developer.mozilla.org/en-US/docs/CSS/Media_queries).
+
+### How to use breakpoints effectively
 
 In general, we won't create breakpoints based on specific devices. There are hundreds of screen sizes out there now and more to come. What we **will** do is create them based on the design and content of our websites. (For edge cases where you absolutely **must** target specific devices, check out [this resource by Chris Coyier](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) which provides media queries for some known devices sizes.) 
 
@@ -174,26 +188,11 @@ In the broadest sense, the following breakpoints correspond to general device si
 ```
 
 As you design your site, you may need breakpoints that are larger, smaller, or in between some of these. That's fine! We want you to always **create breakpoints based on your design/content.**
-
-### Other Media Queries
-  * **orientation**: Thinking about **why** the user is holding their phone at that particular orientation may help you make decisions about design. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
-  * **pixel-density**: Images and graphics are blown up to 2x their natural size on retina or HPDI screens which can result in blurry images. The solution to this issue is to use a device resolution media query to swap in images that are 2x the size of the normal ones when the user is on a HiDPI screen. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
-  * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
-  * **monochrome**: targets monochrome screens (like Kindles)
-  * **progressive scan**: important pretty much only if you are making TV web apps
-  * **color**: if you could somehow get a web browser on an old gameboy color, you could target low or no bits of color.
-  ```css
-  @media all and (color:0) and (width:160px) and (height:144px) {
-    /* Target original gameboy */ 
-  }
-  ```
-
-There are a bunch more on [MDN](https://developer.mozilla.org/en-US/docs/CSS/Media_queries).
   
 
 ## Holistic Coding when creating Responsive Design
 
-Media Queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
+Media queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
 
 ### Layouts and Wrappers
 
@@ -266,6 +265,8 @@ Let's try making a navigation responsive. Download the [navigation-float](https:
 
 ### More exercises
 Check out [responsive-exercises-roundup.zip](https://hychalknotes.s3.amazonaws.com/responsive-exercises-roundup+2.zip) for the exercises and answers.
+
+
 
 <!-- 
 #### More Media Queries
