@@ -1,6 +1,6 @@
 # Project 7 (personal portfolio)
 ## Due date
-Tuesday, Sept 24th, 1:00 p.m.
+Tuesday, Dec 17th, 1:00 p.m.
 
 ## Project description
 A beautiful, responsive portfolio for all your ✨amazing✨ work that you've coded from scratch to match your chosen design.
@@ -19,7 +19,7 @@ Choose a portfolio site design that:
 * does NOT have **any** HTML or CSS in it (PSD only)
 * no recent grad has used (check the [past portfolio themes doc](https://docs.google.com/spreadsheets/d/1ZQqQnn-gSbyRlk_Au_MRoRsttsgy4BRdRnldnoclt6I/edit#gid=0)) 
 
-Submit your first and second choices to Fatima by email (fatima@hackeryou.com) by 1 p.m. on September 19th. She is aiming to have everyone's approved by 6 p.m. on the same day.
+Submit your first and second choices to Fatima by email (fatima@hackeryou.com) by 1 p.m. on December 12th. She is aiming to have everyone's approved by 6 p.m. on the same day.
 
 Once Fatima has approved your design, she'll update the past portfolio themes doc to reflect your choice.
 
@@ -39,7 +39,7 @@ Once Fatima has approved your design, she'll update the past portfolio themes do
 
 If you get a job, you get an A. 😉  
 
-We'll do group critiques/QA before demo night to catch any weirdness.
+We'll do group critiques/QA on Dec 17th before demo night to catch any weirdness.
 
 **Requirements:**
 * Have a minimum of 3 portfolio items
@@ -53,8 +53,8 @@ We'll do group critiques/QA before demo night to catch any weirdness.
 * Site is responsive and uses media queries
 
 ## Submitting your project
-1. Submit your top two theme choices to Fatima for approval by September 19th at 1 p.m. via email (fatima@hackeryou.com).
-2. Deploy your website by September 24th at 1 p.m. and submit the live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+1. Submit your top two theme choices to Fatima for approval by December 12th at 1 p.m. via email (fatima@hackeryou.com).
+2. Deploy your website by December 17th at 1 p.m. and submit the live URL using [the project submission form]().
   * It is HIGHLY ENCOURAGED that you start your deploy on Monday, as Tuesday morning there will not be a lot of time for deployment debugging.
   * Your portfolio site **must** be deployed before the critiques or it will not be eligible for review. 
   

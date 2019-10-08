@@ -1,9 +1,9 @@
 # Project 5 (solo React application)
 ## Due date
-Tuesday, Sep 10th, 1:00 p.m.
+Tuesday, Dec 3rd, 1:00 p.m.
 
 ## Project scope due date
-Thursday, Sep 5th, 6 p.m.
+Thursday, Nov 28th, 6 p.m.
 
 ## Project description
 Using the React library we would like you to create an interactive application. This will call on everything you have learned up to now!
@@ -33,7 +33,7 @@ Your data should come from an API or be stored in Firebase.
 To show a understanding of React basic concepts (e.g. state, props, components) as well as error handling and UI design. 
 
 ## Project proposals
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1t1l591AZadar30FyrURnNQU6XIJ-9bdm62mpJrKEQFk/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
+Once you have a good idea, we want you to fill out a [scope outline document]() and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
 
@@ -42,7 +42,7 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 <!--- ### Deployment
 (optional) In order to make deploying your app easy use the Firebase hosting features to get your site up online! There is the ability to add a custom domain if you would like, so think about a fun, shareable domain for your application . --->
 
-If you have not gotten an instructor's approval on a scope document by Wednesday, May 29th, 6 p.m., **you will be assigned a project**.
+If you have not gotten an instructor's approval on a scope document by Thursday, Nov 28th, 6 p.m., **you will be assigned a project**.
 
 ## How will this project be graded?
 **Requirements:**
@@ -74,10 +74,10 @@ You will also be given marks for your project presentation:
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a descriptive name that matches your naming convention.
-1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Deploy your website to GitHub Pages, Firebase Hosting, or on your own domain/subdomain
-1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+2. Create a repository with a descriptive name that matches your naming convention.
+3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
+4. Deploy your website to GitHub Pages, Firebase Hosting, or on your own domain/subdomain
+5. Submit your repo URL and live URL using [the project submission form]().
 
 ## #design in Helpcue
 

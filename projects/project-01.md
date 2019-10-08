@@ -1,6 +1,6 @@
 # Project 1 (1 page PSD conversion)
 ## Due date
-Wednesday, August 7th, 10:00 a.m.
+Wednesday, October 30th, 10:00 a.m. 👻
 
 ## Project description
 This project is meant to emulate a common task you will perform as a front-end developer. You will be provided a design and you will be tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for your users regardless of the device on which they are viewing the site.
@@ -39,7 +39,7 @@ You will also be given marks for your project presentation:
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/126VVJAOeyEXjZrk_RDj7GUg0qqoAB5oNwJbYGhclymo/edit#gid=624584399). Headings of the columns are links to the Zeplin files.
+You can find your assignment [here](). Headings of the columns are links to the Zeplin files.
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
@@ -48,7 +48,9 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/126VV
 
 ### Design files
 
-**Galass Handbags**
+Coming soon!
+
+<!-- **Galass Handbags**
 
 [design](https://scene.zeplin.io/project/5d14daaa78189773b2f59efc)
 
@@ -66,14 +68,14 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/126VV
 
 [design](https://scene.zeplin.io/project/5d39c44d8b7034775ac89766)
 
-[assets](https://hychalknotes.s3.amazonaws.com/Electric-Select-Assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/Electric-Select-Assets.zip) -->
 
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
 1. Create a repository called `firstname-lastname-project-one`
 1. Push your files to GitHub.
-1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+1. Submit your repo URL using [the project submission form]().
 
 ## #design in Helpcue
 

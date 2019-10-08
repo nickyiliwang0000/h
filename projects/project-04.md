@@ -1,6 +1,6 @@
 # Project 4 (paired API-powered application with jQuery)
 ## Due date
-Tuesday, Sep 3rd, 10:00 a.m.
+Tuesday, Nov 26, 10:00 a.m.
 
 ## Project description
 
@@ -10,7 +10,7 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 
 We encourage you to use the pair-programming method: both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
 
-Your partners are listed [here](https://docs.google.com/spreadsheets/d/126VVJAOeyEXjZrk_RDj7GUg0qqoAB5oNwJbYGhclymo/edit#gid=1233697499).
+Your partners are listed [here]().
 
 ## Project objective
 To show a understanding of jQuery, DOM manipulation, error handling, and UI design. And to demonstrate competence in pair programming and communication.
@@ -22,13 +22,13 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 
 ### Public APIs
 * [Zomato](https://developers.zomato.com/api)(restaurants)
-* [Petfinder](https://www.petfinder.com/developers/api-docs)(animals)
-* [Yummly](https://developer.yummly.com/)(recipes)
 * [Open Brewery DB](https://www.openbrewerydb.org/) (breweries)
 * [Pokemon API](https://pokeapi.co/) (Pokemon)
+* [MovieDB](https://www.themoviedb.org/documentation/api) (movies)
+* [Mapquest API](https://developer.mapquest.com/) (maps)
 
 ### Other APIs
-If you want to use another API, start [here](https://github.com/toddmotto/public-apis), but be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
+There are lots of other public APIs to explore [here](https://github.com/toddmotto/public-apis), but be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
 
 ### Tips for getting started
 * Track down an API that is of interest of you and work through the documentation to see if the information you want is available.
@@ -75,7 +75,7 @@ In order to secure your site, it's best to see if your host offers SSL certifica
 If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.22-fetching-data-with-something-other-than%24.ajax.md#axios-with-a-proxy-server).
 
 ## Project proposals
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1t1l591AZadar30FyrURnNQU6XIJ-9bdm62mpJrKEQFk/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
+Once you have a good idea, we want you to fill out a [scope outline document]() and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
 
@@ -120,7 +120,7 @@ You will also be given individual marks for your project presentation:
 1. Remove any unneeded files from the project.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain.
-1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+1. Submit your repo URL and live URL using [the project submission form]().
 
 ## #design in Helpcue
 

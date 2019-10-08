@@ -1,18 +1,23 @@
 # Project 6 (agency-style group React application)
 ## Due date
-Wednesday, Sep 18th, 10:00 a.m.
+Wednesday, Dec 11th, 10:00 a.m.
 
 ## Project description
 For this project, we will be mimicking the agency environment. You will be working in small groups to build simple web applications for a client. The projects will be of about the same complexity as your React/API projects from previous weeks, but this week we will be asking you to focus on **delivering a functional product**, **sticking to a timeline**, and **collaborating** with your fellow developers on GitHub.
 
 You'll be expected to create an organization on GitHub, create feature branches, and contribute via the pull request process. 
 
-## How will this project be graded?
+## Working as a team
+
 You will be given an opportunity to provide feedback about the experience of working with your group members.
 
 >  **It is just as important to make a functional product as it is to work well with your partners.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. All members of the team should have a complete understanding of the technical aspects of the project.
 
-Since we are also nearing the end of Helpcue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue. Use your peers, your bootcamp buddies, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life. 
+It can be valuable to set your group's working expectations from the beginning. Take some time to decide what your group's working hours should be (times that all members are expected to be available and present), how to handle pull requests (how many `thumbs up` are required before a merge can be executed), and any other arrangements that will help accomodate the needs of your specifc group.  
+
+Since we are also nearing the end of Helpcue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue'. Use your peers, your bootcamp buddies, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life. 
+
+## How will this project be graded?
 
 **Requirements:**
 * Uses React, and no jQuery
@@ -52,13 +57,13 @@ Commit early, commit often.
 ## Which project do I do?
 You will be provided with a client brief that includes some requirements as well as a style guide that you need to follow.
 
-Find your group [here](https://docs.google.com/spreadsheets/d/126VVJAOeyEXjZrk_RDj7GUg0qqoAB5oNwJbYGhclymo/edit#gid=1233697499) in the 'Project 6' tab. Client briefs are linked to the group headings.
+Find your group [here]() in the 'Project 6' tab. Client briefs are linked to the group headings.
 
 Your instructors are your clients. They're human! Talk to them! If you want to change something, if you run into a problem, if you have questions about your brief, or if you have an idea about how to do something better because of the data you're getting, **get an instructor to sign off on any changes you want to make**.
 
 ## Submitting your project
 1. Deploy your website to Firebase Hosting or your own domain/subdomain.
-1. One person from the group will submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+1. One person from the group will submit your repo URL and live URL using [the project submission form]().
 
 ## #design in Helpcue
 

@@ -1,6 +1,6 @@
 # Project 3 (solo interactive jQuery site)
 ## Due date
-Monday, Aug 26, 10:00 a.m.
+Monday, Nov 18, 10:00 a.m.
 
 ## Project description
 This week you are going to write some JavaScript using the jQuery library in order to build an interactive site of your choosing. It could be:
@@ -61,7 +61,7 @@ You will also be given marks for your project presentation:
 1. Create a repository with a name made up of your own first name, then your last name, and project three (e.g.`firstNameLastNameprojectThree`). 
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain
-1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+1. Submit your repo URL and live URL using [the project submission form]().
 
 ## #design in Helpcue
 

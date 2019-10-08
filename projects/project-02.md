@@ -1,6 +1,6 @@
 # Project 2 (multi-page PSD conversion)
 ## Due date
-Wednesday, Aug 14th, 10:00 a.m.
+Wednesday, Nov 6th, 10:00 a.m.
 
 ## Project description
 This project is meant to emulate a common task you will perform as a front-end developer. You will be provided a design and you will be tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for your users regardless of the device on which they are viewing the site.
@@ -52,7 +52,9 @@ You can find your assignment [here]().
 
 ### Design files
 
-**Sanctuary Helpers**
+Coming soon!
+
+<!-- **Sanctuary Helpers**
 
 [design](https://scene.zeplin.io/project/5d49d1c3066e193158bf3d48)
 
@@ -70,14 +72,14 @@ You can find your assignment [here]().
 
 [design](https://scene.zeplin.io/project/5d49df79c974ef129de7684b)
 
-[assets](https://hychalknotes.s3.amazonaws.com/under-the-sea-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/under-the-sea-assets.zip) -->
 
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
 1. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+1. Submit your repo URL using [the project submission form]().
 
 ## #design in Helpcue
 
