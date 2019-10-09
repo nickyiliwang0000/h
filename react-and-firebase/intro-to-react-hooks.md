@@ -46,7 +46,16 @@ this.setState({
 Try this 👍
 ```
 setLikes(4);
+
 ```
+
+
+| Class Components | Function Components  |
+| ---------------- | ------------------- |
+| `this.setState({ `| `setLikes(4);       |
+|      `likes: 4,`  |                     |
+|  `});`            |                     |
+
 
 The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
 
