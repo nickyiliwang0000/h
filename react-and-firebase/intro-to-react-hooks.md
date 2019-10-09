@@ -35,6 +35,19 @@ Here, we are creating a variable to hold the return value of useState, which is 
 
 The second value in the destructured array names the function that we will use to update the `likes` value in state. In this case we have named it `setLikes`. This function will replace the use of `this.setState()`. When we call `setLikes`, we will pass in the new value of the `likes` state as an argument.
 
+Instead of this 👎
+```
+this.setState({
+    likes: 4,
+});
+
+```
+
+Try this 👍
+```
+setLikes(4);
+```
+
 The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
 
 ```jsx
@@ -42,6 +55,8 @@ this.state = {
     likes: 0,
 }
 ```
+
+
 
 
 ## Refactoring a class component to a function component using Hooks
@@ -56,8 +71,9 @@ class App extends Component {
     }
   }
   addLike = () => {
+      const newLikes = this.state.likes;
       this.setState({
-          likes: this.state.likes + 1
+          likes: newLikes + 1
       })
   }
   render() {
