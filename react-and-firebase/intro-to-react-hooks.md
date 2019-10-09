@@ -28,64 +28,32 @@ import React, { useState } from 'react';
 
 We can name the two values returned from the `useState` function with array destructuring:
 ```jsx
+//Function Component
 const [likes, setLikes] = useState(0);
 ```
 
 Here, we are creating a variable to hold the return value of useState, which is an array of 2 items. We are naming the first item `likes`, which will be the name of the piece of state we want to access.
 
-The second value in the destructured array names the function that we will use to update the `likes` value in state. In this case we have named it `setLikes`. This function will replace the use of `this.setState()`. When we call `setLikes`, we will pass in the new value of the `likes` state as an argument.
-
 The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
 
 ```jsx
+//Class Component
 this.state = {
     likes: 0,
 }
 ```
 
-To summerize:
-<table>
-<!-- This formatting has to be ugly so it doesn't add unwanted tabs in the table. -->
-<tr>
-<th>
-Class Components
-</th>
-<th>
-Function Components
-</th>
-</tr>
-<tr>
-<td>
-<pre>
+The second value in the destructured array names the function that we will use to update the `likes` value in state. In this case we have named it `setLikes`. This function will replace the use of `this.setState()`. When we call `setLikes`, we will pass in the new value of the `likes` state as an argument.
+
+```jsx
+//Class Component 
 this.setState({
-    likes: 4,
-});
-</pre>
-</td>
-<td>
-<pre>
-setLikes(4);
-</pre>
-</td>
-</tr>
-<tr>
-<td>
-<pre>
-this.state = {
-    likes: 0,
-}
-</pre>
-</td>
-<td>
-<pre>
-const [likes, setLikes] = useState(0);
-</pre>
-</td>
-</tr>    
-</table>
+    likes: 4
+})
 
-
-
+//Function Component
+setLikes(4)
+```
 
 
 ## Refactoring a class component to a function component using Hooks
