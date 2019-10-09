@@ -73,11 +73,10 @@ If we have more than one rule it would look like this:
   }
 }
 ```
-It sort of looks like SCSS, doesn't it? It sort of works like that.
 
-The pixel value here is what we call a _breakpoint_. Breakpoints are the conditions under which a certain set of CSS rules are applied. An easy way to visualize breakpoints in development is to set a background color on the body to make it obvious which breakpoint you are in.
+The first pixel value here is what we call a _breakpoint_. Breakpoints are the conditions under which a certain set of CSS rules are applied. An easy way to visualize breakpoints in development is to set a background color on the body to make it obvious which breakpoint you are in.
 
-Open [media-queries-1.html](https://hychalknotes.s3.amazonaws.com/media-queries-1.html) in your editor and browser and let's take a look through the code.
+Open [media-queries-1.html](https://hychalknotes.s3.amazonaws.com/media-queries--bootcamp.html) in your editor and browser and let's take a look through the code.
 
 Dev tools has introduced a ruler that shows you pixel values. You can use that or inspect the body of your page to get the current page width and height.
 
@@ -93,7 +92,17 @@ The most common media queries target the width of a device.
 }
 ```
 
-The above example designates **only** a `max-width`, which means that the rule applies to every screen width below that. Sometimes we will want to limit our CSS to a certain range of pixel values:
+The above example designates **only** a `max-width`, which means that the rule applies to every screen width below that. There is also a `min-width` media query which means that the rule applies to every screen width above that. 
+
+```css
+@media (min-width: 1240px) {
+  body {
+    background: blue;
+  }
+}
+```
+
+Sometimes we will want to limit our CSS to a certain range of pixel values:
 
 ```css
   /* Portrait tablet to landscape and desktop */
@@ -190,11 +199,11 @@ In the broadest sense, the following breakpoints correspond to general device si
 As you design your site, you may need breakpoints that are larger, smaller, or in between some of these. That's fine! We want you to always **create breakpoints based on your design/content.**
   
 
-## Holistic Coding when creating Responsive Design
+### Holistic Coding when creating Responsive Design
 
 Media queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
 
-### Layouts and Wrappers
+#### Layouts and Wrappers
 
 Percentage widths on your elements and flexbox are gonna be your good pals when creating responsive layouts, but even they can't do **all** the work.
 
@@ -209,9 +218,10 @@ To keep it contained, add a fixed pixel `max-width` property to the wrapper. Lik
   max-width:960px;
 }
 ```
+
 This allows the wrapper to be any size up to this value.
 
-### Scaling images within their parent containers
+#### Scaling images within their parent containers
 
 It's pretty common for big, beautiful desktop images to be way too large for small screens. 
 <!-- 
