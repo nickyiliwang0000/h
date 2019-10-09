@@ -76,7 +76,7 @@ If we have more than one rule it would look like this:
 
 The first pixel value here is what we call a _breakpoint_. Breakpoints are the conditions under which a certain set of CSS rules are applied. An easy way to visualize breakpoints in development is to set a background color on the body to make it obvious which breakpoint you are in.
 
-Open [media-queries-1.html](https://hychalknotes.s3.amazonaws.com/media-queries--bootcamp.html) in your editor and browser and let's take a look through the code.
+Open [media-queries--bootcamp.html](https://hychalknotes.s3.amazonaws.com/media-queries--bootcamp.html) in your editor and browser and let's take a look through the code.
 
 Dev tools has introduced a ruler that shows you pixel values. You can use that or inspect the body of your page to get the current page width and height.
 
@@ -111,7 +111,7 @@ Sometimes we will want to limit our CSS to a certain range of pixel values:
 
 The code between the curly brackets will only be run when the width of your browser is equal to or greater than 768px **and** less than or equal to 940px.
 
-These bounded media queries can be helpful when you are targeting a specific size of screen. If, however, you want your CSS to apply to every screen size below the one targeted, leave out the `min-width` like we did in our first example. 
+These bounded media queries can be helpful when you are targeting a specific size of screen.
 
 #### Mobile First Design
 
