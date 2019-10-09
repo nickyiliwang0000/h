@@ -68,16 +68,16 @@ setLikes(4);
     </tr>
     <tr>
         <td>
-            <pre>
-                this.setState({
-                    likes: 4,
-                });
-            </pre>
+<pre>
+    this.setState({
+        likes: 4,
+    });
+</pre>
         </td>
         <td>
-            <pre>
-                setLikes(4);
-            </pre>
+<pre>
+    setLikes(4);
+</pre>
         </td>
     </tr>
 </table>
