@@ -52,10 +52,35 @@ setLikes(4);
 
 | Class Components | Function Components  |
 | ---------------- | ------------------- |
-| `this.setState({ `| `setLikes(4);       |
+| `this.setState({ `| `setLikes(4);`       |
 |      `likes: 4,`  |                     |
 |  `});`            |                     |
 
+
+<table>
+    <tr>
+        <th>
+            Class Components
+        </th>
+        <th>
+            Function Components
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <pre>
+                this.setState({
+                    likes: 4,
+                });
+            </pre>
+        </td>
+        <td>
+            <pre>
+                setLikes(4);
+            </pre>
+        </td>
+    </tr>
+</table>
 
 The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
 
