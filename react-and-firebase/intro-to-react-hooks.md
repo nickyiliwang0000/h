@@ -35,20 +35,15 @@ Here, we are creating a variable to hold the return value of useState, which is 
 
 The second value in the destructured array names the function that we will use to update the `likes` value in state. In this case we have named it `setLikes`. This function will replace the use of `this.setState()`. When we call `setLikes`, we will pass in the new value of the `likes` state as an argument.
 
-Instead of this 👎
-```
-this.setState({
-    likes: 4,
-});
+The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
 
-```
-
-Try this 👍
-```
-setLikes(4);
-
+```jsx
+this.state = {
+    likes: 0,
+}
 ```
 
+To summerize:
 <table>
 <!-- This formatting has to be ugly so it doesn't add unwanted tabs in the table. -->
 <tr>
@@ -73,15 +68,22 @@ setLikes(4);
 </pre>
 </td>
 </tr>
-</table>
-
-The `0` value in `useState(0)` sets the initial state of `likes` to 0. This is the same as doing:
-
-```jsx
+<tr>
+<td>
+<pre>
 this.state = {
     likes: 0,
 }
-```
+</pre>
+</td>
+<td>
+<pre>
+const [likes, setLikes] = useState(0);
+</pre>
+</td>
+</tr>    
+</table>
+
 
 
 
