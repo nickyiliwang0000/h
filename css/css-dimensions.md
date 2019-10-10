@@ -284,58 +284,25 @@ img.cat {
 
 ## The `box-sizing` property
 
-Now that we are equipped with width, height, padding, margin and borders, it's important to learn about the **box model**.
+Now that we are equipped with width, height, padding, margin and borders, it's important to learn about the _box model_.
 
-Create a new HTML file, and let's start off with a simple 150px by 150px container (set with `width` and `height`). Feel free to copy this element:
+Check out [this CodePen](https://codepen.io/CoderOfNote/pen/gOOpEmr?editors=1100) and comment-in the margin, padding, and border on the first image.
 
-```html
-<div>I'm a 150px by 150px container!</div>
-```
+Notice anything weird? The element is defined as 200px wide, but the padding makes the element larger.
+![an image element with 50px of padding](https://hychalknotes.s3.amazonaws.com/box-model-padding.png)
 
-Let's also open an internal stylesheet, and paste the following css:
+The border does too.
+![an image element with 50px of padding and 50px of border](https://hychalknotes.s3.amazonaws.com/box-model-border-padding.png)
 
-```css 
-div {
-  width: 150px;
-  height: 150px;
-  background: #23395B;
-  box-sizing: content-box;
-  color: white;
-}
-```
+What we initially defined as a 200px square is now 300px wide.
 
-Now let's add some padding so the text isn't all squished to the edge of the box.
+The 25px of margin that we added affects the element's footprint, not its actual size. With the margin applied, the element will take up `25px + 300px + 25px` of space in the browser window.
 
-```css 
-div {
-  width: 150px;
-  height: 150px;
-  background: #23395B;
-  box-sizing: content-box;
-  color: white;
-  padding: 20px;
-}
-```
+This is what is known as the box model. A developer (or the content) defines an element's size and the padding and border are **added** to that size. This can be confusing, especially when we're using floats with these widths.
 
-Finally, add a border:
+If the width and height of the container is set, why does the element get bigger? Why doesn't the padding and border take away from the 200 pixels? This is what is known as the box model, and it's just a quirk of CSS - by default, `padding` and `border` changes the element's total size, and `margin` adds to how much space the element is taking up.
 
-```css 
-div {
-  width: 150px;
-  height: 150px;
-  background: #23395B;
-  box-sizing: content-box;
-  color: white;
-  padding: 20px;
-  border: 10px solid black;
-}
-```
-
-Notice anything weird? The elements grow as we add **padding** and **border**. Suddenly our 150px container isn't 150px anymore!
-
-If the width and height of the container is set to 150px, why does the element get bigger? Why doesn't the padding and border take away from the 150 pixels? This is another CSS quirk that is quite an annoyance in web development. By default, `padding` and `border` changes the element's total size and `margin` adds to how much space the element is taking up. This interaction is referred to as **The box model**.
-
-If your project is only going to support Internet Explorer 8 and up, then we can use the `box-sizing` property like so: 
+The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make the padding and border **not** add to the computed size of our element.
 
 ```css
 * {
@@ -345,9 +312,10 @@ If your project is only going to support Internet Explorer 8 and up, then we can
 }
 ```
 
-By specifying this rule at the top of our CSS, we tell **all** elements (using the wildcard `*` selector) to take **padding** and **border** away from the set width and height. Grab the code from above and add it into your document.
+The `*` character is a wildcard selector and selects everything on the page. By specifying this rule at the top of our CSS, we tell all elements to take padding and border away from the set width and height. Grab the code from above and add it into the CodePen to see this working.
 
-Change the `box-sizing:content-box;` rule on your `div` from above to see the difference this makes! 
+When starting any project from now on, be sure to include that at the top of your CSS file.
+
 
 ## The `box-shadow` property
 

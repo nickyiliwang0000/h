@@ -14,7 +14,7 @@ What makes a site easy to use? How should our content sit on the page? What happ
 
 Every element in HTML exists as a box. Elements have dimensions (e.g. width and height) and can contain content or other elements.
 
-We've already looked grouping content using the `<div>` tag and/or semantic elements and we don't just group content for readability in the HTML: we also group content in anticipation of the styling we'll apply to it.
+We've already looked at grouping content using the `<div>` tag and/or semantic elements, for readability and accessibility. On top of that though, we also group content in anticipation of the styling we'll apply to it.
 
 In HTML, almost all structural elements take up 100% of the width of the browser.  These elements are known as _block elements_. All elements render in the browser in the order they appear in the HTML markup; kind of the way a word processor works.
 
@@ -146,11 +146,11 @@ You'll see that when you apply a `float` to an element, that element's width bec
 
 When elements are floated, their _stacking order_ will also change. Stacking order is the way elements appear on the page. When you float an element, you're essentially lifting it out of the flow of the page and letting it float above its surrounding element. The floated element will also lose its imprint and and its space won't be saved. Often, you will find the surrounding elements shuffling into the space that the floated element used to take up. [Here is a great video](https://www.youtube.com/watch?v=xara4Z1b18I) that explains how floating elements affect their stacking order.
 
-You can kind of think of it like people in line at the cash at the grocery store: you get into line in the order you finish shopping (natural stacking order). If you leave the line to go to the self-checkout, the people who were behind you will fill your spot (float). If the self-checkout is broken, hopefully people will let you back in line in your original spot. (A floated element always takes its original position back when the float is removed. A web page is like like a very polite community of shoppers.)
+You can kind of think of it like people in line at the cash at the grocery store: you get into line in the order you finish shopping (natural stacking order). If you leave the line to go to the self-checkout (float), the people who were behind you will fill your spot. If the self-checkout is broken, hopefully people will let you back in line in your original spot. (A floated element always takes its original position back when the float is removed. A web page is like like a very polite community of shoppers.)
 
 Check out [this CodePen](https://codepen.io/jenobot/pen/QOzyeP/) to see how stacking order changes when an element is floated.
 
-## Calculating dimensions
+<!-- ## Calculating dimensions
 
 Before we move on, we need to understand how we use margin, padding and borders in layouts. A brief review of those properties:
 
@@ -160,7 +160,7 @@ property | used to |
 `padding` | push content away from the inside walls of an element
 `border` | surround an element and its padding
 
-Check out [this CodePen](https://codepen.io/zkdan/pen/oQbooo) and uncomment the margin, padding, and border.
+Check out [this CodePen](https://codepen.io/CoderOfNote/pen/gOOpEmr?editors=1100) and comment-in the margin, padding, and border on the first image.
 
 See how the element is defined as 200px by 200px, but the padding makes the element larger?
 ![an image element with 50px of padding](https://hychalknotes.s3.amazonaws.com/box-model-padding.png)
@@ -171,7 +171,7 @@ And so does the border!
 
 So what we defined as a 200px square is now a 300px square! 
 
-The 25px of margin that we added affects the element's footprint, not its actual size. With the margin applying, the element will take up `25px + 300px + 25px` of space in the browser window. 
+The 25px of margin that we added affects the element's footprint, not its actual size. With the margin applied, the element will take up `25px + 300px + 25px` of space in the browser window. 
 
 This is what is known as the _box model_. A developer (or the content) defines an element's size and the padding and border are **added** to that size. This can be confusing, especially when we're using floats with these widths.
 
@@ -191,7 +191,7 @@ The box model can be navigated around quite easily. By adding the following code
 
 The `*` character is a wildcard selector and selects everything on the page.
 
-When starting any project from now on, be sure to include that at the top of your CSS file.
+When starting any project from now on, be sure to include that at the top of your CSS file. -->
 
 ## Two column layout
 
