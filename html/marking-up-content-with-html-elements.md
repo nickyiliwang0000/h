@@ -278,10 +278,11 @@ One of the many fun parts of being a web developer is using funny images as plac
 Here are a few options:
 
 * [http://placekitten.com/](http://placekitten.com/)
-* [https:/lorempixel.com/](https:/lorempixel.com/)
+* [https://lorempixel.com/](https://lorempixel.com/)
 * [https://picsum.photos/](https://picsum.photos/)
-* [https://www.fillmurray.com/](https://www.fillmurray.com/)
-* [https://baconmockup.com/](https://baconmockup.com)
+* [https://dummyimage.com/](https://dummyimage.com/)
+* [http://placeimg.com/](http://placeimg.com/)
+* [https://placebear.com/](https://placebear.com/)
 
 For each of the above, instead of setting the image src to URL that ends in an file extension that designates an image (like `.png, .jpg, .png, .jpeg, .gif`), we set it to one of the previous URLs with the last two numbers being the `width` and the `height`:
 
@@ -292,16 +293,16 @@ For each of the above, instead of setting the image src to URL that ends in an f
 <img src="https://picsum.photos/350/150">
 
 ```html
-<img src="http://www.fillmurray.com/200/200">
+<img src="http://placekitten.com/200/300">
 ```
 
-<img src="http://www.fillmurray.com/200/200">
+<img src="http://placekitten.com/200/300">
 
 ```html
-<img src="http://baconmockup.com/400/200">
+<img src="http://placeimg.com/640/480/arch">
 ```
 
-<img src="http://baconmockup.com/400/200">
+<img src="http://placeimg.com/640/480/arch">
 
 
 #### Lists
