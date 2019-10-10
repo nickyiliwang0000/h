@@ -293,16 +293,16 @@ For each of the above, instead of setting the image src to URL that ends in an f
 <img src="https://picsum.photos/350/150">
 
 ```html
-<img src="http://placekitten.com/200/300">
+<img src="https://placebear.com/200/300">
 ```
 
-<img src="http://placekitten.com/200/300">
+<img src="https://placebear.com/200/300">
 
 ```html
 <img src="http://placeimg.com/640/480/arch">
 ```
 
-<img src="http://placeimg.com/640/480/arch">
+<img src="http://placeimg.com/340/280/arch">
 
 
 #### Lists
