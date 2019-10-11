@@ -289,20 +289,20 @@ Now that we are equipped with width, height, padding, margin and borders, it's i
 Check out [this CodePen](https://codepen.io/CoderOfNote/pen/gOOpEmr?editors=1100) and comment-in the margin, padding, and border on the first image.
 
 Notice anything weird? The element is defined as 200px wide, but the padding makes the element larger.
+
 ![an image element with 50px of padding](https://hychalknotes.s3.amazonaws.com/box-model-padding.png)
 
 The border does too.
+
 ![an image element with 50px of padding and 50px of border](https://hychalknotes.s3.amazonaws.com/box-model-border-padding.png)
 
 What we initially defined as a 200px square is now 300px wide.
 
 The 25px of margin that we added affects the element's footprint, not its actual size. With the margin applied, the element will take up `25px + 300px + 25px` of space in the browser window.
 
-This is what is known as the box model. A developer (or the content) defines an element's size and the padding and border are **added** to that size. This can be confusing, especially when we're using floats with these widths.
-
 If the width and height of the container is set, why does the element get bigger? Why doesn't the padding and border take away from the 200 pixels? This is what is known as the box model, and it's just a quirk of CSS - by default, `padding` and `border` changes the element's total size, and `margin` adds to how much space the element is taking up.
 
-The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make the padding and border **not** add to the computed size of our element.
+The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make the padding and border **not** add to the computed size of our element:
 
 ```css
 * {
