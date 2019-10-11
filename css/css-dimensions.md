@@ -296,13 +296,11 @@ The border does too.
 
 ![an image element with 50px of padding and 50px of border](https://hychalknotes.s3.amazonaws.com/box-model-border-padding.png)
 
-What we initially defined as a 200px square is now 300px wide.
+What we initially defined as a 200px square is now 300px wide, while the 25px of margin we added affects the element's footprint as well (though not its actual size). With the margin applied, the element will take up `25px + 300px + 25px` of space in the browser window.
 
-The 25px of margin that we added affects the element's footprint, not its actual size. With the margin applied, the element will take up `25px + 300px + 25px` of space in the browser window.
+If the width of the container is set, why don't the padding and border take away from the 200 pixels? This is what is known as the box model, and it's just a quirk of CSS - by default, `padding` and `border` change the element's total size.
 
-If the width and height of the container is set, why does the element get bigger? Why doesn't the padding and border take away from the 200 pixels? This is what is known as the box model, and it's just a quirk of CSS - by default, `padding` and `border` changes the element's total size, and `margin` adds to how much space the element is taking up.
-
-The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make the padding and border **not** add to the computed size of our element:
+The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make `padding` and `border` **not** add to the computed size of our element (`margin` will still increase its footprint, since that is outside the dimensions of the element itself):
 
 ```css
 * {
@@ -312,7 +310,7 @@ The box model can be navigated around quite easily. By adding the following code
 }
 ```
 
-The `*` character is a wildcard selector and selects everything on the page. By specifying this rule at the top of our CSS, we tell all elements to take padding and border away from the set width and height. Grab the code from above and add it into the CodePen to see this working.
+The `*` character is a wildcard selector and selects everything on the page. By specifying this rule at the top of our CSS, we tell all elements to take padding and border away from the set width and/or height. Grab the code from above and add it into the CodePen to see this working.
 
 When starting any project from now on, be sure to include that at the top of your CSS file.
 
