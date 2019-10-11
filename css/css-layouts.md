@@ -42,9 +42,9 @@ aside{
 </div>
 ```
 
-## Adding dimensions
+### Adding dimensions
 
-Every website you've ever seen isn't just stuff stacked up in the browser. There are articles next to sidebars, footers that span a whole page, and masonry layouts. Lists, especially navigations, can run inline rather than stack up.
+Most websites aren't just stuff stacked up in the browser. There are articles next to sidebars, footers that span a whole page, and masonry layouts. Lists, especially navigations, can run inline rather than stacking up.
 
 It makes sense to assume that since all block elements default to a width of 100% of the browser window, changing the elements' width to 50% should allow two elements to sit next to each other.
 
@@ -78,28 +78,17 @@ Why isn't the aside coming up to sit by the section?!
 
 ![diagram showing how block elements are expected sit on a line together at 50% width each](https://hychalknotes.s3.amazonaws.com/expected-block-behavior.png)
 
-This is one of the weird things about HTML/CSS layout. Block elements **always** always take up a 100% of the browser window regardless of their declared/rendered width. Weeeeeiiiiirrrddddddd!
+This is one of the weird things about HTML/CSS layout; block elements always always take up a 100% of the browser window regardless of their declared/rendered width.
+
+There are a number of ways to use CSS to solve this limitation to page layout. The most common are Flexbox and CSS grid, but these are relatively recent additions to the CSS spec. Flexbox only received full cross-browser support around 2015/16, and CSS grid more recently than that.
+
+While Flexbox and grid are great and will work for you on all projects you build going forward, part of being a professional web developer is also being able to support common legacy technologies. Among the most prevalent of these, which you will likely run into frequently on the job, is what was previously the most common way to handle complex page layouts - _floats_.
 
 ## The `float` property
 
-The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to, but they **did** plan for text to wrap around images, like it does in books and magazines. The `float` property can be applied to images to define how the following elements will wrap around them.
+The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to, but they did plan for text to wrap around images like it does in books and magazines. The `float` property can be applied to images to define how following elements will wrap around them.
 
-Check out [this CodePen](https://codepen.io/hackeryou/pen/qQbXez) to see the paragraph text wrapping around the image, or copy-paste the following code into a file of your own:
-
-```css
-  img{
-    float:left;
-  }
-```
-```html
-<img src="http://unsplash.it/200/200" alt="image from unsplash">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-```
-
-Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
+Check out [this CodePen](https://codepen.io/CoderOfNote/pen/BaajyJY?editors=1100#0) to see the paragraph text wrapping around the image. Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
 
 ## Exercise: Floating images
 Open up [image-float.html](https://hychalknotes.s3.amazonaws.com/floating-image.html) in your text editor and the browser. If you get stuck, check out the answer [here](https://hychalknotes.s3.amazonaws.com/floating-imageANSWER.html).
