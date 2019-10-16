@@ -11,15 +11,15 @@ One of a developer's most important tools is a text editor. The text editor is w
 
 HTML is written is plain text, so we could technically use Notepad (Windows) or TextEdit (Mac) to view and edit our HTML files. However, since both programs show nothing but black text on a white background, it's very easy to make a mistake!
 
-Text editors give you something called _syntax highlighting_, which colour-codes your tags to help you quickly scan your code for relevant parts. When you make a mistake, the colour of the tag changes so you can see that something isn't right. Take a look this snippet in TextEdit:
+Text editors give you something called _syntax highlighting_, which colour-codes your tags to help you quickly scan your code for relevant parts. When you make a mistake, the colour of the tag changes so you can see that something isn't right. Take a look this snippet in Notepad:
 
-[Using Textedit or Notepad](http://wes.io/IJBn/Screen%20Shot%202012-07-24%20at%203.11.49%20PM.png)
+![Using Textedit or Notepad](https://hychalknotes.s3.amazonaws.com/notepad-screenshot.png)
 
 Now look at it in a text editor:
 
-[Using a Text Editor](http://wes.io/IINV/Screen%20Shot%202012-07-24%20at%203.15.00%20PM.png)
+![Using a text editor](https://hychalknotes.s3.amazonaws.com/VSCode-screenshot.PNG)
 
-See how all the tags are blue and the current selected tag `<body>` is underlined in yellow? When your code gets long and nested, little features like these are very helpful for finding errors.
+See all the color-formatting and syntax highlighting (the tags are blue, text is white, the current selected tag `<html>` auto-highlights its matching closing tag, etc.)? When your code gets long and nested, little features like these are very helpful for navigating, staying organized and finding errors.
 
 ## Choosing a text editor
 
