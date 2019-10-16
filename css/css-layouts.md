@@ -80,9 +80,8 @@ Why isn't the aside coming up to sit by the section?!
 
 This is one of the weird things about HTML/CSS layout; block elements always always take up a 100% of the browser window regardless of their declared/rendered width.
 
-There are a number of ways to use CSS to solve this limitation to page layout. The most common are Flexbox and CSS grid, but these are relatively recent additions to the CSS spec. Flexbox only received full cross-browser support around 2015/16, and CSS grid more recently than that.
+There are a number of ways to use CSS to solve this limitation to page layout. The most common are Flexbox and CSS grid; both are great and will work for you on all projects you build going forward, but they are relatively recent additions to the CSS spec. Part of being a professional web developer is also being able to support common legacy technologies. Among the most prevalent of these, which you will likely run into frequently on the job, is the previously the most common way to handle complex page layouts - _floats_.
 
-While Flexbox and grid are great and will work for you on all projects you build going forward, part of being a professional web developer is also being able to support common legacy technologies. Among the most prevalent of these, which you will likely run into frequently on the job, is what was previously the most common way to handle complex page layouts - _floats_.
 
 ## The `float` property
 
@@ -90,30 +89,32 @@ The early developers of HTML and CSS did not plan for the kind of web page layou
 
 Check out [this CodePen](https://codepen.io/CoderOfNote/pen/BaajyJY?editors=1100#0) to see the paragraph text wrapping around the image. Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
 
-## Exercise: Floating images
+### Exercise: Floating images
 Open up [image-float.html](https://hychalknotes.s3.amazonaws.com/floating-image.html) in your text editor and the browser. If you get stuck, check out the answer [here](https://hychalknotes.s3.amazonaws.com/floating-imageANSWER.html).
 
 ## Using floats for layout
+
+<!-- Rework this section to open with more of a "floats became a way to solve layout problems, even though they're not designed for that." Show the example with the first codepen below, but then explain that what's happening is that the element is being floated out of the flow of the page, so we need clearfix etc. -->
+
 We can use floats to help lay out our structural elements, not just our images. If we think of each row/line as 100%, we need to ensure that the sum of all the elements' dimensions in any given row are equal to or less than 100%. Anything that doesn't fit into that space gets moved to the next line.
 
 All structural elements are block elements, which means they're how wide by default?
-<!-- They take up 100% of the width of the browser window -->
 > 100% of the width of the browser window!
 
-Go back to [this CodePen](https://codepen.io/hackeryou/pen/yQeXQO) and add `float: left;` to the block elements, like so:
+Go back to [this CodePen](https://codepen.io/hackeryou/pen/yQeXQO) and along with `width: 50%` add `float: left;` to the block elements, like so:
 
 ```css
 section{
-  background-color:aqua;
+  background-color: aqua;
   height: 100px;
-  width:50%;
-  float:left;
+  width: 50%;
+  float: left;
 }
 aside{
   background-color: lavender;
   height: 50px;
-  width:50%;
-  float:left;
+  width: 50%;
+  float: left;
 }
 ```
 
@@ -133,56 +134,22 @@ You'll see that when you apply a `float` to an element, that element's width bec
 
 ## Floated elements' stacking order
 
+
+<!-- Should change this section to be about floating stacking order, but also about removing things from the flow of the page more broadly, and so about clearfix, as an intro to the idea. -->
+
+
 When elements are floated, their _stacking order_ will also change. Stacking order is the way elements appear on the page. When you float an element, you're essentially lifting it out of the flow of the page and letting it float above its surrounding element. The floated element will also lose its imprint and and its space won't be saved. Often, you will find the surrounding elements shuffling into the space that the floated element used to take up. [Here is a great video](https://www.youtube.com/watch?v=xara4Z1b18I) that explains how floating elements affect their stacking order.
 
 You can kind of think of it like people in line at the cash at the grocery store: you get into line in the order you finish shopping (natural stacking order). If you leave the line to go to the self-checkout (float), the people who were behind you will fill your spot. If the self-checkout is broken, hopefully people will let you back in line in your original spot. (A floated element always takes its original position back when the float is removed. A web page is like like a very polite community of shoppers.)
 
 Check out [this CodePen](https://codepen.io/jenobot/pen/QOzyeP/) to see how stacking order changes when an element is floated.
 
-<!-- ## Calculating dimensions
-
-Before we move on, we need to understand how we use margin, padding and borders in layouts. A brief review of those properties:
-
-property | used to |
----|---
-`margin` |  push elements away from each other
-`padding` | push content away from the inside walls of an element
-`border` | surround an element and its padding
-
-Check out [this CodePen](https://codepen.io/CoderOfNote/pen/gOOpEmr?editors=1100) and comment-in the margin, padding, and border on the first image.
-
-See how the element is defined as 200px by 200px, but the padding makes the element larger?
-![an image element with 50px of padding](https://hychalknotes.s3.amazonaws.com/box-model-padding.png)
-
-And so does the border! 
-
-![an image element with 50px of padding and 50px of border](https://hychalknotes.s3.amazonaws.com/box-model-border-padding.png)
-
-So what we defined as a 200px square is now a 300px square! 
-
-The 25px of margin that we added affects the element's footprint, not its actual size. With the margin applied, the element will take up `25px + 300px + 25px` of space in the browser window. 
-
-This is what is known as the _box model_. A developer (or the content) defines an element's size and the padding and border are **added** to that size. This can be confusing, especially when we're using floats with these widths.
-
-Download and open up [box-model-playground.html](https://hychalknotes.s3.amazonaws.com/box-model-playground.html) in your text editor and browser. Play around with the padding, border and margin of each box and see how it can affect their total dimensions.
-
-## Border-box
-
-The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make the padding and border **not** add to the computed size of our element.
-
-```css
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-```
-
-The `*` character is a wildcard selector and selects everything on the page.
-
-When starting any project from now on, be sure to include that at the top of your CSS file. -->
 
 ## Two column layout
+
+
+<!-- Need to upload new column-layout file, and replace screenshots. Also use this area to make reference to previously introduced page-flow changes and clearfix. -->
+
 
 One familiar web page layout includes a `header` and a `footer`, and in between those, a content area with an `aside` next to it.
 
@@ -193,7 +160,7 @@ In our example, we have our four main elements. `header`, `section`, `aside` and
 ```html
   <div class="wrapper">
       <header>
-          <h1>Welcome To HackerYou</h1>
+          <h1>Welcome To Juno</h1>
       </header>
       <section>
           <h2>This is the story of a girl.</h2>
@@ -207,11 +174,11 @@ In our example, we have our four main elements. `header`, `section`, `aside` and
           </ul>
       </aside>
       <footer>
-          <p>Copyright 2018</p>
+          <p>&copy; Copyright 2049</p>
       </footer>
   </div>
 ```
-By default, our elements are 100% wide, so we don't need to apply any widths or floats to our header or footer. However, we do want  `section` and `aside` next to each other. We'll use floats. Once the elements are floated, we'd like them to add up to 100% of the browser window width.
+By default, our elements are 100% wide, so we don't need to apply any widths or floats to our header or footer. However, let's say we want  `section` and `aside` next to each other. We can use floats. Once the elements are floated, we'd like them to add up to 100% of the browser window width.
 
 ```css
 section {
