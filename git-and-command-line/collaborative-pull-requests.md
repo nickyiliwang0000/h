@@ -34,7 +34,7 @@ It is recommended that your new branch be named descriptively reflecting the wor
 
 After your secondary branch has been pushed up to your GitHub repo, you can submit a pull request.
 
-[a button allowing a user to create a pull request](https://hychalknotes.s3.amazonaws.com/createPullRequest.png)
+![a button allowing a user to create a pull request](https://hychalknotes.s3.amazonaws.com/createPullRequest.png)
 
 A pull request is a way of telling your co-workers or peers that you have finished a portion of the site, and that you would like a review of your code. This is not only an opportunity for you to receive feedback on your code, but also an opportunity to start writing more descriptive comments about certain functionality that other developers will need to understand. It's also important to include a description of the work included in the pull request.
 
@@ -46,11 +46,11 @@ You can also change the settings on a project repo to _require_ a pull request t
 
 To start, _merge conflicts_ are your friend. Imagine if there was no way of knowing that your code was about to cause problems for the rest of your site, and was simply accepted into your master branch only to have everything break. That would make collaborative projects a lot more difficult.
 
-[a screenshot from GitHub showing that a branch cannot be automatically merged into master branch](https://hychalknotes.s3.amazonaws.com/mergeConflict.png)
+![a screenshot from GitHub showing that a branch cannot be automatically merged into master branch](https://hychalknotes.s3.amazonaws.com/mergeConflict.png)
 
 It is quite common to run into a merge conflict while creating a pull request. A merge conflict will prevent your branch from being eligible to merge, and will require just a few extra steps to make sure your code is compatible.
 
-[a screenshot from GitHub displaying the file names that are causing a merge conflict](https://hychalknotes.s3.amazonaws.com/mergeConflictIndex.png)
+![a screenshot from GitHub displaying the file names that are causing a merge conflict](https://hychalknotes.s3.amazonaws.com/mergeConflictIndex.png)
 
 ## Solving merge conflicts
 
@@ -61,9 +61,9 @@ To solve a merge conflict, you can follow these steps:
 1. Use `git checkout secondry-branch` to switch back to the secondary branch with out-of-date code
 1. Input `git merge master` to bring in the updates from your master branch, to your secondary-branch
 1. You should see a message that includes "Automatic merge failed; fix conflicts and then commit the result"
-   [Automatic merge failed message on a command line interface](https://hychalknotes.s3.amazonaws.com/mergeConflictCLI.png)
+   ![Automatic merge failed message on a command line interface](https://hychalknotes.s3.amazonaws.com/mergeConflictCLI.png)
 1. Using VSCode open your conflicted file(s), you’ll be prompted to either “Accept Current Changes”(Current changes are the changes to the code that you have made)or “Accept Incoming Changes” (Incoming means incoming from master branch). Sometimes you have to click "Accept Both" and manually configure the code.
-   [a VScode message allowing the developer to accept incoming changes, accept current changes, accept both, or compare changes](https://hychalknotes.s3.amazonaws.com/acceptChanges.png)
+   ![a VScode message allowing the developer to accept incoming changes, accept current changes, accept both, or compare changes](https://hychalknotes.s3.amazonaws.com/acceptChanges.png)
 1. After choosing the option that feels like the best fit, you’ll need to `add` `commit` and `push`the updates on your secondary branch to your GitHub repo so your pull request can better reflect the current state of the master branch
 1. On GitHub, click the 'Merge pull request' button and confirm merge
 1. On your CLI, switch back to master branch using `git checkout master`
