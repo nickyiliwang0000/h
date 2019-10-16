@@ -83,16 +83,18 @@ This is one of the weird things about HTML/CSS layout; block elements always alw
 There are a number of ways to use CSS to solve this limitation to page layout. The most common are Flexbox and CSS grid; both are great and will work for you on all projects you build going forward, but they are relatively recent additions to the CSS spec. Part of being a professional web developer is also being able to support common legacy technologies. Among the most prevalent of these, which you will likely run into frequently on the job, is the previously the most common way to handle complex page layouts - _floats_.
 
 
-## The `float` property
+## Floats
+
+The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to. The `float` property wasn't created to solve this, but rather to let text wrap around images like it does in books and magazines.
 
 The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to, but they did plan for text to wrap around images like it does in books and magazines. The `float` property can be applied to images to define how following elements will wrap around them.
 
-Check out [this CodePen](https://codepen.io/CoderOfNote/pen/BaajyJY?editors=1100#0) to see the paragraph text wrapping around the image. Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
+Applying the `float` property to images defines how following elements will wrap around them. Check out [this CodePen](https://codepen.io/CoderOfNote/pen/BaajyJY?editors=1100#0) to see the paragraph text wrapping around the image. Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
 
 ### Exercise: Floating images
 Open up [image-float.html](https://hychalknotes.s3.amazonaws.com/floating-image.html) in your text editor and the browser. If you get stuck, check out the answer [here](https://hychalknotes.s3.amazonaws.com/floating-imageANSWER.html).
 
-## Using floats for layout
+### Using floats for layout
 
 <!-- Rework this section to open with more of a "floats became a way to solve layout problems, even though they're not designed for that." Show the example with the first codepen below, but then explain that what's happening is that the element is being floated out of the flow of the page, so we need clearfix etc. -->
 
@@ -132,7 +134,7 @@ Remove the `width:50%;` on both elements. What happens?
 
 You'll see that when you apply a `float` to an element, that element's width becomes the size of its contents unless otherwise specified.
 
-## Floated elements' stacking order
+### Floated elements' stacking order
 
 
 <!-- Should change this section to be about floating stacking order, but also about removing things from the flow of the page more broadly, and so about clearfix, as an intro to the idea. -->
@@ -145,10 +147,10 @@ You can kind of think of it like people in line at the cash at the grocery store
 Check out [this CodePen](https://codepen.io/jenobot/pen/QOzyeP/) to see how stacking order changes when an element is floated.
 
 
-## Two column layout
+### Two column layout
 
 
-<!-- Need to upload new column-layout file, and replace screenshots. Also use this area to make reference to previously introduced page-flow changes and clearfix. -->
+<!-- Need to use this area to make reference to previously introduced page-flow changes and clearfix. -->
 
 
 One familiar web page layout includes a `header` and a `footer`, and in between those, a content area with an `aside` next to it.
@@ -198,8 +200,8 @@ Great, the `section` and `aside` are next to each other, but our footer has jump
 
 Weird! How do we fix these unexpected bugs?
 
-## Float problems
-### Collapse of surrounding element
+### Float problems
+#### Collapse of surrounding element
 Floats were created to allow text to wrap around an image and continue down the page. In the layout we're working with, we don't have enough content in the `aside` to continue down the page, so the wrapper sizes to the next element that isn't floated. In this case, the `footer` element.
 
 
