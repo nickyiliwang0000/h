@@ -52,10 +52,6 @@ custom browser extensions
 reveal.js
 draggable.js
 CSS text-path
-```
-
-### Claimed:
-```
 lodash
 :focus-within
 color-adjust
@@ -86,4 +82,9 @@ React Native
 typed.js
 three.js
 pose.js
+```
+
+### Claimed:
+```
+
 ```
