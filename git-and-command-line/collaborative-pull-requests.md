@@ -2,20 +2,23 @@
 
 ## Workflow
 
-In a professional setting, it is common to see a workflow that involves mutlitple developers working on the same project using a single repo. Often, they will be using their own branch(es) each and peer-reviewing pull requests.
+A _branch_ is an isolated copy of your website. When a branch is created, it is an exact replica of your _committed_ code. When you initialize a new repo with a project, you only have one branch - your master branch!
 
-This gives the developers the opportunity to provide constructive feedback to each other(including both praise and areas needing correction), observe techniques or approaches they haven't used or seen before, letting another developer know their work is quality enough to receive your stamp of approval!
+On your command-line interface(CLI), if you were to create a new branch based off of the master branch, you would have an exact replica of your local-copy of your master branch.
 
-This approach also allows a project to be broken up into smaller components and assigned to each developer, which means that certain parts of the site can be built faster than others.
+In a professional setting, it is common to see a workflow that involves multiple developers working on the same project using a single repo. Often, they will be using their own branch(es) each and peer-reviewing pull requests.
+
+This gives the developers the opportunity to provide constructive feedback to each other(including both praise and areas needing improving), observe techniques or approaches they haven't used or seen before, letting another developer know their work is quality enough to receive your stamp of approval!
+
+This approach also allows a project to be broken up into smaller tasks and assigned to each developer, which means that certain parts of the site can be built faster than others.
 
 ## Branching
 
 A general best practice in collaborative development is to _never_ push directly to `master`. Your master branch is something you want to keep clean and unpolluted - like a surgeons hands moments before showtime. This can be tricky if you, individually or collaboratively, are only pushing to master. Instead, branching is a great way of quarantining your code so you can build parts of the project without fear of polluting your master branch.
 
-Branching is the process of making a new copy of the current branch you are working from, that is independant from the initial branch.
+Branching is the process of making a new copy of the current branch you are working from, that is independent from the initial branch.
 
-On your command-line interface(CLI), to create a brand new branch(called _secondary-branch_) and switch to it, type:
-`git checkout -b secondary-branch`
+On your CLI, to create a brand new branch(called _secondary-branch_) and switch to it, type: `git checkout -b secondary-branch`
 
 To switch to a branch that already exists you can follow the same step as above, but drop the `-b` flag as that indicates a new branch being created.
 
@@ -25,11 +28,11 @@ While on your secondary branch, you will still `add`, `commit` and `push` per us
 
 ## Branch names
 
-It is recommended that your new branch be named descriptively reflecting the work you are doing. Instead of using `secondary-branch`(which is a _great_ example for branch names), try using something like `footer-content` or `contact-page`.
+It is recommended that your new branch be named descriptively reflecting the work you are doing. Instead of using `secondary-branch`, try using something like `footer-content` or `contact-page` as it is more descriptive of the task you are completing.
 
 ## Pull requests
 
-After your secondary branch has been pushed up to your GitHub repo, you can submit a pull request. A pull request is a way of telling your co-workers or peers that you have finished a portion of the site, and that you would like a review of your code. This is not only an opportunity for you to recieve feedback on your code, but also an opportunity to start writing more descriptive comments about certain functionality that other developers will need to understand. It's also important to include a description of the work included in the pull request.
+After your secondary branch has been pushed up to your GitHub repo, you can submit a pull request. A pull request is a way of telling your co-workers or peers that you have finished a portion of the site, and that you would like a review of your code. This is not only an opportunity for you to receive feedback on your code, but also an opportunity to start writing more descriptive comments about certain functionality that other developers will need to understand. It's also important to include a description of the work included in the pull request.
 
 A good code-review will contain feedback no matter the quality of pull request. If there are no changes to be made, write a comment that reflects that so your fellow developer can know they did a great job! However, if there are areas that need improving - you can add a comment to the specific line number under the Files Changed tab.
 
@@ -37,7 +40,7 @@ You can also change the settings on a project repo to _require_ a pull request t
 
 ## Merge conflicts
 
-To start, _merge conflicts_ are your friend. Imagine if your there was no way of knowing that your code was about to cause problems for the rest of your site, and was simply accepted into your master branch only to have everything break. That would make collaborative projects a lot more difficult.
+To start, _merge conflicts_ are your friend. Imagine if there was no way of knowing that your code was about to cause problems for the rest of your site, and was simply accepted into your master branch only to have everything break. That would make collaborative projects a lot more difficult.
 
 It is quite common to run into a merge conflict while creating a pull request. A merge conflict will prevent your branch from being eligible to merge, and will require just a few extra steps to make sure your code is compatible.
 
