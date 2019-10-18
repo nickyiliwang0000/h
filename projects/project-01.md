@@ -48,34 +48,34 @@ You can find your assignment [here](). Headings of the columns are links to the 
 
 ### Design files
 
-Coming soon!
+<!-- Coming soon! -->
 
-<!-- **Galass Handbags**
+**Panda Sanctuary**
 
-[design](https://scene.zeplin.io/project/5d14daaa78189773b2f59efc)
+[design](https://scene.zeplin.io/project/5da61de12eea29085f513955)
 
-[assets](https://hychalknotes.s3.amazonaws.com/Galass-Handbags-Assets.zip)
-
-
-**Hangry Tummy**
-
-[design](https://scene.zeplin.io/project/5d39c3af8425042d9644b616)
-
-[assets](https://hychalknotes.s3.amazonaws.com/Haungry-Tummy-Assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/Panda-Sanctuary-assets.zip)
 
 
-**Electric Select** 
+**Thunder Force Stadium**
 
-[design](https://scene.zeplin.io/project/5d39c44d8b7034775ac89766)
+[design](https://scene.zeplin.io/project/5da7299e1a73c2f0585eaf08)
 
-[assets](https://hychalknotes.s3.amazonaws.com/Electric-Select-Assets.zip) -->
+[assets](https://hychalknotes.s3.amazonaws.com/Thunder-Force-Stadium-assets.zip)
+
+
+**Paint Gallery** 
+
+[design](https://scene.zeplin.io/project/5da9d9b2778e6c072cb8055b)
+
+[assets](https://hychalknotes.s3.amazonaws.com/Paint-gallery-assets.zip)
 
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
 1. Create a repository called `firstname-lastname-project-one`
 1. Push your files to GitHub.
-1. Submit your repo URL using [the project submission form]().
+1. Submit your repo URL using [the project submission form](http://bit.ly/HYsubmissions).
 
 ## #design in Helpcue
 
