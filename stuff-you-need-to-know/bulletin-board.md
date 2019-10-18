@@ -77,5 +77,5 @@ Submission form: http://bit.ly/HYsubmissions
 
 Feedback form: http://bit.ly/HYBootcampFeedback
 
-Group assignments: [Here](https://docs.google.com/spreadsheets/d/126VVJAOeyEXjZrk_RDj7GUg0qqoAB5oNwJbYGhclymo/edit#gid=624584399)
+Group assignments: [Here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit#gid=1112317742)
 
