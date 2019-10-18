@@ -44,13 +44,13 @@ You can find your assignment [here](). Headings of the columns are links to the 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
 ### Design checklist
-[Here](https://docs.google.com/document/u/1/d/17GYf0CfvD8Mdt4fXXH_03Hc-L-y9V3xLSbO5AIfdK54/edit?usp=sharing) is a checklist that will help perfect your conversion!
+[Here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit#gid=1112317742) is a checklist that will help perfect your conversion!
 
 ### Design files
 
-<!-- Coming soon! -->
+Coming soon!
 
-**Panda Sanctuary**
+<!-- **Panda Sanctuary**
 
 [design](https://scene.zeplin.io/project/5da61de12eea29085f513955)
 
@@ -68,7 +68,7 @@ You can find your assignment [here](). Headings of the columns are links to the 
 
 [design](https://scene.zeplin.io/project/5da9d9b2778e6c072cb8055b)
 
-[assets](https://hychalknotes.s3.amazonaws.com/Paint-gallery-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/Paint-gallery-assets.zip) -->
 
 ## Submitting your project
 
