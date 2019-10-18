@@ -184,7 +184,6 @@ To add another snippet, add another object below the `jQuery CDN` one. After the
   "description": "viewport meta tag"
 }
 ```
-Now create a new HTML document, type `jquery` + `tab`, and see that you get the **whole** jQuery snippet!
 
 ### Multi-line snippets
 Notice how each of the above snippets is wrapped in double quotes? This is perfectly fine for one-line snippets, but if you want to create a multi-line snippet you need to put it in square brackets like so:
