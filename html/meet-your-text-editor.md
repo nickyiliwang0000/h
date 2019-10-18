@@ -159,7 +159,8 @@ Let's choose HTML and write our first snippet!
 ### Writing snippets 
 Just like the user settings file, snippets are written in JSON. All snippets live inside of one large object denoted by curly braces `{}`. Each snippet is defined by a name and has a prefix, body, and description. 
 
-Let's start by adding a snippet to our `html.json` file. Inside the parent curly braces, enter the following: 
+Let's start by adding a snippet to our `html.json` file. **Inside the parent curly braces(!)**, enter the following:
+
 ```json
 //html.json
 "jQuery CDN": {
@@ -168,11 +169,12 @@ Let's start by adding a snippet to our `html.json` file. Inside the parent curly
   "description": "jquery 3.x"
 }
 ```
-If you get an error check the bottom left of the editor window: there are icons for errors and alerts that will help you figure out what went wrong. (Probably an errant curly brace!)
 
-The above snippet will allow us to easily include a link to the jQuery CDN in any HTML file. One thing to note is that you will need to use a mix of single quotes and double quotes in the body of the snippet. 
+The above snippet will allow us to easily include a link to the jQuery CDN in any HTML file. If you get an error, check the bottom left of the editor window - there are icons for errors and alerts that will help you figure out what went wrong (probably an errant curly brace!).
 
-To add another snippet, add another object below the `jQuery CDN` one. After the closing curly brace on a new line, add this snippet to quickly include the viewport `meta` tag for responsive web pages: 
+Now create a new HTML document, type `jquery` + `tab`, and see that you get the whole jQuery snippet!
+
+To add another snippet, add another object below the `jQuery CDN` one. After the closing curly brace of your first snippet, **add a comma**, then on a new line add this snippet to quickly include the viewport `meta` tag for responsive web pages: 
 
 ```json
 //html.json
@@ -205,9 +207,10 @@ Each line in a multi-line snippet is wrapped in quotes and comma separated. If y
 Now that we've written some of our own snippets, we can quickly add the following CSS snippets to our `css.json` file and `scss.json` file so they are available in both file formats. 
 
 We're going to add: 
-1. Normalize
-2. Border-box
+1. Border-box
+2. Normalize
 3. Clearfix
+4. VisuallyHidden
 4. Setup (a snippet that includes all of the above!) 
 
 Find the CSS snippet file by typing `cmd + shift + p` on Mac or `ctrl + shift + p` on PC to launch the command palette and type in `snippets`. Select the option 'Preferences: Configure User Snippets' and choose the language you want to use your snippets in (for these snippets, CSS). 
