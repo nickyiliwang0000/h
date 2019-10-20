@@ -112,7 +112,7 @@ You can also use comments during development if you want to temporarily remove a
 #### Heading tags
 A web page is made up of blocks of content. Each content section will have a heading that denotes the content's place in the page hierarchy. 
 
-Think of your HTML document as a research paper. You would probably have a heading at the top of the page with the paper's name on it. In an HTML document, you would make that clear like this: `<h1>Paper Title</h1>`.
+Think of your HTML document as a research paper. You would probably have a heading at the top of the page with the paper's name on it. In an HTML document, you would make that clear like this - `<h1>Paper Title</h1>`. Note that any HTML page should only have one `h1`. 
 
 In the research paper, you may divide the paper into several high-level sections. These would be `<h2>High Level Section Title</h2>` and `<h2>Other High Level Section Title</h2>` and so on.
 
@@ -141,7 +141,8 @@ Use CSS to override the default styling while keeping your page's hierarchy inta
 
 #### Paragraph tags
 
-The paragraph tag is one of the most frequently used tags on the internet because most of the content on the web is text. It's fairly easy to use: every time you have a full line break in your text, wrap that entire block of text in a `<p></p>` tag. Let's use the following block of text as an example:
+The paragraph tag is one of the most frequently used tags on the internet because most of the content on the web is text. It's fairly easy to use: Every time you have a full line break in your text, wrap that entire block of text in a `<p></p>` tag. Let's use the following block of text as an example:
+
 ```html
 I'm interested in design, development, and business. I've been very fortunate to be able to do all three as a career.
 
@@ -187,7 +188,7 @@ The `<i>` and `<b>` tags are not completely gone. They still render bold and ita
 #### `span` tags
 Spans are small but mighty HTML tags. They're **inline elements** which means that you can pop one right in the middle of a block element (like a `<p>`) and it won't give you a line break or any other unwanted effect.
 
-Create an HTML file or follow along with [this CodePen](https://codepen.io/CoderOfNote/pen/QPxXEQ?editors=1000) that contains this sentence:
+Create an HTML file or follow along with [this CodePen](https://codepen.io/CoderOfNote/pen/QPxXEQ?editors=1100) that contains this sentence:
 
 > There are lots of colors I like: red, blue, purple, green to name a few.
 
@@ -207,7 +208,7 @@ Then we wrap the word(s) we want to target in a `span` tag and give that `span` 
 ```
 
 #### `div` tags
-The HTML document division element is used to define an area of content. Content in web page designs is visually broken up into chunks that sometimes don't correspond to the elements available to developers. The `<div></div>` element can be used to wrap other content elements and make them available to styling as a group.
+The HTML document division element is used to define an area of content. In web page designs, the content is visually broken up into chunks that sometimes don't correspond to the elements available to developers. The `<div></div>` element can be used to wrap other content elements and make them available to styling as a group.
 
 ```html
 <div>
@@ -224,12 +225,7 @@ This can be a big source of confusion — when do we use `div` and when do we us
 The technical difference between the two is that `div` is a block element and `span` is an inline element. Now these probably don't mean much to you right now, so let's take a look at the previous example using `div` instead of `span`:
 
 ```html
-<p>There are lots of colors I like: 
-  <div class="contains-red">red</div>, 
-  blue, 
-  <div class="contains-purple">purple</div>, 
-  green to name a few.
-</p>
+<p>There are lots of colors I like: <div class="contains-red">red</div>, blue, <div class="contains-purple">purple</div>, green to name a few.</p>
 
 ```
 
@@ -241,12 +237,12 @@ In general, spans go inside other elements — such as `<p>` or `<h2>` — so we
 #### Image tags
 The `<img>` tag is used to embed images on your web page. It has two mandatory *attributes*:
 
-* `src`: this is the source of the image that is to appear
-* `alt`: this is the alternate text that describes the image to people who can't see images or search engine robots (who also can't see images... yet)
+* `src`: This is the source of the image that is to appear
+* `alt`: This is the alternate text that describes the image to people who can't see images or search engine robots (who also can't see images... yet)
 
 The image's source path can be _absolute_ or _relative_.
 
-An **absolute** image path is typically an image hosted elsewhere on the Internet. An example would be to use an image sourced via Google Image Search or from an image placeholder service like placecage.com.
+An **absolute** image path is typically an image hosted elsewhere on the Internet. An example would be to use an image sourced via Google Image Search or from an image placeholder service like placebear.com.
 
 A **relative** image path is one that uses your document (probably an index.html file) as a starting point. This will be a path that leads out of your document, through folders or subfolders, and ends up at the image file.
 
@@ -262,10 +258,10 @@ A **relative** image path is one that uses your document (probably an index.html
 It's important to include alternative text in the alt attribute for all image elements. We can make the experience for those using screen readers, or those with slow internet connections, waaaaaaay better by being descriptive. Instead of `alt="my cat"`, describe the picture as you would to someone who can't see it: `alt="My cat, Chloe, stretching in a ray of sunshine beside a window"`. Descriptive alt tags can make or break a user's experience.
 
 ##### What if I don't think my image adds value?
-<p>There <em>are</em> times when you don't need alt text. If the image doesn't add value or isn't useful to people using screen readers (maybe the picture is decorative or it's a graph whose values are discussed completely in the following text), include the alt attribute, but leave it empty, <code>img src="images/image.jpg" alt=""</code>. If you do not include a value for the alt attribute, screen readers know to skip describing the image. If you don't include an alt attribute, the image's file path will be read instead.</p>
+<p>There are times when you don't need alt text. If the image doesn't add value or isn't useful to people using screen readers (maybe the picture is decorative or it's a graph whose values are discussed completely in the following text), include the alt attribute, but leave it empty, <code>img src="images/image.jpg" alt=""</code>. If you do not include a value for the alt attribute, screen readers know to skip describing the image. If you don't include an alt attribute, the image's file path will be read instead.</p>
 
 ##### Title vs alt
-<p>Another common question is "When should we be using title attributes?". Title attributes create a tooltip on hover. Title attributes are used <strong> with an image element</strong>, whereas the alt attribute shows <strong>instead of an img element</strong>. Use both and you'll never go wrong.</p> 
+<p>Another common question is "When should we be using `title` attributes?". Title attributes create a tooltip on hover. Title attributes are used <strong> with an image element</strong>, whereas the alt attribute shows <strong>instead of an img element</strong>. Use both and you'll never go wrong.</p> 
 
 ##### Words in images
 <p>It's better to use actual text instead of images with text in them. Screen readers can’t read the text in images, they can only read alt text on the <code>img</code> element. Also, when images with text are zoomed, they can lose readability and become pixelated. </p>
@@ -354,8 +350,10 @@ Anchor tags have an `href` attribute which tells the browser where the user will
   <!-- Links to other sites -->
   <a href="http://google.com">Search on Google</a>
   <a href="https://hackeryou.com">Visit the HackerYou site!</a>
+
   <!-- Links within our website -->
   <a href="about.html">Visit my about page</a>
+
   <!--linking a nested image to another page -->
   <a href="contact.html">
     <img src="images/contact.png" alt="">
@@ -364,14 +362,14 @@ Anchor tags have an `href` attribute which tells the browser where the user will
 
 > **Accessibility tip**
 >
-> Do not rely on something like "click here" for your link content. Using descriptive link text is important to explain their context to assistive technologies. 
+> Do not rely on something like "click here" for your link content. Using descriptive link text is important to explain context to assistive technologies. 
 
 
 #### Table tags
 Table tags used to be how everyone laid out their web pages.
 * `<table>` : containing element for a table
-* `<tr>`: Table row, holds as many `<tr>` or`<td>` tags as the information requires.
-* `<th>`: The table heading tag should contain a single piece of information. 
+* `<tr>`: Table row, holds as many `<th>` or`<td>` tags as the information requires.
+* `<th>`: The table header cell tag should contain a single piece of column header information.
 
 **👎 Incorrect:**
 ```html
@@ -433,7 +431,7 @@ Different elements require different types of attributes. We already saw  `src`,
 
 The class attribute can be applied to any element. We use CSS to target classes (and by extension, elements) and apply styles to them.
 
-The value passed into the attribute is what is known as a _class name_ and should be descriptive. Within a page, you can use a class name on as many elements as you want. Keep in mind that there are conventions for writing class names - we will discuss these in a later lesson.
+The value passed into the attribute is what is known as a _class name_ and should be descriptive. Within a page, you can use any given class name on as many elements as you want. Keep in mind that there are conventions for writing class names - we will discuss these in a later lesson.
 
 ```html
 <div class="banner">
