@@ -17,12 +17,15 @@ And then add a little CSS to style each container:
 .container1 {
   background:#791313;
 }
+
 .container2 {
   background:#23395B;
 }
+
 .container3 {
   background:#3E5641;
 }
+
 .container4 {
   background:#FFBA08;
 }
@@ -53,16 +56,19 @@ Let's try a few different ways of specifying width and height:
   width: 200px;
   height:200px;
 }
+
 .container2 {
   background:#23395B;
   width:100%;
   height:90px;
 }
+
 .container3 {
   background:#3E5641;
   width:2000px;
   height:150px;
 }
+
 .container4 {
   background:#FFBA08;
   width:500px;
@@ -76,14 +82,28 @@ Produces the following:
 
 1. Container 1 is 200px by 200px - makes sense, right?
 2. Container 2 is spanning 100% of the browser and 90px high - good!
-3. Container 3 is 150px high and 2000px wide - much wider than my screen so we have to scroll right to see the entire box.
+3. Container 3 is 150px high and 2000px wide - much wider than many screen so we have to scroll right to see the entire box.
 4. Container 4 is 500px wide - good - and 100% height - **Woah, hold on**. Why isn't container 4 taking up the rest of the room in the browser?
 
-If 100% width takes up the entire width of the browser, shouldn't 100% height take up the entire height? That would make sense, but this is one of the many quirks of CSS. Giving an element 100% height means it will take up 100% of its _own_ content height - not the browser's height. As a proof of concept, lets add a **container 5** inside container 4 and give it a width and height of 150px;
+If 100% width takes up the entire width of the browser, shouldn't 100% height take up the entire height? That would make sense, but this is one of the many quirks of CSS. Giving an element 100% height means it will take up 100% of its own content height - not the browser's height. As a proof of concept, lets add a container 5 inside container 4 and give it a width and height of 150px.
+
+```html
+<div class="container4">
+  container #4
+  <div class="container5">Container #5</div>
+</div>
+```
+
+```css
+.container5 {
+  width: 150px;
+  height: 150px;
+}
+```
 
 ![A screenshot of a nested HTML element with a height of 100%, illustrating how elements accept a height declaration in css.](https://hychalknotes.s3.amazonaws.com/css-dimensions-example2.png)
 
-Because its child **container 5** is 150px high, **container 4** reacts and changes its height to 150px + the height of the text 'container #4'.
+Because its child, container 5, is 150px high, container 4 reacts and changes its height to 150px + the height of the text 'container #4'.
 
 
 ## Padding and margin
@@ -92,7 +112,7 @@ Along with your pals `width` and `height`, two of your CSS best friends will be 
 
 These two properties do what you might think - provide space between elements on your page so everything isn't squished together.
 
-The only difference between the two is that margin adds space on the **outside** of an element while padding adds space on the **inside** of the element. It can be tough to remember so this little saying might help: "**Padding** protects your **insides**".
+The difference between the two is that margin adds space on the **outside** of an element while padding adds space on the **inside** of the element. It can be tough to remember so this little saying might help: "**Padding** protects your **insides**".
 
 ### Giving it a shot
 Let's give it a shot with some real markup. Start off with three basic divs:
@@ -108,9 +128,11 @@ And some styling:
 .container1 {
   background:#3E5641; /* Green */
 }
+
 .container2 {
   background:#FFBA08; /* Yellow */
 }
+
 .container3 {
   background:#791313; /* Red */
 }
@@ -284,58 +306,23 @@ img.cat {
 
 ## The `box-sizing` property
 
-Now that we are equipped with width, height, padding, margin and borders, it's important to learn about the **box model**.
+Now that we are equipped with width, height, padding, margin and borders, it's important to learn about the _box model_.
 
-Create a new HTML file, and let's start off with a simple 150px by 150px container (set with `width` and `height`). Feel free to copy this element:
+Check out [this CodePen](https://codepen.io/CoderOfNote/pen/gOOpEmr?editors=1100) and comment-in the margin, padding, and border on the first image.
 
-```html
-<div>I'm a 150px by 150px container!</div>
-```
+Notice anything weird? The element is defined as 200px wide, but the padding makes the element larger.
 
-Let's also open an internal stylesheet, and paste the following css:
+![an image element with 50px of padding](https://hychalknotes.s3.amazonaws.com/box-model-padding.png)
 
-```css 
-div {
-  width: 150px;
-  height: 150px;
-  background: #23395B;
-  box-sizing: content-box;
-  color: white;
-}
-```
+The border does too.
 
-Now let's add some padding so the text isn't all squished to the edge of the box.
+![an image element with 50px of padding and 50px of border](https://hychalknotes.s3.amazonaws.com/box-model-border-padding.png)
 
-```css 
-div {
-  width: 150px;
-  height: 150px;
-  background: #23395B;
-  box-sizing: content-box;
-  color: white;
-  padding: 20px;
-}
-```
+What we initially defined as a 200px square is now 300px wide, while the 25px of margin we added affects the element's footprint as well (though not its actual size). With the margin applied, the element will take up `25px + 300px + 25px` of space in the browser window.
 
-Finally, add a border:
+If the width of the container is set, why don't the padding and border take away from the 200 pixels? This is what is known as the box model, and it's just a quirk of CSS - by default, `padding` and `border` change the element's total size.
 
-```css 
-div {
-  width: 150px;
-  height: 150px;
-  background: #23395B;
-  box-sizing: content-box;
-  color: white;
-  padding: 20px;
-  border: 10px solid black;
-}
-```
-
-Notice anything weird? The elements grow as we add **padding** and **border**. Suddenly our 150px container isn't 150px anymore!
-
-If the width and height of the container is set to 150px, why does the element get bigger? Why doesn't the padding and border take away from the 150 pixels? This is another CSS quirk that is quite an annoyance in web development. By default, `padding` and `border` changes the element's total size and `margin` adds to how much space the element is taking up. This interaction is referred to as **The box model**.
-
-If your project is only going to support Internet Explorer 8 and up, then we can use the `box-sizing` property like so: 
+The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make `padding` and `border` **not** add to the computed size of our element (`margin` will still increase its footprint, since that is outside the dimensions of the element itself):
 
 ```css
 * {
@@ -345,9 +332,10 @@ If your project is only going to support Internet Explorer 8 and up, then we can
 }
 ```
 
-By specifying this rule at the top of our CSS, we tell **all** elements (using the wildcard `*` selector) to take **padding** and **border** away from the set width and height. Grab the code from above and add it into your document.
+The `*` character is a wildcard selector and selects everything on the page. By specifying this rule at the top of our CSS, we tell all elements to take padding and border away from the set width and/or height. Grab the code from above and add it into the CodePen to see this working.
 
-Change the `box-sizing:content-box;` rule on your `div` from above to see the difference this makes! 
+When starting any project from now on, be sure to include that at the top of your CSS file.
+
 
 ## The `box-shadow` property
 
