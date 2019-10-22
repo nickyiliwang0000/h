@@ -17,12 +17,15 @@ And then add a little CSS to style each container:
 .container1 {
   background:#791313;
 }
+
 .container2 {
   background:#23395B;
 }
+
 .container3 {
   background:#3E5641;
 }
+
 .container4 {
   background:#FFBA08;
 }
@@ -53,16 +56,19 @@ Let's try a few different ways of specifying width and height:
   width: 200px;
   height:200px;
 }
+
 .container2 {
   background:#23395B;
   width:100%;
   height:90px;
 }
+
 .container3 {
   background:#3E5641;
   width:2000px;
   height:150px;
 }
+
 .container4 {
   background:#FFBA08;
   width:500px;
@@ -76,14 +82,28 @@ Produces the following:
 
 1. Container 1 is 200px by 200px - makes sense, right?
 2. Container 2 is spanning 100% of the browser and 90px high - good!
-3. Container 3 is 150px high and 2000px wide - much wider than my screen so we have to scroll right to see the entire box.
+3. Container 3 is 150px high and 2000px wide - much wider than many screen so we have to scroll right to see the entire box.
 4. Container 4 is 500px wide - good - and 100% height - **Woah, hold on**. Why isn't container 4 taking up the rest of the room in the browser?
 
-If 100% width takes up the entire width of the browser, shouldn't 100% height take up the entire height? That would make sense, but this is one of the many quirks of CSS. Giving an element 100% height means it will take up 100% of its _own_ content height - not the browser's height. As a proof of concept, lets add a **container 5** inside container 4 and give it a width and height of 150px;
+If 100% width takes up the entire width of the browser, shouldn't 100% height take up the entire height? That would make sense, but this is one of the many quirks of CSS. Giving an element 100% height means it will take up 100% of its own content height - not the browser's height. As a proof of concept, lets add a container 5 inside container 4 and give it a width and height of 150px.
+
+```html
+<div class="container4">
+  container #4
+  <div class="container5">Container #5</div>
+</div>
+```
+
+```css
+.container5 {
+  width: 150px;
+  height: 150px;
+}
+```
 
 ![A screenshot of a nested HTML element with a height of 100%, illustrating how elements accept a height declaration in css.](https://hychalknotes.s3.amazonaws.com/css-dimensions-example2.png)
 
-Because its child **container 5** is 150px high, **container 4** reacts and changes its height to 150px + the height of the text 'container #4'.
+Because its child, container 5, is 150px high, container 4 reacts and changes its height to 150px + the height of the text 'container #4'.
 
 
 ## Padding and margin
@@ -92,7 +112,7 @@ Along with your pals `width` and `height`, two of your CSS best friends will be 
 
 These two properties do what you might think - provide space between elements on your page so everything isn't squished together.
 
-The only difference between the two is that margin adds space on the **outside** of an element while padding adds space on the **inside** of the element. It can be tough to remember so this little saying might help: "**Padding** protects your **insides**".
+The difference between the two is that margin adds space on the **outside** of an element while padding adds space on the **inside** of the element. It can be tough to remember so this little saying might help: "**Padding** protects your **insides**".
 
 ### Giving it a shot
 Let's give it a shot with some real markup. Start off with three basic divs:
@@ -108,9 +128,11 @@ And some styling:
 .container1 {
   background:#3E5641; /* Green */
 }
+
 .container2 {
   background:#FFBA08; /* Yellow */
 }
+
 .container3 {
   background:#791313; /* Red */
 }
