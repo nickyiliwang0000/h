@@ -117,7 +117,7 @@ This seems great, we can lay out content horizontally. Again though, floats were
 
 ### Floating elements' complicated behavior
 
-When you float an element, you're essentially lifting it out of the normal flow of an HTML page; it floats up, out of its original position and up to the top of its container. Its original footprint on the page disappears, which causes two major issues:
+When you float an element, you're essentially lifting it out of the normal flow of an HTML page; it floats up, out of its original position and to the front of its container. Its original footprint on the page disappears, which causes two major issues:
 
 * Any following elements will move up to take the floated item's place in the DOM flow.
 * The element's parent shrinks/collapses, since it no longer accounts for wrapping the floated element.
@@ -127,14 +127,14 @@ When you float an element, you're essentially lifting it out of the normal flow 
 
 An element floating up out of the natural page flow and other elements taking its place means that the _stacking order_ of the HTML elements (the way they appear on the page) changes. [Here is a great video](https://www.youtube.com/watch?v=xara4Z1b18I) that explains how floating elements affect their stacking order.
 
-You can kind of think of it like people in line to pay at the grocery store; you get into line in the order you finish shopping (natural stacking order), but if you leave the line to go to the self-checkout (float), the people who were behind you will fill your spot. If the self-checkout is broken, hopefully people will let you back in line in your original spot. A floated element always takes its original position back when the float is removed - a web page is like like a very polite community of shoppers.
+You can kind of think of it like people in line to pay at the grocery store; you get into line in the order you finish shopping (natural stacking order), but if you leave the line to go to the self-checkout (float), the people who were behind you will fill your spot. If the self-checkout is broken, hopefully people will let you back in line in your original spot. A floated element always takes its original position back when the float is removed - a web page is like a very polite community of shoppers.
 
 Check out [this CodePen](https://codepen.io/jenobot/pen/QOzyeP/) to see how stacking order changes when an element is floated.
 
 
 #### Parent element collapse
 
-When we float an element, its parent element no longer accounts for the floated elements' size, so the parent shrinks. This causes all kinds of problems, since it means the floated elements will break out of their parent containers and overlap with following elements.
+When we float an element, its parent element no longer accounts for the floated elements' size, so the parent collapses. This causes all kinds of problems, since it means the floated elements will break out of their parent containers and overlap with following elements.
 
 Lucky for us, floats became such a common tool for page layouts that a fairly standardized fix was developed and became commonplace. It is a CSS rule called _clearfix_, which we can apply to these parent elements. It makes them account for floated children, and go back to wrapping all their descendants. We will look at this in the following exercise.
 
@@ -245,9 +245,9 @@ Finally, our page looks the way we want!
 
 ## Removing browser default styles
 
-All browsers come with style defaults, such as making all `h1`-`h6` elements escalate in size and adding padding and margins to various elements. Though you may like some of the default styles, they aren't consistent across all browsers. This can lead to lots of debugging headaches. A CSS snippet referred to as `CSS normalize` or `CSS reset` strips out all the browser's default styles. We can either insert it at the top of our main CSS file or add as a separate stylesheet in the `<head>` of our HTML document.
+All browsers come with style defaults, such as making all `h1` to `h6` elements be sizes largest to smallest, and adding padding and margins to various elements. Although you may like some of the default styles, they aren't consistent across all browsers ,which can lead to lots of debugging headaches. A CSS snippet referred to as `CSS normalize` or `CSS reset` strips out all the browser's default styles. We can either insert it at the top of our main CSS file or add as a separate stylesheet in the `<head>` of our HTML document.
 
-If you add it as a separate stylesheet, **it should be included before your custom stylesheet**.
+If you add it as a separate stylesheet, it should be included before your custom stylesheet.
 
 If you don't already have it as a snippet, you can download normalize.css at <http://necolas.github.com/normalize.css/>, or [find it here](https://hychalknotes.s3.amazonaws.com/normalize-v700.css). We won't be using it in our examples, but all of your projects should include it.
 
