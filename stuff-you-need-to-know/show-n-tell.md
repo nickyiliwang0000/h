@@ -24,7 +24,7 @@ Submit/pitch your topic **to Charlotte by 3:34pm Wednesday of your presentation 
 Class/Project work time stops at 5pm on Fridays - Show & Tell starts with your presentations at ~5:10pm
 
 ## The Who:
-Your Show & Tell groups have been assigned by week. You can find the list of groups [here](https://docs.google.com/spreadsheets/d/126VVJAOeyEXjZrk_RDj7GUg0qqoAB5oNwJbYGhclymo/edit#gid=624584399)
+Your Show & Tell groups have been assigned by week. You can find the list of groups [here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit#gid=624584399)
 
 ## The What:
 Feel free to choose any topic - just make sure you have it approved before you spend too much time researching and building a presentation! Here are 50 example topics you can choose or use to inspire your choice. Each Monday, I'll update the list below with any topics that have been claimed!
