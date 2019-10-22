@@ -48,9 +48,9 @@ You can find your assignment [here](). Headings of the columns are links to the 
 
 ### Design files
 
-Coming soon!
+<!-- Coming soon! -->
 
-<!-- **Panda Sanctuary**
+**Panda Sanctuary**
 
 [design](https://scene.zeplin.io/project/5da61de12eea29085f513955)
 
@@ -68,7 +68,7 @@ Coming soon!
 
 [design](https://scene.zeplin.io/project/5da9d9b2778e6c072cb8055b)
 
-[assets](https://hychalknotes.s3.amazonaws.com/Paint-gallery-assets.zip) -->
+[assets](https://hychalknotes.s3.amazonaws.com/Paint-gallery-assets.zip)
 
 ## Submitting your project
 
