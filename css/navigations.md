@@ -115,21 +115,23 @@ It's important to use native semantic elements when possible. Using `nav` here w
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
 
-Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav-ANSWER.html).
+Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav-ANSWER--bootcamp.html).
 
-Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the anchor tags to black:
+Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the anchor tags to black and add a little padding:
 
 ```css
 .main-menu {
-  background: yellow;
+  background: pink;
+	padding: 10px;
 }
 
 .sub-menu {
-  background: #ececa9;
+  	background: peachpuff;
 }
 
 .main-menu li a {
   color: black;
+  padding: 0 20px;
 }
 ```
 
@@ -156,18 +158,19 @@ Okay, looking okay so far. Let's get the hover part working. The first thing we 
 
 ```css
 .sub-menu {
-  background: #ececa9;
+  background: peachpuff;
   display: none;
 }
 ```
 
 How do we show them only when we hover? What element should we trigger the hover on?
 
-Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We use `display: block;` to switch it back from `display: none;`
+Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We use `display: block;` to switch it back from `display: none;` and we'll add a little padding in here too:
 
 ```css
 .main-menu li:hover ul {
   display: block;
+  padding: 10px;
 }
 ```
 
@@ -181,7 +184,7 @@ Now you should see the sub nav when you hover over its parent. However, the prob
 }
 
 ul.sub-menu {
-  background: #ececa9;
+  background: peachpuff;
   display: none;
   position: absolute;
 }
