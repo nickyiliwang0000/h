@@ -19,8 +19,6 @@ _Responsive design_ aims to provide the best experience for whatever device a us
 Previously web developers would create what were called _m dot_ sites (as in `http://m.yoursite.com`), which were a version of the desktop HTML and CSS optimized for mobile screens. This meant that developers had to create **two** independent websites and update them both when they had new content. Not very efficient!
 
 In 2010, a developer [described one solution to these problems](https://alistapart.com/article/responsive-web-design) with the term responsive design and introduced the concept of a single codebase (e.g. one entire website) that reacts to the user's viewport. 
-<!-- 
-![Screenshot of the NASA website on 4 devices of varying sizes from mediaqueri.es](https://hychalknotes.s3.amazonaws.com/mediaqueri.es-nasa.png) -->
 
 ## How to make a site responsive
 
@@ -33,17 +31,6 @@ To make a responsive website, you need two things:
 Remember that `<meta>` tags go inside the `head` tag to provide information about the web page to the browser but not the user.
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
-
-
-<!-- 
-* `meta` is the name of the tag.
-* `viewport` is the value of the `name` attribute. It specifies what this `meta` tag applies to.
-* `content` is where we provide the information about the viewport. We provide as many key-value pairs as we want here, each comma separated.
-* `width=device-width` tells the browser how wide the website should be. We can set this to an explicit pixel value but because that value varies by device, we use the `device-width` keyword to tell the browser that this site should be as wide as the device it is loaded on.
-* `initial scale` is how much the site is zoomed in or out by default. A value of 1.0 will render the size just as it is, no zoom in or out. A value of 0.5 would zoom it out while 1.5 would zoom it in.
-* `user-scalable=no` (not shown in tag above), is how we can keep users from zooming. This could be used if providing a mobile-optimized experience and zooming/panning is not required.
-* `minimum-scale` and `maximum-scale` is how we can limit how much a user is allowed to scale (e.g. these could be set to .5 and 2 respectively). -->
-
 
 You should **always** put this tag into the `head` of your document. Add it as a snippet to your code editor! Without this tag, your site **will not be responsive**. It will render as a shrunk down version of your desktop site. 
 
@@ -116,7 +103,6 @@ These bounded media queries can be helpful when you are targeting a specific siz
 #### Mobile First Design
 
 Change all the media queries from `max-width` to `min-width`. How does that change the order of the background colors? 
-
 You may hear the phrase _mobile-first design_ which means pretty much what it sounds like: your base CSS will be the mobile styling. Therefore, you will mostly use `min-width` media queries because you are watching for where the mobile styles no longer look good. The opposite approach (it doesn't have a catchy name) assumes that the base CSS is for the desktop site and as it get smaller (or larger, but mostly smaller), new rules will have to be introduced -  then you'll use `max-width` to target smaller.
 
 Download this [width-media-queries-exercise.zip](https://hychalknotes.s3.amazonaws.com/width-media-queries-exercise.zip) to see how you can acheive the same look with mobile-first or desktop-first media queries.
@@ -166,14 +152,8 @@ Trying to target a specific device is not a good idea: you are better off using 
   * **orientation**: Thinking about **why** the user is holding their phone at that particular orientation may help you make decisions about design. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
   * **pixel-density**: Images and graphics are blown up to 2x their natural size on retina or HPDI screens which can result in blurry images. The solution to this issue is to use a device resolution media query to swap in images that are 2x the size of the normal ones when the user is on a HiDPI screen. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
   * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
-  * **monochrome**: targets monochrome screens (like Kindles)
-  * **progressive scan**: important pretty much only if you are making TV web apps
-  * **color**: if you could somehow get a web browser on an old gameboy color, you could target low or no bits of color.
-  ```css
-  @media all and (color:0) and (width:160px) and (height:144px) {
-    /* Target original gameboy */ 
-  }
-  ```
+  
+Find more about all three at in [Additional Media Queries]().
 
 There are a bunch more on [MDN](https://developer.mozilla.org/en-US/docs/CSS/Media_queries).
 
@@ -224,11 +204,6 @@ This allows the wrapper to be any size up to this value.
 #### Scaling images within their parent containers
 
 It's pretty common for big, beautiful desktop images to be way too large for small screens. 
-<!-- 
-![screenshot of an image staying within its browser](https://hychalknotes.s3.amazonaws.com/image-within-container.png) -->
-
-<!-- 
-![screenshot of an image breaking out of its container in a browser](https://hychalknotes.s3.amazonaws.com/image-breaking-out-of-container.png) -->
 
 Open up [responsiveImages.html](https://hychalknotes.s3.amazonaws.com/responsiveImages.html) to get an idea of this issue.
 

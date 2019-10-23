@@ -55,3 +55,13 @@ The one thing that has changed is that our images and graphics are blown up to 2
 ```
 
 Note that above we use both the more widely-functional `min-resolution` query and the vendor-prefixed `-webkit-min-device-pixel-ratio` to account for a few specific special-requirement cases (for details, take a look at [CanIUse](https://caniuse.com/#feat=css-media-resolution)).
+
+#### Other Media Queries
+* **monochrome**: targets monochrome screens (like Kindles)
+  * **progressive scan**: important pretty much only if you are making TV web apps
+  * **color**: if you could somehow get a web browser on an old gameboy color, you could target low or no bits of color.
+  ```css
+  @media all and (color:0) and (width:160px) and (height:144px) {
+    /* Target original gameboy */ 
+  }
+  ```
