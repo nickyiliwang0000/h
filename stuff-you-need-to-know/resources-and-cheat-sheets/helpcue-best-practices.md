@@ -37,8 +37,6 @@ We ask that you do not add questions when HelpCue is closed. We will be deleting
 
 "I am having trouble with _____, I am sitting ______ wearing _____. I've tried _______ and _____."
 
-> If you have added a profile picture to your HelpCue account, you don't need to tell us what you're wearing!
-
 ## Examples of good and bad HelpCue questions
 ### Good questions
 _“I’m having trouble resolving a 400 error that I'm getting back from the API. I've checked the network tab and tried a couple of stackoverflow suggestions. I’m sitting in the main classroom in the second row!”_
