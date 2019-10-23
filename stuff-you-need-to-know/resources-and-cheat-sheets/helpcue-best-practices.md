@@ -1,4 +1,5 @@
 # HelpCue best practices
+
 HelpCue is a tool that helps us distribute instructor support in a fair way. You can use it to ask for one-on-one help from instructors during project work time. You can enter a question or a problem and instructors will help you in the order the questions were asked. In addition to making sure everyone gets the help they need, HelpCue will also give you the opportunity to explain technical issues to other developers.
 
 ## How to join HelpCue
@@ -64,6 +65,7 @@ _"My styles aren't applying"_
 * Add your location - it will help instructors figure out where you are in the space
 * Use #design for design help
 * Do not ask for a specific instructor by name
+* HelpCue is for bootcamp projects, exercises and concepts, not for freelance projects, show & tell prep, or other non-curriculum stuff
 * Try googling it first and don’t be afraid to break something! It's just code!
 * Try a hard refresh
 
