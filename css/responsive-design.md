@@ -112,7 +112,7 @@ Download this [width-media-queries-exercise.zip](https://hychalknotes.s3.amazona
 
 Occasionally you may want to check if a device has a certain height.
 
-Imagine that you have a header set to `height: 100vh` with a long title inside of it. On phones with short screens or small tablets in landscape mode the title might get cut off or break out of its container. 
+Imagine that you have a header set to `height: 100vh` with a long title inside of it. On phones with short screens or small tablets in landscape mode the title might get cut off or break out of it's container. 
 
 Download [height-mq.html](https://hychalknotes.s3.amazonaws.com/height-mq.html) to see this issue in action. Open it in the device emulator on a small phone. See how the text runs past the image? We can solve this issue by having the header automatically size itself to its contents once the screen is below a certain height:
 
@@ -203,11 +203,11 @@ This allows the wrapper to be any size up to this value.
 
 #### Scaling images within their parent containers
 
-It's pretty common for big, beautiful desktop images to be way too large for small screens. 
+It is pretty common for big, beautiful desktop images to be way too large for small screens. 
 
 Open up [responsiveImages.html](https://hychalknotes.s3.amazonaws.com/responsiveImages.html) to get an idea of this issue.
 
-When an image renders on a page, by default it starts at it's original pixel width. It doesn't care how big it's parent container is or how wide the browser window is. It will continue to render at the size that it started as unless we specify otherwise.
+When an image renders on a page, by default it starts at its original pixel width. It doesn't care how big its parent container is or how wide the browser window is. It will continue to render at the size that it started as unless we specify otherwise.
 
 The fix is easy. We apply `max-width:100%;` to all images. This ensures that images are never larger than their parent elements.
 
