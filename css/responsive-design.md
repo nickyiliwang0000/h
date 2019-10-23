@@ -250,30 +250,3 @@ Let's try making a navigation responsive. Download the [navigation-float](https:
 
 ### More exercises
 Check out [responsive-exercises-roundup.zip](https://hychalknotes.s3.amazonaws.com/responsive-exercises-roundup+2.zip) for the exercises and answers.
-
-
-
-<!-- 
-#### More Media Queries
-
-These are used less often, but might be fun: 
-  * **color**: if you could somehow get a web browser on an old gameboy color, you could target low or no bits of color.
-  ```css
-  @media all and (color:0) and (width:160px) and (height:144px) {
-    /* Target original gameboy */ 
-  }
-  ```
-
-  * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
-  * **monochrome**: targets monochrome screens (like Kindles)
-  * **progressive scan**: important pretty much only if you are making TV web apps
-  * **mac theme,windows theme**: targets specific themes on Mac or Windows -->
-
-
-
-
-
-<!-- ## Helpful patterns
-There are a lot of common patterns and problems that you will find when it comes to creating a responsive site. There is a great resource from Brad Frost called [Responsive Patterns](https://bradfrost.github.io/this-is-responsive/patterns.html) that has a lot of great examples and code for common issues. -->
-
-
