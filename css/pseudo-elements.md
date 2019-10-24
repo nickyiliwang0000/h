@@ -37,8 +37,8 @@ One of the uses of pseudo-elements is to make decorative shapes. Generally, thes
 <style>
 .name::before {
   content : '';
-  width: 5px;
-  height: 5px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;  
   background: tomato;
 }
@@ -53,8 +53,8 @@ An important note here is that by default, pseudo-elements are displayed as inli
 <style>
 .name::before {
   content : '';
-  width: 5px;
-  height: 5px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;  
   background: tomato;
   display: block;
