@@ -2,72 +2,48 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 1: Welcome! Let’s review!
+Week 1:  Shoring up the little knowledge gaps!
 
 < Monday /> 
-* Introductions
-* Intro to the Internet
-* Keeping organized as a developer
-* Meet your text editor
-* CIRR Survey
-* Space orientation
+* _DUE: Blog post 1_
+* Navigations
+* Forms
 * 🍴 LUNCH 🍴
-* Juno Experience orientation
-* Marking up content with HTML elements
-* Video and audio
-* Intro to CSS
-* CSS selectors
+* More forms
+* Project work time (PJWT)
 
 < Tuesday /> 
-* Kickoff activity
-* Browser dev tools
-* CSS measurement units
-* FOB pick-up
-* Extra curricular orientation
-* Sexual Violence and Harassment Policy orientation
+* Version Control with Git and Github
+* Git on the Command Line
 * 🍴 LUNCH 🍴
-* Career Services orientation
-* Curriculum orientation
-* Project 1 introduced
-* CSS colour
-* CSS background colour and images
-* Web typography
-* Using webfonts
-* CSS pseudo selectors
+* Project work time (PJWT)
+
 
 < Wednesday /> 
-* CSS dimensions
-* CSS layout
+* _DUE: Project 1 @ 10am_
+* Flexbox
 * 🥗 SALAD CLUB 🥗
-* HelpCue Orientation
-* Display and positioning
-* Icons
+* Project 1 presentations
+* Project 2 introduced
+* Advanced CSS Selectors
 * Project work time (PJWT)
 
 < Thursday /> 
-* Kickoff activity
-* 📷 Headshots 📸
-* Philosophy of best practices for HTML and CSS 
-* Emmet
-* Advanced layouts
+* Reminder: purchase your domain name and hosting and download an FTP client for Monday!
+* Preprocessors and SCSS
+* Image Formats and SVG
 * 🍴 LUNCH 🍴
-* Responsive design
+* CSS Transitions, Transforms & Animations
 * PJWT
 
 < Friday />
-* Kickoff Activity
-* Feedback form & PJWT (Bootcamp team meeting 11-12)
-* Pseudo-elements
+* Grid systems
+* CSS grid
 * 🍴 LUNCH 🍴
-* Personal branding
-* Intro to command line
-* Project work time
-* Bootcamp Buddy Meet-up
+* Cross-browser testing
+* PJWT
+* Show 'n' Tell
 
-< Homework />
-* Work on weekly project
-* Blog post
-* Update/create personal branding profiles
 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Fall Bootcamp - (event)".
