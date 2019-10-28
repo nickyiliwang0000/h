@@ -137,13 +137,16 @@ ul.nav {
   background: red;
   width: 100%;
 }
+
 ul.nav li {
   border-right: 1px solid #B3EB95;
 }
+
 ul.nav li a {
   background: #B3EB95;
   padding: 10px;
 }
+
 ul.nav li a:hover {
   background: yellow;
 }
@@ -190,9 +193,11 @@ $primary : #B3EB95
 
 a.home {
   background:$primary;
+
   &:hover {
     background: lighten($primary, 10) //10% lighter than $primary;
   }
+
   &:visited {
     background: darken($primary, 10) //10% darker than $primary;
   }
@@ -242,12 +247,12 @@ p {
 We can even get Sass to do math for us! Say we want it to dymanimcally generate our font sizes in rems with a pixel fallback. So far, we have been setting the base font size in our HTML to 125% to allow for easy rem calculation. Here's how we might make it even easier with a mixin:
 
 ```scss
-@mixin fontSize($sizeValue){
+@mixin fontSize($sizeValue) {
   font-size: $sizeValue * 1px;
   font-size: ($sizeValue/10) * 1rem;
 }
 
-h1{
+h1 {
   @include fontSize(48);
 }
 ```
@@ -255,7 +260,7 @@ h1{
 Compiles to
 
 ```css
-h1{
+h1 {
   font-size: 48px;
   font-size: 4.8rem;
 }
@@ -269,8 +274,9 @@ Mixins can also accept multiple variables, opening up a whole world of possibili
   top: $top;
   left: $left; 
 }
+
 .box { 
-	@include position(absolute, 15px, 30px); 
+  @include position(absolute, 15px, 30px); 
 }
 ```
 
