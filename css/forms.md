@@ -13,7 +13,8 @@ There are four major parts to forms:
 
 * `input`: Input elements accept information from a user. The most common inputs are text boxes that might ask you for something like your email address, password, or username. Other types include checkboxes, ranges, or radio buttons.
 * `label`: This element lets users know what each input is for.
-* `fieldset` : This element groups parts of a form together
+* `fieldset` : This element groups parts of a form together.
+* `legend`: This is like a label for a group of inputs within a fieldset.
 * `form`: This element is how we how we group `fieldset` elements together. All inputs and fieldsets inside of a `form` tag belong to that form and will be sent over the internet when that form is submitted.
 
 Let's take an example from Twitter and break it down:
@@ -122,7 +123,7 @@ This one is technically an input, but you probably think of it as a button. The 
 ```
 ### `button[type=submit]`
 
-When `<button>Submit</button>` is inside a form element, it acts exactly like `<input type="submit" />`. This means if a user clicks the button, the form will be submitted.
+When `<button>Submit</button>` is inside a form element, it acts exactly like `<input type="submit" />`. This means if a user clicks the button, the form will be submitted. For accessibility best practices you should reach for a submit `button` in most cases.
 
 ```html
 <button type="submit">Submit Form</button>
@@ -267,25 +268,38 @@ We use each input's `id` attribute to connect it to the appropriate label. The `
 It's common to see designs where labels are omitted from form elements in favor of placeholders. This is problematic because as soon as a user starts typing in a field, the placeholder disappears, so users no longer have instructions on what the input is for. Also, placeholders will never be read by screen readers. It's important to use labels to ensure all users understand what an input is for before, while, and after they use it.
 
 If you don't have control of the design, still use labels but hide them using a class. Consider the following CSS:
+
+<!-- visually hidden update taken from the a11y project -->
   
 ```css
-.visuallyhidden:not(:focus):not(:active) {
-  position: absolute;
+.visually-hidden:not(:focus):not(:active) { 
+  position: absolute !important;
+  height: 1px; 
   width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
 }
 ```
 
-This is going to hide the content. We need to have a height and width of 1px for the label, because anything smaller won't be read by a screen reader. There are a few new CSS properties in there, like `clip` and `clip-path`; all this is doing is ensuring visual users won't be able to see the content. You can also add this class to text which describes icons.
+This class will visually hide the content without it being removed from the `DOM` so it is available for screen readers. There are many good use cases for this like hiding labels, adding this class to text which describes icons and hiding headings that are not visually important but help a screen reader navigate the page.
 
-It's a good idea to include the `visuallyhidden` class in all of your base styles and use it as necessary. Remember to change the class name to adhere to your naming convention, though!
+Adding the `:not(:focus):not(:active)` part to the class name means that if the element is interactive and somehow recieves focus, the styles will be undone and the element will be visible. In most cases this is a non-issue and you could instead write:
+
+```css
+.visually-hidden { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+```
+
+It's a good idea to include the `visually-hidden` class in all of your base styles and use it as necessary. Remember to change the class name to adhere to your naming convention, though! You may also see this named `sr-only` for "screen reader only". 
 
 ## A word about attributes
 It may seem wrong, but sometimes you will have code that looks like this:
@@ -485,8 +499,7 @@ select {
 
 Download [this file](https://hychalknotes.s3.amazonaws.com/resetting-default-select-styles.html) to see the full code.
 
-Styling the options when they come up isn't easy - lots of places use workarounds to maintain their website's styles.
-
+Styling the options list is essentially not possible at this time. If you are assigned work to customize an options list, you may need to build the list from scratch and implement all of the browser accessibility functionality yourself or reach for a library to help with this task.
 
 ### Spotify sign-up form code-along
 
