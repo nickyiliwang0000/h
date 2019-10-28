@@ -56,16 +56,13 @@ lodash
 :focus-within
 color-adjust
 CSS shine
-CSS shapes
 react dnd
-CSS knock-out
 transition-delay
 parallax
 chart.js
 particle.js
 impress.js
 mix-blend-mode
-Konami Codes
 CSS Perspective
 CSS variables
 custom cursors
@@ -86,5 +83,7 @@ pose.js
 
 ### Claimed:
 ```
-
+Konami Codes
+CSS shapes
+CSS knock-out
 ```
