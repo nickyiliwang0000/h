@@ -9,7 +9,7 @@
 # Forms 
 Forms are collections of inputs that are used to take in information from a user. When submitted, a form sends that information to a server, which does something with it.
 
-There are four major parts to forms:
+There are five major parts to forms:
 
 * `input`: Input elements accept information from a user. The most common inputs are text boxes that might ask you for something like your email address, password, or username. Other types include checkboxes, ranges, or radio buttons.
 * `label`: This element lets users know what each input is for.
