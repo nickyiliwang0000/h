@@ -123,7 +123,7 @@ This one is technically an input, but you probably think of it as a button. The 
 ```
 ### `button[type=submit]`
 
-When `<button>Submit</button>` is inside a form element, it acts exactly like `<input type="submit" />`. This means if a user clicks the button, the form will be submitted. For best practices with respect to accessibility you should reach for a submit `button` in most cases.
+When `<button>Submit</button>` is inside a form element, it acts exactly like `<input type="submit" />`. This means if a user clicks the button, the form will be submitted. For accessibility best practices you should reach for a submit `button` in most cases.
 
 ```html
 <button type="submit">Submit Form</button>
