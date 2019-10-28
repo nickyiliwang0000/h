@@ -38,19 +38,13 @@ Let's explore the power of preprocessors using Sass. Remember that sass is an ex
 
 The workflow Sass is that you will write your styles in `style.scss`and then compile it into a `style.css` file. The CSS file is the one you want to link to in your HTML. **If you link to your SCSS file, the styles will not load.**
 
-We'll install an application called [Prepros](https://prepros.io/) to compile our `.scss` or `.sass` files to `.css`.
+There are a variety of applications available to compile our `.scss` or `.sass` files to `.css`. We are going to use a Visual Studio extension called [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass). 
+
+Alternatively, [Prepros](https://prepros.io/) is a widely used free option.
+
+To get a project setup with Live Sass Compiler, we can use this [guide](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/live-sass-setup.md).
 
 We may also need to install an SCSS package in our text editor. 
-
-Create a new folder with the following structure:
-```bash
-- project-name
-    index.html
-  - styles
-      style.scss
-```
-
-Drag this new folder into Prepros and it will automatically be watched; when we save the `style.scss` file, a compiled `style.css` file will be created.
 
 ### Sass syntax
 
