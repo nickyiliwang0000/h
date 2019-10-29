@@ -38,10 +38,8 @@ Label & Labelledby
 pointer events
 react autocomplete
 touchstart
-DNS
 granim.js
 CSS Masks
-React Joyride
 SVG Morph
 scroll-then-fix
 custom SVGs
@@ -65,11 +63,9 @@ impress.js
 mix-blend-mode
 CSS Perspective
 CSS variables
-custom cursors
 stroke-dash
 night/day mode
 float-labels
-sketch.js
 animate-on-scroll
 CSS clip-path
 recursion
@@ -86,4 +82,10 @@ pose.js
 Konami Codes
 CSS shapes
 CSS knock-out
+custom cursors
+sketch.js
+animate.css
+React Joyride
+DNS
+p5.js
 ```
