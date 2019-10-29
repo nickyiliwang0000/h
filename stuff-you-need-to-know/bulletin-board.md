@@ -51,7 +51,7 @@ We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj69
 ### Important links
 Submission form: http://bit.ly/HYsubmissions
 
-Feedback form: http://bit.ly/HYBootcampFeedback
+Feedback form: https://forms.gle/g9f6G8LB5FfJZFSF6
 
 Group assignments: [Here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit#gid=1112317742)
 
