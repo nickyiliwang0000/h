@@ -43,7 +43,7 @@ You will also be given marks for your project presentation:
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
 
-You can find your assignment [here]().
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit?usp=sharing).
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
@@ -77,9 +77,9 @@ Coming soon!
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
-1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Submit your repo URL using [the project submission form]().
+2. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
+3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
+4. Submit your repo URL using [the project submission form](http://bit.ly/HYsubmissions).
 
 ## #design in Helpcue
 
