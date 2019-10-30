@@ -52,27 +52,25 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/12P9p
 
 ### Design files
 
-Coming soon!
+**Restaurant Mall**
 
-<!-- **Sanctuary Helpers**
+[design](https://scene.zeplin.io/project/5db9035f3cab221121e50087)
 
-[design](https://scene.zeplin.io/project/5d49d1c3066e193158bf3d48)
-
-[assets](https://hychalknotes.s3.amazonaws.com/sanctuary-helpers-final-images.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/the-restaurant-mall-assets.zip)
 
 
-**Boat Ride Adventures**
+**Textilee**
 
-[design](https://scene.zeplin.io/project/5d433e5a011ec788608a7319)
+[design](https://scene.zeplin.io/project/5db906420eb3b183b27088b7)
 
-[assets](https://hychalknotes.s3.amazonaws.com/boat-ride-adventures-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/textilee-assets.zip)
 
 
-**Under The Sea** 
+**Shoe Kloset** 
 
-[design](https://scene.zeplin.io/project/5d49df79c974ef129de7684b)
+[design](https://scene.zeplin.io/project/5db906b46dd9b622d51530b9)
 
-[assets](https://hychalknotes.s3.amazonaws.com/under-the-sea-assets.zip) -->
+[assets](https://hychalknotes.s3.amazonaws.com/shoe-kloset-assets.zip)
 
 ## Submitting your project
 
