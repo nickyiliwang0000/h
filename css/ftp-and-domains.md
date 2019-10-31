@@ -74,7 +74,7 @@ This process above will look different on each hosting provider's dashboard. For
 
 3. Click on the Add New User button, or use this screen to change the password or user settings of your existing users. ![Dreamhost Users Dashboard](https://hychalknotes.s3.amazonaws.com/dreamhost3.png)
 
-4. Fill out the Add New User form. Make sure that you choose the FTP account option rather than the SFTP account. [Dreamhost Add New User Form](https://hychalknotes.s3.amazonaws.com/dreamhost4.png)
+4. Fill out the Add New User form. Make sure that you choose the FTP account option rather than the SFTP account. ![Dreamhost Add New User Form](https://hychalknotes.s3.amazonaws.com/dreamhost4.png)
 
 
 ## Configuring FileZilla
