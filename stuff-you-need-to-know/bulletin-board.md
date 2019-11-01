@@ -5,7 +5,6 @@
 Week 3:  Intro to JavaScript
 
 < Monday /> 
-* _DUE: Blog post 1_
 * FTP and domains
 * Host your website using FTP
 * 🍴 LUNCH 🍴
@@ -17,7 +16,7 @@ Week 3:  Intro to JavaScript
 * 🍴 LUNCH 🍴
 * Github Pages
 * Project work time (PJWT)
-*_HTML & CSS FISHBOWL @ 6pm_
+* _HTML & CSS FISHBOWL @ 6pm_
 
 
 < Wednesday /> 
