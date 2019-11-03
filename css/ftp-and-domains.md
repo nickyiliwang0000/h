@@ -63,6 +63,20 @@ Otherwise:
 3. Put your username and password somewhere safe. 
   * Hot tip: use a password manager. Some popular ones are [1Password](https://1password.com) and [LastPass](https://www.lastpass.com/).
 
+#### Navigating dashboards on different hosting providers
+This process above will look different on each hosting provider's dashboard. For example, here is how it would look on Dreamhost's dashboard. 
+
+1. Log in to the Dreamhost Homepage.
+![Dreamhost Homepage Login Screen](https://hychalknotes.s3.amazonaws.com/dreamhost1.png)
+
+2. In the left side panel, find the user option and click on 'Manage Users'.
+![Dreamhost Dashboard highlighting Manage Users option](https://hychalknotes.s3.amazonaws.com/dreamhost2.png)
+
+3. Click on the Add New User button, or use this screen to change the password or user settings of your existing users. ![Dreamhost Users Dashboard](https://hychalknotes.s3.amazonaws.com/dreamhost3.png)
+
+4. Fill out the Add New User form. Make sure that you choose the FTP account option rather than the SFTP account. ![Dreamhost Add New User Form](https://hychalknotes.s3.amazonaws.com/dreamhost4.png)
+
+
 ## Configuring FileZilla
 
 1. Click the blue and green 'Site Manager' icon in the top left corner.  
