@@ -11,11 +11,11 @@
 Download [these starter files](https://hychalknotes.s3.amazonaws.com/git-branching-lesson.zip) and initialize git in the root directory with the `git init` command. Then, go to GitHub and create a repo. Add that repo's URL as the origin with `git remote add origin` and commit your starter files.
 
 ## Branching
-When you're working with files on GitHub, you may want to keep a separate, clean copy locally and tinker with some new features or wild idea. Great! You're ready to make a git _branch_!
+When you're working with files on GitHub, you may want to keep a separate, clean copy locally and tinker with some new features or wild ideas. Great! You're ready to make a git _branch_!
 
-Every new git repository starts with a initial default branch that git automatically names the `master` branch.
+Every new git repository starts with an initial default branch that git automatically names the `master` branch.
 
-In our terminal, we can always determine which branch we are on by running the `git branch` command. The asteriks will indicate which branch is the current one.
+In our terminal, we can always determine which branch we are on by running the `git branch` command. The asterisk will indicate which branch is the current one.
 
 ## Example branch workflow setup
 
