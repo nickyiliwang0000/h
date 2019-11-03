@@ -6,7 +6,6 @@
   - How to delete a branch
   -->
 
-
 # Git collaboration 
 
 Download [these starter files](https://hychalknotes.s3.amazonaws.com/git-branching-lesson.zip) and initialize git in the root directory with the `git init` command. Then, go to GitHub and create a repo. Add that repo's URL as the origin with `git remote add origin` and commit your starter files.
@@ -44,6 +43,8 @@ If we run the `git branch` command now we will see our current branch will be `m
 
 This is where you'll write the code that creates a feature for your website. Let's toss an `h1` in `index.html`.
 
+Going forward, the names of your branches should logically reflect the type of work being done. For example, a task to implement a site footer could be completed on a branch called `add-site-footer`. A branch name should help distinguish it from any other.
+
 ## When you're ready to commit your changes
 
 Add, commit, and push the change we made to the `myFeatureBranch` branch on GitHub:
@@ -71,20 +72,16 @@ If you're in your `myFeatureBranch`, use `git checkout master` to switch to your
 
 When you're on your feature branch, `git pull origin master` will grab the changes from your `master` branch and add them to your feature branch so you can begin work using the most recent code. -->
 
-
-
-
 ## Stashing changes
 
-If you need to switch to another branch before you're ready to commit your changes, `git stash` will put away the current changes on your branch for later so you can go do stuff in another branch (`git checkout anotherfeaturebranch` to take you to `anotherfeaturebranch` if it's already set up) without having to commit these changes.
+If you need to switch to another branch before you're ready to commit your changes, `git stash` will put away the current changes on your branch for later so you can go do stuff in another branch without having to commit these changes.
 
-`git checkout myfeaturebranch` will bring you back to your feature branch and `git stash apply` will bring back what you put away on on `myfeaturebranch`.
-
+When you are ready to reapply the code you have stashed earlier, `git stash apply` will bring it back.
 
 ## (Optional) Delete the feature branch if you don't need to come back to it
 If you're in your feature branch, use `git checkout master` to go somewhere that's not the branch you want to delete.
-Use `git push origin :myfeaturebranch`  to delete the `myfeaturebranch` branch on GitHub (upstream). 
-`git branch -d myfeaturebranch` will delete the local branch on your computer.
+Use `git push origin :myFeatureBranch`  to delete the `myFeatureBranch` branch on GitHub (upstream). 
+`git branch -d myFeatureBranch` will delete the local branch on your computer.
 
 ## Resources
 
