@@ -45,36 +45,26 @@ scroll-then-fix
 custom SVGs
 custom tool tips
 brain.js
-SweetAlerts
 custom browser extensions
 reveal.js
-draggable.js
 CSS text-path
 lodash
 :focus-within
 color-adjust
-CSS shine
 react dnd
 transition-delay
-parallax
-chart.js
 particle.js
-impress.js
 mix-blend-mode
-CSS Perspective
 CSS variables
 stroke-dash
 night/day mode
 float-labels
 animate-on-scroll
 CSS clip-path
-recursion
 preloaders
-redux
-React Native
-typed.js
 three.js
 pose.js
+React Joyride
 ```
 
 ### Claimed:
@@ -85,7 +75,16 @@ CSS knock-out
 custom cursors
 sketch.js
 animate.css
-React Joyride
 DNS
 p5.js
+recursion
+impress.js
+CSS shine
+d3.js
+SweetAlerts
+typed.js
+draggable.js
+React Native
+parallax
+chart.js
 ```
