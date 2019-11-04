@@ -11,7 +11,7 @@
 Download [these starter files](https://hychalknotes.s3.amazonaws.com/git-branching-lesson.zip) and initialize git in the root directory with the `git init` command. Then, go to GitHub and create a new repository. Add that repo's URL as the origin with `git remote add origin <url>` and commit your starter files.
 
 ## Branching
-When you're working with files on GitHub, you may want to keep a separate, clean copy locally and tinker with some new features or test out some wild ideas. Great! You're ready to make a git _branch_!
+When you're working with files on GitHub, you may want to keep a separate, clean copy locally and tinker with some new features or test out some wild ideas. Great! You're ready to start making git _branches_!
 
 Every new git repository starts with an initial default branch that git automatically names the `master` branch.
 
@@ -66,7 +66,7 @@ If you're in your `myFeatureBranch`, use `git checkout master` to switch to your
 
 Once the work on your feature branch has been completed, it is time to update the `master` branch with those changes.
 
-1. Use `git pull origin master` to make sure your local branch is up to date with the latest from the upstream `master`. 
+1. Once you have confirmed that you are on your master branch, Use `git pull origin master` to make sure your local branch is up to date with the latest from the upstream `master`. 
 2. Use `git merge myFeatureBranch` to merge your feature branch into the `master` branch.
 3. Use `git push origin master` to push your merge to the master branch of your repo on GitHub.
 
