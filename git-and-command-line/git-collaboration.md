@@ -8,14 +8,14 @@
 
 # Git collaboration 
 
-Download [these starter files](https://hychalknotes.s3.amazonaws.com/git-branching-lesson.zip) and initialize git in the root directory with the `git init` command. Then, go to GitHub and create a repo. Add that repo's URL as the origin with `git remote add origin` and commit your starter files.
+Download [these starter files](https://hychalknotes.s3.amazonaws.com/git-branching-lesson.zip) and initialize git in the root directory with the `git init` command. Then, go to GitHub and create a new repository. Add that repo's URL as the origin with `git remote add origin <url>` and commit your starter files.
 
 ## Branching
-When you're working with files on GitHub, you may want to keep a separate, clean copy locally and tinker with some new features or wild ideas. Great! You're ready to make a git _branch_!
+When you're working with files on GitHub, you may want to keep a separate, clean copy locally and tinker with some new features or test out some wild ideas. Great! You're ready to make a git _branch_!
 
 Every new git repository starts with an initial default branch that git automatically names the `master` branch.
 
-In our terminal, we can always determine which branch we are on by running the `git branch` command. The asterisk will indicate which branch is the current one.
+In our terminal, we can always determine which branch we are on by running the `git branch` command. An asterisk beside a branch name will indicate it is the current one.
 
 ## Example branch workflow setup
 
@@ -35,7 +35,7 @@ The `feature` branches are where individual developers are writing code and figu
 
 ## Create a new branch
 
-We are at a point in our project where we want to start adding big new features but want to do so in a safe environment. The `master` branch cannot be our testing ground.
+We are at a point in our project where we want to start adding new features but want to do so in a safe environment. The `master` branch cannot be our testing ground.
 
 `git checkout -b myFeatureBranch` creates a new trackable branch called `myFeatureBranch` using the `master` branch as a base. The `git checkout -b` part of this command tells git to both create a new branch _and_ switch over to the new branch we created, `myFeatureBranch`.
 
@@ -64,13 +64,11 @@ If you're in your `myFeatureBranch`, use `git checkout master` to switch to your
 
 ## Merge a feature branch into master
 
-1. Use `git pull origin master` to make sure your local is up to date with the latest from the upstream `master`. 
+Once the work on your feature branch has been completed, it is time to update the `master` branch with those changes.
+
+1. Use `git pull origin master` to make sure your local branch is up to date with the latest from the upstream `master`. 
 2. Use `git merge myFeatureBranch` to merge your feature branch into the `master` branch.
 3. Use `git push origin master` to push your merge to the master branch of your repo on GitHub.
-
-<!-- ## Working on a feature branch
-
-When you're on your feature branch, `git pull origin master` will grab the changes from your `master` branch and add them to your feature branch so you can begin work using the most recent code. -->
 
 ## Stashing changes
 
