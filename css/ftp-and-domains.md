@@ -10,7 +10,7 @@
 # FTP and domains
 
 ## Domains and hosting
-We at HackerYou are all about promoting your online presence. Every developer needs a website to host their portfolio and a bit about them. When purchasing your website, it's important to understand the two main components of owning a website.
+We at Juno are all about promoting your online presence. Every developer needs a website to host their portfolio and a bit about them. When purchasing your website, it's important to understand the two main components of owning a website.
 
 ### Hosting
 A _host_ is a server that holds the files your website that make up your website. Hosting servers can be located anywhere in the world, and most hosting is shared, which means that servers hold files for many users.
@@ -20,7 +20,7 @@ A _live_ website is one whose files are hosted on a server.
 ### Domain names
 Each computer has an _internet protocol_ (IP) address. IP addresses are unique sets of numbers (e.g. `120.120.01.01`) that computers use to identify themselves. An IP address is like a computer's name.
 
-It's easier for humans to remember words than numbers, so the _domain name system_ (DNS) points anyone who goes to <https://hackeryou.com> to `120.120.01.01`. Domain names are like IP addresses in human language.
+It's easier for humans to remember words than numbers, so the _domain name system_ (DNS) points anyone who goes to <https://junocollege.com/> to `120.120.01.01`. Domain names are like IP addresses in human language.
 
 Domain names can be purchased together with hosting or separately. When purchased separately, you need to tell the domain name system (DNS) that you want your domain name to point your hosting server's IP address. In these cases, you will need to ask your hosting company for which name servers to use. They usually look something like `ns1.hostingprovidername.com` and you should be able to find them in the settings where you bought your domain. If you're having trouble the domain and hosting companies are often more helpful than instructors, but feel free to reach out to both.
 
@@ -29,7 +29,7 @@ To learn more about how your browser connects to a website, check out [this cute
 ## Domain and hosting providers
 
 > **Disclosure:**
-> HackerYou receives remuneration from the following companies when you use our affiliate links below. All proceeds we receive from affiliate partnerships are used for awesome alumni programming, such as Visibility:Hidden!
+> Juno receives remuneration from the following companies when you use our affiliate links below. All proceeds we receive from affiliate partnerships are used for awesome alumni programming, such as Visibility:Hidden!
 
 Domains:
 * [Hover](https://hover.com/IbL8v5UV)
