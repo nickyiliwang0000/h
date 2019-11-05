@@ -7,12 +7,12 @@
 -->
 # Functions
 
-[We said before](https://github.com/HackerYou/bootcamp-notes/blob/791520b13524bf56d557c1e8806ae5f369571b78/programming-fundamentals/debugging-javascript.md) that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language, but this is especially true for JavaScript. 
+[We said before](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-javascript.md#debugging-tools) that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language, but this is especially true for JavaScript. 
 <!-- where, as we'll see, functions can be passed around like any other value. -->
 
 So far we've mostly worked with built-in functions; now it's time to learn how to create your own.
 
-The purpose of writing a function to reduce verbosity in your code. Why write a set of instructions multiple times when you can create a function to do the work for you? Repeat less code!
+The purpose of writing a function is to reduce verbosity in your code. Why write a set of instructions multiple times when you can create a function to do the work for you? Repeat less code!
 
 ## Defining a function
 
@@ -104,7 +104,7 @@ They are not the same. Logging a value to the console using `console.log()` does
 The following function prints a value to the console:
 
 ```js
-const add = function(a, b) {
+const addition = function(a, b) {
   console.log(a + b);
 }
 ```
@@ -112,7 +112,7 @@ const add = function(a, b) {
 If we try to store the result of the function we see that our variable stored nothing; the value is `undefined`.
 
 ```js
-const num = add(1, 2);
+const num = addition(1, 2);
 num; //undefined
 ```
 
