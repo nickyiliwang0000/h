@@ -166,7 +166,7 @@ Parentheses can be used to group operations. Just like you learned in grade scho
 
 ### Complex operators
 
-There are a number of other arithmetic operators available. Three that we will look at in this course are modulo (`%`), increment(`++`) and decrement(`--`).
+There are a number of other arithmetic operators available. Three that we will look at in this course are modulo (`%`), increment (`++`) and decrement (`--`).
 
 Modulo returns the remainder left over from division:
 
@@ -231,21 +231,21 @@ sentence;
 What happens when you type the below expressions in the console?
 
 ```js
-'HackerYou' * 6 
+'Juno' * 6 
 ```
 
 ```js	  
-'HackerYou' + 6
+'Juno' + 6
 ``` 
 
 ```js
-'HackerYou' * 'Class'
+'Juno' * 'Class'
 ```
 
 `NaN` (not a number) for first and third examples. We can't do some operations (like multiplication) with types that are not numbers.
 
 **Exercises**  
-What happens when you type in the console: `'She's a HackerYou student'`. 
+What happens when you type in the console: `'She's a Juno student'`. 
 
 Error! How would you solve this issue?
 
@@ -279,7 +279,7 @@ Strings and template literals behave in exactly the same way, but backticks make
 ```js
 const nameTwo = `Rukmini`;
 const jobTwo = `streetcar driver`;
-const sentenceTwo = `${name} works for the city as a ${job}`;
+const sentenceTwo = `${nameTwo} works for the city as a ${jobTwo}`;
 console.log(sentenceTwo);// "Rukmini works for the city as a streetcar driver."
 ```
 
