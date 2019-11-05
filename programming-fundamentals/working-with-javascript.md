@@ -33,7 +33,7 @@ alert("Hello " + name + "!");
 When the browser runs this code, it stops at the `prompt()` function call and waits for the user to input their answer. That returned *value* is then stored into the `name` variable, which we then pass and as an argument to the `alert()` function.
 
 ## More built-in functions
-We've already looked `prompt()`, `alert()` and `confirm()` but there are many more functions built into JavaScript functions. Many of these built-in functions return values that we can store in variables. For example:
+We've already looked at `prompt()`, `alert()` and `confirm()` but there are many more functions built into JavaScript. Many of these built-in functions return values that we can store in variables. For example:
 
 * console.log() (doesn't necessarily have a return value)
 * `Math.` (always has a return value)
@@ -116,7 +116,7 @@ Here's a handy [Stack Overflow discussion](http://stackoverflow.com/questions/18
 **Exercise**: In the example below, add the semicolons and line breaks that allow the code to run without errors.
 
 ```js
-"I'm just a value!" let schoolName = "HackerYou" let numOfStudents = 40 schoolName + " has " + numOfStudents + " students." 
+"I'm just a value!" let schoolName = "Juno" let numOfStudents = 40 schoolName + " has " + numOfStudents + " students." 
 ```
 
 ## JavaScript + HTML = ❤️
