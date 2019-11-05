@@ -20,7 +20,7 @@ If you write the words `myLunch` on your lunchbag, anything that goes in there i
 Before you're able to use a variable, you must be _declare_ it, then _assign_ it a value. Usually, you'll declare all your variables before you use them at the top of your JavaScript file.
 
 ### Declaring a variable
-There are three [_keywords_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) (special words that are reserved by JavaScript to denote specific behaviours) we can use to declare a variable: `let`, `const`, and `var`. 
+There are three [_keywords_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) (special words that are reserved by JavaScript to denote specific behaviours) we can use to declare a variable: `let`, `const`, and the now-outdated (but still technically functional) `var`.
 
 You choose the name of the variable. It should be something descriptive based on what kind of value it will hold:
 
@@ -134,7 +134,7 @@ const days = years * 365;
 
 ## Operators
 
-You can do basic arithmetic with numbers using _operators_. Arithmetic operators in JavaScript are (`+`) for addition, (`-`) for subtraction, (`*`) for multiplication, (`/`) for division, and (`%`) for modulo.
+You can do simple arithmetic with numbers using _operators_. The basic arithmetic operators in JavaScript are (`+`) for addition, (`-`) for subtraction, (`*`) for multiplication, (`/`) for division and (`**`) for exponents.
 
 ```js
 55 * 20 
@@ -145,14 +145,10 @@ You can do basic arithmetic with numbers using _operators_. Arithmetic operators
 
 34 + 66.3
 
-// Modulo operator returns the remainder left over when one operand is divided by another operand.
-47 % 5
-
-// You can use modulo to check for even number
-47 % 2 // not even
-8 % 2 // even
--10 % 2 // even
+2 ** 5
 ```
+
+> Fair warning: The exponent operator [is not supported in IE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Browser_compatibility).
 
 Parentheses can be used to group operations. Just like you learned in grade school, BEDMAS applies. This is the order in which the computer will do the math:
 
@@ -165,11 +161,32 @@ Parentheses can be used to group operations. Just like you learned in grade scho
 
 ```js
 (2 + 1) * 5
+// 15
 ```
 
-This is how you use exponents in Javascript:
+### Complex operators
+
+There are a number of other arithmetic operators available. Three that we will look at in this course are modulo (`%`), increment(`++`) and decrement(`--`).
+
+Modulo returns the remainder left over from division:
+
 ```js
-2 ** 5
+47 % 5
+// This gives 2, since 45 divides evenly by 5, and then there are 2 left over (ie. the remainder is 2)
+```
+
+The increment operator adds one (_increments_) to a value, and the decrement operator subtracts one (_decrements_):
+
+```js
+let x = 3;
+x++;
+x;
+// 4
+
+let y = 7;
+y--;
+y;
+// 6
 ```
 
 > A fun gotcha! When numbers are contained within quotes, they are considered **strings**, meaning they can't be used to perform arithmetic operations.
