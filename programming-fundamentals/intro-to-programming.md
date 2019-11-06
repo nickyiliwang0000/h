@@ -93,7 +93,7 @@ It seems like we're explaining things in **too** much detail, but this strategy 
 
 #### Exercise: Computerthink
 
-In small groups, write out detailed step-by-step instructions for how to make an apple pie from scratch. We'll compare your answers together to see just how specific you can get!
+In small groups, write out detailed step-by-step instructions for how to make an apple pie (with a frozen pie crust and apple pie filling in a can). We'll compare your answers together to see just how specific you can get!
 
 ### Invent the world, maybe
 There's a quote attributed to Carl Sagan that goes: 
