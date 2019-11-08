@@ -30,41 +30,38 @@ Your Show & Tell groups have been assigned by week. You can find the list of gro
 Feel free to choose any topic - just make sure you have it approved before you spend too much time researching and building a presentation! Here are 50 example topics you can choose or use to inspire your choice. Each Monday, I'll update the list below with any topics that have been claimed!
 
 ### Available:
-```AMP pages
-anime.js
-cycle.js
-draft.js
-Label & Labelledby
-pointer events
-react autocomplete
-touchstart
-granim.js
+```
+AMP pages
+brain.js
+color-adjust
+CSS clip-path
 CSS Masks
-SVG Morph
-scroll-then-fix
+CSS text-path
+CSS variables
+custom browser extensions
 custom SVGs
 custom tool tips
-brain.js
-custom browser extensions
-reveal.js
-CSS text-path
-lodash
-:focus-within
-color-adjust
-react dnd
-transition-delay
-particle.js
-mix-blend-mode
-CSS variables
-stroke-dash
-night/day mode
+cycle.js
+draft.js
 float-labels
-animate-on-scroll
-CSS clip-path
-preloaders
-three.js
+granim.js
+Label & Labelledby
+lodash
+mix-blend-mode
+particle.js
+pointer events
 pose.js
+preloaders
+react autocomplete
+react dnd
 React Joyride
+reveal.js
+scroll-then-fix
+stroke-dash
+SVG Morph
+three.js
+touchstart
+transition-delay
 ```
 
 ### Claimed:
@@ -87,4 +84,8 @@ draggable.js
 React Native
 parallax
 chart.js
+animate-on-scroll
+night/day mode (aka dark/light mode)
+:focus-within
+anime.js
 ```
