@@ -2,7 +2,7 @@
 
 Below you'll find some preliminary instructions on how to prep for your Show & Tell week, the date you'll be presenting, and a list of possible topics to cover!  You're welcome to choose anything from the list at any point but once it's taken, it can't be repeated. **Please DM Charlotte on slack to claim a topic!** If you want to pick an out-of-the-box topic on something that's not listed here, please send me a message to get it approved! 
 
-We'll have a practice session **Thursday at 4pm** during the week of your presentation in the back classroom! Don't feel pressured to have a completed, polished presentation ready - we'll talk more in depth about the logistics of the presentations, have everyone do a timed runthrough and I'll offer some notes and advice before the big day!
+We'll have a practice session, usually **Thursday at 4pm** during the week of your presentation in the back classroom! If the time and place changes, don't worry you'll receive a reminder on Monday! Don't feel pressured to have a completed, polished presentation ready - we'll talk more in depth about the logistics of the presentations, have everyone do a timed runthrough and I'll offer some notes and advice before the big day!
 
 ## The How:
 You'll each be presenting on your topic for *3 minutes*. Your topics don't have to be related - you're presenting individually, not as a group, so don't worry about coordinating! You definitely do not have to be an expert on the subject but you'll want to gather enough info to tell us:
@@ -31,8 +31,6 @@ Feel free to choose any topic - just make sure you have it approved before you s
 
 ### Available:
 ```
-AMP pages
-brain.js
 color-adjust
 CSS clip-path
 CSS Masks
@@ -88,4 +86,6 @@ animate-on-scroll
 night/day mode (aka dark/light mode)
 :focus-within
 anime.js
+AMP pages
+brain.js
 ```
