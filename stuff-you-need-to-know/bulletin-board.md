@@ -2,51 +2,54 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 3:  Intro to JavaScript
+Week 4: jQuery && JavaScript
 
 < Monday /> 
-* FTP and domains
-* Host your website using FTP
-* 🍴 LUNCH 🍴
-* Cross Browser Testing
-* Project work time (PJWT)
+* Kickoff
+* Stand-ups
+* JS Review
+* Intro to jQuery
+* jQuery API documentation
+🍴LUNCH 🍴
+* MVP Exercise
+* Project 3 Introduction
+* jQuery best practices
+* jQuery Code-along
 
 < Tuesday /> 
-* Github Collaboration
+* To-Do App Code Along
+* How to organize your JavaScript
 * 🍴 LUNCH 🍴
-* Github Pages
+* Design lesson with Fatima
 * Project work time (PJWT)
-* _HTML & CSS FISHBOWL @ 6pm_
 
 
 < Wednesday /> 
-* _DUE: Project 2 @ 10am_
-* _HTML & CSS Test_
-* Intro to Programming 
-* Intro to Javascript
-* Project 2 Presentations
-* 🥗 SALAD CLUB 🥗
-* _Break into smaller groups for:_
-* Variables
-* Working with Javascript
+* Callback Functions
+* Advanced array methods
+🥗SALAD CLUB 🥗
+* Regular expressions
+* Project work time
 
 
 < Thursday /> 
-* Javascript All Day!
-* Programming Control Flow
-* 🍴 LUNCH 🍴
-* Functions
+* Working with APIs
+* Accessing data with AJAX + When AJAX goes wrong
+🍴LUNCH 🍴(Performance Lunch n Learn w/Henri Helvetica)
+* AJAX code-along
+* Project work time
+* _6pm Fishbowl Session: jQuery_
 
 
 < Friday />
-* _Mock Tech Test_
-* Javascript All Day!
-* Objects
-* 🍴 LUNCH 🍴
-* Arrays and Methods
-* Show 'n' Tell
+* Midpoint check-ins
+* Project work time
+🍴LUNCH 🍴
+* Project work time
+* Show ‘n’ Tell
 
-Reminder: You must have something up on your server for Monday, Nov 11th at 10 a.m.!!!!!
+< Sunday />
+* _1-4pm JavaScript Fishbowl Session_ 
 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Fall Bootcamp - (event)".
