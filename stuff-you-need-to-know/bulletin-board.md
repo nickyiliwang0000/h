@@ -10,7 +10,7 @@ Week 4: jQuery && JavaScript
 * JS Review
 * Intro to jQuery
 * jQuery API documentation
-🍴LUNCH 🍴
+* 🍴LUNCH 🍴
 * MVP Exercise
 * Project 3 Introduction
 * jQuery best practices
@@ -27,7 +27,7 @@ Week 4: jQuery && JavaScript
 < Wednesday /> 
 * Callback Functions
 * Advanced array methods
-🥗SALAD CLUB 🥗
+* 🥗SALAD CLUB 🥗
 * Regular expressions
 * Project work time
 
@@ -35,7 +35,7 @@ Week 4: jQuery && JavaScript
 < Thursday /> 
 * Working with APIs
 * Accessing data with AJAX + When AJAX goes wrong
-🍴LUNCH 🍴(Performance Lunch n Learn w/Henri Helvetica)
+* 🍴LUNCH 🍴_(Performance Lunch n Learn w/Henri Helvetica)_
 * AJAX code-along
 * Project work time
 * _6pm Fishbowl Session: jQuery_
@@ -44,7 +44,7 @@ Week 4: jQuery && JavaScript
 < Friday />
 * Midpoint check-ins
 * Project work time
-🍴LUNCH 🍴
+* 🍴LUNCH 🍴
 * Project work time
 * Show ‘n’ Tell
 
