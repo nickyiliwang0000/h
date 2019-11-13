@@ -168,6 +168,9 @@ symbol | meaning in a regex | example
 `\` | Ignore the following character's special meaning. | `/1\.9/` matches exactly `1.9`.
 `$` | The end of a string | `/last$/` matches only strings ending with the `"last"`. e.g. `"last"`, and `"blast"`, but not `"plaster"`.
 
+## Exercise
+Download [this exercise](https://hychalknotes.s3.amazonaws.com/regexercise-bootcamp.zip) to practice writing your own regular expressions.
+
 ## Regex patterns
 
 If you want to do something common using regex, chances are someone's already written that regex.
