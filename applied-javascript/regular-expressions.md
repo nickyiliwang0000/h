@@ -128,7 +128,9 @@ If the expression doesn't match the string, `match` returns `null`. If it does m
 additional entries in the order they appear in the expression.
 
 The `matchAll` method allows you to search for multiple instances of the same pattern in a string. It returns an object
-that can be looped over to get all the matched values.
+that can be looped over to get all the matched values. Each entry in the loop will be an array structured like the 
+result we got from `match` above.
+
 
 ```js
 let distances = "Distances: 100m, 50m, 10m";
