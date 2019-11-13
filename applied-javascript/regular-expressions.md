@@ -109,12 +109,12 @@ console.log(petOpinion.replace(/cat/ig, 'frog'));
 // "frogs make the best pets. Everyone should own a frog."
 ``` 
 
-### Capturing Information
+### Capturing information
 
 One of the most common uses for regular expressions is for pulling information out of structured data. Sometimes an API
 will have exactly what you want, but the little bit of information you need is embedded in a lot of data you don't need.
 Using the grouping special characters `()` and everything else we've seen so far, you can create expressions to grab 
-exactly the info you need using `String`'s `match` and `matchAll` methods.
+exactly the info you need using `String`'s `match()` and `matchAll()` methods.
 
 ```js
 let myNameIs = "Hello, my name is Merton."
