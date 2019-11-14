@@ -109,6 +109,41 @@ console.log(petOpinion.replace(/cat/ig, 'frog'));
 // "frogs make the best pets. Everyone should own a frog."
 ``` 
 
+### Capturing information
+
+One of the most common uses for regular expressions is for pulling information out of structured data. Sometimes an API
+will have exactly what you want, but the little bit of information you need is embedded in a lot of data you don't need.
+Using the grouping special characters `()` and everything else we've seen so far, you can create expressions to grab 
+exactly the info you need using `String`'s `match()` and `matchAll()` methods.
+
+```js
+let myNameIs = "Hello, my name is Merton."
+let nameExpression = /my name is ([a-z]+)/i
+console.log(myNameIs.match(nameExpression)); 
+// Array [ "my name is Merton", "Merton" ]
+```
+
+If the expression doesn't match the string, `match` returns `null`. If it does match, it will return an `Array`. The 
+`0`th entry will be the entire string matched by the expression, and for each `()` group in the expression there will be
+additional entries in the order they appear in the expression.
+
+The `matchAll` method allows you to search for multiple instances of the same pattern in a string. It returns an object
+that can be looped over to get all the matched values. Each entry in the loop will be an array structured like the 
+result we got from `match` above.
+
+
+```js
+let distances = "Distances: 100m, 50m, 10m";
+let distanceExpression = / ([0-9]+)m/g;  // use the `g` global flag to find all matches
+let distanceMatches = distances.matchAll(distanceExpression);
+for(let match of distanceMatches) {
+  console.log(match[1]); // log the first captured group of this match
+}
+// Array [ "100" ]
+// Array [ "50" ]
+// Array [ "10" ]
+```
+  
 ## Advanced regular expressions  
 
 There are lots of other special characters available to you to narrow down what your regular expression is looking for:
@@ -118,7 +153,7 @@ symbol | meaning in a regex | example
 `^` | The start of a string | `/^apples/` matches `"apples are great"`, but not `"the best fruit is apples"` 
 `.` |  Any character except line breaks | `/cat./` matches the word "cat" followed by any character.
 `[xyz]`| Any character from the specified set (in this case either x, y, or z) | `/bread[sy]/` matches both `"breads"` and `"bready"`, but not `"bread"`.
-`[a-z]` | Any character from a the specified range of characters (in this case any letter from a to z) | `/pear[a-z]/` matches `"pear"` followed by any lowercase letter between `a` and `z`.
+`[a-z]` | Any character from the specified range of characters (in this case any letter from a to z) | `/pear[a-z]/` matches `"pear"` followed by any lowercase letter between `a` and `z`.
 `[^cd]` | Any character *not* in the specified set (in this case any character that's not c or d) | `/[^1a]23/` matches the number 23 preceded by any character other than a `1` or an `a`.
 `\w` | Any _word character_. i.e. a-z, A-Z, 0-9, and \_. Equivalent to [a-zA-Z0-9_]. | `/\w\w.` matches any two letters, numbers, or underscores. 
 `\W` | Any non-_word character_ i.e. any character other than a-z, A-Z, 0-9, and \_. Equivalent to [^a-zA-Z0-9\_] | `/bird\W/` matches an "bird" followed by any non-alphabet, numeral, or underscore character.
@@ -132,6 +167,9 @@ symbol | meaning in a regex | example
 `{n,m}` | Where `n` and `m` are integers, match between `n` and `m` sets of the preceding expression | `hello{1,3}` matches only `"hello"`, `"helloo"`, and `"hellooo"`.
 `\` | Ignore the following character's special meaning. | `/1\.9/` matches exactly `1.9`.
 `$` | The end of a string | `/last$/` matches only strings ending with the `"last"`. e.g. `"last"`, and `"blast"`, but not `"plaster"`.
+
+## Exercise
+Download [this exercise](https://hychalknotes.s3.amazonaws.com/regexercise-bootcamp.zip) to practice writing your own regular expressions.
 
 ## Regex patterns
 
