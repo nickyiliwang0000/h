@@ -133,12 +133,12 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Accessing API data with AJAX](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/accessing-api-data-with-ajax.md)
 * [When AJAX goes wrong](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/when-ajax-goes-wrong.md)
 * [Understanding API documentation](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/understanding-api-documentation.md)
+* [JavaScript superpowers: Spread, rest and destructuring](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md)
 * [Working with asynchronous events](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/working-with-asynchronous-events.md)
 * [Intro to Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/intro-to-firebase.md)
 * [Class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md)
 * [Advanced JS: lexical scope and execution context](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md)
 * [Fetching data with something other than $.ajax](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md)
-* [JavaScript superpowers: Spread, rest and destructuring](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md)
 * [Making our code more modular](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/making-our-code-more-modular.md)
 
 ### React and firebase
