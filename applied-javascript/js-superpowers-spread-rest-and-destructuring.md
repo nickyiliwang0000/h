@@ -28,19 +28,19 @@ You can't! `Math.max` is a method that accepts a comma separated list of values,
 We could solve this by manually getting data out of our array:
 
 ```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(numbers[0], numbers[1], numbers[2], numbers[3]);
-console.log(max); // 123
+const numbersAgain = [39, 25, 90, 123];
+const maxManually = Math.max(numbersAgain[0], numbersAgain[1], numbersAgain[2], numbersAgain[3]);
+console.log(maxManually); // 123
 ```
 
-This is tedious, and if the array changes length, then we also need to update the argument list we're passing to `Math.max`.
+This is tedious, and if the array changes length, then we also need to update the argument list we're passing to `Math.max()`.
 
 Instead, we can use the spread operator. It is denoted by `...`, and it separates (spreads!) the items out of the array, so we can treat them as a list of individual values:
 
 ```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(...numbers);
-console.log(max); // 123
+const numbersReturnOfTheKing = [39, 25, 90, 123];
+const maxSpread = Math.max(...numbersReturnOfTheKing);
+console.log(maxSpread); // 123
 ```
 
 The spread operator can pull apart all kinds of values:
@@ -112,7 +112,7 @@ arrayItToMe(3, 44, 81, 6, 19, 27);
 // [3, 44, 81, 6, 19, 27]
 ```
 
-OK, this works, but what if somewhere else in our code we also want to call a function to return an array, but we only have 4 arguments to pass it? Or 10? We would have to write a whole new `arrayIt` function for each instance, which isn't clean or DRY.
+This works, but what if somewhere else in our code we also want to call a function to return an array, but we only have 4 arguments to pass it? Or 10? We would have to write a whole new `arrayIt` function for each instance, which isn't clean or DRY.
 
 Instead, we can make a single function that is more dynamic by using rest parameters. Adding the `...` before the name of a parameter, we can turn an array-like object of values (like a list of arguments) into an actual array!
 
@@ -157,7 +157,7 @@ console.log(`My favorite order is a ${spiciness[1]} ${type} with some ${side}!`)
 // My favorite order is a medium baingan bharta with some naan!
 ```
 
-Instead of setting variables one-by-one, we can destructure our curry object like this:
+That's a lot of code, writing `const VARIABLENAME = curry.PROPERTYNAME;` over and over. To save time, instead of setting variables one-by-one, we can _destructure_ our curry object like this:
 
 ```javascript
 const { type, side, spiciness } = curry;
@@ -171,7 +171,7 @@ The curly brackets on the left might make you think that this is some kind of ob
 
 Remember, 'cause this might trip you up: When destructuring, the word on the **right hand** side of the assignment (in this case, `curry`) is the thing you want to destructure, and the words between the curly brackets on the **left hand** side (`type`, `side`, `spiciness`) are the properties you want to pull out of the object.
 
-Writing fewer lines of code is nice, but when might you use this yourself? Well, if you remember back to your API projects, chances are you were getting a big object back from the REST API that looked maybe something like this:
+Writing fewer lines of code is nice, but when might you use this yourself? One common example is when working with APIs in your projects; chances are you get a big object back from a REST API that looked maybe something like this:
 
 ```javascript
 // Let's say the JSON Object that we get back from our API looks like this:
@@ -263,7 +263,8 @@ Pretty cool, right? If we had an API call which **only** returned the informatio
 }
 
 const displayResults = function({ food, population, weather, country }) {
-  console.log(`Berlin is a city of ${population} people in ${country}, where they like to eat ${food} in a ${weather} climate.`); }
+  console.log(`Berlin is a city of ${population} people in ${country}, where they like to eat ${food} in a ${weather} climate.`);
+}
 ```
 
 Woah!!
