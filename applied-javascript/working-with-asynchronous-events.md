@@ -118,7 +118,7 @@ myPromise.then( (goodResult) => {
 ```
 
 So, the general idea is like this:
-* A `new Promise` defines what should be returned if a promise is fulfilled, and what should be returned if it is rejected.
+* We use `new Promise` to create and name a promise, and to define what should be returned if it is fulfilled, and what should be returned if it is rejected.
 * We access the returns using methods built into the promise object, `.then()` (when it is fulfilled) and `.catch()` (when it is rejected).
 * Each of the above methods takes a callback. Those callbacks are automatically passed the return from their respective promise outcomes (like we've already seen with `$.ajax` passing data to `.then()`):
   * `.then( (fulfillReturn) => {} );`
