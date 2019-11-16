@@ -88,7 +88,7 @@ To write a promise from scratch, you need three things:
   1. A function that will run when the promise is rejected (promise broken)
 
 ```js
-// here we create the promise and name the functions we will run when the promise is filfulled or rejected
+// here we create the promise and name the functions we will run when the promise is fulfilled or rejected
 const myPromise = new Promise( (fulfill, reject) => {
 
   // here we say what will be returned from the promise if it is fulfilled
@@ -99,7 +99,9 @@ const myPromise = new Promise( (fulfill, reject) => {
 })
 ```
 
-> Capital-P `Promise` is a special kind of object in JavaScript called a _prototype_ that you create a new copy of using the `new` keyword. Promises have some special stuff baked in, which is why you make a copy of the prototype when you want to use one. It's like opening up a preformatted resume in a word processor. More on this in [our lesson on class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md).
+> Capital-P `Promise` is a special kind of object in JavaScript called a _prototype_. When you use invoke the prototype along with the `new` keyword, you create a new copy, or _instance_ of the prototype.
+>
+> Promises have some special stuff baked in, which is why you make a copy of the prototype when you want to use one. It's like opening up a preformatted resume in a word processor. More on this in [our lesson on class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md).
 
 To invoke a promise, you need to let the browser know what happens when the data comes back using the `.then()` method:
 
