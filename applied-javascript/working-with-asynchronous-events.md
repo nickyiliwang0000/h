@@ -117,6 +117,92 @@ myPromise.then( (goodResult) => {
 })
 ```
 
+So, the general idea is like this:
+* A `new Promise` defines what should be returned if a promise is fulfilled, and what should be returned if it is rejected.
+* We access the returns using methods built into the promise object, `.then()` (when it is fulfilled) and `.catch()` (when it is rejected).
+* Each of the above methods takes a callback. Those callbacks are automatically passed the return from their respective promise outcomes (like we've already seen with `$.ajax` passing data to `.then()`):
+  * `.then( (fulfillReturn) => {} );`
+  * `.catch( (rejectReturn) => {} );`
+
+That's the abstract, but it helps to see it in practice. Let's create a new HTML file with some `<script>` tags and write our own promise from scratch.
+
+First we create a variable. In our promise, we will be "waiting" to see if it is true or false:
+
+```js
+const isTherePupHere = true;
+```
+
+Next, we use the `new` keyword to build a promise called `lookForFloof`. Inside our promise, we can use an if-statement to check the value of our variable. This is a bit like waiting to hear the result of an AJAX call - did we get a 200 back (ie. `isTherePupHere === true`)? Or did we get an error (ie. `isTherePupHere === false`)? 
+
+```js
+const lookForFloof = new Promise( () => {
+  
+  if (isTherePupHere) {
+    // Do some stuff if the variable is true
+  } else {
+    // Do some stuff if the variable is false
+  }
+
+});
+```
+
+Once we know, we will want to do something (run a function!) if the promise succeeds or if it fails. The callback that we pass the `Promise` constructor takes two parameters - the names of the success and failure functions that will run in either case. These two functions themselves are defined behind the scenes by the constructor, we do not need to create them in our code:
+
+```js
+const lookForFloof = new Promise( (fulfill, reject) => {
+  
+  if (isTherePupHere) {
+    fulfill(`Pet ittttttttttttt`);
+  } else {
+    reject(`Let's go to the park`);
+  }
+
+});
+```
+
+The argument passed to the fulfill and reject functions are what will be returned in each circumstance (in this case, if the variable is true then we get back a string of "Pet ittttttttttttt", and if it is false, we get back a string of "Let's go to the park").
+
+Our new promise is ready to go. Let's log `lookForFloof` out, just to see that it is returning a promise object.
+
+```js
+console.log(lookForFloof);
+```
+
+Now to put it into use. Let's define a function which will call our promise, and decide what to do with the return. Our promise object has some built-in methods that we can use:
+
+```js
+const promiseMePups = () => {
+  lookForFloof.then().catch();
+}
+```
+
+If the promise resolves (which in this case means the variable is true), then the return from the fulfill function (in this case, our "Pet ittttttttttttt" string) is passed as an argument to the callback of the `.then()` method. If the promise is rejected (the variable is false), then the return from the reject function is passed as an argument to the callback of the `.catch()` method.
+
+We name a parameter in each case, so that we can define what to do with each of the returns:
+
+```js
+const promiseMePups = () => {
+  lookForFloof
+    .then( (yeh) => {
+      console.log(yeh);
+    })
+    .catch( (nah) => {
+      console.log(nah);
+    });
+}
+```
+
+So, in this case, `yeh` will be `"Pet ittttttttttttt"` and `nah` will be `"Let's go to the park"`.
+
+Let's call our function! Try it out, then go up and change the value of isTherePupHere to false, and reload the page to see the promise be rejected.
+
+```js
+promiseMePups();
+```
+
+
+## Using promises in the real world
+
 Promises are supported in all modern browsers, but some older ones may require you to use a promise library; jQuery has one built into it. We're already very familiar with one function that returns a promise: the `$.ajax()` method!
 
 Download [pokemon-promise-example.html](https://hychalknotes.s3.amazonaws.com/pokemon-promise-example.html).
