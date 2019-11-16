@@ -44,7 +44,7 @@ $.ajax({
     dataType: 'jsonp'
   }).then((data) => {
     $.ajax({
-      url: 'api.github.com/user/hackeryou',
+      url: 'api.github.com/user/junocollege',
       type: 'GET',
       dataType: 'jsonp'
     }).then((data) => {
@@ -54,6 +54,18 @@ $.ajax({
         dataType: 'jsonp'
       }).then((data) => {
         // more AJAX calls
+          .then(() => {
+            // and more AJAX calls
+          })
+            .then(() => {
+              // and more and more and more
+            })
+              .then(() => {
+                // never-ending AJAX calls
+              })
+                .then(() => {
+                  // there is no more Juno, there is only AJAX calls
+                })
       });
     });
   });
