@@ -32,7 +32,6 @@ Feel free to choose any topic - just make sure you have it approved before you s
 ### Available:
 ```
 color-adjust
-CSS clip-path
 CSS Masks
 CSS text-path
 CSS variables
@@ -42,22 +41,17 @@ custom tool tips
 cycle.js
 draft.js
 float-labels
-granim.js
 Label & Labelledby
 lodash
 mix-blend-mode
-particle.js
 pointer events
 pose.js
-preloaders
 react autocomplete
 react dnd
 React Joyride
-reveal.js
 scroll-then-fix
 stroke-dash
 SVG Morph
-three.js
 touchstart
 transition-delay
 ```
@@ -88,4 +82,13 @@ night/day mode (aka dark/light mode)
 anime.js
 AMP pages
 brain.js
+three.js
+CSS clip-path
+particle.js
+granim.js
+preloaders
+split.js
+reveal.js
+bookmarklets
+ml5.js
 ```
