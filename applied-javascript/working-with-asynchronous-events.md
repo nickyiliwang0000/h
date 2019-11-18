@@ -10,9 +10,9 @@
 -->
 # Working with asynchronous events
 ## The problem
-Let's say we're building an app that makes two AJAX requests: one for the weather and one for recipes based on the weather. 
+Let's say we're building an app that plans an average, boring day for you. It makes two AJAX requests - one for the weather, and one for recipes to make for dinner. We need both requests to finish before we print the information to the page.
 
-We **could** run the first AJAX request and put the second AJAX request in its callback, so that the second AJAX request only runs when the first one is done. That would look like this:
+We **could** run the first AJAX request and put the second AJAX request in its callback, so that the second AJAX request runs when the first one is done. Then we can pass all the collected data on to a function that will print our info to the page. That would look like this:
 
 ```js
 $.ajax({
@@ -21,17 +21,19 @@ $.ajax({
   dataType: 'jsonp'
 }).then((weatherConditions) => {
   $.ajax({
-    url: 'https://api.recipes.com/'+ weatherConditions,
+    url: 'https://api.recipes.com/category/boring',
     type: 'GET',
     dataType: 'jsonp'
-  }).then((data) => {
-    // do something
+  }).then((recipes) => {
+    emptyLifeApp.printToPage(weatherConditions, recipes);
   });
 });
 ```
-This isn't ideal because we need to wait for the response from `https://www.weather.com/toronto` to come back before we can make a call to `https://api.recipes.com/`, which could be a long time. Also, what if we had to complete 10 API calls in sequence?  
+
+This isn't ideal because we need to wait for the response from `https://www.weather.com/toronto` to come back before we can make a call to `https://api.recipes.com/`, which slows things down; it would be faster if we could send all the calls out at the same time so that they all complete as soon as possible. Also, what if we had to complete 10 API calls in sequence?  
 
 Something like this:
+
 ```js
 $.ajax({
   url: 'https://www.weather.com/toronto',
@@ -39,20 +41,20 @@ $.ajax({
   dataType: 'jsonp'
 }).then((weatherConditions) => {
   $.ajax({
-    url: 'https://api.recipes.com/'+ weatherConditions,
+    url: 'https://api.recipes.com/category/boring',
     type: 'GET',
     dataType: 'jsonp'
-  }).then((data) => {
+  }).then((recipes) => {
     $.ajax({
-      url: 'api.github.com/user/junocollege',
+      url: 'https://api.televisionArchive.com/shows/daytimeShopping',
       type: 'GET',
       dataType: 'jsonp'
-    }).then((data) => {
+    }).then((TVguide) => {
       $.ajax({
-        url: 'developers.facebook.com/api/',
+        url: 'https://developers.paintAndHardware.com/paintDryingTimes',
         type: 'GET',
         dataType: 'jsonp'
-      }).then((data) => {
+      }).then((watchTime) => {
         // more AJAX calls
           .then(() => {
             // and more AJAX calls
@@ -71,7 +73,9 @@ $.ajax({
   });
 });
 ```
+
 Chaining functions like this (i.e. so that they are executed from top to bottom in a file), is lovingly referred to as [callback hell](http://callbackhell.com).
+
 
 ## Promises
 
