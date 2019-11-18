@@ -83,8 +83,8 @@ Rather than putting our AJAX calls (or any code) into callback after callback, w
 
 You can think of a JavaScript promise like a regular, real-life promise. If your best friend promises to make you special a birthday gift, you can reasonably expect to receive that present on your birthday: ✨🎁✨ . It's not your birthday **yet** so they haven't made you a gift **right now**, but by the end of the day on your birthday, you will know if they've done what they promised. 
 
-A _fulfilled_ promise is one where your best friend gives you a gift (or you receive the data you expect from your API).
-A _rejected_ promise is one where your best friend wasn't able to get you a gift (or you don't receive any data from your API).
+A _fulfilled_ promise is one where your best friend gives you a gift (ie. you receive the data you expect from your API).
+A _rejected_ promise is one where your best friend wasn't able to get you a gift (ie. you don't receive any data from your API).
 
 To write a promise from scratch, you need three things:
   1. The `new` keyword
