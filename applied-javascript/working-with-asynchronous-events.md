@@ -79,7 +79,7 @@ Chaining functions like this (i.e. so that they are executed from top to bottom 
 
 ## Promises
 
-Rather than putting our AJAX calls (or any code) into callback after callback, we can queue up what's called a _promise_. A promise [is an object that represents the eventual completion or failure of an asynchronous event](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). 
+Rather than putting our AJAX calls (or any code) into callback after callback, we can queue up what's called a _promise_. A promise is a special JavaScript object [that represents the eventual completion or failure of an asynchronous event](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). 
 
 You can think of a JavaScript promise like a regular, real-life promise. If your best friend promises to make you special a birthday gift, you can reasonably expect to receive that present on your birthday: ✨🎁✨ . It's not your birthday **yet** so they haven't made you a gift **right now**, but by the end of the day on your birthday, you will know if they've done what they promised. 
 
