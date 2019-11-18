@@ -7,73 +7,43 @@ Week 4: jQuery && JavaScript
 < Monday /> 
 * Kickoff
 * Stand-ups
-* JS Review
-* Intro to jQuery
-* jQuery API documentation
+* Spread, Rest and Destructuring
+* Project 4 Presentations
+* Project 4 Introduction
 * 🍴LUNCH 🍴
-* MVP Exercise
-* Project 3 Introduction
-* jQuery best practices
-* jQuery Code-along
+* Understanding API Documentation
+* Code Along: Rijksmuseum API art
+
 
 < Tuesday /> 
-* To-Do App Code Along
-* How to organize your JavaScript
-* 🍴 LUNCH 🍴
-* Design lesson with Fatima
+* Working with Asyncronus Events
+* Intro to Firebase
+* 🍴 LUNCH 🍴 (Accessibility Lunch and Learn with Jen Taylor)
+* Firebase Code-along
 * Project work time (PJWT)
 
 
 < Wednesday /> 
-* Callback Functions
-* Advanced array methods
+* Class Based Programming
+* Lexical Scope and Execution Context
 * 🥗SALAD CLUB 🥗
-* Regular expressions
-* Project work time
+* Career Services Presentation
+* Project work time (PJWT)
 
 
 < Thursday /> 
-* Working with APIs
-* Accessing data with AJAX + When AJAX goes wrong
-* 🍴LUNCH 🍴_(Performance Lunch n Learn w/Henri Helvetica)_
-* AJAX code-along
-* Project work time
-* _6pm Fishbowl Session: jQuery_
+* Project work time (PJWT)
+* 🍴LUNCH 🍴 
+* Project work time (PJWT)
 
 
 < Friday />
-* Midpoint check-ins
-* Project work time
+* _Javascript/Jquery Test_
+* Making our Code Modular
+* Intro to React
 * 🍴LUNCH 🍴
-* Project work time
+* Breaking our app into Components
 * Show ‘n’ Tell
-
-< Sunday />
-* _1-4pm JavaScript Fishbowl Session_ 
-
-### General feedback from the mock tech test
-> Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox,or grids.
-
-🎉 Successes 🎉 
-
-- Almost everyone mentioned the clearfix class on the parent when they're floating children.
-
-- A couple people mentioned that how they grouped the images would depend on how the site is supposed to look on smaller screens and considered how to code the site responsively - nice job!
-
-- Draw all over the picture! Heck yes!
-
-- Lots of people mentioning using CSS classes / reusing code. 👍👍👍
-
-- Great job remembering your setup/reset snippets and wrappers.
-
-- A few people took the time to think about how the images would sit inside their parent container and applying max-width: 100% so that they behaved appropriately.
-
-
-🔨 Things to think about 🔨 
-
-- A couple of people wrote actual HTML/CSS code. Always make sure to read your instructions carefully. Pseudo code shouldn’t have any actual code in it! Remember, with pseudo code we are essentially trying to help organize our thoughts and break down our process into small digestible steps to solve a problem. A Technical interviewer will be looking for your ability to explain technical concepts, not just write the rules to achieve it.
-
-Killed IT! 💥
 
 
 ### Bootcamp calendar

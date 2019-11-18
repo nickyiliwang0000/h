@@ -10,7 +10,7 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 
 We encourage you to use the pair-programming method: both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
 
-Your partners are listed [here]().
+Your partners are listed [here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit?usp=sharing).
 
 ## Project objective
 To show a understanding of jQuery, DOM manipulation, error handling, and UI design. And to demonstrate competence in pair programming and communication.
@@ -75,7 +75,7 @@ In order to secure your site, it's best to see if your host offers SSL certifica
 If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.22-fetching-data-with-something-other-than%24.ajax.md#axios-with-a-proxy-server).
 
 ## Project proposals
-Once you have a good idea, we want you to fill out a [scope outline document]() and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
+Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/e/1FAIpQLSdUE0-IGQ2Fxd94dXi5luIc1sfAHJ4bDWYelzln2lsgdOGYdQ/viewform) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
 
@@ -117,10 +117,10 @@ You will also be given individual marks for your project presentation:
 
 1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project.     
   * (You don't have to rename your org if its naming convention doesn't match)
-1. Remove any unneeded files from the project.
-1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Deploy your website to GitHub Pages or on your own domain/subdomain.
-1. Submit your repo URL and live URL using [the project submission form]().
+2. Remove any unneeded files from the project.
+3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
+4. Deploy your website to GitHub Pages or on your own domain/subdomain.
+5. Submit your repo URL and live URL using [the project submission form]().
 
 ## #design in Helpcue
 
