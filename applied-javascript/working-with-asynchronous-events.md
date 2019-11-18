@@ -58,16 +58,16 @@ $.ajax({
         // more AJAX calls
           .then(() => {
             // and more AJAX calls
-          })
             .then(() => {
               // and more and more and more
-            })
               .then(() => {
                 // never-ending AJAX calls
-              })
                 .then(() => {
                   // there is no more Juno, there is only AJAX calls
                 })
+              })
+            })
+          })
       });
     });
   });
