@@ -508,7 +508,7 @@ We just want that `DataObject`, since that's the successful result of our API ca
 ```javascript
 $.when(...pokeBag)
   .then((...fulfilledPokes) => {
-    justTheGoodStuff = fulfilledPokes.map(pokemon => {
+    const justTheGoodStuff = fulfilledPokes.map(pokemon => {
       return pokemon[0];
     });
     console.log(justTheGoodStuff);
@@ -520,7 +520,7 @@ Now we just have an array of the data we want. Let's print out all 40 of our Pok
 ```javascript
 $.when(...pokeBag)
   .then((...fulfilledPokes) => {
-    justTheGoodStuff = fulfilledPokes.map(pokemon => {
+    const justTheGoodStuff = fulfilledPokes.map(pokemon => {
       return pokemon[0];
     });
     
