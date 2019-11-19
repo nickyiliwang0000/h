@@ -72,7 +72,7 @@ Previous projects by HackerYou students have included the use of geolocation in 
 
 In order to secure your site, it's best to see if your host offers SSL certificates, or use a third-party service like [Cloudflare](https://www.cloudflare.com/plans). If this isn't possible, GitHub offers free hosting of sites with secured certificates. Ask an instructor to help you down this path. If you DO host your project on a domain that has `https` you will need to make sure any thing that you link or and AJAX requests that you make have a domain that is `https`. Otherwise you will get errors when it is deployed!
 
-If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.22-fetching-data-with-something-other-than%24.ajax.md#axios-with-a-proxy-server).
+If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md).
 
 ## Project proposals
 Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/e/1FAIpQLSdUE0-IGQ2Fxd94dXi5luIc1sfAHJ4bDWYelzln2lsgdOGYdQ/viewform) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
@@ -120,7 +120,7 @@ You will also be given individual marks for your project presentation:
 2. Remove any unneeded files from the project.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages or on your own domain/subdomain.
-5. Submit your repo URL and live URL using [the project submission form]().
+5. Submit your repo URL and live URL using [the project submission form](https://forms.gle/uz61731hriRM8eDx6).
 
 ## #design in Helpcue
 
