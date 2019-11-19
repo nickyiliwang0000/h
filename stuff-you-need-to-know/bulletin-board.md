@@ -2,7 +2,7 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 4: jQuery && JavaScript
+Week 5: jQuery && JavaScript
 
 < Monday /> 
 * Kickoff
