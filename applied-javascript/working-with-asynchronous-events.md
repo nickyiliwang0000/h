@@ -222,6 +222,7 @@ $.ajax({
     console.log(data)
 });
 ```
+
 ...we're **storing the AJAX request in a variable**. Doing so tells our code that we **promise** we won't try to  run the `.then()` function without knowing what the AJAX call returned. It's important to note that the variable **does not yet** contain the returned data.
 
 ```js
@@ -235,7 +236,8 @@ pokemonApp.getPokemon = $.ajax({
   dataType: 'JSON',
 });
 ```
-The JavaScript method `.then()` tells the browser what to do with the data returned from the promise.
+
+The jQuery method `.then()` tells the browser what to do with the data returned from the promise.
 
 ```js
 const pokemonApp = {};
@@ -253,7 +255,7 @@ pokemonApp.getPokemon.then((caughtPokemon) => {
 ```
 
 ### Listening for success and failure
-Sometimes, APIs don't return the information we want. Right now we have no way to deal with that! We've only written callback functions that assume we have response data from the API. Luckily, the `.then()` method accepts **two** callback functions. We've been providing one that specifies what to do when the promise is fulfilled (i.e. _successful_). We can also provide one that says what to do when the promise is rejected (i.e. _fails_).
+Sometimes, APIs don't return the information we want. Up to now we didn't have a way to deal with that, and we've only written callback functions that assume we have response data from the API. One way to handle this is inside the `.then()` method itself, which actually accepts **two** callback functions. We've been providing one that specifies what to do when the promise is fulfilled (i.e. _successful_), but we can also provide one that says what to do when the promise is rejected (i.e. _fails_).
 
 Here's an example of a `.then()` function with two callbacks: the first one (the fulfill callback) has a parameter called `caughtPokemon`, and the second one (the reject callback) takes the argument that's passed as the `err` parameter and logs it:
 
@@ -266,7 +268,7 @@ pokemonApp.getPokemon
   });
 ```
 
-This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`. However, because we are using jQuery, we need to use their specific implementation of the failure handler known as `fail()`:
+This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`. However, because we are using jQuery, we need to use their specific implementation of the failure handler known as `.fail()`:
 
 ```js
 pokemonApp.pokemon
@@ -282,7 +284,7 @@ pokemonApp.pokemon
 
 ### Working with multiple promises
 
-Imagine we want to catch two Pokémon and then console log the contents of the Poké ball that contains both of them **only when** they are both comfortably inside. (This was [heavily](https://bulbapedia.bulbagarden.net/wiki/Bag) [researched](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Ball), don't argue about how they fit.)
+Imagine we want to catch two Pokémon and then console log the contents of the Poké ball that contains both of them only when they are **both** comfortably inside. (This was [heavily](https://bulbapedia.bulbagarden.net/wiki/Bag) [researched](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Ball), don't argue about how they fit.)
 
 ```js
 // create a variable to hold the first promise
@@ -300,7 +302,7 @@ pokemonApp.pokemonTwo = $.ajax({
 });
 ```
 
-The jQuery $.when() method is helpful when we are listening for the fulfillment or rejection of multiple promises:
+jQuery has a `$.when()` method, which is helpful when we are listening for the fulfillment or rejection of multiple promises:
 
 ```js
 // when we get BOTH pokemon (i.e. when BOTH promises are settled)
@@ -318,9 +320,31 @@ $.when(pokemonApp.pokemonOne, pokemonApp.pokemonTwo)
     console.log(err1, err2);
   });
 ```
+
 We create promises called `pokemonApp.pokemonOne` and `pokemonApp.pokemonTwo` and pass them as a comma-separated list to the `$.when()` function. Once they are settled, we pass the returned data as arguments to the `.then()` function, which logs the data to the console.
 
-#### Let's get a whole bunch of Pokémon
+#### A note on `$.when()` and multiple promises
+
+Our `caughtPokemonOne` and `caughtPokemonTwo` contain our successful API results, but also some other things; they're arrays. This is because if the `$.when()` method is given more than one promise, it returns each as a three-item array structured like this:
+
+```javascript
+[DataObject, Status, Original_Promise]
+```
+
+We just want that `DataObject`, since that's the successful result of our API call. We can use bracket notation to log out only the thing we want:
+
+```js
+$.when(pokemonApp.pokemonOne, pokemonApp.pokemonTwo)
+  .then((caughtPokemonOne, caughtPokemonTwo) => {
+    console.log(caughtPokemonOne[0], caughtPokemonTwo[0]);
+  })
+  .fail((err1, err2) => {
+    console.log(err1, err2);
+  });
+```
+
+
+### Let's get a whole bunch of Pokémon
 Let's get all the Pokémon from 1-40. We could write a function that takes a number as an argument and will make the request for that Pokémon:
 
 ```js
@@ -359,7 +383,7 @@ beedrill is Pokémon number 15.
 
 They are out of order! The problem here is that we are making a whole bunch of requests and since these are **asynchronous** calls, they are not guaranteed to come back in order.
 
-### Making sure the order matters
+#### Making sure the order matters
 
 How do we make sure we get the pocket monsters back in order? First let's change the `getPokemon` function to return an AJAX call using `$.ajax()` and remove the `.then()` method. 
 
@@ -410,7 +434,7 @@ There are two problems here for us to work through though:
 So, we need to separate items out of an array to pass them as separate arguments, and then we will need to gather all the individual arguments passed to a function up into a new array. To do each of these, we can use the [spread operator](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md#spread-operator), then [rest parameters](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md#rest-parameters).
 
 
-### Spread and rest
+#### Spread and rest
 
 To give `$.when()` access to each of the individual promise objects inside our `pokeBag` array, we will use the spread operator, which allows us to use its `...` syntax to pass an array of arguments into a function as if we were doing it manually one-by-one.
 
@@ -466,15 +490,16 @@ $.when(...pokeBag)
 ```
 
 
-### Finishing up
+#### Finishing up
 
-Our `fulfilledPokes` array contains our successful API results, but also some other things; it is an array of arrays, or a _multi-dimensional array_. This is because if the `$.when` method is given more than one promise, it returns each as a three-item array - something like this:
+Our `fulfilledPokes` array contains our successful API results, but also some other things; it is an array of arrays, or a _multi-dimensional array_. Remember, if the `$.when` method is given more than one promise, it returns each as a three-item array. So now, we have something like this:
 
 ```javascript
 [
   [DataObject, Status, Original_Promise],
   [DataObject, Status, Original_Promise],
-  [DataObject, Status, Original_Promise]
+  [DataObject, Status, Original_Promise],
+  // (etc.)
 ]
 ```
 
