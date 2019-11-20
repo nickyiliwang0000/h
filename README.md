@@ -137,14 +137,14 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Working with asynchronous events](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/working-with-asynchronous-events.md)
 * [Intro to Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/intro-to-firebase.md)
 * [Class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md)
-* [Advanced JS: lexical scope and execution context](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md)
+* [Lexical scope and execution context](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md)
 * [Fetching data with something other than $.ajax](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md)
 * [Making our code more modular](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/making-our-code-more-modular.md)
 
 ### React and firebase
 * [Intro to React](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/intro-to-react.md)
 * [Breaking our app into components](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/breaking-our-app-into-components.md)
-* [Events](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/events.md)
+* [Events and State](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/events.md)
 * [Lifecycles](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/lifecycles.md)
 * [Props](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/props.md)
 * [Function components](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/function-components.md)
