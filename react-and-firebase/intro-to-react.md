@@ -245,7 +245,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
 * Each JSX element must return **only one** HTML element (we'll be using `<div>` for most of the class, but you may see `<Fragment>` in the wild).
 
-* In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, it's `render` method).
+* In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, its `render` method).
 
 * One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI  _conditionally_. 
 
