@@ -302,7 +302,7 @@ We'd create a new `SearchBar.js` file:
 ```jsx
 //SearchBar.js
 
-class SearchBar extends React.Component {
+class SearchBar extends Component {
   render() {
     return (
       <input type="text" placeholder="Enter your search term" name="search" />
