@@ -15,7 +15,7 @@ Your partners are listed [here](https://docs.google.com/spreadsheets/d/12P9pcvsR
 ## Project objective
 To show a understanding of jQuery, DOM manipulation, error handling, and UI design. And to demonstrate competence in pair programming and communication.
 
-### APIs built by people in the HackerYou community
+### APIs built by people in the Juno community
 * [Makeup API](https://makeup-api.herokuapp.com/)
 * [Drag Race API](https://drag-race-api.readme.io/docs)
 * [Harry Potter API](https://potterapi.com/)
@@ -68,7 +68,7 @@ There are lots of other public APIs to explore [here](https://github.com/toddmot
 ```
 
 ### Gotchas
-Previous projects by HackerYou students have included the use of geolocation in their projects. In the past, this was an easy process, but recently Google has introduced properties in their browser that blocks this ability unless the domain is secured by an SSL certificate. Using geolocation will work locally, but unfortunately will not work on your live site unless it is secure.
+Previous projects by Juno students have included the use of geolocation in their projects. In the past, this was an easy process, but recently Google has introduced properties in their browser that blocks this ability unless the domain is secured by an SSL certificate. Using geolocation will work locally, but unfortunately will not work on your live site unless it is secure.
 
 In order to secure your site, it's best to see if your host offers SSL certificates, or use a third-party service like [Cloudflare](https://www.cloudflare.com/plans). If this isn't possible, GitHub offers free hosting of sites with secured certificates. Ask an instructor to help you down this path. If you DO host your project on a domain that has `https` you will need to make sure any thing that you link or and AJAX requests that you make have a domain that is `https`. Otherwise you will get errors when it is deployed!
 

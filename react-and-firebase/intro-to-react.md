@@ -400,6 +400,6 @@ Now, when we use the `npm start` command, the `npm-run-all` package will set up 
 To animate components, the React documentation suggests [React Motion](https://github.com/chenglou/react-motion) and [React Transition Group](https://reactcommunity.org/react-transition-group/).
 
 ### Additional Resources
-* [React for Beginners](https://reactforbeginners.com/) (taught by HackerYou instructor Wes Bos!)
+* [React for Beginners](https://reactforbeginners.com/) (taught by Juno instructor Wes Bos!)
 * [Learning React: Getting Started and Concepts](https://scotch.io/tutorials/learning-react-getting-started-and-concepts)
 * [Hello World in React](http://codepen.io/gaearon/pen/ZpvBNJ?editors=0010) (a CodePen you can play around with)

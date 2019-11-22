@@ -91,4 +91,4 @@ With all of these grid systems, you will need to download or link the needed CSS
 
 Within the development world, CSS frameworks exist to help members of the community prototype and design quickly. Two of the most popular frameworks that exist are [Bootstrap](http://getbootstrap.com/) and [Foundation](http://foundation.zurb.com/).
 
-While HackerYou doesn't go into detail with these framework grids, it's important to note that you **already know how to use them**. The frameworks are a collection of pre-written CSS that you apply through the use of HTML and classes. 
+While Juno doesn't go into detail with these framework grids, it's important to note that you **already know how to use them**. The frameworks are a collection of pre-written CSS that you apply through the use of HTML and classes. 

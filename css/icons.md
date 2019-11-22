@@ -73,7 +73,7 @@ Screen readers and other assistive technologies are able to read icons. Using th
 Sometimes we want our icons to be read out by screen readers. If your icons have semantic meaning, Font Awesome recommends adding a few more things to make your icons more accessible. We need to add `aria-hidden="true"` to the icon to hide it from screen readers, and supplement it with a `span`.  What you put between the span tags will get read out by screen readers. Then we add a class of `sr-only` to the `span`. Font Awesome deals the with the styling for `sr-only` and will **visually** hide the span from users. Still with us? No? Let's check out an example:
 
 ```html
-<h2>From HackerYou to Loblaws:</h2>
+<h2>From Juno to Loblaws:</h2>
 <i class="fas fa-walking" aria-hidden="true"></i>
 <span class="sr-only">Time by walking:</span>
 <p>4 minutes</p>
@@ -90,7 +90,7 @@ The walking icon and bike icon have semantic meaning. By creating the `span`, we
 Another way to make your icons accessible is using the `aria-label` attribute. This is great for interactive elements. For example, lots of sites use icons to link users to their social media. Be sure to make these icons accessible, as you want people to know they serve a purpose and are clickable:
 
 ```html
-<a href="https://www.instagram.com/thisishackeryou" aria-label="Go to HackerYou's Instagram page">
+<a href="https://www.instagram.com/junocollege" aria-label="Go to Juno College's Instagram page">
   <i aria-hidden class="fab fa-instagram"></i>
 </a>
 ```
