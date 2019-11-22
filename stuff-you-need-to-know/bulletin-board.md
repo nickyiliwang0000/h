@@ -2,48 +2,45 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 5: jQuery && JavaScript
+Week 6: React!!!
 
 < Monday /> 
 * Kickoff
 * Stand-ups
-* Spread, Rest and Destructuring
-* Project 4 Presentations
-* Project 4 Introduction
+* Events and State
 * 🍴LUNCH 🍴
-* Understanding API Documentation
-* Code Along: Rijksmuseum API art
-
-
-< Tuesday /> 
-* Working with Asyncronus Events
-* Intro to Firebase
-* 🍴 LUNCH 🍴 (Accessibility Lunch and Learn with Jen Taylor)
-* Firebase Code-along
+* Lifecycle Methods
 * Project work time (PJWT)
 
 
+< Tuesday /> 
+_Project 4 Due @ 10am_
+* Props
+* 🍴 LUNCH 🍴
+* Project 4 Presentations
+* Project 5 Introduced
+* Function Components
+
+
 < Wednesday /> 
-* Class Based Programming
-* Lexical Scope and Execution Context
+* Using Firebase with React
 * 🥗SALAD CLUB 🥗
-* Career Services Presentation
 * Project work time (PJWT)
 
 
 < Thursday /> 
-* Project work time (PJWT)
+* Github Pages and React
 * 🍴LUNCH 🍴 
 * Project work time (PJWT)
+* _6pm React Fishbowl Session_
 
 
 < Friday />
-* _Javascript/Jquery Test_
-* Making our Code Modular
-* Intro to React
+* React & API's Code Along
 * 🍴LUNCH 🍴
-* Breaking our app into Components
-* Show ‘n’ Tell
+* Code Along cont...
+* Project work time (PJWT)
+
 
 ### Mock Test Feedback
 > Given the object below, how would you go about finding the key that has the highest value?
