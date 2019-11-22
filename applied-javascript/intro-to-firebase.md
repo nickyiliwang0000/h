@@ -249,7 +249,7 @@ No problem! We're pushing a complete copy of the `userSettings` object with all 
 
 ```js
 const moreUserSettings = {
-  company:'HackerYou',
+  company:'JunoCollege',
   coursesTaught: {
     fall:'bootcamp',
     winter:'bootcamp',

@@ -30,7 +30,7 @@ We ask that you do not add questions when HelpCue is closed. We will be deleting
 ## HelpCue etiquette
 ### What to do before asking your question...
 1. Reflect! Ask yourself what are you trying to do. What do you know so far? Has the browser provided any errors?
-2. Try solving it on your own first. Is there something in the HackerYou notes that might help? Have you googled the problem and tried some of the suggestions? Read the documentation!
+2. Try solving it on your own first. Is there something in the Juno notes that might help? Have you googled the problem and tried some of the suggestions? Read the documentation!
 3. Think of how you can word this issue to someone who doesn’t know as much about on what you’re currently working on.
 
 ## Question template

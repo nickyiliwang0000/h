@@ -80,8 +80,8 @@ If you want to concatenate strings together you can use the `+` operator.
 ```js
 const name = "Ryan";
 const job = "Instructor";
-const sentence = name + " works at HackerYou as an " + job;
-console.log(sentence);// "Ryan works at HackerYou as an Instructor"
+const sentence = name + " works at Juno as an " + job;
+console.log(sentence);// "Ryan works at Juno as an Instructor"
 ```
 
 To create a template literal string, we use the backtick `` ` `` in place of the quotes. 
@@ -96,8 +96,8 @@ They behave exactly the same, but there is one difference. With a template liter
 ```js
 const name = `Ryan`;
 const job = `Instructor`;
-const sentence = `${name} works at HackerYou as an ${job}`;
-console.log(sentence);// "Ryan works at HackerYou as an Instructor"
+const sentence = `${name} works at Juno as an ${job}`;
+console.log(sentence);// "Ryan works at Juno as an Instructor"
 ```
 
 Notice the `${}` syntax inside of the string, this is a template expression. It allows us to template out our strings, and the browser will replace the `${}` expression with the proper value at runtime. This makes concatenating large strings a lot more enjoyable.

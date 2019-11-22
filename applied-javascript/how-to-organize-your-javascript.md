@@ -28,7 +28,7 @@ Another reason to organize your code is to avoid conflicts with other plugins or
 ```js
 const twitter = 'http://twitter.com'; //created by the widget
 /* ... lots of other code ... */
-const twitter = '@thisishackeryou'; //created by you
+const twitter = '@junocollege'; //created by you
 ```
 
 Since variables can be reassigned in JavaScript, we've gone ahead and reassigned the widget's variable and most likely broken it!  Again, we can fix this through better organization.
@@ -99,7 +99,7 @@ This creates what's called a **namespace** for our code. All your variables and 
 We can now add our twitter variable as a property on the `myApp` object.
 
 ```js
-myApp.twitter = 'thisishackeryou';
+myApp.twitter = 'junocollege';
 ```
 
 We can store entire functions in our app object the same way.
@@ -121,7 +121,7 @@ You can add as many variables and functions as you need to keep your code organi
 ```js
 const myApp = {};
 
-myApp.twitterHandle = 'thisishackeryou';
+myApp.twitterHandle = 'junocollege';
 myApp.numberOfTweets = 3;
 myApp.includeRetweets = false;
 

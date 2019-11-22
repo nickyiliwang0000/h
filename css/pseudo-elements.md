@@ -66,7 +66,7 @@ Changing the example above to `display: block` allows the pseudo-element to acce
 
 We can also make more complex shapes using pseudo-elements, shapes which are otherwise impossible in CSS. By using borders with before/after elements, we can create triangles, hexagons, etc.
 
-For a tutorial on how to create these shapes, read <a href="https://medium.com/@jenthorn_/how-to-make-a-hexagon-in-css-8ee61d5ebae5" target="_blank">How to make a Hexagon in CSS</a> by HackerYou alumni, <a href="http://jenthorn.ca" target="_blank">Jen Thorn</a>.
+For a tutorial on how to create these shapes, read <a href="https://medium.com/@jenthorn_/how-to-make-a-hexagon-in-css-8ee61d5ebae5" target="_blank">How to make a Hexagon in CSS</a> by Juno alumni, <a href="http://jenthorn.ca" target="_blank">Jen Thorn</a>.
 
 Check out <a href="https://css-tricks.com/animation-css-triangles-work/" target="_blank">this link and find the video that explains how we can use borders to create triangles in CSS!</a>
 

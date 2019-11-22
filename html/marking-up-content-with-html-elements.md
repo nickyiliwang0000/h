@@ -349,7 +349,7 @@ Anchor tags have an `href` attribute which tells the browser where the user will
 ```html
   <!-- Links to other sites -->
   <a href="http://google.com">Search on Google</a>
-  <a href="https://hackeryou.com">Visit the HackerYou site!</a>
+  <a href="https://junocollege.com">Visit the Juno College site!</a>
 
   <!-- Links within our website -->
   <a href="about.html">Visit my about page</a>
@@ -403,12 +403,12 @@ Table tags used to be how everyone laid out their web pages.
   <tr>
     <td>17 March</td>
     <td>Demo Night!</td>
-    <td>HackerYou Main Classroom</td>
+    <td>Juno Main Classroom</td>
   </tr>
   <tr>
     <td>19 March</td>
     <td>Industry Day</td>
-    <td>HackerYou Main Space</td>
+    <td>Juno Main Space</td>
   </tr>
 </table>
 ```
@@ -435,7 +435,7 @@ The value passed into the attribute is what is known as a _class name_ and shoul
 
 ```html
 <div class="banner">
-    <h1>Welcome to HackerYou!</h1>
+    <h1>Welcome to Juno!</h1>
 </div>
 <header>
   <h2 class="sectionHeaderText">Isn't HTML the best?</h2>
@@ -488,7 +488,7 @@ The `src` attribute is used to pass in the source of an element. It is most comm
 The `href` attribute stands for *hypertext reference* and is used in anchor links.  The value of the `href` attribute is the path to where the link should take the user.
 
 ```html
-<a href="https://www.hackeryou.com">HackerYou</a>
+<a href="https://www.junocollege.com">Juno College</a>
 ```
 
 #### alt  
