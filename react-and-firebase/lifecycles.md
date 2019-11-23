@@ -25,13 +25,13 @@ Whenever a React component gets added to the DOM, it's called _mounting_. We say
 
 When a React component is removed from the DOM, it's called _unmounting_. We say that that component successfully _unmounted_.
 
-There are many React lifecycle methods (see [The Component Lifecycle](https://facebook.github.io/react/docs/react-component.html), visualized here:
+There are many React lifecycle methods (see [The Component Lifecycle](https://facebook.github.io/react/docs/react-component.html)), visualized here:
 
 ![react component lifecycle methods](https://hychalknotes.s3.amazonaws.com/react-lifecycle-diagram.jpg)
 
 You don't need to know all of these methods, especially when first starting out. We're going to focus on some of the most important and commonly used ones. 
 
-When a component is mounted to the DOM, three lifecycle methods are called:
+When a component is mounted to the DOM, three lifecycle methods are called, always in this order:
 
 * **constructor()** - This is where you do things like set initial state and bind any functions to your component.
 * **render()** - This is where you determine what gets displayed to the page.
@@ -39,7 +39,8 @@ When a component is mounted to the DOM, three lifecycle methods are called:
 
 When a component updates because its state or prop values were changed, this lifecycle method is called:
 
-* **componentDidUpdate()** - This is where you can operate on the DOM and make network requests. **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
+* **componentDidUpdate()** - This is where you can operate on the DOM and make network requests.
+  * **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
 
 When a component is unmounted from the DOM, this one lifecycle method is called:
 * **componentWillUnmount()** This is where you stop any recurrent logic associated with that component (like a timer or a recurring API call).
