@@ -41,6 +41,8 @@ _Project 4 Due @ 10am_
 * Code Along cont...
 * Project work time (PJWT)
 
+< SUNDAY />
+* _1pm React Fishbowl Session_
 
 ### Mock Test Feedback
 > Given the object below, how would you go about finding the key that has the highest value?
