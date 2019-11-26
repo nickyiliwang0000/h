@@ -48,7 +48,6 @@ pointer events
 pose.js
 react autocomplete
 react dnd
-React Joyride
 scroll-then-fix
 stroke-dash
 SVG Morph
@@ -91,4 +90,5 @@ split.js
 reveal.js
 bookmarklets
 ml5.js
+React Joyride
 ```

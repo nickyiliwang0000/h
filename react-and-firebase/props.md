@@ -8,8 +8,7 @@ Think about props as the options or configuration settings for a specific compon
 
 ## An example of props: Toronto parks
 
-Let's reopen our first-ever React app, the one with the `Welcome to the Toronto Parks' website`
- header. Imagine we're building an application for the city that shows off our city parks. Every week, a different one of the parks is featured.
+Let's imagine we're building an application for the city that shows off our city parks. Every week, a different one of the parks is featured.
 
 We might make a component that looks like this:
 
