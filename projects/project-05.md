@@ -24,10 +24,9 @@ This application could be a:
 Your data should come from an API or be stored in Firebase.
 
 ### Some previous examples
-* [Catbot](https://catbot-29276.firebaseapp.com/)
+* [Palette Creatore](https://snapswatch-f84d0.firebaseapp.com/)
 * [Filtergram](https://filtergram-62c8d.firebaseapp.com/)
 * [Online Dating](http://onlinedating.esmecodes.com/)
-* [Digital zine](http://www.ritasolo.com/digitalzine/)
 
 ## Project objective
 To show a understanding of React basic concepts (e.g. state, props, components) as well as error handling and UI design. 
