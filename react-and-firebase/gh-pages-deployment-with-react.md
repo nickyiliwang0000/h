@@ -41,7 +41,7 @@ Further down in the `package.json` file, we are going to add two new commands to
 
 ```bash
 "scripts": {
-  "predeply": "npm run build",
+  "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "start": "react-scripts start",
 },
