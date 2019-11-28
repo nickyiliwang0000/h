@@ -1,4 +1,4 @@
-# Gh-pages deployment with React
+# Deploying with GitHub pages
 
 ## Steps
 
