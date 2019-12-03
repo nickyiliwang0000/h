@@ -54,7 +54,7 @@ If you have not gotten an instructor's approval on a scope document by Thursday,
 * It is clear to the user what the app does
 * App and interactions are accessible
 * Errors are handled effectively
-* Site is live on Firebase Hosting, student's own URL or GitHub Pages
+* Site is live on student's own URL or GitHub Pages
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed (including console.log)

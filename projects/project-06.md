@@ -29,7 +29,7 @@ Since we are also nearing the end of Helpcue, we'll be encouraging you even more
 * It is clear to the user what the app does
 * App and interactions are accessible
 * Errors are handled effectively
-* Site is live on Firebase Hosting, student's own URL or GitHub Pages
+* Site is live on student's own URL or GitHub Pages
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 * Extraneous code is removed (including console.log)
@@ -50,20 +50,20 @@ Note that each student will be given about a minute to speak during the presenta
 
 * **End of day Wednesday:** Organization set up on GitHub, wireframes, game plan/pseudo code and successful return of data from API (if applicable) 
 * **End of day Friday:** Beta version of the app
-* **End of day Tuesday** Project live on Firebase hosting (highly recommended if you are using React Router), or your own domain
+* **End of day Tuesday** Project live on gh-pages (highly recommended if you are using React Router), or your own domain
 
 Commit early, commit often.
 
 ## Which project do I do?
 You will be provided with a client brief that includes some requirements as well as a style guide that you need to follow.
 
-Find your group [here]() in the 'Project 6' tab. Client briefs are linked to the group headings.
+Find your group [here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit#gid=1112317742) in the 'Project 6' tab. Client briefs are linked to the group headings.
 
 Your instructors are your clients. They're human! Talk to them! If you want to change something, if you run into a problem, if you have questions about your brief, or if you have an idea about how to do something better because of the data you're getting, **get an instructor to sign off on any changes you want to make**.
 
 ## Submitting your project
 1. Deploy your website to Firebase Hosting or your own domain/subdomain.
-1. One person from the group will submit your repo URL and live URL using [the project submission form]().
+1. One person from the group will submit your repo URL and live URL using [the project submission form](http://bit.ly/HYsubmissions).
 
 ## #design in Helpcue
 
