@@ -28,7 +28,7 @@ The current standard page structure is below:
 </html>
 ```
 
-You can view this in your browser or code editor by downloading [hello-world.html](https://hychalknotes.s3.amazonaws.com/hello-world.html).
+You can view this in your browser or code editor by downloading [hello-world.html](https://hychalknotes.s3.amazonaws.com/hello-world.html). To download the file rather than having it open in a new tab, make sure you right-click and 'Save link as...'
 
 The base structure of a web page is something that you will not be expected to type by hand, but it's important to become familiar with it and understand what each portion of the code does.
 

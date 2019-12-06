@@ -60,7 +60,9 @@ To get an icon on your page, use the repurposed `<i>` tag. (Remember that it use
 
 ![Font Awesome documentation of icon types](https://hychalknotes.s3.amazonaws.com/font-awesome-doc.png)
 
-Using the Font Awesome [documentation](https://fontawesome.com/icons), add the correct icons to [this file](https://hychalknotes.s3.amazonaws.com/font-awesome-with-css.html) and change their colors. Icons can be styled just like any other element.
+## Exercise
+
+Using the Font Awesome [documentation](https://fontawesome.com/icons), add the correct icons to [this file](https://hychalknotes.s3.amazonaws.com/font-awesome-with-css--bootcamp.zip) and change their colors. Icons can be styled just like any other element.
 
 ## Accessibility and icons
 Screen readers and other assistive technologies are able to read icons. Using the `aria-hidden` attribute we can define which icons should be read out and which ones should be ignored. If `aria-hidden` is set to true, screen readers will know to skip the element. If an icon is used for decorative purposes, we most likely do not want it to be read out by screen readers, so we will want to add `aria-hidden="true"` to our `i` element.

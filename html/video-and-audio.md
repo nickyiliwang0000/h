@@ -39,9 +39,9 @@ As of March 2019, these are the rules for autoplay of video on desktop:
 browser | allow `autoplay` with sound | allow `autoplay` with sound with `controls` | allow `autoplay` with `muted` 
 ---|:---:|:---:|:---:
 Safari| no | yes | yes
-Firefox| no | yes| yes
+Firefox| no | no | yes
 Chrome| no | no | yes
-IE| | |
+
 
 [More on the specifics of `video`](https://caniuse.com/#search=video) attributes.
 
