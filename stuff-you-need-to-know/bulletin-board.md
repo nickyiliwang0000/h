@@ -20,7 +20,8 @@ Week 8: Finishing Client Projects and Looking towards the future!
 
 
 < Wednesday /> 
-_Project 6 Due @ 10am_
+
+* _Project 6 Due @ 10am_
 * Project 6 Presentations
 * Final Project Introduced
 * 🌮 TACO CLUB 🌮
@@ -34,8 +35,8 @@ _Project 6 Due @ 10am_
 * 🍴LUNCH 🍴
 * Week 9 Overview
 * Project Clean-Up/Resume Work Time
-_Portfolio Theme Due for Approval @ 1pm_
-_Extra-Curricular: Design Fishbowl - 6pm to 8pm_
+* _Portfolio Theme Due for Approval @ 1pm_
+* _Extra-Curricular: Design Fishbowl - 6pm to 8pm_
 
 
 < Friday />
