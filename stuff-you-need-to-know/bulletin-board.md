@@ -2,7 +2,7 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 7: Advanced React and Client Projects
+Week 8: Finishing Client Projects and Looking towards the future!
 
 < Monday /> 
 * Kickoff
@@ -15,29 +15,36 @@ Week 7: Advanced React and Client Projects
 < Tuesday /> 
 * Project work time (PJWT)
 * 🍴 LUNCH 🍴
-_Project 5 Due @ 1pm_
-* Project 5 Presentations
-* Project 6 Introduced
-* Branching and Pull Request Demo
+* Project work time (PJWT)
+
 
 
 < Wednesday /> 
-* React Router
-* 🥗SALAD CLUB 🥗
-* Code-along: TMDB API and React Router
+_Project 6 Due @ 10am_
+* Project 6 Presentations
+* Final Project Introduced
+* 🌮 TACO CLUB 🌮
+* Project Clean Up Time
+
 
 
 < Thursday /> 
-* Project work time (PJWT)
-* 🍴LUNCH 🍴 
-* Project work time (PJWT)
+* Resume Lesson with Chi Chi & Charlotte
+* Job Seeker intro with Chi Chi & Charlotte
+* 🍴LUNCH 🍴
+* Week 9 Overview
+* Project Clean-Up/Resume Work Time
+_Portfolio Theme Due for Approval @ 1pm_
+_Extra-Curricular: Design Fishbowl - 6pm to 8pm_
 
 
 < Friday />
-_React Test_
-* Project work time (PJWT)
+* Mock Tech Test
+* Feedback Form
+* Work on Portfolios
 * 🍴LUNCH 🍴
-* Project work time (PJWT)
+* Work on Portfolios
+ * Final Show ‘n’ Tell 😢
 
 ### Mock Test Feedback
 > Write 1-2 sentences explaining what a map function does AND write 4-10 lines of pseudo code that break down each step.
