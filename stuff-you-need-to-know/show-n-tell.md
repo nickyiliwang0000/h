@@ -40,13 +40,10 @@ custom SVGs
 custom tool tips
 cycle.js
 draft.js
-float-labels
 Label & Labelledby
 lodash
-mix-blend-mode
 pointer events
 pose.js
-react autocomplete
 react dnd
 scroll-then-fix
 stroke-dash
@@ -91,4 +88,8 @@ reveal.js
 bookmarklets
 ml5.js
 React Joyride
+float-labels
+mix-blend-mode
+react autocomplete
+tilt.js
 ```
