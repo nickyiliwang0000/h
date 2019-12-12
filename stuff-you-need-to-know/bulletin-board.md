@@ -4,31 +4,6 @@
 ### Schedule
 Week 8: Finishing Client Projects and Looking towards the future!
 
-< Monday /> 
-* Kickoff
-* Stand-ups
-* Project work time (PJWT)
-* 🍴LUNCH 🍴
-* Project work time (PJWT)
-
-
-< Tuesday /> 
-* Project work time (PJWT)
-* 🍴 LUNCH 🍴
-* Project work time (PJWT)
-
-
-
-< Wednesday /> 
-
-* _Project 6 Due @ 10am_
-* Project 6 Presentations
-* Final Project Introduced
-* 🌮 TACO CLUB 🌮
-* Project Clean Up Time
-
-
-
 < Thursday /> 
 * Resume Lesson with Chi Chi & Charlotte
 * Job Seeker intro with Chi Chi & Charlotte
@@ -45,27 +20,59 @@ Week 8: Finishing Client Projects and Looking towards the future!
 * Work on Portfolios
 * 🍴LUNCH 🍴
 * Work on Portfolios
- * Final Show ‘n’ Tell 😢
-
-### Mock Test Feedback
-> Write 1-2 sentences explaining what a map function does AND write 4-10 lines of pseudo code that break down each step.
-
-They key here is to highlight the essential components that make up `.map()`:
-* .map() is an array method
-* .map() invokes a callback function for each index in the provided array
-* .map() returns a new array
-* .map() does not mutate the original array
+* Final Show ‘n’ Tell 😢
 
 
-🎉 Successes 🎉
-* At least three of the aforementioned details were consistently highlighted in your responses 👍This demonstrates a really strong understanding of this method!
+Week 9: Part I, Final Chapter
+< Monday />
+* FINAL EXAM
+* !Make sure you've deployed your portfolio at least once already!
+* !!Test your portfolio on multiple browsers and devices!!
+* Portfolio Work Time
+* 🍴LUNCH 🍴
+* (Optional) A11Y Project Audit
 
-* Everyones pseudo code has improved so so much over the course of these tests! 
+< Tuesday />
+* (Optional) Intro to React Hooks
+* Portfolio Work Time
+* Portfolios due at 1pm
+* 🍴LUNCH 🍴
+* Portfolio Critiques
+* Demo Night Presenter Practice
 
-🔨 Things to work on 🔨
-* Even though you pseudo code has improved, continue to work on it! It will be an ongoing process to effectively communicate your code logic in short but precise statements.
+< Wednesday />
+* Portfolio & Project Clean-Up Time
+* HelpCue Closes 😭
+* 🍴BYO LUNCH 🍴
+* Demo Night Presenter Practice
+* Demo Night Set Up @ 4pm
+* Guests start to arrive ~ 6pm
+* Demo Night ends @ 9pm
 
-* Vocabulary like 'iterates', 'executes, 'outputs' and 'returns' are helpful when explaining programming concepts.
+< Thursday />
+* Networking Tips & Homework
+* 🍴LUNCH 🍴
+* Technical Interview Prep
+
+< Friday /> 
+* IDK BE FREE - see you next year!!
+
+Career Labs: Part II, Chapter I
+< Jan 6 />
+* Career Labs Kick-Off @ 3pm
+* Kick-Off Dinner @ 5pm
+
+< Jan 6 - 9 />
+* Resume & Cover Letter Review Appointments
+
+< Jan 6 - 29 />
+* Career Labs, Mondays & Wednesdays, 3pm to 6pm
+
+< Jan 13 - Feb 24 />
+* Beyond Bootcamp, Mondays & Wendesdays, 6:30pm to 9:30pm
+
+< starting Feb 1 />
+* 1:1 Check-ins w/Career Services
 
 
 ### Bootcamp calendar
