@@ -24,10 +24,8 @@ Thursday, March 12th, 10:00 a.m. 👻
 ### Final Project 
 Thursday, March 19th, 1:00 p.m. 👻
 
-
-
 ### HTML/CSS Test
-Friday, January 31st
+Friday, January 31st    
 
 ### JS/jQuery Test
 Friday, February 21st
