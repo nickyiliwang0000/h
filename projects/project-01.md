@@ -1,6 +1,6 @@
 # Project 1 (1 page PSD conversion)
 ## Due date
-Wednesday, October 30th, 10:00 a.m. 👻
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project description
 This project is meant to emulate a common task you will perform as a front-end developer. You will be provided a design and you will be tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for your users regardless of the device on which they are viewing the site.
