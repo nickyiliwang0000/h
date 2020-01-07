@@ -1,6 +1,6 @@
 # Project 6 (agency-style group React application)
 ## Due date
-Wednesday, Dec 11th, 10:00 a.m.
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project description
 For this project, we will be mimicking the agency environment. You will be working in small groups to build simple web applications for a client. The projects will be of about the same complexity as your React/API projects from previous weeks, but this week we will be asking you to focus on **delivering a functional product**, **sticking to a timeline**, and **collaborating** with your fellow developers on GitHub.

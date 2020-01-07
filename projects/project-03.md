@@ -1,6 +1,6 @@
 # Project 3 (solo interactive jQuery site)
 ## Due date
-Monday, Nov 18, 10:00 a.m.
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project description
 This week you are going to write some JavaScript using the jQuery library in order to build an interactive site of your choosing. It could be:

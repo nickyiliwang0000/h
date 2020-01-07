@@ -1,6 +1,6 @@
 # Project 5 (solo React application)
 ## Due date
-Tuesday, Dec 3rd, 1:00 p.m.
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project scope due date
 Thursday, Nov 28th, 6 p.m.

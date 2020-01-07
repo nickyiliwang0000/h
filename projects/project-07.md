@@ -1,6 +1,6 @@
 # Project 7 (personal portfolio)
 ## Due date
-Tuesday, Dec 17th, 1:00 p.m.
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project description
 A beautiful, responsive portfolio for all your ✨amazing✨ work that you've coded from scratch to match your chosen design.
