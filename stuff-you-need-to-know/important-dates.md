@@ -26,13 +26,13 @@ Thursday, March 19th, 1:00 p.m. 👻
 
 
 
-### HTML/CSS
+### HTML/CSS Test
 Friday, January 31st
 
-### JS/jQuery
+### JS/jQuery Test
 Friday, February 21st
 
-### React
+### React Test
 Monday, March 9
 
 ### Final Exam
