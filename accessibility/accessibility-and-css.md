@@ -1,7 +1,7 @@
 <!-- Student Takeaway -->
 <!-- By the end of this lesson students should be familiar with: colour contrast requirements, browser zoom requirements, flexbox cautions, ways that hiding elements affect screen readers, creating custom focus indicators, what the reduced motion media query is and how to use it. -->
 
-# Accessibility
+# Accessibility and CSS
 
 We've looked at how HTML choices impact accessibility. But CSS has a lot to be considered as well! Let's explore how the visual layer of our websites and applications impact accessibility.
 
