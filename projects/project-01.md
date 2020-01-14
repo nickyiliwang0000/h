@@ -50,25 +50,25 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/12P9p
 
 <!-- Coming soon! -->
 
-**Panda Sanctuary**
+**Shutter**
 
-[design](https://scene.zeplin.io/project/5da61de12eea29085f513955)
+[design](https://zpl.io/scene/a3lp6J8)
 
-[assets](https://hychalknotes.s3.amazonaws.com/Panda-Sanctuary-assets.zip)
-
-
-**Thunder Force Stadium**
-
-[design](https://scene.zeplin.io/project/5da7299e1a73c2f0585eaf08)
-
-[assets](https://hychalknotes.s3.amazonaws.com/Thunder-Force-Stadium-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/shutter-assets.zip)
 
 
-**Paint Gallery** 
+**Tasty**
 
-[design](https://scene.zeplin.io/project/5da9d9b2778e6c072cb8055b)
+[design](https://zpl.io/scene/2GooRx3)
 
-[assets](https://hychalknotes.s3.amazonaws.com/Paint-gallery-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/tasty-assets.zip)
+
+
+**Summit** 
+
+[design](https://zpl.io/scene/2yyLpJJ)
+
+[assets](https://hychalknotes.s3.amazonaws.com/summit-assets.zip)
 
 ## Submitting your project
 
