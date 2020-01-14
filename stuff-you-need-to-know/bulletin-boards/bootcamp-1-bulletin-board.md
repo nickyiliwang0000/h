@@ -5,7 +5,8 @@
 
 Week 1:  Welcome! Shoring up the little knowledge gaps!
 
-<Monday />
+
+**Monday**
 
 * Introductions
 * CIRR Survey
@@ -15,7 +16,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * Keeping organized as a developer
 * HTML & CSS Review
 
-<Tuesday />
+**Tuesday**
 
 * Kickoff activity
 * Meet your text editor
@@ -28,7 +29,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * Display and positioning
 * Project 1 introduction
 
-<Wednesday />
+**Wednesday**
 
 * Kickoff activity
 * CSS layout
@@ -37,7 +38,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * Helpcue Orientation
 * Project work time
 
-<Thursday />
+**Thursday**
 
 * Kickoff activity
 * Philosophy of best practices
@@ -46,7 +47,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * Navigations
 * Project work time
 
-<Friday />
+**Friday**
 
 * Kickoff activity
 * Forms
