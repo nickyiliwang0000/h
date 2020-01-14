@@ -6,6 +6,7 @@
 Week 1:  Welcome! Shoring up the little knowledge gaps!
 
 <Monday />
+
 * Introductions
 * CIRR Survey
 * Juno Orientation
@@ -15,6 +16,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * HTML & CSS Review
 
 <Tuesday />
+
 * Kickoff activity
 * Meet your text editor
 * Browser dev tools
@@ -27,6 +29,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * Project 1 introduction
 
 <Wednesday />
+
 * Kickoff activity
 * CSS layout
 * 🥗LUNCH - SALAD CLUB 🥗
@@ -35,6 +38,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * Project work time
 
 <Thursday />
+
 * Kickoff activity
 * Philosophy of best practices
 * Responsive design
@@ -43,6 +47,7 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 * Project work time
 
 <Friday />
+
 * Kickoff activity
 * Forms
 * 🍴 LUNCH 🍴
