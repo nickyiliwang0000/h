@@ -52,25 +52,25 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/12P9p
 
 ### Design files
 
-**Restaurant Mall**
+**Willow**
 
-[design](https://scene.zeplin.io/project/5db9035f3cab221121e50087)
+[design](https://zpl.io/scene/agr6pBO)
 
-[assets](https://hychalknotes.s3.amazonaws.com/the-restaurant-mall-assets.zip)
-
-
-**Textilee**
-
-[design](https://scene.zeplin.io/project/5db906420eb3b183b27088b7)
-
-[assets](https://hychalknotes.s3.amazonaws.com/textilee-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/willow-assets.zip)
 
 
-**Shoe Kloset** 
+**Harper**
 
-[design](https://scene.zeplin.io/project/5db906b46dd9b622d51530b9)
+[design](https://zpl.io/scene/2Gd7Z34)
 
-[assets](https://hychalknotes.s3.amazonaws.com/shoe-kloset-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/harper-assets.zip)
+
+
+**Sophie** 
+
+[design](https://zpl.io/scene/VkwqMxL)
+
+[assets](https://hychalknotes.s3.amazonaws.com/sophie-assets.zip)
 
 ## Submitting your project
 
