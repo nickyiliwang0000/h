@@ -61,10 +61,17 @@ Week 1:  Welcome! Shoring up the little knowledge gaps!
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Fall Bootcamp - (event)".
 
-### Important links
-Submission form: http://bit.ly/HYsubmissions
+### Important links & Info
+Feedback form: https://forms.gle/g9f6G8LB5FfJZFSF6
 
-Feedback form: 
+Grade breakdown:
+```
+Projects = 10% each
+Tests = 5% each
+Exam = 25%
+```
+
+Submission form: http://bit.ly/HYsubmissions
 
 Group assignments: [Here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742)
 
