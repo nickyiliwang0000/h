@@ -15,6 +15,8 @@ For JS libraries I always ask that you choose one where you can explain what's h
 
 Feel free to choose any topic at any time in the Bootcamp - it doesn't need to relate directly to the material covered in the week you're presenting in (aka present JS during HTML review, CSS stuff during react week, whatever!)
 
+One of you will host and introduce your peers and topics - or you can split introducing each other evenly
+
 ## The Why:
 The whole point of Show & Tell is to help you get comfortable speaking to a technical subject in front of a group! Presentation and public speaking skills are important to hone, especially when it comes to talking technical successes, challenges, and products. Think job interviews, client briefs, project updates with your future teams, etc. for use-cases!
 
@@ -29,7 +31,7 @@ Your Show & Tell groups have been assigned by week. You can find the list of gro
 ## The What:
 Feel free to choose any topic - just make sure you have it approved before you spend too much time researching and building a presentation! Here are 50 example topics you can choose or use to inspire your choice. Each Monday, I'll update the list below with any topics that have been claimed!
 
-### Available:
+### Available sample topics:
 ```
 color-adjust
 CSS Masks
@@ -45,15 +47,9 @@ lodash
 pointer events
 pose.js
 react dnd
-scroll-then-fix
 stroke-dash
 SVG Morph
 touchstart
-transition-delay
-```
-
-### Claimed:
-```
 Konami Codes
 CSS shapes
 CSS knock-out
@@ -73,7 +69,6 @@ React Native
 parallax
 chart.js
 animate-on-scroll
-night/day mode (aka dark/light mode)
 :focus-within
 anime.js
 AMP pages
@@ -87,9 +82,13 @@ split.js
 reveal.js
 bookmarklets
 ml5.js
-React Joyride
 float-labels
 mix-blend-mode
 react autocomplete
 tilt.js
+```
+
+### Claimed:
+```
+
 ```
