@@ -126,7 +126,7 @@ You will also be given individual marks for your project presentation:
 
 Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces. 
 
-Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of the Bootcamp Designer. 🎨
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 
 
 
 ## Lateness
