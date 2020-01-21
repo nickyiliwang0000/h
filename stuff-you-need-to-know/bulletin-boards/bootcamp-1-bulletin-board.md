@@ -2,86 +2,76 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 ### Schedule
-Week 8: Finishing Client Projects and Looking towards the future!
 
-< Thursday /> 
-* Resume Lesson with Chi Chi & Charlotte
-* Job Seeker intro with Chi Chi & Charlotte
-* 🍴LUNCH 🍴
-* Week 9 Overview
-* Project Clean-Up/Resume Work Time
-* _Portfolio Theme Due for Approval @ 1pm_
-* _Extra-Curricular: Design Fishbowl - 6pm to 8pm_
+Week 1:  Welcome! Shoring up the little knowledge gaps!
 
 
-< Friday />
-* Mock Tech Test
-* Feedback Form
-* Work on Portfolios
-* 🍴LUNCH 🍴
-* Work on Portfolios
-* Final Show ‘n’ Tell 😢
+**Monday**
 
+* Introductions
+* CIRR Survey
+* Juno Orientation
+* 🍴 LUNCH 🍴
+* Juno Orientation cont’d
+* Keeping organized as a developer
+* HTML & CSS Review
 
-Week 9: Part I, Final Chapter
-< Monday />
-* FINAL EXAM
-* !Make sure you've deployed your portfolio at least once already!
-* !!Test your portfolio on multiple browsers and devices!!
-* Portfolio Work Time
-* 🍴LUNCH 🍴
-* (Optional) A11Y Project Audit
+**Tuesday**
 
-< Tuesday />
-* (Optional) Intro to React Hooks
-* Portfolio Work Time
-* Portfolios due at 1pm
-* 🍴LUNCH 🍴
-* Portfolio Critiques
-* Demo Night Presenter Practice
+* Kickoff activity
+* Meet your text editor
+* Browser dev tools
+* CSS background-color and images
+* 🍴 LUNCH 🍴
+* CSS pseudo selectors
+* CSS pseudo elements
+* CSS dimensions
+* Display and positioning
+* Project 1 introduction
 
-< Wednesday />
-* Portfolio & Project Clean-Up Time
-* HelpCue Closes 😭
-* 🍴BYO LUNCH 🍴
-* Demo Night Presenter Practice
-* Demo Night Set Up @ 4pm
-* Guests start to arrive ~ 6pm
-* Demo Night ends @ 9pm
+**Wednesday**
 
-< Thursday />
-* Networking Tips & Homework
-* 🍴LUNCH 🍴
-* Technical Interview Prep
+* Kickoff activity
+* CSS layout
+* 🥗LUNCH - SALAD CLUB 🥗
+* Advanced layouts
+* Helpcue Orientation
+* Project work time
 
-< Friday /> 
-* IDK BE FREE - see you next year!!
+**Thursday**
 
-Career Labs: Part II, Chapter I
-< Jan 6 />
-* Career Labs Kick-Off @ 3pm
-* Kick-Off Dinner @ 5pm
+* Kickoff activity
+* Philosophy of best practices
+* Responsive design
+* 🍴 LUNCH 🍴
+* Navigations
+* Project work time
 
-< Jan 6 - 9 />
-* Resume & Cover Letter Review Appointments
+**Friday**
 
-< Jan 6 - 29 />
-* Career Labs, Mondays & Wednesdays, 3pm to 6pm
-
-< Jan 13 - Feb 24 />
-* Beyond Bootcamp, Mondays & Wendesdays, 6:30pm to 9:30pm
-
-< starting Feb 1 />
-* 1:1 Check-ins w/Career Services
+* Kickoff activity
+* Forms
+* 🍴 LUNCH 🍴
+* Forms cont’d
+* Personal branding
+* Project work time
+* Show 'n' Tell
 
 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Fall Bootcamp - (event)".
 
-### Important links
-Submission form: http://bit.ly/HYsubmissions
-
+### Important links & Info
 Feedback form: https://forms.gle/g9f6G8LB5FfJZFSF6
 
-Group assignments: [Here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit#gid=1112317742)
+Grade breakdown:
+```
+Projects = 10% each
+Tests = 5% each
+Exam = 25%
+```
+
+Submission form: http://bit.ly/HYsubmissions
+
+Group assignments: [Here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742)
 

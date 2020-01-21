@@ -57,7 +57,7 @@ Commit early, commit often.
 ## Which project do I do?
 You will be provided with a client brief that includes some requirements as well as a style guide that you need to follow.
 
-Find your group [here](https://docs.google.com/spreadsheets/d/12P9pcvsRTf7Qek_FYETltPLghetwuyy5epxRaxqRns4/edit#gid=1112317742) in the 'Project 6' tab. Client briefs are linked to the group headings.
+Find your group [here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742) in the 'Project 6' tab. Client briefs are linked to the group headings.
 
 Your instructors are your clients. They're human! Talk to them! If you want to change something, if you run into a problem, if you have questions about your brief, or if you have an idea about how to do something better because of the data you're getting, **get an instructor to sign off on any changes you want to make**.
 

@@ -317,7 +317,7 @@ Using `order` on grid items will change the order of your grid items. If the ord
 
 # Extra Resources
 
-For a gameified version of CSS Grids, try [Grid Gardern](https://cssgridgarden.com/).
+For a gameified version of CSS Grids, try [Grid Garden](https://cssgridgarden.com/).
 
 ## Additional learning topics
 
