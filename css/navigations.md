@@ -52,7 +52,7 @@ We can now go ahead and style it as we wish.
 
 Note: it is best practice to put your styles on the link themselves rather than the `<li>` because we want the entire link to take up all the space.
 
-## Accessibility and navigations
+## Accessibility and Navigations
 Allowing users the ability to get to the main content for your site is important. The main content is probably not the first thing on your site, an important piece to creating an accessible site is creating a link to skip to the main content. The idea is fairly straightforward, the first bit of content on the pages is an anchor tag that links to an id further down. [See an example of a skip link in action on the Government of Canada's site.](https://www.canada.ca/en.html)
 
 ```html
