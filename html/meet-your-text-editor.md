@@ -11,15 +11,15 @@ One of a developer's most important tools is a text editor. The text editor is w
 
 HTML is written is plain text, so we could technically use Notepad (Windows) or TextEdit (Mac) to view and edit our HTML files. However, since both programs show nothing but black text on a white background, it's very easy to make a mistake!
 
-Text editors give you something called _syntax highlighting_, which colour-codes your tags to help you quickly scan your code for relevant parts. When you make a mistake, the colour of the tag changes so you can see that something isn't right. Take a look this snippet in TextEdit:
+Text editors give you something called _syntax highlighting_, which colour-codes your tags to help you quickly scan your code for relevant parts. When you make a mistake, the colour of the tag changes so you can see that something isn't right. Take a look this snippet in Notepad:
 
-[Using Textedit or Notepad](http://wes.io/IJBn/Screen%20Shot%202012-07-24%20at%203.11.49%20PM.png)
+![Using Textedit or Notepad](https://hychalknotes.s3.amazonaws.com/notepad-screenshot.png)
 
 Now look at it in a text editor:
 
-[Using a Text Editor](http://wes.io/IINV/Screen%20Shot%202012-07-24%20at%203.15.00%20PM.png)
+![Using a text editor](https://hychalknotes.s3.amazonaws.com/VSCode-screenshot.PNG)
 
-See how all the tags are blue and the current selected tag `<body>` is underlined in yellow? When your code gets long and nested, little features like these are very helpful for finding errors.
+See all the color-formatting and syntax highlighting (the tags are blue, text is white, the current selected tag `<html>` auto-highlights its matching closing tag, etc.)? When your code gets long and nested, little features like these are very helpful for navigating, staying organized and finding errors.
 
 ## Choosing a text editor
 
@@ -37,7 +37,7 @@ Some other popular text editors currently available are:
 * Sublime Text 
   * [http://www.sublimetext.com/3](http://www.sublimetext.com/3)
   * Paid (with unlimited free trial) with extensive customization options. 
-  * Widely used (you might be using Sublime if you are coming to us from part time!)
+  * Widely used
 
 * Atom
   * [https://atom.io/](https://atom.io/)
@@ -159,7 +159,8 @@ Let's choose HTML and write our first snippet!
 ### Writing snippets 
 Just like the user settings file, snippets are written in JSON. All snippets live inside of one large object denoted by curly braces `{}`. Each snippet is defined by a name and has a prefix, body, and description. 
 
-Let's start by adding a snippet to our `html.json` file. Inside the parent curly braces, enter the following: 
+Let's start by adding a snippet to our `html.json` file. **Inside the parent curly braces(!)**, enter the following:
+
 ```json
 //html.json
 "jQuery CDN": {
@@ -168,11 +169,12 @@ Let's start by adding a snippet to our `html.json` file. Inside the parent curly
   "description": "jquery 3.x"
 }
 ```
-If you get an error check the bottom left of the editor window: there are icons for errors and alerts that will help you figure out what went wrong. (Probably an errant curly brace!)
 
-The above snippet will allow us to easily include a link to the jQuery CDN in any HTML file. One thing to note is that you will need to use a mix of single quotes and double quotes in the body of the snippet. 
+The above snippet will allow us to easily include a link to the jQuery CDN in any HTML file. If you get an error, check the bottom left of the editor window - there are icons for errors and alerts that will help you figure out what went wrong (probably an errant curly brace!).
 
-To add another snippet, add another object below the `jQuery CDN` one. After the closing curly brace on a new line, add this snippet to quickly include the viewport `meta` tag for responsive web pages: 
+Now create a new HTML document, type `jquery` + `tab`, and see that you get the whole jQuery snippet!
+
+To add another snippet, add another object below the `jQuery CDN` one. After the closing curly brace of your first snippet, **add a comma**, then on a new line add this snippet to quickly include the viewport `meta` tag for responsive web pages: 
 
 ```json
 //html.json
@@ -182,7 +184,6 @@ To add another snippet, add another object below the `jQuery CDN` one. After the
   "description": "viewport meta tag"
 }
 ```
-Now create a new HTML document, type `jquery` + `tab`, and see that you get the **whole** jQuery snippet!
 
 ### Multi-line snippets
 Notice how each of the above snippets is wrapped in double quotes? This is perfectly fine for one-line snippets, but if you want to create a multi-line snippet you need to put it in square brackets like so:
@@ -205,9 +206,10 @@ Each line in a multi-line snippet is wrapped in quotes and comma separated. If y
 Now that we've written some of our own snippets, we can quickly add the following CSS snippets to our `css.json` file and `scss.json` file so they are available in both file formats. 
 
 We're going to add: 
-1. Reset
-2. Border-box
+1. Border-box
+2. Normalize
 3. Clearfix
+4. VisuallyHidden
 4. Setup (a snippet that includes all of the above!) 
 
 Find the CSS snippet file by typing `cmd + shift + p` on Mac or `ctrl + shift + p` on PC to launch the command palette and type in `snippets`. Select the option 'Preferences: Configure User Snippets' and choose the language you want to use your snippets in (for these snippets, CSS). 
@@ -253,7 +255,6 @@ Inside of this `css.json` file, paste the following code:
   ".visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}"
 ],
 "description": "Reset, Border-Box, Clearfix and Visually Hidden"
-}
 ```
 Repeat the above steps for `scss.json`.
 
@@ -267,7 +268,7 @@ You should now have access to the following snippets in HTML:
 And the following snippets in CSS/SCSS: 
 
 * `bor-box` + `tab`
-* `reset` + `tab`
+* `normalize` + `tab`
 * `clearfix` + `tab`
 * `vhidden` + `tab`
 * `setup` + `tab`
@@ -278,9 +279,9 @@ Don't stop here - feel free to make your own!
 
 Some instructor favorite setups include:
 * 'View' > 'Editor Layout' > 'Two Columns' will give you to panes in which to open files - perhaps the HTML and CSS for the same project, instead of putting them in tabs?
-* Open the command palette (`cmd + shift + p` on Mac or `ctrl + shift + p` on PC), type `shell command` and select 'Install code command in PATH' ![shell command screenshot](https://code.visualstudio.com/assets/docs/setup/mac/shell-command.png)
+* If you've got a Mac, open the command palette (`cmd + shift + p`, type `shell command` and select 'Install code command in PATH' ![shell command screenshot](https://code.visualstudio.com/assets/docs/setup/mac/shell-command.png)
 
-  Now you'll be able to type `code .` in a file in the command line and have it open in VSCode!
+  Now you'll be able to type `code .` in a file in the command line and have it open in VSCode! PC users are lucky -  this is built in for them!
 
 We'll be learning more about this text editor as the course goes on and features become useful to us. If you're keen to take an even deeper dive, you can check out these [intro videos](https://code.visualstudio.com/docs/getstarted/introvideos)! 
 

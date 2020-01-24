@@ -44,6 +44,7 @@ When we keep asking jQuery to do more things in the same transaction, it's calle
 
 ```js
 $('#widget').addClass('active').text('It was a dark and stormy night').css('background', 'grey');
+
 //is shorthand for
 $('#widget').addClass('active');
 $('#widget').text('It was a dark and stormy night');
@@ -56,9 +57,9 @@ Note that you could also write the above chained method calls like this:
 
 ```js
 $('#widget')
-	.addClass('active')
-	.text('It was a dark and stormy night')
-	.css('background', 'grey');
+  .addClass('active')
+  .text('It was a dark and stormy night')
+  .css('background', 'grey');
 ```
 
 Until you add the `;` at the end of the line, and as long as there is a `.` at the start of the next line, it will keep working!

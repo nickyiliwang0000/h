@@ -93,7 +93,7 @@ It seems like we're explaining things in **too** much detail, but this strategy 
 
 #### Exercise: Computerthink
 
-In small groups, write out detailed step-by-step instructions for how to make an apple pie from scratch. We'll compare your answers together to see just how specific you can get!
+In small groups, write out detailed step-by-step instructions for how to make an apple pie (with a frozen pie crust and apple pie filling in a can). We'll compare your answers together to see just how specific you can get!
 
 ### Invent the world, maybe
 There's a quote attributed to Carl Sagan that goes: 
@@ -101,3 +101,13 @@ There's a quote attributed to Carl Sagan that goes:
 
 While it's not true that you have to invent the universe every time you make a new website, even simple-seeming programs can require many, many steps to complete.
 
+## The DOM
+
+DOM stands for **document object model**, and it represents all the HTML elements on your page. It's represented by a tree structure, where each element is a **node**. You've already seen the DOM when you look at the elements panel in dev tools!
+
+JavaScript can find and modify any DOM node. Some things you might change with JavaScript:
+
+- Update the text inside an element
+- Add or remove a class to trigger CSS3 transitions
+- Hide or show elements
+- Add dynamic HTML to the page

@@ -1,5 +1,11 @@
 <!-- Per https://docs.google.com/spreadsheets/d/13YswvGjg_AqMw4sTBTo_Rvbv6GPAGQW12nZAdg9iUrQ/edit#gid=0 -->
 
+For each project, there are a set of requirements that receive explicit marks. As we move forward in the bootcamp, requirements that once were explict marks (e.g. "Site is responsive and media queries are used") will be considered best practices. 
+
+This table shows at what point requirements that were previously worth a whole mark are folded into the mark for best practices.
+
+Read the project requirements carefully, they are what you should be checking for completeness of your project.
+
 <table>
   <tr>
     <th colspan="8">Best practices by project</th>
@@ -16,8 +22,8 @@
   </tr>
   <tr>
     <th align="left">Site is responsive and media queries are used (smallest screen size 320px)</th>
-    <td>✓</td>
-    <td>✓</td>
+    <td> </td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -26,7 +32,7 @@
   </tr>
   <tr>
     <th align="left">Wrapper used to constrain content on large displays effectively</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -36,7 +42,7 @@
   </tr>
   <tr>
     <th align="left">Semantic HTML elements are used properly</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -46,8 +52,8 @@
   </tr>
   <tr>
     <th align="left">All images considered content have descriptive alt text</th>
-    <td>✓</td>
-    <td>✓</td>
+    <td> </td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -56,7 +62,7 @@
   </tr>
   <tr>
     <th align="left">One external .css stylesheet is used for whole project</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>
@@ -66,7 +72,7 @@
   </tr>
   <tr>
     <th align="left">Setup snippet is used</th>
-    <td>✓</td>
+    <td> </td>
     <td>✓</td>
     <td>✓</td>
     <td>✓</td>

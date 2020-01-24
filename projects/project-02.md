@@ -1,6 +1,6 @@
 # Project 2 (multi-page PSD conversion)
 ## Due date
-Wednesday, May 8th, 1:00 p.m.
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project description
 This project is meant to emulate a common task you will perform as a front-end developer. You will be provided a design and you will be tasked with building it. The goals here are to execute the designer's vision on the web, and to build a good experience for your users regardless of the device on which they are viewing the site.
@@ -43,7 +43,7 @@ You will also be given marks for your project presentation:
 ## Which design do I code?
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned! 
 
-You can find your assignment [here]().
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742).
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
@@ -52,32 +52,38 @@ You can find your assignment [here]().
 
 ### Design files
 
-**Captured**
+**Willow**
 
-[design](https://scene.zeplin.io/project/5cb78913fae8ad09e8372c93)
+[design](https://zpl.io/scene/agr6pBO)
 
-[assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
-
-
-**FunPlace**
-
-[design](https://scene.zeplin.io/project/5cb78ae2e6267e081e91a1df)
-
-[assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/willow-assets.zip)
 
 
-**Mindn'Soul** 
+**Harper**
 
-[design](https://scene.zeplin.io/project/5cc747bf7cbe272d01e3698d)
+[design](https://zpl.io/scene/2Gd7Z34)
 
-[assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/harper-assets.zip)
+
+
+**Sophie** 
+
+[design](https://zpl.io/scene/VkwqMxL)
+
+[assets](https://hychalknotes.s3.amazonaws.com/sophie-assets.zip)
 
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
-1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Submit your repo URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+2. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
+3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
+4. Submit your repo URL using [the project submission form](http://bit.ly/HYsubmissions).
+
+## #design in Helpcue
+
+Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces. 
+
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 
 
 ## Lateness
 Projects handed in on the same date as the deadline but after the requested time (usually 10 a.m.) will receive a 10% penalty. Students will receive an additional 10% deduction for each day the project is late, up to a maximum penalty of 30% (or 3 days late). After 3 days, the project will receive a total mark of 0.

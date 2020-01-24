@@ -129,7 +129,7 @@ const raggedyAnn = {
 
 ### Familiar methods
 
-Calling a method is the same as calling a function that is not stored in an object: add `()`.
+Calling a method is the same as calling a function that is not stored in an object - add `()`.
 
 We have already seen a few methods:
 
@@ -152,14 +152,17 @@ We said earlier that an array is a kind of JavaScript object; this is why arrays
 
 ### Adding items: `.push()` and `.unshift()`
 
-To add an item to an array, we use `.push()`
+To add an item to the end of an array, we use `.push()`. 
+To add one to the beginning, we use `.unshift()`.
 
 ```js
 const myArray = [1, 3, 4];
+
 myArray.push(5) //add value to the end;
-myArray; //[1, 3, 4, 5];
+myArray; // [1, 3, 4, 5];
+
 myArray.unshift(0) //add value to the beginning;
-myArray; //[0, 1, 3, 4, 5]
+myArray; // [0, 1, 3, 4, 5]
 ```
 **Exercise:**
 1. First, create an empty array:
@@ -209,7 +212,7 @@ myArray; //["hi", 4]
 1. Let's start with	a base array of names:
 
 ```js
-const names = ["Zoe","Jenny","Brent","Adam","Asaf", "Fatima", "Charlotte"];
+const names = ["Zoe","Suzette","Brent","Adam","Asaf","Fatima","Colin","Charlotte"];
 ```
 
 2. Let's get rid of "Zoe". Since she is the first item in the array:
@@ -345,6 +348,6 @@ Create an object that represents a "warrior". This warrior has the following pro
 
 
 ### Want more practice? 
-[Download and complete this exercise](https://hychalknotes.s3.amazonaws.com/method-practice-exercise-bootcamp.zip) to practice creating an object with methods on it.
-
+* [Download and complete this exercise](https://hychalknotes.s3.amazonaws.com/method-practice-exercise-bootcamp.zip) to practice creating an object with methods on it.
+* Check out [this fun resource](https://arrayexplorer.netlify.com/) to help you!
 <!-- What happens if you use the update uniform method to change something that doesn't exist in the uniform object? -->

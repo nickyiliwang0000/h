@@ -11,6 +11,7 @@
   - The smallest hosting plan is usually plenty.
   - You do not need very much storage. 10GB should be more than enough.
   - It is a good idea to get an SSL certificate. It's security. This means your site's URL will be `https` instead of `http`.
+    * If you choose a `.dev` domain name, you will be **required** to have an SSL certificate.
   - You want access to the cPanel.
   - 24/7 or well-reviewed support is ideal.
   - The hosting company should be in our time zone.

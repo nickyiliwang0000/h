@@ -20,7 +20,7 @@ If you write the words `myLunch` on your lunchbag, anything that goes in there i
 Before you're able to use a variable, you must be _declare_ it, then _assign_ it a value. Usually, you'll declare all your variables before you use them at the top of your JavaScript file.
 
 ### Declaring a variable
-There are three [_keywords_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) (special words that are reserved by JavaScript to denote specific behaviours) we can use to declare a variable: `let`, `const`, and `var`. 
+There are three [_keywords_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words) (special words that are reserved by JavaScript to denote specific behaviours) we can use to declare a variable: `let`, `const`, and the now-outdated (but still technically functional) `var`.
 
 You choose the name of the variable. It should be something descriptive based on what kind of value it will hold:
 
@@ -106,9 +106,8 @@ For the most part in our JavaScript, we will be able to declare all our variable
 
 ### Variable naming conventions
 * Variables can't contain spaces. They must start with a non-numeric character (letter, `_`, or `$)`, followed by any character. (e.g. `let 23people` is invalid).
-* Use camelCase to separate words. (e.g. `let myName`).
+* Use camelCase to separate words (e.g. `let myName`). Using underscores to_separate_words is a common convention in other programming languages (like PHP) but is generally avoided in JavaScript.
 * JavaScript is case sensitive so variable names are also case sensitive.
-* Using underscores to_separate_words is a common convention in other programming languages (like PHP) but is generally avoided in JavaScript.
 * When naming a variable, it's best to give it a descriptive name. (e.g. `let userName` instead of `let u`).
 
 Consider the following code: 
@@ -135,7 +134,7 @@ const days = years * 365;
 
 ## Operators
 
-You can do basic arithmetic with numbers using _operators_. Arithmetic operators in JavaScript are (`+`) for addition, (`-`) for subtraction, (`*`) for multiplication and (`/`) for division.
+You can do simple arithmetic with numbers using _operators_. The basic arithmetic operators in JavaScript are (`+`) for addition, (`-`) for subtraction, (`*`) for multiplication, (`/`) for division and (`**`) for exponents.
 
 ```js
 55 * 20 
@@ -145,7 +144,11 @@ You can do basic arithmetic with numbers using _operators_. Arithmetic operators
 6 / 1.5
 
 34 + 66.3
+
+2 ** 5
 ```
+
+> Fair warning: The exponent operator [is not supported in IE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Browser_compatibility).
 
 Parentheses can be used to group operations. Just like you learned in grade school, BEDMAS applies. This is the order in which the computer will do the math:
 
@@ -157,12 +160,33 @@ Parentheses can be used to group operations. Just like you learned in grade scho
 **S**ubtraction 
 
 ```js
-(2+1) * 5
+(2 + 1) * 5
+// 15
 ```
 
-This is how you use exponents in Javascript:
+### Complex operators
+
+There are a number of other arithmetic operators available. Three that we will look at in this course are modulo (`%`), increment (`++`) and decrement (`--`).
+
+Modulo returns the remainder left over from division:
+
 ```js
-2 ** 5
+47 % 5
+// This gives 2, since 45 divides evenly by 5, and then there are 2 left over (ie. the remainder is 2)
+```
+
+The increment operator adds one (_increments_) to a value, and the decrement operator subtracts one (_decrements_):
+
+```js
+let x = 3;
+x++;
+x;
+// 4
+
+let y = 7;
+y--;
+y;
+// 6
 ```
 
 > A fun gotcha! When numbers are contained within quotes, they are considered **strings**, meaning they can't be used to perform arithmetic operations.
@@ -207,27 +231,27 @@ sentence;
 What happens when you type the below expressions in the console?
 
 ```js
-'HackerYou' * 6 
+'Juno' * 6 
 ```
 
 ```js	  
-'HackerYou' + 6
+'Juno' + 6
 ``` 
 
 ```js
-'HackerYou' * 'Class'
+'Juno' * 'Class'
 ```
 
 `NaN` (not a number) for first and third examples. We can't do some operations (like multiplication) with types that are not numbers.
 
 **Exercises**  
-What happens when you type in the console: `'She's a HackerYou student'`. 
+What happens when you type in the console: `'She's a Juno student'`. 
 
 Error! How would you solve this issue?
 
 ### Template literals
 
-In ES6 there is a new way to define a string, and it comes with some added benefits. Currently if you want to define a string, you can use `''` or `""`.
+Since ES6 there is another way to define a string, and it comes with some added benefits. Currently if you want to define a string, you can use `''` or `""`.
 
 ```js
 const name = "Shauna";
@@ -246,20 +270,20 @@ console.log(sentence);// "Shauna works for the city as a bus driver."
 To create a template literal string, we use the backtick `` ` `` in place of the quotes. 
 
 ```js
-const name = `Rukmini`;
-const job = `streetcar driver`;
+const nameTwo = `Rukmini`;
+const jobTwo = `streetcar driver`;
 ```
 
 Strings and template literals behave in exactly the same way, but backticks make concatenation a lot easier. 
 
 ```js
-const name = `Rukmini`;
-const job = `streetcar driver`;
-const sentence = `${name} works for the city as a ${job}`;
-console.log(sentence);// "Rukmini works afor the city as a streetcar driver."
+const nameTwo = `Rukmini`;
+const jobTwo = `streetcar driver`;
+const sentenceTwo = `${nameTwo} works for the city as a ${jobTwo}`;
+console.log(sentenceTwo);// "Rukmini works for the city as a streetcar driver."
 ```
 
-Notice the `${}` syntax inside of the string, this is a _template expression_. It allows us to create a template for our strings; the browser will evaluate the `${}` expression and leave the proper value in its place at runtime. This makes concatenating large strings a lot more enjoyable.
+Notice the `${}` syntax inside of the string - this is a _template expression_. It allows us to create a template for our strings. The browser will evaluate the `${}` expression and leave the proper value in its place at runtime. This makes concatenating large strings a lot more enjoyable.
 
 ### Whitespace
 _Whitespace_ refers to blank characters and includes spaces, tabs, and line breaks. JavaScript usually ignores whitespace except when a *string* is being outputted into the browser.

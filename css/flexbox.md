@@ -245,7 +245,7 @@ Setting `align-content` to `flex-start` packs the content to the start of the co
 
 ### `align-content: flex-end;`
 
-Setting `align-content` to `flex-start` packs the content to the start of the container along the main axis.
+Setting `align-content` to `flex-end` packs the content to the start of the container along the main axis.
 
 
 ## Special cases

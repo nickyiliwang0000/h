@@ -155,9 +155,9 @@ Data type  | Value
 `null` | `false`
 `undefined` | `false`
 any `string`| `true`
-an empty string | false
+an empty `string` | false
 the `number` 0 | `false`
-any `number` higher than 0 |`true`
+any `number` higher or lower than 0 |`true`
 
 Data types and values that evaluate to false (i.e. `0`,`null`, and `undefined`) are known as _falsy_, whereas data types and values that evaluate to true (i.e. strings, any number higher than 0) are known as _truthy_. This is why the `===` operator exists: it checks for equality in both type **and** value; `==` checks for equality **only** in value.
 
@@ -258,6 +258,7 @@ while (i < 10) {
 When `i === 9` the block executes one final time, 9 is printed and `i` is incremented to 10. The block doesn't execute anymore because the condition is false.
 
 Note that after printing `1` through `9` in your console, there's a `10` with a little arrow beside it. That's not a return, we can't directly capture that value. This is your dev tools console trying to be helpful by printing the last expression it executed.
+
 
 ## The `break` keyword
 

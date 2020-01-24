@@ -118,17 +118,19 @@ Data is structured a little bit differently in Firebase when compared to more tr
 You can nest data 32 levels deep, but just like Sass - avoid unneeded nesting whenever possible. When you fetch data from a location in the database, all of the child nodes come along with it. It's best practice to keep your data structure as flat as possible. 
 
 
-```javascript
-myProject = {
-  user: "Simon",
-  hobbies: {
-    1: "skiing",
-    2: "rowing",
-    3: "running"
+```js
+{
+  "users": {
+    "one": {
+      "name": "Amy",
+      "hobbies": { ... },
+      "timestamp": 1459361875666
+    },
+    "two": { ... },
+    "three": { ... }
   }
 }
 ```
-
 Every value in Firebase has a key that is attached to it. We can use this key in order to grab any value we desire. You can assign your own keys, or have Firebase generate these keys for you depending on what methods you choose. 
 
 ## Adding data to our Firebase database
@@ -169,7 +171,7 @@ Let's try a few of these out!
 ### Write methods in Firebase
 
 #### `push()`
-The Firebase method `push()` creates a **new node** that is stored as the value for a Firebase-generated key.
+The Firebase method `push()` creates a **new node** that is stored as the value for a Firebase-generated unique key.
 
 ```js
 const firebaseObj = dbRef.push('first push to Firebase');
@@ -247,7 +249,7 @@ No problem! We're pushing a complete copy of the `userSettings` object with all 
 
 ```js
 const moreUserSettings = {
-  company:'HackerYou',
+  company:'JunoCollege',
   coursesTaught: {
     fall:'bootcamp',
     winter:'bootcamp',
@@ -290,21 +292,21 @@ As your data gets more complex, you may want to start nesting your data in colle
 
 ```javascript
 {
-  users: {
-    userOne: {
-      name: 'Rick Sanchez'
+  "users": {
+    "userOne": {
+      "name": 'Rick Sanchez'
     },
-    userTwo: {
-      name: 'Morty Smith'
+    "userTwo": {
+      "name": 'Morty Smith'
     },
-    userThree: {
-      name: 'Snowflake'
+    "userThree": {
+      "name": 'Snowflake'
     }
   }
 }
 ```
 
-Firebase lets us express this relationship by passing in a path such as `/users` to our `ref` method. So if we want to start adding some user properties inside of a `user` collection, we can do that like this:
+Firebase lets us express this relationship by passing in a path such as `/users` to our `ref` method. So if we want to start adding some user properties inside of a `users` collection, we can do that like this:
 
 ```javascript
 const userCollection = firebase.database().ref('/users');
@@ -322,7 +324,7 @@ Now that we have some data stored in our database, let's retrieve it:
 const dbRef = firebase.database().ref();
 
 // We call the `on` method here to grab the value of our Firebase database.
-// When it comes back, we store access it in our callback function via the parameter `data`.
+// When it comes back, we store access to it in our callback function via the parameter `data`.
 dbRef.on('value', (data) => {
 
   // We call `.val()` on our data to get the contents of our data to print out in the form of an object

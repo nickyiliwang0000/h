@@ -31,14 +31,14 @@ Let's inspect those sites we were looking at before and see what we find!
 ## Create React App
 To build React projects, we will be using a tool built by React's developers called _Create React App_.
 
-### Installing Create React App
-We're going to install Create React App via the _node package manager_ (npm) using the command line.
+### Installing with Create React App
+We're going to use Create React App via the _node package manager_ (npm/npx) on the command line to make our first app.
 
 ```bash
-npm i -g create-react-app
+npx create-react-app my-first-app
 ```
 
-With `create-react-app` installed, we are able to quick start applications with the `create-react-app` command. Typing `create-react-app my-first-app` into your command line will create a folder called `my-first-app` and inside will be all the boilerplate needed to start building a React app! It will also give you instructions on how to run your application.
+Typing `npx create-react-app my-first-app` into your command line will create a folder called `my-first-app` and inside will be all the boilerplate needed to start building a React app! It will also give you instructions on how to run your application.
 
 ### Build your first app with Create React App
 The Create React App tool gives us everything we need to get started and it's important to know what some of the files do. In the project folder you will find a `src` folder, which will contain a bunch of files that Create React App made just for you! Let's look at a few of the important ones: `index.js` and `App.js`.
@@ -245,9 +245,9 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
 * Each JSX element must return **only one** HTML element (we'll be using `<div>` for most of the class, but you may see `<Fragment>` in the wild).
 
-* In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, it's `render` method).
+* In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, its `render` method).
 
-* One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI ) _sometimes_. 
+* One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI  _conditionally_. 
 
   * You will be tempted to put an `if` statement in your JSX like this: 
     ```jsx
@@ -281,7 +281,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
       let markupShowingOnPage = null;
 
       if(userIsLoggedIn) {
-        markupShowingOnPage = <h1>Welcome, friend!</h1> 
+        markupShowingOnPage = `<h1>Welcome, friend!</h1>`;
       }
 
       return (
@@ -291,6 +291,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
       )
     }
     ```
+* VSCode's Emmet will not work in  JSX unless you enable it in your user settings. To enable it go [follow these directions](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c).
 
 ### Nesting and splitting components
 One of the incredibly powerful features of React is the ability to organize and split your code into components and then arrange and rearrange them like Lego.
@@ -301,7 +302,7 @@ We'd create a new `SearchBar.js` file:
 ```jsx
 //SearchBar.js
 
-class SearchBar extends React.Component {
+class SearchBar extends Component {
   render() {
     return (
       <input type="text" placeholder="Enter your search term" name="search" />
@@ -399,6 +400,6 @@ Now, when we use the `npm start` command, the `npm-run-all` package will set up 
 To animate components, the React documentation suggests [React Motion](https://github.com/chenglou/react-motion) and [React Transition Group](https://reactcommunity.org/react-transition-group/).
 
 ### Additional Resources
-* [React for Beginners](https://reactforbeginners.com/) (taught by HackerYou instructor Wes Bos!)
+* [React for Beginners](https://reactforbeginners.com/) (taught by Juno instructor Wes Bos!)
 * [Learning React: Getting Started and Concepts](https://scotch.io/tutorials/learning-react-getting-started-and-concepts)
 * [Hello World in React](http://codepen.io/gaearon/pen/ZpvBNJ?editors=0010) (a CodePen you can play around with)

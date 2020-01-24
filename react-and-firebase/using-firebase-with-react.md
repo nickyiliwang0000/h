@@ -450,11 +450,11 @@ Now let's write our `removeBook` function inside our `App` component:
 // this function takes an argument, which is the ID of the book we want to remove
 removeBook(bookId) {
 
-  // here we create a reference to the database AT THE BOOK'S ID
-  const dbRef = firebase.database().ref(bookId);
+  // here we create a reference to the database 
+  const dbRef = firebase.database().ref();
 
-  // using the Firebase method .remove(), we remove that node
-  dbRef.remove();
+  // using the Firebase methods .child(). & remove(), we remove the node specific to the book ID
+  dbRef.child(bookId).remove();
 }
 ```
 

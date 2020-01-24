@@ -33,7 +33,7 @@ $.ajax('https://www.urlWeAreRequestingFrom.com', {
 })
 // is the same as
 $.ajax({
-    urlWeAreRequestingFrom:'https://www.urlWeAreRequestingFrom.com', 
+    url:'https://www.urlWeAreRequestingFrom.com', 
     more:'settings',
     other:'settings',
     someOther:'settings 🎉'
@@ -41,15 +41,17 @@ $.ajax({
 ```
 We're going to do it the second way so that all the information is in one place, but you'll see both in the wild.
 
-If the `$.ajax()` method is successful, it returns the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/10ee6cbd78aaad16a0b1718eda9fa27ad6dd90cb/06-applied-javacript/6.4-accessing-api-data-with-ajax.md#debugging-ajax-requests)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()`. 
+If the `$.ajax()` method is successful, it returns the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/accessing-api-data-with-ajax.md#debugging-other-ajax-request-errors)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()`. 
 
 > `.then()` is a special JavaScript method; we'll learn more about it the deeper we get into AJAXland.
 
-Let's try this with the TTC API:
+Let's try it out! Someone has built an API which tracks [the lateness of trains run by the Southeastern Pennsylvania Transportation Authority](https://www.septastats.com/api). This is handy for us because (1) it doesn't require authentication so it's easy to practice with, and (2) we live in Southeastern Pennsylvania and are very punctual people.
+
+Here's how we can use the `$.ajax()` method to check about each of the most recent trains in the system:
 
 ```js
 $.ajax({
-  url:'https://myttc.ca/finch_station.json',
+  url:'https://www.septastats.com/api/current/system/latest',
   method: 'GET',
   dataType: 'json'
 }).then(function() {
@@ -59,21 +61,143 @@ $.ajax({
 
 Open up [the starter files for your first AJAX request](https://hychalknotes.s3.amazonaws.com/my-first-ajax-request.zip) to see this AJAX request in action.
 
-### Oh no! An error!
-The result in the console should be an error:
+You should see `It worked!` in the console. But where's the data? We can see it in the 'Network' tab, but we can't use it in our JavaScript yet. 
+![Successful AJAX request in the Network tab of Firefox](https://hychalknotes.s3.amazonaws.com/network-tab-successful-ajax-request-septa.png)
+
+Remember the `.then()` method?
+
+The `.ajax()` method retrieves the information and upon the completion of the request, [the docs](https://api.jquery.com/deferred.then/) tell us to pass it into the `.then()` method that handles our next steps.
+
+The `.then()` method has three parameters: 
+1. what to do when the request is successful  (required)
+1. what to do when there is an error (optional)
+1. what to do while the request is in progress (optional)
+
+We will only be using the required parameter right now.
+
+[The docs](https://api.jquery.com/deferred.then/) say that this first parameter is expected to be a function; that's what we've got in there, we're using an anonymous function to call our console.log:
+
+```js
+$.ajax({
+  url:'https://www.septastats.com/api/current/system/latest',
+  method: 'GET',
+  dataType: 'json'
+}).then(function() {
+  console.log('It worked!');
+});
+```
+
+We could also do the same using a named function, which we define elsewhere:
+```js
+$.ajax({
+  url:'https://www.septastats.com/api/current/system/latest',
+  method: 'GET',
+  dataType: 'json'
+}).then(resultsFunction);
+
+function resultsFunction(){
+  console.log('It worked!');
+}
+```
+
+This is the function that will run when the request is successful. We can expect to have some JSON data from the API if the request is successful, so we'll pass that data as an argument called `result`:
+
+```js
+$.ajax({
+  url:'https://www.septastats.com/api/current/system/latest',
+  method: 'GET',
+  dataType: 'json'
+}).then(function(result) {
+  console.log('It worked!');
+});
+```
+
+When a function is passed as an argument to another function like this, we say that the one in the argument is a callback function. We've previously seen callback functions in event handlers:
+
+```js
+$('h1').on('click', function(){
+  // here is the content of the callback function
+})
+```
+
+Let's make our callback function do something! Let's log the data we got back from the API:
+```js
+$.ajax({
+  url:'https://www.septastats.com/api/current/system/latest',
+  method: 'GET',
+  dataType: 'json'
+}).then(function(result) {
+  console.log('It worked! : ', result);
+});
+```
+
+You should see our `It worked!` success message as well as an object containing _payload_ (another way of saying "the result of an API call") in the console.
+
+### Working with JSON data
+
+Once we can see our payload in the console, clicking on the little arrow next to it will open up the object for inspection. jQuery has _parsed_ (read and converted) the JSON into a JavaScript object so we can work with the returned data in a familiar way. 
+
+We can use the parameter name we created (`result`) to refer to the object and access entries on it using dot notation:
+
+* `result.metadata._comment` gives a description of the data we're receiving. 
+* `result.data` gives an array of the most recently tracked times of all the trains in the SEPTA network.
+
+We can do all the usual JavaScript and jQuery things with the data, like store the values in variables:
+
+```js
+const route = result.data[0].id;
+const startStation = result.data[0].source;
+const endStation = result.data[0].dest;
+const minsLate = result.data[0].late;
+```
+
+Or update the DOM:
+
+```js
+$("p.nextDeparture").html(`The ${route} train from ${startStation} to ${endStation} is running ${minsLate} minutes late.`);
+```
+
+#### Exercise: Working with `$.ajax()`
+
+Get some practice debugging and working with `$.ajax()` these [these practice exercises](https://hychalknotes.s3.amazonaws.com/ajax-practice-bootcamp.zip). Don't look at the solution until you've given it your best shot!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## AJAX errors
+
+An error that commonly comes up when running AJAX requests appears in the console like this:
 
 ```bash
 Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://myttc.ca/finch_station.json. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).[Learn More]
 ```
 
-Click the `Learn More` link and you'll be redirected to [the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin) telling you that a _CORS_ (cross-origin resource sharing) header is missing. 
+If you click the `Learn More` link, you'll be redirected to [the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin) telling you that a _CORS_ (cross-origin resource sharing) header is missing. 
 
 > When we make an _HTTP_ (hypertext transfer protocol) request to a different domain than the one that hosts the file with the request in it, we are creating a _cross-site_ HTTP request. HTTP requests come with information for the browsers called _headers_. Think of headers like the front of a letter: they say who the message is from, who it's to, and where the addressee expected to be located. Most servers will not allow HTTP requests from external sources for security reasons - kind of like how you don't open emails from unknown senders because it could be a virus.
 
 AJAX is restricted by the _same-origin policy_ which [basically states](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) that people can only send emails to themselves (i.e. AJAX requests to a domain/subdomain can only come from that same domain/subdomain). 
 
-#### How do we send emails to other people!?
-##### JSONP
+### How do we send emails to other people!?
+
+#### JSONP
+
 One way of getting around the same-origin policy without messing directly with the headers is to ask for a data format called _JSON with padding_ (JSONP) in your AJAX request. The "padding" is a JavaScript wrapper that the server has set up. 
 
 When we request JSONP in our `$.ajax()` method, jQuery injects a script tag into our website temporarily. The script's `src` attribute points to a bit of JavaScript on the server from which we requested data. The server then wraps the JSON data in a JavaScript function (the aforementioned padding). This function becomes available to us, gets executed, and we get our data. Then, the script tag is removed from our website.
@@ -145,116 +269,6 @@ browser
 ```
 
 Browser-to-server communication is sometimes blocked via CORS but server-to-server communication is more open. We have a proxy server with great documentation right [here](https://github.com/hackeryou/json-proxy) for situations like that!
-
-### Let's fix our error
-Let's change the `dataType` in the AJAX request in `my-first-ajax-request.html` from `json` to `jsonp`.
-
-```js
-$.ajax({
-  url:'http://myttc.ca/finch_station.json',
-  method: 'GET',
-  dataType: 'jsonp'
-}).then(function() {
-  console.log('It worked!');
-});
-```
-
-You should see `It worked!` in the console. But where's the data? We can see it in the 'Network' tab, but we can't use it in our JavaScript yet. 
-![Successful AJAX request in the Network tab of Firefox](https://hychalknotes.s3.amazonaws.com/successful-ajax-request-in-network-tab.png)
-
-Remember the `.then()` method?
-
-The `.ajax()` method retrieves the information and upon the completion of the request, [the docs](https://api.jquery.com/deferred.then/) tell us to pass it into the `.then()` method that handles our next steps.
-
-The `.then()` method has three parameters: 
-1. what to do when the request is successful  (required)
-1. what to do when there is an error (optional)
-1. what to do while the request is in progress (optional)
-
-We will only be using the required parameter right now.
-
-[The docs](https://api.jquery.com/deferred.then/) say that this first parameter is expected to be a function; that's what we've got in there, we're using an anonymous function to call our console.log:
-```js
-$.ajax({
-  url:'http://myttc.ca/finch_station.json',
-  method: 'GET',
-  dataType: 'jsonp'
-}).then(function() {
-  console.log('It worked!');
-});
-```
-
-We could also do the same using a named function, which we define elsewhere:
-```js
-$.ajax({
-  url:'http://myttc.ca/finch_station.json',
-  method: 'GET',
-  dataType: 'jsonp'
-}).then(resultsFunction);
-
-function resultsFunction(){
-  console.log('It worked!');
-}
-```
-
-This is the function that will run when the request is successful. We can expect to have some JSON data from the API if the request is successful, so we'll pass that data as an argument called `result`:
-
-```js
-$.ajax({
-  url:'http://myttc.ca/finch_station.json',
-  method: 'GET',
-  dataType: 'jsonp'
-}).then(function(result) {
-  console.log('It worked!');
-});
-```
-
-When a function calls another function like this, we say that second one is the _callback function_. We've previously seen callback functions in event handlers:
-
-```js
-$('h1').on('click', function(){
-  // here is the content of the callback function
-})
-```
-
-Let's make our callback function do something! Let's log the data we got back from the API:
-```js
-$.ajax({
-  url:'http://myttc.ca/finch_station.json',
-  method: 'GET',
-  dataType: 'jsonp'
-}).then(function(result) {
-  console.log('It worked! : ', result);
-});
-```
-
-You should see our `It worked!` success message as well as an object containing _payload_ (another way of saying "the result of an API call") in the console.
-
-### Working with JSON data
-
-Once we can see our payload in the console, clicking on the little arrow next to it will open up the object for inspection. jQuery has _parsed_ (read and converted) the JSON into a JavaScript object so we can work with the returned data in a familiar way. 
-
-We can use the parameter name we created (`result`) to refer to the object and access entries on it using dot notation:
-
-* `result.time` gives the time the TTC server was pinged for information. 
-* `result.stops` gives an array of all the vehicle stops in and around the station.
-
-We can do all the usual JavaScript and jQuery things with the data, like store the values in variables:
-
-```js
-let busRoute = result.stops[1].routes[0].name;
-let nextBusLeavingTime = result.stops[1].routes[0].stop_times[0].departure_time;
-```
-
-Or update the DOM:
-
-```js
-$("p.nextDeparture").html("The next " + busRoute + " bus leaves at " + nextBusLeavingTime);
-```
-
-#### Exercise: Working with `$.ajax()`
-
-Get some practice debugging and working with `$.ajax()` these [these practice exercises](https://hychalknotes.s3.amazonaws.com/ajax-practice-bootcamp.zip). Don't look at the solution until you've given it your best shot!
 
 ### Debugging other AJAX request errors
 Sometimes it's not a JSONP or CORS issue. Sometimes there's an error message you don't understand. Follow these steps:

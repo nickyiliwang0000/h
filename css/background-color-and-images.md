@@ -66,9 +66,9 @@ value passed to `background-repeat` | what it looks like
 
 ### Background positioning
 
-When repeating a background image we need to specify where it repeats from. For this, we use `background-position`. We pass it **two**  pixel or percentage values that specify the x and y centering. The first value will refer to the horizontal position of the background, and the second value will define the vertical position. The left top corner is `0% 0%` or ` 0px 0px`. The right bottom corner is `100% 100%`.
+When repeating a background image we need to specify where it repeats from. For this, we use `background-position`. We pass it **two**  pixel, percentage or keyword values which specify the x and y distances of the image from the top-left of the element. The first value will refer to the horizontal position of the background, and the second value will define the vertical position. The left top corner is `0% 0%` or ` 0px 0px`. The right bottom corner is `100% 100%`.
 
-(If you only specify one value, the other will be 50% or `center`.) The `background-position` property also accepts the keyword values `top`, `left`, `right`, `bottom` and `center`. The default is `left top`. 
+(If you only specify one value, the other will be 50% or `center`.) The `background-position` property accepts the keyword values `top`, `left`, `right`, `bottom` and `center`. The default is `left top`. 
 
 ```css
 section {
@@ -88,6 +88,32 @@ section {
 }
 ```
 Here is [a little demo](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-position&preval=10px%20200px) where you can play around with background position.
+<!-- Background attatchemt -->
+
+### Background attachment
+
+Sometimes you will want to have control over whether a background image is fixed within the viewport or scrolls. For this we use the `background-attachment` property. There are two primary types of attachment: `fixed` and ` scroll`. 
+
+`background-attachment: scroll` is the defualt attachment property and will make the background you are targeting scroll relative to the main view. What this means is it will behave like you would expect, if you scroll the site, the image scrolls along with everything else.
+
+```css
+section {
+  background-attachment: scroll;
+}
+```
+
+`background-attachment: fixed` will "fix" the image to the viewport. So even as other content scrolls, the image will stay in its place. This is sometimes used to achieve the a "parallax" scroll effect by fixing an image as a background to other content that will scroll.
+
+```css
+section {
+  background-attachment: fixed;
+}
+```
+
+There is a third attachment propery called `background-attachment: local` solves a unique problem for us. To learn more about this property visit this blog post by Kevin Powell (https://www.kevinpowell.co/article/background-attachment-local/)
+
+Here is [a little demo](https://codepen.io/kevinpowell/pen/bzMvzN) to see a comparison of these 3 attachment properties in action!
+
 
 ### Background size properties
 
@@ -121,7 +147,7 @@ header {
 ```
 ## Background shorthand
 
-Writing background properties can take up a lot of space. To save a few lines of CSS, we can combine all the background properties into a single `background` property. It includes an optional background color.
+Writing background properties can take up a lot of space. To save a few lines of CSS, we can use the `background` property, which combines all the background properties except `background-size`. The `background` shorthand includes an optional background color.
 
 ```css
 body {
@@ -173,13 +199,13 @@ The gradient can take as many colours as you'd like. These colours will be sprea
 ```css
 div {
   background: linear-gradient( to right, 
-  blue, 
-  green,
-  hsla(123,23%,15%,0.5), 
-  rgb(122,22,55), 
-  rgba(12,44,156,0.6), 
-  hsl(300,12%, 88%), 
-  #bada55)
+    blue, 
+    green,
+    hsla(123,23%,15%,0.5), 
+    rgb(122,22,55), 
+    rgba(12,44,156,0.6), 
+    hsl(300,12%, 88%), 
+    #bada55)
 }
 ```
 
@@ -212,8 +238,8 @@ To layer backgrounds on top of one another, comma separate the background values
 ```css
 div {
   background: url(http://www.placekitten.com/200/200), 
-  linear-gradient(yellow 20%, red , blue);
-  background-repeat: space;
+    linear-gradient(yellow 20%, red , blue);
+    background-repeat: space;
 }
 ```
 

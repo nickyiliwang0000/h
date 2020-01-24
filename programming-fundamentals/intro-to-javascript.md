@@ -76,7 +76,7 @@ If you want a mnemonic, some of our instructors like **SNUBON(S)**.
 There is a special operator we can use to check types called `typeof`. When used with a value it will tell us the type of that value. 
 
 ```js
-typeof "HackerYou";
+typeof "Juno College";
 //string
 
 typeof 3792

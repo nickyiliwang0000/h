@@ -1,4 +1,5 @@
 # HelpCue best practices
+
 HelpCue is a tool that helps us distribute instructor support in a fair way. You can use it to ask for one-on-one help from instructors during project work time. You can enter a question or a problem and instructors will help you in the order the questions were asked. In addition to making sure everyone gets the help they need, HelpCue will also give you the opportunity to explain technical issues to other developers.
 
 ## How to join HelpCue
@@ -22,20 +23,19 @@ We ask that you do not add questions when HelpCue is closed. We will be deleting
 ### HelpCue is closed...
 * Monday to Friday from 1:00pm to 2:00pm for lunch
 * at 5:30pm Monday to Thursdays
-* at 5:00pm on Fridays for show and tell
+* at 4:40pm on Fridays for show and tell
+* during daily breaks
 * Friday mornings from 10:00am to 11:30am
 
 ## HelpCue etiquette
 ### What to do before asking your question...
 1. Reflect! Ask yourself what are you trying to do. What do you know so far? Has the browser provided any errors?
-2. Try solving it on your own first. Is there something in the HackerYou notes that might help? Have you googled the problem and tried some of the suggestions? Read the documentation!
+2. Try solving it on your own first. Is there something in the Juno notes that might help? Have you googled the problem and tried some of the suggestions? Read the documentation!
 3. Think of how you can word this issue to someone who doesn’t know as much about on what you’re currently working on.
 
 ## Question template
 
 "I am having trouble with _____, I am sitting ______ wearing _____. I've tried _______ and _____."
-
-> If you have added a profile picture to your HelpCue account, you don't need to tell us what you're wearing!
 
 ## Examples of good and bad HelpCue questions
 ### Good questions
@@ -63,6 +63,7 @@ _"My styles aren't applying"_
 * Add your location - it will help instructors figure out where you are in the space
 * Use #design for design help
 * Do not ask for a specific instructor by name
+* HelpCue is for bootcamp projects, exercises and concepts, not for freelance projects, show & tell prep, or other non-curriculum stuff
 * Try googling it first and don’t be afraid to break something! It's just code!
 * Try a hard refresh
 

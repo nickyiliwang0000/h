@@ -53,7 +53,7 @@ To view the full list of color names available, visit [this cute website](http:/
 
 You can also find a nice grouping of similar colors at w3school's website [here](https://www.w3schools.com/colors/colors_groups.asp).
 
-## Hexadecmial color
+## Hexadecimial color
 
 A common way to provide color is to use the _hexadecimal system_. The codes or values produced by this system are sets of alphanumeric characters prepended by a `#`.
 

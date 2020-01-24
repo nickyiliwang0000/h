@@ -1,6 +1,6 @@
 # Project 7 (personal portfolio)
 ## Due date
-Tuesday, June 18th, 1:00 p.m.
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project description
 A beautiful, responsive portfolio for all your ✨amazing✨ work that you've coded from scratch to match your chosen design.
@@ -9,7 +9,9 @@ A beautiful, responsive portfolio for all your ✨amazing✨ work that you've co
 To show off all the skills you've learned in the bootcamp, especially HTML, CSS, and modern web standards.
 
 ## Design
-The point of your portfolio is to showcase your development skills. As such, we require that you code an existing design. You are strongly encouraged to purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). 
+The point of your portfolio is to showcase your development skills. As such, we require that you code an existing design. You must purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). Your design files must be complete before starting the project.
+
+You may not update an existing portfolio, you must start from scratch. 
 
 ## Choosing a design
 Choose a portfolio site design that:
@@ -17,26 +19,27 @@ Choose a portfolio site design that:
 * does NOT have **any** HTML or CSS in it (PSD only)
 * no recent grad has used (check the [past portfolio themes doc](https://docs.google.com/spreadsheets/d/1ZQqQnn-gSbyRlk_Au_MRoRsttsgy4BRdRnldnoclt6I/edit#gid=0)) 
 
-Submit your first, second, and third choice to Fatima by 1 p.m. on June 13th. She is aiming to have everyone's approved by 6 p.m. on the same day.
+Submit your first and second choices to Fatima by email (fatima@junocollege.com) by 1 p.m. on December 12th. She is aiming to have everyone's approved by 6 p.m. on the same day.
 
 Once Fatima has approved your design, she'll update the past portfolio themes doc to reflect your choice.
 
-> If you are a designer/want to design your own portfolio, you MUST get approval from Fatima. 
+> Even if you are a designer/want to design your own portfolio, you must buy a theme. The day you finish bootcamp you can make a whole new portfolio if you want, but you may not design your own for this project.
 
 ### Resources to open PSDs without Photoshop
 * https://studio.psdetch.com/
 * https://www.photopea.com/ (similar to Photoshop)
 
 ### Some previous examples
-* [http://angelalagao.com/](http://angelalagao.com/)
-* [http://estelacodes.com/](http://estelacodes.com/)
-* [http://www.lauraduggan.ca/](http://www.lauraduggan.ca/)
+* <http://angelalagao.com/>
+* <http://www.christinalaba.com/>
+* <http://www.lauraduggan.ca/>
+* <http://www.braedencraig.com/>
 
 ## How will this project be graded?
 
 If you get a job, you get an A. 😉  
 
-We'll do group critiques/QA before demo night to catch any weirdness.
+We'll do group critiques/QA on Dec 17th before demo night to catch any weirdness.
 
 **Requirements:**
 * Have a minimum of 3 portfolio items
@@ -50,10 +53,16 @@ We'll do group critiques/QA before demo night to catch any weirdness.
 * Site is responsive and uses media queries
 
 ## Submitting your project
-1. Submit your top three theme choices to Fatima for approval by June 13th at 1 p.m. using the [submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
-2. Deploy your website by June 18th at 1 p.m. and submit the live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
-  * It is HIGHLY ENCOURAGED that you start your deploy on Tuesday evening, as Wednesday morning there will not be a lot of time for deployment debugging.
+1. Submit your top two theme choices to Fatima for approval by December 12th at 1 p.m. via email (fatima@junocollege.com).
+2. Deploy your website by December 17th at 1 p.m. and submit the live URL using [the project submission form]().
+  * It is HIGHLY ENCOURAGED that you start your deploy on Monday, as Tuesday morning there will not be a lot of time for deployment debugging.
   * Your portfolio site **must** be deployed before the critiques or it will not be eligible for review. 
+  
+## #design in Helpcue
+
+Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces. 
+
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 
 
 # No plagiarism!! 👀 We'll be watching for it!
 Plagiairism is presenting someone else's work as your own. When you use other developers' work, you must credit them on the site or in the comments. If you think something in your project walks the line, check with an instructor **before handing in your project**.

@@ -1,15 +1,13 @@
 # CSS Grid
 
-CSS Grid is a relatively new layout system available to us. It is a two-dimensional grid-based system, meaning it can handle both columns and rows.
+CSS Grid is a relatively new layout system available to us. It is a two-dimensional grid-based system, meaning it can handle both columns and rows. It is not meant to replace flexbox, floats or positioning, but is simply one more tool in our tool box.
 
 
 ## Creating our grid
 
-To begin, we'll need to set the display property of our parent element. There are two values we can use for this property to help initialize a grid layout system:
+To begin, we'll need to set the display property of our parent element.
 
 * `display: grid;` will give us a grid that is a block level grid
-
-* `display: inline-grid;` will give us a grid that is an inline-block grid
 
 Setting our display property alone won't create a grid for us. We need to tell our grid how to lay out our columns (vertical) and rows (horizontal). To do this, we need to set up our `grid-template-columns` and `grid-template-rows` properties.
 
@@ -26,7 +24,7 @@ Add the following CSS to our stylesheet:
 .container {
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 100px 200px;
+  grid-template-rows: 150px 300px;
 }
 ```
 Not only can use both pixel values and percentages, but we also have another unit of measurement available. 
@@ -49,7 +47,7 @@ Let's look at what happens when we add `grid-gap: 40px;` to our grid and switch 
 .container {
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 150px 300px;
   grid-gap: 40px;
 } 
 ```
@@ -64,7 +62,8 @@ Let's change our CSS to match the following:
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 150px 300px;
+  grid-gap: 40px;
 } 
 ```
 
@@ -72,16 +71,7 @@ What happens if we change the second column value to be `300px`? The `fr` units 
 
 ### Explicit and implicit rows and columns
 
-What happens if we have more items in our grid than we expected? Let's change our CSS to match:
-
-```css
-.container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 150px 150px;
-  grid-gap: 20px;
-}
-```
+What happens if we have more items in our grid than we expected? 
 
 Let's comment-in our remaining 5 elements so we have 12 grid items, and a grid set up to accomodate two rows of three items per column (i.e. a 2x3 grid). What will happen to the three extra elements?
 
@@ -96,7 +86,7 @@ Notice how the extra grid items get put in a new **row**, not a new **column**? 
 
 Another value, `dense` attempts to fill in holes earlier in the grid.
 
-> Using `grid-auto-flow: dense;` will change the order of your grid items, which may create accessibility challenges. If the order of your content matters to the user's understanding, don't this value.
+> Using `grid-auto-flow: dense;` will change the order of your grid items, which may create accessibility challenges. If the order of your content matters to the user's understanding, don't this value. 
 
 ### `grid-auto-rows`
 
@@ -106,8 +96,8 @@ To control your implicit rows, you can use the `grid-auto-rows` property. It is 
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 150px 150px;
-  grid-gap: 20px;
+  grid-template-rows: 150px 300px;
+  grid-gap: 40px;
   grid-auto-rows: 100px;
 }
 ```
@@ -187,10 +177,10 @@ These grid placement properties can take a number of different values:
 }
 ```
 
-* **custom grid line name** if you've named your grid lines in `grid-template-columns` and `grid-template-rows` then you can use the names here
-* **span < grid line name >** if you want your grid child to span until it hits the included named grid line(see "Additional learning topics" below).
+* **custom grid line name** if you've named your grid lines in `grid-template-columns` and `grid-template-rows` then you can use the names here (see "[Additional learning topics](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-grids.md#additional-learning-topics)" below).
+* **span < grid line name >** if you want your grid child to span until it hits the included named grid line (see "[Additional learning topics](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-grids.md#additional-learning-topics)" below).
 
-**Important to note:** 
+### Overlapping with Grid
 By default grid will shift content to avoid items overlapping. If an overlapping grid item is in your design, then every item in the grid will need to have an explicit `grid-column-start` and `grid-row-start` value.
 
 ### Shorthand placement
@@ -260,6 +250,11 @@ grid-template-columns: repeat(4, 1fr 2fr);
 grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 ```
 
+## Exercise
+
+Try this exercise: [grid-placement-exercise-start.html](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise.html). The answer key is available [here](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise-answer.html).
+
+
 ### `auto-fit` and `auto-fill`
 
 Repeat is super powerful when used with `auto-fit` and `auto-fill`. The difference between the two keywords is very subtle, but has to do with extra white space. Both fit as many rows/columns at a certain size as possible, while respecting grid gaps. At smaller breakpoints, the two act the same; it is only when we have extra whitespace available that we can see the difference.
@@ -305,11 +300,24 @@ Let's adjust our CSS to the following:
 }
 ```
 
+Combining the `minmax` function with `auto-fit` and `repeat` can help create some intuitively responsive layouts. You can create a layout with a flexible number of columns as well as flexible widths of columns. Let's adjust our CSS to the following:
+
+```css
+.container {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+```
+
+A great resource for combining those properties is [this article by Rachel Andrew](https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/), who is a member of the CSS Working Group. 
+
 ## `order`
 `order` in grid is the same as `order` in flexbox. All grid items have a default of 0. Negative `order` values will make the grid item appear before the rest, a positive number will make the item appear after the rest. 
 
 Using `order` on grid items will change the order of your grid items. If the order of your content matters to the users understanding then **do not use** this property. In general, would be fine for something like an image gallery but bad for blocks of text.
 
+# Extra Resources
+
+For a gameified version of CSS Grids, try [Grid Garden](https://cssgridgarden.com/).
 
 ## Additional learning topics
 
@@ -476,11 +484,11 @@ In order for this to work, we need to tell the child elements which grid areas t
 }
 ```
 
-#### Combining `minmax` with `auto-fit` and `auto-fill`
+<!-- #### Combining `minmax` with `auto-fit` and `auto-fill`
 
 Combining the `minmax` function with `auto-fit` and `auto-fill` can help create some intuitively responsive layouts. To dig in a bit deeper, you can read this [CSS Tricks Article](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit).
 
-Another great resource for combining those properties is [this article by Rachel Andrew](https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/), who is a member of the CSS Working Group.
+Another great resource for combining those properties is [this article by Rachel Andrew](https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/), who is a member of the CSS Working Group. -->
 
 ## Quirks and gotchas
 

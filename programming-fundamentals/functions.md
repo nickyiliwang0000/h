@@ -7,12 +7,12 @@
 -->
 # Functions
 
-[We said before](https://github.com/HackerYou/bootcamp-notes/blob/791520b13524bf56d557c1e8806ae5f369571b78/programming-fundamentals/debugging-javascript.md) that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language, but this is especially true for JavaScript. 
+[We said before](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/intro-to-javascript.md#debugging-tools) that functions are chunks of code that can be run at any point in time. Functions are arguably the most important and powerful concept in any programming language, but this is especially true for JavaScript. 
 <!-- where, as we'll see, functions can be passed around like any other value. -->
 
 So far we've mostly worked with built-in functions; now it's time to learn how to create your own.
 
-The purpose of writing a function to reduce verbosity in your code. Why write a set of instructions multiple times when you can create a function to do the work for you? Repeat less code!
+The purpose of writing a function is to reduce verbosity in your code. Why write a set of instructions multiple times when you can create a function to do the work for you? Repeat less code!
 
 ## Defining a function
 
@@ -35,7 +35,7 @@ This syntax for defining a function is called a [function declaration](https://d
 
 ```js
 const helloWorld = function() {
-	console.log("Hello there");
+  console.log("Hello there");
 };
 ```
 This second method of defining a function is referred to as a [function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function). Using one or the other is usually a matter of personal preference, and for our purposes at this point they are exactly the same. 
@@ -45,8 +45,9 @@ We call the function by typing its name followed by smooth brackets. Note that y
 
 ```js
 const helloWorld = function() {
-	console.log("Hello there");
+  console.log("Hello there");
 };
+
 helloWorld();
 // "Hello there!"
 ```
@@ -66,8 +67,8 @@ function nameOfFunction(parameter1, parameter2) {
 ```
 Here is the same thing, but defined as a function expression:
 ```js
-const nameOfFunction = function(parameter1,parameter2) {
-  //block
+const nameOfFunction = function(parameter1, parameter2) {
+  // block of statements to execute
 };
 ```
 
@@ -82,7 +83,7 @@ const add = function(a, b) {
 
 const result = add(2, 4);
 
-console.log(result) // 6
+console.log(result); // 6
 ```
 
 1. Here we **define** a function called `add` that takes the parameters `a` and `b` and returns their sum. 
@@ -103,35 +104,35 @@ They are not the same. Logging a value to the console using `console.log()` does
 The following function prints a value to the console:
 
 ```js
-const add = function(a,b) {
-  console.log(a+b);
+const addition = function(a, b) {
+  console.log(a + b);
 }
 ```
 
 If we try to store the result of the function we see that our variable stored nothing; the value is `undefined`.
 
 ```js
-const num = add(1,2);
+const num = addition(1, 2);
 num; //undefined
 ```
 
 If we use a `return` statement, we can make the function a lot more useful.
 
 ```js
-const adding = function(a,b) {
-  return a+b;
+const adding = function(a, b) {
+  return a + b;
 }
 ```
 
 ```js
-const number = adding(1,2);
+const number = adding(1, 2);
 number; //3
 ```
 ## Arrow functions
 Arrow functions are a newer syntax for creating functions (created in ES6). Arrow functions are not going to replace the function declarations and expressions we know and love, but we will be seeing them more and more. This is the basic arrow function syntax:
 
 ```js
-const functionName = (parameter1,parameter2) => {
+const functionName = (parameter1, parameter2) => {
   //some code
 };
 ```
@@ -180,19 +181,19 @@ If the function only has one parameter you can  leave the `()` off as well:
 <tr>
 <td>
 <pre lang="js">
-const add5 = a => a + 5;
+const addFive = a => a + 5;
 </pre>
 </td>
 <td>
 <pre lang="js">
-const add5 = (a) => {
+const addFive = (a) => {
   return a + 5;
 };
 </pre>
 </td>
 <td>
 <pre lang="js">
-const add5 = function(a) {
+const addFive = function(a) {
   return a + 5;
 };
 </pre>
@@ -234,8 +235,8 @@ const eight = function() {
 **Exercise**: How can we use the `add()` function to add three numbers together without changing the definition of the function?
 
 ```js
-const add = function(a,b) {
-  return a+b;
+const add = function(a, b) {
+  return a + b;
 }
 ```
 > Remember that this function returns a value whose data type is number.
@@ -252,6 +253,33 @@ Parameter | a variable (placeholder) for the arguments when defining a function
 Argument | a value provided to a function
 Pass | to provide arguments to a function
 Call | to ask JavaScript to evaluate a function Return| to pass back a value from a function
+
+## Intro to scope
+
+In JavaScript, *scope* defines the visibility or accessibility of our variables.
+
+When working with functions, the parameters and variables that we define _inside_ of a function are visible and accessible only within that function and are not accessible outside of the function. This is known as *function scope* (sometimes referred to as *local scope*).
+
+Any variables defined outside of a function have *global scope*. This means that these variables can be accessed anywhere within an application, including within functions.
+
+```js
+// global scope
+
+const myFirstFunction = function(){
+  // function (local) scope
+}
+
+// global scope
+
+const mySecondFunction = function(){
+  // function (local) scope
+}
+
+// global scope
+```
+
+Knowing the different scope levels helps us to better insulate our code from bugs. We don’t need to know too much more about scope at this stage as we will be exploring it in-depth in a later lesson.
+
 
 ## Exercises
 Complete the functions exercises in [functions.html](https://hychalknotes.s3.amazonaws.com/functions.html).

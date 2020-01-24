@@ -1,6 +1,6 @@
 # Project 4 (paired API-powered application with jQuery)
 ## Due date
-Monday, May 27th, 10:00 a.m.
+Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
 ## Project description
 
@@ -10,25 +10,25 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 
 We encourage you to use the pair-programming method: both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
 
-Your partners are listed [here](https://docs.google.com/spreadsheets/d/1NxNPhvE2nyfkh1zwraA8YGM2SPIMXVm0PHSv430CCGw/edit#gid=1557373281).
+Your partners are listed [here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742).
 
 ## Project objective
 To show a understanding of jQuery, DOM manipulation, error handling, and UI design. And to demonstrate competence in pair programming and communication.
 
-### APIs built by people in the HackerYou community
+### APIs built by people in the Juno community
 * [Makeup API](https://makeup-api.herokuapp.com/)
 * [Drag Race API](https://drag-race-api.readme.io/docs)
 * [Harry Potter API](https://potterapi.com/)
 
 ### Public APIs
 * [Zomato](https://developers.zomato.com/api)(restaurants)
-* [Petfinder](https://www.petfinder.com/developers/api-docs)(animals)
-* [Yummly](https://developer.yummly.com/)(recipes)
 * [Open Brewery DB](https://www.openbrewerydb.org/) (breweries)
 * [Pokemon API](https://pokeapi.co/) (Pokemon)
+* [MovieDB](https://www.themoviedb.org/documentation/api) (movies)
+* [Mapquest API](https://developer.mapquest.com/) (maps)
 
 ### Other APIs
-If you want to use another API, start [here](https://github.com/toddmotto/public-apis), but be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
+There are lots of other public APIs to explore [here](https://github.com/toddmotto/public-apis), but be warned: there is no guarantee that an API will work the way you want it to. It's very important to look at the data you are able to get back from an API **before** committing to a project idea!
 
 ### Tips for getting started
 * Track down an API that is of interest of you and work through the documentation to see if the information you want is available.
@@ -68,14 +68,14 @@ If you want to use another API, start [here](https://github.com/toddmotto/public
 ```
 
 ### Gotchas
-Previous projects by HackerYou students have included the use of geolocation in their projects. In the past, this was an easy process, but recently Google has introduced properties in their browser that blocks this ability unless the domain is secured by an SSL certificate. Using geolocation will work locally, but unfortunately will not work on your live site unless it is secure.
+Previous projects by Juno students have included the use of geolocation in their projects. In the past, this was an easy process, but recently Google has introduced properties in their browser that blocks this ability unless the domain is secured by an SSL certificate. Using geolocation will work locally, but unfortunately will not work on your live site unless it is secure.
 
 In order to secure your site, it's best to see if your host offers SSL certificates, or use a third-party service like [Cloudflare](https://www.cloudflare.com/plans). If this isn't possible, GitHub offers free hosting of sites with secured certificates. Ask an instructor to help you down this path. If you DO host your project on a domain that has `https` you will need to make sure any thing that you link or and AJAX requests that you make have a domain that is `https`. Otherwise you will get errors when it is deployed!
 
-If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/06-applied-javacript/6.22-fetching-data-with-something-other-than%24.ajax.md#axios-with-a-proxy-server).
+If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md).
 
 ## Project proposals
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1t1l591AZadar30FyrURnNQU6XIJ-9bdm62mpJrKEQFk/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
+Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/e/1FAIpQLSdUE0-IGQ2Fxd94dXi5luIc1sfAHJ4bDWYelzln2lsgdOGYdQ/viewform) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
 
@@ -117,10 +117,16 @@ You will also be given individual marks for your project presentation:
 
 1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project.     
   * (You don't have to rename your org if its naming convention doesn't match)
-1. Remove any unneeded files from the project.
-1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Deploy your website to GitHub Pages or on your own domain/subdomain.
-1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/FQuAaNeSpbTqbwTT8).
+2. Remove any unneeded files from the project.
+3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
+4. Deploy your website to GitHub Pages or on your own domain/subdomain.
+5. Submit your repo URL and live URL using [the project submission form](https://forms.gle/uz61731hriRM8eDx6).
+
+## #design in Helpcue
+
+Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces. 
+
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 
 
 
 ## Lateness

@@ -177,5 +177,8 @@ I have 3 pants
 ## Exercises
 Download and complete [these exercises](https://hychalknotes.s3.amazonaws.com/object-iteration-exercises-bootcamp.zip) about iterating over an object.
 
+## Resources
+* Check out [this resource](https://objectexplorer.netlify.com/) that helps you find the methods you want on objects!
+
 
 

@@ -11,26 +11,26 @@ Every browser has its own set of dev tools - Chrome and Firefox have some of the
 Our dev tools are packed with tons of helpful little tools for developing a website, we are going to take a look at the most common use of inspecting elements. By now you may be pulling your hair out wondering how someone can know which CSS rule applies to which element(s). The good news is that we aren't **that smart** - we use dev tools to help us with this.
 
 ## Trying dev tools
-Download [devTools-exercise.zip](https://hychalknotes.s3.amazonaws.com/devTools-exercise.zip). Unzip the files and open up the index.html file in your browser.
+Download [devTools-exercise.zip](https://hychalknotes.s3.amazonaws.com/devTools-exercise--bootcamp.zip). Unzip the files and open up the index.html file in your browser.
 Let's right-click our page and select 'Inspect Element'. This brings up two panels:
 
-![screenshot of developer tools in a browser](https://hychalknotes.s3.amazonaws.com/devTools-example.png)
+![screenshot of developer tools in a browser](https://hychalknotes.s3.amazonaws.com/browserToolsScreenShot.png)
 
-On the left, you will see the markup from earlier and on the right, you will see the CSS that applies to the element you selected.
+On the left you will see the markup and on the right you will see the CSS that applies to the element you selected.
 
 ### Editing a selector
-Remember we wrote the selector to make all h1 tags red? Click the **cursor within a square** icon (top left corner) and then click the red "HackerYou dev tools testing facility" title. You'll see the CSS rule we wrote! Go ahead and try to change the colour or font size. You can even add new properties like `border:2px solid green;`
+Notice that the first letters of all the words in the header elements are capitalized? Click the **cursor within a square** icon (top left corner) and then click the teal "Summer School Learning" title. You'll see the CSS rule which is formatting the headers - `text-transform: capitalize`. Go ahead and try to change the colour or font size. You can even add new properties like `border:2px solid green;`
 
 ### Playing with dev tools
 Here are a bunch of tasks to get comfortable with dev tools. When you're done, we'll go through some of the ones you had trouble with.
 
-1. Decrease the padding on the `<div class="titleText">` and add a black border.
+1. Decrease the padding on the `<div class="titleText">` and add a purple border.
 2. Change the `<body>` background colour to something you like better.  
   * Hint: You can click the white square to reveal the colour picker.
 3. Increase the padding of the `<div class="description">` and add 20px of margin to the top of it.
-3. Select any `<p>` and make the font size 25px.
+3. Select any `<p>` and make the font size 35px.
 4. Double click any text element and change the text!
-5. Go to google.com and change the colour of three things.
+5. Take any margin off all the H2 tags.
 
 As you can see, dev tools are very helpful for figuring out which styles are being applied to which elements as well as quickly testing new styles on existing elements. We will be using dev tools throughout the entire course to please **don't hesitate to ask questions about it**!
 
@@ -49,10 +49,10 @@ Here is an example:
 
 If you need a point in the right direction, here's a short list of websites with plenty of content to change:
 
-[New York Times](https://www.nytimes.com/)
-[Nature](https://www.nature.com/news)
-[NPR](https://www.npr.org/)
-[The White House](https://www.whitehouse.gov/)
-[NASA](https://www.nasa.gov/)
-[Reddit](https://www.reddit.com/)
+- [New York Times](https://www.nytimes.com/)
+- [Nature](https://www.nature.com/news)
+- [NPR](https://www.npr.org/)
+- [The White House](https://www.whitehouse.gov/)
+- [NASA](https://www.nasa.gov/)
+- [Reddit](https://www.reddit.com/)
 

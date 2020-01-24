@@ -2,7 +2,7 @@
 
 ## What is jQuery
 
-jQuery calls itself the "The write less, do more Javascript library."  What does that mean?
+jQuery calls itself the "The write less, do more JavaScript library."  What does that mean?
 
 Think of jQuery as a collection of helpful pre-written JavaScript code that you can use to quickly solve some common front-end problems.  While you'll probably use a lot jQuery on some of your projects, remember that it's all JavaScript behind the scenes.
 
@@ -18,16 +18,27 @@ There are some things you want to do all the time in your front-end JavaScript c
 
 As you've seen with HTML & CSS, each browser interprets your code a little differently.  This can also be a problem with JavaScript, so jQuery does a lot of work behind the scenes to make sure the code you write is cross-browser compliant.
 
-### 3. jQuery has plenty of  plugins you can use.
+### 3. jQuery has plenty of plugins you can use.
 
 Plugins are external libraries of prebuilt animations or interactions that can be used with jQuery. Typically, documentation will be provided by the plugin developer to make integration more accessible.  
 
 
 ## Terminology Review
 
-jQuery is really one big object with a lot of helpful methods that you get to use. Let's review what those terms mean before we dive in.
+jQuery is really one big object with a lot of helpful methods that you get to use. Let's review what some terms mean before we dive in a little deeper.
 
-**Object**
+### DOM
+The document object model represents all of the HTML element on the page in a tree structure, where each individual element is a node. 
+
+```js
+const allParagraphs = document.getElementsByTagName('p');
+```
+
+This JavaScript method will return all of the paragraph elements and store them in an array, which is then the value for the variable `allParagraphs`.
+
+
+### Object
+
 In JavaScript, an object is a collection of various properties - each property defined by a key value pair.
 
 ```js
@@ -51,7 +62,8 @@ pet.name = "Spot";
 console.log(pet.name); //logs "Spot";
 ```
 
-**Method**
+### Method
+
 Functions in JavaScript can be stored inside properties, when a function lives in side an object, it's called a method.
 
 ```js
@@ -83,47 +95,6 @@ Sometimes a method takes arguments when called.
 let result = Math.sqrt(16); //result = 4
 let result = Math.sqrt(15); //result = 3.8729
 ```
-
-## The DOM
-
-DOM stands for **document object model**, and it represents all the HTML elements on your page. It's represented by a tree structure, where each element is a **node**. You've already seen the DOM when you look at the elements panel in dev tools!
-
-JavaScript can find and modify any DOM node. Some things you might change with JavaScript:
-
-- Update the text inside an element
-- Add or remove a class to trigger CSS3 transitions
-- Hide or show elements
-- Add dynamic HTML to the page
-
-### Exploring the DOM
-
-We can access the DOM in _vanilla_ JavaScript with the word `document`. The term vanilla means writing JavaScript without any libraries.  
-
-Try typing `document` into the developer tools console.  You get the HTML for the whole page back as a JavaScript object. 
-
-We can access specific parts of the DOM with some built-in JavaScript methods on the `document` object. 
-
-* `document.getElementById('app')` finds an element with the ID of 'app'
-
-* `document.getElementsByTagName('p')` finds the paragraphs
-
-* `document.getElementsByClassName('wrapper')` finds all elements with a class of 'wrapper'
-
-
-The Mozilla Developer Network has [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document) with information about all of the properties and methods of the `document` object.
-
-
-**Exercises**:
-
-In these notes, open the console and:
-
-1. get all `div` elements on the page.
-2. get the elements with the class of "flex-wrap".
-
-**Hint**: Don't forget to call your methods on the document object.
-
-The methods above return a DOM object representing the element. If more than one element is found then an array of objects is returned.
-
 
 ## jQuery Selectors
 
@@ -182,9 +153,9 @@ jQuery objects are representations of the HTML elements (sometimes referred to a
 
 With jQuery we can do anything we want in response to an **event**.  In the browser events usually consist of mouse clicks, mouse hovers, scrolling, window resizes, keyboard presses, etc. There are many more events in the browser, but these are the ones we will look at for now. For more events check out this link [here](https://developer.mozilla.org/en-US/docs/Web/Events). The process looks like this:
 
-1. **Event Binding**: doing something when an event happens is called event binding
+1. **Event Binding**: is telling the browser to watch an element for a specified event using the `on()` method
 2. **Specify the event**: the first argument to the `on()` method is a string (e.g. `"click"`).
-3. **Provide Callback Function**: the second argument is an anonymous function with some code that will run once the event happens.
+3. **Provide callback function**: the second argument is an anonymous function with some code that will run once the event happens.
 
 The generic code looks like this:
 

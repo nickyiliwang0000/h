@@ -33,7 +33,7 @@ alert("Hello " + name + "!");
 When the browser runs this code, it stops at the `prompt()` function call and waits for the user to input their answer. That returned *value* is then stored into the `name` variable, which we then pass and as an argument to the `alert()` function.
 
 ## More built-in functions
-We've already looked `prompt()`, `alert()` and `confirm()` but there are many more functions built into JavaScript functions. Many of these built-in functions return values that we can store in variables. For example:
+We've already looked at `prompt()`, `alert()` and `confirm()` but there are many more functions built into JavaScript. Many of these built-in functions return values that we can store in variables. For example:
 
 * console.log() (doesn't necessarily have a return value)
 * `Math.` (always has a return value)
@@ -45,10 +45,29 @@ As with CSS properties, there are too many built-in functions to memorize them a
 
 You will need to use these functions for the following exercises:
 
-1. Practice using variables and operators in <a href="https://hychalknotes.s3.amazonaws.com/variables-operators.html" class="exercise" download>variables-operators.html</a>
-2. After that, give some built in functions a try with <a href="https://hychalknotes.s3.amazonaws.com/variables-operators-functions.html" class="exercise" download>variables-operators-functions.html</a>
+1. Practice using variables and operators in [variables-operators.html](https://hychalknotes.s3.amazonaws.com/variables-operators.html).
+2. After that, give some built in functions a try with [variables-operators-functions.html](https://hychalknotes.s3.amazonaws.com/variables-operators-functions.html).
 
-Answers to both exercises are <a href="https://hychalknotes.s3.amazonaws.com/variables-operators-ANSWER.html" class="exercise" download>here</a> and <a href="https://hychalknotes.s3.amazonaws.com/variables-operators-functions-ANSWER.html" class="exercise" download>here</a>
+Answers to both exercises are [here](https://hychalknotes.s3.amazonaws.com/variables-operators-ANSWER.html) and [here](https://hychalknotes.s3.amazonaws.com/variables-operators-functions-ANSWER.html)
+
+## Exploring the DOM
+
+We can access the DOM in _vanilla_ JavaScript with the word `document`. The term vanilla means writing JavaScript without any libraries. 
+
+Let's head to the [Wikipedia page for DOM](https://en.wikipedia.org/wiki/Document_Object_Model) and open up our developer tools.
+
+Type `document` into the console, and notice we get the HTML for the whole page back as a JavaScript object. 
+
+We can access specific parts of the DOM with some built-in JavaScript methods on the `document` object. 
+
+* `document.getElementById('content')` finds an element with the ID of 'content'    
+
+* `document.getElementsByTagName('p')` finds the paragraphs
+ 
+* `document.getElementsByClassName('navbox')` finds all elements with a class of 'navbox'
+
+
+The Mozilla Developer Network has [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document) with information about all of the properties and methods of the `document` object.
 
 ## JavaScript syntax
 Just like any other language, JavaScript has rules that need to be followed in order for you to be understood.
@@ -97,7 +116,7 @@ Here's a handy [Stack Overflow discussion](http://stackoverflow.com/questions/18
 **Exercise**: In the example below, add the semicolons and line breaks that allow the code to run without errors.
 
 ```js
-"I'm just a value!" let schoolName = "HackerYou" let numOfStudents = 25 schoolName + " has " + numOfStudents + " students." 
+"I'm just a value!" let schoolName = "Juno" let numOfStudents = 40 schoolName + " has " + numOfStudents + " students." 
 ```
 
 ## JavaScript + HTML = ❤️
@@ -114,7 +133,7 @@ To include it internally, write all of your JavaScript within a `<script></scrip
 </body>
 ```
 
-To include it as an external file, save your file using a `.js` extension and link to it using the script tag with a `src` attribute like this:
+To include it as an external file, save your file using a `.js` extension and link to it using the script tag with a `src` attribute like this (still at the bottom of the page):
 
 ```html
 <script src="scripts.js"></script> 

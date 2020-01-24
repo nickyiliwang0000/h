@@ -2,11 +2,11 @@
 
 ## CSS transitions
 
-So far we have worked with hover states where an item goes from A to B in a split second - a hard transition. So if we have an element 200px wide and 500px wide on hover, it just snaps to that size on hover.
+So far we have worked with hover states where an item goes from A to B in a split second - a hard transition. If we have an element that's naturally 200px wide and grows to 500px wide on hover, it just snaps to that size.
 
-CSS3 allows us to animate the transition between A and B (or normal and hover state).
+CSS allows us to animate the transition between A and B (or normal and hover state).
 
-Create a new HTML file, and add the following markup and styles
+Create a new HTML file, and add the following markup and styles:
 
 ```html
 <div class="galleryItem"></div>
@@ -143,9 +143,9 @@ What happens if you put one transition on the initial state of an element, but t
 
 ## CSS transforms
 
-_CSS transforms_ allow us to transform an element in a variety of ways, including in a 2D or 3D manner.
+_CSS transforms_ allow us to transform an element in two and three dimensions.
 
-The CSS property for transforms is `transform`, and the values you provide define _how_ the element is transformed.
+The CSS property for transforms is `transform`, and the values you provide define how the element is transformed.
 
 Create an HTML file and add the following code:
 
@@ -163,8 +163,7 @@ Create an HTML file and add the following code:
 
 ### `transform: rotate()`
 
-By providing a value of rotate, along with a number representing the degrees to rotate, we can rotate an element.
-
+By providing a value of rotate, along with a number representing the degrees to rotate, we can rotate an element:
 ```css
 .galleryItem {
   width: 200px;
@@ -174,8 +173,7 @@ By providing a value of rotate, along with a number representing the degrees to 
 }
 ```
 
-You can also apply these effects on the hover state.
-
+You can also apply these effects on hover:
 ```css
 .galleryItem {
   width: 200px;
@@ -189,15 +187,14 @@ You can also apply these effects on the hover state.
 }
 ```
 
-Using CSS transitions, we can animate between the two transformed states.
-
+Using CSS transitions, we can animate between the two transformed states:
 ```css
 .galleryItem {
   width: 200px;
   height: 200px;
   background: orangered;
   transform: rotate(60deg);
-  transition: all 0.8s;
+  transition: transform 0.8s;
 }
 
 .galleryItem:hover {
@@ -205,11 +202,11 @@ Using CSS transitions, we can animate between the two transformed states.
 }
 ```
 
-**Note: when transitioning between different transform values, you can't provide `transition: rotate 1s`. You have to the provide only the property name to transition.**
+> When transitioning between different transform values, you can't provide `transition: rotate 1s`. You provide only the property name to transition (e.g. `transform`). You can also use the keyword `all`.
 
 To work within a 3D space, we can use properties that affect the rotation across different planes.
 
-#### RotateY
+#### `rotateY`
 
 To rotate across the Y axis, use the value `rotateY()`.
 
@@ -227,7 +224,7 @@ To rotate across the Y axis, use the value `rotateY()`.
 }
 ```
 
-### `transform: scale()`
+### `scale()`
 
 The `scale()` value scales an element to be larger or smaller. Let's take the same 200px by 200px block.
 
@@ -244,7 +241,7 @@ The value of scale is a multiple of the original element. So `scale(1)` would be
 .galleryItem:hover {
   transform: scale(2.2);
 }
-````
+```
 
 As with the last one, we can also animate them.  
 
@@ -311,7 +308,7 @@ To transition these properties, we have to provide all the values again, includi
 
 ### Transform exercise
 
-Transforms can be used for some pretty interesting effects. Download <a href="https://hychalknotes.s3.amazonaws.com/transform-transition-bootcamp.zip" class="exercise" download>transform-transition-bootcamp.zip</a> and try to recreate the answer key!
+Transforms can be used for some pretty interesting effects. Download [transform-transition-bootcamp.zip](https://hychalknotes.s3.amazonaws.com/transform-transition-bootcamp.zip) and try to recreate the answer key!
 
 ## CSS animations
 
@@ -422,32 +419,24 @@ You can also set them independently as well as add a few other options:
   * `backwards` During a delay (defined by `animation-delay`), the element will take on the styles that will be applied during the first part of the animation (`animation-direction` can affect which set of styles is considered as the “first part of the animation").
   * `both` During an `animation-delay`, it will take on the styles that will be applied during the first part of the animation. Once the animation ends, it will also hold on to the styles applied during the last part of the animation.
 
-Check out this <a href="https://www.youtube.com/watch?v=irJXZnA3g5U" target="_blank">video</a> to see `animation-fill-mode` in action.
-
-## More animation exercises
-
-Looking for more exercises to do on your own? Download the files below for more practice.
-
-1. <a href="https://hychalknotes.s3.amazonaws.com/shooting-star-animation.zip" download>Starter files and answer key for shooting star animation</a>
-2. <a href="https://hychalknotes.s3.amazonaws.com/shape-animation.zip" download>Starter files and answer key for shape morphing animation</a>
+Check out this [video](https://www.youtube.com/watch?v=irJXZnA3g5U) to see `animation-fill-mode` in action.
 
 ## Animation libraries
 
-One of the great parts of this community, is that people are creating tools that we can freely use in our projects. Since animations can often be time-consuming, a couple libraries of keyframe animations exist, that you can use in your project.
+One of the great parts of this community is that people are creating tools that we can freely use in our projects. Since animations can often be time-consuming, a couple libraries of keyframe animations exist and that you can use them in your projects.
 
-* <a href="http://www.minimamente.com/example/magic_animations/" target="_blank">Magic Animations</a>
-* <a href="http://www.justinaguilar.com/animations/index.html#how" target="_blank">CSS3 Animation Cheat Sheet</a>
-* <a href="http://animista.net/" target="_blank">Animista</a>
+* [Magic Animations](http://www.minimamente.com/example/magic_animations/)
+* [CSS3 Animation Cheat Sheet](http://www.justinaguilar.com/animations/index.html#how)
+* [Animista](http://animista.net/)
+* [Animate.css](http://daneden.github.io/animate.css/)
 
-With both of these libraries, you simply include the stylesheet on your page via a `link` tag, and use the predefined classes.
+## More animation exercises
 
-There is also a handy little library of keyframes called <a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>
+Looking for more exercises to do on your own? Download the files below for more practice!
 
-This library works but just adding class names to elements you want to animate.
-
-Each element needs two classes:
-
-1. the class of `animated`
-2. the class of the animation name, like `rubberBand` or `shake`
-
-Open up <a href="https://hychalknotes.s3.amazonaws.com/animate.html" class="exercise" download>animate.html</a> and let's load in animate.css.
+* [Starter files and answer key](https://hychalknotes.s3.amazonaws.com/shooting-star-animation.zip) for a shooting star animation.
+* [Starter files and answer key](https://hychalknotes.s3.amazonaws.com/shape-animation.zip) for a shape morphing animation.
+* [Starter files and answer key](https://hychalknotes.s3.amazonaws.com/using-animate.css-library.zip) for using Animate.css, and optionally creating your own animations.
+* [Starter files and answer key](https://hychalknotes.s3.amazonaws.com/wombly-path-svg-exercise.zip) to animate an SVG.
+* Open up [these files](https://hychalknotes.s3.amazonaws.com/jquery-and-animate-bootcamp.zip) and use Animate.css to animate the text on click.
+<!-- Open up <a href="https://hychalknotes.s3.amazonaws.com/animate.html" class="exercise" download>animate.html</a> and let's load in animate.css. -->

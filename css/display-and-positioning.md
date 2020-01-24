@@ -74,8 +74,7 @@ Screen readers won't read elements with their `display` properties set to `none`
 
 #### `display: none;` vs. `visibility: hidden;`
 
-`visibility: hidden` is another property that **appears** to perform the same task as `display: none`. But when using `visibility: hidden`, the space the element would take up remains and screen readers can read the element. It's like a chameleon blending into a branch it's sitting on. It's still there, but you can't see it. `display:none;` is like taking the chameleon off the branch.
-
+`visibility: hidden` is another property that **appears** to perform the same task as `display: none`. But when using `visibility: hidden`, the space the element would take up remains. It's like a chameleon blending into a branch it's sitting on. It's still there, but you can't see it. `display:none;` is like taking the chameleon off the branch. Any elements that have either `display: none` or `visibility: hidden` will not be read by screen readers.
 
 ## Positioning your elements
 
@@ -167,6 +166,12 @@ You'll notice that the box can be positioned at any point on the screen. It does
 
 Now, what do you think `top`, `left`, `right` and `bottom` are referring to?
 > They're referring to the viewport!
+
+##### Practical examples of absolute positioning
+
+It can be hard to visualize what absolute positioning looks like in a real-world example. The bellow graphics can help illustrate some practical use cases:
+
+![Position absolute image example](https://hychalknotes.s3.amazonaws.com/practical-position-absolute.jpg)
 
 ##### Combining `position: relative;` and `position: absolute;`
 
@@ -333,7 +338,7 @@ Getting comfortable with the positioning and display properties will help you so
 * CSS3 border radius
 * Using `box-sizing:border-box;`
 * z-index
-* RBGA colours
+* RGBA colours
 * display inline, block and inline-block
 
 There are six exercises, labelled `ex1` to `ex6`.

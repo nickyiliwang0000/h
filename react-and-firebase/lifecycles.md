@@ -1,7 +1,7 @@
 <!-- Student takeaway: -->
 <!--Student will be able to:
 - Know the difference between mounting and unmounting to the DOM
-- Name four useful lifecycle methods (constructor, render, componentDidMount)
+- Name three useful lifecycle methods (constructor, render, componentDidMount)
 - Know which lifecycle methods are called when a component is mounted to the DOM (constructor, render, componentDidMount)
  -->
 
@@ -14,7 +14,7 @@ And just like the stages in a human's life, React components have stages called 
 ## What are the lifecycle methods?
 Sometimes, you will find you need to perform a little bit of business before you're ready for your component to render on the page. Maybe you'd like to make sure you have a piece of data that you're retrieving from an API, or you'd like to make sure a user is authenticated to view the page that they've requested. Lifecycle methods can help you do that.
 
-Lifecycle methods allow you to intervene at various stages of a React component's lifecycle (i.e. during its its creation/birth, updating/life, and destruction/death), in order to perform some kind of action. Since you don't have direct access to the React codebase, these lifecycle methods offer an opportunity for you to interact with and inject your own code into what would otherwise be a black box.
+Lifecycle methods allow you to intervene at various stages of a React component's lifecycle (i.e. during its creation/birth, updating/life, and destruction/death), in order to perform some kind of action. Since you don't have direct access to the React codebase, these lifecycle methods offer an opportunity for you to interact with and inject your own code into what would otherwise be a black box.
 
 When a method allows you to intervene in the process of an existing piece of code, it is often called a _hook_.
 
@@ -25,13 +25,13 @@ Whenever a React component gets added to the DOM, it's called _mounting_. We say
 
 When a React component is removed from the DOM, it's called _unmounting_. We say that that component successfully _unmounted_.
 
-There are many React lifecycle methods (see [The Component Lifecycle](https://facebook.github.io/react/docs/react-component.html), visualized here:
+There are many React lifecycle methods (see [The Component Lifecycle](https://facebook.github.io/react/docs/react-component.html)), visualized here:
 
 ![react component lifecycle methods](https://hychalknotes.s3.amazonaws.com/react-lifecycle-diagram.jpg)
 
 You don't need to know all of these methods, especially when first starting out. We're going to focus on some of the most important and commonly used ones. 
 
-When a component is mounted to the DOM, three lifecycle methods are called:
+When a component is mounted to the DOM, three lifecycle methods are called, always in this order:
 
 * **constructor()** - This is where you do things like set initial state and bind any functions to your component.
 * **render()** - This is where you determine what gets displayed to the page.
@@ -39,9 +39,10 @@ When a component is mounted to the DOM, three lifecycle methods are called:
 
 When a component updates because its state or prop values were changed, this lifecycle method is called:
 
-* **componentDidUpdate()** - This is where you can operate on the DOM and make network requests. **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
+* **componentDidUpdate()** - This is where you can operate on the DOM and make network requests.
+  * **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
 
-When a component is unmounted from the DOM, the only one lifecycle method is called:
+When a component is unmounted from the DOM, this one lifecycle method is called:
 * **componentWillUnmount()** This is where you stop any recurrent logic associated with that component (like a timer or a recurring API call).
 
 ## Using the lifecycle methods
