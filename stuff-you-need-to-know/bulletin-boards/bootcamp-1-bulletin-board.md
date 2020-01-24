@@ -46,7 +46,7 @@ Week 2:  CSS Evolved and Hello JavaScript
 
 **Friday**
 
-* HTML/CSS Test
+* 📝HTML/CSS Test📝
 * Git Collaboration (branching)
 * Github pages
 * 🍴 LUNCH 🍴
