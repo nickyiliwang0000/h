@@ -3,59 +3,70 @@
 
 ### Schedule
 
-Week 1:  Welcome! Shoring up the little knowledge gaps!
+Week 2:  CSS Evolved and Hello JavaScript
 
 
 **Monday**
 
-* Introductions
-* CIRR Survey
-* Juno Orientation
+* Motivational Monday
+* Intro to the command line
+* Git on the command line
+* Version control with Git and Github
 * 🍴 LUNCH 🍴
-* Juno Orientation cont’d
-* Keeping organized as a developer
-* HTML & CSS Review
+* Project due at 1:00 pm
+* Project 1 Presentations
+* Introduce Project 2
+* Project work time
 
 **Tuesday**
 
-* Kickoff activity
-* Meet your text editor
-* Browser dev tools
-* CSS background-color and images
+* Flexbox
+* Flexbox code-along
 * 🍴 LUNCH 🍴
-* CSS pseudo selectors
-* CSS pseudo elements
-* CSS dimensions
-* Display and positioning
-* Project 1 introduction
+* Project work time
 
 **Wednesday**
 
-* Kickoff activity
-* CSS layout
+* CSS transitions, transforms, and animations
+* CSS preprocessors and SCSS
 * 🥗LUNCH - SALAD CLUB 🥗
-* Advanced layouts
-* Helpcue Orientation
+* Advanced CSS selectors 
 * Project work time
 
 **Thursday**
 
 * Kickoff activity
-* Philosophy of best practices
-* Responsive design
+* Grid systems
+* CSS grids
 * 🍴 LUNCH 🍴
-* Navigations
+* FTP and domains
+* Exercise: host your project with FTP
+* Cross-browser testing
 * Project work time
 
 **Friday**
 
-* Kickoff activity
-* Forms
+* HTML/CSS Test
+* Git Collaboration (branching)
+* Github pages
 * 🍴 LUNCH 🍴
-* Forms cont’d
-* Personal branding
+* Intro to Programming
+* Intro to JavaScript
 * Project work time
 * Show 'n' Tell
+
+
+### HTML/CSS Test study areas
+* Folder/Project organization best practices
+* Media query best practices
+* CSS Dimensions
+* Accessibility best practices
+* Semantic elements
+* The box model
+* CSS calculations
+* Colors
+* Positioning, flexbox, floats (no grid)
+
 
 
 ### Bootcamp calendar
