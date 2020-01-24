@@ -122,11 +122,11 @@ Let's style the list and nested list different colours so we know what's going o
 ```css
 .main-menu {
   background: pink;
-	padding: 10px;
+  padding: 10px;
 }
 
 .sub-menu {
-  	background: peachpuff;
+  background: peachpuff;
 }
 
 .main-menu li a {
