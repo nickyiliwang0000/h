@@ -248,10 +248,10 @@ A **relative** image path is one that uses your document (probably an index.html
 
 ```html
 <!-- using a url relative to the HTML page -->
-<img src="images/dog.jpg" alt="My dog Hugo">
+<img src="images/dog.jpg" alt="My dog Hugo running on the beach">
 
 <!-- using an absolute url from another website -->
-<img src="http://dogpictures.com/dog.jpg" alt="Someone else's dog">
+<img src="http://dogpictures.com/dog.jpg" alt="Someone else's dog leaping to grab an airborne frisbee">
 ```
 
 ##### Descriptive alt attributes
@@ -446,16 +446,6 @@ The value passed into the attribute is what is known as a _class name_ and shoul
 #### ID
 
 Like the `class` attribute, the `id` attribute can be used to target an element. Unlike the `class` attribute, elements cannot share IDs. 
-
-**👎 Incorrect:**
-```html
-<header>
-  <h1 id="title" class="movie-name">Lord Of The Rings</h1>
-  <h2 id="title" class="movie-name">The Two Towers</h2>
-</header>
-```
-
-**👍 Correct:**
 ```html
 <header>
   <h1 id="title" class="movie-name">Lord Of The Rings</h1>
@@ -514,6 +504,20 @@ In your travels around the Internet, you may see some attributes from older vers
 As you may have guessed, these are all presentational. Any of these will work in the browser, but remember that when writing modern, semantic code **styling is never HTML's job**. 
 
 
+#### Creating a multipage site
+
+All we need to do to create a multipage site is create more HTML files! We will have a main html file, usually called `index.html`, and another HTML file called `about.html`.
+
+Within our `index.html`, we'll have a link to the `about.html` page. Like so:
+
+```html
+<!-- Inside index.html -->
+<a href="about.html">About</a>
+```
+
+Bam! You've built a multi-page navigation!
+
+
 
 #### Using attributes with anchor tags
 Have you ever seen a URL that that looks like this?:
@@ -548,18 +552,6 @@ You can link to any element that has an ID (e.g. `<div>`, `<span>` or `<blockquo
 
 Open up <a href="https://hychalknotes.s3.amazonaws.com/link-within.zip" class="exercise" download>**link-within.zip**</a> and create a navigation based on the available markup. It can be a single level navigation - no dropdowns required.
 
-#### Creating a multipage site
-
-All we need to do to create a multipage site is create more HTML files! We will have a main html file, usually called `index.html`, and another HTML file called `about.html`.
-
-Within our `index.html`, we'll have a link to the `about.html` page. Like so:
-
-```html
-<!-- Inside index.html -->
-<a href="about.html">About</a>
-```
-
-Bam! You've built a multi-page navigation!
 
 
 ### Semantic elements
