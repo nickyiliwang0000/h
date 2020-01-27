@@ -75,7 +75,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1qw-d
 1. Remove any unneeded files from the project.
 1. Create a repository called `firstname-lastname-project-one`
 1. Push your files to GitHub.
-1. Submit your repo URL using [the project submission form](http://bit.ly/HYsubmissions).
+1. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
 
 ## #design in Helpcue
 
