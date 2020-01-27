@@ -14,7 +14,12 @@
 A variable's value can be set to the return value of a function in JavaScript.
 
 ```js
-let someVariable = someFunctionThatReturnsSomething();
+function goodLibraryPatron() {
+	return 'library books';
+}
+
+
+let someVariable = goodLibraryPatron();
 ```
 The browser will run the function and store any return from it as the value of the variable.
 
