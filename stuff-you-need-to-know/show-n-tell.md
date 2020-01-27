@@ -34,9 +34,7 @@ Feel free to choose any topic - just make sure you have it approved before you s
 ### Available sample topics:
 ```
 color-adjust
-CSS Masks
 CSS text-path
-CSS variables
 custom browser extensions
 custom SVGs
 custom tool tips
@@ -51,7 +49,6 @@ stroke-dash
 SVG Morph
 touchstart
 Konami Codes
-CSS shapes
 CSS knock-out
 custom cursors
 sketch.js
@@ -61,7 +58,6 @@ p5.js
 recursion
 impress.js
 CSS shine
-d3.js
 SweetAlerts
 typed.js
 draggable.js
@@ -83,12 +79,15 @@ reveal.js
 bookmarklets
 ml5.js
 float-labels
-mix-blend-mode
 react autocomplete
 tilt.js
 ```
 
 ### Claimed:
 ```
-
+CSS Masks
+CSS variables
+d3.js
+CSS shapes
+mix-blend-mode
 ```
