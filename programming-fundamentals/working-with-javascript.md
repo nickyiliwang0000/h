@@ -11,12 +11,15 @@
 
 ## Combining variables and functions
 
-A variable's value can be a function in JavaScript.
+A variable's value can be set to the return value of a function in JavaScript.
 
 ```js
-let someVariable = function(){
-	//run some code
+function goodLibraryPatron() {
+	return 'library books';
 }
+
+
+let someVariable = goodLibraryPatron();
 ```
 The browser will run the function and store any return from it as the value of the variable.
 
