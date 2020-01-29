@@ -248,10 +248,10 @@ A **relative** image path is one that uses your document (probably an index.html
 
 ```html
 <!-- using a url relative to the HTML page -->
-<img src="images/dog.jpg" alt="My dog Hugo running on the beach">
+<img src="images/dog.jpg" alt="A young golden retriever running along the each towards the camera with a stick picked from the ocean">
 
 <!-- using an absolute url from another website -->
-<img src="http://dogpictures.com/dog.jpg" alt="Someone else's dog leaping to grab an airborne frisbee">
+<img src="http://dogpictures.com/dog.jpg" alt="A sleeping corgi wearing sunglasses on a beach towel, under a beach umbrella by the ocean">
 ```
 
 ##### Descriptive alt attributes
@@ -446,6 +446,16 @@ The value passed into the attribute is what is known as a _class name_ and shoul
 #### ID
 
 Like the `class` attribute, the `id` attribute can be used to target an element. Unlike the `class` attribute, elements cannot share IDs. 
+
+**👎 Incorrect:**
+```html
+<header>
+  <h1 id="title" class="movie-name">Lord Of The Rings</h1>
+  <h2 id="title" class="movie-name">The Two Towers</h2>
+</header>
+```
+
+**👍 Correct:**
 ```html
 <header>
   <h1 id="title" class="movie-name">Lord Of The Rings</h1>
