@@ -3,70 +3,50 @@
 
 ### Schedule
 
-Week 2:  CSS Evolved and Hello JavaScript
+Week 3:  JavaScript featuring jQuery
 
 
 **Monday**
 
+* Project due a 10:00 am
 * Motivational Monday
-* Intro to the command line
-* Git on the command line
-* Version control with Git and Github
+* Project 2 presentations
+* JS variables
 * 🍴 LUNCH 🍴
-* Project due at 1:00 pm
-* Project 1 Presentations
-* Introduce Project 2
-* Project work time
+* Working with JavaScript
+
 
 **Tuesday**
 
-* Flexbox
-* Flexbox code-along
+* Programming control flow
 * 🍴 LUNCH 🍴
-* Project work time
+* JS Functions
 
 **Wednesday**
 
-* CSS transitions, transforms, and animations
-* CSS preprocessors and SCSS
+* JS Objects
 * 🥗LUNCH - SALAD CLUB 🥗
-* Advanced CSS selectors 
-* Project work time
+* JS array methods
 
 **Thursday**
 
-* Kickoff activity
-* Grid systems
-* CSS grids
+* JS Review (if needed)
+* Intro to jQuery
+* jQuery API documentation
+* jQuery best practices
 * 🍴 LUNCH 🍴
-* FTP and domains
-* Exercise: host your project with FTP
-* Cross-browser testing
+* MVP exercise
+* Project 3 introduction
 * Project work time
 
 **Friday**
 
-* 📝HTML/CSS Test📝
-* Git Collaboration (branching)
-* Github pages
+* Mock Tech Test
+* jQuery code-along
 * 🍴 LUNCH 🍴
-* Intro to Programming
-* Intro to JavaScript
+* Design Lesson ft. Melissa
 * Project work time
 * Show 'n' Tell
-
-
-### HTML/CSS Test study areas
-* Folder/Project organization best practices
-* Media query best practices
-* CSS Dimensions
-* Accessibility best practices
-* Semantic elements
-* The box model
-* CSS calculations
-* Colors
-* Positioning, flexbox, floats (no grid)
-
 
 
 ### Bootcamp calendar
