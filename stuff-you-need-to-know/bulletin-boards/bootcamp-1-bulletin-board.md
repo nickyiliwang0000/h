@@ -62,7 +62,7 @@ Tests = 5% each
 Exam = 25%
 ```
 
-Submission form: http://bit.ly/HYsubmissions
+Submission form: https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit
 
 Group assignments: [Here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742)
 
