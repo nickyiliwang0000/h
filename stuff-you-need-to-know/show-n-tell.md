@@ -52,7 +52,6 @@ stroke-dash
 SVG Morph
 touchstart
 Konami Codes
-CSS knock-out
 custom cursors
 sketch.js
 DNS
@@ -61,7 +60,6 @@ recursion
 impress.js
 CSS shine
 SweetAlerts
-typed.js
 parallax
 chart.js
 :focus-within
@@ -90,7 +88,9 @@ CSS variables
 d3.js
 CSS shapes
 mix-blend-mode
+CSS knock-out
 animate-on-scroll
 React Native
+typed.js
 draggable.js
 ```
