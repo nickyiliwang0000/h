@@ -76,7 +76,7 @@ You will also be given marks for your project presentation:
 2. Create a repository with a descriptive name that matches your naming convention.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages, Firebase Hosting, or on your own domain/subdomain
-5. Submit your repo URL and live URL using [the project submission form]().
+5. Submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
 
 ## #design in Helpcue
 
