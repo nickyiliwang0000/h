@@ -63,7 +63,7 @@ Your instructors are your clients. They're human! Talk to them! If you want to c
 
 ## Submitting your project
 1. Deploy your website to Firebase Hosting or your own domain/subdomain.
-1. One person from the group will submit your repo URL and live URL using [the project submission form](http://bit.ly/HYsubmissions).
+1. One person from the group will submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
 
 ## #design in Helpcue
 
