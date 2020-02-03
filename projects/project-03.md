@@ -61,7 +61,7 @@ You will also be given marks for your project presentation:
 1. Create a repository with a name made up of your own first name, then your last name, and project three (e.g.`firstNameLastNameprojectThree`). 
 1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 1. Deploy your website to GitHub Pages or on your own domain/subdomain
-1. Submit your repo URL and live URL using [the project submission form](https://forms.gle/NtYaHEfo3EqMsBpJ8).
+1. Submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
 
 ## #design in Helpcue
 
