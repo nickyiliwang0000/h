@@ -41,7 +41,6 @@ color-adjust
 CSS text-path
 custom browser extensions
 custom SVGs
-custom tool tips
 cycle.js
 draft.js
 Label & Labelledby
@@ -52,7 +51,6 @@ stroke-dash
 SVG Morph
 touchstart
 Konami Codes
-custom cursors
 sketch.js
 DNS
 p5.js
@@ -67,7 +65,6 @@ anime.js
 AMP pages
 brain.js
 three.js
-particle.js
 granim.js
 split.js
 reveal.js
@@ -85,12 +82,18 @@ animate.css
 CSS Masks
 preloaders
 CSS variables
+particle.js
 d3.js
+custom tool tips
 CSS shapes
+design patterns
 mix-blend-mode
 CSS knock-out
 animate-on-scroll
+progressive web apps
 React Native
+headless content management
 typed.js
 draggable.js
+custom cursors
 ```
