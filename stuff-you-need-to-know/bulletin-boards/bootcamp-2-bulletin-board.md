@@ -17,7 +17,7 @@ Tests = 5% each
 Exam = 25%
 ```
 
-Submission form: https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit
+Submission form: https://forms.gle/b5Npo5Nv95GyCXSk6
 
 Group assignments: [Here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing)
 
