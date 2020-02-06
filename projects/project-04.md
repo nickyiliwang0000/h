@@ -75,7 +75,7 @@ In order to secure your site, it's best to see if your host offers SSL certifica
 If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md).
 
 ## Project proposals
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/e/1FAIpQLSdUE0-IGQ2Fxd94dXi5luIc1sfAHJ4bDWYelzln2lsgdOGYdQ/viewform) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
+Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1ZEeOBjBbn4nOEYc8xhi4wRbMWaroXSkYzwta_mcu9iA/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline. 
 
