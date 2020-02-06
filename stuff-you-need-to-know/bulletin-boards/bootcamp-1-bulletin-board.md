@@ -50,7 +50,7 @@ Week 3:  JavaScript featuring jQuery
 
 
 ### Bootcamp calendar
-We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2019 Fall Bootcamp - (event)".
+We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Winter 1 Bootcamp - (event)".
 
 ### Important links & Info
 Feedback form: https://forms.gle/g9f6G8LB5FfJZFSF6
