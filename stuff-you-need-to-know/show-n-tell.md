@@ -37,42 +37,34 @@ Feel free to choose any topic - just make sure you have it approved before you s
 
 ### Available sample topics:
 ```
-color-adjust
-CSS text-path
 custom browser extensions
 custom SVGs
 cycle.js
 draft.js
 Label & Labelledby
-pointer events
-pose.js
 react dnd
 stroke-dash
 SVG Morph
 touchstart
 Konami Codes
-sketch.js
 DNS
 p5.js
 recursion
-impress.js
 CSS shine
-SweetAlerts
 parallax
 chart.js
 :focus-within
 anime.js
 AMP pages
-brain.js
 three.js
 granim.js
 split.js
 reveal.js
 bookmarklets
 ml5.js
-float-labels
 react autocomplete
 tilt.js
+React Native
 ```
 
 ### Claimed:
@@ -85,13 +77,21 @@ CSS variables
 particle.js
 d3.js
 custom tool tips
+impress.js
+CSS text-path
+pose.js
 CSS shapes
 design patterns
+SweetAlerts
 mix-blend-mode
+float-labels
 CSS knock-out
+brain.js
+color-adjust
 animate-on-scroll
 progressive web apps
-React Native
+sketch.js
+pointer events
 headless content management
 typed.js
 draggable.js
