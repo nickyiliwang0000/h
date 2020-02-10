@@ -3,50 +3,55 @@
 
 ### Schedule
 
-Week 3:  JavaScript featuring jQuery
-
+Week 4:  JavaScript: The Fun Parts
 
 **Monday**
 
-* Project due a 10:00 am
 * Motivational Monday
-* Project 2 presentations
-* JS variables
+* jQuery code-along
 * 🍴 LUNCH 🍴
-* Working with JavaScript
+* How to organize your JS
+* Callback Functions
+* Project work time
 
 
 **Tuesday**
 
-* Programming control flow
+* Advanced array methods
 * 🍴 LUNCH 🍴
-* JS Functions
+* Regular expressions
+* Project work time
+
 
 **Wednesday**
 
-* JS Objects
+* Working with APIs
+* Accessing API Data w/ AJAX
+* When AJAX goes wrong
 * 🥗LUNCH - SALAD CLUB 🥗
-* JS array methods
+* AJAX practice
+* Project work time
 
 **Thursday**
 
-* JS Review (if needed)
-* Intro to jQuery
-* jQuery API documentation
-* jQuery best practices
+* Understanding API documentation
+* API code-along
 * 🍴 LUNCH 🍴
-* MVP exercise
-* Project 3 introduction
+* Midpoint check-ins with Colin
 * Project work time
 
 **Friday**
 
-* Mock Tech Test
-* jQuery code-along
+* Project 3 DUE at 10:00 AM
+* Project 4 introduction
+* Project work time
 * 🍴 LUNCH 🍴
-* Design Lesson ft. Melissa
+* Midpoint check-ins with Colin
 * Project work time
 * Show 'n' Tell
+
+
+
 
 
 ### Bootcamp calendar
