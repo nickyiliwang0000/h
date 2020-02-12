@@ -53,11 +53,8 @@ recursion
 CSS shine
 parallax
 chart.js
-:focus-within
 anime.js
 AMP pages
-three.js
-granim.js
 split.js
 reveal.js
 bookmarklets
@@ -81,19 +78,23 @@ impress.js
 CSS text-path
 pose.js
 CSS shapes
+:focus-within
 design patterns
 SweetAlerts
 mix-blend-mode
 float-labels
 CSS knock-out
+three.js
 brain.js
 color-adjust
 animate-on-scroll
+granim.js
 progressive web apps
 sketch.js
 pointer events
 headless content management
 typed.js
 draggable.js
+tone.js
 custom cursors
 ```
