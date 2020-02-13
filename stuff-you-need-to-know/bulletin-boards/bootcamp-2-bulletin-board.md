@@ -6,47 +6,52 @@
 
 Week 1: Welcome! Shoring up the little knowledge gaps!
 
-<Monday />
-* Introductions
-* Juno Orientation
-* 🍴 LUNCH 🍴
-* Juno Orientation cont’d
-* Keeping organized as a developer
-* HTML & CSS Review
-* Meet your text editor
-* Browser dev tools
-* Project 1 introduction
+**<Monday />**
 
-<Tuesday />
-* CSS background-color and images
-* CSS pseudo selectors
-* CSS pseudo elements
-* 🍴 LUNCH 🍴
-* CSS Dimensions
-* CSS Layout
-* Project work time
+-   Introductions
+-   Juno Orientation
+-   🍴 LUNCH 🍴
+-   Juno Orientation cont’d
+-   Keeping organized as a developer
+-   HTML & CSS Review
+-   Meet your text editor
+-   Browser dev tools
+-   Project 1 introduction
 
-<Wednesday />
-* Display and Positioning
-* 🥗LUNCH - SALAD CLUB 🥗
-* Advanced layouts
-* Project work time
+**<Tuesday />**
 
-<Thursday />
-* Philosophy of Best Practices
-* Responsive design
-* 🍴 LUNCH 🍴
-* Navigations
-* Project work time
+-   CSS background-color and images
+-   CSS pseudo selectors
+-   CSS pseudo elements
+-   🍴 LUNCH 🍴
+-   CSS Dimensions
+-   CSS Layout
+-   Project work time
 
-<Friday />
-* Personal branding
-* Intro to Command Line
-* Version control with Git and Github
-* 🍴 LUNCH 🍴
-* Git on the Command Line
-* Project work time
-* Show 'n' Tell
+**<Wednesday />**
+
+-   Display and Positioning
+-   🥗LUNCH - SALAD CLUB 🥗
+-   Advanced layouts
+-   Project work time
+
+**<Thursday />**
+
+-   Philosophy of Best Practices
+-   Responsive design
+-   🍴 LUNCH 🍴
+-   Navigations
+-   Project work time
+
+**<Friday />**
+
+-   Personal branding
+-   Intro to Command Line
+-   Version control with Git and Github
+-   🍴 LUNCH 🍴
+-   Git on the Command Line
+-   Project work time
+-   Show 'n' Tell
 
 ### Bootcamp calendar
 
