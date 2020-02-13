@@ -6,7 +6,7 @@
 
 Week 1: Welcome! Shoring up the little knowledge gaps!
 
-<Monday />
+**Monday**
 
 -   Introductions
 -   Juno Orientation
@@ -18,7 +18,7 @@ Week 1: Welcome! Shoring up the little knowledge gaps!
 -   Browser dev tools
 -   Project 1 introduction
 
-<Tuesday />
+**Tuesday**
 
 -   CSS background-color and images
 -   CSS pseudo selectors
@@ -28,14 +28,14 @@ Week 1: Welcome! Shoring up the little knowledge gaps!
 -   CSS Layout
 -   Project work time
 
-<Wednesday />
+**Wednesday**
 
 -   Display and Positioning
 -   🥗LUNCH - SALAD CLUB 🥗
 -   Advanced layouts
 -   Project work time
 
-<Thursday />
+**Thursday**
 
 -   Philosophy of Best Practices
 -   Responsive design
@@ -43,7 +43,7 @@ Week 1: Welcome! Shoring up the little knowledge gaps!
 -   Navigations
 -   Project work time
 
-<Friday />
+**Friday**
 
 -   Personal branding
 -   Intro to Command Line
