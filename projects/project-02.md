@@ -72,9 +72,9 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcO
 
 **Sunshine**
 
-[design](https://hychalknotes.s3.amazonaws.com/sunshine-assets.zip)
+[design](https://scene.zeplin.io/project/5e44588b5789418a0a4df9ac)
 
-[assets](https://hychalknotes.s3.amazonaws.com/willow-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/sunshine-assets.zip)
 
 **Creative**
 
