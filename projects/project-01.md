@@ -58,9 +58,9 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcO
 
 ### Design files
 
-<!-- Coming soon! -->
+Coming soon!
 
-**Biker Land**
+<!-- **Biker Land**
 
 [design](https://scene.zeplin.io/project/5c42348575d24d013c4a3e54)
 
@@ -76,7 +76,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcO
 
 [design](https://scene.zeplin.io/project/5c424fe0c50a21377f03d900)
 
-[assets](https://hychalknotes.s3.amazonaws.com/animal-land-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/animal-land-assets.zip) -->
 
 ## Submitting your project
 
