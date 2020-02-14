@@ -3,53 +3,54 @@
 
 ### Schedule
 
-Week 4:  JavaScript: The Fun Parts
+Week 5:  JavaScript: The "MORE" Fun Parts
 
 **Monday**
 
-* Motivational Monday
-* jQuery code-along
-* 🍴 LUNCH 🍴
-* How to organize your JS
-* Callback Functions
-* Project work time
-
+* NO CLASS (Family Day) 🏄‍♀️
 
 **Tuesday**
 
-* Advanced array methods
+* Motivational Monday (Tuesday)
+* Project 3 presentations
+* JavaScript Superpowers - Spread, Rest, Destructuring 
 * 🍴 LUNCH 🍴
-* Regular expressions
 * Project work time
 
 
 **Wednesday**
 
-* Working with APIs
-* Accessing API Data w/ AJAX
-* When AJAX goes wrong
+* Working with asynchronous events
 * 🥗LUNCH - SALAD CLUB 🥗
-* AJAX practice
+* Intro to Firebase
 * Project work time
 
 **Thursday**
 
-* Understanding API documentation
-* API code-along
+* Class-based programming
 * 🍴 LUNCH 🍴
-* Midpoint check-ins with Colin
+* Advanced JS - Lexical scope and execution context
 * Project work time
 
 **Friday**
 
-* Project 3 DUE at 10:00 AM
-* Project 4 introduction
-* Project work time
+* Project 4 DUE at 10:00 AM
+* Career Services Presentation
 * 🍴 LUNCH 🍴
-* Midpoint check-ins with Colin
-* Project work time
+* Making our code modular
+* Intro to React 🤙
+* 📝JS/jQuery Test📝
 * Show 'n' Tell
 
+### JS/jQuery Test Study Areas
+
+* Objects
+* Arrays
+* Variable assignment and scope
+* Difference between the functional programming methods we learned (map, filter, forEach)
+* Arrow functions
+* Promises
+* This keyword 
 
 
 
