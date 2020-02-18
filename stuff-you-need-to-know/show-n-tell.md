@@ -52,7 +52,6 @@ p5.js
 recursion
 CSS shine
 parallax
-chart.js
 anime.js
 AMP pages
 split.js
@@ -83,6 +82,7 @@ design patterns
 SweetAlerts
 mix-blend-mode
 float-labels
+chart.js
 CSS knock-out
 three.js
 brain.js
