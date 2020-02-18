@@ -316,7 +316,7 @@ Then, we'll get into [flexboxCodeAlong.zip](https://hychalknotes.s3.amazonaws.co
 
 ## Resources
 
-* [Flexbox CheatSheet Visualized (PDF)](http://jonibologna.com/content/images/flexboxsheet.pdf), an excellent flow chart about how to lay out projects with flexbox and what each property does.
+* [Flexbox CheatSheet Visualized (PDF)](https://jonibologna.com/content/flexboxsheet.pdf), an excellent flow chart about how to lay out projects with flexbox and what each property does.
 * [Flexbox Reference (Codrops)](http://tympanus.net/codrops/css_reference/flexbox/)
 * [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/), a bunch of examples of the problems that flexbox has solved for individual developers.
 * [Learn CSS Flexbox](http://learnlayout.com/flexbox.html)
