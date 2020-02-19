@@ -1,5 +1,5 @@
 <!-- Student takeaway: -->
-<!--Student will be able to:
+<!--Students will be able to:
 - Properly link a label to a form input
 - Properly hide a label for a screenreader
 - Name 10 types of inputs (there are 16 mentioned)
