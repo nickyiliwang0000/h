@@ -94,7 +94,7 @@ Here is [a little demo](https://www.w3schools.com/cssref/playit.asp?filename=pla
 
 Sometimes you will want to have control over whether a background image is fixed within the viewport or scrolls. For this we use the `background-attachment` property. There are two primary types of attachment: `fixed` and ` scroll`. 
 
-`background-attachment: scroll` is the defualt attachment property and will make the background you are targeting scroll relative to the main view. What this means is it will behave like you would expect, if you scroll the site, the image scrolls along with everything else.
+`background-attachment: scroll` is the default attachment property and will make the background you are targeting scroll relative to the main view. What this means is it will behave like you would expect, if you scroll the site, the image scrolls along with everything else.
 
 ```css
 section {
