@@ -16,7 +16,7 @@ To show that you can take a PSD and convert it into a functional, responsive web
 
 We're using an application called [Zeplin](https://zeplin.io/) to share designs with you. Zeplin provides an interactive view of your design that you can click around to extract assets and information about what you are building. It will also give you clues about measurements, font sizes, and colours.
 
-Remember that you can discuss font sizes with the designe if you think they are too small to be read comfortably.
+Remember that you can discuss font sizes with the designer if you think they are too small to be read comfortably.
 
 ## How will this project be graded?
 
@@ -58,9 +58,9 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcO
 
 ### Design files
 
-Coming soon!
+<!-- Coming soon! -->
 
-<!-- **Biker Land**
+**Biker Land**
 
 [design](https://scene.zeplin.io/project/5c42348575d24d013c4a3e54)
 
@@ -76,7 +76,7 @@ Coming soon!
 
 [design](https://scene.zeplin.io/project/5c424fe0c50a21377f03d900)
 
-[assets](https://hychalknotes.s3.amazonaws.com/animal-land-assets.zip) -->
+[assets](https://hychalknotes.s3.amazonaws.com/animal-land-assets.zip)
 
 ## Submitting your project
 
