@@ -46,26 +46,21 @@ bookmarklets
 brain.js
 chart.js
 color-adjust
-CSS knock-out
 CSS Masks
-CSS shapes
 CSS shine
-CSS text-path
-CSS variables
 custom browser extensions
 custom cursors
 custom SVGs
 custom tool tips
 cycle.js
 d3.js
-design patterns
 DNS
 draft.js
 draggable.js
 float-labels
 granim.js
-headless content management
 impress.js
+knock-out
 Konami Codes
 Label & Labelledby
 lodash
@@ -77,17 +72,18 @@ particle.js
 pointer events
 pose.js
 preloaders
-progressive web apps
 react autocomplete
 react dnd
 React Native
 recursion
 reveal.js
+shape-outside
 sketch.js
 split.js
 stroke-dash
 SVG Morph
 SweetAlerts
+text-path
 three.js
 tilt.js
 tone.js
