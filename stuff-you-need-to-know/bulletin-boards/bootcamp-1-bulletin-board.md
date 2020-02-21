@@ -3,54 +3,50 @@
 
 ### Schedule
 
-Week 5:  JavaScript: The "MORE" Fun Parts
+Week 6:  React, BABY 🤙
 
 **Monday**
 
-* NO CLASS (Family Day) 🏄‍♀️
+* Motivational Monday
+* Standups
+* React - Breaking our apps into components
+* React - Events
+* 🍴 LUNCH 🍴
+* React - Lifecycle methods
+
 
 **Tuesday**
 
-* Motivational Monday (Tuesday)
-* Project 3 presentations
-* JavaScript Superpowers - Spread, Rest, Destructuring 
+* React - Review
+* React - Props
 * 🍴 LUNCH 🍴
-* Project work time
+* Project 5 Introduction
+* Project work time (scope approval)
 
 
 **Wednesday**
 
-* Working with asynchronous events
+* React - Function components
 * 🥗LUNCH - SALAD CLUB 🥗
-* Intro to Firebase
+* Using Firebase in React
 * Project work time
 
 **Thursday**
 
-* Class-based programming
+* Advanced JS: lexical scope and execution context
+* GitHub pages and React
 * 🍴 LUNCH 🍴
-* Advanced JS - Lexical scope and execution context
 * Project work time
 
 **Friday**
 
-* Project 4 DUE at 10:00 AM
-* Career Services Presentation
+* Mock Tech Test
+* React code-along (special-guest)
 * 🍴 LUNCH 🍴
-* Making our code modular
-* Intro to React 🤙
-* 📝JS/jQuery Test📝
+* React code-along (special-guest) cont’d
+* Project Work Time
 * Show 'n' Tell
 
-### JS/jQuery Test Study Areas
-
-* Objects
-* Arrays
-* Variable assignment and scope
-* Difference between the functional programming methods we learned (map, filter, forEach)
-* Arrow functions
-* Promises
-* This keyword 
 
 ### General feedback from the mock tech test
 > Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox, or grids.
