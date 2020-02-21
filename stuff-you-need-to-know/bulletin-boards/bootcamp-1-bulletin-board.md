@@ -52,6 +52,24 @@ Week 5:  JavaScript: The "MORE" Fun Parts
 * Promises
 * This keyword 
 
+### General feedback from the mock tech test
+> Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox, or grids.
+
+🎉 Successes 🎉
+
+- Clearfix class on the parent when they're floating children.
+- Consider how to code the site responsively
+- Draw all over the picture! Heck yes!
+- Lots of people mentioning using CSS classes / reusing code. 👍👍👍
+- Great job remembering your setup/reset snippets and wrappers.
+- Think about how the images would sit inside their parent container and applying max-width: 100% so that they behaved appropriately.
+
+🔨 Things to think about 🔨
+
+Always make sure to read your instructions carefully. Pseudo-code shouldn’t have any actual code in it! Remember, with pseudo-code, we are essentially trying to help organize our thoughts and break down our process into small digestible steps to solve a problem. A Technical interviewer will be looking for your ability to explain technical concepts, not just write the rules to achieve it.
+
+Killed IT! 💥
+
 
 
 
