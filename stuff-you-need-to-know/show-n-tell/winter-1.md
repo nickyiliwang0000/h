@@ -46,7 +46,6 @@ react dnd
 stroke-dash
 SVG Morph
 touchstart
-Konami Codes
 DNS
 p5.js
 recursion
@@ -92,6 +91,7 @@ granim.js
 progressive web apps
 sketch.js
 pointer events
+Konami Codes
 headless content management
 typed.js
 draggable.js
