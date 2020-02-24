@@ -64,7 +64,7 @@ The above code is the same as doing this:
 axios( {
   method:'GET',
   url: 'http://api.site.com/api',
-  dataResponse: 'json',
+  responseType: 'json',
     params: {
       queryParam: 'value'
     }
@@ -89,7 +89,7 @@ axios({
   method:'GET',
   url: 'http://proxy.hackeryou.com',
   //OR url: 'https://proxy.hackeryou.com',
-  dataResponse:'json',
+  responseType:'json',
   params: {
     reqUrl: 'http://api.site.com/api',
     proxyHeaders: {
@@ -134,7 +134,7 @@ Now we should be to use the `paramsSerializer` method inside of our AJAX request
 ```javascript
 axios({
   url: 'http://proxy.hackeryou.com',
-  dataResponse:'json',
+  responseType:'json',
   paramsSerializer: function(params) {
     return Qs.stringify(params, {arrayFormat: 'brackets'})
   },
