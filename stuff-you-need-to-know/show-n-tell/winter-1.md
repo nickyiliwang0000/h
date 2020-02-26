@@ -50,7 +50,6 @@ DNS
 p5.js
 recursion
 CSS shine
-parallax
 anime.js
 AMP pages
 split.js
@@ -58,7 +57,6 @@ reveal.js
 bookmarklets
 ml5.js
 react autocomplete
-tilt.js
 React Native
 ```
 
@@ -83,9 +81,11 @@ mix-blend-mode
 float-labels
 chart.js
 CSS knock-out
+parallax
 three.js
 brain.js
 color-adjust
+tilt.js
 animate-on-scroll
 granim.js
 progressive web apps
