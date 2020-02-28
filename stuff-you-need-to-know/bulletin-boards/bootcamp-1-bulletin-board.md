@@ -3,49 +3,58 @@
 
 ### Schedule
 
-Week 6:  React, BABY 🤙
+Week 7
 
 **Monday**
 
 * Motivational Monday
 * Standups
-* React - Breaking our apps into components
-* React - Events
+* Project Work Time
 * 🍴 LUNCH 🍴
-* React - Lifecycle methods
+* Project Work Time
 
 
 **Tuesday**
 
-* React - Review
-* React - Props
+* Project Work Time
 * 🍴 LUNCH 🍴
-* Project 5 Introduction
-* Project work time (scope approval)
+* Project Work Time
 
 
 **Wednesday**
 
-* React - Function components
+* Project 5 due at 10:00am
+* Project Presentations
+* Introduce Project 6
 * 🥗LUNCH - SALAD CLUB 🥗
-* Using Firebase in React
+* Git Collaboration 
 * Project work time
 
 **Thursday**
 
-* Advanced JS: lexical scope and execution context
-* GitHub pages and React
+* Kickoff Activity
+* React-Router
 * 🍴 LUNCH 🍴
-* Project work time
+* React/Router code-along
+* Project Work Time
 
 **Friday**
 
-* Mock Tech Test
-* React code-along (special-guest)
+* Project Work Time
 * 🍴 LUNCH 🍴
-* React code-along (special-guest) cont’d
 * Project Work Time
 * Show 'n' Tell
+
+React Test Study Areas (March 9)
+
+* Class Components and Function Components
+* Lifecycle methods
+* JSX
+* State
+* Props
+* Updating State
+* Routing (Thursday lesson)
+
 
 
 ### General feedback from the mock tech test
