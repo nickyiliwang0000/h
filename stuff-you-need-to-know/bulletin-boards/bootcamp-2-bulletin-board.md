@@ -4,54 +4,48 @@
 
 ### Schedule
 
-Week 1: Welcome! Shoring up the little knowledge gaps!
+Week 2: Advanced CSS, Making your work Live and Hello JS!
 
 **Monday**
 
--   Introductions
--   Juno Orientation
+-   Forms
 -   🍴 LUNCH 🍴
--   Juno Orientation cont’d
--   Keeping organized as a developer
--   HTML & CSS Review
--   Meet your text editor
--   Browser dev tools
--   Project 1 introduction
+-   Project 1 Presentation
+-   Project 2 Presentations
+-   Project work time
 
 **Tuesday**
 
--   CSS background-color and images
--   CSS pseudo selectors
--   CSS pseudo elements
+-   Flexbox
 -   🍴 LUNCH 🍴
--   CSS Dimensions
--   CSS Layout
+-   Preprocessors (SCSS)
 -   Project work time
 
 **Wednesday**
 
--   Display and Positioning
+-   CSS Transition, Animations, and Transforms
+-   Advanced CSS Selectors
 -   🥗LUNCH - SALAD CLUB 🥗
--   Advanced layouts
+-   Domain Name and Hosting 101
 -   Project work time
 
 **Thursday**
 
--   Philosophy of Best Practices
--   Responsive design
+-   Grid Systems
+-   CSS Grid
 -   🍴 LUNCH 🍴
--   Navigations
+-   Cross Browser Testing
+-   FTP and Domains
 -   Project work time
 
 **Friday**
 
--   Personal branding
--   Intro to Command Line
--   Version control with Git and Github
+-   GitHub Collaboration (Branching)
+-   GitHub Pages
 -   🍴 LUNCH 🍴
--   Git on the Command Line
+-   Intro to Programming
 -   Project work time
--   Show 'n' Tell
+
 
 ### Bootcamp calendar
 
