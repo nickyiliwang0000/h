@@ -64,7 +64,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcO
 
 Coming Soon
 
-<!-- **Delicious**
+**Delicious**
 
 [design](https://scene.zeplin.io/project/5e445dca3228c30bb2852fcb)
 
@@ -80,7 +80,7 @@ Coming Soon
 
 [design](https://scene.zeplin.io/project/5e44614a207ff90dfe1aa4f7)
 
-[assets](https://hychalknotes.s3.amazonaws.com/creative-assets.zip) -->
+[assets](https://hychalknotes.s3.amazonaws.com/creative-assets.zip)
 
 ## Submitting your project
 
