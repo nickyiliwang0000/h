@@ -39,12 +39,9 @@ Feel free to choose any topic - just make sure you have it approved before you s
 ```
 :focus-within
 AMP pages
-animate-on-scroll
 animate.css
-anime.js
 bookmarklets
 brain.js
-chart.js
 color-adjust
 CSS Masks
 CSS shine
@@ -54,8 +51,6 @@ custom SVGs
 custom tool tips
 cycle.js
 d3.js
-DNS
-draft.js
 draggable.js
 float-labels
 granim.js
@@ -64,7 +59,6 @@ knock-out
 Konami Codes
 Label & Labelledby
 lodash
-mix-blend-mode
 ml5.js
 p5.js
 parallax
@@ -74,7 +68,6 @@ pose.js
 preloaders
 react autocomplete
 react dnd
-React Native
 recursion
 reveal.js
 shape-outside
@@ -82,7 +75,6 @@ sketch.js
 split.js
 stroke-dash
 SVG Morph
-SweetAlerts
 text-path
 three.js
 tilt.js
@@ -93,5 +85,12 @@ typed.js
 
 ### Claimed:
 ```
-
+DNS
+React Native
+anime.js
+chart.js
+SweetAlerts
+mix-blend-mode
+draft.js
+animate-on-scroll
 ```
