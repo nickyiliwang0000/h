@@ -39,20 +39,13 @@ Feel free to choose any topic - just make sure you have it approved before you s
 ```
 :focus-within
 AMP pages
-animate.css
 bookmarklets
-brain.js
 color-adjust
-CSS Masks
-CSS shine
 custom browser extensions
-custom cursors
 custom SVGs
 custom tool tips
-cycle.js
 d3.js
 draggable.js
-float-labels
 granim.js
 impress.js
 knock-out
@@ -68,7 +61,6 @@ pose.js
 preloaders
 react autocomplete
 react dnd
-recursion
 reveal.js
 shape-outside
 sketch.js
@@ -87,10 +79,18 @@ typed.js
 ```
 DNS
 React Native
+float-labels
 anime.js
+recursion
 chart.js
 SweetAlerts
+cycle.js
+CSS shine
+CSS Masks
 mix-blend-mode
+custom cursors
 draft.js
+animate.css
 animate-on-scroll
+brain.js
 ```
