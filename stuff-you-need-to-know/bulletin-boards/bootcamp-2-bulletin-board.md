@@ -24,26 +24,27 @@ Week 2: Advanced CSS, Making your work Live and Hello JS!
 **Wednesday**
 
 -   CSS Transition, Animations, and Transforms
--   Advanced CSS Selectors
+
 -   🥗LUNCH - SALAD CLUB 🥗
 -   Domain Name and Hosting 101
 -   Project work time
 
 **Thursday**
 
+-   Advanced CSS Selectors
 -   Grid Systems
--   CSS Grid
 -   🍴 LUNCH 🍴
+-   CSS Grid
 -   Cross Browser Testing
--   FTP and Domains
 -   Project work time
 
 **Friday**
 
+_10AM - HTML & CSS TEST_
+-   FTP and Domains
 -   GitHub Collaboration (Branching)
--   GitHub Pages
 -   🍴 LUNCH 🍴
--   Intro to Programming
+-   GitHub Pages
 -   Project work time
 
 
