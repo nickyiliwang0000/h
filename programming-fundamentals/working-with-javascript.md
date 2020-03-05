@@ -82,9 +82,9 @@ JavaScript code is composed of statements and expressions that are usually execu
 ```js
 const name = "Your Name";
 console.log(name);
-	
+
 //same as
-	
+
 const name = "Your Name"; console.log(name);
 ```
 
@@ -94,7 +94,7 @@ const name = "Your Name"; console.log(name);
 // will execute both statements
 const name = "Your Name" 
 console.log(name);
-	
+
 // will throw an error
 const name = "Your Name" console.log(name);
 ```
@@ -102,16 +102,16 @@ const name = "Your Name" console.log(name);
 In the example above, the `console.log(name)` instruction will run as if there was a semicolon after `const name = "Your Name"` thanks to ASI because it is on a new line.
 
 #### Block statements
-Single line statements should end in a semicolon but _block statements_ do not. 
+Single line statements should end in a semicolon, but _block statements_ do not have to. 
 
 Curly brackets, `{ }`, are used to group zero or more statements into what's called a _function block_. 
 
 ```js
 let singleLineStatement = "one line here"; //needs semicolon
-	
+
 if (condition === "something"){
-	let singleLineStatement = "one line, that's it!"; //needs semicolon
-	let anotherStatement = "one line, a second time!"; //needs semicolon
+  let singleLineStatement = "one line, that's it!"; //needs semicolon
+  let anotherStatement = "one line, a second time!"; //needs semicolon
 } //does not need semicolon
 ```
 
@@ -131,9 +131,9 @@ To include it internally, write all of your JavaScript within a `<script></scrip
 
 ```html
 <body>
-	<script>
-		// js code here
-	</script> 
+  <script>
+    // js code here
+  </script> 
 </body>
 ```
 
