@@ -113,7 +113,10 @@ If we try to store the result of the function we see that our variable stored no
 
 ```js
 const num = addition(1, 2);
-num; //undefined
+// 3 (because of our console log)
+
+num;
+// undefined
 ```
 
 If we use a `return` statement, we can make the function a lot more useful.
@@ -126,8 +129,12 @@ const adding = function(a, b) {
 
 ```js
 const number = adding(1, 2);
-number; //3
+// nothing is logged to the console (the REPL returns undefined because this is a statement)
+
+number;
+// 3
 ```
+
 ## Arrow functions
 Arrow functions are a newer syntax for creating functions (created in ES6). Arrow functions are not going to replace the function declarations and expressions we know and love, but we will be seeing them more and more. This is the basic arrow function syntax:
 

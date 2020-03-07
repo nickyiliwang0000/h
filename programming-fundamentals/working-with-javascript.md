@@ -11,21 +11,21 @@
 
 ## Combining variables and functions
 
-A variable's value can be set to the return value of a function in JavaScript.
+A variable's value can be set to the return value of a function in JavaScript:
 
 ```js
 function goodLibraryPatron() {
-	return 'library books';
+  return 'library books';
 }
-
 
 let someVariable = goodLibraryPatron();
 ```
+
 The browser will run the function and store any return from it as the value of the variable.
 
 We know that the `prompt()` function is native JavaScript and allows the user to input text. What if we wanted to hold onto that text to use later?
 
-Using `prompt("What is your name?")`, let's create a variable to hold the value and `alert()` a message with that value.
+Using `prompt("What is your name?")`, let's create a variable to hold the value, then `alert()` a message with that value.
 
 ```js
 const name = prompt("What is your name?");
@@ -33,14 +33,15 @@ alert("Hello " + name + "!");
 // or alert(`Hello ${name}!`)
 ```
 
-When the browser runs this code, it stops at the `prompt()` function call and waits for the user to input their answer. That returned *value* is then stored into the `name` variable, which we then pass and as an argument to the `alert()` function.
+When the browser runs this code, it stops at the `prompt()` function call and waits for the user to input their answer. That returned value is stored in the `name` variable, which we then pass and as an argument to the `alert()` function.
+
 
 ## More built-in functions
-We've already looked at `prompt()`, `alert()` and `confirm()` but there are many more functions built into JavaScript. Many of these built-in functions return values that we can store in variables. For example:
+We've already looked at `prompt()`, `alert()` and `confirm()`, but there are many more functions built into JavaScript. Many of these built-in functions return values that we can store in variables. For example:
 
-* console.log() (doesn't necessarily have a return value)
+* `console.log()` (doesn't necessarily have a return value)
 * `Math.` (always has a return value)
-Type `Math.` in the console (without hitting enter) and you'll see a list pop up of available math related functions. E.g., `Math.cos()`, `Math.max()`, `Math.min()` and many more.
+Type `Math.` in the console (without hitting enter) and you'll see a list pop up of available math-related functions. E.g., `Math.cos()`, `Math.max()`, `Math.min()` and many more.
 
 Note that these functions look a little different from the ones we previously discussed since they have a `prefix.functionname()` syntax. We will expand on this in [another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/objects.md).
 
@@ -81,9 +82,9 @@ JavaScript code is composed of statements and expressions that are usually execu
 ```js
 const name = "Your Name";
 console.log(name);
-	
+
 //same as
-	
+
 const name = "Your Name"; console.log(name);
 ```
 
@@ -93,7 +94,7 @@ const name = "Your Name"; console.log(name);
 // will execute both statements
 const name = "Your Name" 
 console.log(name);
-	
+
 // will throw an error
 const name = "Your Name" console.log(name);
 ```
@@ -101,16 +102,16 @@ const name = "Your Name" console.log(name);
 In the example above, the `console.log(name)` instruction will run as if there was a semicolon after `const name = "Your Name"` thanks to ASI because it is on a new line.
 
 #### Block statements
-Single line statements should end in a semicolon but _block statements_ do not. 
+Single line statements should end in a semicolon, but _block statements_ do not have to. 
 
 Curly brackets, `{ }`, are used to group zero or more statements into what's called a _function block_. 
 
 ```js
 let singleLineStatement = "one line here"; //needs semicolon
-	
+
 if (condition === "something"){
-	let singleLineStatement = "one line, that's it!"; //needs semicolon
-	let anotherStatement = "one line, a second time!"; //needs semicolon
+  let singleLineStatement = "one line, that's it!"; //needs semicolon
+  let anotherStatement = "one line, a second time!"; //needs semicolon
 } //does not need semicolon
 ```
 
@@ -130,9 +131,9 @@ To include it internally, write all of your JavaScript within a `<script></scrip
 
 ```html
 <body>
-	<script>
-		// js code here
-	</script> 
+  <script>
+    // js code here
+  </script> 
 </body>
 ```
 

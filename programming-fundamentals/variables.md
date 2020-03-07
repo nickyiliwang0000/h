@@ -166,7 +166,7 @@ Parentheses can be used to group operations. Just like you learned in grade scho
 
 ### Complex operators
 
-There are a number of other arithmetic operators available. Three that we will look at in this course are modulo (`%`), increment (`++`) and decrement (`--`).
+There are a number of other arithmetic operators available. Three that we will look at in this course are _modulo_ (`%`), _increment_ (`++`) and _decrement_ (`--`).
 
 Modulo returns the remainder left over from division:
 
@@ -175,7 +175,7 @@ Modulo returns the remainder left over from division:
 // This gives 2, since 45 divides evenly by 5, and then there are 2 left over (ie. the remainder is 2)
 ```
 
-The increment operator adds one (_increments_) to a value, and the decrement operator subtracts one (_decrements_):
+The increment operator adds one to (increments) a value, and the decrement operator subtracts one from (decrements) a value:
 
 ```js
 let x = 3;
@@ -189,14 +189,14 @@ y;
 // 6
 ```
 
-> A fun gotcha! When numbers are contained within quotes, they are considered **strings**, meaning they can't be used to perform arithmetic operations.
+A fun gotcha! When numbers are contained within quotes, they are considered **strings**, meaning they can't be used to perform arithmetic operations.
 
 ```js
 '2' + 2
 '22'
 ```
 
-What happens is JavaScript will convert the number `2` to be a string.
+Instead, JavaScript will convert the number `2` to be a string. This is called _coercion_. 
 
 
 <!-- **Exercise**  
