@@ -4,47 +4,47 @@
 
 ### Schedule
 
-Week 2: Advanced CSS, Making your work Live and Hello JS!
+Week 3: The Language that we shall not speak of... JAVASCRIPT!
 
 **Monday**
-
--   Forms
--   🍴 LUNCH 🍴
--   Project 1 Presentation
+_10AM Project 2 Due_
+-   Intro to Programming
+-   Intro to Javascript
 -   Project 2 Presentations
--   Project work time
+-   🍴 LUNCH 🍴
+-   Variables
+-   Working with Javascript
 
 **Tuesday**
 
--   Flexbox
+-   Review from Monday
+-   Programming Control Flow
 -   🍴 LUNCH 🍴
--   Preprocessors (SCSS)
--   Project work time
+-   Functions
 
 **Wednesday**
 
--   CSS Transition, Animations, and Transforms
-
+-   Review from Tuesday
+-   Objects
 -   🥗LUNCH - SALAD CLUB 🥗
--   Domain Name and Hosting 101
+-   Arrays and Methods
 -   Project work time
 
 **Thursday**
 
--   Advanced CSS Selectors
--   Grid Systems
+-   Intro to jQuery
+-   jQuery API Documentation
+-   jQuery Best Practices
 -   🍴 LUNCH 🍴
--   CSS Grid
--   Cross Browser Testing
--   Project work time
+-   MVP Exercise
+-   Project 3 Introduction
+-   Project Work Time
 
 **Friday**
 
-_10AM - HTML & CSS TEST_
--   FTP and Domains
--   GitHub Collaboration (Branching)
+-   jQuery TO-DO App Code-Along
 -   🍴 LUNCH 🍴
--   GitHub Pages
+-   Design for Developers
 -   Project work time
 
 
