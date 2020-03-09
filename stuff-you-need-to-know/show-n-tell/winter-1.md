@@ -49,7 +49,6 @@ touchstart
 DNS
 p5.js
 recursion
-CSS shine
 anime.js
 AMP pages
 split.js
@@ -93,9 +92,10 @@ css perspective
 sketch.js
 pointer events
 Konami Codes
+CSS shine
 headless content management
 typed.js
 draggable.js
 tone.js
-custom cursors
+reveal.js
 ```
