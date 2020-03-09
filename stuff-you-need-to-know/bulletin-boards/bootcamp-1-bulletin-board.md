@@ -44,6 +44,21 @@ Week 8 🚀
 * Project Work Time
 * Show 'n' Tell
 
+### Final Exam (March 16) Review
+* HTML Fundamentals
+* CSS quirks (e.g. browser defaults, ghost space, resets, box-sizing, cross-browser inconsistencies, floats, responsive strategies, etc.)
+* JS syntax (e.g. arrow functions, template literals, let vs. const, variable scope, ‘this’ etc.)
+* Functional Programming Methods
+* JS modules and how we use them
+* React lifecycle methods
+* State in React
+* Class and Function Components
+* Basic Firebase methods
+* Basic React Router Usage
+* git commands
+* Definitions including abbreviations (e.g. ECMAScript, AJAX, JSX etc.)
+
+
 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Winter 1 Bootcamp - (event)".
