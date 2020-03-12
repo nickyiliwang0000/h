@@ -19,19 +19,15 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 
 ### Some previous examples
 
--   [RyanIpsum](http://www.laurengreenway.com/ryanipsum/)
 -   [Metal Subgenre Quiz](https://christophercos.github.io/MetalSubgenreQuiz/)
 -   [Doggy Doppelganger](http://www.doggydoppelganger.com/) (Editor's note: heartbreaking that they didn't go for... Dogppelganger.)
 -   [Roller Derby Name Generator](http://nomderby.com/)
--   [Shake It Up!](http://haleybowes.com/shake-it-up/)
 -   [Drake Soundboard](http://jenniferyeung.ca/drizzy/)
 
-<!-- Winter 2 -->
-<!-- [scope outline document](https://forms.gle/bFrTDVQpcpVUWqDw9)  -->
 
 ## Project proposals
 
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1ZEeOBjBbn4nOEYc8xhi4wRbMWaroXSkYzwta_mcu9iA/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
+Once you have a good idea, we want you to fill out a [scope outline document](https://forms.gle/bFrTDVQpcpVUWqDw9) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work.
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline.
 
@@ -71,13 +67,10 @@ You will also be given marks for your project presentation:
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
-1. Create a repository with a name made up of your own first name, then your last name, and project three (e.g.`firstNameLastNameprojectThree`).
-1. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-1. Deploy your website to GitHub Pages or on your own domain/subdomain
-1. Submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
-
-<!-- Winter 2 -->
-<!-- 4. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6). -->
+2. Create a repository with a name made up of your own first name, then your last name, and project three (e.g.`firstNameLastNameprojectThree`).
+3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
+4. Deploy your website to GitHub Pages or on your own domain/subdomain
+5. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
 
 ## #design in Helpcue
 
