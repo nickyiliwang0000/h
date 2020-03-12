@@ -3,78 +3,60 @@
 
 ### Schedule
 
-Week 7
+Week 8 🚀
 
 **Monday**
 
+* React Test 📝
 * Motivational Monday
 * Standups
 * Project Work Time
 * 🍴 LUNCH 🍴
 * Project Work Time
 
-
 **Tuesday**
 
 * Project Work Time
 * 🍴 LUNCH 🍴
 * Project Work Time
-
+* Activity
 
 **Wednesday**
 
-* Project 5 due at 10:00am
-* Project Presentations
-* Introduce Project 6
+* Project Work Time
 * 🥗LUNCH - SALAD CLUB 🥗
-* Git Collaboration 
-* Project work time
+* Project Work Time
 
 **Thursday**
 
-* Kickoff Activity
-* React-Router
+* Project 6 due at 10:00 am
+* Project 6 presentations
+* Introduce Final Project
 * 🍴 LUNCH 🍴
-* React/Router code-along
-* Project Work Time
+* Project work time
 
 **Friday**
 
-* Project Work Time
+* Mock Tech Test
+* Cover letter and resume lesson (Career Services)
+* Week 9 Overview (Charlotte)
 * 🍴 LUNCH 🍴
 * Project Work Time
 * Show 'n' Tell
 
-React Test Study Areas (March 9)
-
-* Class Components and Function Components
-* Lifecycle methods
-* JSX
-* State
-* Props
-* Updating State
-* Routing (Thursday lesson)
-
-
-
-### General feedback from the mock tech test
-> Using pseudocode and your own thoughts, describe your thought process of how you would create a masonry-style gallery like the one below using floats, NOT using flexbox, or grids.
-
-🎉 Successes 🎉
-
-- Clearfix class on the parent when they're floating children.
-- Consider how to code the site responsively
-- Draw all over the picture! Heck yes!
-- Lots of people mentioning using CSS classes / reusing code. 👍👍👍
-- Great job remembering your setup/reset snippets and wrappers.
-- Think about how the images would sit inside their parent container and applying max-width: 100% so that they behaved appropriately.
-
-🔨 Things to think about 🔨
-
-Always make sure to read your instructions carefully. Pseudo-code shouldn’t have any actual code in it! Remember, with pseudo-code, we are essentially trying to help organize our thoughts and break down our process into small digestible steps to solve a problem. A Technical interviewer will be looking for your ability to explain technical concepts, not just write the rules to achieve it.
-
-Killed IT! 💥
-
+### Final Exam (March 16) Review
+* HTML Fundamentals
+* CSS quirks (e.g. browser defaults, ghost space, resets, box-sizing, cross-browser inconsistencies, floats, responsive strategies, etc.)
+* JS syntax (e.g. arrow functions, template literals, let vs. const, variable scope, ‘this’ etc.)
+* Functional Programming Methods
+* JS modules and how we use them
+* React lifecycle methods
+* State in React
+* Class and Function Components
+* Basic Firebase methods
+* Basic React Router Usage
+* git commands
+* Definitions including abbreviations (e.g. ECMAScript, AJAX, JSX etc.)
 
 
 

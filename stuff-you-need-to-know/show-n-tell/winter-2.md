@@ -37,26 +37,18 @@ Feel free to choose any topic - just make sure you have it approved before you s
 
 ### Available sample topics:
 ```
-:focus-within
 AMP pages
 bookmarklets
-color-adjust
-custom browser extensions
-custom SVGs
 custom tool tips
 d3.js
-draggable.js
 granim.js
 impress.js
 knock-out
-Konami Codes
 Label & Labelledby
 lodash
 ml5.js
 p5.js
-parallax
 particle.js
-pointer events
 pose.js
 preloaders
 react autocomplete
@@ -72,25 +64,32 @@ three.js
 tilt.js
 tone.js
 touchstart
-typed.js
 ```
 
 ### Claimed:
 ```
 DNS
+color-adjust
+custom browser extensions
 React Native
 float-labels
 anime.js
+parallax
+typed.js
 recursion
 chart.js
 SweetAlerts
 cycle.js
 CSS shine
 CSS Masks
+draggable.js
 mix-blend-mode
 custom cursors
 draft.js
 animate.css
 animate-on-scroll
+:focus-within
+Konami Codes
+custom SVGs
 brain.js
 ```
