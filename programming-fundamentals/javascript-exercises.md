@@ -2,7 +2,7 @@
 
 Time to combine all the fundamentals we've used so far and used them together to built a small JavaScript program.
 
-Remember to break down your program into small steps that a computer can understand. Write out some pseudocode first and refer to this [JavaScript Cheat Sheet](https://notes.hackeryou.com/lesson/569964386fcff4ed4fd521b1/56981343fd2768a62f6e3df4to) help you with the syntax as you translate pseudocode into JavaScript.
+Remember to break down your program into small steps that a computer can understand. Write out some pseudocode first and refer to this [JavaScript Cheat Sheet](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/javascript-cheat-sheet.md) help you with the syntax as you translate pseudocode into JavaScript.
 
 ## Coin flip
 We'll build a JavaScript coin flipping machine! Open up [js-fundamentals-exercise](https://hychalknotes.s3.amazonaws.com/js-fundamentals-exercise.html) to get started. Download [js-fundamentals-exercise-ANSWER](https://hychalknotes.s3.amazonaws.com/js-fundamentals-exercise-ANSWER.html) if you get stuck.
