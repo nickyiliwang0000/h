@@ -294,7 +294,7 @@ In one of the earlier exercises, we saw elements overlap each other. What if we 
 
 We are used to working with X and Y coordinates in web design but now we need to think of elements on the third axis; the Z axis. The Z axis is depth. 
 
-![XYZ axes image ](https://hychalknotes.s3.amazonaws.com/z-index.html) 
+![XYZ axes image from https://vanseodesign.com/css/css-stack-z-index/](https://hychalknotes.s3.amazonaws.com/z-index.png) 
 
 Think of the Z index as a drawer in a filing cabinet. At the very back is file 1 and every file in front of it has a larger value. The first file you can touch when you open the drawer will be the biggest number; it could be, like, 9999 if there are lots of files in the drawer. If there are only two files, the first file you touch will only be number 2, but it's still in front.
 
