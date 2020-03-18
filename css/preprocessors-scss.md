@@ -280,6 +280,30 @@ Mixins can also accept multiple variables, opening up a whole world of possibili
 }
 ```
 
+When we declare mixins with variables, every variable must have a value passed in when the mixin is being included. However we can make a value optional if we provide a *default value* to the variable when we define the mixin:
+
+```scss
+@mixin position($type: relative, $top: 0, $left: 0 ) {
+  position: $type; 
+  top: $top;
+  left: $left; 
+}
+.box {
+  @include position(absolute); 
+}
+```
+
+Compiles to:
+
+```css
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+```
+So even if we didn't provide values for `$top` and `$left` variable, SCSS will compile to use the default values provided.
+
 ### SCSS gotcha corner
 #### How do we link our background images inside of our SCSS files?
 
