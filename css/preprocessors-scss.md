@@ -280,7 +280,7 @@ Mixins can also accept multiple variables, opening up a whole world of possibili
 }
 ```
 
-When we declare mixins with variables, every variable must have a value passed in when the mixin is being included. However we can make an value optional if we provide a *default value* to the variable when we define the mixin:
+When we declare mixins with variables, every variable must have a value passed in when the mixin is being included. However we can make a value optional if we provide a *default value* to the variable when we define the mixin:
 
 ```scss
 @mixin position($type: relative, $top: 0, $left: 0 ) {
