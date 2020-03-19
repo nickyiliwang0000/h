@@ -104,13 +104,13 @@ These bounded media queries can be helpful when you are targeting a specific siz
 
 Change all the media queries from `max-width` to `min-width`. How does that change the order of the background colors? 
 
-You may hear the phrase _mobile-first design_ which refers to building a website starting from the smallest mobile view and working up to desktop. This is in contrast to regular responsive design in which we are building the desktop version first, and scalig down. In mobile-first design, your base CSS will be the mobile styling, using `min-width` media queries to watch where the mobile styles no longer look good. 
+You may hear the phrase _mobile-first design_ which refers to building a website starting from the smallest mobile view and working up to desktop. This is in contrast to regular responsive design in which we are building the desktop version first, and scaling down. In mobile-first design, your base CSS will be the mobile styling, using `min-width` media queries to watch where the mobile styles no longer look good. 
 
 ![alt text](https://hychalknotes.s3.amazonaws.com/mobile-first-example.png "An example of mobile to desktop design")
 An example of a mobile to desktop design
 
 So why should we care about mobile-first design? More and more people are accessing the internet from a smart phone or tablet instead of a desktop or laptop computer. 
-Mobile first design puts the focus on content, and eliminates any unnecessary or distracting user interface decorations. 
+Mobile first design puts the focus on content, and eliminates any unnecessary or distracting user interface decorations. We are focusing on creating a simple site that can grow into something more complex. You may find it's easier to add to your mobile site as it expands, rather than figuring out what to remove as you scale down!
 
 Download this [width-media-queries-exercise.zip](https://hychalknotes.s3.amazonaws.com/width-media-queries-exercise.zip) to see how you can acheive the same look with mobile-first or desktop-first media queries.
 
