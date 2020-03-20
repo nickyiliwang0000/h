@@ -102,7 +102,7 @@ For Google Chrome, Firefox and Opera, you don't need to worry about older versio
 ### Testing Safari
 For Safari you generally don't need to worry as much either, but in some edge cases use this: [http://michelf.ca/projects/multi-safari/](http://michelf.ca/projects/multi-safari/)
 
-##E Other Testing
+### Other Testing
 Here are a few tools you can use to help test:
 
 [http://www.smashingmagazine.com/2011/08/07/a-dozen-cross-browser-testing-tools/](http://www.smashingmagazine.com/2011/08/07/a-dozen-cross-browser-testing-tools/)
@@ -120,10 +120,10 @@ Here are a few tools you can use to help test:
 Vendor prefixes, also known as browser prefixes, help browsers give extra support to new CSS features. They became extremely popular when CSS3 came out, when a ton a new properties became available and browsers wanted to experiment with how they would implement the properties. Vendor prefixes cannot give support to properties that have no support, but add browser-specific support to certain properties that a browser is experimenting with.
 
 Browser manufacturers each have their own vendor prefix that is pre-pended before the CSS property:
-* Chrome, Safari: -webkit-
-* Firefox: -moz-
-* Internet Explorer: -ms-
-* Opera: -o-
+* Chrome, Safari: `-webkit-`
+* Firefox: `-moz-`
+* Internet Explorer: `-ms-`
+* Opera: `-o-`
 
 For example, `border-radius` was introduced with CSS3. While browsers were working on testing out what the property would look like on each of their products, developers would set `border-radius` like so:
 
@@ -148,7 +148,7 @@ div {
 When working with any new property, check CanIUse to see if a prefix is needed to ensure the property can run properly. CCS3 has been out for a while now, meaning prefixes are less common to see but are still used and important to understand.
 
 ## Mobile Testing
-All tools aside, testing on actual hardware is always preferable. 
+Most browser dev tools come with a way to preview what your site will look like on mobile. However, there are occassionally discrepencies between what the dev tools show you, and how the site actually appears on a device. For this reason, testing on actual hardware is always preferable. Try it on your phone to start, but it's also a great idea to find someone with a different phone or tablet model who can test your site for you too!
 
 For testing on iOS (iPhone), Xcode (an application used to develop iOS apps) is useful for testing your websites on various device sizes.
 
