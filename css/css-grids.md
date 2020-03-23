@@ -27,7 +27,7 @@ Add the following CSS to our stylesheet:
   grid-template-rows: 150px 300px;
 }
 ```
-Not only can use both pixel values and percentages, but we also have another unit of measurement available. 
+Not only can we use both pixel values and percentages, but we also have another unit of measurement available. 
 
 ## Creating space between grid items
 
@@ -144,7 +144,7 @@ To learn more about the inspector grid tools, [check out this link](https://proj
 
 Notice those numbers? Those are _grid line numbers_. For every column and row we create, we also create grid lines. They start on the top left outside edge of our grid and go to the bottom right outer edge. Explicit and implicit rows and columns get numbered.
 
-## Grid item placement
+## Grid Item Placement
 
 ### `grid-column-start` and `grid-column-end` / `grid-row-start` and `grid-row-end`
 
