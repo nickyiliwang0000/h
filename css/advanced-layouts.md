@@ -17,11 +17,21 @@ Open [advanced-layouts-starter--bootcamp.html](https://hychalknotes.s3.amazonaws
 
 ### Container elements
 
-You'll notice that in all of our layout examples, we have a surrounding element that acts as a parent to the floated elements. This element has a pixel size and `margin: 0 auto;` applied.
+You'll notice that in all of our layout examples, we have a surrounding element that acts as a parent to the floated elements. This element has a set pixel `max-width`, `width`, and `margin: 0 auto;` applied.
 
-We've usually given this element a class of `.wrapper` (this is an arbitrary name). The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window.
+The `max-width` is a pixel width that refers to the maximum width the container will take up on the page, and will not be able to grow any more. `Width` tells the content inside to take up a certain percentage of the wrapper's width. We can either set the width to be 100% of the wrapper, or set it to be less if we want to create some padding between the content and the wrapper's edge. And finally, `margin: 0 auto` centers the wrapper and its contents for us.
 
-If we don't have a wrapper, `width: 50%;` will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a full-screen window on a 14" Acer Swift is different than 50% of a full-screen window on a 27" iMac Pro. And what happens when a user scales their browser? That size changes again! 
+We've usually given this element a class of `.wrapper`, but this is an arbitrary name. The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window. This creates clean lines on our page and prevents content from being stretched out on very wide screen sizes.
+
+```css
+.wrapper {
+  width:70%;
+  margin: 0 auto;
+  max-width:960px;
+}
+```
+
+If we don't have a wrapper, `width: 50%;` of the child element will be 50% of the browser window. This can get messy because there are many different device sizes available. 50% of a full-screen window on a 14" Acer Swift is different than 50% of a full-screen window on a 27" iMac Pro. And what happens when a user scales their browser? That size changes again! But if we use a wrapper, the child element will be only 50% of the width of the wrapper, not the whole browser window!
 
 When working with percentages, it's important to think beyond the dimensions of your own devices. Remember that **100% is a relative value.**
 
@@ -34,7 +44,8 @@ When working with percentages, it's important to think beyond the dimensions of 
 
 ```css
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -240,7 +251,7 @@ Using `calc()`, we can now mix percentages and pixels to create a layout that is
 
 The _viewport_ is the current size of the viewable content area of your browser. The viewport does not include the address or bookmarks bar. It is the entire area within which HTML is rendered.
 
-![browser viewport](https://hychalknotes.s3.amazonaws.com/viewport.png)
+![browser viewport](https://hychalknotes.s3.amazonaws.com/bootcamp-vw-vh.png)
 
 The size of the viewport is different everywhere. Viewport width is a relative value that changes with every user's device and when the user drags the browser window.
 
@@ -257,13 +268,13 @@ Remember, vh **does not** include the URL bar on mobile devices.
 
 > **100% of the height of the viewport = 100vh**
 
-![viewport height](https://hychalknotes.s3.amazonaws.com/viewportVH.png)
+![viewport height](https://hychalknotes.s3.amazonaws.com/bootcamp-vh.png)
 
 ### `vw`
 
 This one's viewport width. You may find that you will not use this as often as other units.
 
-![viewport width](https://hychalknotes.s3.amazonaws.com/viewportVW.png)
+![viewport width](https://hychalknotes.s3.amazonaws.com/bootcamp-vw.png)
 
 ## Full bleed code-along
 
