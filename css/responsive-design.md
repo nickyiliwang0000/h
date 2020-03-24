@@ -196,7 +196,7 @@ Percentage widths on your elements and flexbox are gonna be your good pals when 
 
 Download [responsive2.html](https://hychalknotes.s3.amazonaws.com/responsive2.html) and zoom all the way out on your dev tools (`cmd + - ` Mac and `ctrl + -` on Windows) to emulate a very wide screen - an external monitor, perhaps. See how all the content gets unreadably streeeeeeeeeeetched?
 
-To keep it contained, add a fixed pixel `max-width` property to the wrapper. Like so:
+You may remember from our layouts lesson that if we want to keep our content contained, we can add a fixed pixel `max-width` property to the wrapper. Like so:
 
 ```css
 .wrapper {
@@ -206,7 +206,7 @@ To keep it contained, add a fixed pixel `max-width` property to the wrapper. Lik
 }
 ```
 
-This allows the wrapper to be any size up to this value.
+This allows the wrapper to be any size up to this value. In terms of responsive design, setting the `width` to a percentage below 100% also allows us to ensure there is always a little bit of margin, regardless of how small our screen may get. In the code above, the content will only ever be 70% of the width of the wrapper. 
 
 #### Scaling images within their parent containers
 
