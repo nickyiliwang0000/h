@@ -23,11 +23,14 @@ The `max-width` is a pixel width that refers to the maximum width the container 
 
 We've usually given this element a class of `.wrapper`, but this is an arbitrary name. The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window. This creates clean lines on our page and prevents content from being stretched out on very wide screen sizes.
 
+![](https://hychalknotes.s3.amazonaws.com/fullbleed-design-wrapper--conEd.png)
+
+The CSS for this page may look something like this 
 ```css
 .wrapper {
-  width:70%;
+  width:90%;
   margin: 0 auto;
-  max-width:960px;
+  max-width:1200px;
 }
 ```
 
@@ -247,34 +250,6 @@ Using `calc()`, we can now mix percentages and pixels to create a layout that is
 * Check out[ this great article on calc()](https://medium.com/@rbnhmll/love-in-the-time-of-calc-cc40142e4566) from HY Instructor Robin Hamill.
 * To practice using floats and `calc()`, [watch this code-along video](https://youtu.be/HLftFGd_GrY) where Jenny will be using `calc()` to create a 3x3 gallery layout.
 
-## Using the viewport to size content
-
-The _viewport_ is the current size of the viewable content area of your browser. The viewport does not include the address or bookmarks bar. It is the entire area within which HTML is rendered.
-
-![browser viewport](https://hychalknotes.s3.amazonaws.com/bootcamp-vw-vh.png)
-
-The size of the viewport is different everywhere. Viewport width is a relative value that changes with every user's device and when the user drags the browser window.
-
-Web experiences often feature full browser header images or content that is relative to the size of the user's browser. Imagine how difficult it would be to ensure that an element fit 100% of the viewport on every screen. In the past, we used JavaScript to measure the size of the window once all the content was loaded, and resize the elements accordingly.
-
-<!-- Add link to other lesson -->
-
-We discussed other standard units found on the web in the CSS measurement units lesson, but there are a couple more recent additions to the dimension discussion. We can use the viewport to size our elements. `vw` and `vh` units allow us to measure the user's viewport in CSS without the need for JavaScript. These units measure the width of the viewport and return a relative value. These units are [not fully supported in legacy browsers](http://caniuse.com/#search=view) but can be very handy.
-
-### `vh`
-
-This one measures viewport height. Think of it as a percentage - the full height of the viewport is 100%. This gets used mainly for large header images or initial load pages.
-Remember, vh **does not** include the URL bar on mobile devices.
-
-> **100% of the height of the viewport = 100vh**
-
-![viewport height](https://hychalknotes.s3.amazonaws.com/bootcamp-vh.png)
-
-### `vw`
-
-This one's viewport width. You may find that you will not use this as often as other units.
-
-![viewport width](https://hychalknotes.s3.amazonaws.com/bootcamp-vw.png)
 
 ## Full bleed code-along
 
