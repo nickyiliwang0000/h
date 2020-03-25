@@ -226,82 +226,12 @@ Often we will want to center our website on a page. Since CSS doesn't have a cen
 This will set the top and bottom margins to zero (you could set it to anything you want) and then the left and right to auto, which centers the element within the browser.
 
 
-## Borders
-
-Borders work similarly to padding and margin, but we use three properties instead of one. These properties are `border-width`, `border-color` and `border-style`.
-
-```css
-.container1 {
-  border-width:10px;
-  border-color:lightcoral;
-  border-style:solid;
-}
-```
-
-If we don't specify a color, what happens? The color is inherited.
-
-Width and color are pretty self explanatory. The `border-style` property allows you to set various styles of borders. Let's open [css-borders.html](https://hychalknotes.s3.amazonaws.com/css-borders.html) to take a look at some border styles.
-
-
-## Targeting single sides
-As with padding and margin, we can target a single side to which to add a border:
-
-```css
-.container1 {
-  border-[side]-width: 10px;
-  border-[side]-color: lightcoral;
-  border-[side]-style: solid;
-}
-```
-
-## Common shorthand
-You will frequently want to create a border that is the same `width`, `style` and `color` all the way around your element. If this is the case, you can use the `border` property and feed it each value separated by a space:
-
-```css
-.container1 {
-  border:3px dotted lightcoral; /* [width] [style] [color] Much more sane */
-}
-```
-
 ## Exercise
 
 It's time to get comfortable with margin, padding, widths and borders, as well as to brush up on selectors.
 
 Download [css-dimensions-exercise.zip](https://hychalknotes.s3.amazonaws.com/css-dimensions-exercise.zip) and open `css-dimensions-exercise.html` in your editor and browser. You will find a set of instructions in the document.
 Open `css-dimensions-exercise-ANSWER.html` from that folder in your browser to see what you are working towards.
-
-## The `border-radius` property
-
-Everything in HTML is a rectangle and has corners. However, a design may call for softer edges. This is where the border-radius property comes in handy, you can round the corners of an element while the element's 'footprint' still takes remains a rectangle.
-
-Open up <a href="https://hychalknotes.s3.amazonaws.com/css-border-radius.html" class="exercise" download>css-border-radius.html</a> in the browser and editor and we can take a look at how it works.
-
-Basic usage is to supply one value for all corners:
-
-```css
-.container1 {
-  background: #F08080;/* lightcoral */
-  border-radius: 5px;
-}
-```
-
-But we can also use short hand to specify TRBL (top, right, bottom, left):
-
-```css
-.container3 {
-  background: #FFBA08; /* yellow */
-  border-radius:5px 10px 100px 1px;
-}
-```
-A 50% border radius makes a perfect circle. Go ahead and try some out.
-
-You can even do it on an image:
-
-```css
-img.cat {
-  border-radius: 50%;
-}
-```
 
 
 ## The `box-sizing` property
@@ -335,24 +265,3 @@ The box model can be navigated around quite easily. By adding the following code
 The `*` character is a wildcard selector and selects everything on the page. By specifying this rule at the top of our CSS, we tell all elements to take padding and border away from the set width and/or height. Grab the code from above and add it into the CodePen to see this working.
 
 When starting any project from now on, be sure to include that at the top of your CSS file.
-
-
-## The `box-shadow` property
-
-Similar to text-shadow, we also have box-shadow available to us which allows for adding shadow to the element around text as well as all other elements (such as divs, elements).
-
-Take a look at [css-box-shadow.html](https://hychalknotes.s3.amazonaws.com/css-box-shadow.html) for two examples on how to use `box-shadow` - you'll notice its exactly the same syntax as `text-shadow`.
-
-```css
-.shadow {
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow:         3px 3px 5px 6px #ccc;
-}
-```
-
-1. The horizontal offset of the shadow, a positive value means the shadow will be on the right of the element, a negative offset will put the shadow on the left of the element.
-2. The vertical offset of the shadow, a negative value means the box-shadow will be above the element, a positive one means the shadow will be below the element.
-3. The blur radius (optional), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
-4. The spread radius (optional), positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
-5. Color.
