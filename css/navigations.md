@@ -115,7 +115,7 @@ It's important to use native semantic elements when possible. Using `nav` here w
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
 
-Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav-ANSWER--bootcamp.html).
+Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav--ANSWER--bootcamp.html).
 
 Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the anchor tags to black and add a little padding:
 
@@ -156,6 +156,8 @@ The problem with what we've done is that it makes both the parent nav and the su
 
 Okay, looking okay so far. Let's get the hover part working. The first thing we need to do is hide the submenus by default.
 
+Your first instinct may be to hide the sub-menu by using `display: none`.
+
 ```css
 .sub-menu {
   background: peachpuff;
@@ -163,18 +165,43 @@ Okay, looking okay so far. Let's get the hover part working. The first thing we 
 }
 ```
 
+While this works, it is not the best way to achieve the effect went if we want our menu to be accessible. It can also limit SEO by hiding content.
+
+So what can we try instead? One other solution is to set the `sub-menu` height to 0, and add `over-flow: hidden`. What we've done here is tell the content to not spill out of the element when the height is 0, essentially hiding it without removing it from the page.
+
+You can read more about `overflow` [here](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow).
+
+```css 
+.sub-menu {
+    background: peachpuff;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+}
+```
+
 How do we show them only when we hover? What element should we trigger the hover on?
 
-Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We use `display: block;` to switch it back from `display: none;` and we'll add a little padding in here too:
+Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We'll change the height on hover to `auto`, and we'll add a little padding in here too:
 
 ```css
 .main-menu li:hover ul {
-  display: block;
+  height: auto;
   padding: 10px;
 }
 ```
 
-Now you should see the sub nav when you hover over its parent. However, the problem now is that it pushes everything after the sub navigation down. Instead, we want it to be positioned on the page such that it doesn't take up any room within its parent or shift other elements around. We can accomplish this by giving the sub nav `position: absolute;` and the parent `li` `position: relative;`:
+In order to make our navigation tabbale for users navigating with a keyboard, we need to add a `focus-within` pseudo class. `Focus-within` is similar to `focus`, but it is applied to the parent element, and styling rules are applied when any child element receives focus. By utilizing `focus-within`, we can make sure that any user tabbing through our navigation will be able to acess the sub-menu.
+
+```css
+.main-menu li:hover ul,
+.main-menu li:focus-within ul {
+  height: auto;
+  padding: 10px;
+}
+```
+
+Now you should see the sub nav when you hover over or tab onto its parent. However, the problem now is that it pushes everything after the sub navigation down. Instead, we want it to be positioned on the page such that it doesn't take up any room within its parent or shift other elements around. We can accomplish this by giving the sub nav `position: absolute;` and the parent `li` `position: relative;`:
 
 ```css
 .main-menu li {
