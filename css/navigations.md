@@ -165,7 +165,7 @@ Your first instinct may be to hide the sub-menu by using `display: none`.
 }
 ```
 
-While this works, it is not the best way to achieve the effect went if we want our menu to be accessible. It can also limit SEO by hiding content.
+While this works, it is not the best way to achieve the desired effect if we want our menu to be accessible. It can also limit SEO by hiding content.
 
 So what can we try instead? One other solution is to set the `sub-menu` height to 0, and add `over-flow: hidden`. What we've done here is tell the content to not spill out of the element when the height is 0, essentially hiding it without removing it from the page.
 
