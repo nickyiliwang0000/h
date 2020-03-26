@@ -330,6 +330,23 @@ return(
 ```
 While the shorthand will save us time, if we want to use the `key` attribute, we need to use the explicit `<React.Fragment>` syntax. As well, `key` is currently the only attribute that can be passed to fragments.
 
+You may also come across fragments being imported from React using object destructuring:
+
+```jsx
+import React, { Component, Fragment } from 'react'
+
+class App extends Component {
+    render() {
+        return (
+            <Fragment>
+                <p>I'm a paragraph!</p>
+                <p>I'm a second paragraph!</p>
+            </Fragment>
+        )
+    }
+}
+```
+
 ### Nesting and splitting components
 One of the incredibly powerful features of React is the ability to organize and split your code into components and then arrange and rearrange them like Lego.
 
