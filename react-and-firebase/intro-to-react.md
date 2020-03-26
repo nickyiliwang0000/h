@@ -293,6 +293,43 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
     ```
 * VSCode's Emmet will not work in  JSX unless you enable it in your user settings. To enable it go [follow these directions](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c).
 
+### Fragments
+
+We've already seen that JSX elements can only return one HTML element or component. If we try to return multiple, we will get a warning saying “JSX parent expressions must have one parent element." 
+
+ ```jsx
+return(
+    <p>I'm a paragraph!</p>
+    <p>I'm a second paragraph!</p>
+)
+```
+ The easiest way to handle this is by wrapping the elements in a `<div>` :
+
+  ```jsx
+return(
+    <div>
+        <p>I'm a paragraph!</p>
+        <p>I'm a second paragraph!</p>
+    </div>
+)
+```
+
+The downside is we ends up rendering a lot of extra `divs` to our page that we don't need, causing issues with accessibility and even layouts.
+
+We can work around this by using a **fragment**. Fragments let you group a list of children without adding extra nodes to the DOM [(from the ReactJS docs)](https://reactjs.org/docs/fragments.html). This keeps us from ending up with too many extra `divs`!
+
+To use a fragment, place the list of children inside `<React.Fragment> </React.Fragment>` or the shorthand: `<> </>` (that's not a typo, it really is two angle brackets with nothing inside!). 
+
+  ```jsx
+return(
+    <React.Fragment>
+        <p>I'm a paragraph!</p>
+        <p>I'm a second paragraph!</p>
+    </React.Fragment>
+)
+```
+While the shorthand will save us time, if we want to use the `key` attribute, we need to use the explicit `<React.Fragment>` syntax. As well, `key` is currently the only attribute that can be passed to fragments.
+
 ### Nesting and splitting components
 One of the incredibly powerful features of React is the ability to organize and split your code into components and then arrange and rearrange them like Lego.
 
