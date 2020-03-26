@@ -1,88 +1,127 @@
   <!-- Student takeaway -->
   <!-- By the end of this lesson, the student should know:
-  - How to create a branch
-  - How to switch between branches
-  - How to merge a branch
-  - How to delete a branch
+  - How to make a pull request
+  - How to review a pull request
+  - How to resolve a change request
+  - How to resolve a merge conflict
+  - How to merge pull request into main branch
   -->
 
 
-# Git collaboration 
+# Git Collaboration
 
-There are two main ways to collaborate on GitHub: forking and branching. We'll be branching in this course.
+So far we've learnt about git branching as a way for us to make copies of the project and making changes without messing with the original version of the project. We can then utilize git merge to add and merge our changes into the main version. 
 
-## Branching
-When you're working with files on GitHub, you may want to keep a clean copy locally and tinker with some new feature or wild idea. Great! You're ready to make a _branch_!
+The git branch and git merge workflow is a popular way for multiple developers to work on a project simultaneously. However it's a workflow that is not truly collaborative. A basic git branch and git merge worflow means any developer on the project can merge their work into the orignal branch at any time, without a review process. This often results in mistakes and other developers being blindsided by what's been pushed into the main codebase. 
 
-## Branch workflow setup
-Branches are copies of a repository's files. They're a safe place to mess around with the code for your project without:
-  1. creating a new git repo for the same project
-  2. messing up your project
+_Pull requests_ workflow can help us solve that problem. 
 
-This diagram represents a sample git workflow for a repo: 
 
-![git branching diagram](http://cl.ly/image/3a3M3U2S0v3X/gitbranches.png)
+## Pull requests
 
-The `master` branch is the _production_ branch (a.k.a. the official finished version of the repo, and probably the one that is live on the internet).
+A pull request (also referred to as _PR_ ) is a way of telling your co-workers or peers that you have finished a portion of the site, and that you would like a review of your code. This is not only an opportunity for you to receive feedback on your code, but also an opportunity to start writing more descriptive comments about certain functionality that other developers will need to understand. It's also important to include a description of the work included in the pull request.
 
-The `feature` branches are where individual developers are writing code and figuring out new features or updates for the website.
+A good code-review will contain feedback no matter the quality of pull request. If there are no changes to be made, write a comment that reflects that so your fellow developer can know they did a great job! However, if there are areas that need improving - you can add a comment to the specific line number under the Files Changed tab.
 
-(Sometimes a larger company will have a `test` branch where the dev team is trying out new features and seeing how they mesh with the `master` code **without** messing up the live site. We'll only be working with `master` branches and `feature` branches.)
+You can also change the settings on a project repo to _require_ a pull request to be approved by another developer before it is eligible for merging, which is a very common practice in a practical setting.
 
-## Working with branches
-Download [these starter files](https://hychalknotes.s3.amazonaws.com/git-branching-lesson.zip) and initialize git in the root directory. Then, go to GitHub and create a repo. Add that repo's URL as the origin with `git remote add origin` and commit your starter files. Then, follow along with the next steps.
+## Making a pull request
 
-<!-- ## Create a new test branch
-From inside our git-initialized project folder, the command `git checkout -b test` creates a new trackable branch called `test` and moves us over to it. `git push origin test` sends this branch to GitHub. 
+In your repository, create a new branch using the command line `git checkout -b [branch-name]`
 
-Let's go into our `index.html` and add a title to our project. Add, commit, and push that change to the `test` branch on GitHub:
+Make some changes with your project. 
 
-```bash
-git add -A
-git commit -m "changing title"
-git push origin test
-```
-You should see on GitHub that you have a new branch called `test` and it has the title it it. -->
+Go through the git workflow to push your changes:
+- `git add -A`
+- `git commit -m "[commit message]"`
+- `git push origin [branch-name]`
 
-## Create a new feature branch
+After your branch has been pushed up to your GitHub repo, go to your GitHub repo page, and you should see a notification on your repo page: 
 
-`git checkout -b myfeaturebranch master` creates a new trackable branch called `myfeaturebranch` using the `master` branch as a base. This is where you'll write the code that creates a feature for your website. Let's toss an `h1` in `index.html`.
+![a button allowing a user to create a pull request](https://hychalknotes.s3.amazonaws.com/create-PR.png)
 
-## Working on a feature branch
+Start creating a pull request by selecting "Compare & pull request". 
+It will open up the pull request window. Here is where you can provide more information about this content change.  
 
-When you're on your feature branch, `git pull origin master` will grab the changes from your `master` branch and add them to your feature branch so you can begin work using the most recent code.
+![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-window.png)
 
-## Switching branches 
+After you created a pull request, it is ready for another member on your team to review, comment and provide feedback. 
 
-If you need to switch to another branch before you're ready to commit your changes, `git stash` will put away the current changes on your branch for later so you can go do stuff in another branch (`git checkout anotherfeaturebranch` to take you to `anotherfeaturebranch` if it's already set up) without having to commit these changes.
+## Reviewing a pull request 
 
-`git checkout myfeaturebranch` will bring you back to your feature branch and `git stash apply` will bring back what you put away on on `myfeaturebranch`.
+![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-review.png)
 
-## When you're ready to commit your changes
-Back on `myfeaturebranch`, add, commit, and push the change we made to the `myfeaturebranch` branch on GitHub:
+GitHub will automatically detect changes and differences that's been made with the pull request. You can review it by clicking on the commit.
 
-```bash
-git add -A
-git commit -m "adding an h1"
-git push origin myfeaturebranch
-```
+You can comment on a particular line of code by hovering over the plus icon:
 
-## Merge a feature branch into master
+![pull request comment](https://hychalknotes.s3.amazonaws.com/PR-comment.png)
 
-1. Use `git branch` to check which branch you're on.
-   * If you're in your `myfeaturebranch`, use `git checkout master` to switch to your `master` branch.
-2. Use `git pull origin master` to make sure your local is up to date with the latest from the upstream `master`. 
-3. Use `git merge myfeaturebranch` to merge your feature branch into the `master` branch.
-4. Use `git push origin master` to push your merge to the master branch of your repo on GitHub.
 
-If you've got merge conflicts, now is a great time to sit down with your teammates and see which changes you want to keep.
+There are 3 actions you can make when reviewing a pull request: 
+- **Approve**: This will notify the author that all changes are good, changes are approved to be merged back into original branch
+- **Request Changes**: This will notify the author that some changes has to be addressed before continuing. 
+- **Comment**: This will just provide general feedback to the author. 
 
-### (Optional) Delete the feature branch if you don't need to come back to it
-If you're in your feature branch, use `git checkout master` to go somewhere that's not the branch you want to delete.
-Use `git push origin :myfeaturebranch`  to delete the `myfeaturebranch` branch on GitHub (upstream). 
-`git branch -d myfeaturebranch` will delete the local branch on your computer.
+![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-options.png)
 
-## Resources
+**A note on providing pull request feedback**
 
-Here's a little gif about branching:
-![gif about branching](https://hychalknotes.s3.amazonaws.com/git-branching-demo.gif) 
+Just like giving any other feedback, try to keep your comments and feedback constructive but positive. Comments should be clear and descriptive. 
+
+Bad Feedback 👎
+- This code is wrong
+- This won't work
+- This is really messy
+
+Good Feedback 👍
+- Try using `position: relative;` here instead of `margin`, it is more suitable in this situation because [...]
+- This class name is named in kebob-case, we should name it to camelCase to stay consistent with the rest of the site
+- Great work!! (Always remember to recognize good work! With emojis!✨) 
+
+**When a pull request is approved**
+If there are no merge conflicts, your code can be safely merged into your main branch. The GitHub UI will provide an option to merge the pull request. Your code will then be successfully merged into the original branch!
+
+![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-approved.png)
+
+It is generally recommended that you delete your branches, both remotely and locally, after they have been merged. An UI option will appear after you've merged. You can also delete a remote branch manually by clicking on the 'Branches' tab of your GitHub project repo and selecting the trash-can icon associated with your branch. On your CLI, you can type `git checkout -D branch-name` to delete your branch locally.
+
+**When a change is requested**
+You would have to address the change locally on your code editor and push up your updates to the branch with `add`, `commit` and `push`. You don't need to create a new pull request, GitHub will know that you've pushed some changes to the same pull request. The review process will be the same. The reviewer can then again either approve or request more changes to be made. This process will be repeated until it is approved!
+
+![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-change-requested.png)
+
+## Merge conflicts
+
+_Merge conflicts_ occur when competing changes are being made to the same file.
+
+Merge conflicts are your friend! Imagine if there was no way of knowing that your code was about to cause problems for the rest of your site, and was simply accepted into your master branch only to have everything break. That would make collaborative projects a lot more difficult.
+
+![a screenshot from GitHub showing that a branch cannot be automatically merged into master branch](https://hychalknotes.s3.amazonaws.com/mergeConflict.png)
+
+It is quite common to run into a merge conflict while creating a pull request. A merge conflict will prevent your branch from being eligible to merge, and will require just a few extra steps to make sure your code is compatible.
+
+![a screenshot from GitHub displaying the file names that are causing a merge conflict](https://hychalknotes.s3.amazonaws.com/mergeConflictIndex.png)
+
+## Solving merge conflicts
+
+To solve a merge conflict, you can follow these steps:
+
+1. On your CLI, use `git checkout master` to go back to your master branch
+1. Input `git pull origin master` to update your local version of master to the most up-to-date commit
+1. Use `git checkout [your-working-branch]` to switch back to the secondary branch with the out-of-date code
+1. Input `git merge master` to bring in the updates from your master branch, to your secondary branch
+1. You should see a message that states:
+"Automatic merge failed; fix conflicts and then commit the result"
+   ![Automatic merge failed message on a command line interface](https://hychalknotes.s3.amazonaws.com/mergeConflictCLI.png)
+1. Using VSCode open your conflicted file(s), you’ll be prompted to either 
+   - “Accept Current Changes”: Current changes are the changes to the code that you have made 
+   or, 
+   - “Accept Incoming Changes”: Incoming means incoming from master branch. 
+   - Sometimes you have to click "Accept Both" and manually configure the code.
+   ![a VScode message allowing the developer to accept incoming changes, accept current changes, accept both, or compare changes](https://hychalknotes.s3.amazonaws.com/acceptChanges.png)
+1. After choosing the option that feels like the best fit, you’ll need to `add` `commit` and `push`the updates on your secondary branch to your GitHub repo so your pull request can better reflect the current state of the master branch
+1. Once everything looks good, on GitHub, click the "Merge pull request" button and confirm merge
+1. On your CLI, switch back to master branch using `git checkout master`
+1. Using `git pull origin master` your local master branch is now as up-to-date as possible
+
