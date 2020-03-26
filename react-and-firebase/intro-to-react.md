@@ -243,7 +243,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
   * Remember that an **expression** is anything that produces a value. For example, `2 + 2` is an expression because it returns `4`.
 
 
-* Each JSX element must return **only one** HTML element (we'll be using `<div>` for most of the class, but you may see `<Fragment>` in the wild).
+* Each JSX element must return **only one** HTML element (we'll get into this a little bit more soon!).
 
 * In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, its `render` method).
 
