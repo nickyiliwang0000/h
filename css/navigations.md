@@ -185,17 +185,17 @@ How do we show them only when we hover? What element should we trigger the hover
 Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We'll change the height on hover to `auto`, and we'll add a little padding in here too:
 
 ```css
-.main-menu li:hover ul {
+.main-menu li:hover .sub-menu {
   height: auto;
   padding: 10px;
 }
 ```
 
-In order to make our navigation tabbale for users navigating with a keyboard, we need to add a `focus-within` pseudo class. `Focus-within` is similar to `focus`, but it is applied to the parent element, and styling rules are applied when any child element receives focus. By utilizing `focus-within`, we can make sure that any user tabbing through our navigation will be able to acess the sub-menu.
+In order to make our navigation tabbable for users navigating with a keyboard, we need to add a `focus-within` pseudo class. While `focus-within` is similar to `focus`, it is applied to the parent element, and styling rules are applied when any child element receives focus. By utilizing `focus-within`, we can make sure that any user tabbing through our navigation will be able to access the sub-menu.
 
 ```css
-.main-menu li:hover ul,
-.main-menu li:focus-within ul {
+.main-menu li:hover .sub-menu,
+.main-menu li:focus-within .sub-menu {
   height: auto;
   padding: 10px;
 }
@@ -210,7 +210,7 @@ Now you should see the sub nav when you hover over or tab onto its parent. Howev
   position: relative;
 }
 
-ul.sub-menu {
+.sub-menu {
   background: peachpuff;
   display: none;
   position: absolute;
