@@ -52,7 +52,7 @@ We can now go ahead and style it as we wish.
 
 Note: it is best practice to put your styles on the link themselves rather than the `<li>` because we want the entire link to take up all the space.
 
-## Accessibility and navigations
+## Accessibility and Navigations
 Allowing users the ability to get to the main content for your site is important. The main content is probably not the first thing on your site, an important piece to creating an accessible site is creating a link to skip to the main content. The idea is fairly straightforward, the first bit of content on the pages is an anchor tag that links to an id further down. [See an example of a skip link in action on the Government of Canada's site.](https://www.canada.ca/en.html)
 
 ```html
@@ -115,21 +115,23 @@ It's important to use native semantic elements when possible. Using `nav` here w
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
 
-Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav-ANSWER.html).
+Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav--ANSWER--bootcamp.html).
 
-Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the anchor tags to black:
+Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the anchor tags to black and add a little padding:
 
 ```css
 .main-menu {
-  background: yellow;
+  background: pink;
+  padding: 10px;
 }
 
 .sub-menu {
-  background: #ececa9;
+  background: peachpuff;
 }
 
 .main-menu li a {
   color: black;
+  padding: 0 20px;
 }
 ```
 
@@ -154,24 +156,52 @@ The problem with what we've done is that it makes both the parent nav and the su
 
 Okay, looking okay so far. Let's get the hover part working. The first thing we need to do is hide the submenus by default.
 
+Your first instinct may be to hide the sub-menu by using `display: none`.
+
 ```css
 .sub-menu {
-  background: #ececa9;
+  background: peachpuff;
   display: none;
+}
+```
+
+While this works, it is not the best way to achieve the desired effect if we want our menu to be accessible. It can also limit SEO by hiding content.
+
+So what can we try instead? One other solution is to set the `sub-menu` height to 0, and add `over-flow: hidden`. What we've done here is tell the content to not spill out of the element when the height is 0, essentially hiding it without removing it from the page.
+
+You can read more about `overflow` [here](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow).
+
+```css 
+.sub-menu {
+    background: peachpuff;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
 }
 ```
 
 How do we show them only when we hover? What element should we trigger the hover on?
 
-Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We use `display: block;` to switch it back from `display: none;`
+Since the sub navs are nested inside of parent `<li>` elements, we want to make the sub navs visible when the user hovers on their respective parent list items. We'll change the height on hover to `auto`, and we'll add a little padding in here too:
 
 ```css
-.main-menu li:hover ul {
-  display: block;
+.main-menu li:hover .sub-menu {
+  height: auto;
+  padding: 10px;
 }
 ```
 
-Now you should see the sub nav when you hover over its parent. However, the problem now is that it pushes everything after the sub navigation down. Instead, we want it to be positioned on the page such that it doesn't take up any room within its parent or shift other elements around. We can accomplish this by giving the sub nav `position: absolute;` and the parent `li` `position: relative;`:
+In order to make our navigation tabbable for users navigating with a keyboard, we need to add a `focus-within` pseudo class. While `focus-within` is similar to `focus`, it is applied to the parent element, and styling rules are applied when any child element receives focus. By utilizing `focus-within`, we can make sure that any user tabbing through our navigation will be able to access the sub-menu.
+
+```css
+.main-menu li:hover .sub-menu,
+.main-menu li:focus-within .sub-menu {
+  height: auto;
+  padding: 10px;
+}
+```
+
+Now you should see the sub nav when you hover over or tab onto its parent. However, the problem now is that it pushes everything after the sub navigation down. Instead, we want it to be positioned on the page such that it doesn't take up any room within its parent or shift other elements around. We can accomplish this by giving the sub nav `position: absolute;` and the parent `li` `position: relative;`:
 
 ```css
 .main-menu li {
@@ -180,8 +210,8 @@ Now you should see the sub nav when you hover over its parent. However, the prob
   position: relative;
 }
 
-ul.sub-menu {
-  background: #ececa9;
+.sub-menu {
+  background: peachpuff;
   display: none;
   position: absolute;
 }

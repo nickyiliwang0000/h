@@ -37,8 +37,8 @@ The syntax for creating an object looks like this:
 ```js
 const myObject = {
   propertyOneName: propertyOneValue,
-  propertyTwoName: propertyOneValue,
-  propertyThreeName: propertyOneValue
+  propertyTwoName: propertyTwoValue,
+  propertyThreeName: propertyThreeValue
 };
 ```
 
@@ -54,10 +54,10 @@ const apple = {
 
 > Curly brackets with comma separated properties is the _object literal_ notation for making objects. There are other ways of making objects which will be covered [in other lessons](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md).
 
-### Object naming conventions
+### Object conventions
 * Property names follow [the same rules](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/variables.md#variable-naming-conventions) as variable names.
 * Property names are always strings but the quotes are optional if the strings are valid variable names.
-* The value of an object property can be any of the primitive types (number, string, boolean, null and undefined) or another object (creating a nested tree structure), you can also store functions on a property.
+* The value of an object property can be any of the primitive types (number, string, boolean, null and undefined), another object (creating a nested tree structure), or you can store functions on a property.
 * In JSON, the last property is not followed by a comma.
 
 ## Accessing values in an object
@@ -121,13 +121,13 @@ Note that if you have a variable in your code, you may add it as a key in an obj
 ```js
 let newItem = "dresses"
 
-clothing[newItem] =  2;
+clothing[newItem] = 2;
 console.log(`I have ${clothing.dresses} dresses.`)
 // I have 2 dresses.
 ```
 The line that adds the property to the object remains the same no matter what the new item is, and **even if** we don't know what the new item is yet.
 
-> You may be wondering: can I store a function to an object? Yes! This what's called a _method_ and we'll cover them in detail [in another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/arrays-and-methods.md).
+> You may be wondering: Can I store a function to an object? Yes! This what's called a _method_ and we'll cover them in detail [in another lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/arrays-and-methods.md).
 
 ## Exercises
 

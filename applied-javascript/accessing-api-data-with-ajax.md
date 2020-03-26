@@ -41,7 +41,7 @@ $.ajax({
 ```
 We're going to do it the second way so that all the information is in one place, but you'll see both in the wild.
 
-If the `$.ajax()` method is successful, it returns the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/10ee6cbd78aaad16a0b1718eda9fa27ad6dd90cb/06-applied-javacript/6.4-accessing-api-data-with-ajax.md#debugging-ajax-requests)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()`. 
+If the `$.ajax()` method is successful, it returns the information we're requesting. Once we have it in the browser ([check the 'Network' tab](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/accessing-api-data-with-ajax.md#debugging-other-ajax-request-errors)), we need to tell the browser what to do with that information. We can chain a `.then()` method onto our `$.ajax()` method like this: `$.ajax().then()`. 
 
 > `.then()` is a special JavaScript method; we'll learn more about it the deeper we get into AJAXland.
 
@@ -112,7 +112,7 @@ $.ajax({
 });
 ```
 
-When a function calls another function like this, we say that second one is the _callback function_. We've previously seen callback functions in event handlers:
+When a function is passed as an argument to another function like this, we say that the one in the argument is a callback function. We've previously seen callback functions in event handlers:
 
 ```js
 $('h1').on('click', function(){

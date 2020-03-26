@@ -64,7 +64,7 @@ The above code is the same as doing this:
 axios( {
   method:'GET',
   url: 'http://api.site.com/api',
-  dataResponse: 'json',
+  responseType: 'json',
     params: {
       queryParam: 'value'
     }
@@ -82,14 +82,14 @@ Under the following conditions, you will need to use a proxy server to access yo
 * you need to cache the data
 * you need to request insecure data (from an `http` endpoint) from a secure site (`https`) 
 
-If any of these are the case, we recommend using the HackerYou proxy server. Your code will look something like this:
+If any of these are the case, we recommend using the Juno proxy server. Your code will look something like this:
 
 ```javascript
 axios({
   method:'GET',
   url: 'http://proxy.hackeryou.com',
   //OR url: 'https://proxy.hackeryou.com',
-  dataResponse:'json',
+  responseType:'json',
   params: {
     reqUrl: 'http://api.site.com/api',
     proxyHeaders: {
@@ -110,7 +110,7 @@ paramsSerializer: function(params) {
 }
 ```
 
-This method will be in charge of translating data structures into a readable format to be sent to the server. The `paramsSerializer` method is specific to the HackerYou proxy, because it expects the data to be sent in a very specific way.
+This method will be in charge of translating data structures into a readable format to be sent to the server. The `paramsSerializer` method is specific to the Juno proxy, because it expects the data to be sent in a very specific way.
 
 In order for us to use this method properly, we will need to install the querystring parsing and stringifying library (called `qs`) as a dependency by running the following command:
 
@@ -134,7 +134,7 @@ Now we should be to use the `paramsSerializer` method inside of our AJAX request
 ```javascript
 axios({
   url: 'http://proxy.hackeryou.com',
-  dataResponse:'json',
+  responseType:'json',
   paramsSerializer: function(params) {
     return Qs.stringify(params, {arrayFormat: 'brackets'})
   },

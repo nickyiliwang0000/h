@@ -28,7 +28,7 @@ const raccoon = {
   attack: function() {
     // ...code to make it attack
   }
-}
+};
 ```
 
 Perfect! You now have a `raccoon` object that attacks, walks, has equipment, and has health. But a `raccoon` with no adversaries will soon take over the city, so you build a human to protect Toronto's trash bins:
@@ -47,7 +47,7 @@ const human = {
   attack: function() {
     // ...code to make it attack
   }
-}
+};
 ```
 
 Notice anything? The `raccoon` and `human` objects are the exact same! If you wanted this game to be two-player (two `raccoon` objects) and have a hundred different enemies (a hundred `human` objects), you can see how you could end up writing a ton of repetitive code that would be difficult to track.
@@ -69,7 +69,7 @@ class Character {
     this.location = {
       x: 0,
       y: 0
-    }
+    };
   }
   walk() {
     // ...code to make a character walk around
@@ -108,6 +108,7 @@ We can refactor our `Character` constructor like this:
 class Character {
   constructor(health) {
     this.health = health;
+    // ...and all the other properties
   }
 }
 ```
@@ -131,12 +132,13 @@ Using the `extends` keyword, we can extend our `Character` class into a new `San
 
 ```javascript
 class Character {
-  constructor() {
-    this.health = 100;
+  constructor(health) {
+    this.equipment = [];
+    this.health = health;
     this.location = {
       x: 0,
       y: 0
-    }
+    };
   }
   walk() {
     // ...code to make a character walk around
@@ -148,15 +150,15 @@ class Character {
 
 class SandwichArtist extends Character {
   constructor() {
-    this.health = 1000;
+    this.equipment.push('oven');
   }
   bake() {
-    // ... code that gives our sandwich artist the ability to bake parmesan oregano bread
+    // ...code that gives our sandwich artist the ability to bake parmesan oregano bread
   }
 }
 ```
 
-By using `extends`, we can grab all of the properties and methods from our `Character` class, and layer new methods on top of it like a delicious sandwich. We can also modify existing properties (here we've given our `SandwichArtist` a health property of `1000`, since eating all those sandwiches makes them extra healthy).
+By using `extends`, we can grab all of the properties and methods from our `Character` class, and layer new methods on top of it like a delicious sandwich. We can also modify existing properties (here we've given our `SandwichArtist` an equipment property of `oven`, since baking parmesan oregano bread requires additional equipments).
 
 Now if we want to create a new sandwich artist for our game (we shall call them `archibald`), we use our `new` keyword:
 
@@ -169,17 +171,17 @@ Oh no! We get an error: `ReferenceError: must call super constructor before usin
 ```javascript
 class SandwichArtist extends Character {
   constructor() {
-    super();
-    this.health = 200;
+    super(1000);  // ...and eating all those sandwiches makes them extra healthy
+    this.equipment.push('oven');
   }
   bake() {
-    // ... code that gives our sandwich artist the ability to bake parmesan oregano bread
+    // ...code that gives our sandwich artist the ability to bake parmesan oregano bread
   }
 }
 const archibald = new SandwichArtist();
 ```
 
-We have now created a new object called `archibald`, that has a `health` of `200` and a `bake` method which it has inherited from the `sandwichArtist` class, as well as the `location` property, `walk` and `attack` methods that it inherited from the `Character` class.
+We have now created a new object called `archibald`, that has a `health` of `1000`, an `oven` in `equipment`, and a `bake` method which it has inherited from the `sandwichArtist` class, as well as the `location` property, `walk` and `attack` methods that it inherited from the `Character` class.
 
 Class extends are an awesome way to build upon objects that already exist, and this will be particularly useful when we start working with React!
 

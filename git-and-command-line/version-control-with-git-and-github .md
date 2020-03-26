@@ -14,7 +14,7 @@ With Git we can:
 * easily share and collaborate on code with others by using services like [GitHub.com](http://github.com)
 
 ## Getting Started
-To get started, we'll be using [GitHub.com](http://github.com) to host our version controlled projects. This will save our project files on the web and allow us to easily share our code and collaborate with others. Go ahead and sign up for an account if you don't already have one. Your github profile will be linked on your portfolio, resume, and the HackerYou website, so make sure your username is something that you're comfortable being associated with your professional life. 
+To get started, we'll be using [GitHub.com](http://github.com) to host our version controlled projects. This will save our project files on the web and allow us to easily share our code and collaborate with others. Go ahead and sign up for an account if you don't already have one. Your github profile will be linked on your portfolio, resume, and the Juno website, so make sure your username is something that you're comfortable being associated with your professional life. 
 
 There are two ways to access Git: using a *GUI* (graphical user interface) or via the command line. We'll be using git with the command line for this course, because it's important to be comfortable working with the terminal, but many people enjoy using a GUI. (A popular one is https://www.sourcetreeapp.com/). Feel free to explore these after the bootcamp.
 

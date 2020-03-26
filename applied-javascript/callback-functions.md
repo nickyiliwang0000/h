@@ -10,7 +10,7 @@ $('button').on('click', function() {
 });
 ```
 
-Here we set up an event using the `on` method. The `on` method takes two arguments here, the first is a string describing the name of the event. In our case, the event is `click`. The second argument is what function we want to run when the click happens. *This function* is the callback function. 
+Here we set up an event listener using the `on` method. The `on` method takes two arguments here, the first is a string describing the name of the event. In our case, the event is `click`. The second argument is what function we want to run when the click happens. *This function* is the callback function. 
 
 When we provide the callback function to the `on` method, it has not run yet. The function is placed there as a value and only when we click the `button` will that function be called. 
 

@@ -13,7 +13,7 @@
 
 ## Arrays
 
-Imagine that you wanted to make a list of values where the **order mattered**. You could use and object an do this:
+Imagine that you wanted to make a list of values where the **order mattered**. You could use an object and do this:
 
 ```js
 const musicObject = {
@@ -28,7 +28,7 @@ const musicObject = {
 }
 ```
 
-Using an object we could enforce some order by setting the keys of the properties to be numbers. BUT, you may remember that there is **no guarantee** that an object will return properties the same order they were written when iterated over. Thankfully JavaScript has a built-in data type called an _array_ that maintains its order:
+Using an object we could enforce some order by setting the keys of the properties to be numbers, but you may remember that there is **no guarantee** when iterating over an object that it will return properties in the same order as they were written. Thankfully JavaScript has a built-in data type called an _array_ that maintains its order:
 
 ```js
 const musicObject = [
@@ -51,12 +51,12 @@ const musicObject = [ "do", "re", "mi", "fa", "sol", "la", "ti", "do" ]
 
 > **An array is a kind of object** in JavaScript. Remember when we said objects are a big deal? They are! Everything in JavaScript is an object! Even arrays! Which are, like, the opposite of objects! 😱😱😱 Sorry!
 
-As with regular objects, any kind of value (e.g. objects, numbers, string, other arrays...) can be stored inside of an array.
+As with regular objects, any kind of value (e.g. objects, numbers, strings, other arrays...) can be stored inside of an array.
 
-So, what are the differences between a regular object and an array object?
+So, what are the differences between a regular object and an array?
 
 1. There are no property names (i.e. keys), so each spot in the array has a unique _index number_ that identifies it. JavaScript (and many other programming languages) are zero-based, which means that the first item in the array has an index of 0, not 1. 
-1. Because variable names can't have numbers in them, dot notation doesn't work with arrays. `musicObject[0]` will get us the first item in the array. `musicObject.0` will not.
+2. Because variable names can't be numbers, dot notation doesn't work with arrays. `musicObject[0]` will get us the first item in the array. `musicObject.0` will not.
 
 ### Exercise
 
@@ -69,20 +69,24 @@ Download and complete the exercises [here](https://hychalknotes.s3.amazonaws.com
 Let's take moment to review [functions](https://github.com/HackerYou/bootcamp-notes/blob/master/programming-fundamentals/functions.md).
 
 This is a **function declaration**:
+
 ```js
 function myFunction(){
   //some code
 }
 ```
-It creates a function that can be referenced anywhere in our code using the function name `myFunction`.
+
+It defines a function that can be referenced anywhere in our code using the function name `myFunction`.
 
 This is a **function expression**:
+
 ```js
 const myFunction = function(){
   //some code
 }
 ```
-It creates a function with no name and stores it in a variable named `myFunction`. 
+
+It defines a function with no name and stores it in a variable named `myFunction`. 
 
 <!-- I don't understand why this is here in the notes. This is the first time we talk about a function being an Object.  -->
 <!-- #### How to reference a function
@@ -99,9 +103,10 @@ Adding smooth brackets to the function name like so: `myFunction()` is how we **
 
 We already know that objects can hold strings, numbers, and arrays. Now we will learn that objects can also hold functions!
 
-There's a special name for a function that is a property of an object: a _method_.
+There's a special name for a function that is a property of an object: A _method_.
 
 We define methods like this:
+
 ```js
 const myObject = {
   key1: value1,
@@ -145,10 +150,13 @@ With reference to the above `raggedyAnn` object:
 ```js
 raggedyAnn.getHeightInInches();
 ```
-> Note that you can't call a method without its object. Add that`raggedyAnn` object to your console and try running `getHeightInInches()` by itself.
+
+Note that you can't call a method without its object. Add that `raggedyAnn` object to your console and try running `getHeightInInches()` by itself.
+
 
 ## Arrays and methods
 We said earlier that an array is a kind of JavaScript object; this is why arrays have some special built-in methods.
+
 
 ### Adding items: `.push()` and `.unshift()`
 

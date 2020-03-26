@@ -245,7 +245,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
 * Each JSX element must return **only one** HTML element (we'll be using `<div>` for most of the class, but you may see `<Fragment>` in the wild).
 
-* In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, it's `render` method).
+* In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, its `render` method).
 
 * One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI  _conditionally_. 
 
@@ -281,7 +281,7 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
       let markupShowingOnPage = null;
 
       if(userIsLoggedIn) {
-        markupShowingOnPage = <h1>Welcome, friend!</h1> 
+        markupShowingOnPage = `<h1>Welcome, friend!</h1>`;
       }
 
       return (
@@ -302,7 +302,7 @@ We'd create a new `SearchBar.js` file:
 ```jsx
 //SearchBar.js
 
-class SearchBar extends React.Component {
+class SearchBar extends Component {
   render() {
     return (
       <input type="text" placeholder="Enter your search term" name="search" />
@@ -400,6 +400,6 @@ Now, when we use the `npm start` command, the `npm-run-all` package will set up 
 To animate components, the React documentation suggests [React Motion](https://github.com/chenglou/react-motion) and [React Transition Group](https://reactcommunity.org/react-transition-group/).
 
 ### Additional Resources
-* [React for Beginners](https://reactforbeginners.com/) (taught by HackerYou instructor Wes Bos!)
+* [React for Beginners](https://reactforbeginners.com/) (taught by Juno instructor Wes Bos!)
 * [Learning React: Getting Started and Concepts](https://scotch.io/tutorials/learning-react-getting-started-and-concepts)
 * [Hello World in React](http://codepen.io/gaearon/pen/ZpvBNJ?editors=0010) (a CodePen you can play around with)

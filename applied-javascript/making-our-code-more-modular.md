@@ -98,7 +98,7 @@ Our function is ready to use because of the `export` keyword. To use it, we need
 // app.js
 import getRandomDay from './randomizer.js';
 
-getRandomDay(); // Wednesday
+console.log(getRandomDay()); // Wednesday
 
 ```
 
@@ -170,7 +170,7 @@ console.log(getRandomNumber()); // 47
 
 ```
 
-We place the name of the function that we want to import from the `randomizer` module inside the curly brackets. You'll remember this syntax [from a previous lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-destructuring-mutability-and-purity.md#destructuring-objects). It was new in ES6 and is called **destructuring**. We're plucking **only** the `getRandomNumber` function out of the `randomizer.js` file.
+We place the name of the function that we want to import from the `randomizer` module inside the curly brackets. You'll remember this syntax [from a previous lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md#destructuring). It was new in ES6 and is called **destructuring**. We're plucking **only** the `getRandomNumber` function out of the `randomizer.js` file.
 
 Now you know how to recognize and implement ES6 modules. 💪 Way to go!
 

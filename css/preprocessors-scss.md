@@ -38,19 +38,13 @@ Let's explore the power of preprocessors using Sass. Remember that sass is an ex
 
 The workflow Sass is that you will write your styles in `style.scss`and then compile it into a `style.css` file. The CSS file is the one you want to link to in your HTML. **If you link to your SCSS file, the styles will not load.**
 
-We'll install an application called [Prepros](https://prepros.io/) to compile our `.scss` or `.sass` files to `.css`.
+There are a variety of applications available to compile our `.scss` or `.sass` files to `.css`. We are going to use a Visual Studio extension called [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass). 
+
+Alternatively, [Prepros](https://prepros.io/) is a widely used free option.
+
+To get a project setup with Live Sass Compiler, we can use this [guide](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/live-sass-setup.md).
 
 We may also need to install an SCSS package in our text editor. 
-
-Create a new folder with the following structure:
-```bash
-- project-name
-    index.html
-  - styles
-      style.scss
-```
-
-Drag this new folder into Prepros and it will automatically be watched; when we save the `style.scss` file, a compiled `style.css` file will be created.
 
 ### Sass syntax
 
@@ -143,13 +137,16 @@ ul.nav {
   background: red;
   width: 100%;
 }
+
 ul.nav li {
   border-right: 1px solid #B3EB95;
 }
+
 ul.nav li a {
   background: #B3EB95;
   padding: 10px;
 }
+
 ul.nav li a:hover {
   background: yellow;
 }
@@ -196,9 +193,11 @@ $primary : #B3EB95
 
 a.home {
   background:$primary;
+
   &:hover {
     background: lighten($primary, 10) //10% lighter than $primary;
   }
+
   &:visited {
     background: darken($primary, 10) //10% darker than $primary;
   }
@@ -248,12 +247,12 @@ p {
 We can even get Sass to do math for us! Say we want it to dymanimcally generate our font sizes in rems with a pixel fallback. So far, we have been setting the base font size in our HTML to 125% to allow for easy rem calculation. Here's how we might make it even easier with a mixin:
 
 ```scss
-@mixin fontSize($sizeValue){
+@mixin fontSize($sizeValue) {
   font-size: $sizeValue * 1px;
   font-size: ($sizeValue/10) * 1rem;
 }
 
-h1{
+h1 {
   @include fontSize(48);
 }
 ```
@@ -261,7 +260,7 @@ h1{
 Compiles to
 
 ```css
-h1{
+h1 {
   font-size: 48px;
   font-size: 4.8rem;
 }
@@ -275,10 +274,35 @@ Mixins can also accept multiple variables, opening up a whole world of possibili
   top: $top;
   left: $left; 
 }
+
 .box { 
-	@include position(absolute, 15px, 30px); 
+  @include position(absolute, 15px, 30px); 
 }
 ```
+
+When we declare mixins with variables, every variable must have a value passed in when the mixin is being included. However we can make a value optional if we provide a *default value* to the variable when we define the mixin:
+
+```scss
+@mixin position($type: relative, $top: 0, $left: 0 ) {
+  position: $type; 
+  top: $top;
+  left: $left; 
+}
+.box {
+  @include position(absolute); 
+}
+```
+
+Compiles to:
+
+```css
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+```
+So even if we didn't provide values for `$top` and `$left` variable, SCSS will compile to use the default values provided.
 
 ### SCSS gotcha corner
 #### How do we link our background images inside of our SCSS files?

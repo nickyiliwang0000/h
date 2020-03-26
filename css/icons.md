@@ -60,7 +60,9 @@ To get an icon on your page, use the repurposed `<i>` tag. (Remember that it use
 
 ![Font Awesome documentation of icon types](https://hychalknotes.s3.amazonaws.com/font-awesome-doc.png)
 
-Using the Font Awesome [documentation](https://fontawesome.com/icons), add the correct icons to [this file](https://hychalknotes.s3.amazonaws.com/font-awesome-with-css.html) and change their colors. Icons can be styled just like any other element.
+## Exercise
+
+Using the Font Awesome [documentation](https://fontawesome.com/icons), add the correct icons to [this file](https://hychalknotes.s3.amazonaws.com/font-awesome-with-css--bootcamp.zip) and change their colors. Icons can be styled just like any other element.
 
 ## Accessibility and icons
 Screen readers and other assistive technologies are able to read icons. Using the `aria-hidden` attribute we can define which icons should be read out and which ones should be ignored. If `aria-hidden` is set to true, screen readers will know to skip the element. If an icon is used for decorative purposes, we most likely do not want it to be read out by screen readers, so we will want to add `aria-hidden="true"` to our `i` element.
@@ -73,7 +75,7 @@ Screen readers and other assistive technologies are able to read icons. Using th
 Sometimes we want our icons to be read out by screen readers. If your icons have semantic meaning, Font Awesome recommends adding a few more things to make your icons more accessible. We need to add `aria-hidden="true"` to the icon to hide it from screen readers, and supplement it with a `span`.  What you put between the span tags will get read out by screen readers. Then we add a class of `sr-only` to the `span`. Font Awesome deals the with the styling for `sr-only` and will **visually** hide the span from users. Still with us? No? Let's check out an example:
 
 ```html
-<h2>From HackerYou to Loblaws:</h2>
+<h2>From Juno to Loblaws:</h2>
 <i class="fas fa-walking" aria-hidden="true"></i>
 <span class="sr-only">Time by walking:</span>
 <p>4 minutes</p>
@@ -90,7 +92,7 @@ The walking icon and bike icon have semantic meaning. By creating the `span`, we
 Another way to make your icons accessible is using the `aria-label` attribute. This is great for interactive elements. For example, lots of sites use icons to link users to their social media. Be sure to make these icons accessible, as you want people to know they serve a purpose and are clickable:
 
 ```html
-<a href="https://www.instagram.com/thisishackeryou" aria-label="Go to HackerYou's Instagram page">
+<a href="https://www.instagram.com/junocollege" aria-label="Go to Juno College's Instagram page">
   <i aria-hidden class="fab fa-instagram"></i>
 </a>
 ```

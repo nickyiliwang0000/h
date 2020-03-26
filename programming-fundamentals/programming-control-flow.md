@@ -17,13 +17,15 @@ Normally, instructions (i.e. **statements**) in a JavaScript are executed one af
 The term _control flow_ describes how a developer might choose to order the execution of statements, regardless of the order in which they appear in the JavaScript file.
 
 An example of control flow is an `if` statement:
+
 ```js
 if (time === 22) {
-   goToSleep();
+  goToSleep();
 } else {
   learnMoreCode();
 }
 ```
+
 In this statment block, the `goToSleep` function is only executed if the variable `time` is 22 (i.e. ten o'clock at night), even though it appears in the script before `learnMoreCode`.
 
 Let's dive into that logic!
@@ -54,10 +56,10 @@ The whole `else` block is **optional**! If you don't include an `else` block and
 A _block_ is used to group statements. The block is delimited by a pair of curly brackets `{}`:
 
 ```js
-if ( time === 'morning') {
-   // do all of the following things
-   console.log("Good morning!");
-   alert("It's morning!");
+if (time === 'morning') {
+  // do all of the following things
+  console.log("Good morning!");
+  alert("It's morning!");
 } else {
   // do all the following things if the first condition is false
   console.log("Hello!");
@@ -159,7 +161,7 @@ an empty `string` | false
 the `number` 0 | `false`
 any `number` higher or lower than 0 |`true`
 
-Data types and values that evaluate to false (i.e. `0`,`null`, and `undefined`) are known as _falsy_, whereas data types and values that evaluate to true (i.e. strings, any number higher than 0) are known as _truthy_. This is why the `===` operator exists: it checks for equality in both type **and** value; `==` checks for equality **only** in value.
+Data types and values that evaluate to false (i.e. `0`,`null`, and `undefined`) are known as _falsy_, whereas data types and values that evaluate to true (i.e. strings, any number other than 0) are known as _truthy_. This is why the `===` operator exists: it checks for equality in both type **and** value; `==` checks for equality **only** in value.
 
 ```js
 let num = 0;
@@ -230,7 +232,6 @@ while (condition) {
 }
 ```
 The block executes repeatedly as long as the condition is true.
-
 
 <h3 align="center"> 
 🚨🚨🚨🚨🚨🚨🚨🚨  DANGER 🚨🚨🚨🚨🚨🚨🚨🚨

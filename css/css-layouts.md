@@ -14,11 +14,11 @@ What makes a site easy to use? How should our content sit on the page? What happ
 
 Every element in HTML exists as a box. Elements have dimensions (e.g. width and height) and can contain content or other elements.
 
-We've already looked grouping content using the `<div>` tag and/or semantic elements and we don't just group content for readability in the HTML: we also group content in anticipation of the styling we'll apply to it.
+We've already looked at grouping content using the `<div>` tag and/or semantic elements, for readability and accessibility. On top of that though, we also group content in anticipation of the styling we'll apply to it.
 
 In HTML, almost all structural elements take up 100% of the width of the browser.  These elements are known as _block elements_. All elements render in the browser in the order they appear in the HTML markup; kind of the way a word processor works.
 
-Check out [this CodePen](https://codepen.io/hackeryou/pen/yQeXQO) for a quick visual refresher on block elements, or copy-paste the following code into a file of your own:
+Check out [this CodePen](https://codepen.io/hackeryou/pen/yQeXQO) for a quick visual refresher on block elements:
 
 ```css
 section{
@@ -42,9 +42,9 @@ aside{
 </div>
 ```
 
-## Adding dimensions
+### Adding dimensions
 
-Every website you've ever seen isn't just stuff stacked up in the browser. There are articles next to sidebars, footers that span a whole page, and masonry layouts. Lists, especially navigations, can run inline rather than stack up.
+Most websites aren't just stuff stacked up in the browser. There are articles next to sidebars, footers that span a whole page, and masonry layouts. Lists, especially navigations, can run inline rather than stacking up.
 
 It makes sense to assume that since all block elements default to a width of 100% of the browser window, changing the elements' width to 50% should allow two elements to sit next to each other.
 
@@ -63,137 +63,83 @@ aside{
 }
 ```
 
-```html
-<div class="container">
-  <section>
-    <h2>This is a section</h2>
-  </section>
-  <aside>
-    <h3>This is an aside</h3>
-  </aside>
-</div>
-```
-
 Why isn't the aside coming up to sit by the section?!
 
 ![diagram showing how block elements are expected sit on a line together at 50% width each](https://hychalknotes.s3.amazonaws.com/expected-block-behavior.png)
 
-This is one of the weird things about HTML/CSS layout. Block elements **always** always take up a 100% of the browser window regardless of their declared/rendered width. Weeeeeiiiiirrrddddddd!
+This is one of the weird things about HTML/CSS layout; block elements always always stack vertically, regardless of their declared/rendered width.
 
-## The `float` property
+There are a number of ways to use CSS to solve this limitation to page layout. The most common are Flexbox and CSS grid; both are great and will work for you on all projects you build going forward, but they are relatively recent additions to the CSS spec. Part of being a professional web developer is also being able to support common legacy technologies. Among the most prevalent of these, which you will likely run into frequently on the job, is what was previously the most common way to handle complex page layouts - _floats_.
 
-The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to, but they **did** plan for text to wrap around images, like it does in books and magazines. The `float` property can be applied to images to define how the following elements will wrap around them.
 
-Check out [this CodePen](https://codepen.io/hackeryou/pen/qQbXez) to see the paragraph text wrapping around the image, or copy-paste the following code into a file of your own:
+## Floats
 
-```css
-  img{
-    float:left;
-  }
-```
-```html
-<img src="http://unsplash.it/200/200" alt="image from unsplash">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis qui veritatis saepe cum corrupti ex quibusdam, magni quas autem, deserunt sint alias. At et, sed veniam, beatae porro animi qui.</p>
-```
+The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to. The `float` property wasn't created to solve this, but rather to let text wrap around images like it does in books and magazines.
 
-Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
+The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to, but they did plan for text to wrap around images like it does in books and magazines. The `float` property can be applied to images to define how following elements will wrap around them.
 
-## Exercise: Floating images
+Applying the `float` property to images defines how following elements will wrap around them. Check out [this CodePen](https://codepen.io/CoderOfNote/pen/BaajyJY?editors=1100#0) to see the paragraph text wrapping around the image. Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
+
+### Exercise: Floating images
 Open up [image-float.html](https://hychalknotes.s3.amazonaws.com/floating-image.html) in your text editor and the browser. If you get stuck, check out the answer [here](https://hychalknotes.s3.amazonaws.com/floating-imageANSWER.html).
 
-## Using floats for layout
-We can use floats to help lay out our structural elements, not just our images. If we think of each row/line as 100%, we need to ensure that the sum of all the elements' dimensions in any given row are equal to or less than 100%. Anything that doesn't fit into that space gets moved to the next line.
+### Using floats for layout
 
-All structural elements are block elements, which means they're how wide by default?
-<!-- They take up 100% of the width of the browser window -->
-> 100% of the width of the browser window!
+<!-- Rework this section to open with more of a "floats became a way to solve layout problems, even though they're not designed for that." Show the example with the first codepen below, but then explain that what's happening is that the element is being floated out of the flow of the page, so we need clearfix etc. -->
 
-Go back to [this CodePen](https://codepen.io/hackeryou/pen/yQeXQO) and add `float: left;` to the block elements, like so:
+<!-- Also move thing about making sure row items equal or are less than 100% to after showing the codepen in action, since otherwise there's no context for what we're talking about (that the items are in a line) -->
+
+Although floats were only designed to let text wrap around images, they were repurposed by developers to build layouts where elements sit beside one-another.
+
+Go back to [this CodePen](https://codepen.io/hackeryou/pen/yQeXQO) and along with `width: 50%` add `float: left;` to the block elements, like so:
 
 ```css
 section{
-  background-color:aqua;
+  background-color: aqua;
   height: 100px;
-  width:50%;
-  float:left;
+  width: 50%;
+  float: left;
 }
 aside{
   background-color: lavender;
   height: 50px;
-  width:50%;
-  float:left;
+  width: 50%;
+  float: left;
 }
 ```
 
-```html
-<div class="container">
-  <section>
-    <h2>This is a section</h2>
-  </section>
-  <aside>
-    <h3>This is an aside</h3>
-  </aside>
-</div>
-```
-Remove the `width:50%;` on both elements. What happens?
+The two elements **float** up to sit beside one-another. They fit because we've set their widths to 50%. If the sum of all the elements' widths (plus any margins!) in any given row is more than 100%, then anything that doesn't fit gets moved to the next line. Try changing the width of the `aside` to 60% to see this happen.
 
-You'll see that when you apply a `float` to an element, that element's width becomes the size of its contents unless otherwise specified.
+On the other hand, what happens if we remove the `width` declaration from both elements? When you apply a `float` to an element, it no longer behaves as a block level element. Instead, its width becomes the size of its contents unless otherwise specified.
 
-## Floated elements' stacking order
+This seems great, we can lay out content horizontally. Again though, floats were never designed to build complex page layouts, and using them this way comes with its own complications that have to be accounted for.
 
-When elements are floated, their _stacking order_ will also change. Stacking order is the way elements appear on the page. When you float an element, you're essentially lifting it out of the flow of the page and letting it float above its surrounding element. The floated element will also lose its imprint and and its space won't be saved. Often, you will find the surrounding elements shuffling into the space that the floated element used to take up. [Here is a great video](https://www.youtube.com/watch?v=xara4Z1b18I) that explains how floating elements affect their stacking order.
 
-You can kind of think of it like people in line at the cash at the grocery store: you get into line in the order you finish shopping (natural stacking order). If you leave the line to go to the self-checkout, the people who were behind you will fill your spot (float). If the self-checkout is broken, hopefully people will let you back in line in your original spot. (A floated element always takes its original position back when the float is removed. A web page is like like a very polite community of shoppers.)
+### Floating elements' complicated behavior
+
+When you float an element, you're essentially lifting it out of the normal flow of an HTML page; it floats up, out of its original position and to the front of its container. Its original footprint on the page disappears, which causes two major issues:
+
+* Any following elements will move up to take the floated item's place in the DOM flow.
+* The element's parent shrinks/collapses, since it no longer accounts for wrapping the floated element.
+
+
+#### Stacking order
+
+An element floating up out of the natural page flow and other elements taking its place means that the _stacking order_ of the HTML elements (the way they appear on the page) changes. [Here is a great video](https://www.youtube.com/watch?v=xara4Z1b18I) that explains how floating elements affect their stacking order.
+
+You can kind of think of it like people in line to pay at the grocery store; you get into line in the order you finish shopping (natural stacking order), but if you leave the line to go to the self-checkout (float), the people who were behind you will fill your spot. If the self-checkout is broken, hopefully people will let you back in line in your original spot. A floated element always takes its original position back when the float is removed - a web page is like a very polite community of shoppers.
 
 Check out [this CodePen](https://codepen.io/jenobot/pen/QOzyeP/) to see how stacking order changes when an element is floated.
 
-## Calculating dimensions
 
-Before we move on, we need to understand how we use margin, padding and borders in layouts. A brief review of those properties:
+#### Parent element collapse
 
-property | used to |
----|---
-`margin` |  push elements away from each other
-`padding` | push content away from the inside walls of an element
-`border` | surround an element and its padding
+When we float an element, its parent element no longer accounts for the floated elements' size, so the parent collapses. This causes all kinds of problems, since it means the floated elements will break out of their parent containers and overlap with following elements.
 
-Check out [this CodePen](https://codepen.io/zkdan/pen/oQbooo) and uncomment the margin, padding, and border.
+Lucky for us, floats became such a common tool for page layouts that a fairly standardized fix was developed and became commonplace. It is a CSS rule called _clearfix_, which we can apply to these parent elements. It makes them account for floated children, and go back to wrapping all their descendants. We will look at this in the following exercise.
 
-See how the element is defined as 200px by 200px, but the padding makes the element larger?
-![an image element with 50px of padding](https://hychalknotes.s3.amazonaws.com/box-model-padding.png)
 
-And so does the border! 
-
-![an image element with 50px of padding and 50px of border](https://hychalknotes.s3.amazonaws.com/box-model-border-padding.png)
-
-So what we defined as a 200px square is now a 300px square! 
-
-The 25px of margin that we added affects the element's footprint, not its actual size. With the margin applying, the element will take up `25px + 300px + 25px` of space in the browser window. 
-
-This is what is known as the _box model_. A developer (or the content) defines an element's size and the padding and border are **added** to that size. This can be confusing, especially when we're using floats with these widths.
-
-Download and open up [box-model-playground.html](https://hychalknotes.s3.amazonaws.com/box-model-playground.html) in your text editor and browser. Play around with the padding, border and margin of each box and see how it can affect their total dimensions.
-
-## Border-box
-
-The box model can be navigated around quite easily. By adding the following code to the top of your CSS file, we can make the padding and border **not** add to the computed size of our element.
-
-```css
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-```
-
-The `*` character is a wildcard selector and selects everything on the page.
-
-When starting any project from now on, be sure to include that at the top of your CSS file.
-
-## Two column layout
+### Two column layout
 
 One familiar web page layout includes a `header` and a `footer`, and in between those, a content area with an `aside` next to it.
 
@@ -202,54 +148,49 @@ Open up <a href="https://hychalknotes.s3.amazonaws.com/column-layout.html" class
 In our example, we have our four main elements. `header`, `section`, `aside` and `footer`. We also have a surrounding element with a class of `wrapper` that constrains our elements and centers them.
 
 ```html
-  <div class="wrapper">
-      <header>
-          <h1>Welcome To HackerYou</h1>
-      </header>
-      <section>
-          <h2>This is the story of a girl.</h2>
-          <p>Born and raised in Houston, Texas, Beyoncé performed in various singing and dancing competitions as a child. She rose to fame in the late 1990s as lead singer of the R&B girl-group Destiny's Child. Managed by her father Mathew Knowles, the group became one of the best-selling girl groups in history. Their hiatus saw Beyoncé's theatrical film debut in Austin Powers in Goldmember (2002) and the release of her first solo album, Dangerously in Love (2003). The album established her as a solo artist worldwide, debuting at number one on the US Billboard 200 chart and earning five Grammy Awards, and featured the Billboard Hot 100 number one singles "Crazy in Love" and "Baby Boy".</p>
-      </section>
-      <aside>
-          <ul>
-              <li>Clickbait Synergist</li>
-              <li>Paradigm Optimization</li>
-              <li>Bleeding Edge Exit Strategy</li>
-          </ul>
-      </aside>
-      <footer>
-          <p>Copyright 2018</p>
-      </footer>
-  </div>
+<div class="wrapper">
+  <header>
+    <h1>Welcome To Juno</h1>
+  </header>
+  <section>
+    <h2>This is the story of a girl.</h2>
+    <p>Born and raised in Houston, Texas, Beyoncé performed in various singing and dancing competitions as a child. She rose to fame in the late 1990s as lead singer of the R&B girl-group Destiny's Child. Managed by her father Mathew Knowles, the group became one of the best-selling girl groups in history. Their hiatus saw Beyoncé's theatrical film debut in Austin Powers in Goldmember (2002) and the release of her first solo album, Dangerously in Love (2003). The album established her as a solo artist worldwide, debuting at number one on the US Billboard 200 chart and earning five Grammy Awards, and featured the Billboard Hot 100 number one singles "Crazy in Love" and "Baby Boy".</p>
+  </section>
+  <aside>
+    <ul>
+      <li>Clickbait Synergist</li>
+      <li>Paradigm Optimization</li>
+      <li>Bleeding Edge Exit Strategy</li>
+    </ul>
+  </aside>
+  <footer>
+    <p>&copy; Copyright 2049</p>
+  </footer>
+</div>
 ```
-By default, our elements are 100% wide, so we don't need to apply any widths or floats to our header or footer. However, we do want  `section` and `aside` next to each other. We'll use floats. Once the elements are floated, we'd like them to add up to 100% of the browser window width.
+
+By default, our elements are 100% wide, so we don't need to apply any widths or floats to our header or footer. However, let's say we want `section` and `aside` next to each other. We can use floats. Once the elements are floated, we'd like them to add up to 100% of the browser window width.
 
 ```css
 section {
-    float: left;
-    width: 60%;
+  float: left;
+  width: 60%;
 }
 
 aside {
-    float: left;
-    width: 40%;
+  float: left;
+  width: 40%;
 }
 ```
 
-Great, the `section` and `aside` are next to each other, but our footer has jumped up and our wrapper  has collapsed.
+Great, the `section` and `aside` are next to each other, but because they're no longer in the regular flow of our document, our `.wrapper` div has collapsed and the `footer` has jumped up to the top.
 
 ![float collapse](https://hychalknotes.s3.amazonaws.com/column-layout-screenshot.png)
 
-Weird! How do we fix these unexpected bugs?
 
-## Float problems
-### Collapse of surrounding element
-Floats were created to allow text to wrap around an image and continue down the page. In the layout we're working with, we don't have enough content in the `aside` to continue down the page, so the wrapper sizes to the next element that isn't floated. In this case, the `footer` element.
+#### `.clearfix`
 
-
-#### Solution: `.clearfix`
-
-The industry standard method of solving this problem is mostly referred to as `clearfix`. (The class name of `clearfix` is an industry standard, but it can be named whatever you'd like.) Along with the `border-box` fix, we recommend that you include the following code at the **top** of all our `styles.css` files moving forward.
+To fix the collapsed wrapper, we can use the industry standard method we mentioned earlier, clearfix. To do this, we first define a class, `.clearfix`, at the top of our CSS:
 
 ```css
 .clearfix:after {
@@ -261,14 +202,20 @@ The industry standard method of solving this problem is mostly referred to as `c
   height: 0;
 } 
 ```
- Whenever you are floating an element, apply a class of `clearfix` to the **parent** element.
+
+Along with the `border-box` fix, you should include the above code at the top of your CSS files for any project you build with floats.
+
+Next, you apply the clearfix class to the **parent** of any floated elements on your page:
 
 ```html
 <section>
   <div class="wrapper clearfix">
+    <!-- The div below is floated left! -->
     <div class="half">
       <p>The div that contains this paragraph is floated left</p>
     </div>
+
+    <!-- The div below is also floated left! -->
     <div class="half">
       <p>The div that contains this paragraph is also floated left</p>
     </div>
@@ -276,10 +223,16 @@ The industry standard method of solving this problem is mostly referred to as `c
 </section>
 ```
 
+Note that while `.clearfix` is the most common standard, like any class name, we can name it anything we want. Other common names are `.clearfloat` and [`.group`](https://css-tricks.com/snippets/css/clear-fix/).
 
-### Following elements are broken
+Let's add the clearfix CSS rule to our styles and apply the class to our wrapper div in the exercise. The wrapper now surrounds all our elements instead of collapsing.
 
-When using floats, we can fix the elements that pop up after our floated elements by adding the rule `clear:both;` to their styles. Using `clear:both;` on the following, sibling element will stop the floating layout and return the element you target **and** all following elements to their original layout state.
+
+#### Fixing the stacking order
+
+Our `footer` is still up behind our `section` and `aside`, because while clearfix made our wrapper account for the floated elements, we still haven't told the `footer`, a sibling which follows our floated elements, to maintain the page's original stacking order.
+
+To do this, we apply a `clear: both;` rule to our `footer`. This rule tells an element which follows floated items to clear itself of the floating layout, and to return itself and all following elements to their original layout:
 
 ```css
 footer {
@@ -287,11 +240,14 @@ footer {
 }
 ```
 
+Finally, our page looks the way we want!
+
+
 ## Removing browser default styles
 
-All browsers come with style defaults, such as making all `h1`-`h6` elements escalate in size and adding padding and margins to various elements. Though you may like some of the default styles, they aren't consistent across all browsers. This can lead to lots of debugging headaches. A CSS snippet referred to as `CSS normalize` or `CSS reset` strips out all the browser's default styles. We can either insert it at the top of our main CSS file or add as a separate stylesheet in the `<head>` of our HTML document.
+All browsers come with style defaults, such as making all `h1` to `h6` elements be sizes largest to smallest, and adding padding and margins to various elements. Although you may like some of the default styles, they aren't consistent across all browsers ,which can lead to lots of debugging headaches. A CSS snippet referred to as `CSS normalize` or `CSS reset` strips out all the browser's default styles. We can either insert it at the top of our main CSS file or add as a separate stylesheet in the `<head>` of our HTML document.
 
-If you add it as a separate stylesheet, **it should be included before your custom stylesheet**.
+If you add it as a separate stylesheet, it should be included before your custom stylesheet.
 
 If you don't already have it as a snippet, you can download normalize.css at <http://necolas.github.com/normalize.css/>, or [find it here](https://hychalknotes.s3.amazonaws.com/normalize-v700.css). We won't be using it in our examples, but all of your projects should include it.
 

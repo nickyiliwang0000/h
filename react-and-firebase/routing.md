@@ -19,7 +19,7 @@ In order to understand the basics of how React Router works, we're going to buil
 ### Setting up React Router
 Create a new React app using `create-react-app` and then install the `react-router-dom` package.
 
-`npm install react-router-dom --save-dev`
+`npm install react-router-dom`
 
 Now that we've installed and configured `react-router`, let's set up our root `App` component.
 

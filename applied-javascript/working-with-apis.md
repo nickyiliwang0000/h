@@ -48,7 +48,7 @@ To access data from a RESTful API, we make a `GET` request to an _endpoint_. An 
 Try viewing these endpoints in your browser:      
 * <https://myttc.ca/osgoode_station.json>  
 * <https://api.datamuse.com/words?ml=computer>
-* <https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&text=hackeryou&api_key=9ffc680dbb093e647be2784acdb4eb56>
+* <https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&text=juno%20college&api_key=9ffc680dbb093e647be2784acdb4eb56>
 
 ### Anatomy of a GET request
 

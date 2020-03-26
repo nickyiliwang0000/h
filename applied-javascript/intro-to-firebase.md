@@ -84,7 +84,7 @@ If you see this, you have successfully configured your project to use Firebase.
 
 5. Back in your HTML file, underneath the first `firebase` script tag copy and paste in this required database cdn:
 ```js
-<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
 ```
 
 You should now have a setup that resembles this:
@@ -249,7 +249,7 @@ No problem! We're pushing a complete copy of the `userSettings` object with all 
 
 ```js
 const moreUserSettings = {
-  company:'HackerYou',
+  company:'JunoCollege',
   coursesTaught: {
     fall:'bootcamp',
     winter:'bootcamp',

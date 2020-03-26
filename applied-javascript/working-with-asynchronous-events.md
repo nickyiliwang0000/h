@@ -10,9 +10,9 @@
 -->
 # Working with asynchronous events
 ## The problem
-Let's say we're building an app that makes two AJAX requests: one for the weather and one for recipes based on the weather. 
+Let's say we're building an app that plans an average, boring day for you. It makes two AJAX requests - one for the weather, and one for recipes to make for dinner. We need both requests to finish before we print the information to the page.
 
-We **could** run the first AJAX request and put the second AJAX request in its callback, so that the second AJAX request only runs when the first one is done. That would look like this:
+We **could** run the first AJAX request and put the second AJAX request in its callback, so that the second AJAX request runs when the first one is done. Then we can pass all the collected data on to a function that will print our info to the page. That would look like this:
 
 ```js
 $.ajax({
@@ -21,17 +21,19 @@ $.ajax({
   dataType: 'jsonp'
 }).then((weatherConditions) => {
   $.ajax({
-    url: 'https://api.recipes.com/'+ weatherConditions,
+    url: 'https://api.recipes.com/category/boring',
     type: 'GET',
     dataType: 'jsonp'
-  }).then((data) => {
-    // do something
+  }).then((recipes) => {
+    emptyLifeApp.printToPage(weatherConditions, recipes);
   });
 });
 ```
-This isn't ideal because we need to wait for the response from `https://www.weather.com/toronto` to come back before we can make a call to `https://api.recipes.com/`, which could be a long time. Also, what if we had to complete 10 API calls in sequence?  
+
+This isn't ideal because we need to wait for the response from `https://www.weather.com/toronto` to come back before we can make a call to `https://api.recipes.com/`, which slows things down; it would be faster if we could send all the calls out at the same time so that they all complete as soon as possible. Also, what if we had to complete 10 API calls in sequence?  
 
 Something like this:
+
 ```js
 $.ajax({
   url: 'https://www.weather.com/toronto',
@@ -39,36 +41,50 @@ $.ajax({
   dataType: 'jsonp'
 }).then((weatherConditions) => {
   $.ajax({
-    url: 'https://api.recipes.com/'+ weatherConditions,
+    url: 'https://api.recipes.com/category/boring',
     type: 'GET',
     dataType: 'jsonp'
-  }).then((data) => {
+  }).then((recipes) => {
     $.ajax({
-      url: 'api.github.com/user/hackeryou',
+      url: 'https://api.televisionArchive.com/shows/daytimeShopping',
       type: 'GET',
       dataType: 'jsonp'
-    }).then((data) => {
+    }).then((TVguide) => {
       $.ajax({
-        url: 'developers.facebook.com/api/',
+        url: 'https://developers.paintAndHardware.com/paintDryingTimes',
         type: 'GET',
         dataType: 'jsonp'
-      }).then((data) => {
+      }).then((watchTime) => {
         // more AJAX calls
+          .then(() => {
+            // and more AJAX calls
+            .then(() => {
+              // and more and more and more
+              .then(() => {
+                // never-ending AJAX calls
+                .then(() => {
+                  // there is no more Juno, there is only AJAX calls
+                })
+              })
+            })
+          })
       });
     });
   });
 });
 ```
+
 Chaining functions like this (i.e. so that they are executed from top to bottom in a file), is lovingly referred to as [callback hell](http://callbackhell.com).
+
 
 ## Promises
 
-Rather than putting our AJAX calls (or any code) into callback after callback, we can queue up what's called a _promise_. A promise [is an object that represents the eventual completion or failure of an asynchronous event](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). 
+Rather than putting our AJAX calls (or any code) into callback after callback, we can queue up what's called a _promise_. A promise is a special JavaScript object [that represents the eventual completion or failure of an asynchronous event](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). 
 
 You can think of a JavaScript promise like a regular, real-life promise. If your best friend promises to make you special a birthday gift, you can reasonably expect to receive that present on your birthday: ✨🎁✨ . It's not your birthday **yet** so they haven't made you a gift **right now**, but by the end of the day on your birthday, you will know if they've done what they promised. 
 
-A _fulfilled_ promise is one where your best friend gives you a gift (or you receive the data you expect from your API).
-A _rejected_ promise is one where your best friend wasn't able to get you a gift (or you don't receive any data from your API).
+A _fulfilled_ promise is one where your best friend gives you a gift (ie. you receive the data you expect from your API).
+A _rejected_ promise is one where your best friend wasn't able to get you a gift (ie. you don't receive any data from your API).
 
 To write a promise from scratch, you need three things:
   1. The `new` keyword
@@ -76,7 +92,7 @@ To write a promise from scratch, you need three things:
   1. A function that will run when the promise is rejected (promise broken)
 
 ```js
-// here we create the promise and name the functions we will run when the promise is filfulled or rejected
+// here we create the promise and name the functions we will run when the promise is fulfilled or rejected
 const myPromise = new Promise( (fulfill, reject) => {
 
   // here we say what will be returned from the promise if it is fulfilled
@@ -87,7 +103,9 @@ const myPromise = new Promise( (fulfill, reject) => {
 })
 ```
 
-> Capital-P `Promise` is a special kind of object in JavaScript called a _prototype_ that you create a new copy of using the `new` keyword. Promises have some special stuff baked in, which is why you make a copy of the prototype when you want to use one. It's like opening up a preformatted resume in a word processor. More on this in [our lesson on class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md).
+> Capital-P `Promise` is a special kind of object in JavaScript called a _prototype_. When you use invoke the prototype along with the `new` keyword, you create a new copy, or _instance_ of the prototype.
+>
+> Promises have some special stuff baked in, which is why you make a copy of the prototype when you want to use one. It's like opening up a preformatted resume in a word processor. More on this in [our lesson on class-based programming](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/class-based-programming.md).
 
 To invoke a promise, you need to let the browser know what happens when the data comes back using the `.then()` method:
 
@@ -102,6 +120,92 @@ myPromise.then( (goodResult) => {
     console.log(error)
 })
 ```
+
+So, the general idea is like this:
+* We use `new Promise` to create and name a promise, and to define what should be returned if it is fulfilled, and what should be returned if it is rejected.
+* We access the returns using methods built into the promise object, `.then()` (when it is fulfilled) and `.catch()` (when it is rejected).
+* Each of the above methods takes a callback. Those callbacks are automatically passed the return from their respective promise outcomes (like we've already seen with `$.ajax` passing data to `.then()`):
+  * `.then( (fulfillReturn) => {} );`
+  * `.catch( (rejectReturn) => {} );`
+
+That's the abstract, but it helps to see it in practice. Let's create a new HTML file with some `<script>` tags and write our own promise from scratch.
+
+First we create a variable. In our promise, we will be "waiting" to see if it is true or false:
+
+```js
+const isTherePupHere = true;
+```
+
+Next, we use the `new` keyword to build a promise called `lookForFloof`. Inside our promise, we can use an if-statement to check the value of our variable. This is a bit like waiting to hear the result of an AJAX call - did we get a 200 back (ie. `isTherePupHere === true`)? Or did we get an error (ie. `isTherePupHere === false`)? 
+
+```js
+const lookForFloof = new Promise( () => {
+  
+  if (isTherePupHere) {
+    // Do some stuff if the variable is true
+  } else {
+    // Do some stuff if the variable is false
+  }
+
+});
+```
+
+Once we know, we will want to do something (run a function!) if the promise succeeds or if it fails. The callback that we pass the `Promise` constructor takes two parameters - the names of the success and failure functions that will run in either case. These two functions themselves are defined behind the scenes by the constructor, we do not need to create them in our code:
+
+```js
+const lookForFloof = new Promise( (fulfill, reject) => {
+  
+  if (isTherePupHere) {
+    fulfill(`Pet ittttttttttttt`);
+  } else {
+    reject(`Let's go to the park`);
+  }
+
+});
+```
+
+The argument passed to the fulfill and reject functions are what will be returned in each circumstance (in this case, if the variable is true then we get back a string of "Pet ittttttttttttt", and if it is false, we get back a string of "Let's go to the park").
+
+Our new promise is ready to go. Let's log `lookForFloof` out, just to see that it is returning a promise object.
+
+```js
+console.log(lookForFloof);
+```
+
+Now to put it into use. Let's define a function which will call our promise, and decide what to do with the return. Our promise object has some built-in methods that we can use:
+
+```js
+const promiseMePups = () => {
+  lookForFloof.then().catch();
+}
+```
+
+If the promise resolves (which in this case means the variable is true), then the return from the fulfill function (in this case, our "Pet ittttttttttttt" string) is passed as an argument to the callback of the `.then()` method. If the promise is rejected (the variable is false), then the return from the reject function is passed as an argument to the callback of the `.catch()` method.
+
+We name a parameter in each case, so that we can define what to do with each of the returns:
+
+```js
+const promiseMePups = () => {
+  lookForFloof
+    .then( (yeh) => {
+      console.log(yeh);
+    })
+    .catch( (nah) => {
+      console.log(nah);
+    });
+}
+```
+
+So, in this case, `yeh` will be `"Pet ittttttttttttt"` and `nah` will be `"Let's go to the park"`.
+
+Let's call our function! Try it out, then go up and change the value of isTherePupHere to false, and reload the page to see the promise be rejected.
+
+```js
+promiseMePups();
+```
+
+
+## Using promises in the real world
 
 Promises are supported in all modern browsers, but some older ones may require you to use a promise library; jQuery has one built into it. We're already very familiar with one function that returns a promise: the `$.ajax()` method!
 
@@ -118,6 +222,7 @@ $.ajax({
     console.log(data)
 });
 ```
+
 ...we're **storing the AJAX request in a variable**. Doing so tells our code that we **promise** we won't try to  run the `.then()` function without knowing what the AJAX call returned. It's important to note that the variable **does not yet** contain the returned data.
 
 ```js
@@ -131,7 +236,8 @@ pokemonApp.getPokemon = $.ajax({
   dataType: 'JSON',
 });
 ```
-The JavaScript method `.then()` tells the browser what to do with the data returned from the promise.
+
+The jQuery method `.then()` tells the browser what to do with the data returned from the promise.
 
 ```js
 const pokemonApp = {};
@@ -149,7 +255,7 @@ pokemonApp.getPokemon.then((caughtPokemon) => {
 ```
 
 ### Listening for success and failure
-Sometimes, APIs don't return the information we want. Right now we have no way to deal with that! We've only written callback functions that assume we have response data from the API. Luckily, the `.then()` method accepts **two** callback functions. We've been providing one that specifies what to do when the promise is fulfilled (i.e. _successful_). We can also provide one that says what to do when the promise is rejected (i.e. _fails_).
+Sometimes, APIs don't return the information we want. Up to now we didn't have a way to deal with that, and we've only written callback functions that assume we have response data from the API. One way to handle this is inside the `.then()` method itself, which actually accepts **two** callback functions. We've been providing one that specifies what to do when the promise is fulfilled (i.e. _successful_), but we can also provide one that says what to do when the promise is rejected (i.e. _fails_).
 
 Here's an example of a `.then()` function with two callbacks: the first one (the fulfill callback) has a parameter called `caughtPokemon`, and the second one (the reject callback) takes the argument that's passed as the `err` parameter and logs it:
 
@@ -162,7 +268,7 @@ pokemonApp.getPokemon
   });
 ```
 
-This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`. However, because we are using jQuery, we need to use their specific implementation of the failure handler known as `fail()`:
+This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`. However, because we are using jQuery, we need to use their specific implementation of the failure handler known as `.fail()`:
 
 ```js
 pokemonApp.pokemon
@@ -178,7 +284,7 @@ pokemonApp.pokemon
 
 ### Working with multiple promises
 
-Imagine we want to catch two Pokémon and then console log the contents of the Poké ball that contains both of them **only when** they are both comfortably inside. (This was [heavily](https://bulbapedia.bulbagarden.net/wiki/Bag) [researched](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Ball), don't argue about how they fit.)
+Imagine we want to catch two Pokémon and then console log the contents of the Poké ball that contains both of them only when they are **both** comfortably inside. (This was [heavily](https://bulbapedia.bulbagarden.net/wiki/Bag) [researched](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Ball), don't argue about how they fit.)
 
 ```js
 // create a variable to hold the first promise
@@ -196,7 +302,7 @@ pokemonApp.pokemonTwo = $.ajax({
 });
 ```
 
-The jQuery $.when() method is helpful when we are listening for the fulfillment or rejection of multiple promises:
+jQuery has a `$.when()` method, which is helpful when we are listening for the fulfillment or rejection of multiple promises:
 
 ```js
 // when we get BOTH pokemon (i.e. when BOTH promises are settled)
@@ -214,9 +320,31 @@ $.when(pokemonApp.pokemonOne, pokemonApp.pokemonTwo)
     console.log(err1, err2);
   });
 ```
+
 We create promises called `pokemonApp.pokemonOne` and `pokemonApp.pokemonTwo` and pass them as a comma-separated list to the `$.when()` function. Once they are settled, we pass the returned data as arguments to the `.then()` function, which logs the data to the console.
 
-#### Let's get a whole bunch of Pokémon
+#### A note on `$.when()` and multiple promises
+
+Our `caughtPokemonOne` and `caughtPokemonTwo` contain our successful API results, but also some other things; they're arrays. This is because if the `$.when()` method is given more than one promise, it returns each as a three-item array structured like this:
+
+```javascript
+[DataObject, Status, Original_Promise]
+```
+
+We just want that `DataObject`, since that's the successful result of our API call. We can use bracket notation to log out only the thing we want:
+
+```js
+$.when(pokemonApp.pokemonOne, pokemonApp.pokemonTwo)
+  .then((caughtPokemonOne, caughtPokemonTwo) => {
+    console.log(caughtPokemonOne[0], caughtPokemonTwo[0]);
+  })
+  .fail((err1, err2) => {
+    console.log(err1, err2);
+  });
+```
+
+
+### Let's get a whole bunch of Pokémon
 Let's get all the Pokémon from 1-40. We could write a function that takes a number as an argument and will make the request for that Pokémon:
 
 ```js
@@ -255,7 +383,7 @@ beedrill is Pokémon number 15.
 
 They are out of order! The problem here is that we are making a whole bunch of requests and since these are **asynchronous** calls, they are not guaranteed to come back in order.
 
-### Making sure the order matters
+#### Making sure the order matters
 
 How do we make sure we get the pocket monsters back in order? First let's change the `getPokemon` function to return an AJAX call using `$.ajax()` and remove the `.then()` method. 
 
@@ -281,146 +409,131 @@ for(let i = 1; i <= 40; i++) {
 }
 ```
 
-Now the `pokeBag` variable holds an array of promises! **And** the order that we pushed the promises in will remain intact because: arrays! Aren't they swell? Now, no matter how long the promises take to settle, the array order will never change.
+Now the `pokeBag` variable holds an array of promises! **And** the order that we pushed the promises in will remain intact because - arrays! Aren't they swell? Now, no matter how long the promises take to settle, the array order will never change.
 
 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
 Okay, so, how do we get the data out of that array?
 
-## Rest parameters
-
-_Rest parameters_ allow us to gather the first, second, third, and all the **rest** of our **parameters** from a function and store them in a array.
-
-Imagine you want a function that takes any number of arguments, and returns them in an array so that we can use `.map()`, `.filter()` and other super powerful array methods on them:
-
-```js
-// I want this function:
-arrayIt(2, 3, 4, 5, 6, 7);
-// To result in an array like [2, 3, 4, 5, 6, 7] 
-```
-
-You'd probably end up writing a function that looks like this:
-
-```js
-const arrayIt = function() {
-  const numbers = Array.prototype.slice.call(arguments);
-  console.log(numbers);
-};
-
-arrayIt(2, 3, 4, 5, 6, 7);
-// [2, 3, 4, 5, 6, 7]
-```
-
-Whattttttt in the world does `Array.prototype.slice.call(arguments)` mean?! This is a complicated way that we used to have to solve this problem.
-
-`arguments` is an _array-like object_ (not an actual array) that is accessible on all functions. 
-
-Check this out in the console:
-
-```js
-const argumentsLog = function() {
-  console.log(arguments);
-};
-
-argumentsLog(1, 2, 3)
-// Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ]
-```
-
-We can, however, use the `arguments` object to create an actual array! Like all objects in JavaScript, the `arguments` object has a parent object from which it inherits its methods (via the `.prototype` property). Arrays made from the Array prototype have the `.slice()` method. So, `Array.prototype.slice`. We can use `.slice()` to create an actual array from our `arguments` value. Using `.call`, we can use the `.slice` method with `arguments` as the context to create an array...
-
-😅 It's a lot! 😅
-
-Rest parameters make that whole thing much faster! Using the syntax `...` before the name of the variable that is an array-like object of values, you can turn whatever the `arguments` of the function are into an actual array!
-
-```js
-const arrayItRockapella = function(...numbers) {
-  console.log(numbers);
-};
-
-arrayItRockapella(2, 3, 4, 5, 6, 7);
-// [2, 3, 4, 5, 6, 7]
-```
-
-> Note that arrow functions don't have an arguments object the same way that function expressions and declarations do. For more about that, [check out MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#No_binding_of_arguments).
-
-For our Pokémon example, we can use rest parameters to tell our browser that we want to run the `.then()` function with each of the responses from the promises held in the `pokeBag` passed in.
+We know that we want to use `$.when()` to listen for the fulfillment of the many promises in our `pokeBag`, and once they have successfully returned, we want to pass the results to our `.then()` method. So, our code will look something like this:
 
 ```javascript
 $.when(pokeBag)
-  .then((...args) => {
-    console.log(args);
+  .then((fulfilledPokes) => {
+    console.log(fulfilledPokes);
   });
 ```
 
-But wait! `pokeBag` is an array of promises! Promises are not values, they are only the promise of a future value. This means we have to listen to each item in the array. 
+When we try this code out though, we're just getting an array full of objects. If we open one of the objects up, we see that it has some properties in it, a bunch of which are methods like `.complete()`, `.fail()`, `.then()`... that's a promise object! The array we're looking at is still just our original `pokeBag` array of promises.
 
-We know we can listen to promises with `$.when()`. To give `$.when()` access to each of the promise objects inside our array, we will use another new operator - the _spread operator_.
+There are two problems here for us to work through though:
 
-## Spread operator
-The _spread operator_ allows us to pass an array of arguments into a function as if we were doing it manually one-by-one. 
+* `pokeBag` is an array of promises (not values). The array as a whole **is** a value though. When we pass that array to `$.when()`, it believes that the array itself is the result we're waiting for and passes it along as-is to `.then()`. To fix this, we need to give `$.when()` access to each of the individual promises inside our array.
+* Once we have the successful results, `$.when()` will pass them as individual arguments to the `.then()` method. Now we have the opposite problem - a large set of individual results that we want to work with as a whole (say, by iterating over them). We will need to collect the results together again inside our `.then()`, back into a new array.
 
-Imagine you wanted to find the highest of the numbers in an array using `Math.max`:
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(numbers);
-console.log(max); // NaN
+So, we need to separate items out of an array to pass them as separate arguments, and then we will need to gather all the individual arguments passed to a function up into a new array. To do each of these, we can use the [spread operator](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md#spread-operator), then [rest parameters](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md#rest-parameters).
+
+
+#### Spread and rest
+
+To give `$.when()` access to each of the individual promise objects inside our `pokeBag` array, we will use the spread operator, which allows us to use its `...` syntax to pass an array of arguments into a function as if we were doing it manually one-by-one.
+
+We wrote this code:
+
+```javascript
+$.when(pokeBag)
+  .then((fulfilledPokes) => {
+    console.log(fulfilledPokes);
+  });
 ```
 
-You can't! `Math.max` is a method that accepts a comma separated list of values returns the max. It doesn't know what to do when we pass it an array. In the old days, the way get around this was a method called `.apply` that takes an array and calls a function on each item in the array.
+However, rather than
 
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max.apply(null, numbers);
-console.log(max); // 123
+`$.when( [PROMISE, PROMISE, PROMISE, PROMISE, (etc)] )`
+
+our JS reads it like
+
+`$.when( [AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!] )`
+
+Instead, we will spread those promises out:
+
+```javascript
+/// The three dots before 'pokeBag' are the spread operator separating the values out of our array
+$.when(...pokeBag)
+  .then((fulfilledPokes) => {
+    console.log(fulfilledPokes);
+  });
 ```
 
-Nowadays, instead of `.apply`, we can use the spread operator. Like rest parameters, the spread operator is also denoted by `...`:
+Now, our JS sees
 
-```js
-const numbers = [39, 25, 90, 123];
-const max = Math.max(...numbers);
-console.log(max); // 123
-```
+`$.when( PROMISE, PROMISE, PROMISE, PROMISE, (etc) )`
 
-The difference between the spread operator and rest parameters is the difference between parameters and arguments. You use one to talk about the placeholders in a function (parameters/rest parameters) and you use one to talk about the actual values passed to a function (arguments/spread operator). 
+which is the correct syntax. `$.when()` will now wait until each of the individual promises are settled, and if they are it will then pass the return from each to `.then()`.
 
-Using the spread operator  we can take an array of promises and pass it to `$.when()`. We are saying, "Please do this function for every single item in the array." Then, using rest parameters, we can gather all the resolved promises passed as arguments to the `.then()` method back into another array, which is convenient for us to work with.
+We will want to tell our `.then()` what to do with the results of our many promises (ie. the results of our API calls), but to write our parameters out in this case (both in the parentheses and then in the function itself) would be arduous, messy and very long, like:
 
 ```javascript
 $.when(...pokeBag)
-  .then( (...fulfilledPokes) => {
-    console.log(fulfilledPokes);
-    fulfilledPokes.forEach( (pokemon) => {
-      console.log(pokemon[0].name, pokemon[0].id);
-    });
+  .then((pokeResult01, pokeResult02, pokeResult03, pokeResult04, pokeResult05, pokeResult06, pokeResult07, pokeResult08, pokeResult09, pokeResult10, pokeResult11 .....etc. etc.) => {
+    // We never even get to here because we die of fatigue while typing our parameters.
   });
 ```
 
-This will allow us to take all the data and do something with it! One thing to think about with the `$.when` method is that when it is given more than one promise it will give you each bit of data as an array. So now we have an array of arrays, or a _multi-dimensional array_. It will look something like this:
+Moreover, this means that we then have to write out the use of each of our results one-by-one, and if we change the number of promises then we have to also manually change the parameters. To make this shorter and more dynamic, we can use rest parameters, which similarly uses the `...` syntax, but this time to gather the first, second, third and all the **rest** of our parameters, and store them in a array:
+
+```javascript
+$.when(...pokeBag)
+  .then((...fulfilledPokes) => {
+    console.log(fulfilledPokes);
+  });
+```
+
+
+#### Finishing up
+
+Our `fulfilledPokes` array contains our successful API results, but also some other things; it is an array of arrays, or a _multi-dimensional array_. Remember, if the `$.when` method is given more than one promise, it returns each as a three-item array. So now, we have something like this:
 
 ```javascript
 [
   [DataObject, Status, Original_Promise],
   [DataObject, Status, Original_Promise],
-  [DataObject, Status, Original_Promise]
+  [DataObject, Status, Original_Promise],
+  // (etc.)
 ]
 ```
 
-We just want that `DataObject`, so let's make one last change to the code above so it only gives us the thing we want:
+We just want that `DataObject`, since that's the successful result of our API call. We can map over `fulfilledPokes` so it only gives us the thing we want:
 
 ```javascript
 $.when(...pokeBag)
   .then((...fulfilledPokes) => {
-    fulfilledPokes = fulfilledPokes.map(pokemon => {
+    const justTheGoodStuff = fulfilledPokes.map(pokemon => {
       return pokemon[0];
     });
-    console.log(fulfilledPokes);
+    console.log(justTheGoodStuff);
   });
 ```
 
-Now we just have an array of the data we want! 😚👌 
+Now we just have an array of the data we want. Let's print out all 40 of our Pokemon, in order:
+
+```javascript
+$.when(...pokeBag)
+  .then((...fulfilledPokes) => {
+    const justTheGoodStuff = fulfilledPokes.map(pokemon => {
+      return pokemon[0];
+    });
+    
+    justTheGoodStuff.forEach( (pokemon) => {
+      console.log(`${pokemon.name} is Pokémon number ${pokemon.id}.`);
+    });
+  });
+```
+
+Incredible! 😚👌
 
 > `$.when()` and `.then()` are great tools, but make sure you're using them correctly! Don't use them in place of a regular callback function.
+
 
 ## Syntactic sugar: `async` and `await`
 

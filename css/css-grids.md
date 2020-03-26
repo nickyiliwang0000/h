@@ -27,7 +27,7 @@ Add the following CSS to our stylesheet:
   grid-template-rows: 150px 300px;
 }
 ```
-Not only can use both pixel values and percentages, but we also have another unit of measurement available. 
+Not only can we use both pixel values and percentages, but we also have another unit of measurement available. 
 
 ## Creating space between grid items
 
@@ -144,7 +144,7 @@ To learn more about the inspector grid tools, [check out this link](https://proj
 
 Notice those numbers? Those are _grid line numbers_. For every column and row we create, we also create grid lines. They start on the top left outside edge of our grid and go to the bottom right outer edge. Explicit and implicit rows and columns get numbered.
 
-## Grid item placement
+## Grid Item Placement
 
 ### `grid-column-start` and `grid-column-end` / `grid-row-start` and `grid-row-end`
 
@@ -250,6 +250,11 @@ grid-template-columns: repeat(4, 1fr 2fr);
 grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 ```
 
+## Exercise
+
+Try this exercise: [grid-placement-exercise-start.html](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise.html). The answer key is available [here](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise-answer.html).
+
+
 ### `auto-fit` and `auto-fill`
 
 Repeat is super powerful when used with `auto-fit` and `auto-fill`. The difference between the two keywords is very subtle, but has to do with extra white space. Both fit as many rows/columns at a certain size as possible, while respecting grid gaps. At smaller breakpoints, the two act the same; it is only when we have extra whitespace available that we can see the difference.
@@ -310,13 +315,11 @@ A great resource for combining those properties is [this article by Rachel Andre
 
 Using `order` on grid items will change the order of your grid items. If the order of your content matters to the users understanding then **do not use** this property. In general, would be fine for something like an image gallery but bad for blocks of text.
 
-## Exercises and Resources
+# Extra Resources
 
-Try this exercise: [grid-placement-exercise-start.html](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise.html). The answer key is available [here](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise-answer.html).
+For a gameified version of CSS Grids, try [Grid Garden](https://cssgridgarden.com/).
 
-For a gameified version of CSS Grids, try [Grid Gardern](https://cssgridgarden.com/).
-
-# Additional learning topics
+## Additional learning topics
 
 ### Content sizing keywords
 Instead of using a measurement unit or `fr` in our `grid-template-columns` or `grid-template-rows` we can also use content sizing keywords. Let's look at an example of these three keywords outside of grid before we see them in an example. 

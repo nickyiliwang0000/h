@@ -71,7 +71,7 @@ Often, developers create a `sites` or `websites` folder at root of their compute
         - styles
         - assets
     - personal-projects
-        - hacker-you
+        - juno
             - bootcamp
             - week-1
             # ...
@@ -95,7 +95,7 @@ Often, developers create a `sites` or `websites` folder at root of their compute
         - style
         - assets
     - fun
-        - hackerYou
+        - juno
             - bootcamp
             - weekOne
             # ...
@@ -114,14 +114,14 @@ On a Mac, you can access your root directory by opening a new Finder window and 
 On Windows, open up Windows Explorer to `My Documents` and create a `sites` or `websites` folder.
 
 ## Make a well-named folder now!
-During your time at HackerYou, you will be given many exercises and will create many projects.
+During your time at Juno, you will be given many exercises and will create many projects.
 
-Within your `sites` or `websites` folder, create a new folder called `hackeryou`. Within that new folder, create a folder for each week of the bootcamp.
+Within your `sites` or `websites` folder, create a new folder called `juno`. Within that new folder, create a folder for each week of the bootcamp.
 
 ```bash
 - websites 
 # (or sites)
-  - hackeryou
+  - juno
     - week1
     - week2
     - week3

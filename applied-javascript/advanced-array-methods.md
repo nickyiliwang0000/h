@@ -52,12 +52,12 @@ const addMovieGenre = function(array){
 ```
 
 ### More native methods
-The following methods are included (among others) in JavaScript to help sort data: `.filter()` `.map()` and `.reduce()`.
+The following methods are included (among others) in JavaScript to help sort data: `.map()` and `.filter()`.
 
 <!-- `.map()`, `.filter()` and `.reduce()` are considered pure functions.  -->
-Each of these methods iterates over an array or object in a slightly different way. But two things all these methods have in common are:
+These methods iterates over an array or object in a slightly different way. But the two things these methods have in common are:
 1. each one uses a callback function to define the task to be performed on the data 
-1. each one returns something (an array or a value) instead of changing the array provided to it
+2. each one returns something (an array or a value) instead of changing the array provided to it
 
 #### `.map()`
 We give the `.map()` method an array and a set of directions (i.e. a **callback function**) about what to do with each item in that array. The `.map()` method then gives us back (i.e. **returns**) an array of each item with the thing done to it. Because it returns an array, it's smart to store the return in a variable.
@@ -131,71 +131,11 @@ const longTitles = songs.filter((value) => {
 });
 
 // longTitles = ["Sweetness", "The Middle", "I Will Steal You Back"]
-
 ```
-#### `.reduce()`
-We give the `.reduce()` method an array and two arguments: the total value (i.e. accumulator) and the current amount (i.e. current value). 
-
-The `.reduce()` method then gives us back (i.e. **returns**) a single value.
-
-Here is an example of an array of numbers that need to be added up:
-
-```js
-const nums = [2, 4, 6, 8]
-const sum = nums.reduce((total, integer) => {
-  return total + integer
-});
-console.log(sum)
-// 20
-```
-
-Similar to `.map()`, `.filter()`, and `.forEach()`, the `.reduce()` function expects a callback function as an argument: as the `.reduce()` method cycles through the array (like a `for` loop), the callback function is executed against the _accumulator_ and each element in the array (from left or right) to reduce it to a single value. The accumulator is the parameter on the left in the function passed to `.reduce()`. It's only used inside of the function - kind of like `i` in a `for` loop.
-
-You can also use `.reduce()` on non-numbers:
-
-```js
-let words = ['Dear', 'Sir','or','Madam']
-
-let phrase = words.reduce( (phraseSoFar, currentWord) =>{
-    return `${phraseSoFar} ${currentWord}`;
-  }
-)
-
-console.log(phrase);
-// "Dear Sir or Madam"
-```
-
-Here's another useful example of when we can use `.reduce()` to _flatten_ multiple arrays into one single array.
-
-```javascript
-const nums = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-const flatArray = nums.reduce((total, amount) => {
-  return total.concat(amount);
-});
-
-// console.log(flatArray)
-// [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
-```
-
-`.reduce()` is often used in combination with other functions to solve complex problems, (e.g. to count [the number of times a string occurs in an array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Counting_instances_of_values_in_an_object)).
-
-## TL;DR
-Here's a cute little emoji summary [from a developer on Twitter](https://twitter.com/steveluscher/status/741089564329054208) of what each of these methods do.
-
-```bash
-map([🌽, 🐮, 🐔], cook)
-=> [🍿, 🍔, 🍳]
-
-filter([🍿, 🍔, 🍳], isVegetarian)
-=>  [🍿, 🍳]
-
-reduce([🍿, 🍳], eat)
-=> 💩
-```
-<!-- From https://twitter.com/steveluscher/status/741089564329054208 -->
 
 ## Resources and concepts: 
 <!-- * Video: [Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) -->
+* Extra Resource: [Additional advanced array methods](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/additional-advanced-array-methods.md)
 * Article: [Functions as first class citizens](http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/)
 * Check out these [great videos](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) on YouTube for more information about functional programming!
 * For more information on the iteration methods available within native JavaScript, read [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods) on MDN. 

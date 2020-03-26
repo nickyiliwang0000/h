@@ -124,7 +124,7 @@ var student = {
 }
 ```
 
-In this object we have an array of courses and no student photo (Editor's note: I guess Joe Smith doesn't go to HackerYou). Lucky for us, Handlebars has a way for us to work with arrays and conditions.
+In this object we have an array of courses and no student photo (Editor's note: I guess Joe Smith doesn't go to Juno). Lucky for us, Handlebars has a way for us to work with arrays and conditions.
 
 
 #### each

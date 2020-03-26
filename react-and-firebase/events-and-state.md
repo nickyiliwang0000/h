@@ -103,6 +103,13 @@ class Counter extends Component {
 }
 ```
 
+In this case `this.state.visitors` behaves a bit like if we had declared `let visitors = 0` as a global variable in vanilla JS; it would display the text as `You are visitor number 0.` If we updated that `visitors` variable to `1` and reloaded the page, the text would then read `You are visitor number 1.`
+
+State in React works similarly to this, except it functions asynchronously, so if we update state, then it will re-render our text with the updated number without needing to reload the page.
+
+
+## Combining events and state
+
 Now that we have an understanding how state and events work, let's combine them to build a simple counter mechanism that can count up from 0.
 
 We'll start by creating our `Counter` class:
@@ -145,7 +152,7 @@ Here we've created a `count` property in our `state` object, which we set inside
 
 > Try modifying the value of `this.state.visitors` inside the constructor - you'll notice that the change is reflected when we refresh the page!
 
-## Using events to change state
+### Using events to change state
 Now let's make it so that we can increment the counter when the button gets clicked.
 
 Let's start by attaching an event listener to the button:

@@ -7,7 +7,6 @@
     Attribute ([])
     Checked (:checked)
     Not (:not)
-    First letter and line (::first-letter, ::first-line)
 -->
 
 # Advanced CSS selectors

@@ -21,7 +21,7 @@ const animals = [
     name: 'Phoebe',
     type: 'dog',
     size: 'medium',
-    picture: 'http://www.petful.com/wp-content/uploads/2016/04/PortugiesischerWasserhund-LindoDaEstrelaDoMar-750x500.jpg',
+    picture: 'https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/04/Bulldog_02.jpg',
   },
   {
     name: 'Rajni',
