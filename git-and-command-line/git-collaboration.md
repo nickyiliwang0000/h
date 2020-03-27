@@ -38,32 +38,31 @@ Go through the git workflow to push your changes:
 
 After your branch has been pushed up to your GitHub repo, go to your GitHub repo page, and you should see a notification on your repo page: 
 
-![a button allowing a user to create a pull request](https://hychalknotes.s3.amazonaws.com/create-PR.png)
+<img src="https://hychalknotes.s3.amazonaws.com/create-PR.png" alt="a button allowing a user to create a pull request" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 Start creating a pull request by selecting "Compare & pull request". 
 It will open up the pull request window. Here is where you can provide more information about this content change.  
 
-![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-window.png)
+<img src="https://hychalknotes.s3.amazonaws.com/PR-window.png" alt="create pull request UI" width="700" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 After you created a pull request, it is ready for another member on your team to review, comment and provide feedback. 
 
 ## Reviewing a pull request 
 
-![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-review.png)
+<img src="https://hychalknotes.s3.amazonaws.com/PR-review.png" alt="create pull request UI]" width="500" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 GitHub will automatically detect changes and differences that's been made with the pull request. You can review it by clicking on the commit.
 
 You can comment on a particular line of code by hovering over the plus icon:
 
-![pull request comment](https://hychalknotes.s3.amazonaws.com/PR-comment.png)
-
+<img src="https://hychalknotes.s3.amazonaws.com/PR-comment.png" alt="pull request comment" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 There are 3 actions you can make when reviewing a pull request: 
 - **Approve**: This will notify the author that all changes are good, changes are approved to be merged back into original branch
 - **Request Changes**: This will notify the author that some changes has to be addressed before continuing. 
 - **Comment**: This will just provide general feedback to the author. 
 
-![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-options.png)
+<img src="https://hychalknotes.s3.amazonaws.com/PR-options.png" alt="create pull request UI" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 **A note on providing pull request feedback**
 
@@ -82,14 +81,14 @@ Good Feedback 👍
 **When a pull request is approved**
 If there are no merge conflicts, your code can be safely merged into your main branch. The GitHub UI will provide an option to merge the pull request. Your code will then be successfully merged into the original branch!
 
-![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-approved.png)
+<img src="https://hychalknotes.s3.amazonaws.com/PR-approved.png" alt="pull request approved" width="700" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 It is generally recommended that you delete your branches, both remotely and locally, after they have been merged. An UI option will appear after you've merged. You can also delete a remote branch manually by clicking on the 'Branches' tab of your GitHub project repo and selecting the trash-can icon associated with your branch. On your CLI, you can type `git checkout -D branch-name` to delete your branch locally.
 
 **When a change is requested**
 You would have to address the change locally on your code editor and push up your updates to the branch with `add`, `commit` and `push`. You don't need to create a new pull request, GitHub will know that you've pushed some changes to the same pull request. The review process will be the same. The reviewer can then again either approve or request more changes to be made. This process will be repeated until it is approved!
 
-![create pull request UI](https://hychalknotes.s3.amazonaws.com/PR-change-requested.png)
+<img src="https://hychalknotes.s3.amazonaws.com/PR-change-requested.png" alt="pull request change requested" width="700" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 ## Merge conflicts
 
@@ -97,11 +96,11 @@ _Merge conflicts_ occur when competing changes are being made to the same file.
 
 Merge conflicts are your friend! Imagine if there was no way of knowing that your code was about to cause problems for the rest of your site, and was simply accepted into your master branch only to have everything break. That would make collaborative projects a lot more difficult.
 
-![a screenshot from GitHub showing that a branch cannot be automatically merged into master branch](https://hychalknotes.s3.amazonaws.com/mergeConflict.png)
+<img src="https://hychalknotes.s3.amazonaws.com/mergeConflict.png" alt="a screenshot from GitHub showing that a branch cannot be automatically merged into master branch" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 It is quite common to run into a merge conflict while creating a pull request. A merge conflict will prevent your branch from being eligible to merge, and will require just a few extra steps to make sure your code is compatible.
 
-![a screenshot from GitHub displaying the file names that are causing a merge conflict](https://hychalknotes.s3.amazonaws.com/mergeConflictIndex.png)
+<img src="https://hychalknotes.s3.amazonaws.com/mergeConflictIndex.png" alt="a screenshot from GitHub displaying the file names that are causing a merge conflict" width="700" style="box-shadow:1px 1px 8px 3px rgba(0,0,0,0.1)">
 
 ## Solving merge conflicts
 
