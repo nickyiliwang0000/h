@@ -79,6 +79,7 @@ Good Feedback 👍
 - Great work!! (Always remember to recognize good work! With emojis!✨) 
 
 **When a pull request is approved**
+
 If there are no merge conflicts, your code can be safely merged into your main branch. The GitHub UI will provide an option to merge the pull request. Your code will then be successfully merged into the original branch!
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-approved.png" alt="pull request approved" width="700">
@@ -86,6 +87,7 @@ If there are no merge conflicts, your code can be safely merged into your main b
 It is generally recommended that you delete your branches, both remotely and locally, after they have been merged. An UI option will appear after you've merged. You can also delete a remote branch manually by clicking on the 'Branches' tab of your GitHub project repo and selecting the trash-can icon associated with your branch. On your CLI, you can type `git checkout -D branch-name` to delete your branch locally.
 
 **When a change is requested**
+
 You would have to address the change locally on your code editor and push up your updates to the branch with `add`, `commit` and `push`. You don't need to create a new pull request, GitHub will know that you've pushed some changes to the same pull request. The review process will be the same. The reviewer can then again either approve or request more changes to be made. This process will be repeated until it is approved!
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-change-requested.png" alt="pull request change requested" width="700">
