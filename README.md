@@ -94,12 +94,12 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [FTP and domains](https://github.com/HackerYou/bootcamp-notes/blob/master/css/ftp-and-domains.md)
 
 ### Git and command line
-
--   [Intro to command line](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/intro-to-command-line.md)
--   [Version control with Git and GitHub](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/version-control-with-git-and-github%20.md)
--   [Git on the command line](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-on-the-command-line.md)
--   [GitHub Pages](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/github-pages.md)
--   [Git collaboration](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-collaboration.md)
+* [Intro to command line](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/intro-to-command-line.md)
+* [Version control with Git and GitHub](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/version-control-with-git-and-github%20.md)
+* [Git on the command line](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-on-the-command-line.md)
+* [GitHub Pages](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/github-pages.md)
+* [Git Branching](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-branching.md)
+* [Git collaboration](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-collaboration.md)
 
 ### Programming fundamentals
 
