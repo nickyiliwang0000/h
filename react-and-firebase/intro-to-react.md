@@ -247,50 +247,6 @@ JavaScript XML is a syntax extension for JavaScript that can be passed into Reac
 
 * In order to render your elements to the screen, you **must use** the `ReactDOM` library (specifically, its `render` method).
 
-* One other gotcha is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return must be an expression. This gets challenging when you only want to render a piece of your UI  _conditionally_. 
-
-  * You will be tempted to put an `if` statement in your JSX like this: 
-    ```jsx
-    render() {
-      return (
-        <div>
-          {if(userIsLoggedIn) {
-            <h1>Welcome, friend!</h1>
-          }}
-        </div>
-      )
-    }
-    ```
-    But `if` statements are **statements**, not expressions.
-
-  * React has lots of ways to get around this. One is to use a ternary operator:
-    ```jsx
-    render() {
-      return (
-        <div>
-          {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
-        </div>
-      )
-    }
-    ```
-    The code above is saying: if the variable `userIsLoggedIn` is `true`, return the `h1` tag, otherwise don't return anything. 
-
-  * Using ternary operators to conditionally render content can get complicated pretty quickly, so it is also common to use functions or variables **outside** of the return to accomplish this:
-    ```jsx
-    render() {
-      let markupShowingOnPage = null;
-
-      if(userIsLoggedIn) {
-        markupShowingOnPage = `<h1>Welcome, friend!</h1>`;
-      }
-
-      return (
-        <div>
-          {markupShowingOnPage}
-        </div>
-      )
-    }
-    ```
 * VSCode's Emmet will not work in  JSX unless you enable it in your user settings. To enable it go [follow these directions](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c).
 
 ### Nesting and splitting components
