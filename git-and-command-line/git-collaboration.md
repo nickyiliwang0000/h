@@ -107,20 +107,20 @@ It is quite common to run into a merge conflict while creating a pull request. A
 To solve a merge conflict, you can follow these steps:
 
 1. On your CLI, use `git checkout master` to go back to your master branch
-1. Input `git pull origin master` to update your local version of master to the most up-to-date commit
-1. Use `git checkout [your-working-branch]` to switch back to the secondary branch with the out-of-date code
-1. Input `git merge master` to bring in the updates from your master branch, to your secondary branch
-1. You should see a message that states:
+2. Input `git pull origin master` to update your local version of master to the most up-to-date commit
+3. Use `git checkout [your-working-branch]` to switch back to the secondary branch with the out-of-date code
+4. Input `git merge master` to bring in the updates from your master branch, to your secondary branch
+5. You should see a message that states:
 "Automatic merge failed; fix conflicts and then commit the result"
    ![Automatic merge failed message on a command line interface](https://hychalknotes.s3.amazonaws.com/mergeConflictCLI.png)
-1. Using VSCode open your conflicted file(s), you’ll be prompted to either 
+6. Using VSCode open your conflicted file(s), you’ll be prompted to either 
    - “Accept Current Changes”: Current changes are the changes to the code that you have made 
    or, 
    - “Accept Incoming Changes”: Incoming means incoming from master branch. 
    - Sometimes you have to click "Accept Both" and manually configure the code.
    ![a VScode message allowing the developer to accept incoming changes, accept current changes, accept both, or compare changes](https://hychalknotes.s3.amazonaws.com/acceptChanges.png)
-1. After choosing the option that feels like the best fit, you’ll need to `add` `commit` and `push`the updates on your secondary branch to your GitHub repo so your pull request can better reflect the current state of the master branch
-1. Once everything looks good, on GitHub, click the "Merge pull request" button and confirm merge
-1. On your CLI, switch back to master branch using `git checkout master`
-1. Using `git pull origin master` your local master branch is now as up-to-date as possible
+7. After choosing the option that feels like the best fit, you’ll need to `add` `commit` and `push`the updates on your secondary branch to your GitHub repo so your pull request can better reflect the current state of the master branch
+8. Once everything looks good, on GitHub, click the "Merge pull request" button and confirm merge
+9. On your CLI, switch back to master branch using `git checkout master`
+10. Using `git pull origin master` your local master branch is now as up-to-date as possible
 
