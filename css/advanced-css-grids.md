@@ -140,23 +140,6 @@ Here are the values `justify-content`and `align-content` can take:
 * `space-between` places an even amount of space between the grid items, with no space around the outside edges
 * `space-evenly` places an even amount of space between the grid items, with equal space around the outside edges
 
-## Flexbox and Grid
-CSS grid does not replace flexbox. It also doesn't replace the flow spec (display block and inline), or even floats! There are times and places for all of the tools we have been using. With the introduction of grid, we have one more tool to add to our kits.
-
-Flexbox and grid were created to solve different problems. Flexbox focuses on content flow whereas grids focus on content placement. Flexbox excels at lining elements up in a single direction while grid always wants to line up items in two directions. Grids allow you to having overlapping content, which is not something that flexbox can do. Flexbox doesn't force content to sit within rigid lines, it is more fluid, but it also doesn't give developers a lot of control over the width of items which grids does. 
-
-![](https://hychalknotes.s3.amazonaws.com/Untitled%20drawing.png)
-
-There are many different philosophies around when to use grid and when to use flexbox. Below, we've outlined just a few, use these as a starting off point fo form your own opinion!
-
- - It depends on the design: Some developers feel that certain designs are easier to layout in a grid format and some are not. Examine the design you were given carefully and use your knowledge of both methodologies to determine which will work best remembering that flexbox is best for one dimensional 'content flow' situations while grid shines in two dimensional 'content flow' situations.
-
-- Some developers stick to using grid for laying out the larger elements on their page and then use flexbox for smaller sections of their sites where perhaps laying out an entire grid system would be time consuming. However, several prominent members of the CSS community have warned that this approach can lead to using the wrong tool for the job.
-
-- Browser Support: This becomes less of an issue as browsers support more and more layout options but should still be considered when choosing between grid and flexbox.
-
-For more opinions on Grid vs. Flexbox see [this article from CSS Tricks](https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/). 
-
 ### Custom grid line names
 
 If we want to, we can also name these lines. We can do this inside of our `grid-template-columns` and `grid-template-rows` properties. The syntax for this is square brackets and our custom name. Names follow class naming conventions, so they can't start with a number and are case sensitive. If we leave out any line names, CSS will name them for us, like we've seen above. Remember we will have an more lines than we do grid areas. We can also give one line two names, just separate them with a space like classes! 
@@ -226,3 +209,20 @@ Another great resource for combining those properties is [this article by Rachel
 * `grid-line` number -1 is the end of the explicit grid, not the whole grid!
 * Q: Can I make a masonry layout using grid? 
   * A: Not without JavaScript or positioning.
+
+## Flexbox and Grid
+CSS grid does not replace flexbox. It also doesn't replace the flow spec (display block and inline), or even floats! There are times and places for all of the tools we have been using. With the introduction of grid, we have one more tool to add to our kits.
+
+Flexbox and grid were created to solve different problems. Flexbox focuses on content flow whereas grids focus on content placement. Flexbox excels at lining elements up in a single direction while grid always wants to line up items in two directions. Grids allow you to having overlapping content, which is not something that flexbox can do. Flexbox doesn't force content to sit within rigid lines, it is more fluid, but it also doesn't give developers a lot of control over the width of items which grids does. 
+
+![](https://hychalknotes.s3.amazonaws.com/Untitled%20drawing.png)
+
+There are many different philosophies around when to use grid and when to use flexbox. Below, we've outlined just a few, use these as a starting off point fo form your own opinion!
+
+ - It depends on the design: Some developers feel that certain designs are easier to layout in a grid format and some are not. Examine the design you were given carefully and use your knowledge of both methodologies to determine which will work best remembering that flexbox is best for one dimensional 'content flow' situations while grid shines in two dimensional 'content flow' situations.
+
+- Some developers stick to using grid for laying out the larger elements on their page and then use flexbox for smaller sections of their sites where perhaps laying out an entire grid system would be time consuming. However, several prominent members of the CSS community have warned that this approach can lead to using the wrong tool for the job.
+
+- Browser Support: This becomes less of an issue as browsers support more and more layout options but should still be considered when choosing between grid and flexbox.
+
+For more opinions on Grid vs. Flexbox see [this article from CSS Tricks](https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/). 
