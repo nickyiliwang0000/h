@@ -88,9 +88,13 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [Preprocessors and SCSS](https://github.com/HackerYou/bootcamp-notes/blob/master/css/preprocessors-scss.md)
 -   [Transforms, transitions, and animations](https://github.com/HackerYou/bootcamp-notes/blob/master/css/transforms-transitions-and-animations.md)
 -   [Advanced CSS selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-css-selectors.md)
+<<<<<<< HEAD
 -   [Grid systems](https://github.com/HackerYou/bootcamp-notes/blob/master/css/grid-systems.md)
 -   [CSS grids](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-grids.md)
 -   [Advanced CSS grids](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-css-grids.md)
+=======
+-   [CSS grid](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-grids.md)
+>>>>>>> a3df2ddd47dfbd842ccb099068efaefc7a264b57
 -   [Cross-browser testing](https://github.com/HackerYou/bootcamp-notes/blob/master/css/cross-browser-testing.md)
 -   [FTP and domains](https://github.com/HackerYou/bootcamp-notes/blob/master/css/ftp-and-domains.md)
 
@@ -99,7 +103,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 * [Version control with Git and GitHub](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/version-control-with-git-and-github%20.md)
 * [Git on the command line](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-on-the-command-line.md)
 * [GitHub Pages](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/github-pages.md)
-* [Git Branching](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-branching.md)
+* [Git branching](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-branching.md)
 * [Git collaboration](https://github.com/HackerYou/bootcamp-notes/blob/master/git-and-command-line/git-collaboration.md)
 
 ### Programming fundamentals
