@@ -21,8 +21,8 @@ By far the most used debugging tool in Javascript is the `console.log` statement
 
 - `console.table`: Will print an array or object formatted as a table. This can be useful when trying to parse through large objects or arrays.
 - `console.group` and `console.groupEnd`: These two methods should be used together. They will group any console statement between them together. This can allow you to hide/show certain groups of console statements for less visual clutter
-- `console.trace`: This prints what is called a *stack trace*. This is basically a timeline of all the functions that were called until you got to the function you are currently in. This can be useful in code bases you are not familiar with to understand what functions are calling what other functions.
-- `console.dir`: Calling this with a DOM node will result in the dom node being printed as an object instead of as the markup. This can make looking through properties of a DOM node easier.
+- `console.trace`: This prints what is called a *stack trace*. This is basically a timeline of all the functions that were called until you got to the function you are currently in. This can be useful in codebases you are not familiar with to understand what functions are calling what other functions.
+- `console.dir`: Calling this with a DOM node will result in the dom node being printed as an object instead of as the markup. This can make looking through the properties of a DOM node easier.
 
 ### Debugging in the browser
 The Browser Dev Tools have a whole set of aids that can assist in the debugging process. To find these tools, do the following:
@@ -34,7 +34,7 @@ The Browser Dev Tools have a whole set of aids that can assist in the debugging 
 This will open up a panel with a whole host of options. In practice working with them, download [this set of files](https://hychalknotes.s3.amazonaws.com/debug.zip). Note, step 2 is not mandatory for the debugger to work but gives the best overall view of the debugger tools.
 
 ![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-03-30%20at%2011.11.39%20AM.png)
-When you open the debugger pane, you will see the above screen. On the far left you will find the `Sources` pane. Here Firefox will display all the files that it is running. You may have some extensions that are running Javascript code, they will appear here as well. In order to de-clutter this area, you can right click on the root folder of the project we just downloaded and set it as the root directory. Now we will only see the `index.html` and `script.js` that contain the code for this project.
+When you open the debugger pane, you will see the above screen. On the far left you will find the `Sources` pane. Here Firefox will display all the files that it is running. You may have some browser extensions that are running Javascript code, they will appear here as well. In order to de-clutter this area, you can right-click on the root folder of the project we just downloaded and set it as the root directory. Now we will only see the `index.html` and `script.js` that contain the code for this project.
 
 ![Adding breakpoints](https://hychalknotes.s3.amazonaws.com/breakpoint.gif)
 
