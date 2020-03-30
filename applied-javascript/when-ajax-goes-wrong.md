@@ -31,16 +31,16 @@ The Browser Dev Tools have a whole set of aids that can assist in the debugging 
 2. Dock your dev tools so they sit at the bottom of the page and make your browser as wide as possible
 3. Click on the Debugger tab (note in Chrome this tab is called Sources)
 
-This will open up a panel with a whole host of options. In practice working with them, download [this set of files](https://hychalknotes.s3.amazonaws.com/debug.zip). Note, step 2 is not mandatory for the debugger to work but gives the best overall view of the debugger tools.
+This will open up a panel with a whole host of options. Let's get some practice working with them. Download [this set of files](https://hychalknotes.s3.amazonaws.com/debug.zip). Note, step 2 is not mandatory for the debugger to work but gives the best overall view of the debugger tools.
 
 ![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-03-30%20at%2011.11.39%20AM.png)
 When you open the debugger pane, you will see the above screen. On the far left you will find the `Sources` pane. Here Firefox will display all the files that it is running. You may have some browser extensions that are running Javascript code, they will appear here as well. In order to de-clutter this area, you can right-click on the root folder of the project we just downloaded and set it as the root directory. Now we will only see the `index.html` and `script.js` that contain the code for this project.
 
 ![Adding breakpoints](https://hychalknotes.s3.amazonaws.com/breakpoint.gif)
 
-Beside the `Sources` pane, in the middle of the debugger panel, you can view the code based on whatever file is selected in the `Sources` panel. In this area you can add *breakpoints* to your code. A breakpoint is a temporary indication to the browser that the execution of the code should pause at that point so that you can have a look at what might be happening in that exact moment with your program. You can add breakpoints manually to specific lines in your program by clicking on the line numbers. Doing this will cause a blue chevron like shape to appear at that line number, clicking again will remove it.
+Beside the `Sources` pane, in the middle of the debugger panel, you can view the code based on whatever file is selected in the `Sources` panel. In this area you can add *breakpoints* to your code. A breakpoint is a temporary indication to the browser that the execution of the code should pause at that point so that you can have a look at what might be happening in that exact moment with your program. You can add breakpoints manually to specific lines in your program by clicking on the line numbers. Doing this will cause a blue chevron-like shape to appear at that line number, clicking again will remove it.
 
-You can also add more general breakpoints for event listeners firing, XHR (another word for API requests) being made or DOM manipulation happening. All of these setting are found in the `Breakpoints` panel on the left side of the debugger pane. 
+You can also add more general breakpoints for event listeners firing, XHR (another word for API requests) being made or DOM manipulation happening. All of these settings are found in the `Breakpoints` panel on the left side of the debugger pane. 
 
 ### Using breakpoints
 Try setting a breakpoint on line 13 and clicking the button on the page.
@@ -65,7 +65,7 @@ Now that we have paused the thread of execution on the breakpoint, we can step t
 Using these controls, you can walk through your code checking specific lines of code that you think might be causing a problem. While you are using these controls to step through your code, the variables in scope, are available to you in your console. You can use them to further understand how you might fix a potential bug.
 
 ### Debugger statement
-If you want to add similar functionality to a breakpoint directly into your code, you can do so using the keyword `debugger`. When added into your code, this will cause the execution thread to pause. In Firefox and Chrome, the Dev tools must already be open in order for the `debugger` statement to trigger. This is a safe guard in case you accidentally put a `debugger` statement on a live site!
+If you want to add similar functionality to a breakpoint directly into your code, you can do so using the keyword `debugger`. When added into your code, this will cause the execution thread to pause. In Firefox and Chrome, the Dev tools must already be open in order for the `debugger` statement to trigger. This is a safeguard in case you accidentally put a `debugger` statement on a live site!
 
 ### Try it!
 In our code, the `add` function is not working correctly. 
@@ -84,7 +84,7 @@ Logging information to the console is a great tool that you will definitely use 
 
 There are many more features in the debugger including setting conditional breakpoints and watching certain expressions. However, we want to start getting comfortable navigating the above tools. As you get more comfortable using these parts of the debugger, feel free to keep exploring!
 
-VSCode also has a debugger built right into your code editor. You will need to install an add an add on like `Debugger for Firefox` or `Debugger for Chrome`  on in order to be able to debug browser code.
+VSCode also has a debugger built right into your code editor. You will need to install an add-on like `Debugger for Firefox` or `Debugger for Chrome`  in order to be able to debug browser code.
 
 ### Seeing AJAX requests
 
