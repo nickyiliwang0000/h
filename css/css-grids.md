@@ -255,66 +255,6 @@ grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 Try this exercise: [grid-placement-exercise-start.html](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise.html). The answer key is available [here](https://hychalknotes.s3.amazonaws.com/grid-placement-exercise-answer.html).
 
 
-### `auto-fit` and `auto-fill`
-
-Repeat is super powerful when used with `auto-fit` and `auto-fill`. The difference between the two keywords is very subtle, but has to do with extra white space. Both fit as many rows/columns at a certain size as possible, while respecting grid gaps. At smaller breakpoints, the two act the same; it is only when we have extra whitespace available that we can see the difference.
-
-* `auto-fill`: Fills the row with as many columns as it can fit at the specified size. New tracks can be empty, they will still take up the space allotted. 
-
-* `auto-fit`: The browser will create as many tracks as it can at the specified size, but will collapse them if there are no extra elements to place.
-
-Let's look at an example:
-
-#### `auto-fill`
-```css
-.grid-container--fill {
-  grid-template-columns: repeat(auto-fill, 100px);
-}
-
-```
-![A screenshot illustrating the auto-fill keyword and how it maintains empty extra columns](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-05-27%20at%202.28.52%20PM.png)
-
-Here, `auto-fill` is creating 11 tracks at the 100px size even though there is no content to fit inside the last three tracks. This can be handy when you need an element to be positioned in the last grid area in the explicit grid. If we were to add `grid-column-end: -1;` to the 7th item, it would live at the end of the row! 
-
-#### `auto-fit`
-
-```css
-.grid-container--fit {
-  grid-template-columns: repeat(auto-fit, 100px);
-}
-```
-
-![A screenshot illustrating the auto-fit keyword and how it does not create extra columns](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-05-27%20at%202.29.04%20PM.png)
-
-In the `auto-fit` example, our explicit grid ends after the 7th spot. We do see that the grid is creating 11 columns, but the 8th - 11th spots are collapsed. If we told our 7th item to end at -1 row, it would be in the exact same spot it is in now! 
-
-### `minmax`
-
-`minmax` is a method that takes two values, a minimum size, and a maximum size. It is used in the `grid-template-columns` and `grid-template-rows` properties.  
-
-Let's adjust our CSS to the following:
-
-```css
-.container {
-  grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
-}
-```
-
-Combining the `minmax` function with `auto-fit` and `repeat` can help create some intuitively responsive layouts. You can create a layout with a flexible number of columns as well as flexible widths of columns. Let's adjust our CSS to the following:
-
-```css
-.container {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-```
-
-A great resource for combining those properties is [this article by Rachel Andrew](https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/), who is a member of the CSS Working Group. 
-
-## `order`
-`order` in grid is the same as `order` in flexbox. All grid items have a default of 0. Negative `order` values will make the grid item appear before the rest, a positive number will make the item appear after the rest. 
-
-Using `order` on grid items will change the order of your grid items. If the order of your content matters to the users understanding then **do not use** this property. In general, would be fine for something like an image gallery but bad for blocks of text.
-
 # Extra Resources
 
 For a gameified version of CSS Grids, try [Grid Garden](https://cssgridgarden.com/).

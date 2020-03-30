@@ -1,4 +1,63 @@
 ## Advanced CSS Grids
+### `auto-fit` and `auto-fill`
+
+Repeat is super powerful when used with `auto-fit` and `auto-fill`. The difference between the two keywords is very subtle, but has to do with extra white space. Both fit as many rows/columns at a certain size as possible, while respecting grid gaps. At smaller breakpoints, the two act the same; it is only when we have extra whitespace available that we can see the difference.
+
+* `auto-fill`: Fills the row with as many columns as it can fit at the specified size. New tracks can be empty, they will still take up the space allotted. 
+
+* `auto-fit`: The browser will create as many tracks as it can at the specified size, but will collapse them if there are no extra elements to place.
+
+Let's look at an example:
+
+#### `auto-fill`
+```css
+.grid-container--fill {
+  grid-template-columns: repeat(auto-fill, 100px);
+}
+
+```
+![A screenshot illustrating the auto-fill keyword and how it maintains empty extra columns](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-05-27%20at%202.28.52%20PM.png)
+
+Here, `auto-fill` is creating 11 tracks at the 100px size even though there is no content to fit inside the last three tracks. This can be handy when you need an element to be positioned in the last grid area in the explicit grid. If we were to add `grid-column-end: -1;` to the 7th item, it would live at the end of the row! 
+
+#### `auto-fit`
+
+```css
+.grid-container--fit {
+  grid-template-columns: repeat(auto-fit, 100px);
+}
+```
+
+![A screenshot illustrating the auto-fit keyword and how it does not create extra columns](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-05-27%20at%202.29.04%20PM.png)
+
+In the `auto-fit` example, our explicit grid ends after the 7th spot. We do see that the grid is creating 11 columns, but the 8th - 11th spots are collapsed. If we told our 7th item to end at -1 row, it would be in the exact same spot it is in now! 
+
+### `minmax`
+
+`minmax` is a method that takes two values, a minimum size, and a maximum size. It is used in the `grid-template-columns` and `grid-template-rows` properties.  
+
+Let's adjust our CSS to the following:
+
+```css
+.container {
+  grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+}
+```
+
+Combining the `minmax` function with `auto-fit` and `repeat` can help create some intuitively responsive layouts. You can create a layout with a flexible number of columns as well as flexible widths of columns. Let's adjust our CSS to the following:
+
+```css
+.container {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+```
+
+A great resource for combining those properties is [this article by Rachel Andrew](https://rachelandrew.co.uk/archives/2016/04/12/flexible-sized-grids-with-auto-fill-and-minmax/), who is a member of the CSS Working Group. 
+
+## `order`
+`order` in grid is the same as `order` in flexbox. All grid items have a default of 0. Negative `order` values will make the grid item appear before the rest, a positive number will make the item appear after the rest. 
+
+Using `order` on grid items will change the order of your grid items. If the order of your content matters to the users understanding then **do not use** this property. In general, would be fine for something like an image gallery but bad for blocks of text.
 
 ### Content sizing keywords
 Instead of using a measurement unit or `fr` in our `grid-template-columns` or `grid-template-rows` we can also use content sizing keywords. Let's look at an example of these three keywords outside of grid before we see them in an example. 
@@ -81,36 +140,26 @@ Here are the values `justify-content`and `align-content` can take:
 * `space-between` places an even amount of space between the grid items, with no space around the outside edges
 * `space-evenly` places an even amount of space between the grid items, with equal space around the outside edges
 
-<!-- <img src="https://hychalknotes.s3.amazonaws.com/justify-content.png" width="">
-<img src="https://hychalknotes.s3.amazonaws.com/align-content.png" width=""> -->
-
-<!-- <a href="https://hychalknotes.s3.amazonaws.com/grid-cheatsheet.pdf" download>Download your cheatsheet here</a>
-
-
-##Flexbox vs Grid
-While Flexbox is only concerned with one axis, CSS grids are concerned with both axes. Have you ever wanted to change the position of one item on the main axis in flexbox? Align-item exists, but this is for the opposite axis. There is no justify-item in flexbox! Enter grids!
-
+## Flexbox and Grid
 CSS grid does not replace flexbox. It also doesn't replace the flow spec (display block and inline), or even floats! There are times and places for all of the tools we have been using. With the introduction of grid, we have one more tool to add to our kits.
 
+Flexbox and grid were created to solve different problems. Flexbox focuses on content flow whereas grids focus on content placement. Flexbox excels at lining elements up in a single direction while grid always wants to line up items in two directions. Grids allow you to having overlapping content, which is not something that flexbox can do. Flexbox doesn't force content to sit within rigid lines, it is more fluid, but it also doesn't give developers a lot of control over the width of items which grids does. 
 
-## Grid vs Flexbox
-<a href="https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/" target="_blank">Here is a great article outlining when you should use grid vs flexbox</a>
+![](https://hychalknotes.s3.amazonaws.com/Untitled%20drawing.png)
 
-Think about your problem, do you want your content to dictate the way the element is displayed in a row or in a column? If so, use flexbox. Do you want to use a grid and position grid items yourself? If so, use grid! 
+There are many different philosophies around when to use grid and when to use flexbox. Below, we've outlined just a few, use these as a starting off point fo form your own opinion!
 
-See the below examples from <a href="https://www.smashingmagazine.com/2017/09/css-grid-gotchas-stumbling-blocks/" target="_blank">Rachel Andrew's article on grid gotchas:</a>
+ - It depends on the design: Some developers feel that certain designs are easier to layout in a grid format and some are not. Examine the design you were given carefully and use your knowledge of both methodologies to determine which will work best remembering that flexbox is best for one dimensional 'content flow' situations while grid shines in two dimensional 'content flow' situations.
 
-### When to use grid:
-- Grid is great at controlling content in two dimensions - **in rows AND columns.**
-- Grid allows us to overlap our items! 
+- Some developers stick to using grid for laying out the larger elements on their page and then use flexbox for smaller sections of their sites where perhaps laying out an entire grid system would be time consuming. However, several prominent members of the CSS community have warned that this approach can lead to using the wrong tool for the job.
 
-If you can take your layout or component and draw a grid over it, with rows and columns. It is two-dimensional — use grids!
-<img src="https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202018-01-14%20at%208.24.42%20PM.png" width="500px">
--->
+- Browser Support: This becomes less of an issue as browsers support more and more layout options but should still be considered when choosing between grid and flexbox.
+
+For more opinions on Grid vs. Flexbox see [this article from CSS Tricks](https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/). 
 
 ### Custom grid line names
 
-If we want to, we can also name these lines. We can do this inside of our `grid-template-columns` and `grid-template-rows` properties. The syntax for this is square brackets and our custom name. Names follow class naming conventions, so they can't start with a number and are case sensitive. If we leave out any line names, CSS will name them for us, like we've seen above. Remember we will have an more lines than we do grid areas. We can also give one line two names, just seperate them with a space like classes! 
+If we want to, we can also name these lines. We can do this inside of our `grid-template-columns` and `grid-template-rows` properties. The syntax for this is square brackets and our custom name. Names follow class naming conventions, so they can't start with a number and are case sensitive. If we leave out any line names, CSS will name them for us, like we've seen above. Remember we will have an more lines than we do grid areas. We can also give one line two names, just separate them with a space like classes! 
 
 ```css
 grid-template-columns: [start] 1fr [gutter-end wrapper-start] 800px [wrapper-end] 1fr [end];
