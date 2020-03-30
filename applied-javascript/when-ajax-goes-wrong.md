@@ -1,10 +1,10 @@
-<!-- Student takeaway: -->
+<!-- Student takeaways: -->
 <!-- At the end of this lesson, the student will be able to:
 - Open and understand the network tab in the dev tools
 - Use other console statements beside 'log'
 - Understand what a 'breakpoint' and 'debugger' statement are
 - Step through a simple codebase with the debug tools
-- Understand the scope tab
+- Understand the value of the scope tab in the debugger pane
 -->
 ## Debugging in JavaScript
 In general, when debugging Javascript it is best to follow these simple principles:
