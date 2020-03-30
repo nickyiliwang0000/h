@@ -22,7 +22,7 @@ Clean code is organized according to a system that a reader can repeat.
 Clean code is rewritten as you go, not left for someone else to fix later. 
 Clean code has clear boundaries. 
 Clean code doesn't have a bunch of StackOverflow answers smashed in one after another. 
-Clean code is you knowing what you want to say and saying it in the most readable, conscise way you know how.
+Clean code is you knowing what you want to say and saying it in the most readable, concise way you know how.
 
 So, how do we write clean code?
 
@@ -35,7 +35,7 @@ In our first examples, we wrote CSS inside `<style>` tags. This is okay for exam
 When you have more than one file of any given type, group them into a folder. A nice clean web project that has HTML, CSS, JavaScript, and images would look like this:
 
 ```bash
-- 2018-coca-cola-microsite
+- 2020-coca-cola-microsite
     index.html
   - styles
       style.css
@@ -48,7 +48,41 @@ When you have more than one file of any given type, group them into a folder. A 
       header-image.jpeg
       logo.png
 ```
-Check out the [keeping organized as a developer](https://github.com/HackerYou/bootcamp-notes/blob/master/html/keeping-organized-as-a-developer.md) lesson for more about at organization.
+Check out the [keeping organized as a developer](https://github.com/HackerYou/pre-bootcamp-review/blob/master/html/keeping-organized-as-a-developer.md) lesson for more about at organization.
+
+### No spaces!
+As developers, we will no longer be creating folder or file names with spaces in them! Computers can't read spaces and they lead to confusing and avoidable issues as our projects get more complex! So get in the habit now of omitting spaces from your folder and files name!
+
+In order to make our file or folder names readable without spaces, we will follow one of the following naming conventions:
+
+- *Camel case*: spaces are removed and the first letter of each word is capitalized.
+- *Kebab case*: spaces are replaced with dashes
+- *Underscore case*: space are replaced with underscores
+
+It is important to pick one naming convention and stick with it.
+
+## Make a well-named folder now!
+During your time at Juno, you will be given many exercises and will create many projects.
+
+Within your `sites` or `websites` folder, create a new folder called `juno`. Within that new folder, create a folder for each week of the bootcamp.
+
+```bash
+- websites 
+# (or sites)
+  - juno
+    - week1
+    - week2
+    - week3
+    - week4
+    - week5
+    - week6
+    - week7
+    - week8
+    - week9
+```
+
+When working on a project, open the entire project folder in your text editor. This should help you stay clear on which file belongs to which project.
+
 
 ## We keep our HTML files readable
 ### HTML indentation

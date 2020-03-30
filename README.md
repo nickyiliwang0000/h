@@ -65,8 +65,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 [Pre Course Review](https://github.com/HackerYou/pre-bootcamp-review)
 
 ### HTML
-
--   [Keeping organized as a developer](https://github.com/HackerYou/bootcamp-notes/blob/master/html/keeping-organized-as-a-developer.md)
+-   [Philosophy of best practices for HTML and CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/philosophy-of-best-practices-for-html-and-css.md)
 -   [Meet your text editor](https://github.com/HackerYou/bootcamp-notes/blob/master/html/meet-your-text-editor.md)
 -   [Snippets](https://github.com/HackerYou/bootcamp-notes/blob/master/html/meet-your-text-editor.md#snippets)
 
@@ -80,7 +79,6 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [CSS layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-layouts.md)
 -   [Display and positioning](https://github.com/HackerYou/bootcamp-notes/blob/master/css/display-and-positioning.md)
 -   [Advanced layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-layouts.md)
--   [Philosophy of best practices for HTML and CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/philosophy-of-best-practices-for-html-and-css.md)
 -   [Responsive design](https://github.com/HackerYou/bootcamp-notes/blob/master/css/responsive-design.md)
 -   [Navigations](https://github.com/HackerYou/bootcamp-notes/blob/master/css/navigations.md)
 -   [Forms](https://github.com/HackerYou/bootcamp-notes/blob/master/css/forms.md)
