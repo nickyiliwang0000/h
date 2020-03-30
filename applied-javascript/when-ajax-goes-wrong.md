@@ -65,7 +65,7 @@ Now that we have paused the thread of execution on the breakpoint, we can step t
 Using these controls, you can walk through your code checking specific lines of code that you think might be causing a problem. While you are using these controls to step through your code, the variables in scope, are available to you in your console. You can use them to further understand how you might fix a potential bug.
 
 ### Debugger statement
-If you want to add similar functionality to a breakpoint directly into your code, you can do so using the keyword `debugger`. When added into your code, this will cause the execution thread to pause. In Firefox and Chrome, the Dev tools must already be open in order for the `debugger` statement to trigger. This is a safe guard in case you accidentally put a `debugger` statement on a live site!
+If you want to add similar functionality to a breakpoint directly into your code, you can do so using the keyword `debugger`. When added into your code, this will cause the execution thread to pause. In Firefox and Chrome, the Dev tools must already be open in order for the `debugger` statement to trigger. This is a safeguard in case you accidentally put a `debugger` statement on a live site!
 
 ### Try it!
 In our code, the `add` function is not working correctly. 
