@@ -1,6 +1,6 @@
 <!-- Student Takeaway -->
 <!-- By the end of this lesson students should be comfortable with the basics of what web accessibility and inclusive design are, what the WCAG guidelines are and how to navigate them, the POUR concepts, and what the AODA and ADA/section 508 are -->
-# Introduction to Web Accessibility
+# Introduction to Web Accessibility (a11y)
 
 ## What is Web Accessibility?
 

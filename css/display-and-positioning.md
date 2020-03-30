@@ -76,6 +76,24 @@ Screen readers won't read elements with their `display` properties set to `none`
 
 `visibility: hidden` is another property that **appears** to perform the same task as `display: none`. But when using `visibility: hidden`, the space the element would take up remains. It's like a chameleon blending into a branch it's sitting on. It's still there, but you can't see it. `display:none;` is like taking the chameleon off the branch. Any elements that have either `display: none` or `visibility: hidden` will not be read by screen readers.
 
+### Hiding elements
+
+There are a few ways of hiding elements, but they all have impacts on accessibility. If you want to hide an element but have it read by a screen reader we recommend using some custom CSS often referred to as `sr-only` or `visually-hidden`. The best practice for this could evolve over time, but the currently recommended CSS for this class is:
+
+```css
+.visually-hidden:not(:focus):not(:active) { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+```
+We recommend adding this to your code snippet if you don't already have it ready. Adding this class to any HTML element will ensure that the element is available for assistive technology while staying visually hidden. 
+
+
 ## Positioning your elements
 
 So far, we've been working with `float` or `display` to make elements fit snugly beside each other. This works great most of the time. But what if we want to:

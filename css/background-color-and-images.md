@@ -26,9 +26,13 @@ h3 {
 }
 ```
 
+**Colour contrast for accessibility**
+
 Use caution when deciding background and text colours combinations. Low contrast can make content difficult or impossible to read. 
-> The WCAG AA requires a contrast ratio of 4.5:1 for normal text and 3:1 for large text. Logos or brand names have no contrast requirements or minimums. [This is a great resource](https://www.w3.org/TR/WCAG20#visual-audio-contrast-contrast) for checking colour contrast, and [so is this](http://leaverou.github.io/contrast-ratio/#%23555-on-white).</a>
-</div>
+
+The WCAG AA requires a contrast ratio of 4.5:1 for normal text and 3:1 for large text. Logos or brand names have no contrast requirements or minimums. [This is a great resource](https://www.w3.org/TR/WCAG20#visual-audio-contrast-contrast) for checking colour contrast, and [so is this](http://leaverou.github.io/contrast-ratio/#%23555-on-white). 
+
+[Read more about color contrast for accessibility here](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/accessibility-and-css.md).
 
 ## Background images
 
@@ -248,3 +252,7 @@ The `space` value[ isn't supported in all browsers](https://caniuse.com/#feat=ba
 Check this code out in [this CodePen](https://codepen.io/zkdan/pen/ZmKGMW).
 
 Note that the first background defined here is the one on top. Try changing the order of the backgrounds and see what happens.
+
+**Caution when layering text on top background images**
+
+There are times when the design calls for layering text over a background image. Just like choosing background color, It is important that the text is still legible over a background image. It will need to meet the WCAG AA requirement of a contrast ratio of 4.5:1 for normal text and 3:1 for large text. Here is a great [background image vs text contrast checker resource](https://www.brandwood.com/a11y/). 
