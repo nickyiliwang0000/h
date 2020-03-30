@@ -31,7 +31,7 @@ The Browser Dev Tools have a whole set of aids that can assist in the debugging 
 2. Dock your dev tools so they sit at the bottom of the page and make your browser as wide as possible
 3. Click on the Debugger tab (note in Chrome this tab is called Sources)
 
-This will open up a panel with a whole host of options. In practice working with them, download [this set of files](https://hychalknotes.s3.amazonaws.com/debug.zip). Note, step 2 is not mandatory for the debugger to work but gives the best overall view of the debugger tools.
+This will open up a panel with a whole host of options. Let's get some practice working with them. Download [this set of files](https://hychalknotes.s3.amazonaws.com/debug.zip). Note, step 2 is not mandatory for the debugger to work but gives the best overall view of the debugger tools.
 
 ![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-03-30%20at%2011.11.39%20AM.png)
 When you open the debugger pane, you will see the above screen. On the far left you will find the `Sources` pane. Here Firefox will display all the files that it is running. You may have some extensions that are running Javascript code, they will appear here as well. In order to de-clutter this area, you can right click on the root folder of the project we just downloaded and set it as the root directory. Now we will only see the `index.html` and `script.js` that contain the code for this project.
