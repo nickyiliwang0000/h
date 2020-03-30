@@ -49,18 +49,18 @@ Your code will now run up until that line of code and then pause. You can now in
 
 ![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-03-30%20at%2011.21.22%20AM.png)
 
-One of these sections is called `Callstack` and the second is called `Scopes`. The Callstack window displays the functions that are currently in line to be executed by JavaScript. The Scope pane displays all the variables that are currently defined in your program and their values at this current moment. You can think of this section as if you have added a `console.log` for every single variable in your program. A note, some of these options will not be viewable unless you have breakpoints set.
+One of these sections is called `Callstack` and the second is called `Scopes`. The Callstack window displays the functions that are currently in line to be executed by JavaScript. The Scope pane displays all the variables that are currently defined in your program and their values at this current moment. You can think of this section as if you have added a `console.log` for every single variable in your program. Some of these options (like the scope and callstack panels) will not be viewable unless you have breakpoints set.
 
 ### Navigating through your program
 Now that we have paused the thread of execution on the breakpoint, we can step through the rest of the code in several different ways. To do this, use the controls pictured below.
 
 ![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-03-30%20at%2010.56.12%20AM.png)
 
-- The first button: *resume* will continue the execution of the program until the next breakpoint or the end of the code is reached.
-- The second button: *step over* will execute the next function after the breakpoint and then stop
-- The third button: *step into* will go inside of a function
-- The fourth button: *step out of* will exit a function to where it is being called
-- The final button allows you to deactivate all your breakpoints with one click
+- **Resume**: continue the execution of the program until the next breakpoint or the end of the code is reached.
+- **Step Over**: execute the next function after the breakpoint and then stop
+- **Step Into**: go inside of a function in order to be able to step through its code
+- **Step Out Of**: exit a function without stepping through the remaining code to where it is being called
+- **Deactivate**: disables all the breakpoints with one click
 
 Using these controls, you can walk through your code checking specific lines of code that you think might be causing a problem. While you are using these controls to step through your code, the variables in scope, are available to you in your console. You can use them to further understand how you might fix a potential bug.
 
