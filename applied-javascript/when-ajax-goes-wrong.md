@@ -38,7 +38,7 @@ When you open the debugger pane, you will see the above screen. On the far left 
 
 ![Adding breakpoints](https://hychalknotes.s3.amazonaws.com/breakpoint.gif)
 
-Beside the `Sources` pane, in the middle of the debugger panel, you can view the code based on whatever file is selected in the `Sources` panel. In this area you can add *breakpoints* to your code. A breakpoint is a temporary indication to the browser that the execution of the code should pause at that point so that you can have a look at what might be happening in that exact moment with your program. You can add breakpoints manually to specific lines in your program by clicking on the line numbers. Doing this will cause a blue chevron like shape to appear at that line number, clicking again will remove it.
+Beside the `Sources` pane, in the middle of the debugger panel, you can view the code based on whatever file is selected in the `Sources` panel. In this area you can add *breakpoints* to your code. A breakpoint is a temporary indication to the browser that the execution of the code should pause at that point so that you can have a look at what might be happening in that exact moment with your program. You can add breakpoints manually to specific lines in your program by clicking on the line numbers. Doing this will cause a blue chevron-like shape to appear at that line number, clicking again will remove it.
 
 You can also add more general breakpoints for event listeners firing, XHR (another word for API requests) being made or DOM manipulation happening. All of these setting are found in the `Breakpoints` panel on the left side of the debugger pane. 
 
