@@ -84,7 +84,7 @@ Logging information to the console is a great tool that you will definitely use 
 
 There are many more features in the debugger including setting conditional breakpoints and watching certain expressions. However, we want to start getting comfortable navigating the above tools. As you get more comfortable using these parts of the debugger, feel free to keep exploring!
 
-VSCode also has a debugger built right into your code editor. You will need to install an add an add on like `Debugger for Firefox` or `Debugger for Chrome`  on in order to be able to debug browser code.
+VSCode also has a debugger built right into your code editor. You will need to install an add-on like `Debugger for Firefox` or `Debugger for Chrome`  in order to be able to debug browser code.
 
 ### Seeing AJAX requests
 
