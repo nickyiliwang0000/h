@@ -61,7 +61,7 @@ In order to make our file or folder names readable without spaces, we will follo
 
 It is important to pick one naming convention and stick with it.
 
-## Make a well-named folder now!
+## Exercise: Make a well-named folder now!
 During your time at Juno, you will be given many exercises and will create many projects.
 
 Within your `sites` or `websites` folder, create a new folder called `juno`. Within that new folder, create a folder for each week of the bootcamp.
