@@ -78,14 +78,6 @@ Check out these keyboard shortcuts cheatsheets [For Mac](https://code.visualstud
 
 ### Installing extensions
 
-#### WakaTime
-Over the course of the bootcamp, we keep track of the hours you spend coding - this will be cool for you to see at the end of the program! Visit [https://wakatime.com/](https://wakatime.com/) and get an API key. When you have that, head back to VSCode and:
-
-  1. Type in  `cmd + shift + p` or `ctrl + shift + p` and type `install`. Pick `Extensions: Install Extension`
-  2. Type `wakatime` and hit `enter`.
-  3. Restart Visual Studio Code 
-  4. Enter your API key, and press `enter`.
-
 #### Open-in-browser
 This extension will allow you to use a shortcut to preview your HTML files in your default browser.
   
@@ -102,7 +94,9 @@ Some staff favourites are `Oceanic Next`, `Material Theme`, `Material Dark`, and
 
 ### Edit user settings 
 
-It's worthwhile to spend a bit of time customizing your text editor since you will be spending so much time with it. You can override defaults in your user settings file which can be found at 'Code' > 'Preferences' > 'Settings' or via the shortcut `cmd + ,` (Mac) or `ctrl + ,` (Windows). You can play around with the visual interface provided or, if you click on the curly brackets (`{}`) in the corner, you can customize the settings in JSON.
+It's worthwhile to spend a bit of time customizing your text editor since you will be spending so much time with it. You can override defaults in your user settings file which can be found at 'Code' > 'Preferences' > 'Settings' or via the shortcut `cmd + ,` (Mac) or `ctrl + ,` (Windows). You can play around with the visual interface provided or you can customize the settings in JSON.
+
+To access your `settings.json` file, select the `Extensions` option in your Settings window. You should see a link that says `Edit in settings.json`. Another option is to type `command + shift + p` and type in `Open Settings (JSON)`. 
 
 The _JavaScript Object Notation_ (JSON) format is a data format that, despite its name, is language-independent. (Though we will be seeing it again when we get into JavaScript.) JSON's syntax uses key-value pairs that are separated by commas, with a colon between they key and the value, like this: 
 
@@ -177,7 +171,6 @@ Now create a new HTML document, type `jquery` + `tab`, and see that you get the 
 To add another snippet, add another object below the `jQuery CDN` one. After the closing curly brace of your first snippet, **add a comma**, then on a new line add this snippet to quickly include the viewport `meta` tag for responsive web pages: 
 
 ```json
-//html.json
 "Viewport": {
   "prefix": "responsive",
   "body": "<meta name='viewport' content='width=device-width, initial-scale=1'>",
@@ -210,7 +203,8 @@ We're going to add:
 2. Normalize
 3. Clearfix
 4. VisuallyHidden
-4. Setup (a snippet that includes all of the above!) 
+5. SR-Only
+6. Setup (a snippet that includes all of the above!) 
 
 Find the CSS snippet file by typing `cmd + shift + p` on Mac or `ctrl + shift + p` on PC to launch the command palette and type in `snippets`. Select the option 'Preferences: Configure User Snippets' and choose the language you want to use your snippets in (for these snippets, CSS). 
 
@@ -223,13 +217,13 @@ Inside of this `css.json` file, paste the following code:
   "description": "Box Sizing Snippet"
 },
 
-"Reset": {
-  "prefix": "reset", 
-  "body": [
-    "a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}"
-  ],
-  "description": "CSS Reset Snippet"
-},
+"Normalize": {
+        "prefix": "normalize",
+        "body": [
+            "html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}"
+        ],
+        "description": "CSS Normalize Snippet"
+    },
 
 "Clearfix": {
   "prefix": "clearfix",
@@ -242,6 +236,11 @@ Inside of this `css.json` file, paste the following code:
   "body": ".visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}",
   "description": "Visually Hidden Snippet"
 },
+"sr-only": {
+        "prefix": "sr-only",
+        "body": ".sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}",
+        "description": "sr-only Snippet"
+    },
 
 "Setup": {
   "prefix": "setup",
@@ -272,14 +271,25 @@ And the following snippets in CSS/SCSS:
 * `normalize` + `tab`
 * `clearfix` + `tab`
 * `vhidden` + `tab`
+* `sr-only` + tab
 * `setup` + `tab`
 
-Don't stop here - feel free to make your own! 
+Don't stop here - feel free to make your own! If you need help, there's a handy [snippet generator](https://snippet-generator.app/) that will format your snippets for you.
 
-## Learn more
+### Learn more
+
+There are a lot of built in shortcuts in VSCode to make your coding experience more efficient. Some of our favourites include: 
+
+* `option + [arrow up or down]` (Mac) or `alt + [arrow up or down]`(PC) : moves a line of code up or down
+* `option + cursor click` (Mac) or `alt + cursor click` (PC): creates multiple cursors to allow for faster code editing
+* `command + b` (Mac) or `ctrl + b` (PC): opens and closes the file navigator panel
+* `command + d` (Mac) or `ctrl + b` (PC): highlight matching keywords in a file
+* `command + shift + k` (Mac) or `ctrl + shift + k` : delete an entire line of code
+* `command + ctrl + space bar` (Mac) or `window key + .` (PC): to access the very important Emoji keyboard!
+
 
 Some instructor favorite setups include:
-* 'View' > 'Editor Layout' > 'Two Columns' will give you to panes in which to open files - perhaps the HTML and CSS for the same project, instead of putting them in tabs?
+* 'View' > 'Editor Layout' > 'Two Columns' will give you two panes in which to open files - perhaps the HTML and CSS for the same project, instead of putting them in tabs?
 * If you've got a Mac, open the command palette (`cmd + shift + p`, type `shell command` and select 'Install code command in PATH' ![shell command screenshot](https://code.visualstudio.com/assets/docs/setup/mac/shell-command.png)
 
   Now you'll be able to type `code .` in a file in the command line and have it open in VSCode! PC users are lucky -  this is built in for them!
