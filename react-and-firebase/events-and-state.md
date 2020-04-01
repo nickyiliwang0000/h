@@ -303,7 +303,7 @@ You may be tempted to put an `if` statement in your JSX like this:
 
 Another gotcha with React is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return _must_ be an expression, and `if` statements are **statements**, not expressions. This gets challenging when you only want to render a piece of your UI  _conditionally_. 
 
-Luckily, React has a few way to get around this including using ternaries for conditional rendering.
+Luckily, React has a few ways to get around this including using ternaries for conditional rendering.
 
 The syntax for a _ternary operator_ is: 
 
