@@ -44,7 +44,7 @@ Microsoft released some very good content and a toolkit about inclusive design t
 
 ## W.C.A.G.
 
-Different regions have their own regulating bodies for web accessibility (more on that below). But they all point back to the internationally recognized standards of the **Web Content Accessibility Guidelines** made by the **World Wide Web Consortium**, or **WC3** for short.
+Different regions have their own regulating bodies for web accessibility (more on that below). But they all point back to the internationally recognized standards of the **Web Content Accessibility Guidelines** made by the **World Wide Web Consortium**, or **W3C** for short.
 
 The WCAG guidelines are a reference guide for achieving accessible interfaces. The most recent stable release is version 2.1 which is available online: [WCAG 2.1](https://www.w3.org/TR/WCAG21/).
 
@@ -82,7 +82,6 @@ There is an Ontario-wide legislative act from the AODA which covers both physica
 (c) offers accommodation;
 (d) owns or occupies a building, structure or premises; or
 (e) is engaged in a prescribed business, activity or undertaking or meets such other requirements as may be prescribed.
-Same,
 
 Tl;dr: any business you work for that operates in Ontario will be required to comply.
 
@@ -103,4 +102,3 @@ Web accessibility is becoming more in-demand as a skillset, especially as enforc
 Juno grads have an opportunity to help solve a critical business problem for companies looking to achieve accessibility compliance and to differentiate themselves in the market by offering this skillset.
 
 There are specific accessibility development roles out there, but it is also seen as a very valuable asset to any frontend development team.
-s

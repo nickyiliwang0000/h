@@ -7,7 +7,7 @@ We've looked at how HTML choices impact accessibility. But CSS has a lot to be c
 
 ## Colour Contrast
 
-By far the largest group of accessibility failures are related to colour contrast ratio. It's important for us to check all of the colour contrast ratios for the text we put infront of backgrounds. There are some tools we can leverage to help us with this.
+By far the largest group of accessibility failures are related to colour contrast ratio. It's important for us to check all of the colour contrast ratios for the text we put in front of backgrounds. There are some tools we can leverage to help us with this.
 
 ### AA
 
@@ -25,7 +25,7 @@ This tool from [colour safe](http://colorsafe.co/) allows you to choose a backgr
 
 With the [Web AIM Colour Contrast Checker](https://webaim.org/resources/contrastchecker/) we can enter both the text and background colours to check their ratio and even play with them using slider tools until we have achieved the required ratio.
 
-The firefox dev tools also have a cool contrast checker tool. If you inspect an element's colour and click on the colour circle a popup appears that shows the ratio and has sliders allowing you to adjust and test right in the browser!
+The Firefox dev tools also have a cool contrast checker tool. If you inspect an element's colour and click on the colour circle a popup appears that shows the ratio and has sliders allowing you to adjust and test right in the browser!
 
 ![Colour Contrast Checker](https://hychalknotes.s3.amazonaws.com/firefox_contrast_checker.png)
 
