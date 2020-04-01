@@ -88,7 +88,7 @@ Produces the following:
 3. Box 3 is 3000px width, much wider than our current screen size so we have to scroll right to see the entire box - cool.
 **But Woah, hold on**, what's happening with the **100% height??**
 
-###`width: 100%;` & `height: 100%;`
+### `width: 100%;` & `height: 100%;`
 
 If 100% width takes up the entire width of the browser, shouldn't 100% height take up the entire height of the browser? That would make sense, but this is one of the many quirks of CSS. 
 
