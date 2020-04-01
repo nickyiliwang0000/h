@@ -204,7 +204,7 @@ We're going to add:
 3. Clearfix
 4. VisuallyHidden
 5. SR-Only
-4. Setup (a snippet that includes all of the above!) 
+6. Setup (a snippet that includes all of the above!) 
 
 Find the CSS snippet file by typing `cmd + shift + p` on Mac or `ctrl + shift + p` on PC to launch the command palette and type in `snippets`. Select the option 'Preferences: Configure User Snippets' and choose the language you want to use your snippets in (for these snippets, CSS). 
 
@@ -280,12 +280,13 @@ Don't stop here - feel free to make your own! If you need help, there's a handy 
 
 There are a lot of built in shortcuts in VSCode to make your coding experience more efficient. Some of our favourites include: 
 
-* `option + [arrow up or down]` (Mac) or `alt + [arrow up or down]` : moves a line of code up or down
+* `option + [arrow up or down]` (Mac) or `alt + [arrow up or down]`(PC) : moves a line of code up or down
 * `option + cursor click` (Mac) or `alt + cursor click` (PC): creates multiple cursors to allow for faster code editing
 * `command + b` (Mac) or `ctrl + b` (PC): opens and closes the file navigator panel
 * `command + d` (Mac) or `ctrl + b` (PC): highlight matching keywords in a file
 * `command + shift + k` (Mac) or `ctrl + shift + k` : delete an entire line of code
-* access the Emoji keybard! On a Mac, use `command + ctrl + space bar` and on Windows `window key + .`
+* `command + ctrl + space bar` (Mac) or `window key + .` (PC): to access the very important Emoji keyboard!
+
 
 Some instructor favorite setups include:
 * 'View' > 'Editor Layout' > 'Two Columns' will give you two panes in which to open files - perhaps the HTML and CSS for the same project, instead of putting them in tabs?
