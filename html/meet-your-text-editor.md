@@ -276,7 +276,7 @@ And the following snippets in CSS/SCSS:
 
 Don't stop here - feel free to make your own! If you need help, there's a handy [snippet generator](https://snippet-generator.app/) that will format your snippets for you.
 
-### Learn More
+### Learn more
 
 There are a lot of built in shortcuts in VSCode to make your coding experience more efficient. Some of our favourites include: 
 
