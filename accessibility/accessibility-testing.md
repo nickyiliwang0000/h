@@ -12,7 +12,7 @@ If you can satisfy all the criteria on this checklist, congratulations, your pro
 
 ## Testing tools
 
-Once you feel like you've satisfied all the criterias on the checklist, there are a couple of tools you can use to help us audit our project. 
+Once you feel like you've satisfied all the criteria on the checklist, there are a couple of tools you can use to help us audit our project. 
 
 - **[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)**
 The tool will provide feedback on a site url you've entered. It will highlight errors you should address and provide suggestions on how to address them. It exists as [Firefox and Chrome extension](https://wave.webaim.org/extension/) as well.  
