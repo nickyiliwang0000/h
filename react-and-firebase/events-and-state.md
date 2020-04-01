@@ -281,3 +281,65 @@ Since we want to update `this.state.count`, we pass in an object with a key of `
 Now you'll notice that every time you click the increment button, the number on the page increases! This is because every time `setState` is called, our component _rerenders_, which basically means it refreshes itself and grabs the most up-to-date state information.
 
 And that's all there is to it! `onClick` is one of many different events that React can handle - there's also `onMouseOver`, `onMouseDown` etc. - [check out the React docs for the full list](https://facebook.github.io/react/docs/events.html).
+
+### Conditional Rendering and Ternary Operators
+
+So what happens if we want to reflect state changes in our application? Maybe we want to show a welcome screen when a user logs into a page? 
+
+You may be tempted to put an `if` statement in your JSX like this:
+
+```jsx
+    render() {
+        return (
+           <div>
+          {if(userIsLoggedIn) {
+            <h1>Welcome, friend!</h1>
+          }}
+        </div>
+            )
+        }   
+    }
+```
+
+Another gotcha with React is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return _must_ be an expression, and `if` statements are **statements**, not expressions. This gets challenging when you only want to render a piece of your UI  _conditionally_. 
+
+Luckily, React has a few ways to get around this including using ternaries for conditional rendering.
+
+The syntax for a _ternary operator_ is: 
+
+`condition ? true : false`
+
+Think of the `?` as the `if` and the `:` as the `else` in a conditional statement.
+
+```jsx
+    render() {
+        return (
+           <div>
+           {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
+        </div>
+            )
+        }   
+    }
+```
+
+The code above is saying: if the variable `userIsLoggedIn` is `true`, return the `h1` tag, otherwise don't return anything (`null`). 
+    
+Using ternary operators to conditionally render content can get complicated pretty quickly, so it is also common to use functions or variables **outside** of the return to accomplish this:
+
+```jsx
+    render() {
+      let markupShowingOnPage = null;
+
+      if(userIsLoggedIn) {
+        markupShowingOnPage = `<h1>Welcome, friend!</h1>`;
+      }
+
+      return (
+        <div>
+          {markupShowingOnPage}
+        </div>
+      )
+    }
+```
+
+You can find more information on Conditonal Rendering on the [React docs](https://reactjs.org/docs/conditional-rendering.html)! 
