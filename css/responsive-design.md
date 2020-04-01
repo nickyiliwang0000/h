@@ -155,15 +155,6 @@ If the issue applies when the screen is narrow but longer than a phone screen, y
 
 Trying to target a specific device is not a good idea: you are better off using width media queries most of the time.
 
-#### Other Media Queries
-  * **orientation**: Thinking about **why** the user is holding their phone at that particular orientation may help you make decisions about design. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
-  * **pixel-density**: Images and graphics are blown up to 2x their natural size on retina or HPDI screens which can result in blurry images. The solution to this issue is to use a device resolution media query to swap in images that are 2x the size of the normal ones when the user is on a HiDPI screen. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
-  * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
-  
-Find more about all three at in [Additional Media Queries]().
-
-There are a bunch more on [MDN](https://developer.mozilla.org/en-US/docs/CSS/Media_queries).
-
 ### How to use breakpoints effectively
 
 In general, we won't create breakpoints based on specific devices. There are hundreds of screen sizes out there now and more to come. What we **will** do is create them based on the design and content of our websites. (For edge cases where you absolutely **must** target specific devices, check out [this resource by Chris Coyier](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) which provides media queries for some known devices sizes.) 
@@ -257,3 +248,14 @@ Let's try making a navigation responsive. Download the [navigation-float](https:
 
 ### More exercises
 Check out [responsive-exercises-roundup.zip](https://hychalknotes.s3.amazonaws.com/responsive-exercises-roundup+2.zip) for the exercises and answers.
+
+### Additional Resources
+
+#### Other Media Queries
+  * **orientation**: Thinking about **why** the user is holding their phone at that particular orientation may help you make decisions about design. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
+  * **pixel-density**: Images and graphics are blown up to 2x their natural size on retina or HPDI screens which can result in blurry images. The solution to this issue is to use a device resolution media query to swap in images that are 2x the size of the normal ones when the user is on a HiDPI screen. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
+  * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
+  
+Find more about all three at in [Additional Media Queries]().
+
+There are a bunch more on [MDN](https://developer.mozilla.org/en-US/docs/CSS/Media_queries).

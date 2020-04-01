@@ -148,9 +148,9 @@ In order to get amazing with CSS, you need selector chops! The only way to get g
 
 Since we aren't familiar with all of the available styles, they've been included for you, you just need to write the selectors.
 
-Download the [css-selector-exercises.zip](https://hychalknotes.s3.amazonaws.com/css-selector-exercises.zip) and open the starter file in your browser. Replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask an instructor, or one of your fellow students.
+Download the [css-selector-exercises.zip](https://hychalknotes.s3.amazonaws.com/css-pseudo-selectors-bootcamp.zip) and open the starter file in your browser. Replace `____` with your own selectors. You'll need to study the markup for a bit before. If you get stuck feel free to reference the notes, ask an instructor, or one of your fellow students.
 
-There is also a `css-selector-exercise-ANSWER.html` provided, open it in your browser to view what the final product should look like.
+There is also a `css-selector--exercise-ANSWER.html` provided, open it in your browser to view what the final product should look like.
 
 ![Final product](https://hychalknotes.s3.amazonaws.com/CSS-selector-exercise.png)
 
