@@ -102,3 +102,21 @@ You can navigate between the files and directories on both sides like a normal E
 The server works just like your computer: upload an `index.html` file and surf to `www.yourdomain.com` and you will see your `index.html`. (With some server configurations, you'll need to place your files in the `public_html` directory.) Similarly, you can upload a folder called `finalproject` and surf to `www.yourdomain.com/finalproject` to see it.
 
 A best practice is to edit your website locally (on your computer) until you are happy with your progress. Then drag and drop the entire folder onto your server.
+
+### Hosting Services
+There are several other services that are commonly used to host more fullstack applications on the web, they include:
+
+* Heroku
+* Amazon Web Services (AWS)
+* Google Cloud Platform (GCP)
+* Microsoft Azure
+
+Although these services offer more than we need in order to host a static website, you may end up interacting with them in your web development career as most companies will use a cloud hosting service to serve their product or website to their clients.
+
+These services allow you to host a server that you build yourself. This is unlike a service like Dreamhost that has a server that exists somewhere on the internet where you upload your static files.
+
+All of these services come with their own jargon and tools for interacting with them. Often, you will need to install a CLI tool (a tool that allows you to interact with the service from your command line) in order to get started. You can think of these services as a very basic operating system running on a computer that is hosted on the cloud. In order to run your app or website on these services, you need to fully setup your environment including installing any dependencies, setting up databases and running a server to serve the front end code.
+
+Each company will have their own deployment process, often to deploy your code you will either have to push or merge your code into a specific branch on Github. For example, the `master` branch might hold all the code that the company is working on, while the `production` branch holds the code that is live on the web somewhere. In order to deploy code, you would need to make a pull request to the `production` branch.  
+
+There is an entire subset of the web development community whose entire job is to work with these services and ensure that's web hosted platforms stay live called Developer Operations or Dev Ops.
