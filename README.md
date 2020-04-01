@@ -86,7 +86,9 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [Preprocessors and SCSS](https://github.com/HackerYou/bootcamp-notes/blob/master/css/preprocessors-scss.md)
 -   [Transforms, transitions, and animations](https://github.com/HackerYou/bootcamp-notes/blob/master/css/transforms-transitions-and-animations.md)
 -   [Advanced CSS selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-css-selectors.md)
--   [CSS grid](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-grids.md)
+-   [Grid systems](https://github.com/HackerYou/bootcamp-notes/blob/master/css/grid-systems.md)
+-   [CSS grids](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-grids.md)
+-   [Advanced CSS grids](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-css-grids.md)
 -   [Cross-browser testing](https://github.com/HackerYou/bootcamp-notes/blob/master/css/cross-browser-testing.md)
 -   [FTP and domains](https://github.com/HackerYou/bootcamp-notes/blob/master/css/ftp-and-domains.md)
 
