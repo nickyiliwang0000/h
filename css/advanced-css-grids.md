@@ -217,7 +217,7 @@ Flexbox and grid were created to solve different problems. Flexbox focuses on co
 
 ![](https://hychalknotes.s3.amazonaws.com/Untitled%20drawing.png)
 
-There are many different philosophies around when to use grid and when to use flexbox. Below, we've outlined just a few, use these as a starting off point fo form your own opinion!
+There are many different philosophies around when to use grid and when to use flexbox. Below, we've outlined just a few, use these as a starting off point to form your own opinion!
 
  - It depends on the design: Some developers feel that certain designs are easier to layout in a grid format and some are not. Examine the design you were given carefully and use your knowledge of both methodologies to determine which will work best remembering that flexbox is best for one dimensional 'content flow' situations while grid shines in two dimensional 'content flow' situations.
 
