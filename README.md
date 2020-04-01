@@ -75,7 +75,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [Background color and images](https://github.com/HackerYou/bootcamp-notes/blob/master/css/background-color-and-images.md)
 -   [CSS pseudo-selectors](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-pseudo-selectors.md)
 -   [Pseudo-elements](https://github.com/HackerYou/bootcamp-notes/blob/master/css/pseudo-elements.md)
--   [CSS dimensions](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-dimensions.md)
+-   [CSS box model](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-box-model.md)
 -   [CSS layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/css-layouts.md)
 -   [Display and positioning](https://github.com/HackerYou/bootcamp-notes/blob/master/css/display-and-positioning.md)
 -   [Advanced layouts](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-layouts.md)
