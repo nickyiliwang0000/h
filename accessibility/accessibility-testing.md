@@ -8,7 +8,7 @@ Web accessibility should be considered from the design stage of the project as w
 
 [WebAIM](https://webaim.org/) is a non-profit organization that provides services and training for web accessibility. They've developed a couple of tools we can use to help us with the process. Including this handy checklist! - [WCAG 2 Checklist](https://webaim.org/standards/wcag/WCAG2Checklist.pdf)
 
-If you can satisfy all the criterias on this checklist, congratulations, your project is gold standard accessible!
+If you can satisfy all the criteria on this checklist, congratulations, your project is gold standard accessible!
 
 ## Testing tools
 
@@ -19,7 +19,7 @@ The tool will provide feedback on a site url you've entered. It will highlight e
 - **[Accessibility Insights for Web](https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en)**
 Extension similar to WAVE developed by Mircosoft, which means it's available on Mircrosoft Edge!
 - **Lighthouse**
-Lighthouse is an open-source tool owned by google. You can use it as a [Firefox](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/) or [Chrome](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) extension. If you are using the Chrome browser, you can also access it without the extension via your dev tools unde the *Audits* tab. Lighthouse is great not only for accessiblity audit, it can also run peformance and best practices reports. 
+Lighthouse is an open-source tool owned by Google. You can use it as a [Firefox](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/) or [Chrome](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) extension. If you are using the Chrome browser, you can also access it without the extension via your dev tools under the *Audits* tab. Lighthouse is great not only for accessiblity audit, it can also run peformance and best practices reports. 
 - **[aXe](https://www.deque.com/axe/)**
 Similar to WAVE and Lighthouse, [aXe](https://www.deque.com/axe/) is a browser extension tool. It is developed by [Deque](https://www.deque.com/), a company that provides accessibility solutions and training. The aXe tool is geared more towards developers and works well with web apps. 
 
