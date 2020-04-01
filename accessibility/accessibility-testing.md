@@ -4,7 +4,7 @@ Web accessibility should be considered from the design stage of the project as w
 
 ## Web accessibility checklist
 
-As mentioned earlier in [Intro to web accessibility](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/intro-to-accessibility.md), we've learnt that [WCAG 2.1](https://www.w3.org/TR/WCAG21/) is the standard reference of guidelines for accessibility. While this document is detailed and extensive, it is not always easy to navigate and read through. 
+[WCAG 2.1](https://www.w3.org/TR/WCAG21/) is the standard reference of guidelines for accessibility. While this document is detailed and extensive, it is not always easy to navigate and read through. 
 
 [WebAIM](https://webaim.org/) is a non-profit organization that provides services and training for web accessibility. They've developed a couple of tools we can use to help us with the process. Including this handy checklist! - [WCAG 2 Checklist](https://webaim.org/standards/wcag/WCAG2Checklist.pdf)
 
@@ -25,4 +25,4 @@ Similar to WAVE and Lighthouse, [aXe](https://www.deque.com/axe/) is a browser e
 
 W3C also provides an extensive list of tools [here](https://www.w3.org/WAI/ER/tools/).
 
-If you'd like to learn more about Accessibility, check out [additional resources for accessibility](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/accessibility-resources.md) in the notes.
+**For more resources on accessibility, check out [additional resources for accessibility](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheatsheets/accessibility-resources.md) in the notes.**

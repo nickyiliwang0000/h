@@ -70,12 +70,6 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [Meet your text editor](https://github.com/HackerYou/bootcamp-notes/blob/master/html/meet-your-text-editor.md)
 -   [Snippets](https://github.com/HackerYou/bootcamp-notes/blob/master/html/meet-your-text-editor.md#snippets)
 
-### Accessibility 
-
-- [Intro to web accessibility](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/intro-to-accessibility.md)
-- [Semantic HTML and accessibility](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/accessibility-and-semantic-html.md)
-- [Keyboard navigation](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/keyboard-navigation.md)
-- [Additional accessibility resources](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/accessibility-resources.md)
 
 ### CSS
 
