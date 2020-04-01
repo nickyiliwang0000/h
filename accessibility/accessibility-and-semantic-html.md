@@ -5,7 +5,7 @@
 
 Arguably the biggest accessibility improvement you can make to a website is to have the content created with proper semantic HTML and hierarchy. 
 
-The word semantic means to give something meaning. When you use a `div` or `span` element there is no real structural meaning beyond a generic box for content. Before reaching for one of these elements ask yourself: what is this content? If it's text, reach for a text element. If it's a list, reach for an `ol` or `ul` with `li` elements inside. If it's a button, use a `button` element if it's a link, use an `a` tag.
+The word semantic means to give something meaning. When you use a `div` or `span` element there is no real structural meaning beyond a generic box for content. Before reaching for one of these elements ask yourself: what is this content? If it's text, reach for a text element. If it's a list, reach for an `ol` or `ul` with `li` elements inside. If it's a button, use a `button` element, if it's a link, use an `a` tag.
 
 Writing semantic HTML greatly improves the experience for screen reader users because the type of content will be announced. But it's also a curb cut (see intro to accessibility notes for definition) because proper semantics increase search engine optimization and better communicate your intention to other developers on your team. 
 
@@ -17,7 +17,7 @@ Some things to keep in mind:
 
 * You should only ever have one `h1` element on the page.
 * Your hierarchy should make sense in the document flow. In most cases you should not be skipping from an `h1` to an `h4` and then back to an `h2`.
-* Try to separate your thinking about the heading styles from the heading hierarchy. As yourself, if you were to strip away all the CSS, does the hierarchy make sense? You can style an `h2` to look like an `h4` easily without making improper hierarchy decisions. 
+* Try to separate your thinking about the heading styles from the heading hierarchy. Ask yourself, if you were to strip away all the CSS, does the hierarchy make sense? You can style an `h2` to look like an `h4` easily without making improper hierarchy decisions. 
 
 ### Rotors
 
