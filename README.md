@@ -66,7 +66,6 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 
 ### HTML
 -   [Philosophy of best practices for HTML and CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/philosophy-of-best-practices-for-html-and-css.md)
--   [Meet your text editor](https://github.com/HackerYou/bootcamp-notes/blob/master/html/meet-your-text-editor.md)
 -   [Snippets](https://github.com/HackerYou/bootcamp-notes/blob/master/html/meet-your-text-editor.md#snippets)
 
 
