@@ -4,32 +4,33 @@
 
 
 ### Daily Schedule
+
 _ALL TIMES ARE ESTIMATES FOR YOUR CONVIENICE AND AWARENESS AND ARE SUBJECT TO CHANGE_
-It is important for you to have as detailed a schedule as possible to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra detailed when YOU want them to be. **Never worry** if the real life timing isn't going the way it was initially planned. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects. 
-**Monday, April 6th**
-_THIS IS JUST AN ESTIMATE_
-10am   Live Online Orientation & Motivational Monday (20 mins)
-10:20am  Stand Ups (20 mins)
-10:40am  Jquery Review Code Along with Talia (50mins)
-11:30am  ☕️ BREAK ☕️  (20mins)
-11:50am  Jquery Review Code Along with Talia CONT (40mins)
-12:30pm  Callback Functions with Talia (30mins)
-1pm      🍴 LUNCH 🍴
-2:00pm   How To Organize you JavaScript with Suzette (1hr)
-3:00pm   Design for Developers with Susan (1hr 15min) 
-4:20pm   ☕️ BREAK ☕️ 
-4:40pm   Project work time (Final Scope Approvals for Project 3)
+
+We would like you to have a detailed a schedule to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra juicy when YOU want them to be. **Never worry** if the real life timing isn't matching this estimate. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects. 
+
+#### Monday, April 6th
+- Live Online Orientation & Motivational Monday _(20 mins)_
+- Stand Ups _(20 mins)_
+- Jquery Review Code Along with Talia _(50mins)_
+- ☕️ BREAK ☕️  _(20mins)_
+- Jquery Review Code Along with Talia CONT. _(40mins)_
+- Callback Functions with Talia _(30mins)_
+- 🍴 LUNCH 🍴 (_1pm to 2pm_)
+- How To Organize you JavaScript with Suzette _(1hr)_
+- Design for Developers with Susan _(1hr 15min)_
+- ☕️ BREAK ☕️ (20min)
+- Project work time - Final Scope Approvals for Project 3 _(1hr 20min)_
 
 
-**IN CLASS SUPPORT**
+##### IN CLASS SUPPORT
 _Morning_
-Live Questions: Suzette 
-Debugging: Owen    
+- Live Questions: Suzette 
+- Debugging: Owen    
 
 _Afternoon_
-Live Questions: Talia 
-Debugging: Owen  
-
+- Live Questions: Talia 
+- Debugging: Owen  
 
 ### Weekly Schedule
 
