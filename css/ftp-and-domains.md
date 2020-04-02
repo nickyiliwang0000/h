@@ -124,7 +124,7 @@ Each company will have their own deployment process, often to deploy your code y
 There is an entire subset of the web development community whose entire job is to work with these services and ensure that's web hosted platforms stay live called Developer Operations or Dev Ops.
 
 ## Using Netlify
-Netlify is a tool that makes deploying and hosting a website very straightforward. It takes away the need to FTP into your server and add files. Instead you add files you would like to be seen live on the internet through the Netlify web app.
+Netlify is a tool that makes deploying and hosting a website very straightforward. It takes away the need to FTP into your server and add files manually. Instead, you add files you would like to be seen live on the internet through the Netlify web app.
 
 When signing up for Netlify, it is easiest if you link your Github account directly to your Netlify account. The following steps assume that is how you have chosen to setup your account.
 
@@ -134,13 +134,13 @@ You can either purchase a domain through Netlify or use a domain you have purcha
 1. Navigate to the 'Domains' tab
 ![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-04-01%20at%2012.05.18%20PM.png)
 2. Enter your domain and click 'Verify'
-![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-04-01%20at%2012.05.18%20PM.png)
+![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-04-01%20at%2012.06.47%20PM.png)
 3. If the domain is available, you will be prompted to purchase it! 
 
 ### Transfer a domain to Netlify
 If you have already purchased a domain through another service you will need to transfer your name servers to Netlify. Your domain name registrar should have documentation on this called something along the lines of 'Changing your domain name server`. 
 
-Here are the instructions for a couple common domain registrars:
+Here are the instructions for a couple of common domain registrars:
 - [Hover](https://help.hover.com/hc/en-us/articles/217282477-How-to-Change-your-domain-name-servers-DNS-servers-Updated-March-2016-)
 - [GoDaddy](https://ca.godaddy.com/help/change-nameservers-for-my-domains-664)
 
@@ -161,12 +161,26 @@ Click the `Deploy` button and after a few seconds, Netlify should deploy your si
 
 Should you wish to add this project as a `subdomain` of your domain, you will be prompted to do so under the `Branch subdomains` section after you deploy your side. In order to gain access to this feature, you will need to have added your domain to Netlify.
 
-### Creating Subdomains
-As was mentioned above, you can create subdomains for your projects on your custom domain that has been attached to Netlify. A subdomain is any route on your main domain that is not just the domain itself. For example, your main domain might be `mybeautifulwebsite.com` and a subdomain on that site would be `mybeautifulwebsite.com/project-one`.
+### Creating Nested Routes
+A nested route is any route on your main domain that is not just the domain itself. For example, your main domain might be `mybeautifulwebsite.com` and a nested route on that site would be `mybeautifulwebsite.com/project-one`.
 
-You can create subdomains either through the `Settings` tab for a given site hosted on Netlify. Or by adding a plain text `_redirects` file to the site you are hosting on your main domain. This file might look something like this and be saved in the root directory alongside the `index.html`:
+ You can create nested routes by adding a plain text `_redirects` file to the site you are hosting on your main domain. This file would need to be structured as follows and be saved in the root directory alongside the `index.html` file.
 
+Sample `_redirects` file:
 ```shell
 /project-one        https://www.randomrandomnetlifyname.com
 /project-two        https://www.equallyrandomnetlifyname.com
+```
+On the left are listed the various nested routes you would like your site to have and on the right are the randomly generated URLs where those sites are hosted. This could be github page links as well.
+
+This file should be saved in the root of your project directory, below is a sample project directory:
+```bash
+- website(root folder)
+    index.html
+    _redirects
+    script.js
+    - styles
+      style.css
+      - assets
+        imageOne.png
 ```
