@@ -19,7 +19,7 @@ would make the email address unusuable (e.g. `pilarsantiagojmail.ca`,  `pilarsan
 
 > Regular expressions are used in lots of programming languages, not just in JavaScript.
 
-While in some situations you may be able to use string methods like `.split()` to parse strings they are certain scenarios where these string methods will not be flexible enough to accomplish the task. For example, you may want to determine if a string contains only letter and numbers and no spaces or special characters. Without using Regex, you would have to loop over the each character in the string and check if it fits the criteria and then return a new string. With regex, you can accomplish the same task more efficiently.
+While in some situations you may be able to use string methods like `.split()` to parse strings, there are certain scenarios where these string methods will not be flexible enough to accomplish the task. For example, you may want to determine if a string contains only letter and numbers and no spaces or special characters. Without using Regex, you would have to loop over each character in the string and check if it fits the criteria and then return a new string. With regex, you can accomplish the same task more efficiently.
 
 
 ## Regex syntax
