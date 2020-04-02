@@ -18,6 +18,8 @@ an input has a valid email like `[name][@][domain][.][tld]`. We could alert the 
 would make the email address unusuable (e.g. `pilarsantiagojmail.ca`,  `pilarsantiago@jmailca` or  `@jmail.ca`).
 
 > Regular expressions are used in lots of programming languages, not just in JavaScript.
+While in some situations you may be able to use string methods like `.split()` to parse strings they are certain scenarios where these string methods will not be flexible enough to accomplish the task. For example, you may want to determine if a string contains only letter and numbers and no spaces or special characters. Without using Regex, you would have to loop over the each character in the string and check if it fits the criteria and then return a new string. With regex, you can accomplish the same task much more easily.
+
 
 ## Regex syntax
 In JavaScript, regexes can be created in two different ways. The most common way is to use a _regular expression 
@@ -34,8 +36,7 @@ let regEx = new RegExp("abc");
 ```
 > From MDN: `Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.`
 
-Both of these methods create a regular expression object with methods for various features. For the most part, we'll be 
-using the first syntax.
+Both of these methods create a regular expression object with methods for various features. For the most part, we'll be using the first syntax.
 
 ## Testing a string with a regular expression.
 
