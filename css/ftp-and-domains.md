@@ -124,7 +124,7 @@ Each company will have their own deployment process, often to deploy your code y
 There is an entire subset of the web development community whose entire job is to work with these services and ensure that's web hosted platforms stay live called Developer Operations or Dev Ops.
 
 ## Using Netlify
-Netlify is a tool that makes deploying and hosting a website very straightforward. It takes away the need to FTP into your server and add files. Instead you add files you would like to be seen live on the internet through the Netlify web app.
+Netlify is a tool that makes deploying and hosting a website very straightforward. It takes away the need to FTP into your server and adds files. Instead, you add files you would like to be seen live on the internet through the Netlify web app.
 
 When signing up for Netlify, it is easiest if you link your Github account directly to your Netlify account. The following steps assume that is how you have chosen to setup your account.
 
