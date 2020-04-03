@@ -169,11 +169,11 @@ A nested route is any route on your main domain that is not just the domain itse
 Sample `_redirects` file:
 ```shell
 /project-one        https://www.randomrandomnetlifyname.com
-/project-two        https://www.equallyrandomnetlifyname.com
+/project-two        https://username.github.io/my-project-1
 ```
 On the left are listed the various nested routes you would like your site to have and on the right are the randomly generated URLs where those sites are hosted. This could be github page links as well.
 
-This file should be saved in the root of your project directory, below is a sample project directory:
+This file should be saved in the root of your project directory, in the same folder as the `index.html`, below is a sample project directory for a static site:
 ```bash
 - website(root folder)
     index.html
@@ -184,3 +184,6 @@ This file should be saved in the root of your project directory, below is a samp
       - assets
         imageOne.png
 ```
+
+It should be noted that for a project created using `Create-React-App`, the `_redirects` file would be placed inside the 
+`public` folder since that is the folder that contains the `index.html`. 
