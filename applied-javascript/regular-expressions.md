@@ -19,6 +19,9 @@ would make the email address unusuable (e.g. `pilarsantiagojmail.ca`,  `pilarsan
 
 > Regular expressions are used in lots of programming languages, not just in JavaScript.
 
+While in some situations you may be able to use string methods like `.split()` to parse strings, there are certain scenarios where these string methods will not be flexible enough to accomplish the task. For example, you may want to determine if a string contains only letter and numbers and no spaces or special characters. Without using Regex, you would have to loop over each character in the string and check if it fits the criteria and then return a new string. With regex, you can accomplish the same task more efficiently.
+
+
 ## Regex syntax
 In JavaScript, regexes can be created in two different ways. The most common way is to use a _regular expression 
 literal_, which starts with a `/` character, then the pattern you want to match, then a closing `/`.
@@ -34,8 +37,7 @@ let regEx = new RegExp("abc");
 ```
 > From MDN: `Use the constructor function when you know the regular expression pattern will be changing, or you don't know the pattern and are getting it from another source, such as user input.`
 
-Both of these methods create a regular expression object with methods for various features. For the most part, we'll be 
-using the first syntax.
+Both of these methods create a regular expression object with methods for various features. For the most part, we'll be using the first syntax.
 
 ## Testing a string with a regular expression.
 
@@ -168,8 +170,9 @@ symbol | meaning in a regex | example
 `\` | Ignore the following character's special meaning. | `/1\.9/` matches exactly `1.9`.
 `$` | The end of a string | `/last$/` matches only strings ending with the `"last"`. e.g. `"last"`, and `"blast"`, but not `"plaster"`.
 
-## Exercise
-Download [this exercise](https://hychalknotes.s3.amazonaws.com/regexercise-bootcamp.zip) to practice writing your own regular expressions.
+## Code along
+We are going to use some of the concepts and common regex patterns in a code along! [Download this code along](https://hychalknotes.s3.amazonaws.com/regex.zip).
+
 
 ## Regex patterns
 
@@ -216,3 +219,6 @@ There are lots more patterns and flags, and you'll probably never remember them 
 	* There are lots of ways to practice!
 		* Testing your regex on <http://www.regexr.com/>
 		* [Regexone](http://regexone.com/) is a great source for learning regex via interactive exercises.
+
+## Exercise
+Download [this exercise](https://hychalknotes.s3.amazonaws.com/regexercise-bootcamp.zip) to practice writing your own regular expressions.
