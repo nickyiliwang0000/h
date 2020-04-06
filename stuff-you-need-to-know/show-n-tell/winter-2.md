@@ -48,14 +48,12 @@ Label & Labelledby
 lodash
 ml5.js
 p5.js
-particle.js
 pose.js
 preloaders
 react autocomplete
 react dnd
 reveal.js
 shape-outside
-sketch.js
 split.js
 stroke-dash
 SVG Morph
@@ -89,7 +87,9 @@ draft.js
 animate.css
 animate-on-scroll
 :focus-within
+sketch.js
 Konami Codes
+particle.js
 custom SVGs
 brain.js
 ```
