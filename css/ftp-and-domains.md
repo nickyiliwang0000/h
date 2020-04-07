@@ -5,6 +5,8 @@
 - What an IP address is
 - How to set up FileZilla
 - How to upload files to FileZilla
+- How to upload files with Netlify
+- that there are other common hosting options like AWS, GCP and Heroku
 -->
 
 # FTP and domains
@@ -102,3 +104,86 @@ You can navigate between the files and directories on both sides like a normal E
 The server works just like your computer: upload an `index.html` file and surf to `www.yourdomain.com` and you will see your `index.html`. (With some server configurations, you'll need to place your files in the `public_html` directory.) Similarly, you can upload a folder called `finalproject` and surf to `www.yourdomain.com/finalproject` to see it.
 
 A best practice is to edit your website locally (on your computer) until you are happy with your progress. Then drag and drop the entire folder onto your server.
+
+## Hosting Services
+There are several other services that are commonly used to host more fullstack applications on the web, they include:
+
+* Heroku
+* Amazon Web Services (AWS)
+* Google Cloud Platform (GCP)
+* Microsoft Azure
+
+Although these services offer more than we need in order to host a static website, you may end up interacting with them in your web development career as most companies will use a cloud hosting service to serve their product or website to their clients.
+
+These services allow you to host a server that you build yourself. This is unlike a service like Dreamhost that has a server that exists somewhere on the internet where you upload your static files.
+
+All of these services come with their own jargon and tools for interacting with them. Often, you will need to install a CLI tool (a tool that allows you to interact with the service from your command line) in order to get started. You can think of these services as a very basic operating system running on a computer that is hosted on the cloud. In order to run your app or website on these services, you need to fully setup your environment including installing any dependencies, setting up databases and running a server to serve the front end code.
+
+Each company will have their own deployment process, often to deploy your code you will either have to push or merge your code into a specific branch on Github. For example, the `master` branch might hold all the code that the company is working on, while the `production` branch holds the code that is live on the web somewhere. In order to deploy code, you would need to make a pull request to the `production` branch.  
+
+There is an entire subset of the web development community whose entire job is to work with these services and ensure that's web hosted platforms stay live called Developer Operations or Dev Ops.
+
+## Using Netlify
+Netlify is a tool that makes deploying and hosting a website very straightforward. It takes away the need to FTP into your server and add files manually. Instead, you add files you would like to be seen live on the internet through the Netlify web app.
+
+When signing up for Netlify, it is easiest if you link your Github account directly to your Netlify account. The following steps assume that is how you have chosen to setup your account.
+
+### Register a Domain
+You can either purchase a domain through Netlify or use a domain you have purchased from another provider. In order to purchase a domain name through Netlify, follow the below steps:
+
+1. Navigate to the 'Domains' tab
+![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-04-01%20at%2012.05.18%20PM.png)
+2. Enter your domain and click 'Verify'
+![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-04-01%20at%2012.06.47%20PM.png)
+3. If the domain is available, you will be prompted to purchase it! 
+
+### Transfer a domain to Netlify
+If you have already purchased a domain through another service you will need to transfer your name servers to Netlify. Your domain name registrar should have documentation on this called something along the lines of 'Changing your domain name server`. 
+
+Here are the instructions for a couple of common domain registrars:
+- [Hover](https://help.hover.com/hc/en-us/articles/217282477-How-to-Change-your-domain-name-servers-DNS-servers-Updated-March-2016-)
+- [GoDaddy](https://ca.godaddy.com/help/change-nameservers-for-my-domains-664)
+
+
+### Deploy with Netlify
+Netlify has a 'drag and drop' deploy system that makes it very easy to get static sites live.
+
+Simply navigate to the `sites` tab in your Netlify account and drag and drop the entire project folder into the part of the UI waiting to receive files. 
+![](https://hychalknotes.s3.amazonaws.com/Screen%20Shot%202020-04-01%20at%202.11.21%20PM.png)
+
+As long as there is an `index.html` file in the root of the folder, Netlify will deploy your site and display the randomly generated URL where your site is now live. 
+
+You can also use Netlify's Github integration to deploy your sites from Github. In the same Sites tab, click the `New Site from Git` button and select Github. As long as you have signed up for Netlify through Github, Netlify will prompt you to further authorize your Github account with Netlify. Follow these steps, giving Netlify access to your Github repos.
+
+Once Netlify is able to access your Github, you will be shown a list of your Github repos. Choose the one you wish to deploy and fill out the required fields. For a static site, you do not need a build command or a publish directory. For React sites using Webpack or another build tool, fill these fields out with the appropriate build command. For React apps using Create-React-App these fields should be filled in with: `npm run build` and `build`. 
+
+Click the `Deploy` button and after a few seconds, Netlify should deploy your site to a random URL. 
+
+Should you wish to add this project as a `subdomain` of your domain, you will be prompted to do so under the `Branch subdomains` section after you deploy your side. In order to gain access to this feature, you will need to have added your domain to Netlify.
+
+### Creating Nested Routes
+A nested route is any route on your main domain that is not just the domain itself. For example, your main domain might be `mybeautifulwebsite.com` and a nested route on that site would be `mybeautifulwebsite.com/project-one`.
+
+ You can create nested routes by adding a plain text `_redirects` file to the site you are hosting on your main domain. This file would need to be structured as follows and be saved in the root directory alongside the `index.html` file.
+
+Sample `_redirects` file:
+```shell
+/project-one        https://www.randomrandomnetlifyname.com
+/project-two        https://username.github.io/my-project-1
+```
+On the left are listed the various nested routes you would like your site to have and on the right are the randomly generated URLs where those sites are hosted. This could be github page links as well.
+
+This file should be saved in the root of your project directory, in the same folder as the `index.html`, below is a sample project directory for a static site:
+```bash
+- website(root folder)
+    index.html
+    _redirects
+    script.js
+    - styles
+      style.css
+      - assets
+        imageOne.png
+```
+
+It should be noted that for a project created using `Create-React-App`, the `_redirects` file would be placed inside the 
+`public` folder since that is the folder that contains the `index.html`. 
