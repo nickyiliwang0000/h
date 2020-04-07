@@ -9,28 +9,24 @@ _ALL TIMES ARE ESTIMATES FOR YOUR CONVIENICE AND AWARENESS AND ARE SUBJECT TO CH
 
 We would like you to have a detailed a schedule to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra juicy when YOU want them to be. **Never worry** if the real life timing isn't matching this estimate. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects. 
 
-#### Monday, April 6th
-- Live Online Orientation & Motivational Monday _(20 mins)_
-- Stand Ups _(20 mins)_
-- Jquery Review Code Along with Talia _(50mins)_
+#### Tuesday, April 7th
+- Array Methods with Talia _(1hr 40mins)_
 - ☕️ BREAK ☕️  _(20mins)_
-- Jquery Review Code Along with Talia CONT. _(40mins)_
-- Callback Functions with Talia _(30mins)_
+- Design Lesson with Susan _(1hr)_
 - 🍴 LUNCH 🍴 (_1pm to 2pm_)
-- How To Organize you JavaScript with Suzette _(1hr)_
-- Design for Developers with Susan _(1hr 15min)_
+- Regular Expressions with Suzette _(1hr)_
 - ☕️ BREAK ☕️ (20min)
-- Project work time - Final Scope Approvals for Project 3 _(1hr 20min)_
+- Project work time  _(2.5hrs)_
 
 
 ##### IN CLASS SUPPORT
 _Morning_
-- Live Questions: Suzette 
-- Debugging: Owen    
+- Live Questions: Owen 
+- Debugging: Susan / Talia    
 
 _Afternoon_
-- Live Questions: Talia 
-- Debugging: Owen  
+- Live Questions: Owen 
+- Debugging: Susan  
 
 ### Weekly Schedule
 
@@ -42,13 +38,13 @@ Week 4: Chewing on some leathery JavaScript concepts and using API's
 -   Callback Functions
 -   🍴 LUNCH 🍴
 -   How To Oraganize you JavaScript
--   Design for Developers
 -   Project work time (Final Scope Approvals for Project 3)
 
 
 **Tuesday**
 
 -   Advanced Array Methods
+-   Design for Developers
 -   🍴 LUNCH 🍴
 -   Regular Expressions
 -   Project Work Time
