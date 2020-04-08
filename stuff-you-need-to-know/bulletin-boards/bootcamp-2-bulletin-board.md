@@ -9,24 +9,24 @@ _ALL TIMES ARE ESTIMATES FOR YOUR CONVIENICE AND AWARENESS AND ARE SUBJECT TO CH
 
 We would like you to have a detailed a schedule to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra juicy when YOU want them to be. **Never worry** if the real life timing isn't matching this estimate. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects. 
 
-#### Tuesday, April 7th
-- Array Methods with Talia _(1hr 40mins)_
+#### Wednesday, April 8th
+- Working With API's with Safi _(40mins)_
+- Accessing API'S with AJAX with Safi _(30mins)_
 - ☕️ BREAK ☕️  _(20mins)_
-- Design Lesson with Susan _(1hr)_
+- Accessing API'S with AJAX CONT with Safi_(1hr)_
 - 🍴 LUNCH 🍴 (_1pm to 2pm_)
-- Regular Expressions with Suzette _(1hr)_
+- API Code Along: Harry Potter Spells with Safi  _(1hr 30mins)_
 - ☕️ BREAK ☕️ (20min)
-- Project work time  _(2.5hrs)_
-
+- Project work time  _(2hrs)_
 
 ##### IN CLASS SUPPORT
 _Morning_
 - Live Questions: Owen 
-- Debugging: Susan / Talia    
+- Debugging: Talia    
 
 _Afternoon_
-- Live Questions: Owen 
-- Debugging: Susan  
+- Live Questions: Suzette 
+- Debugging: Talia  
 
 ### Weekly Schedule
 
