@@ -60,7 +60,7 @@ We'll do group critiques/QA to give and recieve feedback on Thursday afternoon.
 
 ## Submitting your project
 
-1. Deploy your website and submit the live URL using [the project submission form]().
+1. Deploy your website and submit the live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
 
 -   It is HIGHLY ENCOURAGED that you start your deploy on Tuesday or Wednesday, as Thursday morning there will not be a lot of time for deployment debugging.
 -   Your portfolio site **must** be deployed before the critiques or it will not be eligible for review.
