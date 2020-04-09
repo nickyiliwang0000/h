@@ -9,24 +9,20 @@ _ALL TIMES ARE ESTIMATES FOR YOUR CONVIENICE AND AWARENESS AND ARE SUBJECT TO CH
 
 We would like you to have a detailed a schedule to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra juicy when YOU want them to be. **Never worry** if the real life timing isn't matching this estimate. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects. 
 
-#### Wednesday, April 8th
-- Working With API's with Safi _(40mins)_
-- Accessing API'S with AJAX with Safi _(30mins)_
+#### Thursday, April 9th
+- Kick off _(30mins)_
+- Understanding API documentation with Susan _(45min)_
 - ☕️ BREAK ☕️  _(20mins)_
-- Accessing API'S with AJAX CONT with Safi_(1hr)_
+- API Code Along: Art with Monkeys with Susan  _(1hr)_
 - 🍴 LUNCH 🍴 (_1pm to 2pm_)
-- API Code Along: Harry Potter Spells with Safi  _(1hr 30mins)_
-- ☕️ BREAK ☕️ (20min)
-- Project work time  _(2hrs)_
+- API Code Along: Art with Monkeys with Susan CONT  _(30mins)_
+- Project work time  _(2.5hrs)_
+
 
 ##### IN CLASS SUPPORT
-_Morning_
-- Live Questions: Owen 
-- Debugging: Talia    
+- Live Questions: Asaf 
+- Debugging: Susan    
 
-_Afternoon_
-- Live Questions: Suzette 
-- Debugging: Talia  
 
 ### Weekly Schedule
 
