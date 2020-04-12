@@ -89,6 +89,10 @@ You will be given an opportunity to provide feedback about the experience of wor
 
 > **It is just as important to make a functional product as it is to work well with your partner.** We take note of who is respectful, willing to take feedback, and mindful of their partners' learning. Both members of the team should have a complete understanding of the technical aspects of the project. It is **not acceptable** for one person to do the HTML and CSS and one person to do the JS.
 
+### Code Review
+
+Part of your mark for this project will come from a peer code review. You will be given a mark for the quality of your review and your reviewer's mark will be part of your total grade.
+
 **Requirements:**
 
 -   It is clear to the user what the app does and results are displayed legibly
