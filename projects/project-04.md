@@ -12,10 +12,7 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 
 We encourage you to use the pair-programming method: both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
 
-<!-- Winter 2 -->
-<!-- Your partners are listed [here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing). -->
-
-Your partners are listed [here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742).
+Your partners are listed [here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing).
 
 ## Project objective
 
@@ -78,12 +75,9 @@ In order to secure your site, it's best to see if your host offers SSL certifica
 
 If you have an API that does not support CORS you might have to use what's called a proxy server, we have set one up at [https://github.com/hackeryou/json-proxy](https://github.com/hackeryou/json-proxy) , if you think this is the case, let an instructor know and we can [show you how it works](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/fetching-data-with-something-other-than%24.ajax.md).
 
-<!-- Winter 2 -->
-<!-- [scope outline document](https://forms.gle/bFrTDVQpcpVUWqDw9)  -->
-
 ## Project proposals
 
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1ZEeOBjBbn4nOEYc8xhi4wRbMWaroXSkYzwta_mcu9iA/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
+Once you have a good idea, we want you to fill out a [scope outline document](https://forms.gle/bFrTDVQpcpVUWqDw9) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline.
 
@@ -134,10 +128,8 @@ You will also be given individual marks for your project presentation:
 2. Remove any unneeded files from the project.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages or on your own domain/subdomain.
-5. Submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
+5. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
 
-<!-- Winter 2 -->
-<!-- 5. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6). -->
 
 ## #design in Helpcue
 
