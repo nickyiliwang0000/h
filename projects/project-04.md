@@ -115,6 +115,8 @@ You will also be given a general mark on how well you adhere to best practices m
 -   One external `.css` stylesheet is used for whole project
 -   It is clear to the user what the app does
 -   Site is responsive and uses media queries
+-   ID selectors should not be used to style elements
+-   Sass selectors should not be nested more than 3 levels deep
 
 You will also be given individual marks for your project presentation:
 
