@@ -91,7 +91,9 @@ You will be given an opportunity to provide feedback about the experience of wor
 
 ### Code Review
 
-Part of your mark for this project will come from a peer code review. You will be given a mark for the quality of your review and your reviewer's mark will be part of your total grade.
+This project will also incorporate a peer code review experience. After the projects are handed in, you will review someone else's code using provided prompts.
+
+The mark from the review of your code will be part of your total grade.
 
 **Requirements:**
 
