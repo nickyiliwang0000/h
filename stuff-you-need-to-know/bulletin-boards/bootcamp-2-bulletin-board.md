@@ -3,13 +3,13 @@
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
 
-### Daily Schedule
+<!-- ### Daily Schedule
 
 _ALL TIMES ARE ESTIMATES FOR YOUR CONVIENICE AND AWARENESS AND ARE SUBJECT TO CHANGE_
 
-We would like you to have a detailed a schedule to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra juicy when YOU want them to be. **Never worry** if the real life timing isn't matching this estimate. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects. 
+We would like you to have a detailed a schedule to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra juicy when YOU want them to be. **Never worry** if the real life timing isn't matching this estimate. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects.  -->
 
-#### Thursday, April 9th
+<!-- #### Thursday, April 9th
 - Kick off _(30mins)_
 - Understanding API documentation with Susan _(45min)_
 - ☕️ BREAK ☕️  _(20mins)_
@@ -21,49 +21,50 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ##### IN CLASS SUPPORT
 - Live Questions: Asaf 
-- Debugging: Susan    
+- Debugging: Susan     -->
 
 
 ### Weekly Schedule
 
-Week 4: Chewing on some leathery JavaScript concepts and using API's
+Week 5: Advanced Javascript and React Prep
 
 **Monday**
--   Live Online 
--   Jquery Review Code Along
--   Callback Functions
+
+-   Stand Ups 
+-   Project Presentations
+-   Project 4 Introduction
+-   Git Collaberation & Pull Requests
 -   🍴 LUNCH 🍴
--   How To Oraganize you JavaScript
--   Project work time (Final Scope Approvals for Project 3)
+-   Project work time (Scope Approvals for Project 4)
 
 
 **Tuesday**
 
--   Advanced Array Methods
--   Design for Developers
+-   Career Services: Resume Lesson
+-   Javascript Super Powers: Spread, Rest, Destructuring
 -   🍴 LUNCH 🍴
--   Regular Expressions
 -   Project Work Time
 
 **Wednesday**
 
--   Working With API'S
--   Accessing API'S with AJAX 
--   🥗LUNCH - SALAD CLUB 🥗
--   API Code Along #1: Harry Potter Spells
+-   Working With Asynchronous Events
+-   🍴 LUNCH 🍴
 -   Project work time
 
 **Thursday**
 
--   Understanding API Documentation
--   API Code Along #1: Art with Monkeys
+-   Intro to Firebase
+-   Firebase Code Along: To Do #2
 -   🍴 LUNCH 🍴
--   Mid Point Check-In's with Suzette
 -   Project Work Time
 
 **Friday**
 
---- 🥺 NO CLASS 🥺 ---
+-   Class-based Programming
+-   🍴 LUNCH 🍴
+-   Lexical Scope and Execution Context
+-   Project Work Time
+-   SHOW AND TELL 🎉
 
 
 ### Bootcamp calendar
