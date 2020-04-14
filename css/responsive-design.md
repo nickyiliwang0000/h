@@ -183,7 +183,7 @@ Media queries allow us to make changes at certain break points but that doesn't 
 
 #### Planning ahead
 
-Before you start building your desktop layout, think about how you want your design to scale down to mobile (or vice versa if you're coding mobile first). Often you'll be provided with a design for the mobile design, but sometimes you may have to make the decisions yourself! Think about what may cause you problems when you build it, and try to plan for the way the layout may change on different screen sizes. This can help you avoid stress later on!
+Before you start building your desktop layout, think about how you want your design to scale down to mobile (or vice versa if you're coding mobile-first). Often you'll be provided with a design for the mobile design, but sometimes you may have to make the decisions yourself! Think about what may cause you problems when you build it, and try to plan for the way the layout may change on different screen sizes. This can help you avoid stress later on!
 
 #### Layouts and Wrappers
 
