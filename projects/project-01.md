@@ -14,7 +14,7 @@ To show that you can take a PSD and convert it into a functional, responsive web
 
 ## Working with a design
 
-We're using an application called [Zeplin](https://zeplin.io/) to share designs with you. Zeplin provides an interactive view of your design that you can click around to extract assets and information about what you are building. It will also give you clues about measurements, font sizes, and colours.
+Take the time to fully understand the design. It will help you know how to approach your code, with lots of information about measurements, font sizes, and colours.
 
 Remember that you can discuss font sizes with the designer if you think they are too small to be read comfortably.
 
