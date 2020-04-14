@@ -181,6 +181,10 @@ As you design your site, you may need breakpoints that are larger, smaller, or i
 
 Media queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
 
+#### Planning ahead
+
+Before you start building your desktop layout, think about how you want your design to scale down to mobile (or vice versa if you're coding mobile first). Often you'll be provided with a design for the mobile design, but sometimes you may have to make the decisions yourself! Think about what may cause you problems when you build it, and try to plan for the way the layout may change on different screen sizes. This can help you avoid stress later on!
+
 #### Layouts and Wrappers
 
 Percentage widths on your elements and flexbox are gonna be your good pals when creating responsive layouts, but even they can't do **all** the work.
@@ -216,6 +220,11 @@ img {
 ```
 
 Now try changing the size of the browser window. 
+
+#### Flexbox and Grid
+
+Two of your best friends in responsive design will be **flexbox** and **css grids**, which we will cover very soon! Using either of these properly can help minimize the number of breakpoints in your code and all your layouts to flow easily as they scale up and down. 
+
 
 ## Responsive testing
 
