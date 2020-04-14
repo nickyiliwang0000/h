@@ -223,7 +223,7 @@ Now try changing the size of the browser window.
 
 #### Flexbox and Grid
 
-Two of your best friends in responsive design will be **flexbox** and **css grids**, which we will cover very soon! Using either of these properly can help minimize the number of breakpoints in your code and all your layouts to flow easily as they scale up and down. 
+Two of your best friends in responsive design will be **flexbox** and **CSS grids**, which we will cover very soon! Using either of these methods can help minimize the number of breakpoints in your code and all your layouts to flow easily as they scale up and down. 
 
 
 ## Responsive testing
