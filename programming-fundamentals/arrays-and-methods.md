@@ -258,7 +258,6 @@ Here are a handful of common ones:
 |`splice()` | 	Adds/Removes elements from an array |
 |`toString()` | 	Converts an array to a string, and returns the result |
 |`unshift()` | 	Adds new elements to the beginning of an array, and returns the new length |
-|`valueOf()` | 	Returns the primitive value of an array |
 
 Bookmark this array methods cheatsheet either one of these array methods cheat sheets.
 * <https://devhints.io/js-array>
