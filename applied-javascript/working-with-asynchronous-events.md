@@ -453,9 +453,7 @@ However, rather than
 
 our JS reads it like
 
-`$.when( [ ??? ] )`
-
-and just says `"AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!"  -.when()`
+`$.when( [AN ARRAY! THIS IS ALREADY A RETURNED VALUE, NOTHING TO WAIT FOR HERE!] )`
 
 Instead, we will spread those promises out:
 
