@@ -38,8 +38,8 @@ Global execution context
 let name = "Verna";
 let age = "72";
 
-    function phoneCall(number, person){
-      console.log("Calling " + number + "for " + person)
+    function phoneCall(number, person) {
+      console.log("Calling " + number + " for " + person);
     }
   
     function callGrandma() {
@@ -77,8 +77,8 @@ good-grandchild.js
 let name = "Verna";
 let age = "72";
 
-    function phoneCall(number, person){
-      console.log("Calling " + number + "for " + person)
+    function phoneCall(number, person) {
+      console.log("Calling " + number + " for " + person);
     }
 
     function callGrandma() {
