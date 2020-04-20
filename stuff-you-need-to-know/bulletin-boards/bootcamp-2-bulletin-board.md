@@ -29,15 +29,21 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 Week 6: ...React
 
 **Monday**
+
 -   **10am Javascript/Jquery Test**
 -   Stand Ups 
 -   Making Our Code Modular
 -   🍴 LUNCH 🍴
--   Intro To React
 -   Project Work time
 
 
 **Tuesday**
+
+-   Intro To React
+-   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 5 🌸
+-   Project Work Time
+
+**Wednesday**
 
 -   **10am Project 4 Due**
 -   Project 4 Presentations
@@ -46,23 +52,18 @@ Week 6: ...React
 -   Events and State
 -   Lifecycles
 
-**Wednesday**
+**Thursday**
 
 -   Props
--   🍴 LUNCH 🍴
+-   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 6 🌸
 -   Introduce Project 5
 -   Project Work Time
 
-**Thursday**
-
--   Function Components
--   🍴 LUNCH 🍴
--   Using Firebase in React
--   Project Work Time
 
 **Friday**
 
--   Git Hub Pages and React
+-   Peer Code Review Sesson
+-   Function Components
 -   🍴 LUNCH 🍴
 -   Project Work Time
 -   SHOW AND TELL 🎉
