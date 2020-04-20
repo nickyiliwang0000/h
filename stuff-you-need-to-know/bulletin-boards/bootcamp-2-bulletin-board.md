@@ -26,43 +26,44 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 5: Advanced Javascript and React Prep
+Week 6: ...React
 
 **Monday**
-
+-   **10am Javascript/Jquery Test**
 -   Stand Ups 
--   Project Presentations
--   Project 4 Introduction
--   Git Collaberation & Pull Requests
+-   Making Our Code Modular
 -   🍴 LUNCH 🍴
--   Project work time (Scope Approvals for Project 4)
+-   Intro To React
+-   Project Work time
 
 
 **Tuesday**
 
--   Career Services: Resume Lesson
--   Javascript Super Powers: Spread, Rest, Destructuring
+-   **10am Project 4 Due**
+-   Project 4 Presentations
+-   Breaking our Apps into Components
 -   🍴 LUNCH 🍴
--   Project Work Time
+-   Events and State
+-   Lifecycles
 
 **Wednesday**
 
--   Working With Asynchronous Events
+-   Props
 -   🍴 LUNCH 🍴
--   Project work time
+-   Introduce Project 5
+-   Project Work Time
 
 **Thursday**
 
--   Intro to Firebase
--   Firebase Code Along: To Do #2
+-   Function Components
 -   🍴 LUNCH 🍴
+-   Using Firebase in React
 -   Project Work Time
 
 **Friday**
 
--   Class-based Programming
+-   Git Hub Pages and React
 -   🍴 LUNCH 🍴
--   Lexical Scope and Execution Context
 -   Project Work Time
 -   SHOW AND TELL 🎉
 
