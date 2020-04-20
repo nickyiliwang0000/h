@@ -82,11 +82,10 @@ Here's how we would move the information about our visitors into our state:
 
 ```jsx
 class Counter extends Component {
-  // the constructor allows us to set default properties, such as the state, of our new component.
+  // The constructor allows us to set default properties, such as the state, of our new component.
+  // Note that when using the extends keyword, the super method is required to gain access the special stuff that comes with being a React Component
   constructor() {
-    // when using the extends keyword, the super method is required to gain access the special stuff that comes with being a React component
     super();
-
     this.state = {
       visitors: 0
     }
