@@ -41,10 +41,8 @@ AMP pages
 bookmarklets
 custom tool tips
 d3.js
-granim.js
 impress.js
 knock-out
-Label & Labelledby
 lodash
 ml5.js
 p5.js
@@ -59,7 +57,6 @@ stroke-dash
 SVG Morph
 text-path
 three.js
-tilt.js
 tone.js
 touchstart
 ```
@@ -79,17 +76,18 @@ chart.js
 SweetAlerts
 cycle.js
 CSS shine
+tilt.js
 CSS Masks
+granim.js
 draggable.js
 mix-blend-mode
 custom cursors
 draft.js
-animate.css
+label & labelledby
 animate-on-scroll
 :focus-within
 sketch.js
 Konami Codes
 particle.js
 custom SVGs
-brain.js
 ```
