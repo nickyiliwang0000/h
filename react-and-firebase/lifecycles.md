@@ -7,18 +7,22 @@
 
 # The React component lifecycle
 
-When we talk about the lifespan of a human, we talk about the stages of their life: childhood, adolescence, adulthood, old age. Well, just like humans, React components have their own lifespan, called a _lifecycle_.
+React components each go through a series of stages in their lifespan, called a _lifecycle_. These are a lot like when we talk about the stages in the lifespan of a human; childhood, adolescence, adulthood, old age.
 
-And just like the stages in a human's life, React components have stages called _lifecycle methods_.
+React components have built-in functions called _lifecycle methods_, which let us step in at any point in their lifecycle. These methods let us perform tasks based on if our component has loaded, rendered, changed, etc.
+
 
 ## What are the lifecycle methods?
+
 Sometimes, you will find you need to perform a little bit of business before you're ready for your component to render on the page. Maybe you'd like to make sure you have a piece of data that you're retrieving from an API, or you'd like to make sure a user is authenticated to view the page that they've requested. Lifecycle methods can help you do that.
 
 Lifecycle methods allow you to intervene at various stages of a React component's lifecycle (i.e. during its creation/birth, updating/life, and destruction/death), in order to perform some kind of action. Since you don't have direct access to the React codebase, these lifecycle methods offer an opportunity for you to interact with and inject your own code into what would otherwise be a black box.
 
 When a method allows you to intervene in the process of an existing piece of code, it is often called a _hook_.
 
+
 ### Mounting and unmounting
+
 Let's start with a bit of terminology.
 
 Whenever a React component gets added to the DOM, it's called _mounting_. We say that the component successfully _mounted_ to the DOM. 
@@ -43,9 +47,11 @@ When a component updates because its state or prop values were changed, this lif
   * **Note:** Actions performed here typically need to be wrapped in a condition to prevent an infinite loop. The documentation has more information [here](https://reactjs.org/docs/react-component.html#componentdidupdate).
 
 When a component is unmounted from the DOM, this one lifecycle method is called:
-* **componentWillUnmount()** This is where you stop any recurrent logic associated with that component (like a timer or a recurring API call).
+* **componentWillUnmount()** This is where you stop any recurrent logic associated with that component (like an event listener, timer or a recurring API call).
+
 
 ## Using the lifecycle methods
+
 Hooking in to the lifecycle methods is very straightforward - we've actually already done it with both `render()` and `constructor()`! 
 
 In order to access the lifecycle methods, simply reference them inside of your component:
