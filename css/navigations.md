@@ -115,32 +115,36 @@ It's important to use native semantic elements when possible. Using `nav` here w
 
 A really useful part of doing navigations with unordered lists is that we can create dropdown navigations with nothing but a few CSS rules, some clever positioning and the `:hover` state.
 
-Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav--ANSWER--bootcamp.html).
+Let's work through an example. Open up [dropdown-nav.html](https://hychalknotes.s3.amazonaws.com/dropdown-nav--bootcamp.html) in your editor and browser. We'll be working towards [this](https://hychalknotes.s3.amazonaws.com/dropdown-nav--ANSWER--bootcamp.html).
 
-Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the anchor tags to black and add a little padding:
+Let's style the list and nested list different colours so we know what's going on. While we're at it, change the color of the `main-menu` anchor tags to white and add a little padding, and the `sub-menu` anchor tags should be black:
 
 ```css
 .main-menu {
-  background: pink;
-  padding: 10px;
+  background: #221c38;
 }
 
 .sub-menu {
-  background: peachpuff;
+  background: #96a1be;
 }
 
 .main-menu li a {
-  color: black;
+  color: white;
   padding: 0 20px;
+}
+
+.sub-menu li a {
+  color: black;
 }
 ```
 
-Now we need to make the first list items sit next to each other:
+Now we need to make the first list items sit next to each other and add a little padding:
 
 ```css
 .main-menu li {
   float: left;
   list-style: none;
+  padding: 10px;
 }
 ```
 
