@@ -26,8 +26,10 @@ Whenever a React component gets added to the DOM, it's called _mounting_. We say
 When a React component is removed from the DOM, it's called _unmounting_. We say that that component successfully _unmounted_.
 
 There are many React lifecycle methods (see [The Component Lifecycle](https://facebook.github.io/react/docs/react-component.html)), visualized here:
+<!-- 
+![react component lifecycle methods](https://hychalknotes.s3.amazonaws.com/react-lifecycle-diagram.jpg) -->
 
-![react component lifecycle methods](https://hychalknotes.s3.amazonaws.com/react-lifecycle-diagram.jpg)
+![react component lifecycle methods](https://camo.githubusercontent.com/f11a59a82d4d664d98c6a5a36fb4d2462a96fffb/68747470733a2f2f68796368616c6b6e6f7465732e73332e616d617a6f6e6177732e636f6d2f72656163742d73696d706c652d6c6966656379636c652e706e67)
 
 You don't need to know all of these methods, especially when first starting out. We're going to focus on some of the most important and commonly used ones. 
 
