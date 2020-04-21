@@ -281,64 +281,62 @@ Now you'll notice that every time you click the increment button, the number on 
 
 And that's all there is to it! `onClick` is one of many different events that React can handle - there's also `onMouseOver`, `onMouseDown` etc. - [check out the React docs for the full list](https://facebook.github.io/react/docs/events.html).
 
-### Conditional Rendering and Ternary Operators
+### Conditional rendering and ternary operators
 
-So what happens if we want to reflect state changes in our application? Maybe we want to show a welcome screen when a user logs into a page? 
+Often, we want to reflect state changes in our application conditionally. For example, maybe we want to show a welcome message only once a user logs into our page.
 
 You may be tempted to put an `if` statement in your JSX like this:
 
 ```jsx
-    render() {
-        return (
-           <div>
-          {if(userIsLoggedIn) {
-            <h1>Welcome, friend!</h1>
-          }}
-        </div>
-            )
-        }   
-    }
+render() {
+  return (
+    <div>
+      {if(userIsLoggedIn) {
+        <h1>Welcome, friend!</h1>
+      }}
+    </div>
+  )
+}
 ```
 
-Another gotcha with React is what JavaScript you can put inside of JSX. Anything that is inside of `{}` after the return _must_ be an expression, and `if` statements are **statements**, not expressions. This gets challenging when you only want to render a piece of your UI  _conditionally_. 
+This would throw an error though; a gotcha with React is that the JavaScript you put inside of JSX has to return something. This means that anything inside of curly brackets `{}` in the `return()` has to be an expression, and `if` statements are **statements**, not expressions.
 
-Luckily, React has a few ways to get around this including using ternaries for conditional rendering.
+Luckily for our dynamic React content, there are a few ways to get around this, including using _[ternary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)_ for conditional rendering.
 
-The syntax for a _ternary operator_ is: 
+The syntax for a ternary is: 
 
 `condition ? true : false`
 
 Think of the `?` as the `if` and the `:` as the `else` in a conditional statement.
 
 ```jsx
-    render() {
-        return (
-           <div>
-           {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
-        </div>
-            )
-        }   
-    }
+render() {
+  return (
+    <div>
+      {userIsLoggedIn ? <h1>Welcome, friend!</h1> : null}
+    </div>
+  )
+}
 ```
 
-The code above is saying: if the variable `userIsLoggedIn` is `true`, return the `h1` tag, otherwise don't return anything (`null`). 
+The code above is saying: if the variable `userIsLoggedIn` is `true`, return the `h1` tag, otherwise return `null`. 
     
-Using ternary operators to conditionally render content can get complicated pretty quickly, so it is also common to use functions or variables **outside** of the return to accomplish this:
+Using ternary operators to conditionally render content can get messy pretty quickly, so it is also common to use functions or variables outside of the `return()` to accomplish this:
 
 ```jsx
-    render() {
-      let markupShowingOnPage = null;
+render() {
+  let markupShowingOnPage = null;
 
-      if(userIsLoggedIn) {
-        markupShowingOnPage = `<h1>Welcome, friend!</h1>`;
-      }
+  if (userIsLoggedIn) {
+    markupShowingOnPage = `<h1>Welcome, friend!</h1>`;
+  }
 
-      return (
-        <div>
-          {markupShowingOnPage}
-        </div>
-      )
-    }
+  return (
+    <div>
+      {markupShowingOnPage}
+    </div>
+  )
+}
 ```
 
-You can find more information on Conditonal Rendering on the [React docs](https://reactjs.org/docs/conditional-rendering.html)! 
+You can find more information on conditional rendering in the [React docs](https://reactjs.org/docs/conditional-rendering.html).
