@@ -6,10 +6,7 @@ Project due dates can be found [here](https://github.com/HackerYou/bootcamp-note
 
 ## Project scope due date
 
-Thursday, Feb 27th, 6 p.m.
-
-<!-- Winter 2 -->
-<!-- Thursday, April 2nd, 6 p.m. -->
+Monday, April 27th, 6 p.m.
 
 ## Project description
 
@@ -40,12 +37,9 @@ Your data should come from an API or be stored in Firebase.
 
 To show a understanding of React basic concepts (e.g. state, props, components) as well as error handling and UI design.
 
-<!-- Winter 2 -->
-<!-- [scope outline document](https://forms.gle/bFrTDVQpcpVUWqDw9)  -->
-
 ## Project proposals
 
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1ZEeOBjBbn4nOEYc8xhi4wRbMWaroXSkYzwta_mcu9iA/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
+Once you have a good idea, we want you to fill out a [scope outline document](https://forms.gle/bFrTDVQpcpVUWqDw9) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline.
 
@@ -54,10 +48,7 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 <!--- ### Deployment
 (optional) In order to make deploying your app easy use the Firebase hosting features to get your site up online! There is the ability to add a custom domain if you would like, so think about a fun, shareable domain for your application . --->
 
-If you have not gotten an instructor's approval on a scope document by Thursday, Feb 27th, 6 p.m., **you will be assigned a project**.
-
-<!-- Winter 2 -->
-<!-- If you have not gotten an instructor's approval on a scope document by Thursday, April 2nd, 6 p.m., **you will be assigned a project**. -->
+If you have not gotten an instructor's approval on a scope document by Monday, April 27th, 6 p.m., **you will be assigned a project**.
 
 ## How will this project be graded?
 
@@ -96,10 +87,7 @@ You will also be given marks for your project presentation:
 2. Create a repository with a descriptive name that matches your naming convention.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages, Firebase Hosting, or on your own domain/subdomain
-5. Submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
-
-<!-- Winter 2 -->
-<!-- 5. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6). -->
+5. Submit your repo URL and live link using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
 
 ## #design in Helpcue
 
