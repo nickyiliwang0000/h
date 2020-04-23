@@ -6,7 +6,7 @@
 The Driver is the one responsible for doing the typing.
 
 #### Navigator
-The Navigator is resposible for dictating what we should type. 
+The Navigator is responsible for dictating what we should type. 
 
 The driver is being told what to type by their partner. The navigator is telling the driver what to code. It is like playing one of those games where the other person is your arms.
 
