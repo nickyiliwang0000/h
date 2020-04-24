@@ -131,6 +131,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [Accessing API data with AJAX](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/accessing-api-data-with-ajax.md)
 -   [When AJAX goes wrong](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/when-ajax-goes-wrong.md)
 -   [Understanding API documentation](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/understanding-api-documentation.md)
+-   [Museum API Code Along](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/rijksmuseum-api.md)
 -   [JavaScript superpowers: Spread, rest and destructuring](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/js-superpowers-spread-rest-and-destructuring.md)
 -   [Working with asynchronous events](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/working-with-asynchronous-events.md)
 -   [Intro to Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/intro-to-firebase.md)
