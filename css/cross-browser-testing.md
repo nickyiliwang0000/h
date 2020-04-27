@@ -153,7 +153,7 @@ For testing on iOS (iPhone), Xcode (an application used to develop iOS apps) is 
 
 ### Mobile Testing with Localhost
 
-Some test cases require you to use the physical device for testing. You can do cross-browser testing via localhost without pushing to a live sandbox site. A good article describing the process on how to utilize localhost testing on devices using your local IP can be found through [this article](https://howchoo.com/g/mte2zgrhmjf/how-to-access-a-website-running-on-localhost-from-a-mobile-phone). 
+Some test cases require you to use the physical device for testing. You can do cross-browser testing via localhost without pushing to a live sandbox site. A good article describing the process of how to utilize localhost testing on devices using your local IP can be found through [this article](https://howchoo.com/g/mte2zgrhmjf/how-to-access-a-website-running-on-localhost-from-a-mobile-phone). 
 
 Unfortunately you will not be able to access your dev tools on a mobile browser, but it will allow you to see any issues that you will need to fix.
 
