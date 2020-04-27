@@ -43,6 +43,7 @@ custom tool tips
 d3.js
 impress.js
 knock-out
+Konami Codes
 lodash
 ml5.js
 p5.js
@@ -50,13 +51,11 @@ pose.js
 preloaders
 react autocomplete
 react dnd
-reveal.js
 shape-outside
 split.js
 stroke-dash
 SVG Morph
 text-path
-three.js
 tone.js
 touchstart
 ```
@@ -86,8 +85,9 @@ draft.js
 label & labelledby
 animate-on-scroll
 :focus-within
+reveal.js
 sketch.js
-Konami Codes
+three.js
 particle.js
 custom SVGs
 ```
