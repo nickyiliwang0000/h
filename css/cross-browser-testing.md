@@ -1,21 +1,9 @@
-<!-- Is your feature request related to a problem? Please describe.
-The lesson is pretty short and not super valuable in it's current form.
-
-Describe the solution you'd like
-
- Identify clear learning objectives for cross-browser testing and document here:
-Students should learn:
- ..
- ...
- Review ConEd web-dev version of this lesson for possibly pulling into Bootcamp (and move Web-Dev version lesson to Additional Resources in that course)
- Update lesson -->
-
- # Cross-browser testing
-Testing your code across multiple browsers can be a pain, but it's crucial to do if you want to maintain a good experience for all users.
+# Cross-browser testing
+Testing your code across multiple browsers can be a pain, but it's crucial to do if you want to maintain a good experience for all users. The important thing to remember is that **you are not your user**: the browser and computer you are using are not going to be the same as someone else. You want to make sure your apps and sites look good regardless of how the user is accessing your site. If a user can't access your site on their preferred browser, it's more likely that they'll leave your site altogether than try to open it on a different browser.
 
  ## Cross-browser Compatibility
 
-It's important to understand the issues that can arise when working with different browsers. While all browsers have agreed on some concepts, such as the <!DOCTYPE> at the start of your HTML or that block and inline elements will behave in specific ways, there are actually few other concepts they have chosen to support and interpret in a similar way. This means that while we can expect CSS filters to work on some browsers, they may not work on another the same way.   
+It's important to understand the issues that can arise when working with different browsers. While all browsers have agreed on some concepts, such as the <!DOCTYPE> at the start of your HTML or that block and inline elements will behave in specific ways, there are actually few other concepts they have chosen to support and interpret in a similar way.   
 
 There are five main browsers developers need to consider:
 
@@ -52,7 +40,7 @@ Ask yourself the 4 Ws when consider how you will approach testing your website:
 
     StatCounter has a great map and stats that you can target by date range and region that can be [found by clicking here](http://gs.statcounter.com/browser-market-share/desktop-tablet-console/worldwide#monthly-201901-201906-map).
     
-    In 2019, Chrome was the most widely used browser internationally. Each region has their own most used browsers, and the top three should be tested. Also keep in mind that those in more remote areas may have slower internet connections and that should be considered when testing.
+    In 2020, Chrome is the most widely used browser internationally. Each region has their own most used browsers, and the top three should be tested. Also keep in mind that those in more remote areas may have slower internet connections and that should be considered when testing.
 
 * Who: Who is the website primarily targeted towards? The age range of the target demographic of your website should affect how you approach testing.
 
@@ -62,10 +50,12 @@ Ask yourself the 4 Ws when consider how you will approach testing your website:
 
 If you are working on a project for a client or other stake-holders it's important to gather information about which browsers they need you to support. The scope of the work can be greatly affected by this. You'll need to account for cross-browser testing time as well as time to fix any bugs that are discovered in this testing process. It's also important to consider which operating systems are being supported. Browsers may behave differently on a mac vs a windows machine.
 
+It's worth noting that your site doesn't need to look the same on 100% of all browsers. With the above tips, we can help ensure that we are making decisions based on who the majority of the users will be.
+
 ## CanIUse
 [CanIUse.com](https://caniuse.com/) is a website that allows developers to check which properties are supported, and to what extent, on different browsers and their different versions. It also provides developers with useful insight about known bugs and issues on certain browsers when using specific properties. Web development moves extremely quickly and CanIUse is especially useful when trying out new properties.
 
-For example, when looking up `position: sticky` on [CanIUse](https://caniuse.com/), the following table will come up: 
+For example, when looking up `position: sticky` on [CanIUse](https://caniuse.com/#search=position%3A%20sticky), the following table will come up: 
 
 ![Screenshot from the website CanIUse, showing the support for "position: sticky"](https://hychalknotes.s3.amazonaws.com/canIUse--conEd.png)
 
@@ -78,7 +68,7 @@ This table displays the support per browser and version using colours:
 
 It also provides information about known issues and bugs. For example, the last three versions of Chrome and Edge as well as Opera have partial support because `position: sticky` will not work when used in a `<thead>`, the table head element, or `<tr>`, the table row element. If our websites do not use tables, this issue isn't a concern at all. CanIUse also shows IE with a red background, meaning there is no support for `position: sticky`, which should be considered if the target audience are large users of IE.
 
-Try looking up "CSS Filters" and "Flexbox" on CanIUse to learn about the support offered by each browser. 
+Try looking up "Flexbox" on CanIUse to learn about the support offered by each browser. 
 
 Web development moves really fast. There will be new properties introduced in the CSS specifications in the future. So it's important for us to know which browsers have fully supported these properties and techniques before using them in our projects.
 
@@ -97,10 +87,10 @@ To run them, you need a free program called Virtual Box — [https://www.virtual
 You can download a copy of windows specially made for testing IE on <http://modern.ie>
 
 ### Testing Firefox, Chrome & Opera
-For Google Chrome, Firefox and Opera, you don't need to worry about older versions as much - it auto updates. they are what we call <a href="https://www.techopedia.com/definition/31094/evergreen-browser" target="_blank">Evergreen Browsers</a>. They update frequently and automatically. However, you should still continue to test your site on these browsers! It is always wise to check your website on both a PC and Mac version of both. 
+For Google Chrome, Firefox and Opera, you don't need to worry about older versions as much - it auto updates. As we discussed before, they are what we call <a href="https://www.techopedia.com/definition/31094/evergreen-browser" target="_blank">Evergreen Browsers</a>: they update frequently and automatically. However, you should still continue to test your site on these browsers! It is always wise to check your website on both a PC and Mac version of both. 
 
 ### Testing Safari
-For Safari you generally don't need to worry as much either, but in some edge cases use this: [http://michelf.ca/projects/multi-safari/](http://michelf.ca/projects/multi-safari/)
+For Safari, you generally don't need to worry about older versions, but here is a tool you could utilize in certain edge cases: [http://michelf.ca/projects/multi-safari/](http://michelf.ca/projects/multi-safari/) (Please note that this is no longer being updated, so it is only useful for testing old versions of Safari). 
 
 ### Other Testing
 Here are a few tools you can use to help test:
@@ -116,14 +106,20 @@ Here are a few tools you can use to help test:
 * [MultiFirefox](http://davemartorana.com/multifirefox/) Allows you to run various version of Firefox simultaneously.
 * [DebugBar](http://www.my-debugbar.com/)
 
+### Hardware Testing
+
+With all of the tools available, it is also helpful to test out your site on an actual device! Some companies have access to different devices and browser versions to help test sites and apps. You may also work alongside a Quality Assurance (QA) team who will be looking over your work on other devices. 
+
+For the purpose of this class, try asking a friend or classmate to open your site on their computer or phone if they use a different device than you do. 
+
 ## Vendor prefixes
 Vendor prefixes, also known as browser prefixes, help browsers give extra support to new CSS features. They became extremely popular when CSS3 came out, when a ton a new properties became available and browsers wanted to experiment with how they would implement the properties. Vendor prefixes cannot give support to properties that have no support, but add browser-specific support to certain properties that a browser is experimenting with.
 
 Browser manufacturers each have their own vendor prefix that is pre-pended before the CSS property:
-* Chrome, Safari: `-webkit-`
+* Chrome, Safari, new versions of Opera: `-webkit-`
 * Firefox: `-moz-`
 * Internet Explorer: `-ms-`
-* Opera: `-o-`
+* Old versions of Opera: `-o-`
 
 For example, `border-radius` was introduced with CSS3. While browsers were working on testing out what the property would look like on each of their products, developers would set `border-radius` like so:
 
@@ -147,6 +143,8 @@ div {
 
 When working with any new property, check CanIUse to see if a prefix is needed to ensure the property can run properly. CCS3 has been out for a while now, meaning prefixes are less common to see but are still used and important to understand.
 
+If you don't want to write out each vendor prefix, you can use a site like [Autoprefixer](https://autoprefixer.github.io/) to generate the proper syntax for you.
+
 ## Mobile Testing
 Most browser dev tools come with a way to preview what your site will look like on mobile. However, there are occassionally discrepencies between what the dev tools show you, and how the site actually appears on a device. For this reason, testing on actual hardware is always preferable. Try it on your phone to start, but it's also a great idea to find someone with a different phone or tablet model who can test your site for you too!
 
@@ -155,9 +153,9 @@ For testing on iOS (iPhone), Xcode (an application used to develop iOS apps) is 
 
 ### Mobile Testing with Localhost
 
-Some test cases require you to use the physical device for testing. You can do cross-browser testing via localhost without pushing to a live sandbox site. A good article describing the process on how to utilize localhost testing on devices using your local IP can be found at the following link:
+Some test cases require you to use the physical device for testing. You can do cross-browser testing via localhost without pushing to a live sandbox site. A good article describing the process of how to utilize localhost testing on devices using your local IP can be found through [this article](https://howchoo.com/g/mte2zgrhmjf/how-to-access-a-website-running-on-localhost-from-a-mobile-phone). 
 
-[http://support.apple.com/kb/ts5329](http://support.apple.com/kb/ts5329)
+Unfortunately you will not be able to access your dev tools on a mobile browser, but it will allow you to see any issues that you will need to fix.
 
 
 ### Remote Debugging
@@ -166,11 +164,11 @@ If you do find bugs specific to mobile devices, you can use remote debugging to 
 
 You can remote debug Chrome for Android using the phone's USB cable and desktop Chrome and (OSX and Windows). <https://developer.chrome.com/devtools/docs/remote-debugging>
 
-Similarly, you can remote debug iOS Safari using the iPhone/iPad USB cable and desktop Safari (OSX only). <http://moduscreate.com/enable-remote-web-inspector-in-ios-6/>
+Similarly, you can remote debug iOS Safari using the iPhone/iPad USB cable and desktop Safari (OSX only). <https://appletoolbox.com/use-web-inspector-debug-mobile-safari/>
 
 ### Where to start testing
 
-We have outlined a lot of different ways we can test various environments. It is important to note that it is not expected of you to start testing and using all of these methods. Start with Evergreen Browsers as your baseline, and if you know the project you are working on will be used on a specific browser, look into the various methods needed to test that!
+We have outlined a lot of different ways we can test various environments. It is important to note that it is not expected of you to start testing and using all of these methods. Start with Evergreen Browsers as your baseline, and if you know the project you are working on will be used on a specific browser, look into the various methods needed to test that! It's also a good idea to start testing early to avoid more work down the line by waiting until the moment you're deploying!
 
 ### Developing with Browser Support in mind
 
