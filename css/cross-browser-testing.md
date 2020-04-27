@@ -90,7 +90,7 @@ You can download a copy of windows specially made for testing IE on <http://mode
 For Google Chrome, Firefox and Opera, you don't need to worry about older versions as much - it auto updates. As we discussed before, they are what we call <a href="https://www.techopedia.com/definition/31094/evergreen-browser" target="_blank">Evergreen Browsers</a>: they update frequently and automatically. However, you should still continue to test your site on these browsers! It is always wise to check your website on both a PC and Mac version of both. 
 
 ### Testing Safari
-For Safari you generally don't need to worry about older versions as much either, but in some edge cases use this: [http://michelf.ca/projects/multi-safari/](http://michelf.ca/projects/multi-safari/) (Please note that this is no longer being updated, so it is only useful for testing old versions of Safari). 
+For Safari, you generally don't need to worry about older versions, but here is a tool you could utilize in certain edge cases: [http://michelf.ca/projects/multi-safari/](http://michelf.ca/projects/multi-safari/) (Please note that this is no longer being updated, so it is only useful for testing old versions of Safari). 
 
 ### Other Testing
 Here are a few tools you can use to help test:
