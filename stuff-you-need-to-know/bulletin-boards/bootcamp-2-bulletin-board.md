@@ -26,44 +26,39 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 6: ...React
+Week 7: Applying React in Our Projects
 
 **Monday**
 
--   **10am Javascript/Jquery Test**
 -   Stand Ups 
--   Making Our Code Modular
+-   Using React and Firebase
 -   🍴 LUNCH 🍴
 -   Project Work time
 
 
 **Tuesday**
 
--   Intro To React
--   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 5 🌸
+-   Git Hub Pages and React
+-   🍴 LUNCH 🍴
 -   Project Work Time
 
 **Wednesday**
 
--   **10am Project 4 Due**
--   Project 4 Presentations
--   Breaking our Apps into Components
+-   "Harry Potter and The Secret Jerks" - React Code Along
 -   🍴 LUNCH 🍴
--   Events and State
--   Lifecycles
+-   React Code Along (Cont.)
+-   Project Work Time
 
 **Thursday**
 
--   Props
--   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 6 🌸
--   Introduce Project 5
+-   Project Work Time
+-   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 7 🌸
 -   Project Work Time
 
 
 **Friday**
 
--   Peer Code Review Sesson
--   Function Components
+-   Project Work Time
 -   🍴 LUNCH 🍴
 -   Project Work Time
 -   SHOW AND TELL 🎉

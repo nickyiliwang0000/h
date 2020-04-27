@@ -3,6 +3,7 @@
 - Add data to a Firebase database manually AND using .push()
 - Retreive data from a Firebase database using .on('value')
 - Delete data using .remove()
+- retrieve data from and input and save it in state
  -->
 # Using Firebase with React
 
@@ -16,25 +17,27 @@ Having databases for our applications opens up a ton of possibilities for the ki
 ### Setting up Firebase
 As always, the first thing that we'll need to do is create a new project inside our Firebase dashboard.
 
-1. Head over to <https://firebase.google.com> and click 'Go to console' in the top right corner.
-  ![Firebase console](https://hychalknotes.s3.amazonaws.com/01-create-project-firebase-console.png)
-2. Click 'Add Project'.
+1. Start by creating a React project for our app. Run `npx create-react-app bookshelf` in your terminal.
 
-3. Give your new project a name and click 'Create Project'.
+2. Head over to <https://firebase.google.com> and click 'Go to console' in the top right corner.
+  ![Firebase console](https://hychalknotes.s3.amazonaws.com/01-create-project-firebase-console.png)
+3. Click 'Add Project'.
+
+4. Give your new project a name and click 'Create Project'.
   ![Firebase console](https://hychalknotes.s3.amazonaws.com/02-name-project-firebase.png)
 
-4. Click 'Add Firebase to your web app' or the `</>` icon. This will give you the embed code to add Firebase to your project.
+5. Click 'Add Firebase to your web app' or the `</>` icon. This will give you the embed code to add Firebase to your project.
   ![Firebase config image](https://hychalknotes.s3.amazonaws.com/06-firebase-config.png)
 
-5. You're now ready to hook your React project up to Firebase. Create a new app by running  `create-react-app bookshelf`.
-
-6. We will also need to install `firebase` , run `npm install firebase --save` 
+5. You're now ready to hook your React project up to Firebase. We will  need to install `firebase` , run `npm install firebase --save` in your `bookshelf` folder from your terminal. 
   * The `npm install` command downloads files. If you go into your `node_modules` folder, you should see a folder called `firebase`.
-7. In your `src` folder create a filed `firebase.js` and add the following lines:
+
+6. In your `src` folder create a filed `firebase.js` and add the following lines:
 
 ```javascript
 // firebase.js
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
 // Initialize Firebase
 // USE YOUR CONFIG OBJECT
