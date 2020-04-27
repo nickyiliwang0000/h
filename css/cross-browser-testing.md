@@ -1,5 +1,5 @@
 # Cross-browser testing
-Testing your code across multiple browsers can be a pain, but it's crucial to do if you want to maintain a good experience for all users. The important thing to remember is that **you are not your user**: the browser and computer you are using is not going to be the same as someone elses. You want to make sure your apps and sites look good regardless of how the user is accessing your site. If a user can't access your site on their preferred browser, it's more likely that they'll leave your site altogether than try to open it on a different browser.
+Testing your code across multiple browsers can be a pain, but it's crucial to do if you want to maintain a good experience for all users. The important thing to remember is that **you are not your user**: the browser and computer you are using are not going to be the same as someone else. You want to make sure your apps and sites look good regardless of how the user is accessing your site. If a user can't access your site on their preferred browser, it's more likely that they'll leave your site altogether than try to open it on a different browser.
 
  ## Cross-browser Compatibility
 
