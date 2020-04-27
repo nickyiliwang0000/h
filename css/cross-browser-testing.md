@@ -110,7 +110,7 @@ Here are a few tools you can use to help test:
 
 With all of the tools available, it is also helpful to test out your site on an actual device! Some companies have access to different devices and browser versions to help test sites and apps. You may also work alongside a Quality Assurance (QA) team who will be looking over your work on other devices. 
 
-For the purpose of this class, try asking a friend of classmate to open your site on their computer or phone if they use a different device than you do. 
+For the purpose of this class, try asking a friend or classmate to open your site on their computer or phone if they use a different device than you do. 
 
 ## Vendor prefixes
 Vendor prefixes, also known as browser prefixes, help browsers give extra support to new CSS features. They became extremely popular when CSS3 came out, when a ton a new properties became available and browsers wanted to experiment with how they would implement the properties. Vendor prefixes cannot give support to properties that have no support, but add browser-specific support to certain properties that a browser is experimenting with.
