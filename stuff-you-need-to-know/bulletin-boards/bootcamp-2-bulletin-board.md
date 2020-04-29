@@ -63,6 +63,49 @@ Week 7: Applying React in Our Projects
 -   Project Work Time
 -   SHOW AND TELL 🎉
 
+Week 8: Client React Projects 
+
+**Monday**
+
+-   **PROJECT 5 DUE @ 10AM**
+-   **Blog Post #3 due**
+-   Stand Ups 
+-   Project 5 Presentations 
+-   Project 6 Introduction
+-   🍴 LUNCH 🍴
+-   Project Work time
+
+
+**Tuesday**
+
+-   React Router
+-   Movie API Code Along
+-   🍴 LUNCH 🍴
+-   Movie API Code Along - CONT
+-   Project Work Time
+
+**Wednesday**
+
+-   **REACT TEST @ 10am**
+-   Peer Review Project 5
+-   Project Work Time
+-   🍴 LUNCH 🍴
+-   Project Work Time
+
+**Thursday**
+
+-   Project Work Time
+-   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 8 🌸
+-   Project Work Time
+
+
+**Friday**
+
+-   Career Services - Job Seeker Intro Part 1
+-   Project Work Time
+-   🍴 LUNCH 🍴
+-   Project Work Time
+-   SHOW AND TELL 🎉
 
 ### Bootcamp calendar
 
