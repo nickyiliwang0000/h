@@ -43,7 +43,6 @@ custom tool tips
 d3.js
 impress.js
 knock-out
-Konami Codes
 lodash
 ml5.js
 p5.js
@@ -56,7 +55,6 @@ split.js
 stroke-dash
 SVG Morph
 text-path
-tone.js
 touchstart
 ```
 
@@ -90,4 +88,6 @@ sketch.js
 three.js
 particle.js
 custom SVGs
+Konami Codes
+tone.js
 ```
