@@ -18,7 +18,7 @@ You will be given an opportunity to provide feedback about the experience of wor
 
 It can be valuable to set your group's working expectations from the beginning. Take some time to decide what your group's working hours should be (times that all members are expected to be available and present), how to handle pull requests (how many `👍` are required before a merge can be executed), and any other arrangements that will help accomodate the needs of your specifc group.
 
-Since we are also nearing the end of Helpcue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue'. Use your peers, your bootcamp buddies, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life.
+Since we are also nearing the end of Help Cue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue'. Use your peers, your bootcamp buddies, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life.
 
 ## How will this project be graded?
 
@@ -54,9 +54,9 @@ Note that each student will be given about a minute to speak during the presenta
 
 ## Project timeline
 
--   **End of day Wednesday:** Organization set up on GitHub, wireframes, game plan/pseudo code and successful return of data from API (if applicable)
--   **End of day Friday:** Beta version of the app
--   **End of day Tuesday** Project live on gh-pages (highly recommended if you are using React Router), or your own domain
+-   **End of day Tuesday:** Organization set up on GitHub, wireframes, game plan/pseudo code and successful return of data from API (if applicable)
+-   **End of day Thursday:** Beta version of the app
+-   **End of day Friday** Project live on gh-pages (highly recommended if you are using React Router), or your own domain
 
 Commit early, commit often.
 
@@ -64,20 +64,16 @@ Commit early, commit often.
 
 You will be provided with a client brief that includes some requirements as well as a style guide that you need to follow.
 
-<!-- Winter 2 -->
-<!-- Find your group [here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing) in the 'Project 6' tab. Client briefs are linked to the group headings. -->
+Find your group [here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing) in the 'Project 6' tab. Client briefs are linked to the group headings.
 
-Find your group [here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742) in the 'Project 6' tab. Client briefs are linked to the group headings.
+Your instructors are your clients. 
 
-Your instructors are your clients. They're human! Talk to them! If you want to change something, if you run into a problem, if you have questions about your brief, or if you have an idea about how to do something better because of the data you're getting, **get an instructor to sign off on any changes you want to make**.
+They're human! Talk to them! If you want to change something about the scope or the design, if you run into a problem, if you have questions about your brief, or if you have an idea about how to do something better because of the data you're getting, **get an instructor to sign off on any changes you want to make**.
 
 ## Submitting your project
 
 1. Deploy your website to Firebase Hosting or your own domain/subdomain.
-2. _One person_ from the group will submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit).
-
-<!-- Winter 2 -->
-<!-- [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6) -->
+2. _One person_ from the group will submit your repo URL and live URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
 
 ## #design in Helpcue
 
