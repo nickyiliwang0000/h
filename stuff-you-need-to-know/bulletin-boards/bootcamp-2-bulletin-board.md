@@ -26,43 +26,6 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 7: Applying React in Our Projects
-
-**Monday**
-
--   Stand Ups 
--   Using React and Firebase
--   🍴 LUNCH 🍴
--   Project Work time
-
-
-**Tuesday**
-
--   Git Hub Pages and React
--   🍴 LUNCH 🍴
--   Project Work Time
-
-**Wednesday**
-
--   "Harry Potter and The Secret Jerks" - React Code Along
--   🍴 LUNCH 🍴
--   React Code Along (Cont.)
--   Project Work Time
-
-**Thursday**
-
--   Project Work Time
--   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 7 🌸
--   Project Work Time
-
-
-**Friday**
-
--   Project Work Time
--   🍴 LUNCH 🍴
--   Project Work Time
--   SHOW AND TELL 🎉
-
 Week 8: Client React Projects 
 
 **Monday**
