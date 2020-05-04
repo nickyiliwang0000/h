@@ -49,13 +49,14 @@ p5.js
 pose.js
 preloaders
 react autocomplete
-react dnd
 shape-outside
 split.js
 stroke-dash
 SVG Morph
 text-path
 touchstart
+Konami Codes
+sketch.js
 ```
 
 ### Claimed:
@@ -69,6 +70,7 @@ anime.js
 parallax
 typed.js
 recursion
+ReactDND
 chart.js
 SweetAlerts
 cycle.js
@@ -81,13 +83,12 @@ mix-blend-mode
 custom cursors
 draft.js
 label & labelledby
+OAuth
 animate-on-scroll
 :focus-within
 reveal.js
 sketch.js
 three.js
 particle.js
-custom SVGs
-Konami Codes
 tone.js
 ```
