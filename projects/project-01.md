@@ -60,30 +60,30 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcO
 
 <!-- Coming soon! -->
 
-**Biker Land**
+**Arora**
 
-[design](https://scene.zeplin.io/project/5c42348575d24d013c4a3e54)
+[design](https://scene.zeplin.io/project/5cacba8e16f8996023073ad9)
 
-[assets](https://hychalknotes.s3.amazonaws.com/biker-land-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/arora-assets.zip)
 
-**One Magazine**
+**Drive Solo**
 
-[design](https://scene.zeplin.io/project/5c424dadc50a21377f03c851)
+[design](https://scene.zeplin.io/project/5cab7d3ad4655b65fd31a06b)
 
-[assets](https://hychalknotes.s3.amazonaws.com/one-magazine-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/drive-solo-assets.zip)
 
-**Animal Refuge**
+**Foot Forward**
 
-[design](https://scene.zeplin.io/project/5c424fe0c50a21377f03d900)
+[design](https://scene.zeplin.io/project/5c9be27eff87da691c56c139)
 
-[assets](https://hychalknotes.s3.amazonaws.com/animal-land-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/foot-forward-assets.zip)
 
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
 2. Create a repository called `firstname-lastname-project-one`
 3. Push your files to GitHub.
-4. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
+4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
 ## #design in Helpcue
 
