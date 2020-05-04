@@ -31,7 +31,7 @@ Week 1
 
 * Kickoff activity
 * Advanced Layouts
-* 🥗LUNCH - SALAD CLUB 🥗
+* 🍴 LUNCH 🍴
 * Responsive Design
 * Project Work Time
 
@@ -67,7 +67,7 @@ Tests = 5% each
 Exam = 25%
 ```
 
-Submission form:
+Project submission form: https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit
 
-Group assignments: [Here]()
+Group assignments: [Here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=1112317742)
 
