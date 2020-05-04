@@ -3,65 +3,59 @@
 
 ### Schedule
 
-Week 8 🚀
+Week 1
 
 **Monday**
 
-* React Test 📝
-* Motivational Monday
-* Standups
-* Project Work Time
+* Spring 1 Bootcamp Kick-off
+* Juno Orientation
 * 🍴 LUNCH 🍴
-* Project Work Time
+* GitHub orientation
+* Philosophy of best practices for HTML/CSS
+* Meet your text editor
+* Browser dev tools
+* HTML/CSS Review
+* Project 1 introduction
 
 **Tuesday**
 
-* Project Work Time
+* Kickoff activity
+* CSS box-model
+* CSS background colour and images
 * 🍴 LUNCH 🍴
-* Project Work Time
-* Activity
+* CSS layout
+* Display and orientation
+* Helpcue orientation
 
 **Wednesday**
 
-* Project Work Time
+* Kickoff activity
+* Advanced Layouts
 * 🥗LUNCH - SALAD CLUB 🥗
+* Responsive Design
 * Project Work Time
 
 **Thursday**
 
-* Project 6 due at 10:00 am
-* Project 6 presentations
-* Introduce Final Project
+* Kickoff activity
+* CSS pseudo-selectors
+* CSS pseudo-elements
 * 🍴 LUNCH 🍴
+* Navigations
 * Project work time
 
 **Friday**
 
-* Mock Tech Test
-* Cover letter and resume lesson (Career Services)
-* Week 9 Overview (Charlotte)
+* Personal Branding
+* Intro to the command line
 * 🍴 LUNCH 🍴
+* Version control with Git and GitHub
+* Git on the command line
 * Project Work Time
-* Show 'n' Tell
-
-### Final Exam (March 16) Review
-* HTML Fundamentals
-* CSS quirks (e.g. browser defaults, ghost space, resets, box-sizing, cross-browser inconsistencies, floats, responsive strategies, etc.)
-* JS syntax (e.g. arrow functions, template literals, let vs. const, variable scope, ‘this’ etc.)
-* Functional Programming Methods
-* JS modules and how we use them
-* React lifecycle methods
-* State in React
-* Class and Function Components
-* Basic Firebase methods
-* Basic React Router Usage
-* git commands
-* Definitions including abbreviations (e.g. ECMAScript, AJAX, JSX etc.)
-
 
 
 ### Bootcamp calendar
-We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Winter 1 Bootcamp - (event)".
+We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Spring 1 Bootcamp - (event)".
 
 ### Important links & Info
 Feedback form: https://forms.gle/g9f6G8LB5FfJZFSF6
@@ -73,7 +67,7 @@ Tests = 5% each
 Exam = 25%
 ```
 
-Submission form: https://docs.google.com/forms/d/1ejHg-sjcg-UW2_wceX2fGV0R_n2tMF5T6lELdLhQ0y0/edit
+Submission form:
 
-Group assignments: [Here](https://docs.google.com/spreadsheets/d/1qw-dnRppkzRaXscOvdPusE1SHsEiSGnHQrPoRf2kujU/edit#gid=1112317742)
+Group assignments: [Here]()
 
