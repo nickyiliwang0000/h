@@ -46,6 +46,8 @@ let age = "72";
       let phoneNumber = "416-555-4321"; 
       phoneCall(phoneNumber, name);
     }
+
+console.log(this);
 callGrandma();
 </pre></td><td>
 
@@ -84,6 +86,7 @@ let age = "72";
     function callGrandma() {
       let phoneNumber = "416-555-4321"; 
       phoneCall(phoneNumber, name);
+      console.log(this);
     }
 callGrandma();
 </pre></td><td>
