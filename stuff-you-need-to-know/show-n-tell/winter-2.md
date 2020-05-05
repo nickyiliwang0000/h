@@ -55,12 +55,12 @@ stroke-dash
 SVG Morph
 text-path
 touchstart
-Konami Codes
 sketch.js
 ```
 
 ### Claimed:
 ```
+Konami Codes
 DNS
 color-adjust
 custom browser extensions
