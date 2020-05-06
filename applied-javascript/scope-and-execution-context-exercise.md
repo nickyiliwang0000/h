@@ -2,7 +2,7 @@
   
 ## Directions
 
-Discuss the following questions amongst your group. Take a few minutes to work through each referencing the lesson and the linked resources at the bottom of the notes for pointers. Ensure that every group member gets a chance to talk through at least one question and discuss your conclusions as a group.
+Discuss the following questions amongst your group. Take a few minutes to work through each, referencing the lesson and the linked resources at the bottom of the notes for pointers. Ensure that every group member gets a chance to talk through at least one question and discuss your conclusions as a group.
 
 1. How many execution contexts are contained within this block of code? In what order are they executed (try sketching out the "execution stack"):
 
