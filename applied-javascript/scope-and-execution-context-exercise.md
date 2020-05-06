@@ -1,6 +1,4 @@
 # Scope and Execution Context exercise
-
-  (Note: to see this exercise rendered in Markdown in your text editor use `CMD`/`CTRL` + `Shift` + `V`)
   
   #### Discuss the following questions amongst your group. Take a few minutes to work through each - reference the lesson and the linked resources at the bottom of the notes for pointers. Ensure that every group member gets a chance to talk through at least one question and discuss your conclusions as a group.
 
