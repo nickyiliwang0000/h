@@ -338,7 +338,7 @@ When only an expression is provided to the right-side of the arrow, the function
 > A: **No!** But, if the function you're writing does not use `this` or `arguments` and is not called with `new`, they act the same.  -->
 
 ## Exercises
-Break off into small groups and go through [this exercise](https://hychalknotes.s3.amazonaws.com/scope-and-execution-context-exercise.md) with your classmates. 
+Break off into small groups and go through [this exercise](scope-and-execution-context-exercise.md) with your classmates.  
 
 Try these [exercises](https://hychalknotes.s3.amazonaws.com/arrow-functions-exercises--bootcamp.zip) to practice writing arrow functions.
 
