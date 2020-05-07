@@ -25,6 +25,6 @@ Submit your topic **to Olga by EOD Wednesday of your presentation week**. You ca
 Class/Project work time stops at 5pm on Fridays - Show & Tell starts with your presentations at ~5pm
 
 ## The Who:
-Your Show & Tell groups have been assigned by week. You can find the list of groups [here]()
+Your Show & Tell groups have been assigned by week. You can find the list of groups [here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit?usp=sharing)
 
 Happy presenting!

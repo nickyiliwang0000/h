@@ -46,6 +46,8 @@ let age = "72";
       let phoneNumber = "416-555-4321"; 
       phoneCall(phoneNumber, name);
     }
+
+console.log(this);
 callGrandma();
 </pre></td><td>
 
@@ -84,6 +86,7 @@ let age = "72";
     function callGrandma() {
       let phoneNumber = "416-555-4321"; 
       phoneCall(phoneNumber, name);
+      console.log(this);
     }
 callGrandma();
 </pre></td><td>
@@ -334,7 +337,9 @@ When only an expression is provided to the right-side of the arrow, the function
 <!-- > Q: Are arrow functions and function declarations and function expressions the exact same!?
 > A: **No!** But, if the function you're writing does not use `this` or `arguments` and is not called with `new`, they act the same.  -->
 
-## Exercise
+## Exercises
+Break off into small groups and go through [this exercise](scope-and-execution-context-exercise.md) with your classmates.  
+
 Try these [exercises](https://hychalknotes.s3.amazonaws.com/arrow-functions-exercises--bootcamp.zip) to practice writing arrow functions.
 
 ## More reading on scope and `this`

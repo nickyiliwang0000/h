@@ -1,6 +1,6 @@
 # Show 'n' Tell
 
-Below you'll find some preliminary instructions on how to prep for your Show & Tell week, the date you'll be presenting, and a list of possible topics to cover!  You're welcome to choose anything from the list at any point but once it's taken, it can't be repeated. **Please DM Charlotte on slack to claim a topic!** If you want to pick an out-of-the-box topic on something that's not listed here, please send me a message to get it approved! 
+Below you'll find some preliminary instructions on how to prep for your Show & Tell week, the date you'll be presenting, and a list of possible topics to cover!  You're welcome to choose anything from the list at any point but once it's taken, it can't be repeated. **Please DM Olga on slack to claim a topic!** If you want to pick an out-of-the-box topic on something that's not listed here, please send me a message to get it approved! 
 
 We'll have a practice session, usually **Thursday at 4 or 5pm** during the week of your presentation in the back classroom! If the time and place changes, don't worry you'll receive a reminder on Monday! Don't feel pressured to have a completed, polished presentation ready - we'll talk more in depth about the logistics of the presentations, have everyone do a timed runthrough and I'll offer some notes and advice before the big day!
 
@@ -25,7 +25,7 @@ The whole point of Show & Tell is to help you get comfortable speaking to a tech
 Show & Tell should be a fun, chill opportunity to teach your friends a little something and practice these skills! It's low stakes so don't feel too pressured or spend too much time making your presentation! 
 
 ## The When:
-Submit/pitch your topic **to Charlotte by EOD Wednesday of your presentation week**. You can claim or pitch a topic *ANY* time throughout the Bootcamp so feel free to prepare early once your topic is approved!
+Submit/pitch your topic **to Olga by EOD Wednesday of your presentation week**. You can claim or pitch a topic *ANY* time throughout the Bootcamp so feel free to prepare early once your topic is approved!
 
 Class/Project work time stops at 5pm on Fridays - Show & Tell starts with your presentations at ~5:15pm
 
@@ -49,7 +49,6 @@ p5.js
 pose.js
 preloaders
 react autocomplete
-react dnd
 shape-outside
 split.js
 stroke-dash
@@ -60,6 +59,8 @@ touchstart
 
 ### Claimed:
 ```
+sketch.js
+Konami Codes
 DNS
 color-adjust
 custom browser extensions
@@ -69,6 +70,7 @@ anime.js
 parallax
 typed.js
 recursion
+ReactDND
 chart.js
 SweetAlerts
 cycle.js
@@ -81,13 +83,12 @@ mix-blend-mode
 custom cursors
 draft.js
 label & labelledby
+OAuth
 animate-on-scroll
 :focus-within
 reveal.js
 sketch.js
 three.js
 particle.js
-custom SVGs
-Konami Codes
 tone.js
 ```

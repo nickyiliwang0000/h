@@ -52,7 +52,7 @@ You will also be given marks for your project presentation:
 
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned!
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing).
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=1112317742).
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
@@ -64,30 +64,30 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1BJcO
 
 Coming Soon
 
-**Delicious**
+**MindnSoul**
 
-[design](https://scene.zeplin.io/project/5e445dca3228c30bb2852fcb)
+[design](https://scene.zeplin.io/project/5cc747bf7cbe272d01e3698d)
 
-[assets](https://hychalknotes.s3.amazonaws.com/delicious-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
 
-**Sunshine**
+**Captured**
 
-[design](https://scene.zeplin.io/project/5e44588b5789418a0a4df9ac)
+[design](https://scene.zeplin.io/project/5cb78913fae8ad09e8372c93)
 
-[assets](https://hychalknotes.s3.amazonaws.com/sunshine-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
 
-**Creative**
+**FunPlace**
 
-[design](https://scene.zeplin.io/project/5e44614a207ff90dfe1aa4f7)
+[design](https://scene.zeplin.io/project/5cb78ae2e6267e081e91a1df)
 
-[assets](https://hychalknotes.s3.amazonaws.com/creative-assets.zip)
+[assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
 
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
 2. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-4. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
+4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
 ## #design in Helpcue
 
