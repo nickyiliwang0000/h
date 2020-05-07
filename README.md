@@ -154,7 +154,7 @@ If you've never written in Markdown before, take a look at this [Markdown cheats
 -   [Deploying with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/deploying-with-firebase.md)
 -   [Authentication with Firebase](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/authentication-with-firebase.md)
 -   [Routing](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/routing.md)
-
+-   [Intro to React Hooks](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/intro-to-react-hooks.md)
 ## Extra exercises
 
 -   [HTML & CSS](https://github.com/HackerYou/bootcamp-notes/blob/master/extra-exercises/html-and-css-exercises.md)
