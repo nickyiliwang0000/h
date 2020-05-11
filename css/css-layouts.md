@@ -74,8 +74,6 @@ There are a number of ways to use CSS to solve this limitation to page layout. T
 
 ## Floats
 
-The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to. The `float` property wasn't created to solve this, but rather to let text wrap around images like it does in books and magazines.
-
 The early developers of HTML and CSS did not plan for the kind of web page layouts we're used to, but they did plan for text to wrap around images like it does in books and magazines. The `float` property can be applied to images to define how following elements will wrap around them.
 
 Applying the `float` property to images defines how following elements will wrap around them. Check out [this CodePen](https://codepen.io/CoderOfNote/pen/BaajyJY?editors=1100#0) to see the paragraph text wrapping around the image. Change the value for `float` to `right`, then to `none`, then back to `left` to see how the image moves within its parent and how the rest of the content wraps around it.
