@@ -64,6 +64,27 @@ You will also be given marks for your project presentation:
 -   Student was able to effectively identify a technical challenge
 -   Student did not go over time
 
+
+## Peer Code Review
+
+Part of your mark for this project will be from a Peer Code Review. You will be given a rubric and a review partner once the project has been handed in. You will take one hour in class time to sit together and deliver your feedback to each other. At the end of the hour you will be asked to grade your partner's review of your code. Both their review of your code and their evaluation of your review will be included in your mark for this project. 
+
+### Why is code review important? 
+
+[Here is a resource](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/code-review-best-practices.md) to find out more about how code reviews in the professional world and why they are important to practice. 
+
+### What should I look for in a good review? 
+
+You are looking for an opportunity to imporve your code and be exposed to new ways of thinking. You should evaluate your partner's review of your code according to these three criteria:
+
+Did they ...
+
+1. Deliver a Clear and Thorough Review
+2. Ask Open Ended Questions
+3. Provide Positive and Constructive Criticism
+
+You will be given a chance to make any further comments about their review as well (this feedback will be given to them directly and not filtered).
+
 ## Submitting your project
 
 1. Remove any unneeded files from the project.
