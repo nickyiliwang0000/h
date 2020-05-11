@@ -9,65 +9,51 @@ _ALL TIMES ARE ESTIMATES FOR YOUR CONVIENICE AND AWARENESS AND ARE SUBJECT TO CH
 
 We would like you to have a detailed a schedule to refer to now that we are online. However, we need to be super flexible with timing to allow for lessons to be extra juicy when YOU want them to be. **Never worry** if the real life timing isn't matching this estimate. We will adjust as needed and make sure the content gets covered and that you get the time you need for projects.  -->
 
-<!-- #### Thursday, April 9th
-- Kick off _(30mins)_
-- Understanding API documentation with Susan _(45min)_
-- ☕️ BREAK ☕️  _(20mins)_
-- API Code Along: Art with Monkeys with Susan  _(1hr)_
-- 🍴 LUNCH 🍴 (_1pm to 2pm_)
-- API Code Along: Art with Monkeys with Susan CONT  _(30mins)_
-- Project work time  _(2.5hrs)_
-
-
-##### IN CLASS SUPPORT
-- Live Questions: Asaf 
-- Debugging: Susan     -->
-
 
 ### Weekly Schedule
 
-Week 8: Client React Projects 
+Week 9: ...the beginning of new beginnings (Portfolios, Resumes, React Hooks)
 
 **Monday**
 
--   **PROJECT 5 DUE @ 10AM**
+-   **PROJECT 6 DUE @ 10AM**
 -   **Blog Post #3 due**
 -   Stand Ups 
--   Project 5 Presentations 
--   Project 6 Introduction
+-   Project 6 Presentations 
+-   Portfolio Introduction
 -   🍴 LUNCH 🍴
 -   Project Work time
+-   **Portfolio Designs DUE @ 6PM**
 
 
 **Tuesday**
 
--   React Router
--   Movie API Code Along
+-   Persist IQ/Job Seeker Intro part 2
+-   Project Work Time
 -   🍴 LUNCH 🍴
--   Movie API Code Along - CONT
 -   Project Work Time
 
 **Wednesday**
 
--   **REACT TEST @ 10am**
--   Peer Review Project 5
+-   **FINAL EXAM @ 10am**
 -   Project Work Time
 -   🍴 LUNCH 🍴
 -   Project Work Time
 
 **Thursday**
 
--   Project Work Time
--   🍴 LUNCH 🍴 also 🌸 LUNCH WITH HEATHER GROUP 8 🌸
+-   Intro to React Hooks
+-   🍴 LUNCH 🍴
 -   Project Work Time
 
 
 **Friday**
 
--   Career Services - Job Seeker Intro Part 1
 -   Project Work Time
+-   Help Cue closes @ 1pm
+-   **PORTFOLIOS DUE @ 1PM**
 -   🍴 LUNCH 🍴
--   Project Work Time
+-   Portfolio Critiques
 -   SHOW AND TELL 🎉
 
 ### Bootcamp calendar
