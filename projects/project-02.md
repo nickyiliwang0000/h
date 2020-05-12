@@ -62,23 +62,21 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMn
 
 ### Design files
 
-Coming Soon
-
 **MindnSoul**
 
-[design](https://scene.zeplin.io/project/5cc747bf7cbe272d01e3698d)
+[design](https://hychalknotes.s3.amazonaws.com/mind-n-soul.zip)
 
 [assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
 
 **Captured**
 
-[design](https://scene.zeplin.io/project/5cb78913fae8ad09e8372c93)
+[design](https://hychalknotes.s3.amazonaws.com/captured.zip)
 
 [assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
 
 **FunPlace**
 
-[design](https://scene.zeplin.io/project/5cb78ae2e6267e081e91a1df)
+[design](https://hychalknotes.s3.amazonaws.com/fun-place.zip)
 
 [assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
 
