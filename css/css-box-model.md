@@ -211,12 +211,12 @@ This will set the top and bottom margins to zero (you could set it to anything y
 
 <img src="https://hychalknotes.s3.amazonaws.com/margin-auto-1.png" alt="screenshot showing usage of margin auto that centers the element horizontally.">
 
-We can also specify `margin-right: auto` to place the element right-aligned. 
+We can also specify `margin-left: auto` to place the element right-aligned. 
 
 ```css
 .box1 {
   width: 60%;
-  margin-right: auto;
+  margin-left: auto;
 }
 ```
 
