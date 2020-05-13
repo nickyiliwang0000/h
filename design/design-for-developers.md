@@ -79,17 +79,53 @@ Think about the content of your site, what your site is about and the mood that 
 
 (Image of different Fonts)
 
-It is common to use more than one font for a project. Like colours, designers choose a second font or even a third font to add visual variety. However there should be **no more than three**! If you have more than three fonts, the project can look messy and inconsistent. The typical recommendation would be to choose two fonts - a heading font and a body text font. We call this *font pairing*.
+### Serif vs. sans-Serif
 
-### Font pairing formula 🔥
+(image of serif vs sans-serif)
 
+It is common to use more than one font for a project. Like colours, designers choose a second font or even a third font to add visual variety. However there should be **no more than three**! If you have more than three fonts, the project can look messy and inconsistent. The typical recommendation would be to **choose two fonts - a heading font and a body text font**. We call this *font pairing*.
 
+### Font pairing tips 🔥
 
+- Keep elaborate and unconventional fonts for headings, as headings are generally short and should be eye-catching visually. 
+- Sans-serif fonts are usually recommended for body text as they are easier to read on the screen, but it's not a super hard rule, many serif fonts could work great as body text as well. 
+- If your heading font is elaborate, choose a simpler body font. If your heading font is simpler you can choose a more interesting body font, but again keep in mind that body font needs to be legible!
+- One of the easiest way to pair fonts while keeping visual interest is to pair a serif font with a sans-serif font.
+- **Bulletproof 🔥 Tip**: Just choose a font pairing combination from [fontpair.co](https://fontpair.co/) or [ultimate google font pairings](https://www.reliablepsd.com/ultimate-google-font-pairings/) that speaks to you and your project!
 
 
 ## 4. Styling Text
 
+### Line Height
+
+### Length and spacing
+
+### Alignment
+
+### Text Hierarchy 
+
+
 ## 5. Buttons
+
+Buttons are considered as a major and essential UI element for all sites and applications. They are sometimes referred to as *CTA (call to action)*, which is meant to prompt user interaction. Therefore, they are usually styled to bring visual attention, usually with a secondary color or accent color. 
+
+(image of different button styles)
+
+Buttons comes in all varieties of different styles. There are no right and wrong button styles as long as you **stick to one particular style** throughout the entire project and follow these best user experience (UX) practices:
+
+- Buttons should have a descriptive text telling users what they are expected to happen when they click on the button. 
+
+(image of non descriptive text vs descriptive text)
+
+- Buttons should have some padding space around the descriptive text so that use have enough clickable area. 
+
+(image of space vs no space)
+
+- Buttons are interactive elements which means we need to ensure their pseudo states are styled. These include `:hover`, `:disabled` and `:active`. These will ensure user gets feedback from the interactivity. 
+  [Play around with this codepen](https://codepen.io/susan8098/pen/YzXovOY), which button is correctly styled?
+
+- Lastly, if it's not a interactive button (aka. if the element doesn't do anything), don't style it like one! It's confusing to the users!
+
 
 ## 6. Imagery & Icons
 
@@ -97,6 +133,6 @@ It is common to use more than one font for a project. Like colours, designers ch
 
 ## 8. Responsive Optimization
 
-## 9. Creating a style guide
+## 9. Creating a style guide for consistency
 
 ## 10. UX Considerations
