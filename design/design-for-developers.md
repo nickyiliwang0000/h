@@ -219,6 +219,23 @@ Whitespace is any blank area between elements. It doesn't have to be white, it c
 
 ## 8. Responsive optimization
 
+Now that you are going to become front-end developers, you are expected to make your projects' responsive experience as perfect as possible! The goal is that you shouldn't be compromising users' experience just because they are viewing your application on a screen size that is not desktop. This is a chance to show that you have thought about the user experience at every size, a very employable and valuable trait! Refer to the [Responsive Design](https://github.com/HackerYou/bootcamp-notes/blob/master/css/responsive-design.md) and [Cross-browser testing](https://github.com/HackerYou/bootcamp-notes/blob/master/css/cross-browser-testing.md) lessons for how you can achieve this technically. 
+
+### Things to consider...
+- Check that your **body text font size** is large enough to read on mobile screens.
+- **Heading fonts**, especially `<h1>` and `<h2>` font size usually has to be reduced on mobile so it doesn't take up the entire screen and to avoid horizontal scroll. 
+- **Buttons** usually becomes bigger to stretch to 100% width. 
+- Check there are no ghost **horizontal scrolls**!
+- You may have to **reduce/adjust your spacings** between elements so that they are consistent on mobile experience
+- **Unnecessary animation and hover states should be removed**. 
+- **You shouldn't be removing any element on mobile!** If you absolutely need to remove element or sections on mobile, you need to think of a way to replicate the same content but for mobile experience. 
+
+(examples)
+
 ## 9. Creating a style guide for consistency
 
 ## 10. UX Considerations
+ease of use
+interactive states
+excessive fluff
+purposeful animation
