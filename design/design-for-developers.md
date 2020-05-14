@@ -180,7 +180,44 @@ The same goes for illustrations as well. Make sure you are using illustrations f
 
 ## 7. Layout & Grids
 
-## 8. Responsive Optimization
+Before you start thinking about the layout of your project, you should have a good idea of what kind of content you will have. You don't have to have a full content and copy written out but a rough idea of what sort of sections you are going to have. From there you can start drawing boxes on a piece of paper, what we referred to as *wireframes*.
+
+(image of an wireframe)
+
+It is important to think about user flow when laying down wireframes. What is the most important information user should see when they land on the page and what's next?
+
+**Segmenting sections**
+
+(images of some simple layout sections)
+
+### Alignment
+
+Maintaining consistent alignment is very important to  ensure clean and professional look, but it is often overlooked. Consider the examples below:
+
+(examples cases of aligned vs un-aligned)
+
+Note that this is especially clear along the outer edges of the page. Our eyes like to follow a specific pattern, when elements are out out alignment, it breaks the pattern. This is also why we encourage the use of a *wrapper* or *container*!
+
+Another common way to ensure elements are aligned consistently is to use a grid system, which we've covered in [this class](https://github.com/HackerYou/bootcamp-notes/blob/master/css/grid-systems.md) before! Essentially a grid is a set of columns that can be placed on top of a page, which you can then use as a guide to place elements on.
+
+(image of airbnb site and grids)
+
+### Whitespace
+
+Whitespace is any blank area between elements. It doesn't have to be white, it could be whatever the background of the area is. Whitespace is important because:
+
+- It provides **visual relief to users' eyes**. If no sufficient whitespace is provided, the page can get very overwhelming to look at and very heavy on users mental strain.
+- Whitespace is also **very powerful for directing users'** attention flow. When there is no whitespace, it's very difficult for users to determine what section or content to look at first.
+
+(provide image examples)
+
+(provide image example for proximity vs separation)
+
+**Paddings & margins** are your best friends when creating spacing between elements. An important point to watch out here is that you are providing consistent spacing between elements. 
+
+(provide image example)
+
+## 8. Responsive optimization
 
 ## 9. Creating a style guide for consistency
 
