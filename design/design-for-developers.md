@@ -168,7 +168,15 @@ If you are struggling to find cohesive images, a hack you can use is to implemen
 
 (images as example)
 
-### What to watch out for 
+### What to watch out for when implementing icons
+
+Again consistency! All icons in your project needs to maintain consistency in colour, size, line/stroke sizes and treatment.
+
+(images of icons that belongs to different icon set)
+
+The easiest way to achieve this is just use icons that belongs as a set. Most artist create icons as a set and you can easily find sets on The Noun Project. 
+
+The same goes for illustrations as well. Make sure you are using illustrations from the same artist or set for a cohesive look.
 
 ## 7. Layout & Grids
 
