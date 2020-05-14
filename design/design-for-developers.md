@@ -126,8 +126,49 @@ Buttons comes in all varieties of different styles. There are no right and wrong
 
 - Lastly, if it's not a interactive button (aka. if the element doesn't do anything), don't style it like one! It's confusing to the users!
 
-
 ## 6. Imagery & Icons
+
+Imagery and Icons are elements that are responsible for making up a huge percentage of visual interest for your project, which is why is it very important to keep it cohesive, relevant and on brand. 
+
+### Where to find imagery & icons? 
+
+**Photos**
+- [Unsplash](https://unsplash.com/)
+- [Pexels](https://www.pexels.com/)
+- [SplitShire](https://www.splitshire.com/)
+- [Foodies Feed](https://www.splitshire.com/)
+- [Life of Pix](https://www.lifeofpix.com/)
+
+**Icons**
+- [The Noun Project](https://thenounproject.com/)
+
+**Illustrations**
+- [unDraw](https://undraw.co/)
+- [DrawKit](https://www.drawkit.io/)
+- [humaaans](https://www.humaaans.com/)
+
+Everything listed above are open-sourced and royalty-free! Do keep in mind to **give credits** to those who created them wherever you can! 
+
+### What to watch out for when implementing images
+
+- Make sure your images are high quality that aren't pixelated or stretched!
+
+(images as example)
+
+- At the same time you also want to make sure to optimize your images so that they are not over 2MB in size! Large image size are one of the main contributions to low performance speed. You can use tools like [ImageOptim](https://imageoptim.com/mac) or [Kraken.io](https://kraken.io/). 
+- Choose images that are relevant to your content and purpose!
+
+(images as example)
+
+- Make sure to choose images that are cohesive in colour palette.
+
+(images as example)
+
+If you are struggling to find cohesive images, a hack you can use is to implement overlays.
+
+(images as example)
+
+### What to watch out for 
 
 ## 7. Layout & Grids
 
