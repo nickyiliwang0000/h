@@ -94,9 +94,12 @@ It is common to use more than one font for a project. Like colours, designers ch
 - **Bulletproof 🔥 Tip**: Just choose a font pairing combination from [fontpair.co](https://fontpair.co/) or [ultimate google font pairings](https://www.reliablepsd.com/ultimate-google-font-pairings/) that speaks to you and your project!
 
 
-## 4. Styling Text
+## 4. Typography
+
+Once you've chosen your fonts, it is important that they are easy to read! 90% of te information on the web is conveyed through typography. Here are some best practices and general rules to follow to help your users better process and read texts!
 
 ### Line Height
+
 
 ### Length and spacing
 
@@ -233,6 +236,13 @@ Now that you are going to become front-end developers, you are expected to make 
 (examples)
 
 ## 9. Creating a style guide for consistency
+
+A style guide is a document **guide that holds all of the information about key visual elements** of a project and how to use them. It's a collection of information about colour palette, typefaces, font sizes, icons, button, spacing, grids and any other visual elements that contributes to the style of the project. Basically everything we've talked about so far documented in a centralized cheatsheet. 
+
+(image examples of style guides)
+
+When you start working as a developer, a designer would typically supply a design with a style guide for you to work with. A style guide is especially helpful for a larger project with larger team where there are multiple team members contributing to the design and development of a project. This **ensures consistency and cohesiveness across multiple team members**, avoiding adjustments based on personal preferences. It also makes it a lot easier to make decisions as a team, relieving some of the mental load while working together as a team. 
+
 
 ## 10. UX Considerations
 ease of use
