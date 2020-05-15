@@ -100,10 +100,42 @@ Once you've chosen your fonts, it is important that they are easy to read! 90% o
 
 ### Line Height
 
+Line height is the height of a line of text, and it determines the distance between multiple lines of text. Tightly spaced lines of text can appear difficult to read for the user. However too generously spaced lines of text can make each line look like separate elements.
 
-### Length and spacing
+(examples of text with different line heights)
+
+**The general rule is to aim for your line height to be about 60% - 80% larger than the font size.** The number can vary depending on the font and font size. 
+
+You can do this by providing a unit-less value to the `line-height` property. 
+
+```css
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+```
+
+Browser's default line height is around 1.2, 1.6 is usually a good place to start. 
+
+### Length
+
+Let's be honest, nobody is interested in consuming long paragraphs. Try to break up key points into smaller paragraphs of sentences will make your content more approachable and digestible for readers. 
+
+(example of long vs short paragraph)
+
+You also want to make sure your text paragraph does not stretch for too long on the horizontal line. It is tiring for users to read a long line of text. 
+
+**Try to limit line length to be no longer than 85 characters.**
+
+Setting a maximum width on paragraphs is generally a good idea. The wrapper container also helps with this as well.
+If you feel like there are too much blank space, consider splitting the content into columns.  
+
+(example of long line vs short)
+
 
 ### Alignment
+
+
 
 ### Text Hierarchy 
 
