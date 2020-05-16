@@ -3,55 +3,49 @@
 
 ### Schedule
 
-Week 1
+Week 2
 
 **Monday**
 
-* Spring 1 Bootcamp Kick-off
-* Juno Orientation
-* 🍴 LUNCH 🍴
-* GitHub orientation
-* Philosophy of best practices for HTML/CSS
-* Meet your text editor
-* Browser dev tools
-* HTML/CSS Review
-* Project 1 introduction
+*  NO CLASS
+
 
 **Tuesday**
 
-* Kickoff activity
-* CSS box-model
-* CSS background colour and images
+* Project 1 due at 9 AM
+* Motivational Monday
+* SCSS
 * 🍴 LUNCH 🍴
-* CSS layout
-* Display and orientation
-* Helpcue orientation
+* Project 1 presentations
+* Project 2 introduction
+* Project Work Time
+
 
 **Wednesday**
 
-* Kickoff activity
-* Advanced Layouts
+* Flexbox
 * 🍴 LUNCH 🍴
-* Responsive Design
-* Project Work Time
+* Forms
+* Project work time
+
 
 **Thursday**
 
-* Kickoff activity
-* CSS pseudo-selectors
-* CSS pseudo-elements
+* CSS grid
 * 🍴 LUNCH 🍴
-* Navigations
+* Advanced CSS selectors
 * Project work time
 
 **Friday**
 
-* Personal Branding
-* Intro to the command line
+* CSS transitions transforms, & animations
+* Cross-browser testing
+* FTP and domains
 * 🍴 LUNCH 🍴
-* Version control with Git and GitHub
-* Git on the command line
-* Project Work Time
+* Exercise: hosting
+* Project work time
+* Show 'n' Tell
+
 
 
 ### Bootcamp calendar
