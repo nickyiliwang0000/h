@@ -47,6 +47,19 @@ Week 2
 * Show 'n' Tell
 
 
+### HTML/CSS Test Study Areas
+* Folder/Project organization best practices
+* Media query best practices
+* Rems
+* Accessibility best practices
+* Semantic elements
+* The box model
+* CSS calculations
+* Colour
+* Positioning, flexbox, floats (no grid)
+
+
+
 
 ### Bootcamp calendar
 We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Spring 1 Bootcamp - (event)".
