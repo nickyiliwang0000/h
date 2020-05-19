@@ -47,7 +47,7 @@ Week 2
 * Show 'n' Tell
 
 
-### HTML/CSS Test Study Areas
+### 📚 HTML/CSS Test Study Areas 📚
 * Folder/Project organization best practices
 * Media query best practices
 * Rems
