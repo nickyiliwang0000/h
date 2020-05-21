@@ -224,7 +224,7 @@ OR
 * a keyword 
   * **`auto-fill`** 
   * **`auto-fit`** 
-(detailed explanation of both keywords coming up below)
+(detailed explanation of both keywords can be found in the [Advanced CSS Grids](https://github.com/HackerYou/bootcamp-notes/blob/master/css/advanced-css-grids.md) notes)
 
 The **second value** that `repeat` takes is the size of the columns or rows to be created. Most often you will see this size represented in pixels (e.g. `200px`) or `fr` units (e.g. `1fr`).
 
