@@ -3,48 +3,53 @@
 
 ### Schedule
 
-Week 2
+Week 3
 
 **Monday**
 
-*  NO CLASS
+* HTML/CSS Test 📝
+* Motivational Monday
+* Standups
+* Git branching
+* GitHub pages
+* 🍴 LUNCH 🍴
+* Advanced CSS Grid
+* Project Work Time
 
 
 **Tuesday**
 
-* Project 1 due at 9 AM
-* Motivational Monday
-* SCSS
+* Project 2 due at 9AM
+* Project 2 presentations
+* Intro to programming
+* Intro to JavaScript
 * 🍴 LUNCH 🍴
-* Project 1 presentations
-* Project 2 introduction
-* Project Work Time
+* JavaScript split groups
+* Variables
+* Working with JavaScript
 
 
 **Wednesday**
 
-* Flexbox
+* Programming control flow
 * 🍴 LUNCH 🍴
-* Forms
-* Project work time
-
+* Functions
 
 **Thursday**
 
-* CSS grid
+* Objects
 * 🍴 LUNCH 🍴
-* Advanced CSS selectors
-* Project work time
+* Arrays and Methods
 
 **Friday**
 
-* CSS transitions transforms, & animations
-* Cross-browser testing
-* FTP and domains
+* Intro to jQuery
+* jQuery API documentation
+* jQuery best practices
 * 🍴 LUNCH 🍴
-* Exercise: hosting
-* Project work time
-* Show 'n' Tell
+* Exercise
+* jQuery to-do-app codealong 
+
 
 
 ### 📚 HTML/CSS Test Study Areas 📚
