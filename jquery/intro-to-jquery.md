@@ -68,12 +68,12 @@ Functions in JavaScript can be stored inside properties, when a function lives i
 
 ```js
 const pet = {
-	species: "cat",
-	color: "black",
-	name: "Mittens",
-	sayHi : function(){
-		alert("meow!");
-	}
+  species: "cat",
+  color: "black",
+  name: "Mittens",
+  sayHi : function(){
+    alert("meow!");
+  }
 }
 ```
 
@@ -128,7 +128,7 @@ jQuery selectors are exactly the same as CSS selectors! So just like CSS we sele
 With [try-jquery.html](https://hychalknotes.s3.amazonaws.com/try-jquery.html) in your browser, open your console and use the jQuery selector to grab all of the `img` elements on the page:
 
 ```js
-  $('img')
+$('img')
 ```
 
 You'll get a return value of every `img` element on the page
@@ -161,7 +161,7 @@ The generic code looks like this:
 
 ```js
 $(selector).on(event, function(){
-	// run this code when event happens
+// run this code when event happens
 });
 ```
 
@@ -169,7 +169,7 @@ Or if we wanted to attach an event listener to our `h1` it would look like this.
 
 ```js
 $('h1').on('click', function() {
-	//do something
+// do something
 });
 ```
 
@@ -181,7 +181,7 @@ Inside the `<script></script>` tags add the following:
 
 ```js
 $(document).ready(function(){
-	// your code here
+// your code here
 });
 ```
 
@@ -191,9 +191,9 @@ There are four boxes on the page. We want to hide the boxes when they are clicke
 
 ```js
 $(document).ready(function(){
-	$(selector).on(event, function(){
-		// run this code when event happens
-	});
+  $(selector).on(event, function(){
+    // run this code when event happens
+  });
 });
 ```
 
@@ -201,9 +201,9 @@ All of the boxes have the class "box" so we can use that to select them, `$(".bo
 
 ```js
 $(document).ready(function(){
-	$(".box").on(event, function(){
-		// run this code when event happens
-	});
+  $(".box").on(event, function(){
+    // run this code when event happens
+  });
 });
 ```
 
@@ -224,16 +224,16 @@ $(document).ready(function(){
   $(".box").on("click", function(){
     $(".box").hide();
   });
-  });
+});
 ```
 
 All of the boxes disappeared! This is because `$(".box")` selects all of the boxes. Ok, how do we select on the box that was clicked? Remember the `this` keyword? jQuery provides `this` inside of the anonymous function as the element we clicked on. How convenient!
 
 ```js
 $(document).ready(function(){
-	$(".box").on("click", function(){
-		this.hide();
-	});
+  $(".box").on("click", function(){
+    this.hide();
+  });
 });
 ```
 
@@ -241,8 +241,8 @@ Unfortunately `this` isn't a jQuery object, it's a DOM element. We need to conve
 
 ```js
 $(document).ready(function(){
-	$(".box").on("click", function(){
-		$(this).hide();
-	});
+  $(".box").on("click", function(){
+    $(this).hide();
+  });
 });
 ```
