@@ -3,65 +3,53 @@
 
 ### Schedule
 
-Week 3
+Week 4
 
 **Monday**
 
-* HTML/CSS Test 📝
 * Motivational Monday
 * Standups
-* Git branching
-* GitHub pages
+* jQuery code-along 1
 * 🍴 LUNCH 🍴
-* Advanced CSS Grid
-* Project Work Time
+* jQuery code-along 2
+* Introduce project 3
+* Project work time / scope approvals
 
 
 **Tuesday**
 
-* Project 2 due at 9AM
-* Project 2 presentations
-* Intro to programming
-* Intro to JavaScript
+* Callback functions
 * 🍴 LUNCH 🍴
-* JavaScript split groups
-* Variables
-* Working with JavaScript
+* How to organize your JS
+* Project work time / scope approvals 
 
 
 **Wednesday**
 
-* Programming control flow
+* Advanced array methods
 * 🍴 LUNCH 🍴
-* Functions
+* Design tips for developers
+* Project work time
+
 
 **Thursday**
 
-* Objects
+* Working with APIs
+* Accessing API Data with AJAX
 * 🍴 LUNCH 🍴
-* Arrays and Methods
+* AJAX exercise
+* Project work time
+
 
 **Friday**
 
-* Intro to jQuery
-* jQuery API documentation
-* jQuery best practices
+* Understanding API documentation
+* API code-along
 * 🍴 LUNCH 🍴
-* Exercise
-* jQuery to-do-app codealong 
+* Regular expressions
+* Project work time
+* Show’nTell
 
-
-
-### 📚 HTML/CSS Test Study Areas 📚
-* Folder/Project organization best practices
-* Media query best practices
-* Rems
-* Accessibility best practices
-* Semantic elements
-* The box model
-* CSS calculations
-* Colour
-* Positioning, flexbox, floats (no grid)
 
 
 
