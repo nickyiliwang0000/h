@@ -12,7 +12,7 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 
 We encourage you to use the pair-programming method: both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
 
-Your partners are listed [here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing).
+Your partners are listed [here]().
 
 ## Project objective
 
@@ -150,7 +150,7 @@ You will be given a chance to make any further comments about their review as we
 2. Remove any unneeded files from the project.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages or on your own domain/subdomain.
-5. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
+5. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
 
 ## #design in Helpcue
