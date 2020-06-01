@@ -91,7 +91,7 @@ You will be given a chance to make any further comments about their review as we
 2. Create a repository with a name made up of your own first name, then your last name, and project three (e.g.`firstNameLastNameProjectThree`).
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages or on your own domain/subdomain
-5. Submit your repo URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
+5. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
 ## #design in Helpcue
 
