@@ -77,7 +77,7 @@ Because you are showing off your ability to code, be sure you adhere to the best
 
 ## Submitting your project
 
-1. Deploy your website and submit the live URL using [the project submission form](https://docs.google.com/forms/d/e/1FAIpQLScnUUj4lOmxCaRdgdURzdKJWW5Sb5s9DeifjuacbVLAMfizhA/viewform).
+1. Deploy your website and submit the live URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
 -   It is HIGHLY ENCOURAGED that you start your deploy on Thursday because  there will not be a lot of time on Friday for deployment debugging.
 -   Your portfolio site **must** be deployed before the critiques or it will not be eligible for review.
