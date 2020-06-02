@@ -64,7 +64,7 @@ Commit early, commit often.
 
 You will be provided with a client brief that includes some requirements as well as a style guide that you need to follow.
 
-Find your group [here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing) in the 'Project 6' tab. Client briefs are linked to the group headings.
+Find your group [here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=624584399) in the 'Project 6' tab. Client briefs are linked to the group headings.
 
 Your instructors are your clients. 
 
@@ -73,7 +73,7 @@ They're human! Talk to them! If you want to change something about the scope or 
 ## Submitting your project
 
 1. Deploy your website to Firebase Hosting or your own domain/subdomain.
-2. _One person_ from the group will submit your repo URL and live URL using [the project submission form](https://forms.gle/b5Npo5Nv95GyCXSk6).
+2. _One person_ from the group will submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
 ## #design in Helpcue
 
