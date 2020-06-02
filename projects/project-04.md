@@ -12,7 +12,7 @@ We've provided a list of RESTful APIs that can be accessed publicly and have dec
 
 We encourage you to use the pair-programming method: both team members work together on one computer. One person is the typer, but both are talking about what each line of code does. The typer role switches back and forth **often**. Don't just commit from one person's GitHub account. Push your changes, have the other person pull on their machine, and work from there. (We will be checking the GitHub commits.)
 
-Your partners are listed [here]().
+Your partners are listed [here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=624584399).
 
 ## Project objective
 
