@@ -3,52 +3,61 @@
 
 ### Schedule
 
-Week 4
+Week 5!
 
 **Monday**
 
 * Motivational Monday
 * Standups
-* jQuery code-along 1
+* Git collaboration
+* Resume lesson
 * 🍴 LUNCH 🍴
-* jQuery code-along 2
-* Introduce project 3
-* Project work time / scope approvals
+* Debugging with JavaScript
+* Project work time
 
 
 **Tuesday**
 
-* Callback functions
+* Project 3 due at 9 AM
+* Project 3 presentations
+* JS spread, rest, and destructuring
 * 🍴 LUNCH 🍴
-* How to organize your JS
-* Project work time / scope approvals 
+* Introduce Project 4
+* Project work time / scope approvals
 
 
 **Wednesday**
 
-* Advanced array methods
+* Working with asynchronous events
 * 🍴 LUNCH 🍴
-* Design tips for developers
-* Project work time
-
+* Project work time / scope approvals
 
 **Thursday**
 
-* Working with APIs
-* Accessing API Data with AJAX
+* Peer assessment exercise
+* Intro to Firebase
 * 🍴 LUNCH 🍴
-* AJAX exercise
+* Firebase code-along
 * Project work time
 
 
 **Friday**
 
-* Understanding API documentation
-* API code-along
+* Lexical scope and execution context
 * 🍴 LUNCH 🍴
-* Regular expressions
+* Class based programming
 * Project work time
-* Show’nTell
+* Show 'n' Tell
+
+
+## 📚 Study Areas for JS/jQuery Test on June 15 📚
+* Objects
+* Arrays
+* Variable assignment and scope
+* Difference between the functional programming methods we learned (map, filter, reduce, forEach)
+* Arrow functions
+* Promises
+
 
 
 
