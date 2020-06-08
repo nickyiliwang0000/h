@@ -12,7 +12,6 @@ Week 5!
 * Git collaboration
 * Resume lesson
 * 🍴 LUNCH 🍴
-* Debugging with JavaScript
 * Project work time
 
 
@@ -44,6 +43,7 @@ Week 5!
 **Friday**
 
 * Lexical scope and execution context
+* Debugging with JavaScript
 * 🍴 LUNCH 🍴
 * Class based programming
 * Project work time
