@@ -85,11 +85,11 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMn
 3. Push your files to GitHub.
 4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
-## #design in Helpcue
+<!-- ## #design in Helpcue
 
 Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces.
 
-Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 -->
 
 ## Lateness
 

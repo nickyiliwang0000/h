@@ -93,11 +93,11 @@ You will be given a chance to make any further comments about their review as we
 4. Deploy your website to GitHub Pages or on your own domain/subdomain
 5. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
-## #design in Helpcue
+<!-- ## #design in Helpcue
 
 Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces.
 
-Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 -->
 
 ## Lateness
 

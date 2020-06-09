@@ -14,7 +14,7 @@ To show that you can take a PSD and convert it into a functional, responsive web
 
 ## Design decisions
 
-You won't always be provided with the tablet/mobile views from a designer, and this project is meant to put you in that situation. Part of being a front-end developer can be making design/UX decisions - so put some thought into how your users might interact with the site on various devices. Ask your peers for opinions or get ask questions in Helpcue and tag them `#design`.
+You won't always be provided with the tablet/mobile views from a designer, and this project is meant to put you in that situation. Part of being a front-end developer can be making design/UX decisions - so put some thought into how your users might interact with the site on various devices. Ask your peers for opinions or ask questions in Helpcue.
 
 Remember that you can discuss font sizes with the designer if you think they are too small to be read comfortably.
 
@@ -87,11 +87,11 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMn
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
 
-## #design in Helpcue
+<!-- ## #design in Helpcue
 
 Though design isn't the core focus of the bootcamp, having a well-designed and cohesive project will help provide a professional polish to your portfolio pieces.
 
-Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨
+Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 -->
 
 ## Lateness
 

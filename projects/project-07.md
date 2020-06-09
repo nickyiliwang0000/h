@@ -83,13 +83,13 @@ Because you are showing off your ability to code, be sure you adhere to the best
 -   Your portfolio site **must** be deployed before the critiques or it will not be eligible for review.
 
 
-## #design in Helpcue
+## Design
 
 Please use the [design checklist](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/design-checklist.pdf) to evaluate your portfolio as you are creating it. 
 
 Though design isn't the core focus of the bootcamp, having a well-designed and cohesive portfolio will help you stand out on the job hunt.
 
-Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨
+<!-- Whether you need advice on colour schemes, fonts, layout or a wider professional opinion, manage your time so that you can take advantage of instructor and peer feedback on design during project work time. 🎨 -->
 
 # No plagiarism!! 👀 We'll be watching for it!
 
