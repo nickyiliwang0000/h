@@ -69,6 +69,7 @@ You will also be given a general mark on how well you adhere to best practices m
 
 -   Extraneous code is removed (including console.log)
 -   Semantic HTML elements are used properly
+-   All CSS for the site is written in only **one** CSS file (no inline styles, no separate CSS files for each component, etc). How you get there is up to you.
 -   Setup snippet is used
 -   Wrapper used to constrain content on large displays
 -   Site is responsive and uses media queries
