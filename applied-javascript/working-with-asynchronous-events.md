@@ -271,7 +271,7 @@ pokemonApp.getPokemon
 This works fine, but we can make our lives easier by using the JavaScript failure handler for promises: `.catch()`. However, because we are using jQuery, we need to use their specific implementation of the failure handler known as `.fail()`:
 
 ```js
-pokemonApp.pokemon
+pokemonApp.getPokemon
   .then((caughtPokemon) => {
     console.log(caughtPokemon);
   })
