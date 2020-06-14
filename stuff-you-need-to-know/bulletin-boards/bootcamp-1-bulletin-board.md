@@ -3,50 +3,50 @@
 
 ### Schedule
 
-Week 5!
+Week 6	
 
 **Monday**
 
+* JS/jQuery Test
 * Motivational Monday
 * Standups
-* Git collaboration
-* Resume lesson
+* JS Modules
 * 🍴 LUNCH 🍴
+* Intro to React
 * Project work time
 
 
 **Tuesday**
 
-* Project 3 due at 9 AM
-* Project 3 presentations
-* JS spread, rest, and destructuring
+* Project 4 due at 9 AM
+* Project 4 presentations
+* React Groups
+* React components
 * 🍴 LUNCH 🍴
-* Introduce Project 4
-* Project work time / scope approvals
+* React events and state
 
 
 **Wednesday**
 
-* Working with asynchronous events
+* React lifecycle methods
 * 🍴 LUNCH 🍴
-* Project work time / scope approvals
+* React props
+
 
 **Thursday**
 
-* Peer assessment exercise
-* Intro to Firebase
+* Kickoff activity
+* React function components
 * 🍴 LUNCH 🍴
-* Firebase code-along
-* Project work time
+* Introduce Project 5
+* Project scope approvals
 
 
 **Friday**
 
-* Lexical scope and execution context
-* Debugging with JavaScript
+* Using Firebase with React
 * 🍴 LUNCH 🍴
-* Class based programming
-* Project work time
+* Scope Approvals / Project work time
 * Show 'n' Tell
 
 
