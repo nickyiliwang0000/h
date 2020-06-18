@@ -32,6 +32,8 @@ Your data should come from an API or be stored in Firebase.
 -   [Thankfull](https://gratitude-journal-p5.firebaseapp.com/)
 -   [Stockup.ninja](https://stockup.ninja/)
 -   [Karaoke Companion](https://karaoke-companion-c6638.firebaseapp.com/)
+-   [Pins N' Patches](https://kayevans.github.io/pinsAndPatchesApp/)
+-   [Deeper](http://juliadufresne.com/deeper/)
 
 ## Project objective
 
