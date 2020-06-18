@@ -6,7 +6,7 @@ Project due dates can be found [here](https://github.com/HackerYou/bootcamp-note
 
 ## Project scope due date
 
-Friday, June 19, 5 p.m.
+Friday, June 19th, 4 p.m.
 
 ## Project description
 
