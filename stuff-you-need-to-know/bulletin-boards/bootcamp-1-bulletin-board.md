@@ -3,62 +3,56 @@
 
 ### Schedule
 
-Week 6	
+Week 7
 
 **Monday**
 
-* JS/jQuery Test
 * Motivational Monday
 * Standups
-* JS Modules
+* Deploying React apps with GH Pages
 * 🍴 LUNCH 🍴
-* Intro to React
-* Project work time
+* Project Work Time
 
 
 **Tuesday**
-
-* Project 4 due at 9 AM
-* Project 4 presentations
-* React Groups
-* React components
+* React code-along
 * 🍴 LUNCH 🍴
-* React events and state
+* Project Work Time
 
 
 **Wednesday**
-
-* React lifecycle methods
+* Async & Await
 * 🍴 LUNCH 🍴
-* React props
-
+* Project Work Time
 
 **Thursday**
 
-* Kickoff activity
-* React function components
+* Project 5 due at 9:00 am
+* Project 5 presentations
+* React Router
 * 🍴 LUNCH 🍴
-* Introduce Project 5
-* Project scope approvals
-
+* React Router code-along
+* Introduce Project 6
 
 **Friday**
 
-* Using Firebase with React
+* Project 5 peer review exercise
+* Regex
 * 🍴 LUNCH 🍴
-* Scope Approvals / Project work time
+* Project Work Time
 * Show 'n' Tell
 
 
-## 📚 Study Areas for JS/jQuery Test on June 15 📚
-* Objects
-* Arrays
-* Variable assignment and scope
-* Difference between the functional programming methods we learned (map, filter, reduce, forEach)
-* Arrow functions
-* Promises
 
+## 📚 Study Areas for React Test on June 29 📚
 
+* Class Components and Function Components
+* Lifecycle methods
+* JSX
+* State
+* Props
+* Updating State
+* Routing (Thursday lesson)
 
 
 
