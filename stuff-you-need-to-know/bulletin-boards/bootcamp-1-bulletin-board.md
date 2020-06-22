@@ -36,7 +36,6 @@ Week 7
 
 **Friday**
 
-* Project 5 peer review exercise
 * Regex
 * 🍴 LUNCH 🍴
 * Project Work Time
