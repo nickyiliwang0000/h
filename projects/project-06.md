@@ -55,9 +55,9 @@ Note that each student will be given about a minute to speak during the presenta
 
 ## Project timeline
 
--   **End of day Tuesday:** Organization set up on GitHub, wireframes, game plan/pseudo code and successful return of data from API (if applicable)
--   **End of day Thursday:** Beta version of the app
--   **End of day Friday** Project live on gh-pages (highly recommended if you are using React Router), or your own domain
+-   **End of day Friday:** Organization set up on GitHub, wireframes, game plan/pseudo code and successful return of data from API (if applicable)
+-   **End of day Wednesday:** Beta version of the app
+-   **End of day Thursday** Project live on gh-pages (highly recommended if you are using React Router), or your own domain
 
 Commit early, commit often.
 
