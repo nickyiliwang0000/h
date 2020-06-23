@@ -231,6 +231,8 @@ Maintaining consistent alignment is very important to  ensure clean and professi
 
 (examples cases of aligned vs un-aligned)
 
+[Bad example](https://kennected.org/)
+
 Note that this is especially clear along the outer edges of the page. Our eyes like to follow a specific pattern, when elements are out out alignment, it breaks the pattern. This is also why we encourage the use of a *wrapper* or *container*!
 
 Another common way to ensure elements are aligned consistently is to use a grid system, which we've covered in [this class](https://github.com/HackerYou/bootcamp-notes/blob/master/css/grid-systems.md) before! Essentially a grid is a set of columns that can be placed on top of a page, which you can then use as a guide to place elements on.
@@ -277,7 +279,18 @@ When you start working as a developer, a designer would typically supply a desig
 
 
 ## 10. UX Considerations
-ease of use
-interactive states
-excessive fluff
-purposeful animation
+
+UX stands for User Experience, a term that refers to how the end-user uses or experience a particular product. In our case for web and application development, **good UX means a website/application that is easy, simple, seamless, intuitive and accessible to use for the target audience**. It is not enough for a website or application to appear visually appealing and beautifully designed, if it is counterintuitive and frustrating to use, users will unlikely to return from using the product, which is why good UX is very important but a topic that people often overlooks. 
+
+All of our design choices should center around how easy it is for the user to use. It is not to say that visual design is not important, in fact visual design and everything we've talked about in this class is the tool that helps us achieve this goal. For example:
+
+- We've instilled typography rules such as font sizes, line heights, alignment and spacing to make sure that text and content are easy to read for the users.
+- Colours choices should be consistent, clear and meet accessibility standards.
+- Buttons and CTAs should be very obvious for the user to interact with, and their intentions should be explicit. 
+
+Other considerations include:
+
+- Are animations purposeful? 
+- Are there unnecessary interactive states?
+- How many clicks does it take for the users to complete a specific task? 
+- Are the website/application instructions direct? 
