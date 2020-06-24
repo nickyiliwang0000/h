@@ -4,9 +4,15 @@ Using Create-React-App, React-Router, and [The Movie Database API](https://devel
 
 This app will allow us to see a catalogue of popular movies from a given year. It's also going to allow us to click on each individual movie in our catalogue and go to a separate view that shows more information about that movie.
 
-You can find the pre-written styles for this code along [HERE](https://hychalknotes.s3.amazonaws.com/movie-db-codealong.zip). This CSS can replace the default styles that exist within the `index.css` file in `create-react-app`.
+To get started, we will create a new `create-react-app` project and call it `Hackflix`.
 
-Inside of the `App.js` file let's add a header to our `App` component - it should look something like this:
+```bash
+npx create-react-app Hackflix
+```
+
+You can find the pre-written styles for this code along [HERE](https://hychalknotes.s3.amazonaws.com/movie-db-codealong.zip). This CSS can replace the default styles that exist within the `index.css` file in our new `Hackflix` project.
+
+Inside of the `App.js` file let's clear out some of the boilerplate `jsx` and add some custom header markup to our `App` component - it should look something like this:
 
 ```jsx
 // App.js
@@ -18,9 +24,6 @@ class App extends Component {
       <div className="App">
         <header>
           <h1>Hackflix</h1>
-          <nav>
-            <a href="#">Catalogue</a>
-          </nav>
         </header>
       </div>
     );
@@ -176,9 +179,9 @@ export default App;
 
 ```
 
-And we now have a `Catalogue` component that gets our data and displays all of our movies! 
+Now have a `Catalogue` component that gets our data and displays all of our movies! 🎬 
 
-Now this is cool and all, but what if we want to create the ability to click on a movie and be transported to a page that has additional information about that movie? We can do this with routing. Let's start by installing `react-router-dom` as a dependency and importing it into our `App` component. Then we will start refactoring our `render` method a little bit so that it can start to use routing:
+This is cool and all, but what if we want to create the ability to click on a movie and be transported to a page that has additional information about that movie? We can do this with routing. Let's start by installing `react-router-dom` as a dependency and importing it into our `App` component. Then we will start refactoring our `render` method a little so that it can start to use routing:
 
 ```jsx
 // App.js
@@ -248,7 +251,7 @@ class MovieDetails extends Component {
 export default MovieDetails;
 ```
 
-You'll see that whatever number we pass after `/movie` in the URL, that number gets printed out on to the page! We can use this number to make another `axois` request to the API for more data on that particular movie like this:
+You'll see that whatever number we pass after `/movie` in the URL, that number gets printed out on to the page! We can use this number to make another `axios` request to the API for more data on that particular movie like this:
 
 ```jsx
 // MovieDetails.js
@@ -291,12 +294,12 @@ export default MovieDetails;
 
 ```
 
-Here we are hitting the `/3/movie` endpoint of the MovieDB and passing in `this.props.params.movieID` as the unique movie ID we'd like to grab. We store the results in our state in a property called `movie`.
+Here we are hitting the `/3/movie` endpoint of the MovieDB API and passing in `this.props.params.movieID` as the unique movie ID we'd like to grab. We store the results in our state in a property called `movie`.
 
-Now that we have access to our `movie` property, we can start displaying it's data on to the page! Inside the render method in `MovieDetails` let's add:
+Now that we have access to our `movie` property, we can start displaying its data on to the page! Inside the render method in `MovieDetails` let's add:
 
-```javascript
-//MovieDetails.js
+```jsx
+// MovieDetails.js
 render() {
   return (
     <div>
@@ -315,7 +318,7 @@ render() {
 }
 ```
 
-We're almost wrapped up, there's just one more key step: we need to make it so that you when you click a movie on our home page, it brings you to the `MovieDetails` view. In order to do this, we'll need access to the ID of the movie inside of our `Catalogue` component. We already have access to this because we're making an API call inside our `Catalogue component.
+We're almost wrapped up, there's just one more key step: we need to make it so that you when you click a movie in Catalogue, it brings you to the `MovieDetails` view. In order to do this, we'll need access to the ID of the movie inside of our `Catalogue` component. We already have access to this because we're making an API call inside our `Catalogue component and our response contains a unique `id` property.
 
 Inside our `Catalogue` component, let's add a new `Link` component from `react-router`
 
@@ -362,8 +365,8 @@ class Catalogue extends Component {
             <div key={movie.id} className="movie">
 
               {
-              // Add a Link component from the react-router-dom package
-              // wrap the Link around each Catalogue image and set the "to" attribute to match the movie ID stored in our API data 
+              // wrap the Link component around each Catalogue image and 
+              // set the "to" attribute to match the movie ID stored in our API data 
               }
               <Link to={`/movie/${movie.id}`}>
                 <img
