@@ -63,6 +63,8 @@ The safest and simplest option to start creating a colour palette is to choose 5
 
 If you are unsure how to choose your primary colour and secondary colour. Look to the purpose of your project for inspiration. 
 
+<img src="./assets/colour.png" alt="example of color palettes for a law firm vs the national geography kids website">
+
 Once you've chosen a colour palette, stick to it and use those colours throughout the whole project!
 
 _**Very important accessibility Note!**_
@@ -77,11 +79,11 @@ Like colours, different fonts can convey different meanings. The most important 
 
 Think about the content of your site, what your site is about and the mood that it should convey. A font can be classic, artistic, youthful, modern etc. 
 
-(Image of different Fonts)
+<img src="./assets/fonts1.png" alt="examples of different fonts conveying classic, artistic, youthful and modern styles">
 
-### Serif vs. sans-Serif
+### Serif vs. Sans Serif
 
-(image of serif vs sans-serif)
+<img src="./assets/fonts2.png" alt="differences between sefi and sans serif fonts">
 
 It is common to use more than one font for a project. Like colours, designers choose a second font or even a third font to add visual variety. However there should be **no more than three**! If you have more than three fonts, the project can look messy and inconsistent. The typical recommendation would be to **choose two fonts - a heading font and a body text font**. We call this *font pairing*.
 
@@ -102,7 +104,7 @@ Once you've chosen your fonts, it is important that they are easy to read! 90% o
 
 Line height is the height of a line of text, and it determines the distance between multiple lines of text. Tightly spaced lines of text can appear difficult to read for the user. However too generously spaced lines of text can make each line look like separate elements.
 
-(examples of text with different line heights)
+<img src="./assets/line-height.png" alt="examples of paragraph texts at different line heights">
 
 **The general rule is to aim for your line height to be about 60% - 80% larger than the font size.** The number can vary depending on the font and font size. 
 
@@ -121,7 +123,8 @@ Browser's default line height is around 1.2, 1.6 is usually a good place to star
 
 Let's be honest, nobody is interested in consuming long paragraphs. Try to break up key points into smaller paragraphs of sentences will make your content more approachable and digestible for readers. 
 
-(example of long vs short paragraph)
+<img src="./assets/length1.png" alt="one long running paragraph">
+<img src="./assets/length2.png" alt="broken up short paragraphs">
 
 You also want to make sure your text paragraph does not stretch for too long on the horizontal line. It is tiring for users to read a long line of text. 
 
@@ -130,31 +133,39 @@ You also want to make sure your text paragraph does not stretch for too long on 
 Setting a maximum width on paragraphs is generally a good idea. The wrapper container also helps with this as well.
 If you feel like there are too much blank space, consider splitting the content into columns.  
 
-(example of long line vs short)
-
+<img src="./assets/length3.png" alt="Text broken into two columns">
 
 ### Alignment
 
+Text alignment should always default to left aligned. Our eyes like following the same patterns. Left aligned is the easiest pattern to follow because we are always jumping back to the same spot when it goes to the next line. 
 
+<img src="./assets/alignment1.png" alt="text that is center aligned vs left aligned.">
+
+However it is okay to experiment with other types of alignment in situations where the text is short such as in a subheading. 
+
+<img src="./assets/alignment2.png" alt="long text that is right aligned vs short heading and text that are center aligned.">
 
 ### Text Hierarchy 
 
+Contrast is our friend! It is important for us to create visual hierarchy with our content. Visual hierarchy helps us direct user flow to the order of importance. This can be achieved by adjusting css properties like `font-size`, `font-weight` and `color`/`background-color`. 
+
+<img src="./assets/hierarchy.png" alt="high contrast visual hierarchy vs low contrast visual hierarchy">
 
 ## 5. Buttons
 
 Buttons are considered as a major and essential UI element for all sites and applications. They are sometimes referred to as *CTA (call to action)*, which is meant to prompt user interaction. Therefore, they are usually styled to bring visual attention, usually with a secondary color or accent color. 
 
-(image of different button styles)
+<img src="./assets/buttons.png" alt="variations of different button styles">
 
 Buttons comes in all varieties of different styles. There are no right and wrong button styles as long as you **stick to one particular style** throughout the entire project and follow these best user experience (UX) practices:
 
 - Buttons should have a descriptive text telling users what they are expected to happen when they click on the button. 
 
-(image of non descriptive text vs descriptive text)
+<img src="./assets/buttons-2.png" alt="buttons with generic text vs descriptive texts. Examples of descriptive texts are: 'Download Guide', 'Donate $20', 'Watch the video'.">
 
 - Buttons should have some padding space around the descriptive text so that use have enough clickable area. 
 
-(image of space vs no space)
+<img src="./assets/buttons-1.png" alt="examples of a button without padding and width padding.">
 
 - Buttons are interactive elements which means we need to ensure their pseudo states are styled. These include `:hover`, `:disabled` and `:active`. These will ensure user gets feedback from the interactivity. 
   [Play around with this codepen](https://codepen.io/susan8098/pen/YzXovOY), which button is correctly styled?
@@ -188,26 +199,24 @@ Everything listed above are open-sourced and royalty-free! Do keep in mind to **
 
 - Make sure your images are high quality that aren't pixelated or stretched!
 
-(images as example)
+<img src="./assets/images.png" alt="high quality image vs pixelated image.">
 
 - At the same time you also want to make sure to optimize your images so that they are not over 2MB in size! Large image size are one of the main contributions to low performance speed. You can use tools like [ImageOptim](https://imageoptim.com/mac) or [Kraken.io](https://kraken.io/). 
 - Choose images that are relevant to your content and purpose!
 
-(images as example)
-
 - Make sure to choose images that are cohesive in colour palette.
 
-(images as example)
+<img src="./assets/images-1.png" alt="a light toned image of someone holding blue flowers and another light toned image of a table setting that consists of a vase of flowers, milk bottle and a boiled egg.">
 
 If you are struggling to find cohesive images, a hack you can use is to implement overlays.
 
-(images as example)
+<img src="./assets/images-2.png" alt="Top row consists of examples of a light toned image paired with a dark tone image that is quite different in color palette. Bottom row shows the same images with overlay treatment applied.">
 
 ### What to watch out for when implementing icons
 
 Again consistency! All icons in your project needs to maintain consistency in colour, size, line/stroke sizes and treatment.
 
-(images of icons that belongs to different icon set)
+<img src="./assets/icons.png" alt="examples of icons from different creators can vary in style. ">
 
 The easiest way to achieve this is just use icons that belongs as a set. Most artist create icons as a set and you can easily find sets on The Noun Project. 
 
@@ -217,19 +226,22 @@ The same goes for illustrations as well. Make sure you are using illustrations f
 
 Before you start thinking about the layout of your project, you should have a good idea of what kind of content you will have. You don't have to have a full content and copy written out but a rough idea of what sort of sections you are going to have. From there you can start drawing boxes on a piece of paper, what we referred to as *wireframes*.
 
-(image of an wireframe)
-
 It is important to think about user flow when laying down wireframes. What is the most important information user should see when they land on the page and what's next?
+
+Here's an examples of how one might turn into a simple content wireframe into developing a more flushed out first draft design. 
+
+<img src="./assets/wireframes.png" alt="development of wireframes">
 
 **Segmenting sections**
 
-(images of some simple layout sections)
+A trick that web designers often use is to segment sections with different background treatments such as alternative background colors. 
+
 
 ### Alignment
 
 Maintaining consistent alignment is very important to  ensure clean and professional look, but it is often overlooked. Consider the examples below:
 
-(examples cases of aligned vs un-aligned)
+<img src="./assets/alignment-layout.png" alt="not aligned site vs aligned site">
 
 [Bad example](https://kennected.org/)
 
@@ -237,7 +249,7 @@ Note that this is especially clear along the outer edges of the page. Our eyes l
 
 Another common way to ensure elements are aligned consistently is to use a grid system, which we've covered in [this class](https://github.com/HackerYou/bootcamp-notes/blob/master/css/grid-systems.md) before! Essentially a grid is a set of columns that can be placed on top of a page, which you can then use as a guide to place elements on.
 
-(image of airbnb site and grids)
+<img src="./assets/grids.png" alt="examples of Airbnb and The Globe and Mail adhering to a grid system.">
 
 ### Whitespace
 
@@ -246,13 +258,11 @@ Whitespace is any blank area between elements. It doesn't have to be white, it c
 - It provides **visual relief to users' eyes**. If no sufficient whitespace is provided, the page can get very overwhelming to look at and very heavy on users mental strain.
 - Whitespace is also **very powerful for directing users'** attention flow. When there is no whitespace, it's very difficult for users to determine what section or content to look at first.
 
-(provide image examples)
-
-(provide image example for proximity vs separation)
+<img src="./assets/spacing1.png" alt="examples of Airbnb and The Globe and Mail adhering to a grid system.">
 
 **Paddings & margins** are your best friends when creating spacing between elements. An important point to watch out here is that you are providing consistent spacing between elements. 
 
-(provide image example)
+<img src="./assets/spacing2.png" alt="examples of Airbnb and The Globe and Mail adhering to a grid system.">
 
 ## 8. Responsive optimization
 
@@ -273,9 +283,15 @@ Now that you are going to become front-end developers, you are expected to make 
 
 A style guide is a document **guide that holds all of the information about key visual elements** of a project and how to use them. It's a collection of information about colour palette, typefaces, font sizes, icons, button, spacing, grids and any other visual elements that contributes to the style of the project. Basically everything we've talked about so far documented in a centralized cheatsheet. 
 
-(image examples of style guides)
+<img src="./assets/styleguides.png" alt="examples style guides from AirBnb and Aftership">
 
 When you start working as a developer, a designer would typically supply a design with a style guide for you to work with. A style guide is especially helpful for a larger project with larger team where there are multiple team members contributing to the design and development of a project. This **ensures consistency and cohesiveness across multiple team members**, avoiding adjustments based on personal preferences. It also makes it a lot easier to make decisions as a team, relieving some of the mental load while working together as a team. 
+
+**Check out these design systems**
+
+- [Airbnb](https://airbnb.design/building-a-visual-language/)
+- [IBM](https://www.ibm.com/design/language/color)
+- [Mailchimp](https://ux.mailchimp.com/patterns/color)
 
 
 ## 10. UX Considerations
@@ -294,3 +310,6 @@ Other considerations include:
 - Are there unnecessary interactive states?
 - How many clicks does it take for the users to complete a specific task? 
 - Are the website/application instructions direct? 
+
+### Can you identify bad design patterns here?
+- [Example 1](https://www.diamondsprayfinish.com/)
