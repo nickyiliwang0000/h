@@ -1,78 +1,101 @@
-# Codealong video 
+# React-Router code-along
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/05bHeJPqyaE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+Using Create-React-App, React-Router, and [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction), we're going to build an application that is going to look similar to Netflix.
 
-Today we're going to be building a React application called Hackflix. It's going to look similar to Netflix and allow us to see a catalogue of popular movies from a given year. It's also going to allow us to click on each individual movie in our catalogue and go to a separate view that shows more information about that movie.
+This app will allow us to see a catalogue of popular movies from a given year. It's also going to allow us to click on each individual movie in our catalogue and go to a separate view that shows more information about that movie.
 
-You can find the styles for the code along [HERE](https://hychalknotes.s3.amazonaws.com/movie-db-codealong.zip)
+You can find the pre-written styles for this code along [HERE](https://hychalknotes.s3.amazonaws.com/movie-db-codealong.zip). This CSS can replace the default styles that exist within the `index.css` file in `create-react-app`.
 
 Inside of the `App.js` file let's add a header to our `App` component - it should look something like this:
 
-```javascript
-//App.js
-// ...
-render() {
-	return (
-		<div>
-			<header className='top-header'>
-				<h1>HackFlix</h1>
-				<nav>
-					<a href="#">Catalogue</a>
-				</nav>					
-			</header>
-		</div>
+```jsx
+// App.js
+import React, { Component } from 'react';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header>
+          <h1>Hackflix</h1>
+          <nav>
+            <a href="#">Catalogue</a>
+          </nav>
+        </header>
+      </div>
+    );
+  }
 }
+
+export default App;
 ```
 
-Perfect. Now that we have our header, let's grab the initial data we need from the movie database. To start out, we're going to want to grab a list of all the popular movies from 2018 so we can display them on the page. We're going to need to import `axios`, and make our initial request for the data inside of our `componentDidMount` lifecycle method. 
+Perfect. Now that we have our header, let's grab the initial data we need from the movie database API. To start out, we're going to want to grab a list of all the popular movies from 1990 (or any year you prefer) so we can display them on the page. We're going to need to install `axios` as a dependency to our application and import it. Then, we can make our initial request for the data inside of the `componentDidMount` lifecycle method. 
 
-We then store the result of that API call inside of our state. We'll also need to create some **default** state so that our component can render when we don't have any movies from our API yet.
+We then store the result of that API call inside of a state item called `movies`. We'll also need to create some **default** state so that our component can render when we don't have any movies from our API yet.
 
-```javascript
-//App.js
+```jsx
+// App.js
+import React, { Component } from 'react';
 import axios from 'axios';
 
 class App extends Component {
-	constructor() {
-		super();
-		this.state = {
-			movies: []
-		}
-	}
-	// ...
-	componentDidMount() {
-        axios({
-            url: 'https://api.themoviedb.org/3/discover/movie',
-            params: {
-                api_key: 'f012df5d63927931e82fe659a8aaa3ac',
-                language: 'en-US',
-                sort_by: 'popularity.desc',
-                include_adult: 'false',
-                include_video: 'false',
-                page: 1,
-                primary_release_year: 2018
-            }
-        })
-        .then((res) => {
-            console.log(res)
-            this.setState({
-                movies: res.data.results
-            });
-        });
+  constructor(){
+    super();
+    this.state = {
+      movies: [],
     }
+  }
+
+  componentDidMount() {
+    axios({
+      url: 'https://api.themoviedb.org/3/discover/movie',
+      params: {
+        api_key: 'f012df5d63927931e82fe659a8aaa3ac',
+        language: 'en-US',
+        sort_by: 'popularity.desc',
+        include_adult: 'false',
+        include_video: 'false',
+        page: 1,
+        primary_release_year: 1999,
+      },
+    }).then(res => {
+      res = res.data.results;
+      this.setState({
+        movies: res,
+      })
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header>
+          <h1>Hackflix</h1>
+        </header>
+      </div>
+    );
+  }
+}
+
+export default App;
+
 ```
 
-Awesome! We should now be retrieving our movies from the movie DB and storing them inside of our state. Now let's display them on the page! Inside of our app's `render` method, let's add:
+Awesome! We should now be retrieving our movies from the movie DB and storing them inside of our state. Now let's display them on the page! Inside of our App component `render` method, let's add the following code after the `<header>`:
 
-```javascript
-<div className='movie-catalogue'>
-			{this.state.movies.map((movie, i) => {
-				return (
-					<div key={movie.id} className='movie-catalogue__movie'>
-						<img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
-					</div>
-				)
-			})}
+```jsx
+<div className="catalogue">
+  {this.state.movies.map (movie => {
+    return (
+      <div key={movie.id} className="movie">
+        <img
+          src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+          alt="test"
+        />
+      </div>
+    );
+  })}
 </div>
 ```
 
