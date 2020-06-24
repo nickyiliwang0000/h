@@ -12,7 +12,7 @@ You will also be in charge of designing your projects in the upcoming weeks of b
 > Shopify, 10 Tips for Building a Beautiful Web Developer Portfolio
 
 After all we don't want your site to become something like this...
-[https://www.lingscars.com/](https://www.lingscars.com/])
+🔗 [https://www.lingscars.com/](https://www.lingscars.com/])
 
 This is a guide on how you can get started with making design choices and avoid common mistakes!
 
@@ -32,7 +32,7 @@ Let's use a trivia app as an example.
 
 It is also very important to have the purpose of your project clearly stated upon first landing on it. The user needs to know what the application or site is about when they land before they would like to invest any more of their time on the site further. 
 
-**[Have a look at this site here](http://rottencode.herokuapp.com/)**
+🔗 **[Have a look at this site here](http://rottencode.herokuapp.com/)**
 
 Would you want to interact with this site?
 
@@ -70,6 +70,7 @@ Once you've chosen a colour palette, stick to it and use those colours throughou
 _**Very important accessibility Note!**_
 In order to meet the [WCAG AA compliance standard](https://github.com/HackerYou/bootcamp-notes/blob/master/accessibility/accessibility-and-css.md), you have to make sure the colour combination you are using between your regular text and the background have a **contrast ratio of 4.5:1**. You can use tools like [Color Safe Color Generator](http://colorsafe.co/) or [Text on Background Image Contrast Checker](https://www.brandwood.com/a11y/) to check contrast ratios.
 
+🔗 [Cool Example](http://vibrant.pratheev.com/) 👍
 
 ## 3. Choosing Fonts
 
@@ -168,7 +169,7 @@ Buttons comes in all varieties of different styles. There are no right and wrong
 <img src="./assets/buttons-1.png" alt="examples of a button without padding and width padding.">
 
 - Buttons are interactive elements which means we need to ensure their pseudo states are styled. These include `:hover`, `:disabled` and `:active`. These will ensure user gets feedback from the interactivity. 
-  [Play around with this codepen](https://codepen.io/susan8098/pen/YzXovOY), which button is correctly styled?
+  🔗 [Play around with this codepen](https://codepen.io/susan8098/pen/YzXovOY), which button is correctly styled?
 
 - Lastly, if it's not a interactive button (aka. if the element doesn't do anything), don't style it like one! It's confusing to the users!
 
@@ -243,9 +244,11 @@ Maintaining consistent alignment is very important to  ensure clean and professi
 
 <img src="./assets/alignment-layout.png" alt="not aligned site vs aligned site">
 
-[Bad example](https://kennected.org/)
+🔗 [Bad example](https://kennected.org/) 👎
 
 Note that this is especially clear along the outer edges of the page. Our eyes like to follow a specific pattern, when elements are out out alignment, it breaks the pattern. This is also why we encourage the use of a *wrapper* or *container*!
+
+🔗 [Good Example](https://bek.is/) 👍
 
 Another common way to ensure elements are aligned consistently is to use a grid system, which we've covered in [this class](https://github.com/HackerYou/bootcamp-notes/blob/master/css/grid-systems.md) before! Essentially a grid is a set of columns that can be placed on top of a page, which you can then use as a guide to place elements on.
 
@@ -277,7 +280,8 @@ Now that you are going to become front-end developers, you are expected to make 
 - **Unnecessary animation and hover states should be removed**. 
 - **You shouldn't be removing any element on mobile!** If you absolutely need to remove element or sections on mobile, you need to think of a way to replicate the same content but for mobile experience. 
 
-(examples)
+🔗 [Bad Example](https://cactuscoding.com/) 👎
+🔗 [Good Example](https://pitchfork.com/) 👍
 
 ## 9. Creating a style guide for consistency
 
@@ -306,10 +310,11 @@ All of our design choices should center around how easy it is for the user to us
 
 Other considerations include:
 
-- Are animations purposeful? 
+- Are animations purposeful? Look at [this example of subtle but purposeful animation](https://christinalaba.com/)
 - Are there unnecessary interactive states?
 - How many clicks does it take for the users to complete a specific task? 
 - Are the website/application instructions direct? 
 
-### Can you identify bad design patterns here?
+### Can you identify bad design patterns?
 - [Example 1](https://www.diamondsprayfinish.com/)
+- [Can't Unseen](https://cantunsee.space/)
