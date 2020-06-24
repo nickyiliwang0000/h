@@ -82,261 +82,304 @@ export default App;
 
 ```
 
-Awesome! We should now be retrieving our movies from the movie DB and storing them inside of our state. Now let's display them on the page! Inside of our App component `render` method, let's add the following code after the `<header>`:
+Awesome! We should now be retrieving our movies from the movie DB and storing them inside of our state. Now let's display them on the page! Inside of our App component `render` method, let's add the following code after the `<header>` element:
 
 ```jsx
 <div className="catalogue">
   {this.state.movies.map (movie => {
     return (
       <div key={movie.id} className="movie">
-        <img
-          src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-          alt="test"
-        />
+        <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
       </div>
     );
   })}
 </div>
 ```
 
-And now we have movies displayed on the page! But what if we wanted to use this catalogue elsewhere in our app? Let's make this more reusable by breaking it out into a different component. 
+And now we have movies displayed on the page! But what if we wanted to use this Catalogue elsewhere in our app? Let's make this more reusable by breaking it out into a separate component. 
 
-Since this new component will be responsible for getting the data and storing it in state for later use, we will make this a complex component and move our `axios` call into this component as well.
+Since this new component will be responsible for getting the data and storing it in state for later use, we will make this a stateful component and move our `axios` call into this component as well.
 
-```javascript
-//Catalogue.js
+```jsx
+// Catalogue.js
+import React, { Component } from 'react';
+import axios from 'axios';
+
 class Catalogue extends Component {
-	constructor() {
-		super();
-		this.state = {
-			movies: []
-		}
-	}
-	// ...
-	componentDidMount() {
-        axios({
-            url: 'https://api.themoviedb.org/3/discover/movie',
-            params: {
-                api_key: 'f012df5d63927931e82fe659a8aaa3ac',
-                language: 'en-US',
-                sort_by: 'popularity.desc',
-                include_adult: 'false',
-                include_video: 'false',
-                page: '1',
-                primary_release_year: '2018'
-            }
-        })
-        .then((res) => {
-            this.setState({
-                movies: res.data.results
-            });
-        });
+    constructor(){
+    super();
+    this.state = {
+      movies: [],
     }
+  }
+
+  componentDidMount() {
+    axios({
+      url: 'https://api.themoviedb.org/3/discover/movie',
+      params: {
+        api_key: 'f012df5d63927931e82fe659a8aaa3ac',
+        language: 'en-US',
+        sort_by: 'popularity.desc',
+        include_adult: 'false',
+        include_video: 'false',
+        page: 1,
+        primary_release_year: 1999,
+      },
+    }).then(res => {
+      res = res.data.results;
+      this.setState({
+        movies: res,
+      })
+    })
+  }
+  render() {
+    return (
+      <div className="catalogue">
+        {this.state.movies.map((movie) => {
+          return (
+            <div key={movie.id} className="movie">
+              <img
+                src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt="test"
+              />
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
 }
+
+export default Catalogue;
 ```
 
 And then inside of our App component, we can refactor like so:
-```javascript
+
+```jsx
+import React, { Component } from 'react';
+import Catalogue from './Catalogue';
+
 class App extends Component {
-	// ...
-	render() {
-		return (
-			<div>
-				<header className='top-header'>
-					<h1>HackFlix</h1>
-					<nav>
-						<a href="#">Catalogue</a>
-					</nav>					
-				</header>
-				<Catalogue />
-			</div>
-		)
-	}
+  render() {
+    return (
+      <div className="App">
+        <header>
+          <h1>Hackflix</h1>
+        </header>
+        <Catalogue />
+      </div>
+    );
+  }
 }
+
+export default App;
+
 ```
 
 And we now have a `Catalogue` component that gets our data and displays all of our movies! 
 
-Now this is cool and all, but what if we want to create the ability to click on a movie and be transported to a page that has additional information about that movie? We can do this with routing. Let's start by importing our `react-router-dom` package, and refactoring our render method a little bit so that it can start to use routing:
+Now this is cool and all, but what if we want to create the ability to click on a movie and be transported to a page that has additional information about that movie? We can do this with routing. Let's start by installing `react-router-dom` as a dependency and importing it into our `App` component. Then we will start refactoring our `render` method a little bit so that it can start to use routing:
 
-```javascript
-//App.js
-import { 
-	BrowserRouter as Router, 
-	Route } from 'react-router-dom';
-```
+```jsx
+// App.js
+import React, { Component } from 'react';
+import Catalogue from './Catalogue';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-```javascript
-//App.js
 class App extends Component {
-	render() {
-		return (
-			<Router>
-				<div>
-					<header className='top-header'>
-						<h1>HackFlix</h1>
-						<Link to="/">Catalogue</Link>
-					</header>
-					<Catalogue />
-					<Route exact path="/" component={Catalogue} />
-				</div>
-			</Router>
-		)
-	}
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <header>
+            <h1>Hackflix</h1>
+          </header>
+          <Route exact path="/" component={Catalogue} />  
+        </div>
+      </Router>
+    );
+  }
 }
+
+export default App;
 ```
 
 Now let's add our second route, which is going to be `/movie/:movie_id`, where `movie_id` is a parameter: the id of the movie we'd like to request from the movie database.
 
-```javascript
-//App.js
+```jsx
+// App.js
+import React, { Component } from 'react';
+import Catalogue from './Catalogue';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import MovieDetails from './MovieDetails';
+
 class App extends Component {
-	render() {
-		return (
-			<Router>
-				<div>
-					<header className='top-header'>
-						<h1>HackFlix</h1>
-						<Link to="/">Catalogue</Link>
-					</header>
-					<Catalogue />
-					<Route exact path="/" component={Catalogue} />
-					<Route exact path="/movie/:movie_id" component={MovieDetails} />
-				</div>
-			</Router>
-		)
-	}
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <header>
+            <h1>Hackflix</h1>
+          </header>
+          <Route exact path="/" component={Catalogue} />  
+          <Route exact path="/movie/:movieID" component={MovieDetails} />
+        </div>
+      </Router>
+    );
+  }
 }
+
+export default App;
+
 ```
 
 Now let's create a `MovieDetails` component that will grab our a movie by the ID parameter that gets passed when we navigate to that route:
 
-```javascript
-//MovieDetails.js
+```jsx 
+// MovieDetails.js
+import React, { Component } from 'react';
+
 class MovieDetails extends Component {
-	render() {
-		return (
-			<h1>
-				{this.props.match.params.movie_id}
-			</h1>
-		)
-	}
+  render() {
+    return <h1>{this.props.match.params.movieID}</h1>;
+  }
 }
+
+export default MovieDetails;
 ```
 
 You'll see that whatever number we pass after `/movie` in the URL, that number gets printed out on to the page! We can use this number to make another `axois` request to the API for more data on that particular movie like this:
 
-```javascript
-//MovieDetails.js
-class MovieDetails extends Component {
-	constructor() {
-		super();
-		this.state = {
-			movie: {}
-		}
-	}
-	render() {
-		return (
-			<div>
-				{this.props.params.movie_id}
-			</div>
-        )
-	}
+```jsx
+// MovieDetails.js
+import React, { Component } from 'react';
+import axios from 'axios';
 
-    componentDidMount() {
-        axios({
-            url: `https://api.themoviedb.org/3/movie/${this.props.match.params.movie_id}`,
-            params: {
-                api_key: 'f012df5d63927931e82fe659a8aaa3ac',
-                language: 'en-US',
-                sort_by: 'popularity.desc',
-                include_adult: 'false',
-                include_video: 'false',
-                page: '1',
-                primary_release_year: '2018'
-            }
-        })
-        .then((res) => {
-            this.setState({
-                movie: res.data
-            });
-        });
-    }
+class MovieDetails extends Component {
+  constructor() {
+    super();
+    this.state = {
+      movie: {},
+    };
+  }
+
+  componentDidMount() {
+    axios({
+      url: `https://api.themoviedb.org/3/movie/${this.props.match.params.movieID}`,
+      params: {
+        api_key: 'f012df5d63927931e82fe659a8aaa3ac',
+        language: 'en-US',
+        sort_by: 'popularity.desc',
+        include_adult: 'false',
+        include_video: 'false',
+        page: '1',
+        primary_release_year: '2018',
+      },
+    }).then(res => {
+      this.setState({
+        movie: res.data,
+      })
+    })
+  }
+
+  render() {
+    return <h1>{this.props.match.params.movieID}</h1>;
+  }
+}
+
+export default MovieDetails;
+
 ```
 
-Here we are hitting the `/3/movie` endpoint of the MovieDB and passing in `this.props.params.movie_id` as the unique movie ID we'd like to grab. We store the results in our state in a property called `movie`.
+Here we are hitting the `/3/movie` endpoint of the MovieDB and passing in `this.props.params.movieID` as the unique movie ID we'd like to grab. We store the results in our state in a property called `movie`.
 
 Now that we have access to our `movie` property, we can start displaying it's data on to the page! Inside the render method in `MovieDetails` let's add:
 
 ```javascript
 //MovieDetails.js
 render() {
-	return (<div>
-		<div className='movie-single__poster'>
-			<div className='movie-single__description'>
-				<header>
-					<h1>{this.state.movie.original_title}</h1>
-					<h2>{this.state.movie.tagline}</h2>
-					<p>{this.state.movie.overview}</p>
-				</header>
-			</div>
-			<div className='movie-single__image'>
-				<img src={`http://image.tmdb.org/t/p/w500/${this.state.movie.poster_path}`} />
-			</div>
-		</div>
-	</div>)
+  return (
+    <div>
+      <div className="poster">
+        <div className="description">
+          <h1>{this.state.movie.original_title}</h1>
+          <h2>{this.state.movie.tagline}</h2>
+          <p>{this.state.movie.overview}</p>
+        </div>
+        <div className="image">
+          <img src={`http://image.tmdb.org/t/p/w500/${this.state.movie.poster_path}`} alt=""/>
+        </div>
+      </div>
+    </div>
+  );
 }
 ```
 
 We're almost wrapped up, there's just one more key step: we need to make it so that you when you click a movie on our home page, it brings you to the `MovieDetails` view. In order to do this, we'll need access to the ID of the movie inside of our `Catalogue` component. We already have access to this because we're making an API call inside our `Catalogue component.
 
-Inside our `Catalogue` component, let's add:
+Inside our `Catalogue` component, let's add a new `Link` component from `react-router`
 
-```javascript
-//Catalogue.js
+```jsx
+// Catalogue.js
+import React, { Component } from 'react';
+import axios from 'axios';
+
+// import a Link component
+import { Link } from 'react-router-dom';
+
 class Catalogue extends Component {
-	constructor() {
-		super();
-		this.state = {
-			movies: []
-		}
-	}
-	// ...
-    componentDidMount() {
-        axios({
-            url: 'https://api.themoviedb.org/3/discover/movie',
-            params: {
-                api_key: 'f012df5d63927931e82fe659a8aaa3ac',
-                language: 'en-US',
-                sort_by: 'popularity.desc',
-                include_adult: 'false',
-                include_video: 'false',
-                page: '1',
-                primary_release_year: '2018'
-            }
-        })
-        .then((res) => {
-            this.setState({
-                movies: res.data.results
-            });
-        });
+    constructor(){
+    super();
+    this.state = {
+      movies: [],
     }
-	render() {
-		return (
-            <div className='movie-catalogue'>
-                {this.state.movies.map((movie, i) => {
-                    return (
-                        <div key={movie.id} className='movie-catalogue__movie'>
-                            <Link to={`/movie/${movie.id}`}>
-                                <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
-                            </Link>
-                        </div>
-                    )
-                })}
-		    </div>
-        )
-	}
+  }
+
+  componentDidMount() {
+    axios({
+      url: 'https://api.themoviedb.org/3/discover/movie',
+      params: {
+        api_key: 'f012df5d63927931e82fe659a8aaa3ac',
+        language: 'en-US',
+        sort_by: 'popularity.desc',
+        include_adult: 'false',
+        include_video: 'false',
+        page: 1,
+        primary_release_year: 1999,
+      },
+    }).then(res => {
+      res = res.data.results;
+      this.setState({
+        movies: res,
+      })
+    })
+  }
+  render() {
+    return (
+      <div className="catalogue">
+        {this.state.movies.map((movie) => {
+          return (
+            <div key={movie.id} className="movie">
+
+              {
+              // Add a Link component from the react-router-dom package
+              // wrap the Link around each Catalogue image and set the "to" attribute to match the movie ID stored in our API data 
+              }
+              <Link to={`/movie/${movie.id}`}>
+                <img
+                  src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                  alt="test"
+                />
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
 }
+
+export default Catalogue;
 ```
 
 And that's all there is to it! 
