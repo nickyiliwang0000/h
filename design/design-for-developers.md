@@ -281,6 +281,7 @@ Now that you are going to become front-end developers, you are expected to make 
 - **You shouldn't be removing any element on mobile!** If you absolutely need to remove element or sections on mobile, you need to think of a way to replicate the same content but for mobile experience. 
 
 🔗 [Bad Example](https://cactuscoding.com/) 👎
+
 🔗 [Good Example](https://pitchfork.com/) 👍
 
 ## 9. Creating a style guide for consistency
@@ -315,6 +316,6 @@ Other considerations include:
 - How many clicks does it take for the users to complete a specific task? 
 - Are the website/application instructions direct? 
 
-### Can you identify bad design patterns?
+## Can you identify bad design patterns?
 - [Example 1](https://www.diamondsprayfinish.com/)
 - [Can't Unseen](https://cantunsee.space/)
