@@ -7,7 +7,7 @@ This app will allow us to see a catalogue of popular movies from a given year. I
 To get started, we will create a new `create-react-app` project and call it `Hackflix`.
 
 ```bash
-npx create-react-app Hackflix
+npx create-react-app hackflix
 ```
 
 You can find the pre-written styles for this code along [HERE](https://hychalknotes.s3.amazonaws.com/movie-db-codealong.zip). This CSS can replace the default styles that exist within the `index.css` file in our new `Hackflix` project.
