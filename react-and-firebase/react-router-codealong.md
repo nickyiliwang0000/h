@@ -367,10 +367,7 @@ class Catalogue extends Component {
               // set the "to" attribute to match the movie ID stored in our API data 
               }
               <Link to={`/movie/${movie.id}`}>
-                <img
-                  src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                  alt="test"
-                />
+                <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
               </Link>
             </div>
           );
