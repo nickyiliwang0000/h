@@ -141,9 +141,7 @@ class Catalogue extends Component {
         {this.state.movies.map((movie) => {
           return (
             <div key={movie.id} className="movie">
-              <img
-                src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                alt="test"
+              <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
               />
             </div>
           );
