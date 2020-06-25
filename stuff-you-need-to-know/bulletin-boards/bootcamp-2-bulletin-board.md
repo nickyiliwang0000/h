@@ -16,44 +16,37 @@ Week 9: ...the beginning of new beginnings (Portfolios, Resumes, React Hooks)
 
 **Monday**
 
--   **PROJECT 6 DUE @ 10AM**
--   **Blog Post #3 due**
--   Stand Ups 
--   Project 6 Presentations 
--   Portfolio Introduction
+-   
 -   🍴 LUNCH 🍴
--   Project Work time
--   **Portfolio Designs DUE @ 6PM**
+-   
 
 
 **Tuesday**
 
--   Persist IQ/Job Seeker Intro part 2
--   Project Work Time
+-  
+-   
 -   🍴 LUNCH 🍴
--   Project Work Time
+-   
 
 **Wednesday**
 
--   **FINAL EXAM @ 10am**
--   Project Work Time
+-   
 -   🍴 LUNCH 🍴
--   Project Work Time
+-   
 
 **Thursday**
 
--   Intro to React Hooks
+-   
 -   🍴 LUNCH 🍴
--   Project Work Time
+-   
 
 
 **Friday**
 
--   Project Work Time
--   Help Cue closes @ 1pm
+-   
 -   **PORTFOLIOS DUE @ 1PM**
 -   🍴 LUNCH 🍴
--   Portfolio Critiques
+-   
 -   SHOW AND TELL 🎉
 
 ### Bootcamp calendar
@@ -72,8 +65,8 @@ Tests = 5% each
 Exam = 25%
 ```
 
-Submission form: https://forms.gle/b5Npo5Nv95GyCXSk6
+Submission form: [Here] (https://docs.google.com/forms/d/11X0cb0hwvmqjY66aNJbSGI2XMbLtd4K1zNW-R_s6kQ0/)
 
-Group assignments: [Here](https://docs.google.com/spreadsheets/d/1BJcOU0NTPuH9FJcuvqABjMNM2h8X24lpx_fPKzrO0m4/edit?usp=sharing)
+Group assignments: [Here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/)
 
-Scope Approval Document: [Here](https://forms.gle/bFrTDVQpcpVUWqDw9)
+Scope Approval Document: [Here](https://docs.google.com/forms/d/1PETHgqnOLXSwjmI41fFQizKcIyB5Q4wnidCTM1ZXwbE/)
