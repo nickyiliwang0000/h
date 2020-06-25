@@ -292,7 +292,12 @@ To prevent this you will need to add a `basename` prop to the `Router / BrowserR
 </Router>
 ```
 
-`process.env.PUBLIC_URL` is a dynamically altered url that changes whether you are working locally (http://localhost:3000) or published live on a production server like GitHub pages (https://www.username.github.io/my-sweet-react-router-project).
+
+- `basename` is a `react-router` prop that allows you to provide a base URL path.
+- `process.env.PUBLIC_URL` is a dynamically altered URL that changes whether you are working locally (http://localhost:3000) or published live on a production server like GitHub pages (https://www.username.github.io/my-sweet-react-router-project).
+
+Once this code is added your application will be ready to deploy.
+
 
 
 ## Code-along: Movie catalogue
