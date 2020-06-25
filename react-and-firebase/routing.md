@@ -280,6 +280,21 @@ export default App;
 
 Now try navigating to `localhost:3000/apology/anyname` and see that the content will be customized based on what name you put in! This is kind of a silly example, but hopefully it gets you thinking about how params work and how information can be shared between views.
 
+## Deploying a react-router application with GitHub Pages
+
+So you have built your React application with the `react-router-dom` package and everything appears great on your local machine's development environment. When it comes time to deploy your website with a service like GitHub Pages, a critical step is required to prevent your application from breaking upon deployment and encountering a 404 Error page.
+
+To prevent this you will need to add a `basename` prop to the `Router / BrowserRouter` component with a value matching `process.env.PUBLIC_URL`. This implementation would look like this:
+
+```jsx
+<Router basename={process.env.PUBLIC_URL}>
+  // you sweet code here
+</Router>
+```
+
+`process.env.PUBLIC_URL` is a dynamically altered url that changes whether you are working locally (http://localhost:3000) or published live on an a production server like GitHub pages (https://www.username.github.io/my-sweet-react-router-project).
+
+
 ## Code-along: Movie catalogue
 Now that we have a rough understanding of how params work, let's build an app that can catalogue and display movies so that we better understand when and how to use params.
 
