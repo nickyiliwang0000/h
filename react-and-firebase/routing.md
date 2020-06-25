@@ -288,7 +288,7 @@ To prevent this you will need to add a `basename` prop to the `Router / BrowserR
 
 ```jsx
 <Router basename={process.env.PUBLIC_URL}>
-  // you sweet code here
+  // your sweet code here
 </Router>
 ```
 
