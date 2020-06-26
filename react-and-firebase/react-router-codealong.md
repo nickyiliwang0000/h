@@ -65,6 +65,7 @@ class App extends Component {
       },
     }).then(res => {
       res = res.data.results;
+      // Store the API results to the "movies" state value...
       this.setState({
         movies: res,
       })
