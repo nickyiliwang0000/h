@@ -12,7 +12,7 @@ npx create-react-app hackflix
 
 You can find the pre-written styles for this code along [HERE](https://hychalknotes.s3.amazonaws.com/movie-db-codealong.zip). This CSS can replace the default styles that exist within the `index.css` file in our new `Hackflix` project.
 
-Inside of the `App.js` file let's clear out some of the boilerplate `jsx` and add some custom header markup to our `App` component - it should look something like this:
+Let's clear out some of the boilerplate `jsx` from the default `App.js`, and add some custom header markup to our `App` component:
 
 ```jsx
 // App.js
