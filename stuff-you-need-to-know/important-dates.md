@@ -1,6 +1,6 @@
 # Project Due Dates
 
-|                                              |      2020 Spring I Bootcamp       |     2020 Winter II Bootcamp      |
+|                                              |      2020 Spring I Bootcamp       |     2020 Spring II Bootcamp      |
 | -------------------------------------------- | :-------------------------------: | :------------------------------: |
 | **Project 1 (1 page PSD conversion)**        |  Tuesday, May 19, 9:00 a.m.       |  Tuesday, July 7, 10:00 a.m.   |
 | **Project 2 (multi-page PSD conversion)**    |  Tuesday, May 26, 9:00 a.m.       |  Tuesday, July 14, 10:00 a.m.   |
