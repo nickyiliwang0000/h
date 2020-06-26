@@ -1,6 +1,6 @@
 # React-Router code-along
 
-Using Create-React-App, React-Router, and [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction), we're going to build an application that is going to look similar to Netflix.
+Using Create React App, React-Router, and [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction), we're going to build an application that is going to look similar to Netflix.
 
 This app will allow us to see a catalogue of popular movies from a given year. It's also going to allow us to click on each individual movie in our catalogue and go to a separate view that shows more information about that movie.
 
