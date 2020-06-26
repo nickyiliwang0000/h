@@ -366,7 +366,7 @@ class Catalogue extends Component {
 
               {
               // wrap the Link component around each Catalogue image and 
-              // set the "to" attribute to match the movie ID stored in our API data 
+              // set the "to" attribute to our route's URL path with movie ID stored in our API data 
               }
               <Link to={`/movie/${movie.id}`}>
                 <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`Movie poster for ${movie.original_title}`}>
