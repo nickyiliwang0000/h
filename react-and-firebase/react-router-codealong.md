@@ -301,16 +301,22 @@ Now that we have access to our `movie` property, we can start displaying its dat
 ```jsx
 // MovieDetails.js
 render() {
+  const {
+    original_title: title, // destructure the original_title property to a variable simply called title
+    tagline, 
+    overview, 
+    poster_path
+    } = this.state.movie;
   return (
     <div>
       <div className="poster">
         <div className="description">
-          <h1>{this.state.movie.original_title}</h1>
-          <h2>{this.state.movie.tagline}</h2>
-          <p>{this.state.movie.overview}</p>
+          <h1>{title}</h1>
+          <h2>{tagline}</h2>
+          <p>{overview}</p>
         </div>
         <div className="image">
-          <img src={`http://image.tmdb.org/t/p/w500/${this.state.movie.poster_path}`} alt=""/>
+          <img src={`http://image.tmdb.org/t/p/w500/${poster_path}`} alt={`Movie poster for ${title}`}>
         </div>
       </div>
     </div>
