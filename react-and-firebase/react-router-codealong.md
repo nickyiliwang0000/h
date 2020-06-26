@@ -51,6 +51,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // After the component has been added to the DOM make our API call...
     axios({
       url: 'https://api.themoviedb.org/3/discover/movie',
       params: {
