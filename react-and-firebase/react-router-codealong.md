@@ -35,7 +35,7 @@ export default App;
 
 Perfect. Now that we have our header, let's grab the initial data we need from the movie database API. To start out, we're going to want to grab a list of all the popular movies from 1990 (or any year you prefer) so we can display them on the page. We're going to need to install `axios` as a dependency to our application and import it. Then, we can make our initial request for the data inside of the `componentDidMount` lifecycle method. 
 
-We then store the result of that API call inside of a state item called `movies`. We'll also need to create some **default** state so that our component can render when we don't have any movies from our API yet.
+We then store the result of that API call inside of a state value called `movies`. Before we can do that we first need to create the state value in the constructor with a default value of an empty list so that our component can render even when we don't yet have any movies from our API.
 
 ```jsx
 // App.js
