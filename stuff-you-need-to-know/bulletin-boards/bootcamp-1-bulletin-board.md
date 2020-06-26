@@ -3,43 +3,42 @@
 
 ### Schedule
 
-Week 7
+Week 8
 
 **Monday**
 
+* React Test 📝
 * Motivational Monday
 * Standups
-* Deploying React apps with GH Pages
+* Debugging in JavaScript
 * 🍴 LUNCH 🍴
 * Project Work Time
-
 
 **Tuesday**
-* React code-along
+
+* Peer assessment exercise for Project 5
+* Project Work Time
 * 🍴 LUNCH 🍴
 * Project Work Time
-
 
 **Wednesday**
-* Async & Await
-* 🍴 LUNCH 🍴
-* Project Work Time
+
+* 🇨🇦 Canada Day - NO CLASS
 
 **Thursday**
 
-* Project 5 due at 9:00 am
-* Project 5 presentations
-* React Router
-* 🍴 LUNCH 🍴
-* React Router code-along
-* Introduce Project 6
+* Project work time
 
 **Friday**
 
-* Regex
+* Project 6 due at 9 AM
+* Project 6 presentations
+* Career Services 
 * 🍴 LUNCH 🍴
-* Project Work Time
+* Introduce Final Project
+* Project work time
 * Show 'n' Tell
+
 
 
 
