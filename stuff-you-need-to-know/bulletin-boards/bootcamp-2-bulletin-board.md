@@ -1,4 +1,4 @@
-# This is your cohort's bulletin board!
+# This is Spring 2's bulletin board!
 
 ## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
 
@@ -12,46 +12,62 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 9: ...the beginning of new beginnings (Portfolios, Resumes, React Hooks)
+Week 1: Oh, hello!
 
 **Monday**
 
--   
--   🍴 LUNCH 🍴
--   
+* Introductions
+* Juno Orientation
+* 🍴 LUNCH 🍴
+* GitHub orientation
+* Philosophy of best practices for HTML/CSS
+* Snippets
+* Browser dev tools
+* HTML/CSS review
+* HelpCue orientation
+* Project 1 introduction
 
 
 **Tuesday**
 
--  
--   
--   🍴 LUNCH 🍴
--   
+* Kickoff activity
+* CSS background colour and images
+* CSS box-model
+* 🍴 LUNCH 🍴
+* CSS layout
+* Display and orientation
+* HelpCue practice
+* Project work time
 
 **Wednesday**
 
--   
--   🍴 LUNCH 🍴
--   
+* _(No class, stat holiday)_
+* 🍴 LUNCH 🍴 _(Still have lunch! Lunch is great)_
+* _(No class, stat holiday)_
 
 **Thursday**
 
--   
--   🍴 LUNCH 🍴
--   
+* Advanced Layouts
+* 🍴 LUNCH 🍴
+* Responsive Design
+* Personal branding workshop
+* Project work time
 
 
 **Friday**
 
--   
--   **PORTFOLIOS DUE @ 1PM**
--   🍴 LUNCH 🍴
--   
--   SHOW AND TELL 🎉
+* Kickoff activity
+* CSS pseudo-selectors
+* CSS pseudo-elements
+* 🍴 LUNCH 🍴
+* Navigations
+* Project work time
+* SHOW AND TELL 🎉
+
 
 ### Bootcamp calendar
 
-We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Winter 2 Bootcamp - (event)".
+We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Spring 2 Bootcamp - (event)".
 
 ### Important links & Info
 
