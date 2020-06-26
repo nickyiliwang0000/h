@@ -320,7 +320,7 @@ render() {
 
 We're almost wrapped up, there's just one more key step: we need to make it so that you when you click a movie in Catalogue, it brings you to the `MovieDetails` view. In order to do this, we'll need access to the ID of the movie inside of our `Catalogue` component. We already have access to this because we're making an API call inside our `Catalogue` component and our response contains a unique `id` property.
 
-Inside our `Catalogue` component, let's add a new `Link` component from `react-router`
+Inside our `Catalogue` component, let's use React-Router's `Link` component to create a link to our movie details URL.
 
 ```jsx
 // Catalogue.js
