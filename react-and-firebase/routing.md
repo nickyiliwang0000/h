@@ -303,7 +303,7 @@ Once this code is added your application will be ready to deploy.
 ## Code-along: Movie catalogue with react-router
 Now that we have a rough understanding of how params work, let's build an app that can catalogue and display movies so that we can better understand when and how to use params.
 
-The full walkthrough for this code-along can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/react-router-codealong.md)
+The full walkthrough for this code-along can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/react-and-firebase/react-router-codealong.md).
 
 ### Additional resources
 * [React Router GitHub Repo](https://github.com/ReactTraining/react-router)
