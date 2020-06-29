@@ -153,7 +153,7 @@ You will be given a chance to make any further comments about their review as we
 2. Remove any unneeded files from the project.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages or on your own domain/subdomain.
-5. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
+5. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform).
 
 
 <!-- ## #design in Helpcue

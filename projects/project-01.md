@@ -53,7 +53,7 @@ You will also be given a mark for presenting your project.
 
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned!
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/edit?usp=sharing). Headings of the columns are links to the Zeplin files.
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/edit?usp=sharing). Headings of the columns are links to the zip files.
 
 <!-- > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer. -->
 
@@ -83,7 +83,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc
 1. Remove any unneeded files from the project.
 2. Create a repository called `firstname-lastname-project-one`
 3. Push your files to GitHub.
-4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
+4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform).
 
 <!-- ## #design in Helpcue
 
