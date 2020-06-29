@@ -18,6 +18,9 @@ You won't always be provided with the tablet/mobile views from a designer, and t
 
 Remember that you can discuss font sizes with the designer if you think they are too small to be read comfortably.
 
+While it isn't included in the design, please find somewhere in your project to add a "Created at Juno College" note with a link to [the Juno website](https://junocollege.com/). Your footer is the most likely place for this, but whatever you feel works best with your design.
+
+
 ## How will this project be graded?
 
 **Requirements:**
