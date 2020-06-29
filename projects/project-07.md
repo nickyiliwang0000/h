@@ -46,14 +46,14 @@ Choose a portfolio site design that:
 -   <http://www.christinalaba.com/>
 -   <http://www.lauraduggan.ca/>
 -   <http://www.braedencraig.com/>
+-   <http://www.afuadeborahcodes.com/>
+-   <https://brittanygiles.ca/>
 
 ## How will this project be graded?
 
 If you get a job, you get an A. 😉
 
 We'll do group critiques/QA to give and recieve feedback on Friday afternoon.
-
-You will also have a chance to opt-in for a Peer Review Session to get feedback on your portfolio on May 27th, 2020 at 1pm.
 
 **Requirements:**
 
