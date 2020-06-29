@@ -42,15 +42,19 @@ Week 8
 
 
 
-## 📚 Study Areas for React Test on June 29 📚
+## 📚 Study Areas for FINAL EXAM on July 6 📚
 
-* Class Components and Function Components
-* Lifecycle methods
-* JSX
-* State
-* Props
-* Updating State
-* Routing (Thursday lesson)
+* HTML Fundamentals
+* CSS quirks (e.g. browser defaults, ghost space, resets,box-sizing, cross-browser inconsistencies, floats, etc.)
+* JS syntax (e.g. arrow functions, template literals, let vs. const, variable scope, etc.)
+* JS modules and how we use them
+* React lifecycle methods
+* State in React
+* Class and Function Components
+* Basic Firebase methods
+* git commands
+* Definitions including abbreviations (e.g. ECMAScript, AJAX, JSX etc.)
+
 
 
 
