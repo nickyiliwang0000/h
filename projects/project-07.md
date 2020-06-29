@@ -48,6 +48,7 @@ Choose a portfolio site design that:
 -   <http://www.braedencraig.com/>
 -   <http://www.afuadeborahcodes.com/>
 -   <https://brittanygiles.ca/>
+-   <http://sharon-yi.com/>
 
 ## How will this project be graded?
 
