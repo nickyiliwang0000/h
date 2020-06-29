@@ -32,8 +32,8 @@ Week 8
 **Friday**
 
 * Project 6 due at 9 AM
-* Project 6 presentations
 * Career Services 
+* Project 6 presentations
 * 🍴 LUNCH 🍴
 * Introduce Final Project
 * Project work time
