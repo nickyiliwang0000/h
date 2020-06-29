@@ -33,24 +33,26 @@ Remember that you can discuss font sizes with the designer if you think they are
 -   Project represents the provided design well
 -   Files, folders, & naming conventions followed (kabob-case) (this includes your project repo)
 
-You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
+On top of these, you will be be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 
 -   Extraneous code is removed
 
-You will also be given marks for your project presentation:
+You will also be given a mark for presenting your project.
+
+<!-- You will also be given marks for your project presentation:
 
 -   Student was loud enough for everyone to hear
 -   Student was able to identify a technical win
 -   Student was able to effectively identify a technical challenge
--   Student did not go over time
+-   Student did not go over time -->
 
 ## Which design do I code?
 
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned!
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=1112317742). Headings of the columns are links to the Zeplin files.
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/edit?usp=sharing). Headings of the columns are links to the Zeplin files.
 
-> Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
+<!-- > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer. -->
 
 ### Design checklist
 
@@ -60,23 +62,18 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMn
 
 <!-- Coming soon! -->
 
-**Arora**
+**Electric Select**
 
-[design](https://scene.zeplin.io/project/5cacba8e16f8996023073ad9)
+[design and assets](https://hychalknotes.s3.amazonaws.com/electric-select.zip)
 
-[assets](https://hychalknotes.s3.amazonaws.com/arora-assets.zip)
+**Galass Handbags**
 
-**Drive Solo**
+[design and assets](https://hychalknotes.s3.amazonaws.com/galass-handbags.zip)
 
-[design](https://scene.zeplin.io/project/5cab7d3ad4655b65fd31a06b)
+**Hangry Tummy**
 
-[assets](https://hychalknotes.s3.amazonaws.com/drive-solo-assets.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/hangry-tummy.zip)
 
-**Foot Forward**
-
-[design](https://scene.zeplin.io/project/5c9be27eff87da691c56c139)
-
-[assets](https://hychalknotes.s3.amazonaws.com/foot-forward-assets.zip)
 
 ## Submitting your project
 

@@ -41,12 +41,14 @@ You will also be given a general mark on how well you adhere to best practices m
 -   Wrapper used to constrain content on large displays
 -   One external `.css` stylesheet is used for whole project
 
-You will also be given marks for your project presentation:
+You will also be given a mark for presenting your project.
+
+<!-- You will also be given marks for your project presentation:
 
 -   Student was loud enough for everyone to hear
 -   Student was able to identify a technical win
 -   Student was able to effectively identify a technical challenge
--   Student did not go over time
+-   Student did not go over time -->
 
 ## Which design do I code?
 
