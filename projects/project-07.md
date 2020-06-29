@@ -6,9 +6,9 @@ Project due dates can be found [here](https://github.com/HackerYou/bootcamp-note
 
 ## Design Must Submitted By:
 
-Monday, May 11th at 6pm
+Monday, July 6th at 5pm
 
-Enter your theme in [THIS](https://docs.google.com/spreadsheets/d/1jAUonW2B0KRQIFoJ_x8RIMPUBK41Hs3e68Q1HScfmlg/edit#gid=662615774) doc. 
+Enter your theme in [THIS](https://docs.google.com/spreadsheets/d/1zjRDoKcQzrT8tuZCCzdUN5Tq4OKOXE_3mf91Z3Rm_x0/edit?usp=sharing) doc. 
 
 
 ## Project description
@@ -21,7 +21,7 @@ To show off all the skills you've learned in the bootcamp, especially HTML, CSS,
 
 ## Design
 
-The point of your portfolio is to showcase your development skills. As such, we strongly encourage that you code an existing design. You can purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS). You must submit your design files before starting the project.
+The point of your portfolio is to showcase your development skills. As such, we strongly encourage that you code an existing design. You can purchase a design from somewhere like [Themeforest](http://1.envato.market/hackeryou) (don't bother with WordPress themes - we want to write our own CSS) or [Creative Market](https://creativemarket.com/templates/websites). You must submit your design files before starting the project.
 <!-- 
 You may not update an existing portfolio, you must start from scratch. -->
 
