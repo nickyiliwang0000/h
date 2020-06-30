@@ -83,6 +83,8 @@ Exam = 25%
 
 Submission form: [Here](https://docs.google.com/forms/d/11X0cb0hwvmqjY66aNJbSGI2XMbLtd4K1zNW-R_s6kQ0/)
 
+If you'd like to submit your project to be featured on Juno's social media, submit it [here](https://docs.google.com/forms/d/e/1FAIpQLSdu5QfWrOBE14L00vhc1e4IfbwXV4X7CzNdjwJxoP4uOSDA3w/viewform)
+
 Group assignments: [Here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/)
 
 Scope Approval Document: [Here](https://docs.google.com/forms/d/1PETHgqnOLXSwjmI41fFQizKcIyB5Q4wnidCTM1ZXwbE/)
