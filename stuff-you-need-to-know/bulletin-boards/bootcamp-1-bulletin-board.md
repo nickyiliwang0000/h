@@ -74,5 +74,7 @@ Exam = 25%
 
 Project submission form: https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit
 
+If you'd like to submit your project to be featured on Juno's social media, submit it [here](https://docs.google.com/forms/d/e/1FAIpQLSdu5QfWrOBE14L00vhc1e4IfbwXV4X7CzNdjwJxoP4uOSDA3w/viewform)!
+
 Group assignments: [Here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=1112317742)
 
