@@ -57,7 +57,7 @@ You will also be given a mark for presenting your project.
 
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned!
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=1112317742).
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/edit?usp=sharing).
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
@@ -67,23 +67,20 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1sPMn
 
 ### Design files
 
-**MindnSoul**
+**Boat Ride Adventure**
 
-[design](https://hychalknotes.s3.amazonaws.com/mind-n-soul.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/BoatRideAdventures.zip)
 
-[assets](https://hychalknotes.s3.amazonaws.com/MindnSoul-final-images.zip)
 
-**Captured**
+**Sanctuary Helpers**
 
-[design](https://hychalknotes.s3.amazonaws.com/captured.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/SanctuaryHelpers.zip)
 
-[assets](https://hychalknotes.s3.amazonaws.com/captured-final-assets.zip)
 
-**FunPlace**
+**Under the Sea**
 
-[design](https://hychalknotes.s3.amazonaws.com/fun-place.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/UnderTheSea.zip)
 
-[assets](https://hychalknotes.s3.amazonaws.com/FunPlace-final-assets.zip)
 
 ## Submitting your project
 
