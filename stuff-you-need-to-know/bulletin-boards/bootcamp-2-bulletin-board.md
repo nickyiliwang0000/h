@@ -16,51 +16,52 @@ Week 1: Oh, hello!
 
 **Monday**
 
-* Introductions
-* Juno Orientation
+_Blog post #1 is due today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
+
+* Motivational Monday
+* Intro to command line
+* Version control with Git and GitHub
 * 🍴 LUNCH 🍴
-* GitHub orientation
-* Philosophy of best practices for HTML/CSS
-* Snippets
-* Browser dev tools
-* HTML/CSS review
-* HelpCue orientation
-* Project 1 introduction
+* Git on the command line
+* Make a repo for your project and [push it](https://www.youtube.com/watch?v=vCadcBR95oU)
+* Project work time
 
 
 **Tuesday**
 
-* Kickoff activity
-* CSS background colour and images
-* CSS box-model
+_Project 1 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
+
+* Preprocessors and SCSS
 * 🍴 LUNCH 🍴
-* CSS layout
-* Display and orientation
-* HelpCue practice
-* Project work time
+* Project 1 presentations 👏🏽👏🏽👏🏽
+* Project 2 introduction
+* Project work time 
 
 **Wednesday**
 
-* _(No class, stat holiday)_
-* 🍴 LUNCH 🍴 _(Still have lunch! Lunch is great)_
-* _(No class, stat holiday)_
+* Flexbox 💪🏽📦
+* 🍴 LUNCH 🍴 _(Wednesday is like the work week's lunch time)_
+* Forms 📝
+* Project work time
 
 **Thursday**
 
-* Advanced Layouts
+_Make sure you buy a domain and hosting by tomorrow! [Here are some tips](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/hosting-and-domain-tips.md)_
+
+* Kickoff game 🏈
+* CSS grids 🔳🔳🔳
 * 🍴 LUNCH 🍴
-* Responsive Design
-* Personal branding workshop
+* Advanced CSS selectors ⏩👇🏽
 * Project work time
 
 
 **Friday**
 
-* Kickoff activity
-* CSS pseudo-selectors
-* CSS pseudo-elements
+* HTML/CSS test _(Don't be late!)_
+* Transforms, transitions, and animations 🌑🌒🌓🌔🌕
 * 🍴 LUNCH 🍴
-* Navigations
+* FTP and domains 🏰
+* Cross-browser testing ❎
 * Project work time
 * SHOW AND TELL 🎉
 
