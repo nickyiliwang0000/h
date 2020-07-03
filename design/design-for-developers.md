@@ -245,6 +245,7 @@ Maintaining consistent alignment is very important to  ensure clean and professi
 <img src="./assets/alignment-layout.png" alt="not aligned site vs aligned site">
 
 🔗 [Bad example 1](https://kennected.org/) 👎
+
 🔗 [Bad example 2](https://www.studiobyhouse.com/) 👎
 
 Note that this is especially clear along the outer edges of the page. Our eyes like to follow a specific pattern, when elements are out out alignment, it breaks the pattern. This is also why we encourage the use of a *wrapper* or *container*!
