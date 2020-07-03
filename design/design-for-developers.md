@@ -322,3 +322,8 @@ Other considerations include:
 ## Can you identify bad design patterns?
 - [Example 1](https://www.diamondsprayfinish.com/)
 - [Can't Unseen](https://cantunsee.space/)
+
+## Other Resources
+- [Syntax Podcast #068: Desgin Tips for Developers](https://syntax.fm/show/068/design-tips-for-developers)
+- [CSS Tricks - Design Principles for Developers](https://css-tricks.com/design-principles-for-developers-processes-and-css-tips-for-better-web-design/)
+- [Web Typography 101 by Andréa Crofts](https://medium.com/@andreacrofts/web-typography-101-302af8a65be7)
