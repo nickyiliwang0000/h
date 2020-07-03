@@ -10,7 +10,8 @@ As developers, we write in many different languages and have lots of exciting to
 
 Front end developers in particular and computer users in general often use visual tools (sometimes called a _graphical user interface_ or GUI - pronounced "gooey") to perform lower-level programming tasks. This makes plenty of sense; if we need to change the color of a button, it's easier to pick a color from a drop-down than it is to create a CSS file, link it, and write a declaration with a hex code. At the same time though, the actions we can perform are limited due to the design of the tool.
 
-A GUI takes a command from us and tells the computer to it. The command line is us telling our computers to run a command without the GUI in the middle. If the GUI is the barista and the command is our coffee order, the command line is a way for us to make our coffees ourselves. Writing in the command line gives us full control over our system and unlocks super powers for our projects.
+A GUI takes a general command from us and tells the computer exactly what to do. The command line lets us directly tell our computers to run a command, without the GUI in the middle. If the GUI is the barista and the command is our coffee order, the command line is a way for us to make our coffees ourselves. Writing in the command line gives us full control over our system and unlocks super powers for our projects.
+
 
 ## Opening the command line
 
@@ -27,6 +28,7 @@ To open the command line, we can either use the pre-installed command line tool 
 * **For Mac:** Open the 'Applications' folder, navigate to the 'Utilities' directory and open the Terminal application.
 
     For more control over your command line, we recommend you install [iTerm2](http://iterm2.com/).
+
 
 ### Fun fact corner
 
