@@ -4,7 +4,7 @@ You came to Juno to become a developer, so you might be asking why are we learni
 
 Yes we understand that you are here to become developers not designers. We don't need you to come out of the bootcamp as experts in design. In fact when you get a real development job, you will not be expected to know how to design. However development and design go hand in hand. Developers are constantly in communication with designers and other members on the team. Being able to understand the basics and talk about design is a super valuable skill to have alongside development skills and it will make you a better developer.
 
-Making some of these common design mistakes in your projects and portfolio can actually make you look like a incapable developer. 
+Making design mistakes in your projects and portfolio can actually make you look like an incapable developer. 
 
 You will also be in charge of designing your projects in the upcoming weeks of bootcamp. We need all your projects to look as polished as possible because no potential employers wants to look at a ugly project with horrible UI! The goal for this lesson is to help you achieve that. 
 
@@ -12,7 +12,7 @@ You will also be in charge of designing your projects in the upcoming weeks of b
 > Shopify, 10 Tips for Building a Beautiful Web Developer Portfolio
 
 After all we don't want your site to become something like this...
-🔗 [https://www.lingscars.com/](https://www.lingscars.com/])
+🔗 [https://www.lingscars.com/](https://www.lingscars.com/)
 
 This is a guide on how you can get started with making design choices and avoid common mistakes!
 
@@ -38,7 +38,7 @@ Would you want to interact with this site?
 
 ## 2. Choosing a colour palette
 
-After you've defined the purpose and tone of your project, making colour choices will be a lot easier! Your site should follow a consistent color scheme throughout the site. Pre-defining a colour palette in your planning will simplify your building process. 
+After you've defined the purpose and tone of your project, making colour choices will be a lot easier! Your site should follow a consistent colour scheme throughout the site. Pre-defining a colour palette in your planning will simplify your building process. 
 
 You don't need to understand colour theory to create a colour palette, there are lots of tools to help you out with it!
 
@@ -53,17 +53,17 @@ The safest and simplest option to start creating a colour palette is to choose 5
 - **Black or a very dark grey (#232323)**
   For paragraphs and text.
 - **Primary colour**
-  The main colour that determines the overall look of the project. This color will define the brand, personality and tone of your project. It can be used as background colours for sections, headings or buttons. 
+  The main colour that determines the overall look of the project. This colour will define the brand, personality and tone of your project. It can be used as background colours for sections, headings or buttons. 
 - **Secondary colour**
   Having one main colour is boring! We will need to pick a second colour to add visual interest. This could be used for alternative background colours, buttons, CTAs, links and highlight tags. 
 - **Supporting accent colours**
   Your project might need extra supporting accent colours that could be used for highlights, alert or warning messages. 
 
-[Here's great article about building a successful color palette.](https://refactoringui.com/previews/building-your-color-palette/)
+[Here's great article about building a successful colour palette.](https://refactoringui.com/previews/building-your-color-palette/)
 
 If you are unsure how to choose your primary colour and secondary colour. Look to the purpose of your project for inspiration. 
 
-<img src="./assets/colour.png" alt="example of color palettes for a law firm vs the national geography kids website">
+<img src="./assets/colour.png" alt="example of colour palettes for a law firm vs the national geography kids website">
 
 Once you've chosen a colour palette, stick to it and use those colours throughout the whole project!
 
@@ -99,7 +99,7 @@ It is common to use more than one font for a project. Like colours, designers ch
 
 ## 4. Typography
 
-Once you've chosen your fonts, it is important that they are easy to read! 90% of te information on the web is conveyed through typography. Here are some best practices and general rules to follow to help your users better process and read texts!
+Once you've chosen your fonts, it is important that they are easy to read! 90% of the information on the web is conveyed through typography. Here are some best practices and general rules to follow to help your users better process and read texts!
 
 ### Line Height
 
@@ -122,7 +122,7 @@ Browser's default line height is around 1.2, 1.6 is usually a good place to star
 
 ### Length
 
-Let's be honest, nobody is interested in consuming long paragraphs. Try to break up key points into smaller paragraphs of sentences will make your content more approachable and digestible for readers. 
+Let's be honest, nobody is interested in consuming long paragraphs. Break up key points into smaller paragraphs of sentences will make your content more approachable and digestible for readers. 
 
 <img src="./assets/length1.png" alt="one long running paragraph">
 <img src="./assets/length2.png" alt="broken up short paragraphs">
@@ -132,7 +132,7 @@ You also want to make sure your text paragraph does not stretch for too long on 
 **Try to limit line length to be no longer than 85 characters.**
 
 Setting a maximum width on paragraphs is generally a good idea. The wrapper container also helps with this as well.
-If you feel like there are too much blank space, consider splitting the content into columns.  
+If you feel like there is too much blank space, consider splitting the content into columns.  
 
 <img src="./assets/length3.png" alt="Text broken into two columns">
 
@@ -154,7 +154,7 @@ Contrast is our friend! It is important for us to create visual hierarchy with o
 
 ## 5. Buttons
 
-Buttons are considered as a major and essential UI element for all sites and applications. They are sometimes referred to as *CTA (call to action)*, which is meant to prompt user interaction. Therefore, they are usually styled to bring visual attention, usually with a secondary color or accent color. 
+Buttons are considered as a major and essential UI element for all sites and applications. They are sometimes referred to as *CTA (call to action)*, which is meant to prompt user interaction. Therefore, they are usually styled to bring visual attention, usually with a secondary colour or accent colour. 
 
 <img src="./assets/buttons.png" alt="variations of different button styles">
 
@@ -227,15 +227,15 @@ The same goes for illustrations as well. Make sure you are using illustrations f
 
 Before you start thinking about the layout of your project, you should have a good idea of what kind of content you will have. You don't have to have a full content and copy written out but a rough idea of what sort of sections you are going to have. From there you can start drawing boxes on a piece of paper, what we referred to as *wireframes*.
 
-It is important to think about user flow when laying down wireframes. What is the most important information user should see when they land on the page and what's next?
+It is important to think about user flow when laying down wireframes. What is the most important information the user should see when they land on the page and what's next?
 
-Here's an examples of how one might turn into a simple content wireframe into developing a more flushed out first draft design. 
+Here's an examples of how one might turn a simple content wireframe into developing a more flushed out first draft design. 
 
 <img src="./assets/wireframes.png" alt="development of wireframes">
 
 **Segmenting sections**
 
-A trick that web designers often use is to segment sections with different background treatments such as alternative background colors. 
+A trick that web designers often use is to segment sections with different background treatments such as alternative background colours. 
 
 
 ### Alignment
@@ -244,7 +244,8 @@ Maintaining consistent alignment is very important to  ensure clean and professi
 
 <img src="./assets/alignment-layout.png" alt="not aligned site vs aligned site">
 
-🔗 [Bad example](https://kennected.org/) 👎
+🔗 [Bad example 1](https://kennected.org/) 👎
+🔗 [Bad example 2](https://www.studiobyhouse.com/) 👎
 
 Note that this is especially clear along the outer edges of the page. Our eyes like to follow a specific pattern, when elements are out out alignment, it breaks the pattern. This is also why we encourage the use of a *wrapper* or *container*!
 
@@ -302,6 +303,8 @@ When you start working as a developer, a designer would typically supply a desig
 ## 10. UX Considerations
 
 UX stands for User Experience, a term that refers to how the end-user uses or experience a particular product. In our case for web and application development, **good UX means a website/application that is easy, simple, seamless, intuitive and accessible to use for the target audience**. It is not enough for a website or application to appear visually appealing and beautifully designed, if it is counterintuitive and frustrating to use, users will unlikely to return from using the product, which is why good UX is very important but a topic that people often overlooks. 
+
+🔗  [Bad Bad Example](https://userinyerface.com/) 👎
 
 All of our design choices should center around how easy it is for the user to use. It is not to say that visual design is not important, in fact visual design and everything we've talked about in this class is the tool that helps us achieve this goal. For example:
 
