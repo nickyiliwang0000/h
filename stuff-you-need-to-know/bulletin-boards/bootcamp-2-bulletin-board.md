@@ -12,7 +12,7 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 1: Oh, hello!
+Week 2: Fallin' in love all over again
 
 **Monday**
 
