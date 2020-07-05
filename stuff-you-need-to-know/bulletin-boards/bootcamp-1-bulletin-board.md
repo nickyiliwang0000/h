@@ -3,41 +3,41 @@
 
 ### Schedule
 
-Week 8
+Week 9
 
 **Monday**
 
-* React Test 📝
+* Final Exam 📝
 * Motivational Monday
 * Standups
-* Debugging in JavaScript
+* Project Work Time
 * 🍴 LUNCH 🍴
 * Project Work Time
 
 **Tuesday**
 
-* Peer assessment exercise for Project 5
-* Project Work Time
-* 🍴 LUNCH 🍴
 * Project Work Time
 
 **Wednesday**
 
-* 🇨🇦 Canada Day - NO CLASS
+* Job Seeker session Part 2
+* Project Work Time
+* 🍴 LUNCH 🍴
+* Project Work Time
 
 **Thursday**
 
+* React Hooks
+* Project work time
+* 🍴 LUNCH 🍴
 * Project work time
 
 **Friday**
 
-* Project 6 due at 9 AM
-* Career Services 
-* Project 6 presentations
+* Portfolio due at 12 PM
 * 🍴 LUNCH 🍴
-* Introduce Final Project
-* Project work time
-* Show 'n' Tell
+* Portfolio critiques with peers
+* 🍍🥤
 
 
 
