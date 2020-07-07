@@ -169,7 +169,7 @@ By providing a value of rotate, along with a number representing the degrees to 
   width: 200px;
   height: 200px;
   background: orangered;
-  transform: rotate(60deg);
+  transform: rotate(10deg);
 }
 ```
 
@@ -179,7 +179,7 @@ You can also apply these effects on hover:
   width: 200px;
   height: 200px;
   background: orangered;
-  transform: rotate(60deg);
+  transform: rotate(10deg);
 }
 
 .galleryItem:hover {
@@ -193,7 +193,7 @@ Using CSS transitions, we can animate between the two transformed states:
   width: 200px;
   height: 200px;
   background: orangered;
-  transform: rotate(60deg);
+  transform: rotate(10deg);
   transition: transform 0.8s;
 }
 
@@ -211,7 +211,7 @@ To work within a 3D space, we can use properties that affect the rotation across
 To rotate across the Y axis, use the value `rotateY()`.
 
 ```css
-.mySquare {
+.galleryItem {
   width: 200px;
   height: 200px;
   background: orangered;
@@ -219,7 +219,7 @@ To rotate across the Y axis, use the value `rotateY()`.
   transition: all 0.8s;
 }
 
-.mySquare:hover {
+.galleryItem:hover {
   transform: rotateY(180deg);
 }
 ```
@@ -312,11 +312,17 @@ Transforms can be used for some pretty interesting effects. Download [transform-
 
 ## CSS animations
 
-We have talked about both transitions and transforms so far, now let's take a look at using `keyframes` to produce animations. Again, these tools should be vendor prefixed in older browsers.
+We have talked about both transitions and transforms so far, now let's take a look at using `@keyframes` to produce animations. Note that these tools should be vendor prefixed in older browsers.
 
-_Key frames_ define different points in an animations life-time. We use percentages to mark different points within the keyframe. Here is a very simple example:
+_Key frames_ define different points in an animation's life-time. We use percentages to mark different points within the keyframe. Let's look at a very simple example. First, we'll put an HTML unicode snowflake on the page:
 
-First, we need to create the animation. Unlike most css, we do this outside of the element we want to apply it to, in its own CSS rule:
+```html
+<div class="snowflake snowflake1">&#10052;</div>
+```
+
+We are going to make this snowflake drift down the page.
+
+To start, we need to define the animation. Unlike most css, we do this outside of the element we want to apply it to, in its own CSS rule:
 
 ```css
 @keyframes snow {
@@ -330,7 +336,7 @@ First, we need to create the animation. Unlike most css, we do this outside of t
 }
 ```
 
-You are able to specify any percentage along the way, `0%` and `100%` representing the start and finish of the animation. If you have multiple points where you want to apply the same values, you can comma separate the percentage points:
+You are able to specify any percentage along the way, `0%` and `100%` representing the start and finish of the animation. If you have multiple points where you want to apply the same values, you can comma separate the percentages (just like selecting multiple HTML items when applying styles):
 
 ```css
 @keyframes snow {
@@ -361,15 +367,25 @@ You are able to specify any percentage along the way, `0%` and `100%` representi
 
 Now, that doesn't do anything except make an animation called `snow`. We need to apply it to our element.
 
-```html
-<div class="snowflake snowflake1">&#10052;</div>
-<!-- unicode snowflake -->
-```
-
 ```css
 @keyframes snow {
   0% {
     top: 0;
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    margin-left: 100px;
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    margin-left: 10px;
   }
 
   100% {
@@ -381,7 +397,6 @@ Now, that doesn't do anything except make an animation called `snow`. We need to
 .snowflake {
   position: absolute;
   font-size: 40px;
-  color: white;
   animation: snow 3s linear infinite;
 }
 ```
@@ -397,6 +412,8 @@ You can also set them independently as well as add a few other options:
 
 ```css
 .snowflake {
+  position: absolute;
+  font-size: 40px;
   animation-name: snow;
   animation-duration: 20s;
   animation-timing-function: linear;
@@ -420,6 +437,7 @@ You can also set them independently as well as add a few other options:
   * `both` During an `animation-delay`, it will take on the styles that will be applied during the first part of the animation. Once the animation ends, it will also hold on to the styles applied during the last part of the animation.
 
 Check out this [video](https://www.youtube.com/watch?v=irJXZnA3g5U) to see `animation-fill-mode` in action.
+
 
 ## Animation libraries
 
