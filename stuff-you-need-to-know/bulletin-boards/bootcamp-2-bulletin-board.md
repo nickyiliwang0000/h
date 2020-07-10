@@ -12,57 +12,60 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 2: Fallin' in love all over again
+Week 3: Come for the JS, stay for the jQ
 
 **Monday**
 
-_Blog post #1 is due today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
-
 * Motivational Monday
-* Intro to command line
-* Version control with Git and GitHub
+* Git branching 🐱🐙🌳
+* Git collaboration 🐱🐙👯‍♀️
+* GitHub Pages 🐱🐙📃
 * 🍴 LUNCH 🍴
-* Git on the command line
-* Make a repo for your project and [push it](https://www.youtube.com/watch?v=vCadcBR95oU)
+* Advanced grids ⏩🔳⏩⏩🔳⏩⏩⏩🔳
 * Project work time
 
 
 **Tuesday**
 
-_Project 1 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
+_Project 2 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
 
-* Preprocessors and SCSS
+✨ JavaScript daaaayyyy☕📃 ✨
+
+* Project 2 presentations 👏🏽👏🏽👏🏽
+* Intro to programming 🖥
+* Intro to JavaScript 💻
 * 🍴 LUNCH 🍴
-* Project 1 presentations 👏🏽👏🏽👏🏽
-* Project 2 introduction
-* Project work time 
+* _(Split into JS groups)_
+* Variables ❎ *=* ❓
+* Working with JavaScript 🛠☕📃
+
 
 **Wednesday**
 
-* Flexbox 💪🏽📦
+* _(JS groups)_
+* Programming control flow 🖥🕹🌊
 * 🍴 LUNCH 🍴 _(Wednesday is like the work week's lunch time)_
-* Forms 📝
-* Project work time
+* Functions 🕺🏽💃🏽👯‍♂️🥂
+
 
 **Thursday**
 
-_Make sure you buy a domain and hosting by tomorrow! [Here are some tips](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/hosting-and-domain-tips.md)_
-
-* Kickoff game 🏈
-* CSS grids 🔳🔳🔳
+* Kickoff game 🏈 _(All together)_
+* _(Back into JS groups)_
+* Objects 👩🏽‍⚖️🔨🙅🏽‍♀️
 * 🍴 LUNCH 🍴
-* Advanced CSS selectors ⏩👇🏽
-* Project work time
+* Arrays and methods 📦➕🗺
 
 
 **Friday**
 
-* HTML/CSS test _(Don't be late!)_
-* Transforms, transitions, and animations 🌑🌒🌓🌔🌕
+* _(Full class together againnnnnn 💕)_
+* JS Q&A ☕📃🙋🏽‍♀️🙋🏽‍♂️
+* Intro to jQuery 👋🏽💲
+* jQuery API documentation 💲📚
+* jQuery best practices 💲👍🏽🏋🏽‍♀️
 * 🍴 LUNCH 🍴
-* FTP and domains 🏰
-* Cross-browser testing ❎
-* Project work time
+* To-do app code-along ✅
 * SHOW AND TELL 🎉
 
 
