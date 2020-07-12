@@ -1,6 +1,6 @@
 # This is Spring 2's bulletin board!
 
-## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
+## Here is where we will post the weekly schedule, and anything else we need you to know
 
 
 <!-- ### Daily Schedule
@@ -44,7 +44,7 @@ _Project 2 is due at 10am today! [Submit it here](https://docs.google.com/forms/
 
 * _(JS groups)_
 * Programming control flow 🖥🕹🌊
-* 🍴 LUNCH 🍴 _(Wednesday is like the work week's lunch time)_
+* 🍴 LUNCH 🍴 _(Wednesday: The perfect tomato in the middle of the week's lunch sandwich)_
 * Functions 🕺🏽💃🏽👯‍♂️🥂
 
 
