@@ -11,11 +11,12 @@
 
 When you're working with files on GitHub, you may want to keep a clean copy locally and tinker with some new feature or wild idea. Great! You're ready to make a _branch_!
 
-A _branch_ is an isolated copy of your current work. When a branch is created, it is an exact replica of your last _committed_ code. When you initialize a new repo with a project, you only have one branch - your `master` branch!
+A branch is an isolated copy of your current work. When a branch is created, it is an exact replica of your last **committed** code. When you initialize a new repo with a project, you only have one branch - your `master` branch!
 
 <img src="https://hychalknotes.s3.amazonaws.com/view-branch.png" alt="viewing branches on github">
 
 On your command-line interface(CLI), if you were to create a new branch based off of the `master` branch, you would have an exact replica of your local-copy of your master branch.
+
 
 ## Why do we branch? 
 
@@ -83,7 +84,7 @@ git push origin my-feature-branch
 
 1. Use `git branch` to check which branch you're on.
    * If you're in your `my-feature-branch`, use `git checkout master` to switch to your `master` branch.
-2. Use `git pull origin master` to make sure your local is up to date with the latest from the upstream `master`. 
+2. Use `git pull origin master` to make sure your local is up to date with the latest from the remote `master`. 
 3. Use `git merge my-feature-branch` to merge your feature branch into the `master` branch.
 4. Use `git push origin master` to push your merge to the master branch of your repo on GitHub.
 
