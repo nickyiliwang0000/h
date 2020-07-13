@@ -12,55 +12,56 @@
 
 So far we've learnt about git branching as a way for us to make copies of the project and making changes without messing with the original version of the project. We can then utilize git merge to add and merge our changes into the main version. 
 
-The git branch and git merge workflow is a popular way for multiple developers to work on a project simultaneously. However it's a workflow that is not truly collaborative. A basic git branch and git merge worflow means any developer on the project can merge their work into the orignal branch at any time, without a review process. This often results in mistakes and other developers being blindsided by what's been pushed into the main codebase. 
+The git branch and git merge workflow is a popular way for multiple developers to work on a project simultaneously. However it's a workflow that is not truly collaborative. A basic git branch and git merge workflow means any developer on the project can merge their work into the original branch at any time, without a review process. This often results in mistakes, or other developers being blindsided by what's been pushed into the main codebase. 
 
-_Pull requests_ workflow can help us solve that problem. 
+Adding _pull requests_ to our workflow can help us solve that problem. 
 
 
 ## Pull requests
 
-A pull request (also referred to as _PR_ ) is a way of telling your co-workers or peers that you have finished a portion of the site, and that you would like a review of your code. This is not only an opportunity for you to receive feedback on your code, but also an opportunity to start writing more descriptive comments about certain functionality that other developers will need to understand. It's also important to include a description of the work included in the pull request.
+A pull request (also referred to as a _PR_ ) is a way of telling the other devs on a project that you have finished a portion of the site, and that you would like a review of your code. This is not only an opportunity for you to receive feedback on your code, but also an opportunity to start writing more descriptive comments about certain functionality that other developers will need to understand - it's important to have a description of the work included in the pull request.
 
-A good code-review will contain feedback no matter the quality of pull request. If there are no changes to be made, write a comment that reflects that so your fellow developer can know they did a great job! However, if there are areas that need improving - you can add a comment to the specific line number under the Files Changed tab.
+A good code-review will contain feedback no matter the quality of pull request. If you review a PR and there are no changes to be made, write a comment which reflects that so your fellow developer can know they did a great job! However, if there are areas that need improving, you can add a comment to the specific line number under the 'Files Changed' tab in GitHub.
 
-You can also change the settings on a project repo to _require_ a pull request to be approved by another developer before it is eligible for merging, which is a very common practice in a practical setting.
+You can also change the settings on a project repo to require a pull request to be approved by another developer before it is eligible for merging, which is a very common practice in a practical setting.
+
 
 ## Making a pull request
 
 In your repository, create a new branch using the command line `git checkout -b [branch-name]`
 
-Make some changes with your project. 
+Make some changes to your project. 
 
 Go through the git workflow to push your changes:
-- `git add -A`
-- `git commit -m "[commit message]"`
-- `git push origin [branch-name]`
+* `git add -A`
+* `git commit -m "[commit message]"`
+* `git push origin [branch-name]`
 
-After your branch has been pushed up to your GitHub repo, go to your GitHub repo page, and you should see a notification on your repo page: 
+After your branch has been pushed up to your remote repo, go to your GitHub repo page and you should see a notification about your branch: 
 
 <img src="https://hychalknotes.s3.amazonaws.com/create-PR.png" alt="a button allowing a user to create a pull request">
 
-Start creating a pull request by selecting "Compare & pull request". 
-It will open up the pull request window. Here is where you can provide more information about this content change.  
+Create a pull request by selecting "Compare & pull request". This will open up the pull request window. Here is where you can provide more information about the content you have changed.  
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-window.png" alt="create pull request UI" width="700">
 
-After you created a pull request, it is ready for another member on your team to review, comment and provide feedback. 
+After you hit "Create pull request", your PR will be ready for another member on your team to review, comment and provide feedback.
+
 
 ## Reviewing a pull request 
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-review.png" alt="create pull request UI]" width="500">
 
-GitHub will automatically detect changes and differences that's been made with the pull request. You can review it by clicking on the commit.
+GitHub will automatically detect the differences (ie. the changes you made) between the branches your PR is requesting to merge. Another developer can review these changes by clicking on the commit, or going to the "Files changed" tab.
 
-You can comment on a particular line of code by hovering over the plus icon:
+The reviewer can comment on a particular line of code by hovering over the plus icon:
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-comment.png" alt="pull request comment">
 
 There are 3 actions you can make when reviewing a pull request: 
-- **Approve**: This will notify the author that all changes are good, changes are approved to be merged back into original branch
-- **Request Changes**: This will notify the author that some changes has to be addressed before continuing. 
-- **Comment**: This will just provide general feedback to the author. 
+* **Approve**: This will notify the author that all changes are good, changes are approved to be merged back into original branch
+* **Request Changes**: This will notify the author that some changes have to be addressed before continuing. 
+* **Comment**: This will just provide general feedback to the author. 
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-options.png" alt="create pull request UI">
 
@@ -74,8 +75,8 @@ Bad Feedback 👎
 - This is really messy
 
 Good Feedback 👍
-- Try using `position: relative;` here instead of `margin`, it is more suitable in this situation because [...]
-- This class name is named in kebob-case, we should name it to camelCase to stay consistent with the rest of the site
+- Try using `position: relative;` here instead of `margin`, it is more suitable in this situation because we need to break the flow of the page and have the elements overlap.
+- This class name is named in kebob-case, we should name it to camelCase to stay consistent with the rest of the site.
 - Great work!! (Always remember to recognize good work! With emojis!✨) 
 
 **When a pull request is approved**
@@ -84,13 +85,14 @@ If there are no merge conflicts, your code can be safely merged into your main b
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-approved.png" alt="pull request approved" width="700">
 
-It is generally recommended that you delete your branches, both remotely and locally, after they have been merged. An UI option will appear after you've merged. You can also delete a remote branch manually by clicking on the 'Branches' tab of your GitHub project repo and selecting the trash-can icon associated with your branch. On your CLI, you can type `git checkout -D branch-name` to delete your branch locally.
+It is generally recommended that you delete your branches, both remotely and locally, after they have been merged. A UI option to do this will appear on GitHub after you've merged. You can also delete a remote branch manually by clicking on the 'Branches' tab of your GitHub project repo and selecting the trash-can icon associated with your branch. On your CLI, you can type `git checkout -D branch-name` to delete your branch locally.
 
 **When a change is requested**
 
-You would have to address the change locally on your code editor and push up your updates to the branch with `add`, `commit` and `push`. You don't need to create a new pull request, GitHub will know that you've pushed some changes to the same pull request. The review process will be the same. The reviewer can then again either approve or request more changes to be made. This process will be repeated until it is approved!
+If a reviewer requests a change before approving the PR, you (or whoever the author is) have to address the change locally on your code editor and push up your updates to the branch with `add`, `commit` and `push`. You don't need to create a new pull request, GitHub will know that you've pushed some changes to the same pull request. The review process will be the same. The reviewer can then again either approve or request more changes to be made. This process will be repeated until it is approved!
 
 <img src="https://hychalknotes.s3.amazonaws.com/PR-change-requested.png" alt="pull request change requested" width="700">
+
 
 ## Merge conflicts
 
