@@ -108,7 +108,7 @@ Working with the DOM is pretty cool. But we can make it even better with jQuery.
 
 * Aside: CDN stands for "content delivery network". A CDN is a network of computers which provides static resources (images, JavaScript, CSS, etc.) to users based on proximity. The resources are hosted in multiple locations and the closest computer to the user will serve the resource.  CDNs are fast because they allow us to cache our resources, meaning that if both our site and another use `http://cdn.com/jquery.js`, a browser will take notice. If the resource at `http://cdn.com/jquery.js` is still saved on the computer, the browser will just use that version instead of having to download it fresh.
 
-* jQuery CDN: `<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>`.
+* jQuery CDN: `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>`.
 
 ##### Test that jQuery is loaded
 
