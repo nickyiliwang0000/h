@@ -12,7 +12,7 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 3: An API call to find out how you spell Reijjsksemusuum
+Week 4: An API call to find out how you spell Reijjsksemusuum
 
 **Monday**
 
