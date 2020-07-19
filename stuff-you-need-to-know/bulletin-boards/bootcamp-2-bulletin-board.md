@@ -12,60 +12,52 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 3: Come for the JS, stay for the jQ
+Week 3: An API call to find out how you spell Reijjsksemusuum
 
 **Monday**
 
 * Motivational Monday
-* Git branching 🐱🐙🌳
-* Git collaboration 🐱🐙👯‍♀️
-* GitHub Pages 🐱🐙📃
+* Finish to-do app code-along ✅🏁
+* Code-along: Queen Street hot treat 👑🛣♨🥐
 * 🍴 LUNCH 🍴
-* Advanced grids ⏩🔳⏩⏩🔳⏩⏩⏩🔳
+* Big morning jamboard activity 🌅🌅🌅
+* Project 3 introduction
 * Project work time
 
 
 **Tuesday**
 
-_Project 2 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
-
-✨ JavaScript daaaayyyy☕📃 ✨
-
-* Project 2 presentations 👏🏽👏🏽👏🏽
-* Intro to programming 🖥
-* Intro to JavaScript 💻
+* How to organize your JavaScript 📋☕📃
+* Callback functions 📞🔙🕺🏽💃🏽👯‍♂️🥂
 * 🍴 LUNCH 🍴
-* _(Split into JS groups)_
-* Variables ❎ *=* ❓
-* Working with JavaScript 🛠☕📃
+* Project work time
 
 
 **Wednesday**
 
-* _(JS groups)_
-* Programming control flow 🖥🕹🌊
-* 🍴 LUNCH 🍴 _(Wednesday: The perfect tomato in the middle of the week's lunch sandwich)_
-* Functions 🕺🏽💃🏽👯‍♂️🥂
+* Advanced array methods ⏩📦⏩⏩➕⏩⏩⏩🗺
+* 🍴 LUNCH 🍴 _(Wednesday: Slicing the week in half like a knife through a delicious lunch sammich)_
+* Regular expressions 🙂😐😟
+* Design lesson 💅🏽✨
+* Project work time
 
 
 **Thursday**
 
-* Kickoff game 🏈 _(All together)_
-* _(Back into JS groups)_
-* Objects 👩🏽‍⚖️🔨🙅🏽‍♀️
+* Kickoff game 🏈
+* Working with APIs 🛠💻🔄🖥
+* Accessing API data with AJAX 💻📡📚
 * 🍴 LUNCH 🍴
-* Arrays and methods 📦➕🗺
+* Debugging in JavaScript 🐜🔨☕📃
+* Project work time
 
 
 **Friday**
 
-* _(Full class together againnnnnn 💕)_
-* JS Q&A ☕📃🙋🏽‍♀️🙋🏽‍♂️
-* Intro to jQuery 👋🏽💲
-* jQuery API documentation 💲📚
-* jQuery best practices 💲👍🏽🏋🏽‍♀️
+* Understanding API documentation ⁉👓🔎📄📜🕶
+* Museum API Code Along 🖼👩🏽‍🏫⌨
 * 🍴 LUNCH 🍴
-* To-do app code-along ✅
+* Project work time
 * SHOW AND TELL 🎉
 
 
