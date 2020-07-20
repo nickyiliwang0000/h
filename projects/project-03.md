@@ -38,25 +38,26 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 
 **Requirements:**
 
--   It is clear to the user what the app does
--   Adds to the DOM dynamically using JavaScript
--   Interacts with the DOM (HTML) using events or taking input from the user
--   Modern ES6 variable declarations used (`let`, `const`)
--   GitHub repo has more than one significant commit
--   App and interactions are accessible
--   Site is live on GH Pages or student's own URL
--   Errors are handled effectively
--   Sass is used
--   Files, folders & naming conventions followed (camelCase) (this includes your project repo)
+* It is clear to the user what the app does
+* Adds to the DOM dynamically using JavaScript
+* Interacts with the DOM (HTML) using events or taking input from the user
+* Modern ES6 variable declarations used (`let`, `const`)
+* GitHub repo has more than one significant commit
+* App and interactions are accessible
+* Site is live on GH Pages or student's own URL
+* Errors are handled effectively
+* Sass is used
+* Files, folders & naming conventions followed (camelCase) (this includes your project repo)
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 
--   Extraneous code is removed (including console.log)
--   Semantic HTML elements are used properly
--   Setup snippet is used
--   Wrapper used to constrain content on large displays
--   One external `.css` stylesheet is used for whole project
--   Site is responsive and uses media queries
+* Site is built in jQuery, vanilla JS is used only where jQ isn't possible.
+* Extraneous code is removed (including console.log)
+* Semantic HTML elements are used properly
+* Setup snippet is used
+* Wrapper used to constrain content on large displays
+* One external `.css` stylesheet is used for whole project
+* Site is responsive and uses media queries
 
 You will also be given a mark for presenting your project.
 
