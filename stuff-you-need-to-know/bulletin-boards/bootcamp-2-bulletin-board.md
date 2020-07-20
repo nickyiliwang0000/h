@@ -37,7 +37,6 @@ Week 4: An API call to find out how you spell Reijjsksemusuum
 
 * Advanced array methods ⏩📦⏩⏩➕⏩⏩⏩🗺
 * 🍴 LUNCH 🍴 _(Wednesday: Slicing the week in half like a knife through a delicious lunch sammich)_
-* Regular expressions 🙂😐😟
 * Design lesson 💅🏽✨
 * Project work time
 
