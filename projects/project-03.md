@@ -20,14 +20,14 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 ### Some previous examples
 
 -   [Metal Subgenre Quiz](https://christophercos.github.io/MetalSubgenreQuiz/)
--   [Doggy Doppelganger](http://www.doggydoppelganger.com/) (Editor's note: heartbreaking that they didn't go for... Dogppelganger.)
 -   [Roller Derby Name Generator](http://nomderby.com/)
--   [Drake Soundboard](http://jenniferyeung.ca/drizzy/)
 
+<!-- The following one is great but seems to be down: -->
+<!-- -   [Doggy Doppelganger](http://www.doggydoppelganger.com/) (Editor's note: heartbreaking that they didn't go for... Dogppelganger.) -->
 
 ## Project proposals
 
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1XgB1rZD3JnVAGylmlmpIolH6dLpbq6vNnfLZ1WmGGCc/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
+Once you have a good idea, we want you to fill out a [scope outline document](https://forms.gle/B9cJMn8qmu7YEXBa7) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline.
 
@@ -46,7 +46,7 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 -   Site is live on GH Pages or student's own URL
 -   Errors are handled effectively
 -   Sass is used
--   Files, folders & naming conventions followed (camel case)(this includes your project repo)
+-   Files, folders & naming conventions followed (camelCase) (this includes your project repo)
 
 You will also be given a general mark on how well you adhere to best practices mentioned in class. Best practices include but may not be limited to:
 
@@ -73,19 +73,19 @@ Part of your mark for this project will be from a Peer Code Review. You will be 
 
 ### Why is code review important? 
 
-[Here is a resource](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/code-review-best-practices.md) to find out more about how code reviews in the professional world and why they are important to practice. 
+[Here is a resource](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/resources-and-cheat-sheets/code-review-best-practices.md) to find out more about code reviews in the professional world and why they are important to practice. 
 
 ### What should I look for in a good review? 
 
-You are looking for an opportunity to imporve your code and be exposed to new ways of thinking. You should evaluate your partner's review of your code according to these three criteria:
+You are looking for an opportunity to improve your code and be exposed to new ways of thinking. You should evaluate your partner's review of your code according to these three criteria:
 
 Did they ...
 
-1. Deliver a Clear and Thorough Review
-2. Ask Open Ended Questions
-3. Provide Positive and Constructive Criticism
+1. Deliver a clear and thorough review
+2. Ask open-ended questions
+3. Provide positive and constructive criticism
 
-You will be given a chance to make any further comments about their review as well (this feedback will be given to them directly and not filtered).
+You will be given a chance to make any further comments about their review as well - this feedback will be given to them directly and not filtered.
 
 ## Submitting your project
 

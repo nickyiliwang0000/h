@@ -41,7 +41,7 @@ To show a understanding of React basic concepts (e.g. state, props, components) 
 
 ## Project proposals
 
-Once you have a good idea, we want you to fill out a [scope outline document](https://docs.google.com/forms/d/1XgB1rZD3JnVAGylmlmpIolH6dLpbq6vNnfLZ1WmGGCc/edit) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
+Once you have a good idea, we want you to fill out a [scope outline document](https://forms.gle/B9cJMn8qmu7YEXBa7) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline.
 
@@ -100,9 +100,9 @@ You are looking for an opportunity to imporve your code and be exposed to new wa
 
 Did they ...
 
-1. Deliver a Clear and Thorough Review
-2. Ask Open Ended Questions
-3. Provide Positive and Constructive Criticism
+1. Deliver a clear and thorough review
+2. Ask open-ended questions
+3. Provide positive and constructive criticism
 
 You will be given a chance to make any further comments about their review as well (this feedback will be given to them directly and not filtered).
 
