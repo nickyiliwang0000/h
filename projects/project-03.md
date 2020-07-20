@@ -19,8 +19,9 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 
 ### Some previous examples
 
--   [Metal Subgenre Quiz](https://christophercos.github.io/MetalSubgenreQuiz/)
--   [Roller Derby Name Generator](http://nomderby.com/)
+* [Metal Subgenre Quiz](https://christophercos.github.io/MetalSubgenreQuiz/)
+* [Roller Derby Name Generator](http://nomderby.com/)
+* [Design your workspace](https://kayevans.github.io/kayEvansStocksProjectThree/)
 
 <!-- The following one is great but seems to be down: -->
 <!-- -   [Doggy Doppelganger](http://www.doggydoppelganger.com/) (Editor's note: heartbreaking that they didn't go for... Dogppelganger.) -->
