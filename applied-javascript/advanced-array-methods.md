@@ -55,7 +55,7 @@ const addMovieGenre = function(array){
 The following methods are included (among others) in JavaScript to help sort data: `.map()` and `.filter()`.
 
 <!-- `.map()`, `.filter()` and `.reduce()` are considered pure functions.  -->
-These methods iterates over an array or object in a slightly different way. But the two things these methods have in common are:
+These methods iterates over an array in a slightly different way. But the two things these methods have in common are:
 1. each one uses a callback function to define the task to be performed on the data 
 2. each one returns something (an array or a value) instead of changing the array provided to it
 
