@@ -7,9 +7,6 @@
 
 # How to organize your JavaScript
 
-## JavaScript organization
-
-As you add more lines and functionality to your JS code, it can start to get a little unruly. 
 
 #### Terminology reminder
 
@@ -17,46 +14,56 @@ Variables are referred to as **properties** when stored inside an object.
 
 Functions are referred to as **methods** when stored inside an object.
 
+OK, let's go!
+
+
+## JavaScript organization
+
+As you add more lines and functionality to your JS code, it can start to get a little unruly. 
+
+
 ### Problem 1: 'Spaghetti code'
 
-You might have trouble tracking down which lines do what, or end up having a hard time changing or adding new features. If you ever find yourself in an unorganized tangle, you've probably stumbled upon (or written!) what we call spaghetti code. Don't panic! A little code organization can help you steer clear of these issues.
+You might have trouble tracking down which lines do what, or you will have a hard time changing or adding new features. If you ever find yourself in an unorganized tangle, you've probably stumbled upon (or written!) what we call spaghetti code. Don't panic! A little code organization can help you steer clear of these issues.
+
 
 ### Problem 2: Conflicting code
 
 Another reason to organize your code is to avoid conflicts with other plugins or libraries that you're running on your website. Say you create a variable to hold your twitter handle for your contact page, but you're also embedding a twitter widget on your website. You might end up with something like this:
 
 ```js
-const twitter = 'http://twitter.com'; //created by the widget
+let twitter = 'http://twitter.com'; //created by the widget
 /* ... lots of other code ... */
-const twitter = '@junocollege'; //created by you
+twitter = '@junocollege'; //created by you
 ```
 
-Since variables can be reassigned in JavaScript, we've gone ahead and reassigned the widget's variable and most likely broken it!  Again, we can fix this through better organization.
+We might have just overwritten and reassigned the widget's variable, and most likely broken it!  Again, we can fix this through better organization.
 
 
 ### Scope
 
 In our sample conflict above, we're running into what's called a scope issue. 
 
-Variables declared outside of a function are part of the **global** scope. Meaning they can be accessed (and reassigned) from *anywhere* in your code.
+Variables declared outside of a function are part of the **global** scope. This means they can be accessed (and reassigned) from anywhere in your code.
 
-On the other hand, variables declared inside a function have **local** scope. Meaning they are only accessible to that functions code block:
+On the other hand, variables declared inside a function have **local** scope. This means they are only accessible within that function's code block.
+
 
 #### Examples
 
-The global variable `planet` is accessible within the function.
+The global variable `planet` is accessible within the function:
 
 ```js
 const planet = "Earth";
 
-function whereAmI(){
+function whereAmI() {
   console.log(planet);
 }
 
 whereAmI(); //logs "Earth"
 ```
 
-The `planet` variable that is printed is the value that is scoped to the function it was called from.
+The `planet` variable that is printed is the value that is scoped to the function it was called from:
 
 ```js
 const planet = "Earth";
@@ -69,7 +76,7 @@ function whereAmI(){
 whereAmI(); //logs "Mars"
 ```
 
-The `destination` variable is locally scoped to the `chooseDestination` function and unavailable in the `launchRocket` function's scope.
+The `destination` variable is locally scoped to the `chooseDestination` function and unavailable in the `launchRocket` function's scope:
 
 ```js
 function chooseDestination(){
@@ -84,6 +91,9 @@ chooseDestination();
 launchRocket(); // gives us an error
 ```
 
+In the above example the last one is a problem, but this scoped structure can be useful for us if we want to prevent conflicts; we can protect parts of our code by making them unavailable elsewhere in an app.
+
+
 ### Organizing your code with an object
 
 To avoid scope issues and help break your code down into more modular components, we can organize our code using an object. 
@@ -94,15 +104,15 @@ We start with an empty object that will hold all our our application code.
 const myApp = {};
 ```
 
-This creates what's called a **namespace** for our code. All your variables and functions will start with a namespace of your choosing, protecting them from conflicts with other code. 
+This creates what's called a _namespace_ for our code. All of your global variables and functions will instead be properties and methods on your namespace object, protecting them from conflicts with other code.
 
-We can now add our twitter variable as a property on the `myApp` object.
+WFor example, we can now add our twitter variable as a property on the `myApp` object:
 
 ```js
-myApp.twitter = 'junocollege';
+myApp.twitter = '@junocollege';
 ```
 
-We can store entire functions in our app object the same way.
+We store our functions in our app object the same way:
 
 ```js
 myApp.getTweets = function(){
@@ -136,7 +146,7 @@ myApp.displayTweets = function(){
 console.log(myApp);
 ```
 
-We can define properties outside or directly inside the global object. Both will achieve the same results, however it is more common to see these properties defined outside of our global object. As your app gets more complicated, you may find defining the properties outside of the object easier to read.
+We can write properties outside the namespace object (using the assignment operator) or directly inside it (with object literal notation). Both will achieve the same results, however it is more common to see these properties defined outside the object. As your app gets more complicated, you may find defining the properties outside of the object easier to read.
 
 <table>
 <tr>
@@ -174,11 +184,12 @@ const budgetApp = {
 </tr>
 </table>
 
+
 ### The `init` method
 
 Most apps will have a special `init` method. This will initialize anything that needs to happen on page load, and hold most of our event handlers. This helps ensure that your handlers are called properly, without interference or reliance of other methods. It's also a good place to cache jQuery selectors.
 
-**The name `init` is just a name. You can name the method whatever you'd like,`init` is simply used as a short form for initialize as what we are doing is initializing our application.**
+**The name `init` is just a name. You can name the method whatever you'd like,`init` is simply used as a short form for "initialize", since what we are doing is initializing our application.**
 
 ```js
 const widgetApp = {};
@@ -201,7 +212,7 @@ $(function(){
 });
 ```
 
-Why only put the `widgetApp.init()` method in the document ready? Well if we put all our code inside of the ready function.
+Why only put the `widgetApp.init()` method in the document ready? Well if we put all our code inside of the ready function, like so:
 
 ```js
 $(function() {
@@ -211,9 +222,10 @@ $(function() {
 });
 ```
 
-We would never be able to access the `widgetApp` object from out devtools because it would be scoped to the anonymous handler for the ready event!
+...then we would never be able to access the `widgetApp` object from our devtools, because it would be scoped to the anonymous handler for the ready event.
 
 Exposing it before the document ready allows us to play around with the object in the console.
+
 
 ### Practice
 

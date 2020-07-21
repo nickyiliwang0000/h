@@ -1,32 +1,33 @@
 # Callback functions
 
-In programming, a *callback function* is a function that is passed as an argument to another function. A *callback function* is created in order to be executed at a later point in time. In JavaScript, this is often used for events.
+In programming, a _callback function_ is a function that is passed as an argument to another function. A callback function is created in order to be executed at a later point in time. In JavaScript, this is often used for events.
 
-An example of this might be a click event with jQuery.
+An example of this is a click event with jQuery:
 
 ```js
 $('button').on('click', function() {
-	// Do some work in here
+  // Do some work in here
 });
 ```
 
-Here we set up an event listener using the `on` method. The `on` method takes two arguments here, the first is a string describing the name of the event. In our case, the event is `click`. The second argument is what function we want to run when the click happens. *This function* is the callback function. 
+Here we set up an event listener using the `on` method. The `on` method takes two arguments here. The first is a string describing the name of the event - in our case, the event is `'click'`. The second argument is what function we want to run when the click happens - this function is the callback function. 
 
-When we provide the callback function to the `on` method, it has not run yet. The function is placed there as a value and only when we click the `button` will that function be called. 
+When we provide the callback function to the `on` method, it does not run immediately on page load. The function is placed there as a value, and only when we click the `button` will that function actually be called.
 
 Callback functions in JavaScript are functions that we are **passing as values** to other function or method calls.
 
-So we could handle that above differently if we wanted.
+We could handle that above differently if we wanted:
 
 ```js
 const handleClick = function() {
-	// Do some stuff
+  // Do some stuff
 }
 
 $('button').on('click', handleClick);
 ```
 
-First define the function `handleClick` and then *reference* this new function as the second argument of the `on` method. Notice that we do NOT use the `()`. Instead of calling the function, we are passing the value of `handleClick` inside of the `on` method, which happens to be a function. This function will be called when the click happens. 
+First we define the function `handleClick`, and then we _reference_ this new function as the second argument of the `on` method. Notice that we do not use the `()`; instead of calling the function, we are passing the value of `handleClick` to the `on` method. This is a lot like passing any variable as an argument, but this value happens to be a function. This function will be called when the click happens. 
+
 
 ## Making our own.
 
@@ -35,37 +36,36 @@ In order to further understand how callback functions work, let's write our own 
 Here we have a function that accepts one parameter. When we call it, we pass a string as an argument. 
 
 ```js
-const doChores = function(chore){
-	console.log(`I finished ${chore}.`);
+const doChores = function(chore) {
+  console.log(`I finished ${chore}.`);
 }
 
-doChores('sweeping floor');
+doChores('sweeping the floor');
 // outputs "I finished sweeping the floor."
 
 ```
 
-Now we have added another parameter, that is a function. 
+Now let's add another parameter - a function that will be called after we finish doing our chores: 
 
 ```js
-const doChores = function(chore, reward){
-	console.log(`I finished ${chore}.`);
-	reward();
+const doChores = function(chore, nextThingToDo) {
+  console.log(`I finished ${chore}.`);
+  nextThingToDo();
 }
 
 doChores('sweeping floor', getDollars);
 ```
 
-But we have not defined the `getDollars` function yet. Let's do that.
-
+However, we have not defined the `getDollars` function we are passing as an argument yet. Let's do that:
 
 ```js
-const doChores = function(chore, reward){
-	console.log(`I finished ${chore}.`);
-	reward();
+const doChores = function(chore, nextThingToDo) {
+  console.log(`I finished ${chore}.`);
+  nextThingToDo();
 }
 
-const getDollars = function(){
-	console.log(`You earned $1.`);
+const getDollars = function() 
+  console.log(`You earned $1.`);
 }
 
 doChores('sweeping floor', getDollars);
