@@ -47,7 +47,6 @@ Week 4: An API call to find out how you spell Reijjsksemusuum
 * Working with APIs 🛠💻🔄🖥
 * Accessing API data with AJAX 💻📡📚
 * 🍴 LUNCH 🍴
-* Debugging in JavaScript 🐜🔨☕📃
 * Project work time
 
 
