@@ -85,28 +85,3 @@ Logging information to the console is a great tool that you will definitely use 
 There are many more features in the debugger including setting conditional breakpoints and watching certain expressions. However, we want to start getting comfortable navigating the above tools. As you get more comfortable using these parts of the debugger, feel free to keep exploring!
 
 VSCode also has a debugger built right into your code editor. You will need to install an add-on like `Debugger for Firefox` or `Debugger for Chrome`  in order to be able to debug browser code.
-
-### Seeing AJAX requests
-
-It's often useful to see what the browser is doing behind the scenes when we're making AJAX requests. Luckily, dev tools can help us here.
-
-1. Open up your dev tools
-
-2. Click on the Network tab
-
-3. Click the filter icon to choose which requests show up in this panel. You'll notice stylesheets, scripts and images also show up here. Choose XHR to limit the view to AJAX requests only.
-
-Chrome
-
-![network filter on chrome](https://hychalknotes.s3.amazonaws.com/network-filter-chrome.png)
-
-
-Firefox 
-
-![network filter on firefox](https://hychalknotes.s3.amazonaws.com/network-filter-firefox.png)
-
-4. Refresh the page to start capturing requests in the Network panel.
-
-5. Clicking on a request will take you to a panel where you can see the response header, response/body, etc.
-
-Using the information here will help tremendously in debugging AJAX requests. If you don't see your request at all, check for things like syntax errors. If the request was made but the result wasn't as expected then have a look at the headers and body of the response.
