@@ -19,7 +19,7 @@ Week 5: Holy shit, look at all that project work time!
  _Project 3 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
 
 * Motivational Monday
-* Project 2 presentations 👏🏽👏🏽👏🏽
+* Project 3 presentations 👏🏽👏🏽👏🏽
 * Code review best practices 👩🏽‍💻🔍👍🏽🏋🏽‍♀️
 * Project 4 introduction
 * 🍴 LUNCH 🍴
