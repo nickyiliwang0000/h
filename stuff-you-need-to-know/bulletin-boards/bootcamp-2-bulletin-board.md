@@ -12,48 +12,50 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 4: An API call to find out how you spell Reijjsksemusuum
+Week 5: Holy shit, look at all that project work time!
 
 **Monday**
 
+ _Project 3 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
+
 * Motivational Monday
-* Finish to-do app code-along ✅🏁
-* Code-along: Queen Street hot treat 👑🛣♨🥐
+* Project 2 presentations 👏🏽👏🏽👏🏽
+* Code review best practices 👩🏽‍💻🔍👍🏽🏋🏽‍♀️
+* Project 4 introduction
 * 🍴 LUNCH 🍴
-* Big morning jamboard activity 🌅🌅🌅
-* Project 3 introduction
 * Project work time
 
 
 **Tuesday**
 
-* How to organize your JavaScript 📋☕📃
-* Callback functions 📞🔙🕺🏽💃🏽👯‍♂️🥂
+* JavaScript superpowers: Spread, rest and destructuring ☕📃🦸‍♀️🦹‍♂️
 * 🍴 LUNCH 🍴
+* Resume and cover letter lesson 👩🏽‍💼👨🏽‍💼📄
 * Project work time
 
 
 **Wednesday**
 
-* Advanced array methods ⏩📦⏩⏩➕⏩⏩⏩🗺
-* 🍴 LUNCH 🍴 _(Wednesday: Slicing the week in half like a knife through a delicious lunch sammich)_
-* Design lesson 💅🏽✨
+* Project 3 peer assessment time 👯‍♂️👯‍♂️👯‍♂️
+* Working with asynchronous events 👷🏽‍♀️👨🏽‍🏭🕐↔🕑
+* 🍴 LUNCH 🍴 _(Wednesday: You're only halfway to Friday, but ALL the way to Wednesday! FYI you tooootally overshot Tuesday)_
 * Project work time
 
 
 **Thursday**
 
 * Kickoff game 🏈
-* Working with APIs 🛠💻🔄🖥
-* Accessing API data with AJAX 💻📡📚
+* Intro to Firebase 🎉🔥⚾
 * 🍴 LUNCH 🍴
+* To-do app with Firebase code-along ✅🔥⚾👩🏽‍💻👨🏽‍💻👩🏽‍💻👨🏽‍💻
+* Class-based programming 🎩🎀🖥
 * Project work time
 
 
 **Friday**
 
-* Understanding API documentation ⁉👓🔎📄📜🕶
-* Museum API Code Along 🖼👩🏽‍🏫⌨
+* JavaScript/jQuery test _(Don't be late!)_
+* Lexical scope and execution context 🔪⛺👇🏽
 * 🍴 LUNCH 🍴
 * Project work time
 * SHOW AND TELL 🎉
