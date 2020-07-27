@@ -95,7 +95,7 @@ You will be given an opportunity to provide feedback about the experience of wor
 -   Adds to the DOM dynamically using JavaScript
 -   App is dynamic based on user interaction (e.g. drop down menu, search field)
 -   App interacts with at least one API
--   Code is organized using an object called "app" (i.e. it is namespaced)
+-   Code is organized using an object (i.e. it is namespaced)
 -   GitHub repo has more than one significant commit from each student
 -   App and interactions are accessible
 -   Site is live on GH Pages or student's own URL
