@@ -124,7 +124,7 @@ You will also each be given a mark for presenting your project.
 -   Student was able to effectively identify a technical challenge
 -   Student did not go over time -->
 
-## Peer Code Review
+<!-- ## Peer Code Review
 
 Part of your mark for this project will be from a Peer Code Review. You will be given a rubric and a review partner once the project has been handed in. You will take one hour in class time to sit together and deliver your feedback to each other. At the end of the hour you will be asked to grade your partner's review of your code. Both their review of your code and their evaluation of your review will be included in your mark for this project. 
 
@@ -142,7 +142,7 @@ Did they ...
 2. Ask open-ended questions
 3. Provide positive and constructive criticism
 
-You will be given a chance to make any further comments about their review as well (this feedback will be given to them directly and not filtered).
+You will be given a chance to make any further comments about their review as well (this feedback will be given to them directly and not filtered). -->
 
 ## Submitting your project
 
