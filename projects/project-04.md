@@ -146,10 +146,8 @@ You will be given a chance to make any further comments about their review as we
 
 ## Submitting your project
 
-1. Rename your organization's repository to the title of your app, and match its naming convention with the rest of your project.
-
--   (You don't have to rename your org if its naming convention doesn't match)
-
+1. Make sure that your project's repository matches the naming convention of the rest of your project, and is formatted with both pair members' first names and last names, then "project four". So, for camel case, `bellHooksMayaAngelouProjectFour`, or for kebab case, `zora-neale-hurston-octavia-e-butler-project-four`.
+	-   (You don't have to rename your organization if its naming convention doesn't match, only the project repo)
 2. Remove any unneeded files from the project.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages or on your own domain/subdomain.
