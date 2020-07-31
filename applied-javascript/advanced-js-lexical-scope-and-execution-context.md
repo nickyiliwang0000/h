@@ -138,9 +138,11 @@ someFunctionExpression();
 // >> Window
 ``` 
 
-Whenever a function is declared or a function expression is written in the global scope, `this` will point to the global object **even though** the execution context has changed. 
+Whenever a function declaration or a function expression is written in the global scope, `this` will point to the global object **even though** the execution context has changed.
+
 
 ### Object methods
+
 Let's take a look at `this` inside object methods. 
 
 ```javascript
@@ -149,11 +151,11 @@ const character = {
   firstName: 'Kermit',
   introduction: function(){
     console.log(this);
-    return `Hello! My name is ${this.firstName}.`;
+    console.log(`Hello! My name is ${this.firstName}.`);
   }
 }
 
-console.log(character.introduction()); 
+character.introduction(); 
 // >> Object { firstName: "Kermit", introduction: introduction() }
 // >> Hello! My name is Kermit.
 ```
@@ -172,12 +174,12 @@ const character = {
   firstName: 'Kermit',
   introduction: function(){
     console.log(this);
-    return `Hello! My name is ${this.firstName}.`;
+    console.log(`Hello! My name is ${this.firstName}.`);
   }
 }
 
 const intro = character.introduction; 
-console.log(intro());
+intro();
 // >> Window 
 // >> "Hello! My name is undefined."
 ``` 
@@ -185,8 +187,8 @@ console.log(intro());
 When calling **the reference** to `character`'s `introduction` method, the `this` keyword references the global object 
 once again. 
 
-This can become problematic organizing your code using objects and then passing those organized methods as callbacks to 
-other functions. When the callbacks functions are executed, their `this` value won't reference the organizing object 
+The above issue can become problematic when organizing your code using objects and then passing your methods as callbacks to 
+other functions. When the callback functions are executed, their `this` value won't reference the organizing object 
 any longer. 
 
 ```javascript
@@ -213,74 +215,69 @@ console.log(result);
 // >> "Hello! My name is undefined."
 ``` 
 
-Remember that what `this` references is determined by the execution context, **not the scope**. 
+Remember that what `this` references is determined by the execution context, **not** the lexical scope in which a function was defined. 
 
 A similar situation will occur if you create a function **inside an object method**. Variables in the object method's 
-scope will be available to that inner function, but the function's `this` value will be **different** than the 
-containing method's `this` value.
-  
-```javascript
-const fourSidedDie = {
-  numbers: [1,2,3,4],
-  roll: function() {
-    console.log(this); 
-    // Object { numbers: [] ... } if called as `fourSidedDie.roll()`, `Window` otherwise 
-  
-    let possibleNumbers = this.numbers;
-    function newRandomNumber() {
-      // the code here can't access fourSidedDie's properties or methods because 
-      // the newRandomNumber function cannot be called **as a property on 
-      // the fourSidedDie object**. But it CAN access the variables in scope from 
-      // the parent function.
+scope will be available to that inner function, but the function's `this` value will be **different** than the containing method's `this` value.
 
-      console.log(this); // Window
-      console.log(this.numbers); // undefined 
-      console.log(possibleNumbers); // [1,2,3,4]
-  
-      return possibleNumbers[Math.floor(Math.random() * possibleNumbers.length)];
+```javascript
+const louvre = {
+  entryFee: `25 Euros`,
+  gallery: function() {
+    
+    console.log("permanent collection ", this);
+    // >> Object { entryFee: "25 Euros", ... }
+
+    const residency = function() {
+      console.log("meta commentary ", this);
+       // >> Window
+      console.log(`${this.entryFee} was too much to pay for this garbage!`)
+      // undefined was too much to pay for this garbage!
     }
-        
-    return newRandomNumber();
+    residency();
+
   }
 }
 
-fourSidedDie.roll();
+louvre.gallery();
 ```
 
+The `residency` function's execution context does not assign the `this` keyword to the `louvre` object because `residency` cannot be called **as a property on the `louvre` object**. Technically it is being executed as a stand-alone function, which is to say, it is being executed on the global object, so its `this` value references the `Window`.
+
 How can we make what `this` references more predictable? One way is with arrow functions! 
+
 
 ## Arrow functions revisited
 
 Arrow functions handle the `this` keyword a little differently. Unlike the above examples where the way a function is called determines one of many different possible values for `this`, arrow functions **never** have their own `this` value. They **always** inherit their `this` value from the scope in which the function was defined.  
 
-Let's rewrite our `newRandomNumber` method using an arrow function.
+Let's rewrite our `residency` function using an arrow function.
 
 ```javascript
-const fourSidedDie = {
-  numbers: [1,2,3,4],
-  roll: function() {
-    console.log(this); // Object { numbers: [] ... } if called as `fourSidedDie.roll()`, `Window` otherwise 
-  
-    let newRandomNumber = () => {
-      // the code here can't access dice's properties or methods because the newRandomNumber function cannot be called 
-      // *as a property on the dice object*. But it CAN access the variables in scope from the parent function.
+const louvre = {
+  entryFee: `25 Euros`,
+  gallery: function() {
+    
+    console.log("permanent collection ", this);
+    // >> Object { entryFee: "25 Euros", ... }
 
-      console.log(this); // Object { numbers: [] ... }
-      console.log(this.numbers); // [1,2,3,4]
-  
-      return this.numbers[Math.floor(Math.random() * this.numbers.length)];
+    const residency = () => {
+      console.log("meta commentary ", this);
+       // >> Object { entryFee: "25 Euros", ... }
+      console.log(`${this.entryFee} was too much to pay for this garbage!`)
+      // 25 Euro was too much to pay for this garbage!
     }
-        
-    return newRandomNumber();
+    residency();
+
   }
 }
 
-fourSidedDie.roll();
+louvre.gallery();
 ```
 
-It now works like we want it to! How is that the case? We are using an arrow function for our `newRandomNumber` method, which means that the `newRandomNumber` function does not have it's own `this`: it uses the `this` from its enclosing execution context, which is the `roll` method. 
+It now works like we want it to! How is that the case? We are using an arrow function for our `residency` function, which means that the `residency` function does not have it's own `this`; it uses the `this` from its enclosing execution context, which is the `gallery` method. 
 
-Take note that this is a great solution to our nested function problem but can yield some unexpected results when used in other contexts:
+Take note that this is a great solution to our nested function problem, but can yield some unexpected results when used in other contexts:
 
 ```js
 const song = {
@@ -295,7 +292,7 @@ console.log(song.artistAndTitle());
 // >> "undefined - undefined"
 ```
 
-In this example, the arrow function assigned to the `artistAndTitle` property get's it's `this` value from the scope in which the function is defined. The arrow function is defined as part of creating the object in the global execution context, so `this` will reference the global execution context's `this` value, the `window` object.  
+In this example, the arrow function assigned to the `artistAndTitle` property gets its `this` value from the scope in which the function is defined. The arrow function is defined as part of creating the object in the global execution context, so `this` will reference the global execution context's `this` value, the `window` object.  
 
 To learn more about arrow functions check out this [video](https://youtu.be/oTRujqZYhrU?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX)!
 
