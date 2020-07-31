@@ -222,11 +222,11 @@ scope will be available to that inner function, but the function's `this` value 
 
 ```javascript
 const louvre = {
-  entryFee: `25 Euros`,
+  entryFee: `25 Euro`,
   gallery: function() {
     
     console.log("permanent collection ", this);
-    // >> Object { entryFee: "25 Euros", ... }
+    // >> Object { entryFee: "25 Euro", ... }
 
     const residency = function() {
       console.log("meta commentary ", this);
@@ -255,15 +255,15 @@ Let's rewrite our `residency` function using an arrow function.
 
 ```javascript
 const louvre = {
-  entryFee: `25 Euros`,
+  entryFee: `25 Euro`,
   gallery: function() {
     
     console.log("permanent collection ", this);
-    // >> Object { entryFee: "25 Euros", ... }
+    // >> Object { entryFee: "25 Euro", ... }
 
     const residency = () => {
       console.log("meta commentary ", this);
-       // >> Object { entryFee: "25 Euros", ... }
+       // >> Object { entryFee: "25 Euro", ... }
       console.log(`${this.entryFee} was too much to pay for this garbage!`)
       // 25 Euro was too much to pay for this garbage!
     }
