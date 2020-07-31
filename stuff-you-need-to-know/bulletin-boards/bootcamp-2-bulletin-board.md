@@ -12,51 +12,54 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 5: Holy shit, look at all that project work time!
+Week 6: A four (Re)act play
 
 **Monday**
 
- _Project 3 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
-
-* Motivational Monday
-* Project 3 presentations 👏🏽👏🏽👏🏽
-* Code review best practices 👩🏽‍💻🔍👍🏽🏋🏽‍♀️
-* Project 4 introduction
-* 🍴 LUNCH 🍴
-* Project work time
+* _(No class, stat holiday)_
+* 🍴 LUNCH 🍴 _(It's a holiday - that's like a whole day of lunch!)_
+* _(No class, stat holiday)_
 
 
 **Tuesday**
 
-* JavaScript superpowers: Spread, rest and destructuring ☕📃🦸‍♀️🦹‍♂️
+_Have Node.js installed for today! [Get it here](https://nodejs.org/)_
+
+* Tmotivational Tuesday
+* Making our code more modular 🖥➡💻💻💻
 * 🍴 LUNCH 🍴
-* Resume and cover letter lesson 👩🏽‍💼👨🏽‍💼📄
-* Project work time
+* Intro to React 👋🏽🌌
 
 
 **Wednesday**
+ 
+ _Project 4 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
 
-* Project 3 peer assessment time 👯‍♂️👯‍♂️👯‍♂️
-* Working with asynchronous events 👷🏽‍♀️👨🏽‍🏭🕐↔🕑
-* 🍴 LUNCH 🍴 _(Wednesday: You're only halfway to Friday, but ALL the way to Wednesday! FYI you tooootally overshot Tuesday)_
-* Project work time
+* Project 4 presentations 👏🏽👏🏽👏🏽
+* _(Split into React groups)_
+* Breaking our app into components 👩‍👩‍👧‍👦➡👩🏽👩🏽👦🏽👧🏽 
+* Events and State 🎈🎆🍁
+* 🍴 LUNCH 🍴 _(Wednesday: Like the four-day week's Tuesday!)_
+* Lifecycles 🤰🏽👶🏽🧒🏽👩🏽👵🏽💀
 
 
 **Thursday**
 
-* Kickoff game 🏈
-* Intro to Firebase 🎉🔥⚾
+* Kickoff game 🏈 _(All together)_
+* _(Back into React groups)_
+* Props 🤜🏽🤛🏽
 * 🍴 LUNCH 🍴
-* To-do app with Firebase code-along ✅🔥⚾👩🏽‍💻👨🏽‍💻👩🏽‍💻👨🏽‍💻
-* Class-based programming 🎩🎀🖥
+* Project 5 introduction
 * Project work time
 
 
 **Friday**
 
-* JavaScript/jQuery test _(Don't be late!)_
-* Lexical scope and execution context 🔪⛺👇🏽
+* _(Split into React groups)_
+* Function components
 * 🍴 LUNCH 🍴
+* _(Full class together againnnnnn 💕)_
+* Using Firebase with React
 * Project work time
 * SHOW AND TELL 🎉
 
