@@ -11,12 +11,16 @@
 
 Our JavaScript files are not directly read and run by the browser. The browser's _JavaScript engine_ (the part of the browser dedicated to reading and running JavaScript code) has a step in between loading and running (or _executing_) a script called _compilation_. In the compilation step, the human-readable script is translated to something that the computer can understand. A few different things happen during the compilation stage that can affect how your code is run. In particular, this is where _execution contexts_ and _scopes_ are determined.
 
-## Execution contexts and scope
-During the compilation step, the JavaScript engine scans the code it's been asked to execute and creates an inventory of all the variables and functions each line of code will have access to when it's being run. This inventory is called an _execution context_.
 
-The set of available variables and functions is referred to as the _scope_. JavaScript is said to have a _lexical_ scope strategy because **where** a variable or function is declared explicitly in the code determines its availability to the rest of the program.
+## Execution contexts and scope
+
+During the compilation step, the JavaScript engine scans the part of the code that it is about to execute and creates an inventory of all the variables and functions each line of code will have access to when it is being run. This inventory is called an _execution context_.
+
+The environment within which those available variables and functions exist is referred to as the _scope_. JavaScript is said to have a _lexical_ scope strategy because **where** a variable or function is declared explicitly in the code determines its availability to the rest of the program.
+
 
 ### The global execution context
+
 When a JavaScript engine first starts a new script, it creates a default execution context called the _global execution context_, which will be available to every level of the script. By default the global execution context gives you access to two things: 
 
 1. The _global object_
@@ -48,7 +52,6 @@ let age = "72";
     }
 
 console.log(this);
-callGrandma();
 </pre></td><td>
 
 | Item | Inventory |
@@ -118,7 +121,7 @@ console.log(this);
 ```javascript
 // a function declared in the global scope
 function someDeclaredFunction(){
-    console.log(this);
+  console.log(this);
 }
 
 someDeclaredFunction(); 
@@ -128,7 +131,7 @@ someDeclaredFunction();
 ### `this` in a function expression's private scope
 ```javascript
 const someFunctionExpression = function(){
-    console.log(this);
+  console.log(this);
 }
 
 someFunctionExpression(); 
@@ -142,7 +145,7 @@ Let's take a look at `this` inside object methods.
 
 ```javascript
 // object literal is created 
-let character = {
+const character = {
   firstName: 'Kermit',
   introduction: function(){
     console.log(this);
@@ -165,7 +168,7 @@ For example, if we create a variable and assign it the object's `introduction` m
 function, the `this` keyword will reference a different value. 
 
 ```javascript
-let character = {
+const character = {
   firstName: 'Kermit',
   introduction: function(){
     console.log(this);
@@ -173,7 +176,7 @@ let character = {
   }
 }
 
-let intro = character.introduction; 
+const intro = character.introduction; 
 console.log(intro());
 // >> Window 
 // >> "Hello! My name is undefined."
@@ -187,7 +190,7 @@ other functions. When the callbacks functions are executed, their `this` value w
 any longer. 
 
 ```javascript
-let character = {
+const character = {
   firstName: 'Kermit',
   introduction: function(){
     console.log(this);
@@ -195,7 +198,7 @@ let character = {
   }
 };
 
-let app = {
+const app = {
   startUp: function(afterStartUpCallback) {
     // Do some start up stuff ...
     
@@ -217,7 +220,7 @@ scope will be available to that inner function, but the function's `this` value 
 containing method's `this` value.
   
 ```javascript
-let fourSidedDie = {
+const fourSidedDie = {
   numbers: [1,2,3,4],
   roll: function() {
     console.log(this); 
@@ -253,7 +256,7 @@ Arrow functions handle the `this` keyword a little differently. Unlike the above
 Let's rewrite our `newRandomNumber` method using an arrow function.
 
 ```javascript
-let fourSidedDie = {
+const fourSidedDie = {
   numbers: [1,2,3,4],
   roll: function() {
     console.log(this); // Object { numbers: [] ... } if called as `fourSidedDie.roll()`, `Window` otherwise 
@@ -280,7 +283,7 @@ It now works like we want it to! How is that the case? We are using an arrow fun
 Take note that this is a great solution to our nested function problem but can yield some unexpected results when used in other contexts:
 
 ```js
-let song = {
+const song = {
   artist: "Carly Rae Jepsen",
   title: "Call Me Maybe",
   
