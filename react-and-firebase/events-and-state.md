@@ -60,7 +60,7 @@ So somewhere, nestled in the codebase of Netflix, there's probably an object tha
 
 When you log in, `user.loggedIn` is set to `true`. Your action of logging in changed the state of the application.
 
-In React, each one of your components can have it's own state, where it can store information that is relevant to that particular component.
+In React, each one of your components can have its own state, where it can store information that is relevant to that particular component.
 
 For example, let's imagine it's 1995 and we want to have a sweet visitor counter to keep track of how many people have been to our page.
 

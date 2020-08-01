@@ -67,7 +67,7 @@ import React, { Component } from 'react';
 import animals from './animals';
 
 class App extends Component {
-    render(){
+  render() {
     return (
       <div>
         <h1>Adopt Us!</h1>
@@ -95,7 +95,7 @@ As you can see, we have to repeat the `div.pet` element for every animal inside 
 ## Your new best friend in React: `.map()`
 JavaScript to the rescue! In the past, when we have wanted to iterate over a bunch of items inside of an array and do something to them, what did we use? A loop! We have often used `for` loops or the `.forEach()` method, but JSX always has to have a return, so in React we're going to stick with a loop that returns something every time - `.map()`!
 
-Looping over items to do stuff to them works just as well in React as it did in jQuery. Remember that inside of JSX we can write any vanilla JS we want by escaping it with curly brackets `{}`. We can add a `.map()` right inside the `render` method and have it print out all of our animals!
+Inside of JSX we can write any vanilla JS we want by escaping it with curly brackets `{}`. Looping over items to do stuff to them works just as well in React as it did in jQuery; we can add a `.map()` right inside the `render` method and have it print out all of our animals!
 
 Let's refactor our JSX to incorporate a `.map()` instead of manually typing out JSX for each animal:
 
