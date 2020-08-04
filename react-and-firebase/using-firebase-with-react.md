@@ -29,10 +29,10 @@ As always, the first thing that we'll need to do is create a new project inside 
 5. Click 'Add Firebase to your web app' or the `</>` icon. This will give you the embed code to add Firebase to your project.
   ![Firebase config image](https://hychalknotes.s3.amazonaws.com/06-firebase-config.png)
 
-5. You're now ready to hook your React project up to Firebase. We will  need to install `firebase` , run `npm install firebase --save` in your `bookshelf` folder from your terminal. 
+5. You're now ready to hook your React project up to Firebase. We will  need to install `firebase`; in your terminal, `cd` into your `bookshelf` folder, and run `npm install firebase`. 
   * The `npm install` command downloads files. If you go into your `node_modules` folder, you should see a folder called `firebase`.
 
-6. In your `src` folder create a filed `firebase.js` and add the following lines:
+6. In your `src` folder create a file called `firebase.js` and add the following lines:
 
 ```javascript
 // firebase.js
@@ -40,7 +40,7 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 
 // Initialize Firebase
-// USE YOUR CONFIG OBJECT
+// *** USE YOUR CONFIG OBJECT ***
 const config = {
 	apiKey: "YOUR-API-KET",
 	authDomain: "bookshelf-8d68a.firebaseapp.com",
@@ -56,15 +56,17 @@ export default firebase;
 ```
 
 ### Getting data from Firebase
-Let's imagine that we were building a digital bookshelf that kept track of all of our favourite books. To start, let's add some data to our Firebase database.
+
+Let's imagine that we were building a digital bookshelf to keep track of all of our favorite books. To start, let's add some data to our Firebase database.
 
 1. In your Firebase console, click the 'Database' tab. We're going to create a **realtime database**. Firebase REALLY wants you to make a Cloud Firestore one right now. Do not do that. Scroll past it until you see something like this:
+
 ![Firebase database tab](https://hychalknotes.s3.amazonaws.com/07-firebase-database-screenshot.png)
 
 1. Hit 'Create database'.
 1. Start in test mode.
 
-Let's add some books to our bookshelf. Click the '+' next to the name of your database and add some lines with your favourite books:
+Let's add some books to our bookshelf. Click the '+' next to the name of your database and add some lines with your favorite books:
 
 ```
 book1: "Beloved"
@@ -72,7 +74,7 @@ book2: "The Hitchhiker's Guide to the Galaxy"
 book3: "A Little Life"
 ```
 
-Now that we have some data, let's build a little React app that can grab it. We'll import `firebase` into the `App.js` component and set up an initial `book` state.
+Now that we have some data, let's build a little React app that can grab it. First we'll import `firebase` into the `App.js` component:
 
 ```jsx
 // App.js
@@ -88,7 +90,7 @@ class App extends Component {
 }
 ```
 
-In React, when we grab data from external sources to be used in our app, we need to store that information. Typically, we stored it in our component's state.
+In React, when we grab data from external sources to be used in our app, we need to store that information. Typically, we store it in our component's state.
 
 Let's prepare our state to receive some book data and tell our `render` method what to do with the books data once we've got it:
 
@@ -104,11 +106,17 @@ class App extends Component {
 
   render() {
     return (
-      <ul>
-        {this.state.books.map((book) => {
-          return <li>{book}</li>
-        })}
-      </ul>
+      <div>
+        <ul>
+          {this.state.books.map((book) => {
+            return (
+              <li>
+                <p>{book}</p>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     )
   }
 }
@@ -116,32 +124,35 @@ class App extends Component {
 
 Now our component will map through our `books` array, grabbing any books it finds in there and display them as a list on the page.
 
-All that's left to do is grab our data from Firebase. We'll do this by using the `componentDidMount` lifecycle hook to call for the data we want and store it in state.
+All that's left to do is grab our data from Firebase. We'll do this by using the `componentDidMount` lifecycle hook to call for the data we want. We will be storing this data in state, but for now let's start by console logging it:
 
 ```jsx
 // App.js
 class App extends Component {
  // ...rest of our code here
+
  componentDidMount() {
 
-   // here we create a variable that holds a reference to our database
+   // Here we create a variable that holds a reference to our database
    const dbRef = firebase.database().ref();
 
-   // here we add an event listener to that variable that will fire
-   // every time there is a change in the database
+   // Here we add an event listener to that variable that will fire
+   // every time there is a change in the database.
 
-   // this event listener takes a callback function which we will use to get our data
-   // from the database and call it response
+   // This event listener takes a callback function which we will use to get our data
+   // from the database, and call that data 'response'.
    dbRef.on('value', (response) => {
 
-     // here we use Firebase's .val() method to parse our database info the way we want it
+     // Here we use Firebase's .val() method to parse our database info the way we want it
      console.log(response.val());
    });
  }
+
 }
 ```
 
 If this worked successfully, you should see your books appear as an object in the console!
+
 
 ### Storing Firebase data in state
 
@@ -239,7 +250,9 @@ handleChange = (event) => {
 
   // we're telling React to update the state of our `App` component to be 
   // equal to whatever is currently the value of the input field
-  this.setState({userInput: event.target.value})
+  this.setState({
+    userInput: event.target.value
+  })
 }
 
 render() {
@@ -341,7 +354,9 @@ handleClick(event) {
   dbRef.push(this.state.userInput);
 
   // here we reset the state to an empty string
-  this.setState({userInput: ""})
+  this.setState({
+    userInput: ''
+  })
 }
 
 render() {
@@ -365,7 +380,9 @@ render() {
 
 We're almost there! Now we have to be able to remove the data.
 
+
 ## Removing data
+
 We now have the ability to add new books to and retrieve existing books from our database – the final step is to add the ability to remove books from our bookshelf.
 
 If we go back and look at our database in the Firebase dashboard, we can see that all of our data is stored as key-value pairs in a structure very similar to an object.
