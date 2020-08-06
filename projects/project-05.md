@@ -30,7 +30,8 @@ Your data should come from an API or be stored in Firebase.
 ### Some previous examples
 
 -   [Thankfull](https://gratitude-journal-p5.firebaseapp.com/)
--   [Stockup.ninja](https://stockup.ninja/)
+<!-- THE BELOW EXAMPLE'S API WAS DOWN AT LAST TIME OF WRITING (Aug. 6, 2020) -->
+<!-- -   [Stockup.ninja](https://stockup.ninja/) -->
 -   [Karaoke Companion](https://karaoke-companion-c6638.firebaseapp.com/)
 -   [Pins N' Patches](https://kayevans.github.io/pinsAndPatchesApp/)
 -   [Deeper](http://juliadufresne.com/deeper/)
@@ -50,7 +51,7 @@ Remember that you can have as many stretch goals as you want, but the minimum vi
 <!--- ### Deployment
 (optional) In order to make deploying your app easy use the Firebase hosting features to get your site up online! There is the ability to add a custom domain if you would like, so think about a fun, shareable domain for your application . --->
 
-If you have not gotten an instructor's approval on a scope document by Monday, April 27th, 6 p.m., **you will be assigned a project**.
+If you have not gotten an instructor's approval on a scope document by Friday, August 7th, 6 p.m., **you will be assigned a project**.
 
 ## How will this project be graded?
 
