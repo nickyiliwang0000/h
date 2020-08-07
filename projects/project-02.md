@@ -87,7 +87,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc
 1. Remove any unneeded files from the project.
 2. Create a repository with a name made up of your own first name, then your last name, then `project two`. The way you structure this should match whatever naming convention you pick for your folders, files, classes, etc.
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
-4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform).
+4. Submit your repo URL using [the project submission form](https://forms.gle/cF9pegrBE6PhhsUK8).
 
 <!-- ## #design in Helpcue
 
