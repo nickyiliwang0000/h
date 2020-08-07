@@ -83,7 +83,7 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc
 1. Remove any unneeded files from the project.
 2. Create a repository called `firstname-lastname-project-one`
 3. Push your files to GitHub.
-4. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform).
+4. Submit your repo URL using [the project submission form](https://forms.gle/pzFbmQXFwcLkkk9eA).
 
 <!-- ## #design in Helpcue
 
