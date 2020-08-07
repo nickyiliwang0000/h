@@ -28,7 +28,7 @@ To show a understanding of jQuery, DOM manipulation, error handling, and UI desi
 
 ## Project proposals
 
-Once you have a good idea, we want you to fill out a [scope outline document](https://forms.gle/B9cJMn8qmu7YEXBa7) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
+Once you have a good idea, we want you to fill out a [scope outline document](https://forms.gle/PLK4a2dNqaszw8Ch7) and then meet with **an instructor who will approve and submit it for you**. This is designed to make you think about what your minimum viable product is (i.e. what is the smallest version of this idea that is a functional product), and it mimics a project approval process you may do at work. Here is [an example of a scope approval](https://hychalknotes.s3.amazonaws.com/Scope%20Approval%20Example.pdf).
 
 Remember that you can have as many stretch goals as you want, but the minimum viable product is what's stated on your scope document and you are **committed to producing** that by the deadline.
 
@@ -95,7 +95,7 @@ You will be given a chance to make any further comments about their review as we
 2. Create a repository with a name made up of your own first name, then your last name, and project three (e.g.`firstNameLastNameProjectThree`).
 3. Push your files to GitHub (you should be doing this continuously, not just at the end!)
 4. Deploy your website to GitHub Pages or on your own domain/subdomain
-5. Submit your repo URL using [the project submission form](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform).
+5. Submit your repo URL using [the project submission form](https://forms.gle/nkcLhzqg8sH5oWoY7).
 
 <!-- ## #design in Helpcue
 
