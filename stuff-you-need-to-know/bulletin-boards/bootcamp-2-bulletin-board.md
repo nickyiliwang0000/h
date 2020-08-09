@@ -12,54 +12,50 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 6: A four (Re)act play
+Week 7: Build a better world - with components!
+
 
 **Monday**
 
-* _(No class, stat holiday)_
-* 🍴 LUNCH 🍴 _(It's a holiday - that's like a whole day of lunch!)_
-* _(No class, stat holiday)_
+* Motivational Monday
+* _[Finish up]_ Using Firebase with React 🏁 🔥➕🌀
+* 🍴 LUNCH 🍴
+* Github pages and React 🐱🐙📃➕🌀
+* Project work time
 
 
 **Tuesday**
 
-_Have Node.js installed for today! [Get it here](https://nodejs.org/)_
-
-* Tmotivational Tuesday
-* Making our code more modular 🖥➡💻💻💻
+* Function components 🥂📦📦
+* React round-up code-along: The Secret Jerks 🌀👩🏽‍💻👨🏽‍💻⚡
 * 🍴 LUNCH 🍴
-* Intro to React 👋🏽🌌
+* Project work time
 
 
 **Wednesday**
- 
- _Project 4 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
 
-* Project 4 presentations 👏🏽👏🏽👏🏽
-* _(Split into React groups)_
-* Breaking our app into components 👩‍👩‍👧‍👦➡👩🏽👩🏽👦🏽👧🏽 
-* Events and State 🎈🎆🍁
-* 🍴 LUNCH 🍴 _(Wednesday: Like the four-day week's Tuesday!)_
-* Lifecycles 🤰🏽👶🏽🧒🏽👩🏽👵🏽💀
+* Project work time
+* 🍴 LUNCH 🍴 _(Project lunch time)_
+* Project work time
 
 
 **Thursday**
 
-* Kickoff game 🏈 _(All together)_
-* _(Back into React groups)_
-* Props 🤜🏽🤛🏽
+* Kickoff game 🏈
+* Branching / pull request demo 🌳 / 🧵🙏🏽
 * 🍴 LUNCH 🍴
-* Project 5 introduction
 * Project work time
 
 
 **Friday**
 
-* _(Split into React groups)_
-* Function components
+ _Project 5 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_  
+ _NOTE: Project 5 presentations will take place on Monday, Aug 17._
+
+* Routing 🔀🔁🔄🔛🔜🔙🔃
+* Routing code-along: Hackflix 🎥👩🏽‍💻👨🏽‍💻👩🏽‍💻
 * 🍴 LUNCH 🍴
-* _(Full class together againnnnnn 💕)_
-* Using Firebase with React
+* Project 6 introduction
 * Project work time
 * SHOW AND TELL 🎉
 
