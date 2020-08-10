@@ -1,66 +1,61 @@
 # This is your cohort's bulletin board! 
-## Here is where we will post the weekly schedule, review topics for texts, and anything else we need you to know
+## Here is where we will post the weekly schedule, review topics for tests, and anything else we need you to know
 
 ### Schedule
 
-Week 9
+Week 1
 
 **Monday**
 
-* Final Exam 📝
-* Motivational Monday
-* Standups
-* Project Work Time
+* Introductions 
+* Orientations
 * 🍴 LUNCH 🍴
-* Project Work Time
+* Github Orientation
+* Philosophy of best practices for HTML and CSS
+* Browser Dev Tools
+* HTML & CSS Review
+* Project 1 Introduction
 
 **Tuesday**
 
-* Project Work Time
+* CSS Box Model
+* CSS background colours and images
+* 🍴 LUNCH 🍴
+* CSS Layout
+* Display and positioning
+
 
 **Wednesday**
 
-* Job Seeker session Part 2
-* Project Work Time
+* Advanced layouts
+* Code-along: Full Bleed Layout
 * 🍴 LUNCH 🍴
-* Project Work Time
+* Responsive Design Code-along
+* Project Work Time (if time allows)
 
 **Thursday**
 
-* React Hooks
-* Project work time
+* Personal Branding Workshop
+* CSS Pseudo Selectors
+* Pseudo-Elements
 * 🍴 LUNCH 🍴
-* Project work time
+* Navigations
+* Code-along: gallery Overlay
+
 
 **Friday**
 
-* Portfolio due at 12 PM
+* Intro to the Command Line
 * 🍴 LUNCH 🍴
-* Portfolio critiques with peers
-* 🍍🥤
-
-
-
-
-## 📚 Study Areas for FINAL EXAM on July 6 📚
-
-* HTML Fundamentals
-* CSS quirks (e.g. browser defaults, ghost space, resets, box-sizing, cross-browser inconsistencies, floats, etc.)
-* JS syntax (e.g. arrow functions, template literals, let vs. const, variable scope, etc.)
-* JS modules and how we use them
-* React lifecycle methods
-* State in React
-* Class and Function Components
-* Basic Firebase methods
-* Git commands
-* Definitions including abbreviations (e.g. ECMAScript, AJAX, JSX etc.)
-
+* Version control with Git and GitHub
+* Git on the command line
+* Project Work Time (if time allows)
 
 
 
 
 ### Bootcamp calendar
-We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Spring 1 Bootcamp - (event)".
+We use [this](https://calendar.google.com/calendar/embed?src=hackeryou.com_ckj6930nr6kraakaisos09cccs%40group.calendar.google.com&ctz=America%2FToronto) Google Cal to post all important dates & events throughout the Bootcamp and beyond! All events and dates for your cohort will be denoted by "2020 Summer Bootcamp - (event)".
 
 ### Important links & Info
 Feedback form: https://forms.gle/g9f6G8LB5FfJZFSF6
@@ -72,9 +67,9 @@ Tests = 5% each
 Exam = 25%
 ```
 
-Project submission form: https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit
+Project and blog submission form: https://docs.google.com/forms/d/e/1FAIpQLSdby79H2eeokItPQnmC7A1OcrozXB1hyCD6DIAPkqzC3ZoLAQ/viewform
 
 If you'd like to submit your project to be featured on Juno's social media, submit it [here](https://docs.google.com/forms/d/e/1FAIpQLSdu5QfWrOBE14L00vhc1e4IfbwXV4X7CzNdjwJxoP4uOSDA3w/viewform)!
 
-Group assignments: [Here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=1112317742)
+Group assignments: [Here](https://docs.google.com/spreadsheets/d/1FJYMVYzm04BQzDL_8PgT6B6NuejBbVB8KVG2c6zZ8gM/edit#gid=624584399)
 
