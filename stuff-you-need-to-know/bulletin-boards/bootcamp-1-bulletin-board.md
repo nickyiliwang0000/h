@@ -10,7 +10,7 @@ Week 1
 * Introductions 
 * Orientations
 * 🍴 LUNCH 🍴
-* Github Orientation
+* GitHub Orientation
 * Philosophy of best practices for HTML and CSS
 * Browser Dev Tools
 * HTML & CSS Review
@@ -72,4 +72,3 @@ Project and blog submission form: https://docs.google.com/forms/d/e/1FAIpQLSdby7
 If you'd like to submit your project to be featured on Juno's social media, submit it [here](https://docs.google.com/forms/d/e/1FAIpQLSdu5QfWrOBE14L00vhc1e4IfbwXV4X7CzNdjwJxoP4uOSDA3w/viewform)!
 
 Group assignments: [Here](https://docs.google.com/spreadsheets/d/1FJYMVYzm04BQzDL_8PgT6B6NuejBbVB8KVG2c6zZ8gM/edit#gid=624584399)
-
