@@ -53,7 +53,7 @@ You will also be given a mark for presenting your project.
 
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned!
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/edit?usp=sharing). Headings of the columns are links to the zip files.
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1FJYMVYzm04BQzDL_8PgT6B6NuejBbVB8KVG2c6zZ8gM/edit?usp=sharing). Headings of the columns are links to the zip files.
 
 <!-- > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer. -->
 
@@ -65,17 +65,17 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc
 
 <!-- Coming soon! -->
 
-**Electric Select**
+**Paint Gallery**
 
-[design and assets](https://hychalknotes.s3.amazonaws.com/electric-select.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/Paint+Gallery-20200810T184206Z-001.zip)
 
-**Galass Handbags**
+**Thunder Force Stadium**
 
-[design and assets](https://hychalknotes.s3.amazonaws.com/galass-handbags.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/Thunder+Force+Stadium-20200810T183759Z-001.zip)
 
-**Hangry Tummy**
+**Panda Sanctuary**
 
-[design and assets](https://hychalknotes.s3.amazonaws.com/hangry-tummy.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/Panda+Sanctuary-20200810T183456Z-001.zip)
 
 
 ## Submitting your project

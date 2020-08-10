@@ -57,7 +57,7 @@ You will also be given a mark for presenting your project.
 
 Much like in the workplace, you don't get to choose the design you code - you'll be assigned!
 
-You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/edit?usp=sharing).
+You can find your assignment [here](https://docs.google.com/spreadsheets/d/1FJYMVYzm04BQzDL_8PgT6B6NuejBbVB8KVG2c6zZ8gM/edit?usp=sharing).
 
 > Feel free to print a copy using the printer by the windows! You'll need a USB port on your computer. If you only have USB-C, there's usually an adaptor in the cabinet to the left of the printer.
 
@@ -67,19 +67,19 @@ You can find your assignment [here](https://docs.google.com/spreadsheets/d/1nNtc
 
 ### Design files
 
-**Boat Ride Adventure**
+**Bar One**
 
-[design and assets](https://hychalknotes.s3.amazonaws.com/BoatRideAdventures.zip)
-
-
-**Sanctuary Helpers**
-
-[design and assets](https://hychalknotes.s3.amazonaws.com/SanctuaryHelpers.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/Bar+One-20200810T185520Z-001.zip)
 
 
-**Under the Sea**
+**Beach Stay**
 
-[design and assets](https://hychalknotes.s3.amazonaws.com/UnderTheSea.zip)
+[design and assets](https://hychalknotes.s3.amazonaws.com/Beach+Stay-20200810T190112Z-001.zip)
+
+
+**Planted**
+
+[design and assets](https://hychalknotes.s3.amazonaws.com/Planted-20200810T190405Z-001.zip)
 
 
 ## Submitting your project
