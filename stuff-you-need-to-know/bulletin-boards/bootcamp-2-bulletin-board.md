@@ -42,7 +42,7 @@ Week 7: Build a better world - with components!
 **Thursday**
 
 * Kickoff game 🏈
-* Branching / pull request demo 🌳 / 🧵🙏🏽
+* Routing 🔀🔁🔄🔛🔜🔙🔃
 * 🍴 LUNCH 🍴
 * Project work time
 
@@ -52,9 +52,9 @@ Week 7: Build a better world - with components!
  _Project 5 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_  
  _NOTE: Project 5 presentations will take place on Monday, Aug 17._
 
-* Routing 🔀🔁🔄🔛🔜🔙🔃
 * Routing code-along: Hackflix 🎥👩🏽‍💻👨🏽‍💻👩🏽‍💻
 * 🍴 LUNCH 🍴
+* Branching / pull request review 🌳 / 🧵🙏🏽
 * Project 6 introduction
 * Project work time
 * SHOW AND TELL 🎉
