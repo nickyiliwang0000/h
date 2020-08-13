@@ -164,7 +164,7 @@ Your first instinct may be to hide the sub-menu by using `display: none`.
 
 ```css
 .sub-menu {
-  background: peachpuff;
+  background: #96a1be;
   display: none;
 }
 ```
@@ -177,7 +177,7 @@ You can read more about `overflow` [here](https://developer.mozilla.org/en-US/do
 
 ```css 
 .sub-menu {
-    background: peachpuff;
+    background: #96a1be;
     position: absolute;
     height: 0;
     overflow: hidden;
@@ -215,7 +215,7 @@ Now you should see the sub nav when you hover over or tab onto its parent. Howev
 }
 
 .sub-menu {
-  background: peachpuff;
+  background: #96a1be;
   display: none;
   position: absolute;
 }
