@@ -63,7 +63,7 @@ class App extends Component {
         page: 1,
         primary_release_year: 1999,
       },
-    }).then(res => {
+    }).then( (res) => {
       res = res.data.results;
       // Store the API results to the "movies" state value...
       this.setState({
@@ -91,10 +91,10 @@ Awesome! We should now be retrieving our movies from the movie DB and storing th
 
 ```jsx
 <div className="catalogue">
-  {this.state.movies.map (movie => {
+  {this.state.movies.map( (movie) => {
     return (
       <div key={movie.id} className="movie">
-        <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
+        <img src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={`Poster for ${movie.original_title}`} />
       </div>
     );
   })}
@@ -301,22 +301,17 @@ Now that we have access to our `movie` property, we can start displaying its dat
 ```jsx
 // MovieDetails.js
 render() {
-  const {
-    original_title: title, // destructure the original_title property to a variable simply called title
-    tagline, 
-    overview, 
-    poster_path
-    } = this.state.movie;
+  const { original_title, tagline, overview, poster_path } = this.state.movie;
   return (
     <div>
       <div className="poster">
         <div className="description">
-          <h1>{title}</h1>
+          <h1>{original_title}</h1>
           <h2>{tagline}</h2>
           <p>{overview}</p>
         </div>
         <div className="image">
-          <img src={`http://image.tmdb.org/t/p/w500/${poster_path}`} alt={`Movie poster for ${title}`}>
+          <img src={`http://image.tmdb.org/t/p/w500/${poster_path}`} alt={`Movie poster for ${original_title}`}/>
         </div>
       </div>
     </div>
