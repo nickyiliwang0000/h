@@ -131,7 +131,7 @@ The line that adds the property to the object remains the same no matter what th
 
 ## Exercises
 
-Download [this file](https://hychalknotes.s3.amazonaws.com/object-exercise-bootcamp.zip) and complete the exercises within.
+Download [this file](https://hychalknotes.s3.amazonaws.com/object-exercise--bootcamp.zip) and complete the exercises within.
 
 ## Iterating through an object
 
