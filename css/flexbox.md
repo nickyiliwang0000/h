@@ -312,7 +312,7 @@ Go to your file and add the rule `flex-basis: 100px;` to `.flexItem:last-child`.
 ## Flexbox code-alongs
 We'll download [a starter file](https://hychalknotes.s3.amazonaws.com/flex.html) to see how the flexbox can be used to create a common website layout we've previously made with floats.
 
-Then, we'll get into [flexboxCodeAlong.zip](https://hychalknotes.s3.amazonaws.com/flexboxCodeAlong.zip). We'll use these files to build an advanced layout. 
+Then, we'll get into [flexboxCodeAlong-bootcamp.zip](https://hychalknotes.s3.amazonaws.com/flexboxCodeAlong-bootcamp.zip). We'll use these files to build an advanced layout. 
 
 ## Resources
 
