@@ -319,30 +319,6 @@ for (let i = 0; i < myArray.length; i++) {
 }
 ```
 
-## The `this` keyword
-
-Inside of an object there is a special way to reference itself, the keyword `this` refers to that object. This can be used to update an object's properties. For example:
-
-```js
-const myBasket = {
-  apples: 1,
-  increment: function() {
-    this.apples += 1
-  }
-}
-```
-
-```js
-myBasket.apples; //1
-myBasket.increment();
-myBasket.apples; //2
-```
-The `this` keyword is a **variable**, so it can change in different contexts.
-
-When used inside of a method on an object, the `this` keyword will refer to the object. However, when used inside of a function not on an object, `this` refers to something different. Try it and see what happens.
-
-We will discuss `this` in more depth in our [scope and execution context lesson](https://github.com/HackerYou/bootcamp-notes/blob/master/applied-javascript/advanced-js-lexical-scope-and-execution-context.md).
-
 ### Exercise
 Create an object that represents a "warrior". This warrior has the following properties:
 
