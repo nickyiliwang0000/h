@@ -18,7 +18,7 @@ You will be given an opportunity to provide feedback about the experience of wor
 
 It can be valuable to set your group's working expectations from the beginning. Take some time to decide what your group's working hours should be (times that all members are expected to be available and present), how to handle pull requests (how many `👍` are required before a merge can be executed), and any other arrangements that will help accomodate the needs of your specifc group.
 
-Since we are also nearing the end of Help Cue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue'. Use your peers, your bootcamp buddies, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life.
+Since we are also nearing the end of Help Cue, we'll be encouraging you even more than before to use the resources available to you to problem solve before putting yourself in the 'cue'. Use your peers, #bootcamp-help, and Professor Google! We want to see you making an effort to troubleshoot on your own in order to prepare you for your post-bootcamp life.
 
 ## How will this project be graded?
 
@@ -58,8 +58,8 @@ Note that each student will be given about a minute to speak during the presenta
 ## Project timeline
 
 -   **End of day Friday:** Organization set up on GitHub, wireframes, game plan/pseudo code and successful return of data from API (if applicable)
--   **End of day Wednesday:** Beta version of the app
--   **End of day Thursday** Project live on gh-pages (highly recommended if you are using React Router), or your own domain
+-   **6pm Wednesday:** Beta version of the app
+-   **Mid-day Thursday** Project live on gh-pages (highly recommended if you are using React Router), or your own domain
 
 Commit early, commit often.
 
@@ -67,11 +67,10 @@ Commit early, commit often.
 
 You will be provided with a client brief that includes some requirements as well as a style guide that you need to follow.
 
-Find your group [here](https://docs.google.com/spreadsheets/d/1sPMnnBRM9te3MwBmgv6CMVKqqIKlFYt7uSLhx_QAndA/edit#gid=624584399) in the 'Project 6' tab. Client briefs are linked to the group headings.
+Find your group [here](https://docs.google.com/spreadsheets/d/1nNtc4s0M6aWJv1K_sNPYzFOXappNFq9LZYzwl4B9JQg/edit?usp=sharing) in the 'Project 6 Groups' tab. Client briefs are linked to the group headings.
 
-Your instructors are your clients. 
+Your instructors are your clients - they're human! Talk to them! If you want to change something about the scope or the design, if you run into a problem, if you have questions about your brief, or if you have an idea about how to do something better because of the data you're getting, **get an instructor to sign off on any changes you want to make**.
 
-They're human! Talk to them! If you want to change something about the scope or the design, if you run into a problem, if you have questions about your brief, or if you have an idea about how to do something better because of the data you're getting, **get an instructor to sign off on any changes you want to make**.
 
 ## Submitting your project
 
