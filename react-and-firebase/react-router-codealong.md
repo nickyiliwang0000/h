@@ -130,7 +130,7 @@ class Catalogue extends Component {
         page: 1,
         primary_release_year: 1999,
       },
-    }).then(res => {
+    }).then( (res) => {
       res = res.data.results;
       this.setState({
         movies: res,
@@ -275,10 +275,9 @@ class MovieDetails extends Component {
         sort_by: 'popularity.desc',
         include_adult: 'false',
         include_video: 'false',
-        page: '1',
-        primary_release_year: '2018',
+        page: '1'
       },
-    }).then(res => {
+    }).then( (res) => {
       this.setState({
         movie: res.data,
       })
@@ -303,16 +302,14 @@ Now that we have access to our `movie` property, we can start displaying its dat
 render() {
   const { original_title, tagline, overview, poster_path } = this.state.movie;
   return (
-    <div>
-      <div className="poster">
-        <div className="description">
-          <h1>{original_title}</h1>
-          <h2>{tagline}</h2>
-          <p>{overview}</p>
-        </div>
-        <div className="image">
-          <img src={`http://image.tmdb.org/t/p/w500/${poster_path}`} alt={`Movie poster for ${original_title}`}/>
-        </div>
+    <div className="poster">
+      <div className="description">
+        <h1>{original_title}</h1>
+        <h2>{tagline}</h2>
+        <p>{overview}</p>
+      </div>
+      <div className="image">
+        <img src={`http://image.tmdb.org/t/p/w500/${poster_path}`} alt={`Movie poster for ${original_title}`}/>
       </div>
     </div>
   );
@@ -351,7 +348,7 @@ class Catalogue extends Component {
         page: 1,
         primary_release_year: 1999,
       },
-    }).then(res => {
+    }).then( (res) => {
       res = res.data.results;
       this.setState({
         movies: res,
