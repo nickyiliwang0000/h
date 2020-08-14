@@ -6,9 +6,9 @@ Project due dates can be found [here](https://github.com/HackerYou/bootcamp-note
 
 ## Design Must Submitted By:
 
-Monday, July 6th at 5pm
+Thursday, August 20th at 6pm
 
-Enter your theme in [THIS](https://docs.google.com/spreadsheets/d/1zjRDoKcQzrT8tuZCCzdUN5Tq4OKOXE_3mf91Z3Rm_x0/edit?usp=sharing) doc. 
+Enter your theme in [THIS](https://docs.google.com/spreadsheets/d/1M7mXwg9bOz07I2NW3rM5cO1AKhJHpmXPd1Pi-NpFyOc/edit?usp=sharing) doc. 
 
 
 ## Project description
@@ -78,9 +78,9 @@ Because you are showing off your ability to code, be sure you adhere to the best
 
 ## Submitting your project
 
-1. Deploy your website and submit the live URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
+1. Deploy your website and submit the live URL using [the project submission form](https://forms.gle/AudGGoSEPRGsBJh66).
 
--   It is HIGHLY ENCOURAGED that you start your deploy on Thursday because  there will not be a lot of time on Friday for deployment debugging.
+-   It is HIGHLY ENCOURAGED that you start your deploy on Wednesday because  there will not be a lot of time on Friday for deployment debugging.
 -   Your portfolio site **must** be deployed before the critiques or it will not be eligible for review.
 
 

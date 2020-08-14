@@ -76,7 +76,7 @@ They're human! Talk to them! If you want to change something about the scope or 
 ## Submitting your project
 
 1. Deploy your website to GitHub Pages, Netlify, or your own domain/subdomain.
-2. _One person_ from the group will submit your repo URL and live URL using [the project submission form](https://docs.google.com/forms/d/1ld09hsgj2WEpCEjNwg8ezA-wOlsFKeuBleYHlOPDUW0/edit).
+2. _One person_ from the group will submit your repo URL and live URL using [the project submission form](https://forms.gle/AudGGoSEPRGsBJh66).
 
 <!-- ## #design in Helpcue
 
