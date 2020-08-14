@@ -103,7 +103,7 @@ callGrandma();
 
 </td></tr></table>
 
-## Revisiting `this`
+## `this`
 
 The `this` keyword can take some practice to master. Every time an execution context is created it assigns a value to a variable called `this` which can be very useful for writing dynamic code. 
 
