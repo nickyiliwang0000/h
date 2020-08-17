@@ -62,7 +62,7 @@ Images are the only element that are by default `display:inline-block;`.
 Let's see how it works with some markup (also available in [this CodePen](https://codepen.io/zkdan/pen/BGpEGP))
 
 ```html
-<p>Here is a picture of a new friend for us: <img class="myStar" src="https://placekitten.com/100/100">. Isn't it nice?</p>
+<p>Here is a picture of a cat: <img class="myStar" src="https://placekitten.com/100/100">. Isn't it nice?</p>
 ```
 If we wanted to set a width and height on the image, no problem! It doesn't break to a new line.
 
