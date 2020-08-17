@@ -12,22 +12,25 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 7: Build a better world - with components!
+Week 8: A good week to get great and get grit!
 
 
 **Monday**
 
-* Motivational Monday
-* _[Finish up]_ Using Firebase with React 🏁 🔥➕🌀
+* React test
+* *Motivational Monday*
+* Stand-ups
+* 🤗 Project 5 Presentations 🤗
+* Regular expressions
 * 🍴 LUNCH 🍴
-* Github pages and React 🐱🐙📃➕🌀
 * Project work time
 
 
 **Tuesday**
 
-* Function components 🥂📦📦
-* React round-up code-along: The Secret Jerks 🌀👩🏽‍💻👨🏽‍💻⚡
+* 👯‍♀️ Project 5 Peer Review 👯‍♂️
+* Debugging in Javascript 🕵🏻‍♀️🕵🏾‍♂️
+* Project work time
 * 🍴 LUNCH 🍴
 * Project work time
 
@@ -35,29 +38,34 @@ Week 7: Build a better world - with components!
 **Wednesday**
 
 * Project work time
+* 🌻Morning break!🌻 
+* Project work time
 * 🍴 LUNCH 🍴 _(Project lunch time)_
+* Project work time
+* 💃🏽Afternoon break🕺🏿
 * Project work time
 
 
 **Thursday**
 
+_Project 6 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_  
+
 * Kickoff game 🏈
-* Routing 🔀🔁🔄🔛🔜🔙🔃
+* Project 6 presentations 
+* Final (!!!!) Project 7 introduction
+* ⭕️Circle Pit ⭕️
 * 🍴 LUNCH 🍴
 * Project work time
 
 
 **Friday**
 
- _Project 5 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_  
- _NOTE: Project 5 presentations will take place on Monday, Aug 17._
+ _Resume & cover letter due at 10am today! [Submit them here](https://forms.gle/H4BGXUuZYyZTdYLu9)_  
 
-* Routing code-along: Hackflix 🎥👩🏽‍💻👨🏽‍💻👩🏽‍💻
+* Job Seeker Intro: Part 1️⃣
 * 🍴 LUNCH 🍴
-* Branching / pull request review 🌳 / 🧵🙏🏽
-* Project 6 introduction
 * Project work time
-* SHOW AND TELL 🎉
+* 🎉SHOW AND TELL 🎉
 
 
 ### Bootcamp calendar
