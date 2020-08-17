@@ -142,7 +142,7 @@ Go ahead and set `.blueBox` to `position: absolute;`:
 }
 ```
 
-What just happened? Where is the `.redBox`? Where did the picture of meat go?
+What just happened? Where is the `.redBox`? Where did the nature picture go?
 
 The box with a blue border was set to `position: absolute;` and no longer takes up any space, so the box with the red border bumps itself right up and under the box with the blue border. Since the background of each `div` is not transparent, you can't see any of the box with the red border behind it. If we were to add opacity for all of our `div` elements, what do we see?
 
