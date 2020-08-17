@@ -53,7 +53,6 @@ _Project 6 is due at 10am today! [Submit it here](https://docs.google.com/forms/
 * Kickoff game 🏈
 * Project 6 presentations 
 * Final (!!!!) Project 7 introduction
-* ⭕️ Cool Mystery Thing with Safi ⭕️
 * 🍴 LUNCH 🍴
 * Project work time
 
