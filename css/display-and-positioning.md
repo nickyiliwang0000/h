@@ -330,7 +330,6 @@ Let's use `z-index` to bring the red box on top of everything else:
 
 ```css
 .box3 {
-    /*meat picture*/
     border: 2px solid rgb(255, 0, 0);
     top: 60px;
     left: 60px;
