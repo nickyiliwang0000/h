@@ -38,11 +38,11 @@ Week 8: A good week to get great and get grit!
 **Wednesday**
 
 * Project work time
-* 🌻Morning break!🌻 
+* 🌻 Morning break! 🌻 
 * Project work time
 * 🍴 LUNCH 🍴 _(Project lunch time)_
 * Project work time
-* 💃🏽Afternoon break🕺🏿
+* 💃🏽 Afternoon break! 🕺🏿
 * Project work time
 
 
@@ -53,7 +53,7 @@ _Project 6 is due at 10am today! [Submit it here](https://docs.google.com/forms/
 * Kickoff game 🏈
 * Project 6 presentations 
 * Final (!!!!) Project 7 introduction
-* ⭕️Circle Pit ⭕️
+* ⭕️ Circle Pit ⭕️
 * 🍴 LUNCH 🍴
 * Project work time
 
@@ -65,7 +65,7 @@ _Project 6 is due at 10am today! [Submit it here](https://docs.google.com/forms/
 * Job Seeker Intro: Part 1️⃣
 * 🍴 LUNCH 🍴
 * Project work time
-* 🎉SHOW AND TELL 🎉
+* 🎉 SHOW AND TELL 🎉
 
 
 ### Bootcamp calendar
