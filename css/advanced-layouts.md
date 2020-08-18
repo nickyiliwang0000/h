@@ -9,19 +9,18 @@
 
 ## Percentage-based layout
 
-When using floats to lay out a page, we need to ensure that the sum of the widths of floated elements is less than or equal to the width of the parent container so that the children can sit next to each other.
+When using floats to layout a page, we need to ensure that the sum of the widths of floated elements is less than or equal to the width of the parent container so that the children can sit next to each other.
 
-If the parent's width is, say, 800px, the children's widths can't add up to more than 800px, otherwise the children will break on to separate lines. Add in some border or margin and this math can get tedious. Instead of using exact pixel values for our floated child elements, let's use percentages.
+If the parent's width is, say, 800px, the children's widths can't add up to more than 800px, otherwise, the children will break on to separate lines. Add in some border or margin and this math can get tedious. Instead of using exact pixel values for our floated child elements, let's use percentages.
 
-Open [advanced-layouts-starter--bootcamp.html](https://hychalknotes.s3.amazonaws.com/advanced-layouts-starter--bootcamp.html) and follow along as we replace the pixel values with percentages.
 
 ### Container elements
 
-You'll notice that in all of our layout examples, we have a surrounding element that acts as a parent to the floated elements. This element has a set pixel `max-width`, `width`, and `margin: 0 auto;` applied.
+You'll notice that in many of our layout examples and exercises, we have a surrounding element that acts as a parent to the floated elements. This element has a common set of CSS properties applied: `max-width`, `width`, and `margin: 0 auto;`.
 
-The `max-width` is a pixel width that refers to the maximum width the container will take up on the page, and will not be able to grow any more. `Width` tells the content inside to take up a certain percentage of the wrapper's width. We can either set the width to be 100% of the wrapper, or set it to be less if we want to create some padding between the content and the wrapper's edge. And finally, `margin: 0 auto` centers the wrapper and its contents for us.
+The `max-width` is a pixel width that refers to the maximum width the container will take up on the page, and will not be able to grow anymore. `Width` tells the content inside to take up a certain percentage of the wrapper's width. We can either set the width to be 100% of the wrapper or set it to be less if we want to create some padding between the content and the wrapper's edge. And finally, `margin: 0 auto` centers the wrapper and its contents for us.
 
-We've usually given this element a class of `.wrapper`, but this is an arbitrary name. The wrapper serves as a way to constrain our content while allowing the body to cover the entire browser window. This creates clean lines on our page and prevents content from being stretched out on very wide screen sizes.
+We've usually given this element a class of `.wrapper` or `.container`, but these are arbitrary names. The wrapper element serves as a way to constrain our content while allowing the body to cover the entire browser window. This creates clean lines on our page and prevents content from being stretched out on very wide screen sizes.
 
 ![](https://hychalknotes.s3.amazonaws.com/fullbleed-design-wrapper--conEd.png)
 
@@ -40,8 +39,8 @@ When working with percentages, it's important to think beyond the dimensions of 
 
 ```html
 <div class="wrapper">
-  <section></section>
-  <aside></aside>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
 </div>
 ```
 
@@ -52,12 +51,12 @@ When working with percentages, it's important to think beyond the dimensions of 
   margin: 0 auto;
 }
 
-section {
+.columnLeft {
   width: 65%;
   float: left;
 }
 
-aside {
+.columnRight {
   width: 35%;
   float: left;
 }
@@ -92,25 +91,25 @@ Moving forward, it's best practice to include a `max-width` property with a pixe
 
 Now that we understand how to limit the sizing and see the benefits of using percentages with our elements, what if we want to put some space between our elements?
 
-In previous examples, we had to ensure that the widths of child elements added up to the same width of the parent container even when we were using percentages.
+In previous examples, we had to ensure that the widths of child elements added up to the same width of the parent container even when we were not using percentages:
 
 ```html
-<div class="wrapper">
-  <section></section>
-  <aside></aside>
-</div>
+<main>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
+</main>
 
 <style>
-  .wrapper {
+  main {
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 500px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 300px;
   }
@@ -120,23 +119,23 @@ In previous examples, we had to ensure that the widths of child elements added u
 However, if we used margin to provide spacing between our elements, we would have to account for it when setting the widths of our elements.
 
 ```html
-<div class="wrapper">
-  <section></section>
-  <aside></aside>
-</div>
+<main>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
+</main>
 
 <style>
-  .wrapper {
+  main {
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 480px;
     margin: 0 10px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 280px;
     margin: 0 10px;
@@ -147,23 +146,23 @@ However, if we used margin to provide spacing between our elements, we would hav
 If we were using percentages, we could easily change the units of the margin to match, but 10% of a container is quite a lot for a margin.
 
 ```html
-<div class="wrapper">
-  <section></section>
-  <aside></aside>
-</div>
+<main>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
+</main>
 
 <style>
-  .wrapper {
+  main {
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 45%;
     margin: 0 10%;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 15%;
     margin: 0 10%;
@@ -174,23 +173,23 @@ If we were using percentages, we could easily change the units of the margin to 
 So instead of working with unclear percentage margins, why don't we work with percentages for widths, and something more tangible for margins: pixels.
 
 ```html
-<div class="wrapper">
-  <section></section>
-  <aside></aside>
-</div>
+<main>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
+</main>
 
 <style>
-  .wrapper {
+  main {
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 65%;
     margin: 0 10px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 35%;
     margin: 0 10px;
@@ -214,28 +213,28 @@ section {
 
 > Note that calc() is whitespace sensitive, so `calc(65%-20px)` will not work. Make sure to add spaces: `calc(65% - 20px)`.
 
-Currently, `calc()` is pretty well supported across different browsers and will become part of our CSS toolkit moving forward. [To see the current support of calc() click here](<https://caniuse.com/#search=calc()>).
+Currently, `calc()` is almost universally supported across browsers and it is an essential property in the CSS toolkit. [To see the current support of calc() click here](<https://caniuse.com/#search=calc()>).
 
 Using `calc()`, we can now mix percentages and pixels to create a layout that is fluid and looks great.
 
 ```html
-<div class="wrapper">
-  <section></section>
-  <aside></aside>
-</div>
+<main>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
+</main>
 
 <style>
-  .wrapper {
+  main {
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: calc(65% - 20px);
     margin: 0 10px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: calc(35% - 20px);
     margin: 0 10px;
@@ -253,4 +252,4 @@ Using `calc()`, we can now mix percentages and pixels to create a layout that is
 
 ## Full bleed code-along
 
-Download [fullbleed-layout-starter--bootcamp.zip](https://hychalknotes.s3.amazonaws.com/fullbleed-layout-starter--bootcamp.zip) and we'll see how `vh` can be used to create a modern-looking website.
+Download [fullbleed-layout-starter--bootcamp.zip](https://hychalknotes.s3.amazonaws.com/fullbleed-layout-starter--bootcamp.zip) and we can get practice combining all of these concepts to create a modern-looking website. 
