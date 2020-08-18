@@ -195,9 +195,9 @@ You may remember from our layouts lesson that if we want to keep our content con
 
 ```css
 .wrapper {
-  width:70%;
+  max-width: 960px;
+  width: 70%;
   margin: 0 auto;
-  max-width:960px;
 }
 ```
 
