@@ -32,7 +32,7 @@ Remember that `<meta>` tags go inside the `head` tag to provide information abou
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
-You should **always** put this tag into the `head` of your document. Add it as a snippet to your code editor! Without this tag, your site **will not be responsive**. It will render as a shrunk down version of your desktop site. 
+You should **always** put this tag into the `head` of your document. Add it as a snippet to your code editor! Without this tag, your site **will not be responsive**. It will render as a shrunk-down version of your desktop site. 
 
 ### 2. Media queries
 
@@ -65,7 +65,7 @@ The first pixel value here is what we call a _breakpoint_. Breakpoints are the c
 
 Open [media-queries--bootcamp.html](https://hychalknotes.s3.amazonaws.com/media-queries--bootcamp.html) in your editor and browser and let's take a look through the code.
 
-Dev tools has introduced a ruler that shows you pixel values. You can use that or inspect the body of your page to get the current page width and height.
+Dev tools include a ruler that shows you pixel values. You can use that or inspect the body of your page to get the current page width and height.
 
 #### Min and Max Width in Media queries
 
@@ -98,7 +98,7 @@ Sometimes we will want to limit our CSS to a certain range of pixel values:
 
 The code between the curly brackets will only be run when the width of your browser is equal to or greater than 768px **and** less than or equal to 940px.
 
-These bounded media queries can be helpful when you are targeting a specific size of screen.
+These bounded media queries can be helpful when you are targeting a specific size of the screen.
 
 #### Mobile First Design
 
@@ -107,19 +107,19 @@ Change all the media queries from `max-width` to `min-width`. How does that chan
 You may hear the phrase _mobile-first design_ which refers to building a website starting from the smallest mobile view and working up to desktop. This is in contrast to regular responsive design in which we are building the desktop version first, and scaling down. In mobile-first design, your base CSS will be the mobile styling, using `min-width` media queries to watch where the mobile styles no longer look good. 
 
 ![alt text](https://hychalknotes.s3.amazonaws.com/mobile-first-example.png "An example of mobile to desktop design")
-An example of a mobile to desktop design
+An example of mobile to desktop design
 
-So why should we care about mobile-first design? More and more people are accessing the internet from a smart phone or tablet instead of a desktop or laptop computer. 
-Mobile first design puts the focus on content, and eliminates any unnecessary or distracting user interface decorations. We are focusing on creating a simple site that can grow into something more complex. You may find it's easier to add to your mobile site as it expands, rather than figuring out what to remove as you scale down!
+So why should we care about mobile-first design? More and more people are accessing the internet from a smartphone or tablet instead of a desktop or laptop computer. 
+Mobile-first design puts the focus on content, and eliminates any unnecessary or distracting user interface decorations. We are focusing on creating a simple site that can grow into something more complex. You may find it's easier to add to your mobile site as it expands, rather than figuring out what to remove as you scale down!
 
-Download this [width-media-queries-exercise.zip](https://hychalknotes.s3.amazonaws.com/width-media-queries-exercise.zip) to see how you can acheive the same look with mobile-first or desktop-first media queries.
+Download this [width-media-queries-exercise.zip](https://hychalknotes.s3.amazonaws.com/width-media-queries-exercise.zip) to see how you can achieve the same look with mobile-first or desktop-first media queries.
 
 
 #### Media query for height
 
 Occasionally you may want to check if a device has a certain height.
 
-Imagine that you have a header set to `height: 100vh` with a long title inside of it. On phones with short screens or small tablets in landscape mode the title might get cut off or break out of it's container. 
+Imagine that you have a header set to `height: 100vh` with a long title inside of it. On phones with short screens or small tablets in landscape mode the title might get cut off or break out of its container. 
 
 Download [height-mq.html](https://hychalknotes.s3.amazonaws.com/height-mq.html) to see this issue in action. Open it in the device emulator on a small phone. See how the text runs past the image? We can solve this issue by having the header automatically size itself to its contents once the screen is below a certain height:
 
@@ -147,7 +147,7 @@ If the issue applies when the screen is narrow but longer than a phone screen, y
 }
 ```
 
-**You shouldn't rely on height media queries** for much beyond cases like the one above! Using height media queries for design decisions is tricky and unreliable, because browser heights are even more unpredictable than widths. Some things to note:
+**You shouldn't rely on height media queries** for much beyond cases like the one above! Using height media queries for design decisions is tricky and unreliable because browser heights are even more unpredictable than widths. Some things to note:
 
   * A phone's browser bar takes up height and there's generally a context menu at the bottom of a phone screen.
   * People may be viewing your site from an in-app browser (e.g. from Facebook or Twitter).
@@ -179,7 +179,7 @@ As you design your site, you may need breakpoints that are larger, smaller, or i
 
 ### Holistic Coding when creating Responsive Design
 
-Media queries allow us to make changes at certain break points but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
+Media queries allow us to make changes at certain breakpoints but that doesn't get us all the way to a responsive design. Let's talk about the ways that we can incorporate responsive design into the structure of our code. 
 
 #### Planning ahead
 
@@ -265,6 +265,6 @@ Check out [responsive-exercises-roundup.zip](https://hychalknotes.s3.amazonaws.c
   * **pixel-density**: Images and graphics are blown up to 2x their natural size on retina or HPDI screens which can result in blurry images. The solution to this issue is to use a device resolution media query to swap in images that are 2x the size of the normal ones when the user is on a HiDPI screen. [More Info](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
   * **print**: when someone prints a web page, your `@media (print)` CSS rules can remove pieces that aren't needed.
   
-Find more about all three at in [Additional Media Queries]().
+Find more about all three in [Additional Media Queries]().
 
 There are a bunch more on [MDN](https://developer.mozilla.org/en-US/docs/CSS/Media_queries).
