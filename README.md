@@ -30,7 +30,7 @@ Here are your notes, bootcamp studes! We're so glad you're here! If you notice a
 
 ## Projects
 
-Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed a project that satsfies **all** the project requirements.
+Each of these projects is designed to confirm your understanding of the topics taught that week. For this reason, we encourage you to build a minimum viable product that satisfies all the requirements for that project **before** doing anything more ambitious. Challenge yourself, by all means, but **first** make sure that you have completed **all** the project requirements.
 
 Turning in an excellent small project is better than turning in a more ambitious project with lots of bugs.
 
