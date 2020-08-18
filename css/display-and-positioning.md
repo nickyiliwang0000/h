@@ -62,7 +62,7 @@ Images are the only element that are by default `display:inline-block;`.
 Let's see how it works with some markup (also available in [this CodePen](https://codepen.io/zkdan/pen/BGpEGP))
 
 ```html
-<p>Here is a picture of a true National Treasure: <img class="myStar" src="https://www.placecage.com/100/100">. Isn't it nice?</p>
+<p>Here is a picture of a cat: <img class="myStar" src="https://placekitten.com/100/100">. Isn't it nice?</p>
 ```
 If we wanted to set a width and height on the image, no problem! It doesn't break to a new line.
 
@@ -142,7 +142,7 @@ Go ahead and set `.blueBox` to `position: absolute;`:
 }
 ```
 
-What just happened? Where is the `.redBox`? Where did the picture of meat go?
+What just happened? Where is the `.redBox`? Where did the nature picture go?
 
 The box with a blue border was set to `position: absolute;` and no longer takes up any space, so the box with the red border bumps itself right up and under the box with the blue border. Since the background of each `div` is not transparent, you can't see any of the box with the red border behind it. If we were to add opacity for all of our `div` elements, what do we see?
 
@@ -330,6 +330,7 @@ Let's use `z-index` to bring the red box on top of everything else:
 
 ```css
 .box3 {
+    /*nature picture*/
     border: 2px solid rgb(255, 0, 0);
     top: 60px;
     left: 60px;
