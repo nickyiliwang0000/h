@@ -39,8 +39,8 @@ When working with percentages, it's important to think beyond the dimensions of 
 
 ```html
 <div class="wrapper">
-  <section></section>
-  <aside></aside>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
 </div>
 ```
 
@@ -51,12 +51,12 @@ When working with percentages, it's important to think beyond the dimensions of 
   margin: 0 auto;
 }
 
-section {
+.columnLeft {
   width: 65%;
   float: left;
 }
 
-aside {
+.columnRight {
   width: 35%;
   float: left;
 }
@@ -91,12 +91,12 @@ Moving forward, it's best practice to include a `max-width` property with a pixe
 
 Now that we understand how to limit the sizing and see the benefits of using percentages with our elements, what if we want to put some space between our elements?
 
-In previous examples, we had to ensure that the widths of child elements added up to the same width of the parent container even when we wewere not using percentages:
+In previous examples, we had to ensure that the widths of child elements added up to the same width of the parent container even when we were not using percentages:
 
 ```html
 <main>
-  <section></section>
-  <aside></aside>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
 </main>
 
 <style>
@@ -104,12 +104,12 @@ In previous examples, we had to ensure that the widths of child elements added u
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 500px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 300px;
   }
@@ -120,8 +120,8 @@ However, if we used margin to provide spacing between our elements, we would hav
 
 ```html
 <main>
-  <section></section>
-  <aside></aside>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
 </main>
 
 <style>
@@ -129,13 +129,13 @@ However, if we used margin to provide spacing between our elements, we would hav
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 480px;
     margin: 0 10px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 280px;
     margin: 0 10px;
@@ -147,8 +147,8 @@ If we were using percentages, we could easily change the units of the margin to 
 
 ```html
 <main>
-  <section></section>
-  <aside></aside>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
 </main>
 
 <style>
@@ -156,13 +156,13 @@ If we were using percentages, we could easily change the units of the margin to 
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 45%;
     margin: 0 10%;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 15%;
     margin: 0 10%;
@@ -174,8 +174,8 @@ So instead of working with unclear percentage margins, why don't we work with pe
 
 ```html
 <main>
-  <section></section>
-  <aside></aside>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
 </main>
 
 <style>
@@ -183,13 +183,13 @@ So instead of working with unclear percentage margins, why don't we work with pe
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: 65%;
     margin: 0 10px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: 35%;
     margin: 0 10px;
@@ -219,8 +219,8 @@ Using `calc()`, we can now mix percentages and pixels to create a layout that is
 
 ```html
 <main>
-  <section></section>
-  <aside></aside>
+  <section class="columnLeft"></section>
+  <section class="columnRight"></section>
 </main>
 
 <style>
@@ -228,13 +228,13 @@ Using `calc()`, we can now mix percentages and pixels to create a layout that is
     max-width: 800px;
   }
 
-  section {
+  .columnLeft {
     float: left;
     width: calc(65% - 20px);
     margin: 0 10px;
   }
 
-  aside {
+  .columnRight {
     float: left;
     width: calc(35% - 20px);
     margin: 0 10px;
