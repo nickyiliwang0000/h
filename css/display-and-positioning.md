@@ -324,7 +324,7 @@ Open up [z-indexExercise.html](https://hychalknotes.s3.amazonaws.com/z-indexExer
 
 They are all positioned absolutely and are overlapping each other. By default, the order in which they appear in the HTML determines the order in which they overlap. The first element in the HTML has the lowest z-index (i.e. it is farthest back in the filing cabinet) and the last element has the highest (i.e. it is closest to the front of the filing cabinet). We can manipulate that order by changing the value of the `z-index` property.
 
-![overlapping squares with green, red, blue, and orange borders](https://hychalknotes.s3.amazonaws.com/z-indexExample.png)
+![overlapping squares with green, red, blue, and orange borders](https://hychalknotes.s3.amazonaws.com/z-index-one.png)
 
 Let's use `z-index` to bring the red box on top of everything else:
 
@@ -341,7 +341,7 @@ See how the red box is now above everything else?
 
 Try changing the orange box to `z-index:2;`.
 
-![overlapping squares with green, red, blue, and orange borders](https://hychalknotes.s3.amazonaws.com/z-indexExample2.png)
+![overlapping squares with green, red, blue, and orange borders](https://hychalknotes.s3.amazonaws.com/z-index-two.png)
 
 ## Code-along
 Let's see how `postion: relative` and `position: absolute` could be used to elevate a design! Download [relative-absolute-code-along--bootcamp.zip](https://hychalknotes.s3.amazonaws.com/relative-absolute-code-along--bootcamp.zip) and follow along.
