@@ -12,59 +12,54 @@ We would like you to have a detailed a schedule to refer to now that we are onli
 
 ### Weekly Schedule
 
-Week 8: A good week to get great and get grit!
+Week 9: To every season / PREPARE TO UNLEASH THE HORDE
 
 
 **Monday**
 
-* React test
+* Final Exam 🏁🧪📃
 * *Motivational Monday*
-* Stand-ups
-* 🤗 Project 5 Presentations 🤗
-* Regular expressions
+* Project work time 🧶
 * 🍴 LUNCH 🍴
-* Project work time
+* Project work time 🎒
 
 
 **Tuesday**
 
-* 👯‍♀️ Project 5 Peer Review 👯‍♂️
-* Debugging in Javascript 🕵🏻‍♀️🕵🏾‍♂️
-* Project work time
+* _Optional lesson_ Intro to React Hooks 🤝🏽🌀🎣
+* Project work time 🧦
 * 🍴 LUNCH 🍴
-* Project work time
+* Project work time 🧫
 
 
 **Wednesday**
 
-* Project work time
-* 🌻 Morning break! 🌻 
-* Project work time
-* 🍴 LUNCH 🍴 _(Project lunch time)_
-* Project work time
-* 💃🏽 Afternoon break! 🕺🏿
-* Project work time
+_You should be making sure to deploy your portfolio no later than today!_
+
+* Job seeker intro session part 2 👔🔎🤝🏽✌🏽
+* Project work time 🥏
+* 🍴 LUNCH 🍴 _(All things change, the universe is chaos, the only constant is lunch - praise the eternal sandwich!)_
+* Project work time 🧩
 
 
 **Thursday**
 
-_Project 6 is due at 10am today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_  
-
 * Kickoff game 🏈
-* Project 6 presentations 
-* Final (!!!!) Project 7 introduction
+* Project work time 🎳
 * 🍴 LUNCH 🍴
-* Project work time
+* Project work time 🎷
 
 
 **Friday**
 
- _Resume & cover letter due at 10am today! [Submit them here](https://forms.gle/H4BGXUuZYyZTdYLu9)_  
+_Project 7 (your portfolio!) is due at 1pm today! [Submit it here](https://docs.google.com/forms/d/e/1FAIpQLSeRr63HMZPrJDomUPKwtmYRsTXWP8pCPFdGEyE2cFst-7BFUQ/viewform)_
 
-* Job Seeker Intro: Part 1️⃣
+* Project work time ✨🎆🎇
 * 🍴 LUNCH 🍴
-* Project work time
-* 🎉 SHOW AND TELL 🎉
+* Portfolio critiques 📂🔬💅🏽
+* Chit-chat about that dev lyfe 🦜👩🏽‍💻👨🏽‍💻
+* Nice closing thoughts 💡🧠💕
+* Digital hugs 🤗🙋🏽‍♀️🙋🏽‍♂️♥
 
 
 ### Bootcamp calendar
